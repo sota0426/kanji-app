@@ -9,6 +9,7 @@ import FoundKanjiList from "../../components/busyu/FoundKanjiList";
 import GameEndScreen from "../../components/busyu/GameEndScreen";
 import { Kanji } from "../../types/kanji";
 import KanjiInputWithHint from "../../components/busyu/KanjiInput";
+// import getConfig from "next/config"; // この行は削除します
 
 /** ---------------------- データ構造定義 ---------------------- */
 interface RawKanji {
@@ -54,9 +55,23 @@ export default function KanjiBushuGame() {
 
 
   /** ---------------------- データ取得 ---------------------- */
+
   useEffect(() => {
-    fetch("/busyu.json")
-      .then((res) => res.json())
+    // 環境変数から NEXT_PUBLIC_BASE_PATH を取得
+    // 環境変数が設定されていない場合は空文字列を使用（デフォルト値）
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
+    // `busyu.json` への完全なパスを構築
+    const jsonPath = `${basePath}/busyu.json`;
+
+    fetch(jsonPath)
+      .then((res) => {
+        if (!res.ok) {
+          // HTTPエラーの場合、具体的なメッセージを出す
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
       .then((json: RadicalEntry[]) => {
         const map: Record<string, Kanji[]> = {};
         const readingMap: Record<string, string> = {};
@@ -69,7 +84,6 @@ export default function KanjiBushuGame() {
             const readings = [...(k["音読み"] || []), ...(k["訓読み"] || [])]
               .map((r: string) => kanaToHiragana(r.replace(/（.*?）/g, "")).toLowerCase());
 
-            // 👇 全角数字対応
             const toHalfWidth = (str: string) =>
               str.replace(/[０-９]/g, (s) => String.fromCharCode(s.charCodeAt(0) - 0xFEE0));
             const rawGrade = toHalfWidth(k["学年"] || "");
@@ -89,7 +103,7 @@ export default function KanjiBushuGame() {
         setRadicalMap(map);
         setRadicalReadings(readingMap);
       })
-      .catch(() => alert("busyu.json の読み込みに失敗しました"));
+      .catch((error) => alert(`busyu.json の読み込みに失敗しました: ${error.message}\nJSONパス: ${jsonPath}`));
   }, []);
 
   /** ---------------------- タイマー ---------------------- */
@@ -194,13 +208,13 @@ if (matched) {
     const all = radicalMap[currentRadical];
     const notFound = all.filter(
       (k) =>
-        !foundKanji.some((f) => f.char === k.char) &&  // まだ見つけていない
+        !foundKanji.some((f) => f.char === k.char) &&   // まだ見つけていない
         k.char !== excludeChar                         // 直前に正解した文字を除外（任意）
     );
 
     const hints = [...notFound]
-      .sort((a, b) => a.grade - b.grade)               // 学年が低い順
-      .slice(0, 2)                                     // 最大 2 件
+      .sort((a, b) => a.grade - b.grade)              // 学年が低い順
+      .slice(0, 2)                                   // 最大 2 件
       .map(
         (k) =>
           `${k.meaning}（${k.grade === 7 ? "中学生漢字" : k.grade + "年生"}）`

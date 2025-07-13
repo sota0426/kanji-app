@@ -1,7 +1,15 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  basePath: '/kanji-app',
+  assetPrefix: '/kanji-app/',
+  images: {
+    unoptimized: true,
+  },
+  // publicRuntimeConfig のセクションは完全に削除します
+  // publicRuntimeConfig: {
+  //   basePath: '/kanji-app',
+  // },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
