@@ -50,6 +50,8 @@ export default function KanjiBushuGame() {
   const [isHintVisible, setIsHintVisible] = useState(false);
 
   const [ isGameClear , setIsGameClear] = useState(false);
+  const [isTimeUnlimited, setIsTimeUnlimited] = useState(false);
+
 
   /** ---------------------- データ取得 ---------------------- */
   useEffect(() => {
@@ -91,15 +93,16 @@ export default function KanjiBushuGame() {
   }, []);
 
   /** ---------------------- タイマー ---------------------- */
-  useEffect(() => {
-    if (gameStarted && !gameEnded && timeLeft > 0) {
-      const id = setTimeout(() => setTimeLeft((t) => t - 1), 1000);
-      return () => clearTimeout(id);
-    }
-    if (gameStarted && timeLeft === 0) {
-      endGame();
-    }
-  }, [gameStarted, gameEnded, timeLeft]);
+    useEffect(() => {
+      if (gameStarted && !gameEnded && !isTimeUnlimited && timeLeft > 0) {
+        const id = setTimeout(() => setTimeLeft(t => t - 1), 1000);
+        return () => clearTimeout(id);
+      }
+      if (gameStarted && !gameEnded && !isTimeUnlimited && timeLeft === 0) {
+        endGame();
+      }
+    }, [gameStarted, gameEnded, timeLeft, isTimeUnlimited]);
+
 
 
   /** ----------------------　問題終了 ---------------------- */
@@ -259,7 +262,15 @@ if (matched) {
         <div className="space-y-6">
           {/* 情i報バー */}
           <div className="bg-white rounded-lg shadow-lg p-6">
-            <InfoBar timeLeft={timeLeft} score={score} onReset={endGame} />
+            <InfoBar
+              timeLeft={timeLeft}
+              isTimeUnlimited={isTimeUnlimited}
+              onToggleTimeMode={() => setIsTimeUnlimited(prev => !prev)}
+              score={score}
+              onReset={endGame}
+            />
+
+
 
             {/* 部首表示 */}
             <div className="text-center mb-6">
