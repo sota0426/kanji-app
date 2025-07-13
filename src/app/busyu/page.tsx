@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import RadicalSelector from "../../components/RadicalSelector";
-import GameExplanation from "../../components/GameExplanation";
-import InfoBar from "../../components/InfoBar";
-import ResultFlash from "../../components/ResultFlash";
-import FoundKanjiList from "../../components/FoundKanjiList";
-import GameEndScreen from "../../components/GameEndScreen";
+import RadicalSelector from "../../components/busyu/RadicalSelector";
+import GameExplanation from "../../components/busyu/GameExplanation";
+import InfoBar from "../../components/busyu/InfoBar";
+import ResultFlash from "../../components/busyu/ResultFlash";
+import FoundKanjiList from "../../components/busyu/FoundKanjiList";
+import GameEndScreen from "../../components/busyu/GameEndScreen";
 import { Kanji } from "../../types/kanji";
-import KanjiInputWithHint from "../../components/KanjiInput";
+import KanjiInputWithHint from "../../components/busyu/KanjiInput";
 
 /** ---------------------- データ構造定義 ---------------------- */
 interface RawKanji {
