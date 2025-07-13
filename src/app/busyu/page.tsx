@@ -4,17 +4,16 @@ import React, { useState, useEffect } from "react";
 import RadicalSelector from "../../components/RadicalSelector";
 import GameExplanation from "../../components/GameExplanation";
 import InfoBar from "../../components/InfoBar";
-import KanjiInput from "../../components/KanjiInput";
-import HintSection from "../../components/HintSection";
 import ResultFlash from "../../components/ResultFlash";
 import FoundKanjiList from "../../components/FoundKanjiList";
 import GameEndScreen from "../../components/GameEndScreen";
 import { Kanji } from "../../types/kanji";
+import KanjiInputWithHint from "../../components/KanjiInput";
 
 /** ---------------------- データ構造定義 ---------------------- */
 interface RawKanji {
   char: string;
-  [key: string]: any;
+  [key: string]: string;
 }
 
 interface RadicalEntry {
@@ -50,6 +49,8 @@ export default function KanjiBushuGame() {
   const [hintList, setHintList] = useState<string[]>([]);
   const [isHintVisible, setIsHintVisible] = useState(false);
 
+  const [ isGameClear , setIsGameClear] = useState(false);
+
   /** ---------------------- データ取得 ---------------------- */
   useEffect(() => {
     fetch("/busyu.json")
@@ -66,7 +67,11 @@ export default function KanjiBushuGame() {
             const readings = [...(k["音読み"] || []), ...(k["訓読み"] || [])]
               .map((r: string) => kanaToHiragana(r.replace(/（.*?）/g, "")).toLowerCase());
 
-            const gradeMatch = (k["学年"] || "").match(/\d+/);
+            // 👇 全角数字対応
+            const toHalfWidth = (str: string) =>
+              str.replace(/[０-９]/g, (s) => String.fromCharCode(s.charCodeAt(0) - 0xFEE0));
+            const rawGrade = toHalfWidth(k["学年"] || "");
+            const gradeMatch = rawGrade.match(/\d+/);
             const gradeNum = gradeMatch ? parseInt(gradeMatch[0], 10) : 7;
 
             return {
@@ -76,6 +81,7 @@ export default function KanjiBushuGame() {
               grade: gradeNum,
             } as Kanji;
           });
+
         });
 
         setRadicalMap(map);
@@ -94,6 +100,22 @@ export default function KanjiBushuGame() {
       endGame();
     }
   }, [gameStarted, gameEnded, timeLeft]);
+
+
+  /** ----------------------　問題終了 ---------------------- */
+    useEffect(() => {
+      if (!currentRadical || gameEnded) return;
+
+      const totalCount = radicalMap[currentRadical]?.length || 0;
+      const foundCount = foundKanji.length;
+
+      if (totalCount > 0 && foundCount === totalCount) {
+        setIsGameClear(true);
+        endGame();
+      }
+    }, [foundKanji, currentRadical, radicalMap, gameEnded]);
+
+
 
   /** ---------------------- ゲーム制御 ---------------------- */
   const startGame = (radical: string) => {
@@ -148,16 +170,8 @@ if (matched) {
   setShowResult(true);
 
   // ✅ 正解後に Hint を更新
-  if (isHintVisible && currentRadical) {
-    const all = radicalMap[currentRadical];
-    const notFound = all.filter((k) =>
-      !foundKanji.some((f) => f.char === k.char) && k.char !== matched.char
-    );
-    const hints = [...notFound]
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 2)
-      .map((k) => `${k.meaning || "？"}（${k.char.length}文字）`);
-    setHintList(hints);
+  if (isHintVisible) {
+    generateHints(matched.char);   // 直前に当てた漢字を除外
   }
 
   setTimeout(() => {
@@ -170,32 +184,52 @@ if (matched) {
     setInput("");
   };
 
-  /** ---------------------- ヒント ---------------------- */
-  const toggleHint = () => {
+/** ---------------------- ヒント生成 ---------------------- */
+  const generateHints = (excludeChar: string | null = null) => {
     if (!currentRadical) return;
-    if (!isHintVisible) {
-      const all = radicalMap[currentRadical];
-      const notFound = all.filter((k) => !foundKanji.some((f) => f.char === k.char));
-      const hints = [...notFound]
-        .sort(() => Math.random() - 0.5)
-        .slice(0, 2)
-        .map((k) => `${k.meaning || "？"}（${k.char.length}文字）`);
-      setHintList(hints);
-    }
-    setIsHintVisible(!isHintVisible);
+
+    const all = radicalMap[currentRadical];
+    const notFound = all.filter(
+      (k) =>
+        !foundKanji.some((f) => f.char === k.char) &&  // まだ見つけていない
+        k.char !== excludeChar                         // 直前に正解した文字を除外（任意）
+    );
+
+    const hints = [...notFound]
+      .sort((a, b) => a.grade - b.grade)               // 学年が低い順
+      .slice(0, 2)                                     // 最大 2 件
+      .map(
+        (k) =>
+          `${k.meaning}（${k.grade === 7 ? "中学生漢字" : k.grade + "年生"}）`
+      );
+
+    setHintList(hints);
   };
 
-  /** ---------------------- メッセージ ---------------------- */
-  const getScoreMessage = () => {
-    if (score >= 20) return "漢字マスター！";
-    if (score >= 15) return "素晴らしい！";
-    if (score >= 10) return "よくできました！";
-    if (score >= 5) return "がんばりました！";
-    return "また挑戦してね！";
-  };
+  const toggleHint = () => {
+  if (!currentRadical) return;
+
+  // 非表示→表示へ切り替えるときだけ新しく作成
+  if (!isHintVisible) {
+    generateHints();
+  }
+  setIsHintVisible(!isHintVisible);
+};
+
+
+
+
 
   /** ---------------------- レンダリング ---------------------- */
-  const allRadicals = Object.keys(radicalMap).sort();
+ const allRadicalsWithCount = Object.entries(radicalMap)
+  .map(([radical, kanjiList]) => ({
+    radical,
+    count: kanjiList.length,
+    reading:radicalReadings[radical] || "？"
+  }))
+  .sort((a, b) => b.count-a.count);
+
+
   const currentAllKanji = currentRadical ? radicalMap[currentRadical] : [];
 
   // 部首未選択画面
@@ -203,7 +237,7 @@ if (matched) {
     return (
       <div className="max-w-4xl mx-auto p-6 bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
         <h1 className="text-center text-4xl font-bold mb-8">部首を選択</h1>
-        <RadicalSelector radicals={allRadicals} onSelect={startGame} />
+        <RadicalSelector radicals={allRadicalsWithCount} onSelect={startGame} />
       </div>
     );
   }
@@ -213,9 +247,6 @@ if (matched) {
       {/* タイトル */}
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold text-gray-800 mb-2">部首漢字ゲーム</h1>
-        <p className="text-gray-600">
-          部首「{currentRadical}」（{radicalReadings[currentRadical] || "?"}）の漢字を答えよう！
-        </p>
       </div>
 
       {/* === ゲーム未開始（説明） === */}
@@ -232,18 +263,24 @@ if (matched) {
 
             {/* 部首表示 */}
             <div className="text-center mb-6">
-              <h2 className="font-semibold mb-2">この部首を使った漢字は？</h2>
+              <h2 className="font-semibold mb-2 text-gray-600">
+                部首「{currentRadical}」（{radicalReadings[currentRadical] || "?"}）の漢字を答えよう！
+              </h2>
               <div className="inline-block bg-blue-100 rounded-lg p-8 mb-2">
                 <span className="text-8xl font-bold text-blue-800">{currentRadical}</span>
               </div>
               <p className="text-gray-700 mt-2">全 {currentAllKanji.length} 個の漢字があります</p>
             </div>
 
-            {/* 入力 */}
-            <KanjiInput value={input} onChange={setInput} onSubmit={checkAnswer} />
-
-            {/* ヒント欄 */}
-            <HintSection isVisible={isHintVisible} hints={hintList} onToggle={toggleHint} />
+            {/* インプット */}
+            <KanjiInputWithHint
+              value={input}
+              onChange={setInput}
+              onSubmit={checkAnswer}
+              isHintVisible={isHintVisible}
+              hints={hintList}
+              onToggleHint={toggleHint}
+            />
 
             {/* 正解フラッシュ */}
             <ResultFlash visible={showResult} kanji={currentKanji} calcPoint={calcPoint} />
@@ -259,14 +296,15 @@ if (matched) {
       {gameEnded && (
         <GameEndScreen
           score={score}
-          message={getScoreMessage()}
           currentRadical={currentRadical}
           foundKanji={foundKanji}
           allKanji={currentAllKanji}
+          isGameClear={isGameClear}
           onReplay={() => startGame(currentRadical)}
           onReturn={resetAll}
         />
       )}
+
     </div>
   );
 }
