@@ -51,19 +51,19 @@ export default function KanjiBushuGame() {
     map[entry.radical] = entry.kanji.map((k) => {
       const kanaToHiragana = (str: string) =>
         str.replace(/[ァ-ヶ]/g, (s) => String.fromCharCode(s.charCodeAt(0) - 0x60));
-      const readings = [...(k["音読み"] || []), ...(k["訓読み"] || [])]
+      const readings = [...(k["onyomi"] || []), ...(k["kunyomi"] || [])]
         .map((r: string) => kanaToHiragana(r.replace(/（.*?）/g, "")).toLowerCase());
 
       const toHalfWidth = (str: string) =>
         str.replace(/[０-９]/g, (s) => String.fromCharCode(s.charCodeAt(0) - 0xFEE0));
-      const rawGrade = toHalfWidth(k["学年"] || "");
+      const rawGrade = toHalfWidth(k["grade"] || "");
       const gradeMatch = rawGrade.match(/\d+/);
       const gradeNum = gradeMatch ? parseInt(gradeMatch[0], 10) : 7;
 
       return {
         char: k.char,
         readings,
-        meaning: (k["意味"]?.[0] || "").replace(/。$/, ""),
+        meaning: (k["meaning"]?.[0] || "").replace(/。$/, ""),
         grade: gradeNum,
       } as Kanji;
     });

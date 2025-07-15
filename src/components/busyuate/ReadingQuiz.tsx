@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { busyuData } from "../../../out/busyuData";
 import { useRouter } from "next/navigation";
 
 interface QuizQuestion {
@@ -9,27 +8,43 @@ interface QuizQuestion {
   choices: string[];
 }
 
+interface Kanji {
+  char: string;
+  readings: string[];
+  meaning: string;
+  grade: number;
+}
+
+interface EnrichedBusyuEntry {
+  radical: string;
+  reading: string;
+  kanji: Kanji[];
+}
+
+interface ReadingQuizProps {
+  filteredData: EnrichedBusyuEntry[];
+}
+
+
+
 function shuffle<T>(array: T[]): T[] {
   return [...array].sort(() => Math.random() - 0.5);
 }
 
-const generateQuiz = (numQuestions: number): QuizQuestion[] => {
+const generateQuiz = (sourceData: EnrichedBusyuEntry[], numQuestions: number): QuizQuestion[] => {
   const allQuestions: QuizQuestion[] = [];
-  const allreadings = busyuData.map((d) => d.reading);
+  const allreadings = sourceData.map((d) => d.reading);
   const usedKanjis = new Set<string>();
 
   while (allQuestions.length < numQuestions) {
-    const entry = busyuData[Math.floor(Math.random() * busyuData.length)];
+    const entry = sourceData[Math.floor(Math.random() * sourceData.length)];
     const reading = entry.reading;
     const kanjiObj = entry.kanji[Math.floor(Math.random() * entry.kanji.length)];
 
     if (!kanjiObj || usedKanjis.has(kanjiObj.char)) continue;
     usedKanjis.add(kanjiObj.char);
 
-    const wrongChoices = shuffle(allreadings.filter((r) => r !== reading)).slice(
-      0,
-      3
-    );
+    const wrongChoices = shuffle(allreadings.filter((r) => r !== reading)).slice(0, 3);
     const allChoices = shuffle([reading, ...wrongChoices]);
 
     allQuestions.push({
@@ -42,6 +57,7 @@ const generateQuiz = (numQuestions: number): QuizQuestion[] => {
   return allQuestions;
 };
 
+
 interface HistoryItem {
   kanji: string;
   correct: string;
@@ -49,7 +65,8 @@ interface HistoryItem {
   isCorrect: boolean;
 }
 
-export default function ReadingQuiz() {
+
+export default function ReadingQuiz({ filteredData }: ReadingQuizProps) {
   const router = useRouter();
   const totalQuestions = 10;
 
@@ -60,9 +77,10 @@ export default function ReadingQuiz() {
   const [history, setHistory] = useState<HistoryItem[]>([]);
   const [isFinished, setIsFinished] = useState(false);
 
-  useEffect(() => {
-    setQuizData(generateQuiz(totalQuestions));
-  }, []);
+useEffect(() => {
+  setQuizData(generateQuiz(filteredData, totalQuestions));
+}, [filteredData]);
+
 
   const handleChoice = (choice: string) => {
     if (selected) return;
@@ -90,7 +108,7 @@ export default function ReadingQuiz() {
   };
 
   const resetQuiz = () => {
-    setQuizData(generateQuiz(totalQuestions));
+    setQuizData(generateQuiz(filteredData, totalQuestions));
     setCurrentIndex(0);
     setScore(0);
     setSelected(null);
