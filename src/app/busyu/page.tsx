@@ -9,19 +9,7 @@ import FoundKanjiList from "../../components/busyu/FoundKanjiList";
 import GameEndScreen from "../../components/busyu/GameEndScreen";
 import { Kanji } from "../../types/kanji";
 import KanjiInputWithHint from "../../components/busyu/KanjiInput";
-// import getConfig from "next/config"; // この行は削除します
-
-/** ---------------------- データ構造定義 ---------------------- */
-interface RawKanji {
-  char: string;
-  [key: string]: string;
-}
-
-interface RadicalEntry {
-  radical: string;
-  reading: string;
-  kanji: RawKanji[];
-}
+import { busyuData } from "../../../public/busyuData";
 
 /** ---------------------- 学年→得点換算 ---------------------- */
 const calcPoint = (grade: number) => {
@@ -50,89 +38,64 @@ export default function KanjiBushuGame() {
   const [hintList, setHintList] = useState<string[]>([]);
   const [isHintVisible, setIsHintVisible] = useState(false);
 
-  const [ isGameClear , setIsGameClear] = useState(false);
+  const [isGameClear, setIsGameClear] = useState(false);
   const [isTimeUnlimited, setIsTimeUnlimited] = useState(false);
 
-
   /** ---------------------- データ取得 ---------------------- */
+  useEffect(()=>{
+    const map:Record<string,Kanji[]>={};
+    const readingMap : Record<string,string>={};
 
-  useEffect(() => {
-    // 環境変数から NEXT_PUBLIC_BASE_PATH を取得
-    // 環境変数が設定されていない場合は空文字列を使用（デフォルト値）
-    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  busyuData.forEach((entry) => {
+    readingMap[entry.radical] = entry.reading;
+    map[entry.radical] = entry.kanji.map((k) => {
+      const kanaToHiragana = (str: string) =>
+        str.replace(/[ァ-ヶ]/g, (s) => String.fromCharCode(s.charCodeAt(0) - 0x60));
+      const readings = [...(k["音読み"] || []), ...(k["訓読み"] || [])]
+        .map((r: string) => kanaToHiragana(r.replace(/（.*?）/g, "")).toLowerCase());
 
-    // `busyu.json` への完全なパスを構築
-    const jsonPath = `${basePath}/busyu.json`;
+      const toHalfWidth = (str: string) =>
+        str.replace(/[０-９]/g, (s) => String.fromCharCode(s.charCodeAt(0) - 0xFEE0));
+      const rawGrade = toHalfWidth(k["学年"] || "");
+      const gradeMatch = rawGrade.match(/\d+/);
+      const gradeNum = gradeMatch ? parseInt(gradeMatch[0], 10) : 7;
 
-    fetch(jsonPath)
-      .then((res) => {
-        if (!res.ok) {
-          // HTTPエラーの場合、具体的なメッセージを出す
-          throw new Error(`HTTP error! status: ${res.status}`);
-        }
-        return res.json();
-      })
-      .then((json: RadicalEntry[]) => {
-        const map: Record<string, Kanji[]> = {};
-        const readingMap: Record<string, string> = {};
+      return {
+        char: k.char,
+        readings,
+        meaning: (k["意味"]?.[0] || "").replace(/。$/, ""),
+        grade: gradeNum,
+      } as Kanji;
+    });
+  });
 
-        json.forEach((entry) => {
-          readingMap[entry.radical] = entry.reading;
-          map[entry.radical] = entry.kanji.map((k) => {
-            const kanaToHiragana = (str: string) =>
-              str.replace(/[ァ-ヶ]/g, (s) => String.fromCharCode(s.charCodeAt(0) - 0x60));
-            const readings = [...(k["音読み"] || []), ...(k["訓読み"] || [])]
-              .map((r: string) => kanaToHiragana(r.replace(/（.*?）/g, "")).toLowerCase());
-
-            const toHalfWidth = (str: string) =>
-              str.replace(/[０-９]/g, (s) => String.fromCharCode(s.charCodeAt(0) - 0xFEE0));
-            const rawGrade = toHalfWidth(k["学年"] || "");
-            const gradeMatch = rawGrade.match(/\d+/);
-            const gradeNum = gradeMatch ? parseInt(gradeMatch[0], 10) : 7;
-
-            return {
-              char: k.char,
-              readings,
-              meaning: (k["意味"]?.[0] || "").replace(/。$/, ""),
-              grade: gradeNum,
-            } as Kanji;
-          });
-
-        });
-
-        setRadicalMap(map);
-        setRadicalReadings(readingMap);
-      })
-      .catch((error) => alert(`busyu.json の読み込みに失敗しました: ${error.message}\nJSONパス: ${jsonPath}`));
-  }, []);
+  setRadicalMap(map);
+  setRadicalReadings(readingMap);
+}, []);
 
   /** ---------------------- タイマー ---------------------- */
-    useEffect(() => {
-      if (gameStarted && !gameEnded && !isTimeUnlimited && timeLeft > 0) {
-        const id = setTimeout(() => setTimeLeft(t => t - 1), 1000);
-        return () => clearTimeout(id);
-      }
-      if (gameStarted && !gameEnded && !isTimeUnlimited && timeLeft === 0) {
-        endGame();
-      }
-    }, [gameStarted, gameEnded, timeLeft, isTimeUnlimited]);
-
-
+  useEffect(() => {
+    if (gameStarted && !gameEnded && !isTimeUnlimited && timeLeft > 0) {
+      const id = setTimeout(() => setTimeLeft((t) => t - 1), 1000);
+      return () => clearTimeout(id);
+    }
+    if (gameStarted && !gameEnded && !isTimeUnlimited && timeLeft === 0) {
+      endGame();
+    }
+  }, [gameStarted, gameEnded, timeLeft, isTimeUnlimited]);
 
   /** ----------------------　問題終了 ---------------------- */
-    useEffect(() => {
-      if (!currentRadical || gameEnded) return;
+  useEffect(() => {
+    if (!currentRadical || gameEnded) return;
 
-      const totalCount = radicalMap[currentRadical]?.length || 0;
-      const foundCount = foundKanji.length;
+    const totalCount = radicalMap[currentRadical]?.length || 0;
+    const foundCount = foundKanji.length;
 
-      if (totalCount > 0 && foundCount === totalCount) {
-        setIsGameClear(true);
-        endGame();
-      }
-    }, [foundKanji, currentRadical, radicalMap, gameEnded]);
-
-
+    if (totalCount > 0 && foundCount === totalCount) {
+      setIsGameClear(true);
+      endGame();
+    }
+  }, [foundKanji, currentRadical, radicalMap, gameEnded]);
 
   /** ---------------------- ゲーム制御 ---------------------- */
   const startGame = (radical: string) => {
@@ -179,122 +142,112 @@ export default function KanjiBushuGame() {
       (k) => !foundKanji.some((f) => f.char === k.char) && k.readings.includes(reading)
     );
 
-if (matched) {
-  const pts = calcPoint(matched.grade);
-  setScore((s) => s + pts);
-  setFoundKanji((prev) => [...prev, matched]);
-  setCurrentKanji(matched);
-  setShowResult(true);
+    if (matched) {
+      const pts = calcPoint(matched.grade);
+      setScore((s) => s + pts);
+      setFoundKanji((prev) => [...prev, matched]);
+      setCurrentKanji(matched);
+      setShowResult(true);
 
-  // ✅ 正解後に Hint を更新
-  if (isHintVisible) {
-    generateHints(matched.char);   // 直前に当てた漢字を除外
-  }
+      // ✅ 正解後に Hint を更新
+      if (isHintVisible) {
+        generateHints(matched.char); // 直前に当てた漢字を除外
+      }
 
-  setTimeout(() => {
-    setShowResult(false);
-    setCurrentKanji(null);
-  }, 1800);
-}
-
+      setTimeout(() => {
+        setShowResult(false);
+        setCurrentKanji(null);
+      }, 1800);
+    }
 
     setInput("");
   };
 
-/** ---------------------- ヒント生成 ---------------------- */
+  /** ---------------------- ヒント生成 ---------------------- */
   const generateHints = (excludeChar: string | null = null) => {
     if (!currentRadical) return;
 
     const all = radicalMap[currentRadical];
     const notFound = all.filter(
       (k) =>
-        !foundKanji.some((f) => f.char === k.char) &&   // まだ見つけていない
-        k.char !== excludeChar                         // 直前に正解した文字を除外（任意）
+        !foundKanji.some((f) => f.char === k.char) && // まだ見つけていない
+        k.char !== excludeChar // 直前に正解した文字を除外（任意）
     );
 
     const hints = [...notFound]
-      .sort((a, b) => a.grade - b.grade)              // 学年が低い順
-      .slice(0, 2)                                   // 最大 2 件
-      .map(
-        (k) =>
-          `${k.meaning}（${k.grade === 7 ? "中学生漢字" : k.grade + "年生"}）`
-      );
+      .sort((a, b) => a.grade - b.grade) // 学年が低い順
+      .slice(0, 2) // 最大 2 件
+      .map((k) => `${k.meaning}（${k.grade === 7 ? "中学生漢字" : k.grade + "年生"}）`);
 
     setHintList(hints);
   };
 
   const toggleHint = () => {
-  if (!currentRadical) return;
+    if (!currentRadical) return;
 
-  // 非表示→表示へ切り替えるときだけ新しく作成
-  if (!isHintVisible) {
-    generateHints();
-  }
-  setIsHintVisible(!isHintVisible);
-};
-
-
-
-
+    if (!isHintVisible) {
+      generateHints();
+    }
+    setIsHintVisible(!isHintVisible);
+  };
 
   /** ---------------------- レンダリング ---------------------- */
- const allRadicalsWithCount = Object.entries(radicalMap)
-  .map(([radical, kanjiList]) => ({
-    radical,
-    count: kanjiList.length,
-    reading:radicalReadings[radical] || "？"
-  }))
-  .sort((a, b) => b.count-a.count);
-
+  const allRadicalsWithCount = Object.entries(radicalMap)
+    .map(([radical, kanjiList]) => ({
+      radical,
+      count: kanjiList.length,
+      reading: radicalReadings[radical] || "？",
+    }))
+    .sort((a, b) => b.count - a.count);
 
   const currentAllKanji = currentRadical ? radicalMap[currentRadical] : [];
 
   // 部首未選択画面
   if (!currentRadical) {
     return (
-      <div className="max-w-4xl mx-auto p-6 bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
-        <h1 className="text-center text-4xl font-bold mb-8">部首を選択</h1>
+      <div className="max-w-full sm:max-w-4xl mx-auto px-4 sm:px-6 py-6 bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen overflow-x-hidden">
+        <h1 className="text-center text-3xl sm:text-4xl font-bold mb-6">部首を選択</h1>
+        {/* ラジカルセレクタは内部でグリッドレイアウトを持つため、モバイルでも崩れにくい */}
         <RadicalSelector radicals={allRadicalsWithCount} onSelect={startGame} />
       </div>
     );
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
+    <div className="max-w-full sm:max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-6 bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen overflow-x-hidden">
       {/* タイトル */}
-      <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-gray-800 mb-2">部首漢字ゲーム</h1>
+      <div className="text-center">
+        <p className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+             「{currentRadical}」（{radicalReadings[currentRadical] || "?"}）の漢字
+        </p>
       </div>
 
       {/* === ゲーム未開始（説明） === */}
-      {!gameStarted && !gameEnded && (
-        <GameExplanation onStart={() => setGameStarted(true)} />
-      )}
+      {!gameStarted && !gameEnded && <GameExplanation onStart={() => setGameStarted(true)} />}
 
       {/* === ゲーム中 === */}
       {gameStarted && (
-        <div className="space-y-6">
-          {/* 情i報バー */}
-          <div className="bg-white rounded-lg shadow-lg p-6">
+        <div className="space-y-4 sm:space-y-6">
+          {/* 情報バー */}
+          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 flex flex-col gap-4">
             <InfoBar
               timeLeft={timeLeft}
               isTimeUnlimited={isTimeUnlimited}
-              onToggleTimeMode={() => setIsTimeUnlimited(prev => !prev)}
+              onToggleTimeMode={() => setIsTimeUnlimited((prev) => !prev)}
               score={score}
               onReset={endGame}
             />
 
-
-
             {/* 部首表示 */}
-            <div className="text-center mb-6">
-              <h2 className="font-semibold mb-2 text-gray-600">
-                部首「{currentRadical}」（{radicalReadings[currentRadical] || "?"}）の漢字を答えよう！
-              </h2>
-              <div className="inline-block bg-blue-100 rounded-lg p-8 mb-2">
-                <span className="text-8xl font-bold text-blue-800">{currentRadical}</span>
+            <div className="text-center ">
+              <div className="inline-block bg-blue-100 rounded-lg p-6 sm:p-8 mb-2">
+                <span className="text-4xl sm:text-8xl lg:text-9xl font-bold text-blue-800">
+                  {currentRadical}
+                </span>
               </div>
-              <p className="text-gray-700 mt-2">全 {currentAllKanji.length} 個の漢字があります</p>
+              <p className="text-gray-700 text-sm sm:text-base">
+                全 {currentAllKanji.length} 個の漢字があります
+              </p>
             </div>
 
             {/* インプット */}
@@ -312,7 +265,6 @@ if (matched) {
 
             {/* 発見済みリスト */}
             <FoundKanjiList foundKanji={foundKanji} total={currentAllKanji.length} />
-
           </div>
         </div>
       )}
@@ -329,7 +281,6 @@ if (matched) {
           onReturn={resetAll}
         />
       )}
-
     </div>
   );
 }

@@ -29,7 +29,7 @@ export default function KanjiInputWithHint({
   };
 
   return (
-    <div className="text-center mb-4">
+    <div className="text-center ">
       <input
         ref={inputRef}
         type="text"
@@ -37,24 +37,24 @@ export default function KanjiInputWithHint({
         onChange={(e) => onChange(e.target.value)}
         onKeyPress={handleKeyPress}
         placeholder="読み方をひらがなで入力"
-        className="text-2xl p-4 border-2 border-gray-300 rounded-lg w-80 text-center focus:border-blue-500 focus:outline-none"
+        className="text-sm p-2 border-2 border-gray-300 rounded-lg w-50 text-center focus:border-blue-500 focus:outline-none"
       />
-      <div className="mt-4 mb-4">
+      <div className="mt-4 mb-4 flex flex-col sm:flex-row justify-center items-center gap-4">
         <button
           onClick={onSubmit}
           disabled={!value.trim()}
-          className="bg-green-500 hover:bg-green-600 disabled:bg-gray-300 text-white font-bold py-3 px-8 rounded-lg text-xl transition-colors"
+          className="bg-green-500 hover:bg-green-600 disabled:bg-gray-300 text-white py-2 px-6 rounded-lg transition-colors w-full sm:w-auto"
         >
           答える
         </button>
         <button
           onClick={onToggleHint}
-          className="ml-10 bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-lg mb-2"
+          className="bg-orange-500 hover:bg-orange-600 text-white  py-2 px-3 rounded-lg transition-colors w-full sm:w-auto"
         >
           {isHintVisible ? "ヒントを隠す" : "ヒントを見る"}
         </button>
-   
       </div>
+
 
 
 

@@ -8,12 +8,13 @@ export default function Home() {
       title: "部首漢字ゲーム",
       description: "部首から漢字を連想して答えるクイズ",
       path: "/busyu",
+      disabled: false,      
     },
     {
-      title: "音訓読みクイズ（開発中）",
-      description: "音読み・訓読みのどちらかを当てる（準備中）",
-      path: "/onkun", // 実装されたら有効に
-      disabled: true,
+      title: "部首当てクイズ",
+      description: "漢字の部首を答える４択クイズ",
+      path: "/busyuate", // 実装されたら有効に
+      disabled: false,
     },
     // 追加クイズがあればここに追記
   ];

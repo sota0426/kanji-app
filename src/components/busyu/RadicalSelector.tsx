@@ -15,7 +15,7 @@ interface RadicalSelectorProps {
 
 export default function RadicalSelector({ radicals, onSelect }: RadicalSelectorProps) {
   return (
-    <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-2 gap-4">
+    <div className="grid gird-cols-1 md:grid-cols-2  gap-4">
       {radicals
       .filter(({count})=> count>3)
       .map(({ radical, count ,reading}) => (

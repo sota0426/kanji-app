@@ -7,7 +7,6 @@ interface AllKanjiListProps {
   foundKanji: Kanji[];
 }
 
-// ひらがな → カタカナ変換
 function toKatakana(str: string) {
   return str.replace(/[\u3041-\u3096]/g, ch =>
     String.fromCharCode(ch.charCodeAt(0) + 0x60)
@@ -17,7 +16,6 @@ function toKatakana(str: string) {
 export default function AllKanjiList({ allKanji, foundKanji }: AllKanjiListProps) {
   const foundChars = new Set(foundKanji.map(k => k.char));
 
-  // 学年ごとにグループ化
   const grouped: Record<number, Kanji[]> = {};
   allKanji.forEach(k => {
     const grade = k.grade;
@@ -49,13 +47,13 @@ export default function AllKanjiList({ allKanji, foundKanji }: AllKanjiListProps
             <h4 className="text-lg font-semibold text-gray-800 mb-3 border-b border-gray-300 pb-1">
               {gradeLabel(Number(grade))}
             </h4>
-            <div className="grid grid-cols-4 md:grid-cols-6 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4">
               {kanjis.map(k => {
                 const discovered = foundChars.has(k.char);
                 return (
                   <div
                     key={k.char}
-                    className={`text-center rounded-lg p-3 shadow transition-all ${
+                    className={`relative group text-center rounded-lg p-3 shadow transition-all cursor-pointer ${
                       discovered
                         ? "bg-white text-blue-800 border border-blue-200"
                         : "bg-red-100 text-red-600 border border-red-300"
@@ -64,6 +62,15 @@ export default function AllKanjiList({ allKanji, foundKanji }: AllKanjiListProps
                     <div className="text-3xl font-bold mb-1">{k.char}</div>
                     <div className="text-sm text-gray-600">{k.readings[1]}</div>
                     <div className="text-sm text-gray-500">{toKatakana(k.readings[0])}</div>
+
+                    {/* Tooltip on hover */}
+                    <div className="absolute z-10 hidden group-hover:block bg-white border text-black border-gray-300 rounded-lg p-3 text-sm 
+                    text-left shadow-lg w-60 top-full mt-2 left-1/2 transform -translate-x-1/2">
+                      <div><strong>漢字:</strong> {k.char}</div>
+                      <div><strong>音読み:</strong> {toKatakana(k.readings[0])}</div>
+                      <div><strong>訓読み:</strong> {k.readings[1]}</div>
+                      <div><strong>意味:</strong> {k.meaning}</div>
+                    </div>
                   </div>
                 );
               })}

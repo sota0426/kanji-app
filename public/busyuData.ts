@@ -1,12 +1,35 @@
-[
+// busyuData.ts
+
+export interface KanjiEntry {
+  char: string;
+  url: string;
+  音読み: string[];
+  訓読み: string[];
+  意味: string[];
+  画数: number;
+  部首: string;
+  学年: string | null;
+  漢字検定: string;
+}
+
+
+export interface RadicalEntry {
+  url: string;
+  radical: string;
+  reading: string;
+  kanji: KanjiEntry[];
+}
+
+// 実データ
+export const busyuData: RadicalEntry[] = [
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu01001",
-    "radical": "一",
-    "reading": "いち",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu01001",
+    radical: "一",
+    reading: "いち",
+    kanji: [
       {
-        "char": "一",
-        "url": "https://kanji.jitenon.jp/kanji/001",
+        char: "一",
+        url: "https://kanji.jitenon.jp/kanji/001",
         "音読み": [
           "イチ",
           "イツ"
@@ -24,8 +47,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "七",
-        "url": "https://kanji.jitenon.jp/kanji/031",
+        char: "七",
+        url: "https://kanji.jitenon.jp/kanji/031",
         "音読み": [
           "シチ"
         ],
@@ -43,8 +66,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "丁",
-        "url": "https://kanji.jitenon.jp/kanji/369",
+        char: "丁",
+        url: "https://kanji.jitenon.jp/kanji/369",
         "音読み": [
           "チョウ",
           "テイ"
@@ -59,8 +82,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "下",
-        "url": "https://kanji.jitenon.jp/kanji/015",
+        char: "下",
+        url: "https://kanji.jitenon.jp/kanji/015",
         "音読み": [
           "カ",
           "ゲ"
@@ -86,8 +109,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "三",
-        "url": "https://kanji.jitenon.jp/kanji/024",
+        char: "三",
+        url: "https://kanji.jitenon.jp/kanji/024",
         "音読み": [
           "サン"
         ],
@@ -105,8 +128,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "上",
-        "url": "https://kanji.jitenon.jp/kanji/039",
+        char: "上",
+        url: "https://kanji.jitenon.jp/kanji/039",
         "音読み": [
           "ショウ",
           "ジョウ"
@@ -130,8 +153,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "万",
-        "url": "https://kanji.jitenon.jp/kanji/226",
+        char: "万",
+        url: "https://kanji.jitenon.jp/kanji/226",
         "音読み": [
           "バン",
           "マン"
@@ -146,8 +169,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "丈",
-        "url": "https://kanji.jitenon.jp/kanjic/1144",
+        char: "丈",
+        url: "https://kanji.jitenon.jp/kanjic/1144",
         "音読み": [
           "ジョウ"
         ],
@@ -163,8 +186,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "与",
-        "url": "https://kanji.jitenon.jp/kanjic/1291",
+        char: "与",
+        url: "https://kanji.jitenon.jp/kanjic/1291",
         "音読み": [
           "ヨ"
         ],
@@ -180,8 +203,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "不",
-        "url": "https://kanji.jitenon.jp/kanjib/600",
+        char: "不",
+        url: "https://kanji.jitenon.jp/kanjib/600",
         "音読み": [
           "フ",
           "ブ"
@@ -196,8 +219,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "丑",
-        "url": "https://kanji.jitenon.jp/kanjif/2723",
+        char: "丑",
+        url: "https://kanji.jitenon.jp/kanjif/2723",
         "音読み": [
           "チュウ"
         ],
@@ -213,8 +236,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "世",
-        "url": "https://kanji.jitenon.jp/kanji/344",
+        char: "世",
+        url: "https://kanji.jitenon.jp/kanji/344",
         "音読み": [
           "セ",
           "セイ"
@@ -231,8 +254,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "丘",
-        "url": "https://kanji.jitenon.jp/kanjic/1057",
+        char: "丘",
+        url: "https://kanji.jitenon.jp/kanjic/1057",
         "音読み": [
           "キュウ"
         ],
@@ -248,8 +271,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "且",
-        "url": "https://kanji.jitenon.jp/kanjid/1636",
+        char: "且",
+        url: "https://kanji.jitenon.jp/kanjid/1636",
         "音読み": [],
         "訓読み": [
           "か（つ）"
@@ -263,8 +286,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "丙",
-        "url": "https://kanji.jitenon.jp/kanjid/1886",
+        char: "丙",
+        url: "https://kanji.jitenon.jp/kanjid/1886",
         "音読み": [
           "ヘイ"
         ],
@@ -278,8 +301,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "両",
-        "url": "https://kanji.jitenon.jp/kanji/432",
+        char: "両",
+        url: "https://kanji.jitenon.jp/kanji/432",
         "音読み": [
           "リョウ"
         ],
@@ -293,8 +316,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "丞",
-        "url": "https://kanji.jitenon.jp/kanjif/2551",
+        char: "丞",
+        url: "https://kanji.jitenon.jp/kanjif/2551",
         "音読み": [
           "ショウ",
           "ジョウ"
@@ -311,8 +334,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "並",
-        "url": "https://kanji.jitenon.jp/kanjib/976",
+        char: "並",
+        url: "https://kanji.jitenon.jp/kanjib/976",
         "音読み": [
           "ヘイ"
         ],
@@ -333,13 +356,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu01002",
-    "radical": "乙 乚",
-    "reading": "おつ・おつにょう・つりばり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu01002",
+    radical: "乙 乚",
+    reading: "おつ・おつにょう・つりばり",
+    kanji: [
       {
-        "char": "乙",
-        "url": "https://kanji.jitenon.jp/kanjic/1329",
+        char: "乙",
+        url: "https://kanji.jitenon.jp/kanjic/1329",
         "音読み": [
           "オツ"
         ],
@@ -353,8 +376,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "九",
-        "url": "https://kanji.jitenon.jp/kanji/011",
+        char: "九",
+        url: "https://kanji.jitenon.jp/kanji/011",
         "音読み": [
           "キュウ",
           "ク"
@@ -372,8 +395,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "乞",
-        "url": "https://kanji.jitenon.jp/kanjie/2001",
+        char: "乞",
+        url: "https://kanji.jitenon.jp/kanjie/2001",
         "音読み": [],
         "訓読み": [
           "こ（う）"
@@ -387,8 +410,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "也",
-        "url": "https://kanji.jitenon.jp/kanjif/2939",
+        char: "也",
+        url: "https://kanji.jitenon.jp/kanjif/2939",
         "音読み": [
           "ヤ"
         ],
@@ -407,8 +430,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "乱",
-        "url": "https://kanji.jitenon.jp/kanjib/997",
+        char: "乱",
+        url: "https://kanji.jitenon.jp/kanjib/997",
         "音読み": [
           "ラン"
         ],
@@ -425,8 +448,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "乳",
-        "url": "https://kanji.jitenon.jp/kanjib/959",
+        char: "乳",
+        url: "https://kanji.jitenon.jp/kanjib/959",
         "音読み": [
           "ニュウ"
         ],
@@ -443,8 +466,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "乾",
-        "url": "https://kanji.jitenon.jp/kanjic/1043",
+        char: "乾",
+        url: "https://kanji.jitenon.jp/kanjic/1043",
         "音読み": [
           "カン"
         ],
@@ -463,13 +486,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu01003",
-    "radical": "丨",
-    "reading": "たてぼう・ぼう",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu01003",
+    radical: "丨",
+    reading: "たてぼう・ぼう",
+    kanji: [
       {
-        "char": "中",
-        "url": "https://kanji.jitenon.jp/kanji/059",
+        char: "中",
+        url: "https://kanji.jitenon.jp/kanji/059",
         "音読み": [
           "ジュウ",
           "チュウ"
@@ -486,8 +509,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "串",
-        "url": "https://kanji.jitenon.jp/kanjid/1984",
+        char: "串",
+        url: "https://kanji.jitenon.jp/kanjid/1984",
         "音読み": [],
         "訓読み": [
           "くし"
@@ -503,13 +526,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu01004",
-    "radical": "丶",
-    "reading": "てん・ちょぼ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu01004",
+    radical: "丶",
+    reading: "てん・ちょぼ",
+    kanji: [
       {
-        "char": "丸",
-        "url": "https://kanji.jitenon.jp/kanji/103",
+        char: "丸",
+        url: "https://kanji.jitenon.jp/kanji/103",
         "音読み": [
           "ガン"
         ],
@@ -527,8 +550,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "之",
-        "url": "https://kanji.jitenon.jp/kanjie/2460",
+        char: "之",
+        url: "https://kanji.jitenon.jp/kanjie/2460",
         "音読み": [
           "シ"
         ],
@@ -547,8 +570,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "丹",
-        "url": "https://kanji.jitenon.jp/kanjic/1180",
+        char: "丹",
+        url: "https://kanji.jitenon.jp/kanjic/1180",
         "音読み": [
           "タン"
         ],
@@ -562,8 +585,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "主",
-        "url": "https://kanji.jitenon.jp/kanji/317",
+        char: "主",
+        url: "https://kanji.jitenon.jp/kanji/317",
         "音読み": [
           "シュ",
           "ス"
@@ -581,8 +604,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "丼",
-        "url": "https://kanji.jitenon.jp/kanjie/2076",
+        char: "丼",
+        url: "https://kanji.jitenon.jp/kanjie/2076",
         "音読み": [],
         "訓読み": [
           "どん",
@@ -599,13 +622,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu01005",
-    "radical": "亅",
-    "reading": "はねぼう・かぎ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu01005",
+    radical: "亅",
+    reading: "はねぼう・かぎ",
+    kanji: [
       {
-        "char": "了",
-        "url": "https://kanji.jitenon.jp/kanjid/1588",
+        char: "了",
+        url: "https://kanji.jitenon.jp/kanjid/1588",
         "音読み": [
           "リョウ"
         ],
@@ -619,8 +642,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "予",
-        "url": "https://kanji.jitenon.jp/kanji/424",
+        char: "予",
+        url: "https://kanji.jitenon.jp/kanji/424",
         "音読み": [
           "ヨ"
         ],
@@ -634,8 +657,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "争",
-        "url": "https://kanji.jitenon.jp/kanjib/556",
+        char: "争",
+        url: "https://kanji.jitenon.jp/kanjib/556",
         "音読み": [
           "ソウ"
         ],
@@ -651,8 +674,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "事",
-        "url": "https://kanji.jitenon.jp/kanji/309",
+        char: "事",
+        url: "https://kanji.jitenon.jp/kanji/309",
         "音読み": [
           "ジ",
           "ズ"
@@ -671,13 +694,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu01006",
-    "radical": "丿",
-    "reading": "の・はらいぼう",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu01006",
+    radical: "丿",
+    reading: "の・はらいぼう",
+    kanji: [
       {
-        "char": "乃",
-        "url": "https://kanji.jitenon.jp/kanjif/2697",
+        char: "乃",
+        url: "https://kanji.jitenon.jp/kanjif/2697",
         "音読み": [
           "ダイ",
           "ナイ"
@@ -696,8 +719,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "久",
-        "url": "https://kanji.jitenon.jp/kanjib/676",
+        char: "久",
+        url: "https://kanji.jitenon.jp/kanjib/676",
         "音読み": [
           "キュウ",
           "ク"
@@ -714,8 +737,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "之",
-        "url": "https://kanji.jitenon.jp/kanjie/2460",
+        char: "之",
+        url: "https://kanji.jitenon.jp/kanjie/2460",
         "音読み": [
           "シ"
         ],
@@ -734,8 +757,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "乏",
-        "url": "https://kanji.jitenon.jp/kanjid/1562",
+        char: "乏",
+        url: "https://kanji.jitenon.jp/kanjid/1562",
         "音読み": [
           "ボウ"
         ],
@@ -751,8 +774,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "乎",
-        "url": "https://kanji.jitenon.jp/kanjie/2374",
+        char: "乎",
+        url: "https://kanji.jitenon.jp/kanjie/2374",
         "音読み": [
           "コ"
         ],
@@ -771,8 +794,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "乍",
-        "url": "https://kanji.jitenon.jp/kanjie/2430",
+        char: "乍",
+        url: "https://kanji.jitenon.jp/kanjie/2430",
         "音読み": [
           "サ"
         ],
@@ -789,8 +812,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "乗",
-        "url": "https://kanji.jitenon.jp/kanji/336",
+        char: "乗",
+        url: "https://kanji.jitenon.jp/kanji/336",
         "音読み": [
           "ジョウ"
         ],
@@ -809,13 +832,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02001",
-    "radical": "冂",
-    "reading": "けいがまえ・まきがまえ・えんがまえ・どうがまえ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02001",
+    radical: "冂",
+    reading: "けいがまえ・まきがまえ・えんがまえ・どうがまえ",
+    kanji: [
       {
-        "char": "円",
-        "url": "https://kanji.jitenon.jp/kanji/004",
+        char: "円",
+        url: "https://kanji.jitenon.jp/kanji/004",
         "音読み": [
           "エン"
         ],
@@ -831,8 +854,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "内",
-        "url": "https://kanji.jitenon.jp/kanji/206",
+        char: "内",
+        url: "https://kanji.jitenon.jp/kanji/206",
         "音読み": [
           "ダイ",
           "ナイ"
@@ -849,8 +872,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "冊",
-        "url": "https://kanji.jitenon.jp/kanjib/882",
+        char: "冊",
+        url: "https://kanji.jitenon.jp/kanjib/882",
         "音読み": [
           "サク",
           "サツ"
@@ -865,8 +888,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "同",
-        "url": "https://kanji.jitenon.jp/kanji/204",
+        char: "同",
+        url: "https://kanji.jitenon.jp/kanji/204",
         "音読み": [
           "ドウ"
         ],
@@ -882,8 +905,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "再",
-        "url": "https://kanji.jitenon.jp/kanjib/709",
+        char: "再",
+        url: "https://kanji.jitenon.jp/kanjib/709",
         "音読み": [
           "サ",
           "サイ"
@@ -902,13 +925,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02002",
-    "radical": "人 亻",
-    "reading": "ひと・にんべん・ひとがしら・ひとやね",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02002",
+    radical: "人 亻",
+    reading: "ひと・にんべん・ひとがしら・ひとやね",
+    kanji: [
       {
-        "char": "人",
-        "url": "https://kanji.jitenon.jp/kanji/041",
+        char: "人",
+        url: "https://kanji.jitenon.jp/kanji/041",
         "音読み": [
           "ジン",
           "ニン"
@@ -925,8 +948,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "今",
-        "url": "https://kanji.jitenon.jp/kanji/113",
+        char: "今",
+        url: "https://kanji.jitenon.jp/kanji/113",
         "音読み": [
           "キン",
           "コン"
@@ -943,8 +966,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "化",
-        "url": "https://kanji.jitenon.jp/kanji/284",
+        char: "化",
+        url: "https://kanji.jitenon.jp/kanji/284",
         "音読み": [
           "カ",
           "ケ"
@@ -962,8 +985,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "仏",
-        "url": "https://kanji.jitenon.jp/kanjib/803",
+        char: "仏",
+        url: "https://kanji.jitenon.jp/kanjib/803",
         "音読み": [
           "ブツ"
         ],
@@ -979,8 +1002,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "仁",
-        "url": "https://kanji.jitenon.jp/kanjib/915",
+        char: "仁",
+        url: "https://kanji.jitenon.jp/kanjib/915",
         "音読み": [
           "ジン",
           "ニ"
@@ -995,8 +1018,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "介",
-        "url": "https://kanji.jitenon.jp/kanjic/1031",
+        char: "介",
+        url: "https://kanji.jitenon.jp/kanjic/1031",
         "音読み": [
           "カイ"
         ],
@@ -1010,8 +1033,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "仇",
-        "url": "https://kanji.jitenon.jp/kanjie/2296",
+        char: "仇",
+        url: "https://kanji.jitenon.jp/kanjie/2296",
         "音読み": [
           "キュウ"
         ],
@@ -1029,8 +1052,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "什",
-        "url": "https://kanji.jitenon.jp/kanjif/2523",
+        char: "什",
+        url: "https://kanji.jitenon.jp/kanjif/2523",
         "音読み": [
           "シュウ",
           "ジュウ"
@@ -1047,8 +1070,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "仕",
-        "url": "https://kanji.jitenon.jp/kanji/305",
+        char: "仕",
+        url: "https://kanji.jitenon.jp/kanji/305",
         "音読み": [
           "シ",
           "ジ"
@@ -1065,8 +1088,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "他",
-        "url": "https://kanji.jitenon.jp/kanji/353",
+        char: "他",
+        url: "https://kanji.jitenon.jp/kanji/353",
         "音読み": [
           "タ"
         ],
@@ -1082,8 +1105,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "代",
-        "url": "https://kanji.jitenon.jp/kanji/355",
+        char: "代",
+        url: "https://kanji.jitenon.jp/kanji/355",
         "音読み": [
           "タイ",
           "ダイ"
@@ -1103,8 +1126,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "以",
-        "url": "https://kanji.jitenon.jp/kanji/442",
+        char: "以",
+        url: "https://kanji.jitenon.jp/kanji/442",
         "音読み": [
           "イ"
         ],
@@ -1118,8 +1141,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "付",
-        "url": "https://kanji.jitenon.jp/kanjib/598",
+        char: "付",
+        url: "https://kanji.jitenon.jp/kanjib/598",
         "音読み": [
           "フ"
         ],
@@ -1136,8 +1159,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "令",
-        "url": "https://kanji.jitenon.jp/kanjib/632",
+        char: "令",
+        url: "https://kanji.jitenon.jp/kanjib/632",
         "音読み": [
           "レイ"
         ],
@@ -1151,8 +1174,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "仙",
-        "url": "https://kanji.jitenon.jp/kanjid/1784",
+        char: "仙",
+        url: "https://kanji.jitenon.jp/kanjid/1784",
         "音読み": [
           "セン"
         ],
@@ -1166,8 +1189,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "仔",
-        "url": "https://kanji.jitenon.jp/kanjie/2461",
+        char: "仔",
+        url: "https://kanji.jitenon.jp/kanjie/2461",
         "音読み": [
           "シ"
         ],
@@ -1185,8 +1208,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "休",
-        "url": "https://kanji.jitenon.jp/kanji/010",
+        char: "休",
+        url: "https://kanji.jitenon.jp/kanji/010",
         "音読み": [
           "キュウ"
         ],
@@ -1204,8 +1227,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "会",
-        "url": "https://kanji.jitenon.jp/kanji/092",
+        char: "会",
+        url: "https://kanji.jitenon.jp/kanji/092",
         "音読み": [
           "エ",
           "カイ"
@@ -1222,8 +1245,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "仲",
-        "url": "https://kanji.jitenon.jp/kanjib/568",
+        char: "仲",
+        url: "https://kanji.jitenon.jp/kanjib/568",
         "音読み": [
           "チュウ"
         ],
@@ -1239,8 +1262,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "伝",
-        "url": "https://kanji.jitenon.jp/kanjib/577",
+        char: "伝",
+        url: "https://kanji.jitenon.jp/kanjib/577",
         "音読み": [
           "デン"
         ],
@@ -1258,8 +1281,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "仮",
-        "url": "https://kanji.jitenon.jp/kanjib/658",
+        char: "仮",
+        url: "https://kanji.jitenon.jp/kanjib/658",
         "音読み": [
           "カ",
           "ケ"
@@ -1276,8 +1299,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "件",
-        "url": "https://kanji.jitenon.jp/kanjib/689",
+        char: "件",
+        url: "https://kanji.jitenon.jp/kanjib/689",
         "音読み": [
           "ケン"
         ],
@@ -1291,8 +1314,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "任",
-        "url": "https://kanji.jitenon.jp/kanjib/783",
+        char: "任",
+        url: "https://kanji.jitenon.jp/kanjib/783",
         "音読み": [
           "ニン"
         ],
@@ -1309,8 +1332,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "仰",
-        "url": "https://kanji.jitenon.jp/kanjic/1072",
+        char: "仰",
+        url: "https://kanji.jitenon.jp/kanjic/1072",
         "音読み": [
           "ギョウ",
           "コウ"
@@ -1328,8 +1351,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "企",
-        "url": "https://kanji.jitenon.jp/kanjic/1357",
+        char: "企",
+        url: "https://kanji.jitenon.jp/kanjic/1357",
         "音読み": [
           "キ"
         ],
@@ -1345,8 +1368,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "伐",
-        "url": "https://kanji.jitenon.jp/kanjid/1530",
+        char: "伐",
+        url: "https://kanji.jitenon.jp/kanjid/1530",
         "音読み": [
           "バツ"
         ],
@@ -1360,8 +1383,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "伏",
-        "url": "https://kanji.jitenon.jp/kanjid/1545",
+        char: "伏",
+        url: "https://kanji.jitenon.jp/kanjid/1545",
         "音読み": [
           "フク"
         ],
@@ -1378,8 +1401,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "伎",
-        "url": "https://kanji.jitenon.jp/kanjid/1974",
+        char: "伎",
+        url: "https://kanji.jitenon.jp/kanjid/1974",
         "音読み": [
           "キ"
         ],
@@ -1393,8 +1416,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "伊",
-        "url": "https://kanji.jitenon.jp/kanjie/2148",
+        char: "伊",
+        url: "https://kanji.jitenon.jp/kanjie/2148",
         "音読み": [
           "イ"
         ],
@@ -1412,8 +1435,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "伍",
-        "url": "https://kanji.jitenon.jp/kanjie/2386",
+        char: "伍",
+        url: "https://kanji.jitenon.jp/kanjie/2386",
         "音読み": [
           "ゴ"
         ],
@@ -1430,8 +1453,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "何",
-        "url": "https://kanji.jitenon.jp/kanji/087",
+        char: "何",
+        url: "https://kanji.jitenon.jp/kanji/087",
         "音読み": [
           "カ"
         ],
@@ -1448,8 +1471,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "作",
-        "url": "https://kanji.jitenon.jp/kanji/141",
+        char: "作",
+        url: "https://kanji.jitenon.jp/kanji/141",
         "音読み": [
           "サ",
           "サク"
@@ -1466,8 +1489,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "体",
-        "url": "https://kanji.jitenon.jp/kanji/182",
+        char: "体",
+        url: "https://kanji.jitenon.jp/kanji/182",
         "音読み": [
           "タイ",
           "テイ"
@@ -1484,8 +1507,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "住",
-        "url": "https://kanji.jitenon.jp/kanji/326",
+        char: "住",
+        url: "https://kanji.jitenon.jp/kanji/326",
         "音読み": [
           "ジュウ"
         ],
@@ -1502,8 +1525,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "位",
-        "url": "https://kanji.jitenon.jp/kanji/443",
+        char: "位",
+        url: "https://kanji.jitenon.jp/kanji/443",
         "音読み": [
           "イ"
         ],
@@ -1519,8 +1542,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "低",
-        "url": "https://kanji.jitenon.jp/kanjib/573",
+        char: "低",
+        url: "https://kanji.jitenon.jp/kanjib/573",
         "音読み": [
           "テイ"
         ],
@@ -1538,8 +1561,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "似",
-        "url": "https://kanji.jitenon.jp/kanjib/723",
+        char: "似",
+        url: "https://kanji.jitenon.jp/kanjib/723",
         "音読み": [
           "ジ"
         ],
@@ -1555,8 +1578,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "余",
-        "url": "https://kanji.jitenon.jp/kanjib/817",
+        char: "余",
+        url: "https://kanji.jitenon.jp/kanjib/817",
         "音読み": [
           "ヨ"
         ],
@@ -1573,8 +1596,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "伺",
-        "url": "https://kanji.jitenon.jp/kanjic/1113",
+        char: "伺",
+        url: "https://kanji.jitenon.jp/kanjic/1113",
         "音読み": [
           "シ"
         ],
@@ -1590,8 +1613,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "伸",
-        "url": "https://kanji.jitenon.jp/kanjic/1453",
+        char: "伸",
+        url: "https://kanji.jitenon.jp/kanjic/1453",
         "音読み": [
           "シン"
         ],
@@ -1609,8 +1632,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "伴",
-        "url": "https://kanji.jitenon.jp/kanjid/1532",
+        char: "伴",
+        url: "https://kanji.jitenon.jp/kanjid/1532",
         "音読み": [
           "ハン",
           "バン"
@@ -1627,8 +1650,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "佐",
-        "url": "https://kanji.jitenon.jp/kanjid/1696",
+        char: "佐",
+        url: "https://kanji.jitenon.jp/kanjid/1696",
         "音読み": [
           "サ"
         ],
@@ -1642,8 +1665,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "但",
-        "url": "https://kanji.jitenon.jp/kanjid/1809",
+        char: "但",
+        url: "https://kanji.jitenon.jp/kanjid/1809",
         "音読み": [],
         "訓読み": [
           "ただ（し）"
@@ -1657,8 +1680,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "伯",
-        "url": "https://kanji.jitenon.jp/kanjid/1859",
+        char: "伯",
+        url: "https://kanji.jitenon.jp/kanjid/1859",
         "音読み": [
           "ハク"
         ],
@@ -1672,8 +1695,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "佑",
-        "url": "https://kanji.jitenon.jp/kanjie/2166",
+        char: "佑",
+        url: "https://kanji.jitenon.jp/kanjie/2166",
         "音読み": [
           "ウ",
           "ユウ"
@@ -1691,8 +1714,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "伽",
-        "url": "https://kanji.jitenon.jp/kanjie/2203",
+        char: "伽",
+        url: "https://kanji.jitenon.jp/kanjie/2203",
         "音読み": [
           "カ",
           "ガ",
@@ -1710,8 +1733,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "佃",
-        "url": "https://kanji.jitenon.jp/kanjif/2766",
+        char: "佃",
+        url: "https://kanji.jitenon.jp/kanjif/2766",
         "音読み": [
           "テン",
           "デン"
@@ -1730,8 +1753,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "伶",
-        "url": "https://kanji.jitenon.jp/kanjif/2997",
+        char: "伶",
+        url: "https://kanji.jitenon.jp/kanjif/2997",
         "音読み": [
           "リョウ",
           "レイ"
@@ -1749,8 +1772,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "使",
-        "url": "https://kanji.jitenon.jp/kanji/306",
+        char: "使",
+        url: "https://kanji.jitenon.jp/kanji/306",
         "音読み": [
           "シ"
         ],
@@ -1766,8 +1789,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "命",
-        "url": "https://kanji.jitenon.jp/kanji/415",
+        char: "命",
+        url: "https://kanji.jitenon.jp/kanji/415",
         "音読み": [
           "ミョウ",
           "メイ"
@@ -1784,8 +1807,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "例",
-        "url": "https://kanji.jitenon.jp/kanjib/634",
+        char: "例",
+        url: "https://kanji.jitenon.jp/kanjib/634",
         "音読み": [
           "レイ"
         ],
@@ -1801,8 +1824,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "価",
-        "url": "https://kanji.jitenon.jp/kanjib/654",
+        char: "価",
+        url: "https://kanji.jitenon.jp/kanjib/654",
         "音読み": [
           "カ"
         ],
@@ -1818,8 +1841,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "舎",
-        "url": "https://kanji.jitenon.jp/kanjib/727",
+        char: "舎",
+        url: "https://kanji.jitenon.jp/kanjib/727",
         "音読み": [
           "シャ"
         ],
@@ -1833,8 +1856,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "供",
-        "url": "https://kanji.jitenon.jp/kanjib/850",
+        char: "供",
+        url: "https://kanji.jitenon.jp/kanjib/850",
         "音読み": [
           "キョウ",
           "ク"
@@ -1852,8 +1875,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "依",
-        "url": "https://kanji.jitenon.jp/kanjic/1005",
+        char: "依",
+        url: "https://kanji.jitenon.jp/kanjic/1005",
         "音読み": [
           "イ",
           "エ"
@@ -1868,8 +1891,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "佳",
-        "url": "https://kanji.jitenon.jp/kanjic/1333",
+        char: "佳",
+        url: "https://kanji.jitenon.jp/kanjic/1333",
         "音読み": [
           "カ"
         ],
@@ -1883,8 +1906,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "侍",
-        "url": "https://kanji.jitenon.jp/kanjic/1426",
+        char: "侍",
+        url: "https://kanji.jitenon.jp/kanjic/1426",
         "音読み": [
           "ジ"
         ],
@@ -1900,8 +1923,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "侮",
-        "url": "https://kanji.jitenon.jp/kanjid/1878",
+        char: "侮",
+        url: "https://kanji.jitenon.jp/kanjid/1878",
         "音読み": [
           "ブ"
         ],
@@ -1917,8 +1940,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "併",
-        "url": "https://kanji.jitenon.jp/kanjid/1885",
+        char: "併",
+        url: "https://kanji.jitenon.jp/kanjid/1885",
         "音読み": [
           "ヘイ"
         ],
@@ -1934,8 +1957,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "侃",
-        "url": "https://kanji.jitenon.jp/kanjie/2249",
+        char: "侃",
+        url: "https://kanji.jitenon.jp/kanjie/2249",
         "音読み": [
           "カン"
         ],
@@ -1951,8 +1974,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "侠",
-        "url": "https://kanji.jitenon.jp/kanjie/2312",
+        char: "侠",
+        url: "https://kanji.jitenon.jp/kanjie/2312",
         "音読み": [
           "キョウ"
         ],
@@ -1969,8 +1992,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "佼",
-        "url": "https://kanji.jitenon.jp/kanjie/2392",
+        char: "佼",
+        url: "https://kanji.jitenon.jp/kanjie/2392",
         "音読み": [
           "コウ"
         ],
@@ -1986,8 +2009,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "係",
-        "url": "https://kanji.jitenon.jp/kanji/286",
+        char: "係",
+        url: "https://kanji.jitenon.jp/kanji/286",
         "音読み": [
           "ケイ"
         ],
@@ -2004,8 +2027,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "信",
-        "url": "https://kanji.jitenon.jp/kanjib/542",
+        char: "信",
+        url: "https://kanji.jitenon.jp/kanjib/542",
         "音読み": [
           "シン"
         ],
@@ -2019,8 +2042,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "便",
-        "url": "https://kanji.jitenon.jp/kanjib/609",
+        char: "便",
+        url: "https://kanji.jitenon.jp/kanjib/609",
         "音読み": [
           "ビン",
           "ベン"
@@ -2037,8 +2060,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "保",
-        "url": "https://kanji.jitenon.jp/kanjib/806",
+        char: "保",
+        url: "https://kanji.jitenon.jp/kanjib/806",
         "音読み": [
           "ホ"
         ],
@@ -2054,8 +2077,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "侵",
-        "url": "https://kanji.jitenon.jp/kanjic/1151",
+        char: "侵",
+        url: "https://kanji.jitenon.jp/kanjic/1151",
         "音読み": [
           "シン"
         ],
@@ -2071,8 +2094,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "俗",
-        "url": "https://kanji.jitenon.jp/kanjic/1173",
+        char: "俗",
+        url: "https://kanji.jitenon.jp/kanjic/1173",
         "音読み": [
           "ゾク"
         ],
@@ -2086,8 +2109,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "促",
-        "url": "https://kanji.jitenon.jp/kanjic/1484",
+        char: "促",
+        url: "https://kanji.jitenon.jp/kanjic/1484",
         "音読み": [
           "ソク"
         ],
@@ -2103,8 +2126,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "侯",
-        "url": "https://kanji.jitenon.jp/kanjid/1689",
+        char: "侯",
+        url: "https://kanji.jitenon.jp/kanjid/1689",
         "音読み": [
           "コウ"
         ],
@@ -2118,8 +2141,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "俊",
-        "url": "https://kanji.jitenon.jp/kanjid/1733",
+        char: "俊",
+        url: "https://kanji.jitenon.jp/kanjid/1733",
         "音読み": [
           "シュン"
         ],
@@ -2133,8 +2156,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "侶",
-        "url": "https://kanji.jitenon.jp/kanjie/2125",
+        char: "侶",
+        url: "https://kanji.jitenon.jp/kanjie/2125",
         "音読み": [
           "リョ"
         ],
@@ -2148,8 +2171,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "俄",
-        "url": "https://kanji.jitenon.jp/kanjie/2216",
+        char: "俄",
+        url: "https://kanji.jitenon.jp/kanjie/2216",
         "音読み": [
           "ガ"
         ],
@@ -2166,8 +2189,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "俣",
-        "url": "https://kanji.jitenon.jp/kanjif/2929",
+        char: "俣",
+        url: "https://kanji.jitenon.jp/kanjif/2929",
         "音読み": [],
         "訓読み": [
           "また"
@@ -2181,8 +2204,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "倍",
-        "url": "https://kanji.jitenon.jp/kanji/388",
+        char: "倍",
+        url: "https://kanji.jitenon.jp/kanji/388",
         "音読み": [
           "バイ"
         ],
@@ -2196,8 +2219,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "候",
-        "url": "https://kanji.jitenon.jp/kanji/500",
+        char: "候",
+        url: "https://kanji.jitenon.jp/kanji/500",
         "音読み": [
           "コウ"
         ],
@@ -2213,8 +2236,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "借",
-        "url": "https://kanji.jitenon.jp/kanjib/528",
+        char: "借",
+        url: "https://kanji.jitenon.jp/kanjib/528",
         "音読み": [
           "シャク"
         ],
@@ -2230,8 +2253,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "倉",
-        "url": "https://kanji.jitenon.jp/kanjib/557",
+        char: "倉",
+        url: "https://kanji.jitenon.jp/kanjib/557",
         "音読み": [
           "ソウ"
         ],
@@ -2247,8 +2270,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "個",
-        "url": "https://kanji.jitenon.jp/kanjib/693",
+        char: "個",
+        url: "https://kanji.jitenon.jp/kanjib/693",
         "音読み": [
           "コ"
         ],
@@ -2262,8 +2285,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "修",
-        "url": "https://kanji.jitenon.jp/kanjib/729",
+        char: "修",
+        url: "https://kanji.jitenon.jp/kanjib/729",
         "音読み": [
           "シュ",
           "シュウ"
@@ -2281,8 +2304,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "俵",
-        "url": "https://kanji.jitenon.jp/kanjib/794",
+        char: "俵",
+        url: "https://kanji.jitenon.jp/kanjib/794",
         "音読み": [
           "ヒョウ"
         ],
@@ -2298,8 +2321,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "値",
-        "url": "https://kanji.jitenon.jp/kanjib/944",
+        char: "値",
+        url: "https://kanji.jitenon.jp/kanjib/944",
         "音読み": [
           "チ"
         ],
@@ -2316,8 +2339,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "俳",
-        "url": "https://kanji.jitenon.jp/kanjib/966",
+        char: "俳",
+        url: "https://kanji.jitenon.jp/kanjib/966",
         "音読み": [
           "ハイ"
         ],
@@ -2331,8 +2354,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "倒",
-        "url": "https://kanji.jitenon.jp/kanjic/1212",
+        char: "倒",
+        url: "https://kanji.jitenon.jp/kanjic/1212",
         "音読み": [
           "トウ"
         ],
@@ -2349,8 +2372,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "倹",
-        "url": "https://kanji.jitenon.jp/kanjic/1389",
+        char: "倹",
+        url: "https://kanji.jitenon.jp/kanjic/1389",
         "音読み": [
           "ケン"
         ],
@@ -2364,8 +2387,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "倣",
-        "url": "https://kanji.jitenon.jp/kanjid/1557",
+        char: "倣",
+        url: "https://kanji.jitenon.jp/kanjid/1557",
         "音読み": [
           "ホウ"
         ],
@@ -2381,8 +2404,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "俸",
-        "url": "https://kanji.jitenon.jp/kanjid/1892",
+        char: "俸",
+        url: "https://kanji.jitenon.jp/kanjid/1892",
         "音読み": [
           "ホウ"
         ],
@@ -2396,8 +2419,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "倫",
-        "url": "https://kanji.jitenon.jp/kanjid/1931",
+        char: "倫",
+        url: "https://kanji.jitenon.jp/kanjid/1931",
         "音読み": [
           "リン"
         ],
@@ -2411,8 +2434,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "俺",
-        "url": "https://kanji.jitenon.jp/kanjid/1957",
+        char: "俺",
+        url: "https://kanji.jitenon.jp/kanjid/1957",
         "音読み": [],
         "訓読み": [
           "おれ"
@@ -2426,8 +2449,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "倭",
-        "url": "https://kanji.jitenon.jp/kanjie/2149",
+        char: "倭",
+        url: "https://kanji.jitenon.jp/kanjie/2149",
         "音読み": [
           "イ",
           "ワ"
@@ -2444,8 +2467,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "倶",
-        "url": "https://kanji.jitenon.jp/kanjie/2335",
+        char: "倶",
+        url: "https://kanji.jitenon.jp/kanjie/2335",
         "音読み": [
           "ク",
           "グ"
@@ -2462,8 +2485,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "倦",
-        "url": "https://kanji.jitenon.jp/kanjie/2363",
+        char: "倦",
+        url: "https://kanji.jitenon.jp/kanjie/2363",
         "音読み": [
           "ケン",
           "ゲン"
@@ -2483,8 +2506,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "倖",
-        "url": "https://kanji.jitenon.jp/kanjie/2393",
+        char: "倖",
+        url: "https://kanji.jitenon.jp/kanjie/2393",
         "音読み": [
           "コウ"
         ],
@@ -2501,8 +2524,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "健",
-        "url": "https://kanji.jitenon.jp/kanji/497",
+        char: "健",
+        url: "https://kanji.jitenon.jp/kanji/497",
         "音読み": [
           "ケン"
         ],
@@ -2518,8 +2541,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "側",
-        "url": "https://kanji.jitenon.jp/kanjib/559",
+        char: "側",
+        url: "https://kanji.jitenon.jp/kanjib/559",
         "音読み": [
           "ソク"
         ],
@@ -2535,8 +2558,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "停",
-        "url": "https://kanji.jitenon.jp/kanjib/572",
+        char: "停",
+        url: "https://kanji.jitenon.jp/kanjib/572",
         "音読み": [
           "テイ"
         ],
@@ -2550,8 +2573,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "偶",
-        "url": "https://kanji.jitenon.jp/kanjic/1378",
+        char: "偶",
+        url: "https://kanji.jitenon.jp/kanjic/1378",
         "音読み": [
           "グウ"
         ],
@@ -2565,8 +2588,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "偽",
-        "url": "https://kanji.jitenon.jp/kanjid/1650",
+        char: "偽",
+        url: "https://kanji.jitenon.jp/kanjid/1650",
         "音読み": [
           "ギ"
         ],
@@ -2583,8 +2606,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "偵",
-        "url": "https://kanji.jitenon.jp/kanjid/1831",
+        char: "偵",
+        url: "https://kanji.jitenon.jp/kanjid/1831",
         "音読み": [
           "テイ"
         ],
@@ -2598,8 +2621,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "偏",
-        "url": "https://kanji.jitenon.jp/kanjid/1887",
+        char: "偏",
+        url: "https://kanji.jitenon.jp/kanjid/1887",
         "音読み": [
           "ヘン"
         ],
@@ -2615,8 +2638,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "偲",
-        "url": "https://kanji.jitenon.jp/kanjie/2462",
+        char: "偲",
+        url: "https://kanji.jitenon.jp/kanjie/2462",
         "音読み": [
           "サイ",
           "シ"
@@ -2633,8 +2656,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "備",
-        "url": "https://kanji.jitenon.jp/kanjib/793",
+        char: "備",
+        url: "https://kanji.jitenon.jp/kanjib/793",
         "音読み": [
           "ビ"
         ],
@@ -2651,8 +2674,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "偉",
-        "url": "https://kanji.jitenon.jp/kanjic/1007",
+        char: "偉",
+        url: "https://kanji.jitenon.jp/kanjic/1007",
         "音読み": [
           "イ"
         ],
@@ -2668,8 +2691,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "傍",
-        "url": "https://kanji.jitenon.jp/kanjic/1273",
+        char: "傍",
+        url: "https://kanji.jitenon.jp/kanjic/1273",
         "音読み": [
           "ボウ"
         ],
@@ -2685,8 +2708,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "傘",
-        "url": "https://kanji.jitenon.jp/kanjid/1707",
+        char: "傘",
+        url: "https://kanji.jitenon.jp/kanjid/1707",
         "音読み": [
           "サン"
         ],
@@ -2702,8 +2725,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "働",
-        "url": "https://kanji.jitenon.jp/kanjib/581",
+        char: "働",
+        url: "https://kanji.jitenon.jp/kanjib/581",
         "音読み": [
           "ドウ"
         ],
@@ -2719,8 +2742,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "傷",
-        "url": "https://kanji.jitenon.jp/kanjib/909",
+        char: "傷",
+        url: "https://kanji.jitenon.jp/kanjib/909",
         "音読み": [
           "ショウ"
         ],
@@ -2738,8 +2761,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "傾",
-        "url": "https://kanji.jitenon.jp/kanjic/1077",
+        char: "傾",
+        url: "https://kanji.jitenon.jp/kanjic/1077",
         "音読み": [
           "ケイ"
         ],
@@ -2756,8 +2779,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "僧",
-        "url": "https://kanji.jitenon.jp/kanjic/1170",
+        char: "僧",
+        url: "https://kanji.jitenon.jp/kanjic/1170",
         "音読み": [
           "ソウ"
         ],
@@ -2771,8 +2794,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "催",
-        "url": "https://kanji.jitenon.jp/kanjic/1415",
+        char: "催",
+        url: "https://kanji.jitenon.jp/kanjic/1415",
         "音読み": [
           "サイ"
         ],
@@ -2788,8 +2811,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "債",
-        "url": "https://kanji.jitenon.jp/kanjic/1416",
+        char: "債",
+        url: "https://kanji.jitenon.jp/kanjic/1416",
         "音読み": [
           "サイ"
         ],
@@ -2803,8 +2826,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "傑",
-        "url": "https://kanji.jitenon.jp/kanjid/1673",
+        char: "傑",
+        url: "https://kanji.jitenon.jp/kanjid/1673",
         "音読み": [
           "ケツ"
         ],
@@ -2818,8 +2841,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "僅",
-        "url": "https://kanji.jitenon.jp/kanjid/1981",
+        char: "僅",
+        url: "https://kanji.jitenon.jp/kanjid/1981",
         "音読み": [
           "キン"
         ],
@@ -2835,8 +2858,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "傲",
-        "url": "https://kanji.jitenon.jp/kanjie/2002",
+        char: "傲",
+        url: "https://kanji.jitenon.jp/kanjie/2002",
         "音読み": [
           "ゴウ"
         ],
@@ -2850,8 +2873,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "傭",
-        "url": "https://kanji.jitenon.jp/kanjif/2952",
+        char: "傭",
+        url: "https://kanji.jitenon.jp/kanjif/2952",
         "音読み": [
           "チョウ",
           "ヨウ"
@@ -2869,8 +2892,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "像",
-        "url": "https://kanji.jitenon.jp/kanjib/761",
+        char: "像",
+        url: "https://kanji.jitenon.jp/kanjib/761",
         "音読み": [
           "ゾウ"
         ],
@@ -2884,8 +2907,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "僕",
-        "url": "https://kanji.jitenon.jp/kanjid/1895",
+        char: "僕",
+        url: "https://kanji.jitenon.jp/kanjid/1895",
         "音読み": [
           "ボク"
         ],
@@ -2899,8 +2922,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "僚",
-        "url": "https://kanji.jitenon.jp/kanjid/1929",
+        char: "僚",
+        url: "https://kanji.jitenon.jp/kanjid/1929",
         "音読み": [
           "リョウ"
         ],
@@ -2914,8 +2937,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "僑",
-        "url": "https://kanji.jitenon.jp/kanjie/2313",
+        char: "僑",
+        url: "https://kanji.jitenon.jp/kanjie/2313",
         "音読み": [
           "キョウ"
         ],
@@ -2932,8 +2955,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "億",
-        "url": "https://kanji.jitenon.jp/kanji/451",
+        char: "億",
+        url: "https://kanji.jitenon.jp/kanji/451",
         "音読み": [
           "オク"
         ],
@@ -2947,8 +2970,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "儀",
-        "url": "https://kanji.jitenon.jp/kanjic/1052",
+        char: "儀",
+        url: "https://kanji.jitenon.jp/kanjic/1052",
         "音読み": [
           "ギ"
         ],
@@ -2962,8 +2985,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "舗",
-        "url": "https://kanji.jitenon.jp/kanjic/1265",
+        char: "舗",
+        url: "https://kanji.jitenon.jp/kanjic/1265",
         "音読み": [
           "ホ"
         ],
@@ -2977,8 +3000,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "僻",
-        "url": "https://kanji.jitenon.jp/kanjif/2891",
+        char: "僻",
+        url: "https://kanji.jitenon.jp/kanjif/2891",
         "音読み": [
           "ヘイ",
           "ヘキ"
@@ -2997,8 +3020,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "儒",
-        "url": "https://kanji.jitenon.jp/kanjid/1719",
+        char: "儒",
+        url: "https://kanji.jitenon.jp/kanjid/1719",
         "音読み": [
           "ジュ"
         ],
@@ -3012,8 +3035,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "儘",
-        "url": "https://kanji.jitenon.jp/kanjif/2603",
+        char: "儘",
+        url: "https://kanji.jitenon.jp/kanjif/2603",
         "音読み": [
           "ジン"
         ],
@@ -3030,8 +3053,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "優",
-        "url": "https://kanji.jitenon.jp/kanjib/991",
+        char: "優",
+        url: "https://kanji.jitenon.jp/kanjib/991",
         "音読み": [
           "ユウ"
         ],
@@ -3048,8 +3071,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "償",
-        "url": "https://kanji.jitenon.jp/kanjid/1746",
+        char: "償",
+        url: "https://kanji.jitenon.jp/kanjid/1746",
         "音読み": [
           "ショウ"
         ],
@@ -3065,8 +3088,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "儲",
-        "url": "https://kanji.jitenon.jp/kanjif/2726",
+        char: "儲",
+        url: "https://kanji.jitenon.jp/kanjif/2726",
         "音読み": [
           "チョ"
         ],
@@ -3087,13 +3110,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02003",
-    "radical": "二",
-    "reading": "に",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02003",
+    radical: "二",
+    reading: "に",
+    kanji: [
       {
-        "char": "二",
-        "url": "https://kanji.jitenon.jp/kanji/064",
+        char: "二",
+        url: "https://kanji.jitenon.jp/kanji/064",
         "音読み": [
           "ニ"
         ],
@@ -3110,8 +3133,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "五",
-        "url": "https://kanji.jitenon.jp/kanji/019",
+        char: "五",
+        url: "https://kanji.jitenon.jp/kanji/019",
         "音読み": [
           "ゴ"
         ],
@@ -3128,8 +3151,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "互",
-        "url": "https://kanji.jitenon.jp/kanjic/1093",
+        char: "互",
+        url: "https://kanji.jitenon.jp/kanjic/1093",
         "音読み": [
           "ゴ"
         ],
@@ -3145,8 +3168,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "井",
-        "url": "https://kanji.jitenon.jp/kanjic/1162",
+        char: "井",
+        url: "https://kanji.jitenon.jp/kanjic/1162",
         "音読み": [
           "ショウ",
           "セイ"
@@ -3163,8 +3186,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "云",
-        "url": "https://kanji.jitenon.jp/kanjie/2171",
+        char: "云",
+        url: "https://kanji.jitenon.jp/kanjie/2171",
         "音読み": [
           "ウン"
         ],
@@ -3180,8 +3203,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "亙",
-        "url": "https://kanji.jitenon.jp/kanjie/2390",
+        char: "亙",
+        url: "https://kanji.jitenon.jp/kanjie/2390",
         "音読み": [
           "コウ"
         ],
@@ -3197,8 +3220,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "亘",
-        "url": "https://kanji.jitenon.jp/kanjie/2391",
+        char: "亘",
+        url: "https://kanji.jitenon.jp/kanjie/2391",
         "音読み": [
           "コウ",
           "セン"
@@ -3215,8 +3238,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "亜",
-        "url": "https://kanji.jitenon.jp/kanjid/1605",
+        char: "亜",
+        url: "https://kanji.jitenon.jp/kanjid/1605",
         "音読み": [
           "ア"
         ],
@@ -3230,8 +3253,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "些",
-        "url": "https://kanji.jitenon.jp/kanjie/2431",
+        char: "些",
+        url: "https://kanji.jitenon.jp/kanjie/2431",
         "音読み": [
           "サ"
         ],
@@ -3250,13 +3273,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02004",
-    "radical": "十",
-    "reading": "じゅう",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02004",
+    radical: "十",
+    reading: "じゅう",
+    kanji: [
       {
-        "char": "十",
-        "url": "https://kanji.jitenon.jp/kanji/034",
+        char: "十",
+        url: "https://kanji.jitenon.jp/kanji/034",
         "音読み": [
           "ジッ",
           "ジュウ"
@@ -3274,8 +3297,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "千",
-        "url": "https://kanji.jitenon.jp/kanji/048",
+        char: "千",
+        url: "https://kanji.jitenon.jp/kanji/048",
         "音読み": [
           "セン"
         ],
@@ -3291,8 +3314,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "午",
-        "url": "https://kanji.jitenon.jp/kanji/124",
+        char: "午",
+        url: "https://kanji.jitenon.jp/kanji/124",
         "音読み": [
           "ゴ"
         ],
@@ -3306,8 +3329,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "升",
-        "url": "https://kanji.jitenon.jp/kanjid/1742",
+        char: "升",
+        url: "https://kanji.jitenon.jp/kanjid/1742",
         "音読み": [
           "ショウ"
         ],
@@ -3323,8 +3346,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "廿",
-        "url": "https://kanji.jitenon.jp/kanjif/2524",
+        char: "廿",
+        url: "https://kanji.jitenon.jp/kanjif/2524",
         "音読み": [
           "ジュウ"
         ],
@@ -3340,8 +3363,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "半",
-        "url": "https://kanji.jitenon.jp/kanji/213",
+        char: "半",
+        url: "https://kanji.jitenon.jp/kanji/213",
         "音読み": [
           "ハン"
         ],
@@ -3357,8 +3380,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "協",
-        "url": "https://kanji.jitenon.jp/kanji/482",
+        char: "協",
+        url: "https://kanji.jitenon.jp/kanji/482",
         "音読み": [
           "キョウ"
         ],
@@ -3372,8 +3395,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "卒",
-        "url": "https://kanji.jitenon.jp/kanjib/561",
+        char: "卒",
+        url: "https://kanji.jitenon.jp/kanjib/561",
         "音読み": [
           "ソツ"
         ],
@@ -3387,8 +3410,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "卓",
-        "url": "https://kanji.jitenon.jp/kanjic/1493",
+        char: "卓",
+        url: "https://kanji.jitenon.jp/kanjic/1493",
         "音読み": [
           "タク"
         ],
@@ -3402,8 +3425,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "南",
-        "url": "https://kanji.jitenon.jp/kanji/207",
+        char: "南",
+        url: "https://kanji.jitenon.jp/kanji/207",
         "音読み": [
           "ナ",
           "ナン"
@@ -3420,8 +3443,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "単",
-        "url": "https://kanji.jitenon.jp/kanjib/566",
+        char: "単",
+        url: "https://kanji.jitenon.jp/kanjib/566",
         "音読み": [
           "タン"
         ],
@@ -3435,8 +3458,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "卑",
-        "url": "https://kanji.jitenon.jp/kanjid/1537",
+        char: "卑",
+        url: "https://kanji.jitenon.jp/kanjid/1537",
         "音読み": [
           "ヒ"
         ],
@@ -3454,8 +3477,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "博",
-        "url": "https://kanji.jitenon.jp/kanjib/591",
+        char: "博",
+        url: "https://kanji.jitenon.jp/kanjib/591",
         "音読み": [
           "ハク",
           "バク"
@@ -3472,13 +3495,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02005",
-    "radical": "凵",
-    "reading": "かんにょう・うけばこ・かんがまえ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02005",
+    radical: "凵",
+    reading: "かんにょう・うけばこ・かんがまえ",
+    kanji: [
       {
-        "char": "凶",
-        "url": "https://kanji.jitenon.jp/kanjic/1065",
+        char: "凶",
+        url: "https://kanji.jitenon.jp/kanjic/1065",
         "音読み": [
           "キョウ"
         ],
@@ -3492,8 +3515,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "出",
-        "url": "https://kanji.jitenon.jp/kanji/035",
+        char: "出",
+        url: "https://kanji.jitenon.jp/kanji/035",
         "音読み": [
           "シュツ",
           "スイ"
@@ -3511,8 +3534,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "凹",
-        "url": "https://kanji.jitenon.jp/kanjid/1613",
+        char: "凹",
+        url: "https://kanji.jitenon.jp/kanjid/1613",
         "音読み": [
           "オウ"
         ],
@@ -3526,8 +3549,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "凸",
-        "url": "https://kanji.jitenon.jp/kanjid/1846",
+        char: "凸",
+        url: "https://kanji.jitenon.jp/kanjid/1846",
         "音読み": [
           "トツ"
         ],
@@ -3541,8 +3564,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "函",
-        "url": "https://kanji.jitenon.jp/kanjie/2250",
+        char: "函",
+        url: "https://kanji.jitenon.jp/kanjie/2250",
         "音読み": [
           "カン"
         ],
@@ -3560,8 +3583,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "凾",
-        "url": "https://kanji.jitenon.jp/kanjie/2251",
+        char: "凾",
+        url: "https://kanji.jitenon.jp/kanjie/2251",
         "音読み": [
           "カン"
         ],
@@ -3581,13 +3604,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02006",
-    "radical": "儿",
-    "reading": "にんにょう・ひとあし",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02006",
+    radical: "儿",
+    reading: "にんにょう・ひとあし",
+    kanji: [
       {
-        "char": "元",
-        "url": "https://kanji.jitenon.jp/kanji/120",
+        char: "元",
+        url: "https://kanji.jitenon.jp/kanji/120",
         "音読み": [
           "ガン",
           "ゲン"
@@ -3604,8 +3627,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "允",
-        "url": "https://kanji.jitenon.jp/kanjie/2161",
+        char: "允",
+        url: "https://kanji.jitenon.jp/kanjie/2161",
         "音読み": [
           "イン"
         ],
@@ -3624,8 +3647,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "兄",
-        "url": "https://kanji.jitenon.jp/kanji/114",
+        char: "兄",
+        url: "https://kanji.jitenon.jp/kanji/114",
         "音読み": [
           "キョウ",
           "ケイ"
@@ -3642,8 +3665,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "先",
-        "url": "https://kanji.jitenon.jp/kanji/049",
+        char: "先",
+        url: "https://kanji.jitenon.jp/kanji/049",
         "音読み": [
           "セン"
         ],
@@ -3659,8 +3682,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "光",
-        "url": "https://kanji.jitenon.jp/kanji/129",
+        char: "光",
+        url: "https://kanji.jitenon.jp/kanji/129",
         "音読み": [
           "コウ"
         ],
@@ -3677,8 +3700,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "兆",
-        "url": "https://kanji.jitenon.jp/kanjib/570",
+        char: "兆",
+        url: "https://kanji.jitenon.jp/kanjib/570",
         "音読み": [
           "チョウ"
         ],
@@ -3695,8 +3718,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "充",
-        "url": "https://kanji.jitenon.jp/kanjid/1727",
+        char: "充",
+        url: "https://kanji.jitenon.jp/kanjid/1727",
         "音読み": [
           "ジュウ"
         ],
@@ -3712,8 +3735,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "兇",
-        "url": "https://kanji.jitenon.jp/kanjie/2314",
+        char: "兇",
+        url: "https://kanji.jitenon.jp/kanjie/2314",
         "音読み": [
           "キョウ"
         ],
@@ -3730,8 +3753,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "売",
-        "url": "https://kanji.jitenon.jp/kanji/211",
+        char: "売",
+        url: "https://kanji.jitenon.jp/kanji/211",
         "音読み": [
           "バイ"
         ],
@@ -3748,8 +3771,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "児",
-        "url": "https://kanji.jitenon.jp/kanjib/525",
+        char: "児",
+        url: "https://kanji.jitenon.jp/kanjib/525",
         "音読み": [
           "ジ",
           "ニ"
@@ -3764,8 +3787,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "克",
-        "url": "https://kanji.jitenon.jp/kanjic/1409",
+        char: "克",
+        url: "https://kanji.jitenon.jp/kanjic/1409",
         "音読み": [
           "コク"
         ],
@@ -3779,8 +3802,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "兎",
-        "url": "https://kanji.jitenon.jp/kanjif/2776",
+        char: "兎",
+        url: "https://kanji.jitenon.jp/kanjif/2776",
         "音読み": [
           "ト"
         ],
@@ -3796,8 +3819,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "免",
-        "url": "https://kanji.jitenon.jp/kanjid/1576",
+        char: "免",
+        url: "https://kanji.jitenon.jp/kanjid/1576",
         "音読み": [
           "メン"
         ],
@@ -3813,8 +3836,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "尭",
-        "url": "https://kanji.jitenon.jp/kanjie/2326",
+        char: "尭",
+        url: "https://kanji.jitenon.jp/kanjie/2326",
         "音読み": [
           "ギョウ"
         ],
@@ -3830,8 +3853,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "兔",
-        "url": "https://kanji.jitenon.jp/kanjif/2777",
+        char: "兔",
+        url: "https://kanji.jitenon.jp/kanjif/2777",
         "音読み": [
           "ト"
         ],
@@ -3847,8 +3870,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "党",
-        "url": "https://kanji.jitenon.jp/kanjib/954",
+        char: "党",
+        url: "https://kanji.jitenon.jp/kanjib/954",
         "音読み": [
           "トウ"
         ],
@@ -3862,8 +3885,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "兜",
-        "url": "https://kanji.jitenon.jp/kanjif/2778",
+        char: "兜",
+        url: "https://kanji.jitenon.jp/kanjif/2778",
         "音読み": [
           "ト",
           "トウ"
@@ -3882,13 +3905,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02007",
-    "radical": "入",
-    "reading": "いる・にゅう・いりがしら・いりやね",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02007",
+    radical: "入",
+    reading: "いる・にゅう・いりがしら・いりやね",
+    kanji: [
       {
-        "char": "入",
-        "url": "https://kanji.jitenon.jp/kanji/066",
+        char: "入",
+        url: "https://kanji.jitenon.jp/kanji/066",
         "音読み": [
           "ニュウ"
         ],
@@ -3906,8 +3929,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "内",
-        "url": "https://kanji.jitenon.jp/kanji/206",
+        char: "内",
+        url: "https://kanji.jitenon.jp/kanji/206",
         "音読み": [
           "ダイ",
           "ナイ"
@@ -3924,8 +3947,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "全",
-        "url": "https://kanji.jitenon.jp/kanji/346",
+        char: "全",
+        url: "https://kanji.jitenon.jp/kanji/346",
         "音読み": [
           "ゼン"
         ],
@@ -3944,13 +3967,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02008",
-    "radical": "八",
-    "reading": "はち・はちがしら・は",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02008",
+    radical: "八",
+    reading: "はち・はちがしら・は",
+    kanji: [
       {
-        "char": "八",
-        "url": "https://kanji.jitenon.jp/kanji/069",
+        char: "八",
+        url: "https://kanji.jitenon.jp/kanji/069",
         "音読み": [
           "ハチ"
         ],
@@ -3969,8 +3992,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "六",
-        "url": "https://kanji.jitenon.jp/kanji/080",
+        char: "六",
+        url: "https://kanji.jitenon.jp/kanji/080",
         "音読み": [
           "ロク"
         ],
@@ -3989,8 +4012,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "公",
-        "url": "https://kanji.jitenon.jp/kanji/130",
+        char: "公",
+        url: "https://kanji.jitenon.jp/kanji/130",
         "音読み": [
           "コウ"
         ],
@@ -4006,8 +4029,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "共",
-        "url": "https://kanji.jitenon.jp/kanji/485",
+        char: "共",
+        url: "https://kanji.jitenon.jp/kanji/485",
         "音読み": [
           "キョウ"
         ],
@@ -4023,8 +4046,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "兵",
-        "url": "https://kanji.jitenon.jp/kanjib/605",
+        char: "兵",
+        url: "https://kanji.jitenon.jp/kanjib/605",
         "音読み": [
           "ヒョウ",
           "ヘイ"
@@ -4039,8 +4062,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "具",
-        "url": "https://kanji.jitenon.jp/kanji/281",
+        char: "具",
+        url: "https://kanji.jitenon.jp/kanji/281",
         "音読み": [
           "グ"
         ],
@@ -4054,8 +4077,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "典",
-        "url": "https://kanji.jitenon.jp/kanjib/576",
+        char: "典",
+        url: "https://kanji.jitenon.jp/kanjib/576",
         "音読み": [
           "テン"
         ],
@@ -4069,8 +4092,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "其",
-        "url": "https://kanji.jitenon.jp/kanjie/2272",
+        char: "其",
+        url: "https://kanji.jitenon.jp/kanjie/2272",
         "音読み": [
           "キ"
         ],
@@ -4087,8 +4110,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "兼",
-        "url": "https://kanji.jitenon.jp/kanjic/1084",
+        char: "兼",
+        url: "https://kanji.jitenon.jp/kanjic/1084",
         "音読み": [
           "ケン"
         ],
@@ -4106,13 +4129,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02009",
-    "radical": "力",
-    "reading": "ちから",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02009",
+    radical: "力",
+    reading: "ちから",
+    kanji: [
       {
-        "char": "力",
-        "url": "https://kanji.jitenon.jp/kanji/077",
+        char: "力",
+        url: "https://kanji.jitenon.jp/kanji/077",
         "音読み": [
           "リキ",
           "リョク"
@@ -4129,8 +4152,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "加",
-        "url": "https://kanji.jitenon.jp/kanji/454",
+        char: "加",
+        url: "https://kanji.jitenon.jp/kanji/454",
         "音読み": [
           "カ"
         ],
@@ -4147,8 +4170,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "功",
-        "url": "https://kanji.jitenon.jp/kanjib/501",
+        char: "功",
+        url: "https://kanji.jitenon.jp/kanjib/501",
         "音読み": [
           "ク",
           "コウ"
@@ -4163,8 +4186,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "幼",
-        "url": "https://kanji.jitenon.jp/kanjib/993",
+        char: "幼",
+        url: "https://kanji.jitenon.jp/kanjib/993",
         "音読み": [
           "ヨウ"
         ],
@@ -4180,8 +4203,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "劣",
-        "url": "https://kanji.jitenon.jp/kanjic/1312",
+        char: "劣",
+        url: "https://kanji.jitenon.jp/kanjic/1312",
         "音読み": [
           "レツ"
         ],
@@ -4197,8 +4220,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "助",
-        "url": "https://kanji.jitenon.jp/kanji/330",
+        char: "助",
+        url: "https://kanji.jitenon.jp/kanji/330",
         "音読み": [
           "ジョ"
         ],
@@ -4216,8 +4239,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "努",
-        "url": "https://kanji.jitenon.jp/kanjib/579",
+        char: "努",
+        url: "https://kanji.jitenon.jp/kanjib/579",
         "音読み": [
           "ド"
         ],
@@ -4233,8 +4256,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "労",
-        "url": "https://kanji.jitenon.jp/kanjib/638",
+        char: "労",
+        url: "https://kanji.jitenon.jp/kanjib/638",
         "音読み": [
           "ロウ"
         ],
@@ -4248,8 +4271,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "励",
-        "url": "https://kanji.jitenon.jp/kanjid/1595",
+        char: "励",
+        url: "https://kanji.jitenon.jp/kanjid/1595",
         "音読み": [
           "レイ"
         ],
@@ -4266,8 +4289,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "劫",
-        "url": "https://kanji.jitenon.jp/kanjie/2315",
+        char: "劫",
+        url: "https://kanji.jitenon.jp/kanjie/2315",
         "音読み": [
           "キョウ",
           "コウ",
@@ -4286,8 +4309,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "効",
-        "url": "https://kanji.jitenon.jp/kanjib/696",
+        char: "効",
+        url: "https://kanji.jitenon.jp/kanjib/696",
         "音読み": [
           "コウ"
         ],
@@ -4303,8 +4326,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "劾",
-        "url": "https://kanji.jitenon.jp/kanjid/1625",
+        char: "劾",
+        url: "https://kanji.jitenon.jp/kanjid/1625",
         "音読み": [
           "ガイ"
         ],
@@ -4318,8 +4341,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "勇",
-        "url": "https://kanji.jitenon.jp/kanjib/620",
+        char: "勇",
+        url: "https://kanji.jitenon.jp/kanjib/620",
         "音読み": [
           "ユウ"
         ],
@@ -4335,8 +4358,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "勅",
-        "url": "https://kanji.jitenon.jp/kanjid/1821",
+        char: "勅",
+        url: "https://kanji.jitenon.jp/kanjid/1821",
         "音読み": [
           "チョク"
         ],
@@ -4350,8 +4373,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "勃",
-        "url": "https://kanji.jitenon.jp/kanjie/2106",
+        char: "勃",
+        url: "https://kanji.jitenon.jp/kanjie/2106",
         "音読み": [
           "ボツ"
         ],
@@ -4365,8 +4388,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "勉",
-        "url": "https://kanji.jitenon.jp/kanji/412",
+        char: "勉",
+        url: "https://kanji.jitenon.jp/kanji/412",
         "音読み": [
           "ベン"
         ],
@@ -4380,8 +4403,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "動",
-        "url": "https://kanji.jitenon.jp/kanji/383",
+        char: "動",
+        url: "https://kanji.jitenon.jp/kanji/383",
         "音読み": [
           "ドウ"
         ],
@@ -4398,8 +4421,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "務",
-        "url": "https://kanji.jitenon.jp/kanjib/813",
+        char: "務",
+        url: "https://kanji.jitenon.jp/kanjib/813",
         "音読み": [
           "ム"
         ],
@@ -4416,8 +4439,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "勘",
-        "url": "https://kanji.jitenon.jp/kanjic/1349",
+        char: "勘",
+        url: "https://kanji.jitenon.jp/kanjic/1349",
         "音読み": [
           "カン"
         ],
@@ -4431,8 +4454,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "勝",
-        "url": "https://kanji.jitenon.jp/kanji/335",
+        char: "勝",
+        url: "https://kanji.jitenon.jp/kanji/335",
         "音読み": [
           "ショウ"
         ],
@@ -4449,8 +4472,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "勤",
-        "url": "https://kanji.jitenon.jp/kanjib/852",
+        char: "勤",
+        url: "https://kanji.jitenon.jp/kanjib/852",
         "音読み": [
           "キン",
           "ゴン"
@@ -4468,8 +4491,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "募",
-        "url": "https://kanji.jitenon.jp/kanjid/1550",
+        char: "募",
+        url: "https://kanji.jitenon.jp/kanjid/1550",
         "音読み": [
           "ボ"
         ],
@@ -4485,8 +4508,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "勢",
-        "url": "https://kanji.jitenon.jp/kanjib/748",
+        char: "勢",
+        url: "https://kanji.jitenon.jp/kanjib/748",
         "音読み": [
           "セイ"
         ],
@@ -4502,8 +4525,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "勧",
-        "url": "https://kanji.jitenon.jp/kanjic/1042",
+        char: "勧",
+        url: "https://kanji.jitenon.jp/kanjic/1042",
         "音読み": [
           "カン"
         ],
@@ -4519,8 +4542,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "勲",
-        "url": "https://kanji.jitenon.jp/kanjid/1668",
+        char: "勲",
+        url: "https://kanji.jitenon.jp/kanjid/1668",
         "音読み": [
           "クン"
         ],
@@ -4536,13 +4559,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02010",
-    "radical": "亠",
-    "reading": "なべぶた・けいさんかんむり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02010",
+    radical: "亠",
+    reading: "なべぶた・けいさんかんむり",
+    kanji: [
       {
-        "char": "亡",
-        "url": "https://kanji.jitenon.jp/kanjib/984",
+        char: "亡",
+        url: "https://kanji.jitenon.jp/kanjib/984",
         "音読み": [
           "ボウ",
           "モウ"
@@ -4559,8 +4582,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "交",
-        "url": "https://kanji.jitenon.jp/kanji/127",
+        char: "交",
+        url: "https://kanji.jitenon.jp/kanji/127",
         "音読み": [
           "コウ"
         ],
@@ -4582,8 +4605,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "亦",
-        "url": "https://kanji.jitenon.jp/kanjie/2181",
+        char: "亦",
+        url: "https://kanji.jitenon.jp/kanjie/2181",
         "音読み": [
           "エキ",
           "ヤク"
@@ -4601,8 +4624,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "亥",
-        "url": "https://kanji.jitenon.jp/kanjie/2234",
+        char: "亥",
+        url: "https://kanji.jitenon.jp/kanjie/2234",
         "音読み": [
           "カイ",
           "ガイ"
@@ -4619,8 +4642,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "亨",
-        "url": "https://kanji.jitenon.jp/kanjie/2311",
+        char: "亨",
+        url: "https://kanji.jitenon.jp/kanjie/2311",
         "音読み": [
           "キョウ",
           "コウ",
@@ -4639,8 +4662,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "京",
-        "url": "https://kanji.jitenon.jp/kanji/116",
+        char: "京",
+        url: "https://kanji.jitenon.jp/kanji/116",
         "音読み": [
           "キョウ",
           "ケイ"
@@ -4655,8 +4678,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "卒",
-        "url": "https://kanji.jitenon.jp/kanjib/561",
+        char: "卒",
+        url: "https://kanji.jitenon.jp/kanjib/561",
         "音読み": [
           "ソツ"
         ],
@@ -4670,8 +4693,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "享",
-        "url": "https://kanji.jitenon.jp/kanjid/1657",
+        char: "享",
+        url: "https://kanji.jitenon.jp/kanjid/1657",
         "音読み": [
           "キョウ"
         ],
@@ -4685,8 +4708,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "亭",
-        "url": "https://kanji.jitenon.jp/kanjid/1827",
+        char: "亭",
+        url: "https://kanji.jitenon.jp/kanjid/1827",
         "音読み": [
           "テイ"
         ],
@@ -4700,8 +4723,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "亮",
-        "url": "https://kanji.jitenon.jp/kanjif/2979",
+        char: "亮",
+        url: "https://kanji.jitenon.jp/kanjif/2979",
         "音読み": [
           "リョウ"
         ],
@@ -4718,8 +4741,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "商",
-        "url": "https://kanji.jitenon.jp/kanji/334",
+        char: "商",
+        url: "https://kanji.jitenon.jp/kanji/334",
         "音読み": [
           "ショウ"
         ],
@@ -4737,13 +4760,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02011",
-    "radical": "厂",
-    "reading": "がんだれ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02011",
+    radical: "厂",
+    reading: "がんだれ",
+    kanji: [
       {
-        "char": "厄",
-        "url": "https://kanji.jitenon.jp/kanjid/1909",
+        char: "厄",
+        url: "https://kanji.jitenon.jp/kanjid/1909",
         "音読み": [
           "ヤク"
         ],
@@ -4757,8 +4780,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "厚",
-        "url": "https://kanji.jitenon.jp/kanjib/701",
+        char: "厚",
+        url: "https://kanji.jitenon.jp/kanjib/701",
         "音読み": [
           "コウ"
         ],
@@ -4774,8 +4797,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "厘",
-        "url": "https://kanji.jitenon.jp/kanjid/1592",
+        char: "厘",
+        url: "https://kanji.jitenon.jp/kanjid/1592",
         "音読み": [
           "リン"
         ],
@@ -4789,8 +4812,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "原",
-        "url": "https://kanji.jitenon.jp/kanji/118",
+        char: "原",
+        url: "https://kanji.jitenon.jp/kanji/118",
         "音読み": [
           "ゲン"
         ],
@@ -4806,8 +4829,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "厨",
-        "url": "https://kanji.jitenon.jp/kanjif/2612",
+        char: "厨",
+        url: "https://kanji.jitenon.jp/kanjif/2612",
         "音読み": [
           "ズ",
           "チュウ"
@@ -4824,8 +4847,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "厭",
-        "url": "https://kanji.jitenon.jp/kanjie/2182",
+        char: "厭",
+        url: "https://kanji.jitenon.jp/kanjie/2182",
         "音読み": [
           "エン",
           "オウ",
@@ -4848,8 +4871,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "厩",
-        "url": "https://kanji.jitenon.jp/kanjie/2297",
+        char: "厩",
+        url: "https://kanji.jitenon.jp/kanjie/2297",
         "音読み": [
           "キュウ"
         ],
@@ -4865,8 +4888,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "厰",
-        "url": "https://kanji.jitenon.jp/kanjif/2558",
+        char: "厰",
+        url: "https://kanji.jitenon.jp/kanjif/2558",
         "音読み": [
           "ショウ"
         ],
@@ -4885,13 +4908,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02012",
-    "radical": "刀 刂",
-    "reading": "かたな・りっとう",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02012",
+    radical: "刀 刂",
+    reading: "かたな・りっとう",
+    kanji: [
       {
-        "char": "刀",
-        "url": "https://kanji.jitenon.jp/kanji/199",
+        char: "刀",
+        url: "https://kanji.jitenon.jp/kanji/199",
         "音読み": [
           "トウ"
         ],
@@ -4907,8 +4930,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "刃",
-        "url": "https://kanji.jitenon.jp/kanjid/1766",
+        char: "刃",
+        url: "https://kanji.jitenon.jp/kanjid/1766",
         "音読み": [
           "ジン"
         ],
@@ -4924,8 +4947,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "切",
-        "url": "https://kanji.jitenon.jp/kanji/174",
+        char: "切",
+        url: "https://kanji.jitenon.jp/kanji/174",
         "音読み": [
           "サイ",
           "セツ"
@@ -4943,8 +4966,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "分",
-        "url": "https://kanji.jitenon.jp/kanji/218",
+        char: "分",
+        url: "https://kanji.jitenon.jp/kanji/218",
         "音読み": [
           "フン",
           "ブ",
@@ -4965,8 +4988,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "刈",
-        "url": "https://kanji.jitenon.jp/kanjic/1037",
+        char: "刈",
+        url: "https://kanji.jitenon.jp/kanjic/1037",
         "音読み": [],
         "訓読み": [
           "か（る）"
@@ -4980,8 +5003,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "刊",
-        "url": "https://kanji.jitenon.jp/kanjib/667",
+        char: "刊",
+        url: "https://kanji.jitenon.jp/kanjib/667",
         "音読み": [
           "カン"
         ],
@@ -4995,8 +5018,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "列",
-        "url": "https://kanji.jitenon.jp/kanji/436",
+        char: "列",
+        url: "https://kanji.jitenon.jp/kanji/436",
         "音読み": [
           "レツ"
         ],
@@ -5010,8 +5033,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "刑",
-        "url": "https://kanji.jitenon.jp/kanjic/1384",
+        char: "刑",
+        url: "https://kanji.jitenon.jp/kanjic/1384",
         "音読み": [
           "ケイ"
         ],
@@ -5025,8 +5048,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "初",
-        "url": "https://kanji.jitenon.jp/kanjib/533",
+        char: "初",
+        url: "https://kanji.jitenon.jp/kanjib/533",
         "音読み": [
           "ショ"
         ],
@@ -5046,8 +5069,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "別",
-        "url": "https://kanji.jitenon.jp/kanjib/606",
+        char: "別",
+        url: "https://kanji.jitenon.jp/kanjib/606",
         "音読み": [
           "ベツ"
         ],
@@ -5063,8 +5086,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "利",
-        "url": "https://kanji.jitenon.jp/kanjib/624",
+        char: "利",
+        url: "https://kanji.jitenon.jp/kanjib/624",
         "音読み": [
           "リ"
         ],
@@ -5080,8 +5103,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "判",
-        "url": "https://kanji.jitenon.jp/kanjib/789",
+        char: "判",
+        url: "https://kanji.jitenon.jp/kanjib/789",
         "音読み": [
           "ハン",
           "バン"
@@ -5096,8 +5119,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "刷",
-        "url": "https://kanji.jitenon.jp/kanjib/512",
+        char: "刷",
+        url: "https://kanji.jitenon.jp/kanjib/512",
         "音読み": [
           "サツ"
         ],
@@ -5113,8 +5136,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "券",
-        "url": "https://kanji.jitenon.jp/kanjib/688",
+        char: "券",
+        url: "https://kanji.jitenon.jp/kanjib/688",
         "音読み": [
           "ケン"
         ],
@@ -5128,8 +5151,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "制",
-        "url": "https://kanji.jitenon.jp/kanjib/747",
+        char: "制",
+        url: "https://kanji.jitenon.jp/kanjib/747",
         "音読み": [
           "セイ"
         ],
@@ -5143,8 +5166,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "刻",
-        "url": "https://kanji.jitenon.jp/kanjib/874",
+        char: "刻",
+        url: "https://kanji.jitenon.jp/kanjib/874",
         "音読み": [
           "コク"
         ],
@@ -5160,8 +5183,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "刺",
-        "url": "https://kanji.jitenon.jp/kanjic/1115",
+        char: "刺",
+        url: "https://kanji.jitenon.jp/kanjic/1115",
         "音読み": [
           "シ"
         ],
@@ -5178,8 +5201,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "到",
-        "url": "https://kanji.jitenon.jp/kanjic/1211",
+        char: "到",
+        url: "https://kanji.jitenon.jp/kanjic/1211",
         "音読み": [
           "トウ"
         ],
@@ -5193,8 +5216,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "刹",
-        "url": "https://kanji.jitenon.jp/kanjie/2012",
+        char: "刹",
+        url: "https://kanji.jitenon.jp/kanjie/2012",
         "音読み": [
           "サツ",
           "セツ"
@@ -5209,8 +5232,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "前",
-        "url": "https://kanji.jitenon.jp/kanji/177",
+        char: "前",
+        url: "https://kanji.jitenon.jp/kanji/177",
         "音読み": [
           "ゼン"
         ],
@@ -5226,8 +5249,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "則",
-        "url": "https://kanji.jitenon.jp/kanjib/763",
+        char: "則",
+        url: "https://kanji.jitenon.jp/kanjib/763",
         "音読み": [
           "ソク"
         ],
@@ -5241,8 +5264,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "削",
-        "url": "https://kanji.jitenon.jp/kanjic/1417",
+        char: "削",
+        url: "https://kanji.jitenon.jp/kanjic/1417",
         "音読み": [
           "サク"
         ],
@@ -5258,8 +5281,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "剃",
-        "url": "https://kanji.jitenon.jp/kanjif/2751",
+        char: "剃",
+        url: "https://kanji.jitenon.jp/kanjif/2751",
         "音読み": [
           "テイ"
         ],
@@ -5275,8 +5298,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "帰",
-        "url": "https://kanji.jitenon.jp/kanji/106",
+        char: "帰",
+        url: "https://kanji.jitenon.jp/kanji/106",
         "音読み": [
           "キ"
         ],
@@ -5293,8 +5316,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "剣",
-        "url": "https://kanji.jitenon.jp/kanjic/1087",
+        char: "剣",
+        url: "https://kanji.jitenon.jp/kanjic/1087",
         "音読み": [
           "ケン"
         ],
@@ -5310,8 +5333,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "剤",
-        "url": "https://kanji.jitenon.jp/kanjic/1109",
+        char: "剤",
+        url: "https://kanji.jitenon.jp/kanjic/1109",
         "音読み": [
           "ザイ"
         ],
@@ -5325,8 +5348,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "剛",
-        "url": "https://kanji.jitenon.jp/kanjid/1691",
+        char: "剛",
+        url: "https://kanji.jitenon.jp/kanjid/1691",
         "音読み": [
           "ゴウ"
         ],
@@ -5340,8 +5363,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "剖",
-        "url": "https://kanji.jitenon.jp/kanjid/1893",
+        char: "剖",
+        url: "https://kanji.jitenon.jp/kanjid/1893",
         "音読み": [
           "ボウ"
         ],
@@ -5355,8 +5378,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "剥",
-        "url": "https://kanji.jitenon.jp/kanjie/2086",
+        char: "剥",
+        url: "https://kanji.jitenon.jp/kanjie/2086",
         "音読み": [
           "ハク"
         ],
@@ -5375,8 +5398,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "副",
-        "url": "https://kanji.jitenon.jp/kanjib/603",
+        char: "副",
+        url: "https://kanji.jitenon.jp/kanjib/603",
         "音読み": [
           "フク"
         ],
@@ -5390,8 +5413,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "剰",
-        "url": "https://kanji.jitenon.jp/kanjid/1756",
+        char: "剰",
+        url: "https://kanji.jitenon.jp/kanjid/1756",
         "音読み": [
           "ジョウ"
         ],
@@ -5405,8 +5428,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "割",
-        "url": "https://kanji.jitenon.jp/kanjib/836",
+        char: "割",
+        url: "https://kanji.jitenon.jp/kanjib/836",
         "音読み": [
           "カツ"
         ],
@@ -5425,8 +5448,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "創",
-        "url": "https://kanji.jitenon.jp/kanjib/932",
+        char: "創",
+        url: "https://kanji.jitenon.jp/kanjib/932",
         "音読み": [
           "ソウ"
         ],
@@ -5442,8 +5465,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "劃",
-        "url": "https://kanji.jitenon.jp/kanjie/2237",
+        char: "劃",
+        url: "https://kanji.jitenon.jp/kanjie/2237",
         "音読み": [
           "カク"
         ],
@@ -5460,8 +5483,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "劇",
-        "url": "https://kanji.jitenon.jp/kanjib/856",
+        char: "劇",
+        url: "https://kanji.jitenon.jp/kanjib/856",
         "音読み": [
           "ゲキ"
         ],
@@ -5475,8 +5498,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "劉",
-        "url": "https://kanji.jitenon.jp/kanjif/2975",
+        char: "劉",
+        url: "https://kanji.jitenon.jp/kanjif/2975",
         "音読み": [
           "リュウ"
         ],
@@ -5495,13 +5518,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02013",
-    "radical": "冫",
-    "reading": "にすい",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02013",
+    radical: "冫",
+    reading: "にすい",
+    kanji: [
       {
-        "char": "冬",
-        "url": "https://kanji.jitenon.jp/kanji/198",
+        char: "冬",
+        url: "https://kanji.jitenon.jp/kanji/198",
         "音読み": [
           "トウ"
         ],
@@ -5517,8 +5540,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "冷",
-        "url": "https://kanji.jitenon.jp/kanjib/633",
+        char: "冷",
+        url: "https://kanji.jitenon.jp/kanjib/633",
         "音読み": [
           "レイ"
         ],
@@ -5540,8 +5563,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "冶",
-        "url": "https://kanji.jitenon.jp/kanjie/2112",
+        char: "冶",
+        url: "https://kanji.jitenon.jp/kanjie/2112",
         "音読み": [
           "ヤ"
         ],
@@ -5555,8 +5578,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "冴",
-        "url": "https://kanji.jitenon.jp/kanjie/2387",
+        char: "冴",
+        url: "https://kanji.jitenon.jp/kanjie/2387",
         "音読み": [
           "ゴ"
         ],
@@ -5573,8 +5596,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "凍",
-        "url": "https://kanji.jitenon.jp/kanjid/1519",
+        char: "凍",
+        url: "https://kanji.jitenon.jp/kanjid/1519",
         "音読み": [
           "トウ"
         ],
@@ -5591,8 +5614,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "准",
-        "url": "https://kanji.jitenon.jp/kanjid/1734",
+        char: "准",
+        url: "https://kanji.jitenon.jp/kanjid/1734",
         "音読み": [
           "ジュン"
         ],
@@ -5606,8 +5629,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "凄",
-        "url": "https://kanji.jitenon.jp/kanjie/2033",
+        char: "凄",
+        url: "https://kanji.jitenon.jp/kanjie/2033",
         "音読み": [
           "セイ"
         ],
@@ -5621,8 +5644,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "凋",
-        "url": "https://kanji.jitenon.jp/kanjif/2732",
+        char: "凋",
+        url: "https://kanji.jitenon.jp/kanjif/2732",
         "音読み": [
           "チョウ"
         ],
@@ -5638,8 +5661,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "凌",
-        "url": "https://kanji.jitenon.jp/kanjif/2980",
+        char: "凌",
+        url: "https://kanji.jitenon.jp/kanjif/2980",
         "音読み": [
           "リョウ"
         ],
@@ -5655,8 +5678,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "凝",
-        "url": "https://kanji.jitenon.jp/kanjic/1374",
+        char: "凝",
+        url: "https://kanji.jitenon.jp/kanjic/1374",
         "音読み": [
           "ギョウ"
         ],
@@ -5675,13 +5698,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02014",
-    "radical": "匕",
-    "reading": "ひ・さじ・さじのひ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02014",
+    radical: "匕",
+    reading: "ひ・さじ・さじのひ",
+    kanji: [
       {
-        "char": "化",
-        "url": "https://kanji.jitenon.jp/kanji/284",
+        char: "化",
+        url: "https://kanji.jitenon.jp/kanji/284",
         "音読み": [
           "カ",
           "ケ"
@@ -5699,8 +5722,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "北",
-        "url": "https://kanji.jitenon.jp/kanji/223",
+        char: "北",
+        url: "https://kanji.jitenon.jp/kanji/223",
         "音読み": [
           "ホク"
         ],
@@ -5716,8 +5739,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "匙",
-        "url": "https://kanji.jitenon.jp/kanjie/2463",
+        char: "匙",
+        url: "https://kanji.jitenon.jp/kanjie/2463",
         "音読み": [
           "シ"
         ],
@@ -5735,13 +5758,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02015",
-    "radical": "又",
-    "reading": "また",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02015",
+    radical: "又",
+    reading: "また",
+    kanji: [
       {
-        "char": "又",
-        "url": "https://kanji.jitenon.jp/kanjid/1573",
+        char: "又",
+        url: "https://kanji.jitenon.jp/kanjid/1573",
         "音読み": [],
         "訓読み": [
           "また"
@@ -5755,8 +5778,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "及",
-        "url": "https://kanji.jitenon.jp/kanjic/1058",
+        char: "及",
+        url: "https://kanji.jitenon.jp/kanjic/1058",
         "音読み": [
           "キュウ"
         ],
@@ -5774,8 +5797,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "叉",
-        "url": "https://kanji.jitenon.jp/kanjie/2432",
+        char: "叉",
+        url: "https://kanji.jitenon.jp/kanjie/2432",
         "音読み": [
           "サ",
           "シャ"
@@ -5795,8 +5818,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "友",
-        "url": "https://kanji.jitenon.jp/kanji/233",
+        char: "友",
+        url: "https://kanji.jitenon.jp/kanji/233",
         "音読み": [
           "ユウ"
         ],
@@ -5812,8 +5835,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "反",
-        "url": "https://kanji.jitenon.jp/kanji/392",
+        char: "反",
+        url: "https://kanji.jitenon.jp/kanji/392",
         "音読み": [
           "タン",
           "ハン",
@@ -5832,8 +5855,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "収",
-        "url": "https://kanji.jitenon.jp/kanjib/897",
+        char: "収",
+        url: "https://kanji.jitenon.jp/kanjib/897",
         "音読み": [
           "シュウ"
         ],
@@ -5850,8 +5873,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "双",
-        "url": "https://kanji.jitenon.jp/kanjic/1478",
+        char: "双",
+        url: "https://kanji.jitenon.jp/kanjic/1478",
         "音読み": [
           "ソウ"
         ],
@@ -5867,8 +5890,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "取",
-        "url": "https://kanji.jitenon.jp/kanji/318",
+        char: "取",
+        url: "https://kanji.jitenon.jp/kanji/318",
         "音読み": [
           "シュ"
         ],
@@ -5884,8 +5907,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "受",
-        "url": "https://kanji.jitenon.jp/kanji/319",
+        char: "受",
+        url: "https://kanji.jitenon.jp/kanji/319",
         "音読み": [
           "ジュ"
         ],
@@ -5902,8 +5925,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "叔",
-        "url": "https://kanji.jitenon.jp/kanjid/1731",
+        char: "叔",
+        url: "https://kanji.jitenon.jp/kanjid/1731",
         "音読み": [
           "シュク"
         ],
@@ -5917,8 +5940,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "叙",
-        "url": "https://kanji.jitenon.jp/kanjid/1739",
+        char: "叙",
+        url: "https://kanji.jitenon.jp/kanjid/1739",
         "音読み": [
           "ジョ"
         ],
@@ -5932,8 +5955,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "叛",
-        "url": "https://kanji.jitenon.jp/kanjif/2840",
+        char: "叛",
+        url: "https://kanji.jitenon.jp/kanjif/2840",
         "音読み": [
           "ハン",
           "ホン"
@@ -5951,8 +5974,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "叡",
-        "url": "https://kanji.jitenon.jp/kanjie/2174",
+        char: "叡",
+        url: "https://kanji.jitenon.jp/kanjie/2174",
         "音読み": [
           "エイ"
         ],
@@ -5970,8 +5993,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "叢",
-        "url": "https://kanji.jitenon.jp/kanjif/2654",
+        char: "叢",
+        url: "https://kanji.jitenon.jp/kanjif/2654",
         "音読み": [
           "ソウ"
         ],
@@ -5990,13 +6013,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02016",
-    "radical": "匸",
-    "reading": "かくしがまえ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02016",
+    radical: "匸",
+    reading: "かくしがまえ",
+    kanji: [
       {
-        "char": "区",
-        "url": "https://kanji.jitenon.jp/kanji/280",
+        char: "区",
+        url: "https://kanji.jitenon.jp/kanji/280",
         "音読み": [
           "ク"
         ],
@@ -6010,8 +6033,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "匹",
-        "url": "https://kanji.jitenon.jp/kanjic/1247",
+        char: "匹",
+        url: "https://kanji.jitenon.jp/kanjic/1247",
         "音読み": [
           "ヒツ"
         ],
@@ -6027,8 +6050,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "医",
-        "url": "https://kanji.jitenon.jp/kanji/245",
+        char: "医",
+        url: "https://kanji.jitenon.jp/kanji/245",
         "音読み": [
           "イ"
         ],
@@ -6042,8 +6065,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "匿",
-        "url": "https://kanji.jitenon.jp/kanjid/1521",
+        char: "匿",
+        url: "https://kanji.jitenon.jp/kanjid/1521",
         "音読み": [
           "トク"
         ],
@@ -6059,13 +6082,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02017",
-    "radical": "厶",
-    "reading": "む",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02017",
+    radical: "厶",
+    reading: "む",
+    kanji: [
       {
-        "char": "去",
-        "url": "https://kanji.jitenon.jp/kanji/273",
+        char: "去",
+        url: "https://kanji.jitenon.jp/kanji/273",
         "音読み": [
           "キョ",
           "コ"
@@ -6082,8 +6105,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "参",
-        "url": "https://kanji.jitenon.jp/kanjib/515",
+        char: "参",
+        url: "https://kanji.jitenon.jp/kanjib/515",
         "音読み": [
           "サン"
         ],
@@ -6101,13 +6124,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02018",
-    "radical": "冖",
-    "reading": "わかんむり・ひらかんむり・べきかんむり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02018",
+    radical: "冖",
+    reading: "わかんむり・ひらかんむり・べきかんむり",
+    kanji: [
       {
-        "char": "冗",
-        "url": "https://kanji.jitenon.jp/kanjic/1449",
+        char: "冗",
+        url: "https://kanji.jitenon.jp/kanjic/1449",
         "音読み": [
           "ジョウ"
         ],
@@ -6121,8 +6144,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "写",
-        "url": "https://kanji.jitenon.jp/kanji/312",
+        char: "写",
+        url: "https://kanji.jitenon.jp/kanji/312",
         "音読み": [
           "シャ"
         ],
@@ -6139,8 +6162,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "冠",
-        "url": "https://kanji.jitenon.jp/kanjic/1354",
+        char: "冠",
+        url: "https://kanji.jitenon.jp/kanjic/1354",
         "音読み": [
           "カン"
         ],
@@ -6156,8 +6179,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "冥",
-        "url": "https://kanji.jitenon.jp/kanjie/2110",
+        char: "冥",
+        url: "https://kanji.jitenon.jp/kanjie/2110",
         "音読み": [
           "ミョウ",
           "メイ"
@@ -6174,13 +6197,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02019",
-    "radical": "卩 㔾",
-    "reading": "ふしづくり・わりふ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02019",
+    radical: "卩 㔾",
+    reading: "ふしづくり・わりふ",
+    kanji: [
       {
-        "char": "叩",
-        "url": "https://kanji.jitenon.jp/kanjie/2394",
+        char: "叩",
+        url: "https://kanji.jitenon.jp/kanjie/2394",
         "音読み": [
           "コウ"
         ],
@@ -6198,8 +6221,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "卯",
-        "url": "https://kanji.jitenon.jp/kanjif/2919",
+        char: "卯",
+        url: "https://kanji.jitenon.jp/kanjif/2919",
         "音読み": [
           "ボウ"
         ],
@@ -6215,8 +6238,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "印",
-        "url": "https://kanji.jitenon.jp/kanji/447",
+        char: "印",
+        url: "https://kanji.jitenon.jp/kanji/447",
         "音読み": [
           "イン"
         ],
@@ -6232,8 +6255,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "危",
-        "url": "https://kanji.jitenon.jp/kanjib/842",
+        char: "危",
+        url: "https://kanji.jitenon.jp/kanjib/842",
         "音読み": [
           "キ"
         ],
@@ -6251,8 +6274,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "卵",
-        "url": "https://kanji.jitenon.jp/kanjib/996",
+        char: "卵",
+        url: "https://kanji.jitenon.jp/kanjib/996",
         "音読み": [
           "ラン"
         ],
@@ -6268,8 +6291,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "却",
-        "url": "https://kanji.jitenon.jp/kanjic/1056",
+        char: "却",
+        url: "https://kanji.jitenon.jp/kanjic/1056",
         "音読み": [
           "キャク"
         ],
@@ -6283,8 +6306,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "即",
-        "url": "https://kanji.jitenon.jp/kanjic/1172",
+        char: "即",
+        url: "https://kanji.jitenon.jp/kanjic/1172",
         "音読み": [
           "ソク"
         ],
@@ -6298,8 +6321,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "卸",
-        "url": "https://kanji.jitenon.jp/kanjic/1330",
+        char: "卸",
+        url: "https://kanji.jitenon.jp/kanjic/1330",
         "音読み": [],
         "訓読み": [
           "おろし",
@@ -6314,8 +6337,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "卿",
-        "url": "https://kanji.jitenon.jp/kanjie/2317",
+        char: "卿",
+        url: "https://kanji.jitenon.jp/kanjie/2317",
         "音読み": [
           "キョウ",
           "ケイ"
@@ -6335,13 +6358,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02020",
-    "radical": "勹",
-    "reading": "つつみがまえ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02020",
+    radical: "勹",
+    reading: "つつみがまえ",
+    kanji: [
       {
-        "char": "勺",
-        "url": "https://kanji.jitenon.jp/kanjie/2493",
+        char: "勺",
+        url: "https://kanji.jitenon.jp/kanjie/2493",
         "音読み": [
           "シャク"
         ],
@@ -6355,8 +6378,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "勾",
-        "url": "https://kanji.jitenon.jp/kanjid/1998",
+        char: "勾",
+        url: "https://kanji.jitenon.jp/kanjid/1998",
         "音読み": [
           "コウ"
         ],
@@ -6370,8 +6393,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "匂",
-        "url": "https://kanji.jitenon.jp/kanjie/2082",
+        char: "匂",
+        url: "https://kanji.jitenon.jp/kanjie/2082",
         "音読み": [],
         "訓読み": [
           "にお（う）"
@@ -6385,8 +6408,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "勿",
-        "url": "https://kanji.jitenon.jp/kanjif/2887",
+        char: "勿",
+        url: "https://kanji.jitenon.jp/kanjif/2887",
         "音読み": [
           "ブツ",
           "モチ"
@@ -6405,8 +6428,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "匁",
-        "url": "https://kanji.jitenon.jp/kanjif/2933",
+        char: "匁",
+        url: "https://kanji.jitenon.jp/kanjif/2933",
         "音読み": [],
         "訓読み": [
           "め",
@@ -6421,8 +6444,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "包",
-        "url": "https://kanji.jitenon.jp/kanjib/611",
+        char: "包",
+        url: "https://kanji.jitenon.jp/kanjib/611",
         "音読み": [
           "ホウ"
         ],
@@ -6440,13 +6463,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02021",
-    "radical": "几",
-    "reading": "つくえ・きにょう・かぜかんむり・かぜがまえ・かざがまえ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02021",
+    radical: "几",
+    reading: "つくえ・きにょう・かぜかんむり・かぜがまえ・かざがまえ",
+    kanji: [
       {
-        "char": "凡",
-        "url": "https://kanji.jitenon.jp/kanjic/1275",
+        char: "凡",
+        url: "https://kanji.jitenon.jp/kanjic/1275",
         "音読み": [
           "ハン",
           "ボン"
@@ -6461,8 +6484,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "処",
-        "url": "https://kanji.jitenon.jp/kanjib/906",
+        char: "処",
+        url: "https://kanji.jitenon.jp/kanjib/906",
         "音読み": [
           "ショ"
         ],
@@ -6476,8 +6499,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "凧",
-        "url": "https://kanji.jitenon.jp/kanjif/2707",
+        char: "凧",
+        url: "https://kanji.jitenon.jp/kanjif/2707",
         "音読み": [],
         "訓読み": [
           "いかのぼり",
@@ -6492,8 +6515,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "夙",
-        "url": "https://kanji.jitenon.jp/kanjif/2527",
+        char: "夙",
+        url: "https://kanji.jitenon.jp/kanjif/2527",
         "音読み": [
           "シュク"
         ],
@@ -6511,8 +6534,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "凪",
-        "url": "https://kanji.jitenon.jp/kanjif/2809",
+        char: "凪",
+        url: "https://kanji.jitenon.jp/kanjif/2809",
         "音読み": [],
         "訓読み": [
           "なぎ",
@@ -6527,8 +6550,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "凰",
-        "url": "https://kanji.jitenon.jp/kanjie/2193",
+        char: "凰",
+        url: "https://kanji.jitenon.jp/kanjie/2193",
         "音読み": [
           "オウ",
           "コウ"
@@ -6545,8 +6568,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "凱",
-        "url": "https://kanji.jitenon.jp/kanjie/2221",
+        char: "凱",
+        url: "https://kanji.jitenon.jp/kanjie/2221",
         "音読み": [
           "カイ",
           "ガイ"
@@ -6566,13 +6589,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02022",
-    "radical": "卜",
-    "reading": "ぼく・ぼくのと・と・うらない",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02022",
+    radical: "卜",
+    reading: "ぼく・ぼくのと・と・うらない",
+    kanji: [
       {
-        "char": "卜",
-        "url": "https://kanji.jitenon.jp/kanjif/2926",
+        char: "卜",
+        url: "https://kanji.jitenon.jp/kanjif/2926",
         "音読み": [
           "ホク",
           "ボク"
@@ -6590,8 +6613,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "占",
-        "url": "https://kanji.jitenon.jp/kanjic/1165",
+        char: "占",
+        url: "https://kanji.jitenon.jp/kanjic/1165",
         "音読み": [
           "セン"
         ],
@@ -6608,8 +6631,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "卦",
-        "url": "https://kanji.jitenon.jp/kanjie/2204",
+        char: "卦",
+        url: "https://kanji.jitenon.jp/kanjie/2204",
         "音読み": [
           "カ",
           "ケ"
@@ -6629,13 +6652,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu02023",
-    "radical": "匚",
-    "reading": "はこがまえ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu02023",
+    radical: "匚",
+    reading: "はこがまえ",
+    kanji: [
       {
-        "char": "区",
-        "url": "https://kanji.jitenon.jp/kanji/280",
+        char: "区",
+        url: "https://kanji.jitenon.jp/kanji/280",
         "音読み": [
           "ク"
         ],
@@ -6649,8 +6672,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "匹",
-        "url": "https://kanji.jitenon.jp/kanjic/1247",
+        char: "匹",
+        url: "https://kanji.jitenon.jp/kanjic/1247",
         "音読み": [
           "ヒツ"
         ],
@@ -6666,8 +6689,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "匠",
-        "url": "https://kanji.jitenon.jp/kanjic/1445",
+        char: "匠",
+        url: "https://kanji.jitenon.jp/kanjic/1445",
         "音読み": [
           "ショウ"
         ],
@@ -6681,8 +6704,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "匡",
-        "url": "https://kanji.jitenon.jp/kanjie/2316",
+        char: "匡",
+        url: "https://kanji.jitenon.jp/kanjie/2316",
         "音読み": [
           "キョウ"
         ],
@@ -6699,8 +6722,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "医",
-        "url": "https://kanji.jitenon.jp/kanji/245",
+        char: "医",
+        url: "https://kanji.jitenon.jp/kanji/245",
         "音読み": [
           "イ"
         ],
@@ -6714,8 +6737,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "匿",
-        "url": "https://kanji.jitenon.jp/kanjid/1521",
+        char: "匿",
+        url: "https://kanji.jitenon.jp/kanjid/1521",
         "音読み": [
           "トク"
         ],
@@ -6729,8 +6752,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "匪",
-        "url": "https://kanji.jitenon.jp/kanjif/2848",
+        char: "匪",
+        url: "https://kanji.jitenon.jp/kanjif/2848",
         "音読み": [
           "ヒ"
         ],
@@ -6749,13 +6772,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03001",
-    "radical": "子",
-    "reading": "こ・こへん・こども・こどもへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03001",
+    radical: "子",
+    reading: "こ・こへん・こども・こどもへん",
+    kanji: [
       {
-        "char": "子",
-        "url": "https://kanji.jitenon.jp/kanji/027",
+        char: "子",
+        url: "https://kanji.jitenon.jp/kanji/027",
         "音読み": [
           "シ",
           "ス"
@@ -6772,8 +6795,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "孔",
-        "url": "https://kanji.jitenon.jp/kanjic/1398",
+        char: "孔",
+        url: "https://kanji.jitenon.jp/kanjic/1398",
         "音読み": [
           "コウ"
         ],
@@ -6787,8 +6810,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "字",
-        "url": "https://kanji.jitenon.jp/kanji/029",
+        char: "字",
+        url: "https://kanji.jitenon.jp/kanji/029",
         "音読み": [
           "ジ"
         ],
@@ -6804,8 +6827,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "存",
-        "url": "https://kanji.jitenon.jp/kanjib/937",
+        char: "存",
+        url: "https://kanji.jitenon.jp/kanjib/937",
         "音読み": [
           "ソン",
           "ゾン"
@@ -6820,8 +6843,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "孝",
-        "url": "https://kanji.jitenon.jp/kanjib/867",
+        char: "孝",
+        url: "https://kanji.jitenon.jp/kanjib/867",
         "音読み": [
           "コウ"
         ],
@@ -6835,8 +6858,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "孜",
-        "url": "https://kanji.jitenon.jp/kanjie/2468",
+        char: "孜",
+        url: "https://kanji.jitenon.jp/kanjie/2468",
         "音読み": [
           "シ"
         ],
@@ -6852,8 +6875,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "学",
-        "url": "https://kanji.jitenon.jp/kanji/009",
+        char: "学",
+        url: "https://kanji.jitenon.jp/kanji/009",
         "音読み": [
           "ガク"
         ],
@@ -6869,8 +6892,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "季",
-        "url": "https://kanji.jitenon.jp/kanji/470",
+        char: "季",
+        url: "https://kanji.jitenon.jp/kanji/470",
         "音読み": [
           "キ"
         ],
@@ -6884,8 +6907,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "孟",
-        "url": "https://kanji.jitenon.jp/kanjif/2920",
+        char: "孟",
+        url: "https://kanji.jitenon.jp/kanjif/2920",
         "音読み": [
           "ボウ",
           "マン",
@@ -6903,8 +6926,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "孤",
-        "url": "https://kanji.jitenon.jp/kanjic/1394",
+        char: "孤",
+        url: "https://kanji.jitenon.jp/kanjic/1394",
         "音読み": [
           "コ"
         ],
@@ -6918,8 +6941,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "孫",
-        "url": "https://kanji.jitenon.jp/kanjib/562",
+        char: "孫",
+        url: "https://kanji.jitenon.jp/kanjib/562",
         "音読み": [
           "ソン"
         ],
@@ -6937,13 +6960,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03002",
-    "radical": "士",
-    "reading": "さむらい",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03002",
+    radical: "士",
+    reading: "さむらい",
+    kanji: [
       {
-        "char": "士",
-        "url": "https://kanji.jitenon.jp/kanjib/522",
+        char: "士",
+        url: "https://kanji.jitenon.jp/kanjib/522",
         "音読み": [
           "シ"
         ],
@@ -6957,8 +6980,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "壬",
-        "url": "https://kanji.jitenon.jp/kanjif/2605",
+        char: "壬",
+        url: "https://kanji.jitenon.jp/kanjif/2605",
         "音読み": [
           "ジン",
           "ニン"
@@ -6975,8 +6998,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "壮",
-        "url": "https://kanji.jitenon.jp/kanjid/1795",
+        char: "壮",
+        url: "https://kanji.jitenon.jp/kanjid/1795",
         "音読み": [
           "ソウ"
         ],
@@ -6990,8 +7013,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "声",
-        "url": "https://kanji.jitenon.jp/kanji/171",
+        char: "声",
+        url: "https://kanji.jitenon.jp/kanji/171",
         "音読み": [
           "ショウ",
           "セイ"
@@ -7009,8 +7032,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "売",
-        "url": "https://kanji.jitenon.jp/kanji/211",
+        char: "売",
+        url: "https://kanji.jitenon.jp/kanji/211",
         "音読み": [
           "バイ"
         ],
@@ -7027,8 +7050,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "壱",
-        "url": "https://kanji.jitenon.jp/kanjic/1012",
+        char: "壱",
+        url: "https://kanji.jitenon.jp/kanjic/1012",
         "音読み": [
           "イチ"
         ],
@@ -7042,8 +7065,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "壷",
-        "url": "https://kanji.jitenon.jp/kanjie/2376",
+        char: "壷",
+        url: "https://kanji.jitenon.jp/kanjie/2376",
         "音読み": [
           "コ"
         ],
@@ -7059,8 +7082,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "壺",
-        "url": "https://kanji.jitenon.jp/kanjie/2375",
+        char: "壺",
+        url: "https://kanji.jitenon.jp/kanjie/2375",
         "音読み": [
           "コ"
         ],
@@ -7078,13 +7101,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03003",
-    "radical": "口",
-    "reading": "くち・くちへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03003",
+    radical: "口",
+    reading: "くち・くちへん",
+    kanji: [
       {
-        "char": "口",
-        "url": "https://kanji.jitenon.jp/kanji/020",
+        char: "口",
+        url: "https://kanji.jitenon.jp/kanji/020",
         "音読み": [
           "ク",
           "コウ"
@@ -7101,8 +7124,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "右",
-        "url": "https://kanji.jitenon.jp/kanji/076",
+        char: "右",
+        url: "https://kanji.jitenon.jp/kanji/076",
         "音読み": [
           "ウ",
           "ユウ"
@@ -7119,8 +7142,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "古",
-        "url": "https://kanji.jitenon.jp/kanji/121",
+        char: "古",
+        url: "https://kanji.jitenon.jp/kanji/121",
         "音読み": [
           "コ"
         ],
@@ -7137,8 +7160,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "台",
-        "url": "https://kanji.jitenon.jp/kanji/183",
+        char: "台",
+        url: "https://kanji.jitenon.jp/kanji/183",
         "音読み": [
           "タイ",
           "ダイ"
@@ -7153,8 +7176,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "号",
-        "url": "https://kanji.jitenon.jp/kanji/296",
+        char: "号",
+        url: "https://kanji.jitenon.jp/kanji/296",
         "音読み": [
           "ゴウ"
         ],
@@ -7168,8 +7191,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "史",
-        "url": "https://kanji.jitenon.jp/kanjib/520",
+        char: "史",
+        url: "https://kanji.jitenon.jp/kanjib/520",
         "音読み": [
           "シ"
         ],
@@ -7183,8 +7206,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "司",
-        "url": "https://kanji.jitenon.jp/kanjib/523",
+        char: "司",
+        url: "https://kanji.jitenon.jp/kanjib/523",
         "音読み": [
           "シ"
         ],
@@ -7198,8 +7221,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "可",
-        "url": "https://kanji.jitenon.jp/kanjib/656",
+        char: "可",
+        url: "https://kanji.jitenon.jp/kanjib/656",
         "音読み": [
           "カ"
         ],
@@ -7213,8 +7236,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "句",
-        "url": "https://kanji.jitenon.jp/kanjib/682",
+        char: "句",
+        url: "https://kanji.jitenon.jp/kanjib/682",
         "音読み": [
           "ク"
         ],
@@ -7228,8 +7251,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "召",
-        "url": "https://kanji.jitenon.jp/kanjic/1138",
+        char: "召",
+        url: "https://kanji.jitenon.jp/kanjic/1138",
         "音読み": [
           "ショウ"
         ],
@@ -7245,8 +7268,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "叱",
-        "url": "https://kanji.jitenon.jp/kanjie/2019",
+        char: "叱",
+        url: "https://kanji.jitenon.jp/kanjie/2019",
         "音読み": [
           "シツ"
         ],
@@ -7262,8 +7285,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "叶",
-        "url": "https://kanji.jitenon.jp/kanjie/2318",
+        char: "叶",
+        url: "https://kanji.jitenon.jp/kanjie/2318",
         "音読み": [
           "キョウ"
         ],
@@ -7279,8 +7302,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "叩",
-        "url": "https://kanji.jitenon.jp/kanjie/2394",
+        char: "叩",
+        url: "https://kanji.jitenon.jp/kanjie/2394",
         "音読み": [
           "コウ"
         ],
@@ -7298,8 +7321,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "只",
-        "url": "https://kanji.jitenon.jp/kanjie/2464",
+        char: "只",
+        url: "https://kanji.jitenon.jp/kanjie/2464",
         "音読み": [
           "シ"
         ],
@@ -7315,8 +7338,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "名",
-        "url": "https://kanji.jitenon.jp/kanji/072",
+        char: "名",
+        url: "https://kanji.jitenon.jp/kanji/072",
         "音読み": [
           "ミョウ",
           "メイ"
@@ -7333,8 +7356,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "合",
-        "url": "https://kanji.jitenon.jp/kanji/135",
+        char: "合",
+        url: "https://kanji.jitenon.jp/kanji/135",
         "音読み": [
           "カッ",
           "ガッ",
@@ -7354,8 +7377,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "同",
-        "url": "https://kanji.jitenon.jp/kanji/204",
+        char: "同",
+        url: "https://kanji.jitenon.jp/kanji/204",
         "音読み": [
           "ドウ"
         ],
@@ -7371,8 +7394,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "向",
-        "url": "https://kanji.jitenon.jp/kanji/294",
+        char: "向",
+        url: "https://kanji.jitenon.jp/kanji/294",
         "音読み": [
           "コウ"
         ],
@@ -7391,8 +7414,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "各",
-        "url": "https://kanji.jitenon.jp/kanji/462",
+        char: "各",
+        url: "https://kanji.jitenon.jp/kanji/462",
         "音読み": [
           "カク"
         ],
@@ -7408,8 +7431,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "吸",
-        "url": "https://kanji.jitenon.jp/kanjib/847",
+        char: "吸",
+        url: "https://kanji.jitenon.jp/kanjib/847",
         "音読み": [
           "キュウ"
         ],
@@ -7425,8 +7448,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "后",
-        "url": "https://kanji.jitenon.jp/kanjib/869",
+        char: "后",
+        url: "https://kanji.jitenon.jp/kanjib/869",
         "音読み": [
           "コウ"
         ],
@@ -7440,8 +7463,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "叫",
-        "url": "https://kanji.jitenon.jp/kanjic/1068",
+        char: "叫",
+        url: "https://kanji.jitenon.jp/kanjic/1068",
         "音読み": [
           "キョウ"
         ],
@@ -7457,8 +7480,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "吐",
-        "url": "https://kanji.jitenon.jp/kanjic/1202",
+        char: "吐",
+        url: "https://kanji.jitenon.jp/kanjic/1202",
         "音読み": [
           "ト"
         ],
@@ -7474,8 +7497,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "吉",
-        "url": "https://kanji.jitenon.jp/kanjic/1368",
+        char: "吉",
+        url: "https://kanji.jitenon.jp/kanjic/1368",
         "音読み": [
           "キチ",
           "キツ"
@@ -7490,8 +7513,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "吏",
-        "url": "https://kanji.jitenon.jp/kanjid/1586",
+        char: "吏",
+        url: "https://kanji.jitenon.jp/kanjid/1586",
         "音読み": [
           "リ"
         ],
@@ -7505,8 +7528,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "吃",
-        "url": "https://kanji.jitenon.jp/kanjie/2292",
+        char: "吃",
+        url: "https://kanji.jitenon.jp/kanjie/2292",
         "音読み": [
           "キツ"
         ],
@@ -7524,8 +7547,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "吋",
-        "url": "https://kanji.jitenon.jp/kanjif/2625",
+        char: "吋",
+        url: "https://kanji.jitenon.jp/kanjif/2625",
         "音読み": [
           "スン",
           "トウ"
@@ -7542,8 +7565,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "吊",
-        "url": "https://kanji.jitenon.jp/kanjif/2733",
+        char: "吊",
+        url: "https://kanji.jitenon.jp/kanjif/2733",
         "音読み": [
           "チョウ"
         ],
@@ -7560,8 +7583,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "君",
-        "url": "https://kanji.jitenon.jp/kanji/283",
+        char: "君",
+        url: "https://kanji.jitenon.jp/kanji/283",
         "音読み": [
           "クン"
         ],
@@ -7577,8 +7600,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "告",
-        "url": "https://kanji.jitenon.jp/kanjib/505",
+        char: "告",
+        url: "https://kanji.jitenon.jp/kanjib/505",
         "音読み": [
           "コク"
         ],
@@ -7594,8 +7617,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "否",
-        "url": "https://kanji.jitenon.jp/kanjib/970",
+        char: "否",
+        url: "https://kanji.jitenon.jp/kanjib/970",
         "音読み": [
           "ヒ"
         ],
@@ -7611,8 +7634,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "含",
-        "url": "https://kanji.jitenon.jp/kanjic/1046",
+        char: "含",
+        url: "https://kanji.jitenon.jp/kanjic/1046",
         "音読み": [
           "ガン"
         ],
@@ -7629,8 +7652,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "吹",
-        "url": "https://kanji.jitenon.jp/kanjic/1158",
+        char: "吹",
+        url: "https://kanji.jitenon.jp/kanjic/1158",
         "音読み": [
           "スイ"
         ],
@@ -7646,8 +7669,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "吟",
-        "url": "https://kanji.jitenon.jp/kanjid/1665",
+        char: "吟",
+        url: "https://kanji.jitenon.jp/kanjid/1665",
         "音読み": [
           "ギン"
         ],
@@ -7661,8 +7684,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "呉",
-        "url": "https://kanji.jitenon.jp/kanjid/1681",
+        char: "呉",
+        url: "https://kanji.jitenon.jp/kanjid/1681",
         "音読み": [
           "ゴ"
         ],
@@ -7676,8 +7699,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "呈",
-        "url": "https://kanji.jitenon.jp/kanjid/1829",
+        char: "呈",
+        url: "https://kanji.jitenon.jp/kanjid/1829",
         "音読み": [
           "テイ"
         ],
@@ -7691,8 +7714,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "呂",
-        "url": "https://kanji.jitenon.jp/kanjie/2128",
+        char: "呂",
+        url: "https://kanji.jitenon.jp/kanjie/2128",
         "音読み": [
           "ロ"
         ],
@@ -7706,8 +7729,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "吾",
-        "url": "https://kanji.jitenon.jp/kanjie/2388",
+        char: "吾",
+        url: "https://kanji.jitenon.jp/kanjie/2388",
         "音読み": [
           "ゴ"
         ],
@@ -7724,8 +7747,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "呆",
-        "url": "https://kanji.jitenon.jp/kanjif/2688",
+        char: "呆",
+        url: "https://kanji.jitenon.jp/kanjif/2688",
         "音読み": [
           "タイ",
           "ホウ",
@@ -7744,8 +7767,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "呑",
-        "url": "https://kanji.jitenon.jp/kanjif/2805",
+        char: "呑",
+        url: "https://kanji.jitenon.jp/kanjif/2805",
         "音読み": [
           "トン",
           "ドン"
@@ -7762,8 +7785,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "吠",
-        "url": "https://kanji.jitenon.jp/kanjif/2818",
+        char: "吠",
+        url: "https://kanji.jitenon.jp/kanjif/2818",
         "音読み": [
           "ハイ",
           "バイ"
@@ -7780,8 +7803,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "吻",
-        "url": "https://kanji.jitenon.jp/kanjif/2888",
+        char: "吻",
+        url: "https://kanji.jitenon.jp/kanjif/2888",
         "音読み": [
           "フン"
         ],
@@ -7798,8 +7821,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "味",
-        "url": "https://kanji.jitenon.jp/kanji/414",
+        char: "味",
+        url: "https://kanji.jitenon.jp/kanji/414",
         "音読み": [
           "ミ"
         ],
@@ -7816,8 +7839,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "命",
-        "url": "https://kanji.jitenon.jp/kanji/415",
+        char: "命",
+        url: "https://kanji.jitenon.jp/kanji/415",
         "音読み": [
           "ミョウ",
           "メイ"
@@ -7834,8 +7857,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "和",
-        "url": "https://kanji.jitenon.jp/kanji/439",
+        char: "和",
+        url: "https://kanji.jitenon.jp/kanji/439",
         "音読み": [
           "オ",
           "ワ"
@@ -7855,8 +7878,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "周",
-        "url": "https://kanji.jitenon.jp/kanjib/530",
+        char: "周",
+        url: "https://kanji.jitenon.jp/kanjib/530",
         "音読み": [
           "シュウ"
         ],
@@ -7872,8 +7895,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "呼",
-        "url": "https://kanji.jitenon.jp/kanjib/865",
+        char: "呼",
+        url: "https://kanji.jitenon.jp/kanjib/865",
         "音読み": [
           "コ"
         ],
@@ -7889,8 +7912,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "呪",
-        "url": "https://kanji.jitenon.jp/kanjie/2022",
+        char: "呪",
+        url: "https://kanji.jitenon.jp/kanjie/2022",
         "音読み": [
           "ジュ"
         ],
@@ -7906,8 +7929,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "品",
-        "url": "https://kanji.jitenon.jp/kanji/404",
+        char: "品",
+        url: "https://kanji.jitenon.jp/kanji/404",
         "音読み": [
           "ヒン"
         ],
@@ -7923,8 +7946,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "咲",
-        "url": "https://kanji.jitenon.jp/kanjic/1110",
+        char: "咲",
+        url: "https://kanji.jitenon.jp/kanjic/1110",
         "音読み": [],
         "訓読み": [
           "さ（く）"
@@ -7938,8 +7961,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "哀",
-        "url": "https://kanji.jitenon.jp/kanjic/1320",
+        char: "哀",
+        url: "https://kanji.jitenon.jp/kanjic/1320",
         "音読み": [
           "アイ"
         ],
@@ -7956,8 +7979,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "咽",
-        "url": "https://kanji.jitenon.jp/kanjid/1947",
+        char: "咽",
+        url: "https://kanji.jitenon.jp/kanjid/1947",
         "音読み": [
           "イン"
         ],
@@ -7971,8 +7994,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "咳",
-        "url": "https://kanji.jitenon.jp/kanjie/2222",
+        char: "咳",
+        url: "https://kanji.jitenon.jp/kanjie/2222",
         "音読み": [
           "カイ",
           "ガイ"
@@ -7992,8 +8015,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "哉",
-        "url": "https://kanji.jitenon.jp/kanjie/2440",
+        char: "哉",
+        url: "https://kanji.jitenon.jp/kanjie/2440",
         "音読み": [
           "サイ"
         ],
@@ -8011,8 +8034,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "員",
-        "url": "https://kanji.jitenon.jp/kanji/248",
+        char: "員",
+        url: "https://kanji.jitenon.jp/kanji/248",
         "音読み": [
           "イン"
         ],
@@ -8026,8 +8049,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "唐",
-        "url": "https://kanji.jitenon.jp/kanjic/1207",
+        char: "唐",
+        url: "https://kanji.jitenon.jp/kanjic/1207",
         "音読み": [
           "トウ"
         ],
@@ -8043,8 +8066,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "哲",
-        "url": "https://kanji.jitenon.jp/kanjid/1515",
+        char: "哲",
+        url: "https://kanji.jitenon.jp/kanjid/1515",
         "音読み": [
           "テツ"
         ],
@@ -8058,8 +8081,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "唆",
-        "url": "https://kanji.jitenon.jp/kanjid/1698",
+        char: "唆",
+        url: "https://kanji.jitenon.jp/kanjid/1698",
         "音読み": [
           "サ"
         ],
@@ -8075,8 +8098,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "唇",
-        "url": "https://kanji.jitenon.jp/kanjid/1765",
+        char: "唇",
+        url: "https://kanji.jitenon.jp/kanjid/1765",
         "音読み": [
           "シン"
         ],
@@ -8092,8 +8115,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "唄",
-        "url": "https://kanji.jitenon.jp/kanjid/1949",
+        char: "唄",
+        url: "https://kanji.jitenon.jp/kanjid/1949",
         "音読み": [],
         "訓読み": [
           "うた"
@@ -8107,8 +8130,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "哺",
-        "url": "https://kanji.jitenon.jp/kanjie/2101",
+        char: "哺",
+        url: "https://kanji.jitenon.jp/kanjie/2101",
         "音読み": [
           "ホ"
         ],
@@ -8122,8 +8145,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "唖",
-        "url": "https://kanji.jitenon.jp/kanjie/2137",
+        char: "唖",
+        url: "https://kanji.jitenon.jp/kanjie/2137",
         "音読み": [
           "ア",
           "アク",
@@ -8143,8 +8166,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "哨",
-        "url": "https://kanji.jitenon.jp/kanjif/2552",
+        char: "哨",
+        url: "https://kanji.jitenon.jp/kanjif/2552",
         "音読み": [
           "ショウ"
         ],
@@ -8160,8 +8183,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "啄",
-        "url": "https://kanji.jitenon.jp/kanjif/2702",
+        char: "啄",
+        url: "https://kanji.jitenon.jp/kanjif/2702",
         "音読み": [
           "タク",
           "トク"
@@ -8178,8 +8201,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "哩",
-        "url": "https://kanji.jitenon.jp/kanjif/2966",
+        char: "哩",
+        url: "https://kanji.jitenon.jp/kanjif/2966",
         "音読み": [
           "リ"
         ],
@@ -8195,8 +8218,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "商",
-        "url": "https://kanji.jitenon.jp/kanji/334",
+        char: "商",
+        url: "https://kanji.jitenon.jp/kanji/334",
         "音読み": [
           "ショウ"
         ],
@@ -8212,8 +8235,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "問",
-        "url": "https://kanji.jitenon.jp/kanji/417",
+        char: "問",
+        url: "https://kanji.jitenon.jp/kanji/417",
         "音読み": [
           "モン"
         ],
@@ -8231,8 +8254,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "唱",
-        "url": "https://kanji.jitenon.jp/kanjib/534",
+        char: "唱",
+        url: "https://kanji.jitenon.jp/kanjib/534",
         "音読み": [
           "ショウ"
         ],
@@ -8248,8 +8271,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "啓",
-        "url": "https://kanji.jitenon.jp/kanjic/1380",
+        char: "啓",
+        url: "https://kanji.jitenon.jp/kanjic/1380",
         "音読み": [
           "ケイ"
         ],
@@ -8263,8 +8286,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "喝",
-        "url": "https://kanji.jitenon.jp/kanjid/1631",
+        char: "喝",
+        url: "https://kanji.jitenon.jp/kanjid/1631",
         "音読み": [
           "カツ"
         ],
@@ -8278,8 +8301,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "唯",
-        "url": "https://kanji.jitenon.jp/kanjid/1913",
+        char: "唯",
+        url: "https://kanji.jitenon.jp/kanjid/1913",
         "音読み": [
           "イ",
           "ユイ"
@@ -8294,8 +8317,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "唾",
-        "url": "https://kanji.jitenon.jp/kanjie/2052",
+        char: "唾",
+        url: "https://kanji.jitenon.jp/kanjie/2052",
         "音読み": [
           "ダ"
         ],
@@ -8311,8 +8334,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "喜",
-        "url": "https://kanji.jitenon.jp/kanji/469",
+        char: "喜",
+        url: "https://kanji.jitenon.jp/kanji/469",
         "音読み": [
           "キ"
         ],
@@ -8328,8 +8351,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "営",
-        "url": "https://kanji.jitenon.jp/kanjib/645",
+        char: "営",
+        url: "https://kanji.jitenon.jp/kanjib/645",
         "音読み": [
           "エイ"
         ],
@@ -8345,8 +8368,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "善",
-        "url": "https://kanji.jitenon.jp/kanjib/927",
+        char: "善",
+        url: "https://kanji.jitenon.jp/kanjib/927",
         "音読み": [
           "ゼン"
         ],
@@ -8362,8 +8385,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "喚",
-        "url": "https://kanji.jitenon.jp/kanjic/1356",
+        char: "喚",
+        url: "https://kanji.jitenon.jp/kanjic/1356",
         "音読み": [
           "カン"
         ],
@@ -8377,8 +8400,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "喫",
-        "url": "https://kanji.jitenon.jp/kanjic/1369",
+        char: "喫",
+        url: "https://kanji.jitenon.jp/kanjic/1369",
         "音読み": [
           "キツ"
         ],
@@ -8392,8 +8415,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "喪",
-        "url": "https://kanji.jitenon.jp/kanjid/1798",
+        char: "喪",
+        url: "https://kanji.jitenon.jp/kanjid/1798",
         "音読み": [
           "ソウ"
         ],
@@ -8409,8 +8432,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "喉",
-        "url": "https://kanji.jitenon.jp/kanjid/2000",
+        char: "喉",
+        url: "https://kanji.jitenon.jp/kanjid/2000",
         "音読み": [
           "コウ"
         ],
@@ -8426,8 +8449,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "喩",
-        "url": "https://kanji.jitenon.jp/kanjie/2115",
+        char: "喩",
+        url: "https://kanji.jitenon.jp/kanjie/2115",
         "音読み": [
           "ユ"
         ],
@@ -8441,8 +8464,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "喬",
-        "url": "https://kanji.jitenon.jp/kanjie/2319",
+        char: "喬",
+        url: "https://kanji.jitenon.jp/kanjie/2319",
         "音読み": [
           "キョウ"
         ],
@@ -8459,8 +8482,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "喰",
-        "url": "https://kanji.jitenon.jp/kanjie/2346",
+        char: "喰",
+        url: "https://kanji.jitenon.jp/kanjie/2346",
         "音読み": [],
         "訓読み": [
           "く（う）",
@@ -8475,8 +8498,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "喧",
-        "url": "https://kanji.jitenon.jp/kanjie/2364",
+        char: "喧",
+        url: "https://kanji.jitenon.jp/kanjie/2364",
         "音読み": [
           "ケン"
         ],
@@ -8493,8 +8516,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "喋",
-        "url": "https://kanji.jitenon.jp/kanjif/2734",
+        char: "喋",
+        url: "https://kanji.jitenon.jp/kanjif/2734",
         "音読み": [
           "チョウ",
           "トウ"
@@ -8512,8 +8535,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "嘆",
-        "url": "https://kanji.jitenon.jp/kanjic/1182",
+        char: "嘆",
+        url: "https://kanji.jitenon.jp/kanjic/1182",
         "音読み": [
           "タン"
         ],
@@ -8530,8 +8553,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "嗣",
-        "url": "https://kanji.jitenon.jp/kanjid/1709",
+        char: "嗣",
+        url: "https://kanji.jitenon.jp/kanjid/1709",
         "音読み": [
           "シ"
         ],
@@ -8545,8 +8568,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "嗅",
-        "url": "https://kanji.jitenon.jp/kanjid/1979",
+        char: "嗅",
+        url: "https://kanji.jitenon.jp/kanjid/1979",
         "音読み": [
           "キュウ"
         ],
@@ -8562,8 +8585,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "嘩",
-        "url": "https://kanji.jitenon.jp/kanjie/2206",
+        char: "嘩",
+        url: "https://kanji.jitenon.jp/kanjie/2206",
         "音読み": [
           "カ"
         ],
@@ -8579,8 +8602,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "嘉",
-        "url": "https://kanji.jitenon.jp/kanjie/2205",
+        char: "嘉",
+        url: "https://kanji.jitenon.jp/kanjie/2205",
         "音読み": [
           "カ"
         ],
@@ -8597,8 +8620,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "嘘",
-        "url": "https://kanji.jitenon.jp/kanjie/2307",
+        char: "嘘",
+        url: "https://kanji.jitenon.jp/kanjie/2307",
         "音読み": [
           "キョ"
         ],
@@ -8616,8 +8639,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "嘗",
-        "url": "https://kanji.jitenon.jp/kanjif/2553",
+        char: "嘗",
+        url: "https://kanji.jitenon.jp/kanjif/2553",
         "音読み": [
           "ショウ",
           "ジョウ"
@@ -8636,8 +8659,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "器",
-        "url": "https://kanji.jitenon.jp/kanji/475",
+        char: "器",
+        url: "https://kanji.jitenon.jp/kanji/475",
         "音読み": [
           "キ"
         ],
@@ -8653,8 +8676,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "噴",
-        "url": "https://kanji.jitenon.jp/kanjic/1261",
+        char: "噴",
+        url: "https://kanji.jitenon.jp/kanjic/1261",
         "音読み": [
           "フン"
         ],
@@ -8670,8 +8693,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "嘱",
-        "url": "https://kanji.jitenon.jp/kanjic/1450",
+        char: "嘱",
+        url: "https://kanji.jitenon.jp/kanjic/1450",
         "音読み": [
           "ショク"
         ],
@@ -8685,8 +8708,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "嘲",
-        "url": "https://kanji.jitenon.jp/kanjie/2061",
+        char: "嘲",
+        url: "https://kanji.jitenon.jp/kanjie/2061",
         "音読み": [
           "チョウ"
         ],
@@ -8702,8 +8725,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "噛",
-        "url": "https://kanji.jitenon.jp/kanjie/2420",
+        char: "噛",
+        url: "https://kanji.jitenon.jp/kanjie/2420",
         "音読み": [
           "ゲツ",
           "ゴウ"
@@ -8721,8 +8744,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "噌",
-        "url": "https://kanji.jitenon.jp/kanjif/2651",
+        char: "噌",
+        url: "https://kanji.jitenon.jp/kanjif/2651",
         "音読み": [
           "ソ",
           "ソウ"
@@ -8739,8 +8762,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "噂",
-        "url": "https://kanji.jitenon.jp/kanjif/2675",
+        char: "噂",
+        url: "https://kanji.jitenon.jp/kanjif/2675",
         "音読み": [
           "ソン"
         ],
@@ -8756,8 +8779,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "噸",
-        "url": "https://kanji.jitenon.jp/kanjif/2806",
+        char: "噸",
+        url: "https://kanji.jitenon.jp/kanjif/2806",
         "音読み": [],
         "訓読み": [
           "トン"
@@ -8771,8 +8794,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "噺",
-        "url": "https://kanji.jitenon.jp/kanjif/2839",
+        char: "噺",
+        url: "https://kanji.jitenon.jp/kanjif/2839",
         "音読み": [],
         "訓読み": [
           "はなし"
@@ -8786,8 +8809,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "嚇",
-        "url": "https://kanji.jitenon.jp/kanjid/1629",
+        char: "嚇",
+        url: "https://kanji.jitenon.jp/kanjid/1629",
         "音読み": [
           "カク"
         ],
@@ -8801,8 +8824,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "嚢",
-        "url": "https://kanji.jitenon.jp/kanjif/2801",
+        char: "嚢",
+        url: "https://kanji.jitenon.jp/kanjif/2801",
         "音読み": [
           "ドウ",
           "ノウ"
@@ -8821,13 +8844,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03004",
-    "radical": "工",
-    "reading": "え・たくみ・たくみへん・こう",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03004",
+    radical: "工",
+    reading: "え・たくみ・たくみへん・こう",
+    kanji: [
       {
-        "char": "工",
-        "url": "https://kanji.jitenon.jp/kanji/128",
+        char: "工",
+        url: "https://kanji.jitenon.jp/kanji/128",
         "音読み": [
           "ク",
           "コウ"
@@ -8842,8 +8865,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "左",
-        "url": "https://kanji.jitenon.jp/kanji/023",
+        char: "左",
+        url: "https://kanji.jitenon.jp/kanji/023",
         "音読み": [
           "サ"
         ],
@@ -8859,8 +8882,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "巨",
-        "url": "https://kanji.jitenon.jp/kanjic/1061",
+        char: "巨",
+        url: "https://kanji.jitenon.jp/kanjic/1061",
         "音読み": [
           "キョ"
         ],
@@ -8874,8 +8897,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "巧",
-        "url": "https://kanji.jitenon.jp/kanjic/1404",
+        char: "巧",
+        url: "https://kanji.jitenon.jp/kanjic/1404",
         "音読み": [
           "コウ"
         ],
@@ -8891,8 +8914,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "差",
-        "url": "https://kanji.jitenon.jp/kanjib/506",
+        char: "差",
+        url: "https://kanji.jitenon.jp/kanjib/506",
         "音読み": [
           "サ"
         ],
@@ -8910,13 +8933,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03005",
-    "radical": "山",
-    "reading": "やま・やまへん・やまかんむり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03005",
+    radical: "山",
+    reading: "やま・やまへん・やまかんむり",
+    kanji: [
       {
-        "char": "山",
-        "url": "https://kanji.jitenon.jp/kanji/025",
+        char: "山",
+        url: "https://kanji.jitenon.jp/kanji/025",
         "音読み": [
           "サン"
         ],
@@ -8932,8 +8955,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "岐",
-        "url": "https://kanji.jitenon.jp/kanjic/1363",
+        char: "岐",
+        url: "https://kanji.jitenon.jp/kanjic/1363",
         "音読み": [
           "キ"
         ],
@@ -8947,8 +8970,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "岩",
-        "url": "https://kanji.jitenon.jp/kanji/102",
+        char: "岩",
+        url: "https://kanji.jitenon.jp/kanji/102",
         "音読み": [
           "ガン"
         ],
@@ -8964,8 +8987,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "岸",
-        "url": "https://kanji.jitenon.jp/kanji/265",
+        char: "岸",
+        url: "https://kanji.jitenon.jp/kanji/265",
         "音読み": [
           "ガン"
         ],
@@ -8981,8 +9004,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "岳",
-        "url": "https://kanji.jitenon.jp/kanjic/1346",
+        char: "岳",
+        url: "https://kanji.jitenon.jp/kanjic/1346",
         "音読み": [
           "ガク"
         ],
@@ -8998,8 +9021,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "岬",
-        "url": "https://kanji.jitenon.jp/kanjid/1904",
+        char: "岬",
+        url: "https://kanji.jitenon.jp/kanjid/1904",
         "音読み": [],
         "訓読み": [
           "みさき"
@@ -9013,8 +9036,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "岡",
-        "url": "https://kanji.jitenon.jp/kanjid/1955",
+        char: "岡",
+        url: "https://kanji.jitenon.jp/kanjid/1955",
         "音読み": [],
         "訓読み": [
           "おか"
@@ -9028,8 +9051,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "岨",
-        "url": "https://kanji.jitenon.jp/kanjif/2652",
+        char: "岨",
+        url: "https://kanji.jitenon.jp/kanjif/2652",
         "音読み": [
           "ショ",
           "ソ"
@@ -9047,8 +9070,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "岱",
-        "url": "https://kanji.jitenon.jp/kanjif/2689",
+        char: "岱",
+        url: "https://kanji.jitenon.jp/kanjif/2689",
         "音読み": [
           "タイ"
         ],
@@ -9062,8 +9085,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "峠",
-        "url": "https://kanji.jitenon.jp/kanjic/1218",
+        char: "峠",
+        url: "https://kanji.jitenon.jp/kanjic/1218",
         "音読み": [],
         "訓読み": [
           "とうげ"
@@ -9077,8 +9100,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "峡",
-        "url": "https://kanji.jitenon.jp/kanjic/1373",
+        char: "峡",
+        url: "https://kanji.jitenon.jp/kanjic/1373",
         "音読み": [
           "キョウ"
         ],
@@ -9092,8 +9115,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "島",
-        "url": "https://kanji.jitenon.jp/kanji/377",
+        char: "島",
+        url: "https://kanji.jitenon.jp/kanji/377",
         "音読み": [
           "トウ"
         ],
@@ -9109,8 +9132,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "峰",
-        "url": "https://kanji.jitenon.jp/kanjic/1266",
+        char: "峰",
+        url: "https://kanji.jitenon.jp/kanjic/1266",
         "音読み": [
           "ホウ"
         ],
@@ -9126,8 +9149,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "峨",
-        "url": "https://kanji.jitenon.jp/kanjie/2217",
+        char: "峨",
+        url: "https://kanji.jitenon.jp/kanjie/2217",
         "音読み": [
           "ガ"
         ],
@@ -9143,8 +9166,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "峻",
-        "url": "https://kanji.jitenon.jp/kanjif/2528",
+        char: "峻",
+        url: "https://kanji.jitenon.jp/kanjif/2528",
         "音読み": [
           "シュン"
         ],
@@ -9163,8 +9186,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "峯",
-        "url": "https://kanji.jitenon.jp/kanjif/2906",
+        char: "峯",
+        url: "https://kanji.jitenon.jp/kanjif/2906",
         "音読み": [
           "フ",
           "ホウ"
@@ -9181,8 +9204,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "崩",
-        "url": "https://kanji.jitenon.jp/kanjid/1553",
+        char: "崩",
+        url: "https://kanji.jitenon.jp/kanjid/1553",
         "音読み": [
           "ホウ"
         ],
@@ -9199,8 +9222,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "崎",
-        "url": "https://kanji.jitenon.jp/kanjid/1703",
+        char: "崎",
+        url: "https://kanji.jitenon.jp/kanjid/1703",
         "音読み": [],
         "訓読み": [
           "さき"
@@ -9214,8 +9237,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "崇",
-        "url": "https://kanji.jitenon.jp/kanjid/1772",
+        char: "崇",
+        url: "https://kanji.jitenon.jp/kanjid/1772",
         "音読み": [
           "スウ"
         ],
@@ -9229,8 +9252,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "崖",
-        "url": "https://kanji.jitenon.jp/kanjid/1964",
+        char: "崖",
+        url: "https://kanji.jitenon.jp/kanjid/1964",
         "音読み": [
           "ガイ"
         ],
@@ -9246,8 +9269,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "嵐",
-        "url": "https://kanji.jitenon.jp/kanjid/1941",
+        char: "嵐",
+        url: "https://kanji.jitenon.jp/kanjid/1941",
         "音読み": [],
         "訓読み": [
           "あらし"
@@ -9261,8 +9284,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "嵯",
-        "url": "https://kanji.jitenon.jp/kanjie/2433",
+        char: "嵯",
+        url: "https://kanji.jitenon.jp/kanjie/2433",
         "音読み": [
           "サ"
         ],
@@ -9278,8 +9301,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "嵳",
-        "url": "https://kanji.jitenon.jp/kanjie/2434",
+        char: "嵳",
+        url: "https://kanji.jitenon.jp/kanjie/2434",
         "音読み": [
           "サ"
         ],
@@ -9295,8 +9318,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "嵩",
-        "url": "https://kanji.jitenon.jp/kanjif/2508",
+        char: "嵩",
+        url: "https://kanji.jitenon.jp/kanjif/2508",
         "音読み": [
           "シュウ",
           "スウ"
@@ -9315,8 +9338,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "嶋",
-        "url": "https://kanji.jitenon.jp/kanjif/2786",
+        char: "嶋",
+        url: "https://kanji.jitenon.jp/kanjif/2786",
         "音読み": [
           "トウ"
         ],
@@ -9332,8 +9355,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "嶺",
-        "url": "https://kanji.jitenon.jp/kanjif/2981",
+        char: "嶺",
+        url: "https://kanji.jitenon.jp/kanjif/2981",
         "音読み": [
           "リョウ",
           "レイ"
@@ -9350,8 +9373,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "巌",
-        "url": "https://kanji.jitenon.jp/kanjie/2266",
+        char: "巌",
+        url: "https://kanji.jitenon.jp/kanjie/2266",
         "音読み": [
           "ガン",
           "ゲン"
@@ -9373,13 +9396,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03006",
-    "radical": "囗",
-    "reading": "くにがまえ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03006",
+    radical: "囗",
+    reading: "くにがまえ",
+    kanji: [
       {
-        "char": "四",
-        "url": "https://kanji.jitenon.jp/kanji/026",
+        char: "四",
+        url: "https://kanji.jitenon.jp/kanji/026",
         "音読み": [
           "シ"
         ],
@@ -9398,8 +9421,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "囚",
-        "url": "https://kanji.jitenon.jp/kanjid/1721",
+        char: "囚",
+        url: "https://kanji.jitenon.jp/kanjid/1721",
         "音読み": [
           "シュウ"
         ],
@@ -9413,8 +9436,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "回",
-        "url": "https://kanji.jitenon.jp/kanji/093",
+        char: "回",
+        url: "https://kanji.jitenon.jp/kanji/093",
         "音読み": [
           "エ",
           "カイ"
@@ -9432,8 +9455,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "因",
-        "url": "https://kanji.jitenon.jp/kanjib/642",
+        char: "因",
+        url: "https://kanji.jitenon.jp/kanjib/642",
         "音読み": [
           "イン"
         ],
@@ -9449,8 +9472,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "団",
-        "url": "https://kanji.jitenon.jp/kanjib/770",
+        char: "団",
+        url: "https://kanji.jitenon.jp/kanjib/770",
         "音読み": [
           "ダン",
           "トン"
@@ -9465,8 +9488,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "図",
-        "url": "https://kanji.jitenon.jp/kanji/166",
+        char: "図",
+        url: "https://kanji.jitenon.jp/kanji/166",
         "音読み": [
           "ズ",
           "ト"
@@ -9483,8 +9506,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "囲",
-        "url": "https://kanji.jitenon.jp/kanji/445",
+        char: "囲",
+        url: "https://kanji.jitenon.jp/kanji/445",
         "音読み": [
           "イ"
         ],
@@ -9501,8 +9524,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "困",
-        "url": "https://kanji.jitenon.jp/kanjib/876",
+        char: "困",
+        url: "https://kanji.jitenon.jp/kanjib/876",
         "音読み": [
           "コン"
         ],
@@ -9518,8 +9541,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "国",
-        "url": "https://kanji.jitenon.jp/kanji/136",
+        char: "国",
+        url: "https://kanji.jitenon.jp/kanji/136",
         "音読み": [
           "コク"
         ],
@@ -9535,8 +9558,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "固",
-        "url": "https://kanji.jitenon.jp/kanji/499",
+        char: "固",
+        url: "https://kanji.jitenon.jp/kanji/499",
         "音読み": [
           "コ"
         ],
@@ -9554,8 +9577,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "圃",
-        "url": "https://kanji.jitenon.jp/kanjif/2900",
+        char: "圃",
+        url: "https://kanji.jitenon.jp/kanjif/2900",
         "音読み": [
           "ホ"
         ],
@@ -9571,8 +9594,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "圏",
-        "url": "https://kanji.jitenon.jp/kanjic/1086",
+        char: "圏",
+        url: "https://kanji.jitenon.jp/kanjic/1086",
         "音読み": [
           "ケン"
         ],
@@ -9586,8 +9609,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "園",
-        "url": "https://kanji.jitenon.jp/kanji/085",
+        char: "園",
+        url: "https://kanji.jitenon.jp/kanji/085",
         "音読み": [
           "エン"
         ],
@@ -9605,13 +9628,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03007",
-    "radical": "女",
-    "reading": "おんな・おんなへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03007",
+    radical: "女",
+    reading: "おんな・おんなへん",
+    kanji: [
       {
-        "char": "女",
-        "url": "https://kanji.jitenon.jp/kanji/036",
+        char: "女",
+        url: "https://kanji.jitenon.jp/kanji/036",
         "音読み": [
           "ジョ",
           "ニョ",
@@ -9630,8 +9653,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "奴",
-        "url": "https://kanji.jitenon.jp/kanjic/1204",
+        char: "奴",
+        url: "https://kanji.jitenon.jp/kanjic/1204",
         "音読み": [
           "ド"
         ],
@@ -9645,8 +9668,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "好",
-        "url": "https://kanji.jitenon.jp/kanjib/502",
+        char: "好",
+        url: "https://kanji.jitenon.jp/kanjib/502",
         "音読み": [
           "コウ"
         ],
@@ -9663,8 +9686,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "如",
-        "url": "https://kanji.jitenon.jp/kanjic/1438",
+        char: "如",
+        url: "https://kanji.jitenon.jp/kanjic/1438",
         "音読み": [
           "ジョ",
           "ニョ"
@@ -9679,8 +9702,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "妃",
-        "url": "https://kanji.jitenon.jp/kanjid/1869",
+        char: "妃",
+        url: "https://kanji.jitenon.jp/kanjid/1869",
         "音読み": [
           "ヒ"
         ],
@@ -9694,8 +9717,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "妄",
-        "url": "https://kanji.jitenon.jp/kanjid/1908",
+        char: "妄",
+        url: "https://kanji.jitenon.jp/kanjid/1908",
         "音読み": [
           "ボウ",
           "モウ"
@@ -9710,8 +9733,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "妙",
-        "url": "https://kanji.jitenon.jp/kanjic/1279",
+        char: "妙",
+        url: "https://kanji.jitenon.jp/kanjic/1279",
         "音読み": [
           "ミョウ"
         ],
@@ -9725,8 +9748,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "妨",
-        "url": "https://kanji.jitenon.jp/kanjid/1561",
+        char: "妨",
+        url: "https://kanji.jitenon.jp/kanjid/1561",
         "音読み": [
           "ボウ"
         ],
@@ -9742,8 +9765,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "妥",
-        "url": "https://kanji.jitenon.jp/kanjid/1804",
+        char: "妥",
+        url: "https://kanji.jitenon.jp/kanjid/1804",
         "音読み": [
           "ダ"
         ],
@@ -9757,8 +9780,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "妊",
-        "url": "https://kanji.jitenon.jp/kanjid/1851",
+        char: "妊",
+        url: "https://kanji.jitenon.jp/kanjid/1851",
         "音読み": [
           "ニン"
         ],
@@ -9772,8 +9795,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "妖",
-        "url": "https://kanji.jitenon.jp/kanjie/2117",
+        char: "妖",
+        url: "https://kanji.jitenon.jp/kanjie/2117",
         "音読み": [
           "ヨウ"
         ],
@@ -9789,8 +9812,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "妓",
-        "url": "https://kanji.jitenon.jp/kanjie/2285",
+        char: "妓",
+        url: "https://kanji.jitenon.jp/kanjie/2285",
         "音読み": [
           "ギ"
         ],
@@ -9808,8 +9831,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "姉",
-        "url": "https://kanji.jitenon.jp/kanji/145",
+        char: "姉",
+        url: "https://kanji.jitenon.jp/kanji/145",
         "音読み": [
           "シ"
         ],
@@ -9825,8 +9848,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "妹",
-        "url": "https://kanji.jitenon.jp/kanji/225",
+        char: "妹",
+        url: "https://kanji.jitenon.jp/kanji/225",
         "音読み": [
           "マイ"
         ],
@@ -9842,8 +9865,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "委",
-        "url": "https://kanji.jitenon.jp/kanji/244",
+        char: "委",
+        url: "https://kanji.jitenon.jp/kanji/244",
         "音読み": [
           "イ"
         ],
@@ -9859,8 +9882,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "始",
-        "url": "https://kanji.jitenon.jp/kanji/301",
+        char: "始",
+        url: "https://kanji.jitenon.jp/kanji/301",
         "音読み": [
           "シ"
         ],
@@ -9877,8 +9900,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "妻",
-        "url": "https://kanji.jitenon.jp/kanjib/707",
+        char: "妻",
+        url: "https://kanji.jitenon.jp/kanjib/707",
         "音読み": [
           "サイ"
         ],
@@ -9894,8 +9917,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "姓",
-        "url": "https://kanji.jitenon.jp/kanjic/1161",
+        char: "姓",
+        url: "https://kanji.jitenon.jp/kanjic/1161",
         "音読み": [
           "ショウ",
           "セイ"
@@ -9910,8 +9933,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "妬",
-        "url": "https://kanji.jitenon.jp/kanjie/2069",
+        char: "妬",
+        url: "https://kanji.jitenon.jp/kanjie/2069",
         "音読み": [
           "ト"
         ],
@@ -9927,8 +9950,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "姑",
-        "url": "https://kanji.jitenon.jp/kanjie/2377",
+        char: "姑",
+        url: "https://kanji.jitenon.jp/kanjie/2377",
         "音読み": [
           "コ"
         ],
@@ -9946,8 +9969,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "姐",
-        "url": "https://kanji.jitenon.jp/kanjie/2489",
+        char: "姐",
+        url: "https://kanji.jitenon.jp/kanjie/2489",
         "音読み": [
           "シャ",
           "ソ"
@@ -9966,8 +9989,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "妾",
-        "url": "https://kanji.jitenon.jp/kanjif/2554",
+        char: "妾",
+        url: "https://kanji.jitenon.jp/kanjif/2554",
         "音読み": [
           "ショウ"
         ],
@@ -9984,8 +10007,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "姿",
-        "url": "https://kanji.jitenon.jp/kanjib/889",
+        char: "姿",
+        url: "https://kanji.jitenon.jp/kanjib/889",
         "音読み": [
           "シ"
         ],
@@ -10001,8 +10024,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "威",
-        "url": "https://kanji.jitenon.jp/kanjic/1006",
+        char: "威",
+        url: "https://kanji.jitenon.jp/kanjic/1006",
         "音読み": [
           "イ"
         ],
@@ -10016,8 +10039,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "姻",
-        "url": "https://kanji.jitenon.jp/kanjid/1609",
+        char: "姻",
+        url: "https://kanji.jitenon.jp/kanjid/1609",
         "音読み": [
           "イン"
         ],
@@ -10031,8 +10054,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "娃",
-        "url": "https://kanji.jitenon.jp/kanjie/2138",
+        char: "娃",
+        url: "https://kanji.jitenon.jp/kanjie/2138",
         "音読み": [
           "ア",
           "アイ"
@@ -10049,8 +10072,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "姶",
-        "url": "https://kanji.jitenon.jp/kanjie/2194",
+        char: "姶",
+        url: "https://kanji.jitenon.jp/kanjie/2194",
         "音読み": [
           "オウ"
         ],
@@ -10066,8 +10089,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "姦",
-        "url": "https://kanji.jitenon.jp/kanjie/2252",
+        char: "姦",
+        url: "https://kanji.jitenon.jp/kanjie/2252",
         "音読み": [
           "カン"
         ],
@@ -10085,8 +10108,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "姪",
-        "url": "https://kanji.jitenon.jp/kanjif/2763",
+        char: "姪",
+        url: "https://kanji.jitenon.jp/kanjif/2763",
         "音読み": [
           "テツ"
         ],
@@ -10102,8 +10125,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "姥",
-        "url": "https://kanji.jitenon.jp/kanjif/2903",
+        char: "姥",
+        url: "https://kanji.jitenon.jp/kanjif/2903",
         "音読み": [
           "ボ",
           "モ"
@@ -10121,8 +10144,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "娘",
-        "url": "https://kanji.jitenon.jp/kanjic/1283",
+        char: "娘",
+        url: "https://kanji.jitenon.jp/kanjic/1283",
         "音読み": [],
         "訓読み": [
           "むすめ"
@@ -10136,8 +10159,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "娯",
-        "url": "https://kanji.jitenon.jp/kanjic/1396",
+        char: "娯",
+        url: "https://kanji.jitenon.jp/kanjic/1396",
         "音読み": [
           "ゴ"
         ],
@@ -10151,8 +10174,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "姫",
-        "url": "https://kanji.jitenon.jp/kanjid/1539",
+        char: "姫",
+        url: "https://kanji.jitenon.jp/kanjid/1539",
         "音読み": [],
         "訓読み": [
           "ひめ"
@@ -10166,8 +10189,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "娠",
-        "url": "https://kanji.jitenon.jp/kanjid/1761",
+        char: "娠",
+        url: "https://kanji.jitenon.jp/kanjid/1761",
         "音読み": [
           "シン"
         ],
@@ -10181,8 +10204,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "娩",
-        "url": "https://kanji.jitenon.jp/kanjif/2898",
+        char: "娩",
+        url: "https://kanji.jitenon.jp/kanjif/2898",
         "音読み": [
           "バン",
           "ベン"
@@ -10199,8 +10222,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "婦",
-        "url": "https://kanji.jitenon.jp/kanjib/799",
+        char: "婦",
+        url: "https://kanji.jitenon.jp/kanjib/799",
         "音読み": [
           "フ"
         ],
@@ -10214,8 +10237,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "婚",
-        "url": "https://kanji.jitenon.jp/kanjic/1104",
+        char: "婚",
+        url: "https://kanji.jitenon.jp/kanjic/1104",
         "音読み": [
           "コン"
         ],
@@ -10229,8 +10252,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "婆",
-        "url": "https://kanji.jitenon.jp/kanjid/1526",
+        char: "婆",
+        url: "https://kanji.jitenon.jp/kanjid/1526",
         "音読み": [
           "バ"
         ],
@@ -10244,8 +10267,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "娼",
-        "url": "https://kanji.jitenon.jp/kanjif/2555",
+        char: "娼",
+        url: "https://kanji.jitenon.jp/kanjif/2555",
         "音読み": [
           "ショウ"
         ],
@@ -10261,8 +10284,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "婁",
-        "url": "https://kanji.jitenon.jp/kanjif/2995",
+        char: "婁",
+        url: "https://kanji.jitenon.jp/kanjif/2995",
         "音読み": [
           "ル",
           "ロウ"
@@ -10280,8 +10303,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "婿",
-        "url": "https://kanji.jitenon.jp/kanjic/1465",
+        char: "婿",
+        url: "https://kanji.jitenon.jp/kanjic/1465",
         "音読み": [
           "セイ"
         ],
@@ -10297,8 +10320,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "媒",
-        "url": "https://kanji.jitenon.jp/kanjid/1858",
+        char: "媒",
+        url: "https://kanji.jitenon.jp/kanjid/1858",
         "音読み": [
           "バイ"
         ],
@@ -10312,8 +10335,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "媛",
-        "url": "https://kanji.jitenon.jp/kanjid/1952",
+        char: "媛",
+        url: "https://kanji.jitenon.jp/kanjid/1952",
         "音読み": [
           "エン"
         ],
@@ -10327,8 +10350,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "嫁",
-        "url": "https://kanji.jitenon.jp/kanjic/1335",
+        char: "嫁",
+        url: "https://kanji.jitenon.jp/kanjic/1335",
         "音読み": [
           "カ"
         ],
@@ -10345,8 +10368,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "嫌",
-        "url": "https://kanji.jitenon.jp/kanjid/1674",
+        char: "嫌",
+        url: "https://kanji.jitenon.jp/kanjid/1674",
         "音読み": [
           "ケン",
           "ゲン"
@@ -10364,8 +10387,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "嫉",
-        "url": "https://kanji.jitenon.jp/kanjie/2020",
+        char: "嫉",
+        url: "https://kanji.jitenon.jp/kanjie/2020",
         "音読み": [
           "シツ"
         ],
@@ -10379,8 +10402,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "嫡",
-        "url": "https://kanji.jitenon.jp/kanjid/1814",
+        char: "嫡",
+        url: "https://kanji.jitenon.jp/kanjid/1814",
         "音読み": [
           "チャク"
         ],
@@ -10394,8 +10417,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "嬉",
-        "url": "https://kanji.jitenon.jp/kanjie/2273",
+        char: "嬉",
+        url: "https://kanji.jitenon.jp/kanjie/2273",
         "音読み": [
           "キ"
         ],
@@ -10413,8 +10436,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "嬢",
-        "url": "https://kanji.jitenon.jp/kanjic/1448",
+        char: "嬢",
+        url: "https://kanji.jitenon.jp/kanjic/1448",
         "音読み": [
           "ジョウ"
         ],
@@ -10428,8 +10451,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "嬰",
-        "url": "https://kanji.jitenon.jp/kanjie/2175",
+        char: "嬰",
+        url: "https://kanji.jitenon.jp/kanjie/2175",
         "音読み": [
           "エイ"
         ],
@@ -10448,8 +10471,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "嬬",
-        "url": "https://kanji.jitenon.jp/kanjif/2502",
+        char: "嬬",
+        url: "https://kanji.jitenon.jp/kanjif/2502",
         "音読み": [
           "ジュ"
         ],
@@ -10468,13 +10491,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03008",
-    "radical": "小",
-    "reading": "しょう・しょうがしら・なおがしら",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03008",
+    radical: "小",
+    reading: "しょう・しょうがしら・なおがしら",
+    kanji: [
       {
-        "char": "小",
-        "url": "https://kanji.jitenon.jp/kanji/037",
+        char: "小",
+        url: "https://kanji.jitenon.jp/kanji/037",
         "音読み": [
           "ショウ"
         ],
@@ -10492,8 +10515,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "少",
-        "url": "https://kanji.jitenon.jp/kanji/160",
+        char: "少",
+        url: "https://kanji.jitenon.jp/kanji/160",
         "音読み": [
           "ショウ"
         ],
@@ -10510,8 +10533,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "当",
-        "url": "https://kanji.jitenon.jp/kanji/200",
+        char: "当",
+        url: "https://kanji.jitenon.jp/kanji/200",
         "音読み": [
           "トウ"
         ],
@@ -10528,8 +10551,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "尖",
-        "url": "https://kanji.jitenon.jp/kanjif/2634",
+        char: "尖",
+        url: "https://kanji.jitenon.jp/kanjif/2634",
         "音読み": [
           "セン"
         ],
@@ -10547,8 +10570,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "尚",
-        "url": "https://kanji.jitenon.jp/kanjid/1744",
+        char: "尚",
+        url: "https://kanji.jitenon.jp/kanjid/1744",
         "音読み": [
           "ショウ"
         ],
@@ -10562,8 +10585,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "嘗",
-        "url": "https://kanji.jitenon.jp/kanjif/2553",
+        char: "嘗",
+        url: "https://kanji.jitenon.jp/kanjif/2553",
         "音読み": [
           "ショウ",
           "ジョウ"
@@ -10584,13 +10607,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03009",
-    "radical": "夕",
-    "reading": "ゆうべ・ゆう・た",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03009",
+    radical: "夕",
+    reading: "ゆうべ・ゆう・た",
+    kanji: [
       {
-        "char": "夕",
-        "url": "https://kanji.jitenon.jp/kanji/047",
+        char: "夕",
+        url: "https://kanji.jitenon.jp/kanji/047",
         "音読み": [
           "セキ"
         ],
@@ -10606,8 +10629,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "外",
-        "url": "https://kanji.jitenon.jp/kanji/096",
+        char: "外",
+        url: "https://kanji.jitenon.jp/kanji/096",
         "音読み": [
           "ガイ",
           "ゲ"
@@ -10627,8 +10650,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "多",
-        "url": "https://kanji.jitenon.jp/kanji/181",
+        char: "多",
+        url: "https://kanji.jitenon.jp/kanji/181",
         "音読み": [
           "タ"
         ],
@@ -10644,8 +10667,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "夙",
-        "url": "https://kanji.jitenon.jp/kanjif/2527",
+        char: "夙",
+        url: "https://kanji.jitenon.jp/kanjif/2527",
         "音読み": [
           "シュク"
         ],
@@ -10663,8 +10686,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "夜",
-        "url": "https://kanji.jitenon.jp/kanji/232",
+        char: "夜",
+        url: "https://kanji.jitenon.jp/kanji/232",
         "音読み": [
           "ヤ"
         ],
@@ -10681,8 +10704,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "夢",
-        "url": "https://kanji.jitenon.jp/kanjib/812",
+        char: "夢",
+        url: "https://kanji.jitenon.jp/kanjib/812",
         "音読み": [
           "ム"
         ],
@@ -10700,13 +10723,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03010",
-    "radical": "巛 川",
-    "reading": "かわ・まげかわ・まがりがわ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03010",
+    radical: "巛 川",
+    reading: "かわ・まげかわ・まがりがわ",
+    kanji: [
       {
-        "char": "川",
-        "url": "https://kanji.jitenon.jp/kanji/050",
+        char: "川",
+        url: "https://kanji.jitenon.jp/kanji/050",
         "音読み": [
           "セン"
         ],
@@ -10722,8 +10745,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "州",
-        "url": "https://kanji.jitenon.jp/kanji/324",
+        char: "州",
+        url: "https://kanji.jitenon.jp/kanji/324",
         "音読み": [
           "シュウ"
         ],
@@ -10739,8 +10762,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "巡",
-        "url": "https://kanji.jitenon.jp/kanjic/1134",
+        char: "巡",
+        url: "https://kanji.jitenon.jp/kanjic/1134",
         "音読み": [
           "ジュン"
         ],
@@ -10758,13 +10781,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03011",
-    "radical": "大",
-    "reading": "だい",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03011",
+    radical: "大",
+    reading: "だい",
+    kanji: [
       {
-        "char": "大",
-        "url": "https://kanji.jitenon.jp/kanji/055",
+        char: "大",
+        url: "https://kanji.jitenon.jp/kanji/055",
         "音読み": [
           "タイ",
           "ダイ"
@@ -10783,8 +10806,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "天",
-        "url": "https://kanji.jitenon.jp/kanji/061",
+        char: "天",
+        url: "https://kanji.jitenon.jp/kanji/061",
         "音読み": [
           "テン"
         ],
@@ -10801,8 +10824,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "太",
-        "url": "https://kanji.jitenon.jp/kanji/180",
+        char: "太",
+        url: "https://kanji.jitenon.jp/kanji/180",
         "音読み": [
           "タ",
           "タイ"
@@ -10820,8 +10843,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "夫",
-        "url": "https://kanji.jitenon.jp/kanjib/601",
+        char: "夫",
+        url: "https://kanji.jitenon.jp/kanjib/601",
         "音読み": [
           "フ",
           "フウ"
@@ -10838,8 +10861,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "央",
-        "url": "https://kanji.jitenon.jp/kanji/254",
+        char: "央",
+        url: "https://kanji.jitenon.jp/kanji/254",
         "音読み": [
           "オウ"
         ],
@@ -10853,8 +10876,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "失",
-        "url": "https://kanji.jitenon.jp/kanjib/527",
+        char: "失",
+        url: "https://kanji.jitenon.jp/kanjib/527",
         "音読み": [
           "シツ"
         ],
@@ -10870,8 +10893,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "夷",
-        "url": "https://kanji.jitenon.jp/kanjie/2150",
+        char: "夷",
+        url: "https://kanji.jitenon.jp/kanjie/2150",
         "音読み": [
           "イ"
         ],
@@ -10891,8 +10914,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "奇",
-        "url": "https://kanji.jitenon.jp/kanjic/1047",
+        char: "奇",
+        url: "https://kanji.jitenon.jp/kanjic/1047",
         "音読み": [
           "キ"
         ],
@@ -10906,8 +10929,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "奉",
-        "url": "https://kanji.jitenon.jp/kanjid/1560",
+        char: "奉",
+        url: "https://kanji.jitenon.jp/kanjid/1560",
         "音読み": [
           "ブ",
           "ホウ"
@@ -10924,8 +10947,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "奔",
-        "url": "https://kanji.jitenon.jp/kanjid/1899",
+        char: "奔",
+        url: "https://kanji.jitenon.jp/kanjid/1899",
         "音読み": [
           "ホン"
         ],
@@ -10939,8 +10962,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "奈",
-        "url": "https://kanji.jitenon.jp/kanjie/2078",
+        char: "奈",
+        url: "https://kanji.jitenon.jp/kanjie/2078",
         "音読み": [
           "ナ"
         ],
@@ -10954,8 +10977,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "奄",
-        "url": "https://kanji.jitenon.jp/kanjie/2184",
+        char: "奄",
+        url: "https://kanji.jitenon.jp/kanjie/2184",
         "音読み": [
           "エン"
         ],
@@ -10973,8 +10996,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "奏",
-        "url": "https://kanji.jitenon.jp/kanjib/930",
+        char: "奏",
+        url: "https://kanji.jitenon.jp/kanjib/930",
         "音読み": [
           "ソウ"
         ],
@@ -10990,8 +11013,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "契",
-        "url": "https://kanji.jitenon.jp/kanjic/1386",
+        char: "契",
+        url: "https://kanji.jitenon.jp/kanjic/1386",
         "音読み": [
           "ケイ"
         ],
@@ -11007,8 +11030,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "套",
-        "url": "https://kanji.jitenon.jp/kanjif/2784",
+        char: "套",
+        url: "https://kanji.jitenon.jp/kanjif/2784",
         "音読み": [
           "トウ"
         ],
@@ -11025,8 +11048,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "爽",
-        "url": "https://kanji.jitenon.jp/kanjie/2046",
+        char: "爽",
+        url: "https://kanji.jitenon.jp/kanjie/2046",
         "音読み": [
           "ソウ"
         ],
@@ -11042,8 +11065,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "奥",
-        "url": "https://kanji.jitenon.jp/kanjic/1025",
+        char: "奥",
+        url: "https://kanji.jitenon.jp/kanjic/1025",
         "音読み": [
           "オウ"
         ],
@@ -11059,8 +11082,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "奨",
-        "url": "https://kanji.jitenon.jp/kanjid/1748",
+        char: "奨",
+        url: "https://kanji.jitenon.jp/kanjid/1748",
         "音読み": [
           "ショウ"
         ],
@@ -11074,8 +11097,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "奪",
-        "url": "https://kanji.jitenon.jp/kanjic/1496",
+        char: "奪",
+        url: "https://kanji.jitenon.jp/kanjic/1496",
         "音読み": [
           "ダツ"
         ],
@@ -11091,8 +11114,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "奮",
-        "url": "https://kanji.jitenon.jp/kanjib/974",
+        char: "奮",
+        url: "https://kanji.jitenon.jp/kanjib/974",
         "音読み": [
           "フン"
         ],
@@ -11110,13 +11133,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03012",
-    "radical": "土",
-    "reading": "つち・つちへん・どへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03012",
+    radical: "土",
+    reading: "つち・つちへん・どへん",
+    kanji: [
       {
-        "char": "土",
-        "url": "https://kanji.jitenon.jp/kanji/063",
+        char: "土",
+        url: "https://kanji.jitenon.jp/kanji/063",
         "音読み": [
           "ト",
           "ド"
@@ -11133,8 +11156,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "圧",
-        "url": "https://kanji.jitenon.jp/kanjib/640",
+        char: "圧",
+        url: "https://kanji.jitenon.jp/kanjib/640",
         "音読み": [
           "アツ"
         ],
@@ -11148,8 +11171,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "地",
-        "url": "https://kanji.jitenon.jp/kanji/186",
+        char: "地",
+        url: "https://kanji.jitenon.jp/kanji/186",
         "音読み": [
           "ジ",
           "チ"
@@ -11164,8 +11187,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "在",
-        "url": "https://kanji.jitenon.jp/kanjib/710",
+        char: "在",
+        url: "https://kanji.jitenon.jp/kanjib/710",
         "音読み": [
           "ザイ"
         ],
@@ -11181,8 +11204,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "圭",
-        "url": "https://kanji.jitenon.jp/kanjie/2350",
+        char: "圭",
+        url: "https://kanji.jitenon.jp/kanjie/2350",
         "音読み": [
           "ケイ"
         ],
@@ -11198,8 +11221,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "坂",
-        "url": "https://kanji.jitenon.jp/kanji/394",
+        char: "坂",
+        url: "https://kanji.jitenon.jp/kanji/394",
         "音読み": [
           "ハン"
         ],
@@ -11215,8 +11238,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "均",
-        "url": "https://kanji.jitenon.jp/kanjib/680",
+        char: "均",
+        url: "https://kanji.jitenon.jp/kanjib/680",
         "音読み": [
           "キン"
         ],
@@ -11230,8 +11253,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "坊",
-        "url": "https://kanji.jitenon.jp/kanjic/1270",
+        char: "坊",
+        url: "https://kanji.jitenon.jp/kanjic/1270",
         "音読み": [
           "ボウ",
           "ボッ"
@@ -11246,8 +11269,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "坑",
-        "url": "https://kanji.jitenon.jp/kanjic/1405",
+        char: "坑",
+        url: "https://kanji.jitenon.jp/kanjic/1405",
         "音読み": [
           "コウ"
         ],
@@ -11261,8 +11284,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "坐",
-        "url": "https://kanji.jitenon.jp/kanjie/2439",
+        char: "坐",
+        url: "https://kanji.jitenon.jp/kanjie/2439",
         "音読み": [
           "ザ"
         ],
@@ -11283,8 +11306,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "垂",
-        "url": "https://kanji.jitenon.jp/kanjib/917",
+        char: "垂",
+        url: "https://kanji.jitenon.jp/kanjib/917",
         "音読み": [
           "スイ"
         ],
@@ -11301,8 +11324,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "坪",
-        "url": "https://kanji.jitenon.jp/kanjid/1825",
+        char: "坪",
+        url: "https://kanji.jitenon.jp/kanjid/1825",
         "音読み": [],
         "訓読み": [
           "つぼ"
@@ -11316,8 +11339,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "尭",
-        "url": "https://kanji.jitenon.jp/kanjie/2326",
+        char: "尭",
+        url: "https://kanji.jitenon.jp/kanjie/2326",
         "音読み": [
           "ギョウ"
         ],
@@ -11333,8 +11356,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "坤",
-        "url": "https://kanji.jitenon.jp/kanjie/2426",
+        char: "坤",
+        url: "https://kanji.jitenon.jp/kanjie/2426",
         "音読み": [
           "コン"
         ],
@@ -11351,8 +11374,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "坦",
-        "url": "https://kanji.jitenon.jp/kanjif/2710",
+        char: "坦",
+        url: "https://kanji.jitenon.jp/kanjif/2710",
         "音読み": [
           "タン"
         ],
@@ -11368,8 +11391,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "型",
-        "url": "https://kanji.jitenon.jp/kanji/490",
+        char: "型",
+        url: "https://kanji.jitenon.jp/kanji/490",
         "音読み": [
           "ケイ"
         ],
@@ -11385,8 +11408,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "城",
-        "url": "https://kanji.jitenon.jp/kanjib/912",
+        char: "城",
+        url: "https://kanji.jitenon.jp/kanjib/912",
         "音読み": [
           "ジョウ"
         ],
@@ -11402,8 +11425,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "垣",
-        "url": "https://kanji.jitenon.jp/kanjid/1626",
+        char: "垣",
+        url: "https://kanji.jitenon.jp/kanjid/1626",
         "音読み": [],
         "訓読み": [
           "かき"
@@ -11417,8 +11440,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "垢",
-        "url": "https://kanji.jitenon.jp/kanjie/2336",
+        char: "垢",
+        url: "https://kanji.jitenon.jp/kanjie/2336",
         "音読み": [
           "ク",
           "コウ"
@@ -11438,8 +11461,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "埋",
-        "url": "https://kanji.jitenon.jp/kanjid/1571",
+        char: "埋",
+        url: "https://kanji.jitenon.jp/kanjid/1571",
         "音読み": [
           "マイ"
         ],
@@ -11457,8 +11480,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "堂",
-        "url": "https://kanji.jitenon.jp/kanjib/582",
+        char: "堂",
+        url: "https://kanji.jitenon.jp/kanjib/582",
         "音読み": [
           "ドウ"
         ],
@@ -11472,8 +11495,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "基",
-        "url": "https://kanji.jitenon.jp/kanjib/670",
+        char: "基",
+        url: "https://kanji.jitenon.jp/kanjib/670",
         "音読み": [
           "キ"
         ],
@@ -11490,8 +11513,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "域",
-        "url": "https://kanji.jitenon.jp/kanjib/826",
+        char: "域",
+        url: "https://kanji.jitenon.jp/kanjib/826",
         "音読み": [
           "イキ"
         ],
@@ -11505,8 +11528,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "執",
-        "url": "https://kanji.jitenon.jp/kanjic/1118",
+        char: "執",
+        url: "https://kanji.jitenon.jp/kanjic/1118",
         "音読み": [
           "シツ",
           "シュウ"
@@ -11523,8 +11546,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "培",
-        "url": "https://kanji.jitenon.jp/kanjid/1856",
+        char: "培",
+        url: "https://kanji.jitenon.jp/kanjid/1856",
         "音読み": [
           "バイ"
         ],
@@ -11540,8 +11563,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "堀",
-        "url": "https://kanji.jitenon.jp/kanjid/1898",
+        char: "堀",
+        url: "https://kanji.jitenon.jp/kanjid/1898",
         "音読み": [],
         "訓読み": [
           "ほり"
@@ -11555,8 +11578,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "埼",
-        "url": "https://kanji.jitenon.jp/kanjie/2010",
+        char: "埼",
+        url: "https://kanji.jitenon.jp/kanjie/2010",
         "音読み": [],
         "訓読み": [
           "さい"
@@ -11570,8 +11593,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "堆",
-        "url": "https://kanji.jitenon.jp/kanjie/2053",
+        char: "堆",
+        url: "https://kanji.jitenon.jp/kanjie/2053",
         "音読み": [
           "タイ"
         ],
@@ -11585,8 +11608,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "埴",
-        "url": "https://kanji.jitenon.jp/kanjif/2590",
+        char: "埴",
+        url: "https://kanji.jitenon.jp/kanjif/2590",
         "音読み": [
           "ショク"
         ],
@@ -11602,8 +11625,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "埠",
-        "url": "https://kanji.jitenon.jp/kanjif/2872",
+        char: "埠",
+        url: "https://kanji.jitenon.jp/kanjif/2872",
         "音読み": [
           "フ"
         ],
@@ -11620,8 +11643,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "場",
-        "url": "https://kanji.jitenon.jp/kanji/161",
+        char: "場",
+        url: "https://kanji.jitenon.jp/kanji/161",
         "音読み": [
           "ジョウ"
         ],
@@ -11637,8 +11660,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "報",
-        "url": "https://kanji.jitenon.jp/kanjib/809",
+        char: "報",
+        url: "https://kanji.jitenon.jp/kanjib/809",
         "音読み": [
           "ホウ"
         ],
@@ -11654,8 +11677,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "堅",
-        "url": "https://kanji.jitenon.jp/kanjic/1082",
+        char: "堅",
+        url: "https://kanji.jitenon.jp/kanjic/1082",
         "音読み": [
           "ケン"
         ],
@@ -11671,8 +11694,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "堤",
-        "url": "https://kanji.jitenon.jp/kanjic/1196",
+        char: "堤",
+        url: "https://kanji.jitenon.jp/kanjic/1196",
         "音読み": [
           "テイ"
         ],
@@ -11688,8 +11711,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "塔",
-        "url": "https://kanji.jitenon.jp/kanjic/1210",
+        char: "塔",
+        url: "https://kanji.jitenon.jp/kanjic/1210",
         "音読み": [
           "トウ"
         ],
@@ -11703,8 +11726,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "堪",
-        "url": "https://kanji.jitenon.jp/kanjid/1641",
+        char: "堪",
+        url: "https://kanji.jitenon.jp/kanjid/1641",
         "音読み": [
           "カン"
         ],
@@ -11720,8 +11743,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "堕",
-        "url": "https://kanji.jitenon.jp/kanjid/1805",
+        char: "堕",
+        url: "https://kanji.jitenon.jp/kanjid/1805",
         "音読み": [
           "ダ"
         ],
@@ -11735,8 +11758,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "塚",
-        "url": "https://kanji.jitenon.jp/kanjid/1823",
+        char: "塚",
+        url: "https://kanji.jitenon.jp/kanjid/1823",
         "音読み": [],
         "訓読み": [
           "つか"
@@ -11750,8 +11773,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "塀",
-        "url": "https://kanji.jitenon.jp/kanjid/1884",
+        char: "塀",
+        url: "https://kanji.jitenon.jp/kanjid/1884",
         "音読み": [
           "ヘイ"
         ],
@@ -11765,8 +11788,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "塁",
-        "url": "https://kanji.jitenon.jp/kanjid/1933",
+        char: "塁",
+        url: "https://kanji.jitenon.jp/kanjid/1933",
         "音読み": [
           "ルイ"
         ],
@@ -11780,8 +11803,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "堰",
-        "url": "https://kanji.jitenon.jp/kanjie/2183",
+        char: "堰",
+        url: "https://kanji.jitenon.jp/kanjie/2183",
         "音読み": [
           "エン"
         ],
@@ -11799,8 +11822,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "堺",
-        "url": "https://kanji.jitenon.jp/kanjie/2223",
+        char: "堺",
+        url: "https://kanji.jitenon.jp/kanjie/2223",
         "音読み": [
           "カイ"
         ],
@@ -11816,8 +11839,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "堵",
-        "url": "https://kanji.jitenon.jp/kanjif/2779",
+        char: "堵",
+        url: "https://kanji.jitenon.jp/kanjif/2779",
         "音読み": [
           "ト"
         ],
@@ -11833,8 +11856,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "塩",
-        "url": "https://kanji.jitenon.jp/kanji/450",
+        char: "塩",
+        url: "https://kanji.jitenon.jp/kanji/450",
         "音読み": [
           "エン"
         ],
@@ -11850,8 +11873,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "墓",
-        "url": "https://kanji.jitenon.jp/kanjib/807",
+        char: "墓",
+        url: "https://kanji.jitenon.jp/kanjib/807",
         "音読み": [
           "ボ"
         ],
@@ -11867,8 +11890,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "塊",
-        "url": "https://kanji.jitenon.jp/kanjic/1339",
+        char: "塊",
+        url: "https://kanji.jitenon.jp/kanjic/1339",
         "音読み": [
           "カイ"
         ],
@@ -11884,8 +11907,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "塗",
-        "url": "https://kanji.jitenon.jp/kanjid/1517",
+        char: "塗",
+        url: "https://kanji.jitenon.jp/kanjid/1517",
         "音読み": [
           "ト"
         ],
@@ -11901,8 +11924,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "塑",
-        "url": "https://kanji.jitenon.jp/kanjid/1793",
+        char: "塑",
+        url: "https://kanji.jitenon.jp/kanjid/1793",
         "音読み": [
           "ソ"
         ],
@@ -11916,8 +11939,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "塞",
-        "url": "https://kanji.jitenon.jp/kanjie/2009",
+        char: "塞",
+        url: "https://kanji.jitenon.jp/kanjie/2009",
         "音読み": [
           "サイ",
           "ソク"
@@ -11935,8 +11958,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "填",
-        "url": "https://kanji.jitenon.jp/kanjie/2068",
+        char: "填",
+        url: "https://kanji.jitenon.jp/kanjie/2068",
         "音読み": [
           "テン"
         ],
@@ -11950,8 +11973,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "塙",
-        "url": "https://kanji.jitenon.jp/kanjie/2238",
+        char: "塙",
+        url: "https://kanji.jitenon.jp/kanjie/2238",
         "音読み": [
           "カク",
           "コウ"
@@ -11969,8 +11992,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "塘",
-        "url": "https://kanji.jitenon.jp/kanjif/2783",
+        char: "塘",
+        url: "https://kanji.jitenon.jp/kanjif/2783",
         "音読み": [
           "トウ"
         ],
@@ -11986,8 +12009,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "境",
-        "url": "https://kanji.jitenon.jp/kanjib/679",
+        char: "境",
+        url: "https://kanji.jitenon.jp/kanjib/679",
         "音読み": [
           "キョウ",
           "ケイ"
@@ -12004,8 +12027,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "増",
-        "url": "https://kanji.jitenon.jp/kanjib/760",
+        char: "増",
+        url: "https://kanji.jitenon.jp/kanjib/760",
         "音読み": [
           "ゾウ"
         ],
@@ -12023,8 +12046,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "墨",
-        "url": "https://kanji.jitenon.jp/kanjid/1567",
+        char: "墨",
+        url: "https://kanji.jitenon.jp/kanjid/1567",
         "音読み": [
           "ボク"
         ],
@@ -12040,8 +12063,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "塾",
-        "url": "https://kanji.jitenon.jp/kanjid/1732",
+        char: "塾",
+        url: "https://kanji.jitenon.jp/kanjid/1732",
         "音読み": [
           "ジュク"
         ],
@@ -12055,8 +12078,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "塵",
-        "url": "https://kanji.jitenon.jp/kanjif/2604",
+        char: "塵",
+        url: "https://kanji.jitenon.jp/kanjif/2604",
         "音読み": [
           "ジン"
         ],
@@ -12072,8 +12095,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "墜",
-        "url": "https://kanji.jitenon.jp/kanjid/1511",
+        char: "墜",
+        url: "https://kanji.jitenon.jp/kanjid/1511",
         "音読み": [
           "ツイ"
         ],
@@ -12087,8 +12110,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "墳",
-        "url": "https://kanji.jitenon.jp/kanjid/1547",
+        char: "墳",
+        url: "https://kanji.jitenon.jp/kanjid/1547",
         "音読み": [
           "フン"
         ],
@@ -12102,8 +12125,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "壊",
-        "url": "https://kanji.jitenon.jp/kanjic/1032",
+        char: "壊",
+        url: "https://kanji.jitenon.jp/kanjic/1032",
         "音読み": [
           "カイ"
         ],
@@ -12120,8 +12143,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "壁",
-        "url": "https://kanji.jitenon.jp/kanjic/1263",
+        char: "壁",
+        url: "https://kanji.jitenon.jp/kanjic/1263",
         "音読み": [
           "ヘキ"
         ],
@@ -12137,8 +12160,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "墾",
-        "url": "https://kanji.jitenon.jp/kanjic/1414",
+        char: "墾",
+        url: "https://kanji.jitenon.jp/kanjic/1414",
         "音読み": [
           "コン"
         ],
@@ -12152,8 +12175,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "壇",
-        "url": "https://kanji.jitenon.jp/kanjic/1499",
+        char: "壇",
+        url: "https://kanji.jitenon.jp/kanjic/1499",
         "音読み": [
           "タン",
           "ダン"
@@ -12168,8 +12191,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "壌",
-        "url": "https://kanji.jitenon.jp/kanjid/1758",
+        char: "壌",
+        url: "https://kanji.jitenon.jp/kanjid/1758",
         "音読み": [
           "ジョウ"
         ],
@@ -12183,8 +12206,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "壕",
-        "url": "https://kanji.jitenon.jp/kanjie/2421",
+        char: "壕",
+        url: "https://kanji.jitenon.jp/kanjie/2421",
         "音読み": [
           "コウ",
           "ゴウ"
@@ -12203,13 +12226,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03013",
-    "radical": "干",
-    "reading": "かん・いちじゅう・ほす",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03013",
+    radical: "干",
+    reading: "かん・いちじゅう・ほす",
+    kanji: [
       {
-        "char": "干",
-        "url": "https://kanji.jitenon.jp/kanjib/839",
+        char: "干",
+        url: "https://kanji.jitenon.jp/kanjib/839",
         "音読み": [
           "カン"
         ],
@@ -12226,8 +12249,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "平",
-        "url": "https://kanji.jitenon.jp/kanji/410",
+        char: "平",
+        url: "https://kanji.jitenon.jp/kanji/410",
         "音読み": [
           "ビョウ",
           "ヘイ"
@@ -12245,8 +12268,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "年",
-        "url": "https://kanji.jitenon.jp/kanji/067",
+        char: "年",
+        url: "https://kanji.jitenon.jp/kanji/067",
         "音読み": [
           "ネン"
         ],
@@ -12262,8 +12285,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "幸",
-        "url": "https://kanji.jitenon.jp/kanji/293",
+        char: "幸",
+        url: "https://kanji.jitenon.jp/kanji/293",
         "音読み": [
           "コウ"
         ],
@@ -12281,8 +12304,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "幹",
-        "url": "https://kanji.jitenon.jp/kanjib/666",
+        char: "幹",
+        url: "https://kanji.jitenon.jp/kanjib/666",
         "音読み": [
           "カン"
         ],
@@ -12300,13 +12323,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03014",
-    "radical": "弓",
-    "reading": "ゆみ・ゆみへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03014",
+    radical: "弓",
+    reading: "ゆみ・ゆみへん",
+    kanji: [
       {
-        "char": "弓",
-        "url": "https://kanji.jitenon.jp/kanji/107",
+        char: "弓",
+        url: "https://kanji.jitenon.jp/kanji/107",
         "音読み": [
           "キュウ"
         ],
@@ -12322,8 +12345,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "引",
-        "url": "https://kanji.jitenon.jp/kanji/081",
+        char: "引",
+        url: "https://kanji.jitenon.jp/kanji/081",
         "音読み": [
           "イン"
         ],
@@ -12340,8 +12363,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "弔",
-        "url": "https://kanji.jitenon.jp/kanjid/1818",
+        char: "弔",
+        url: "https://kanji.jitenon.jp/kanjid/1818",
         "音読み": [
           "チョウ"
         ],
@@ -12357,8 +12380,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "弘",
-        "url": "https://kanji.jitenon.jp/kanjie/2344",
+        char: "弘",
+        url: "https://kanji.jitenon.jp/kanjie/2344",
         "音読み": [
           "グ",
           "コウ"
@@ -12376,8 +12399,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "弗",
-        "url": "https://kanji.jitenon.jp/kanjif/2886",
+        char: "弗",
+        url: "https://kanji.jitenon.jp/kanjif/2886",
         "音読み": [
           "フツ",
           "ホツ"
@@ -12395,8 +12418,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "弛",
-        "url": "https://kanji.jitenon.jp/kanjie/2467",
+        char: "弛",
+        url: "https://kanji.jitenon.jp/kanjie/2467",
         "音読み": [
           "シ",
           "チ"
@@ -12415,8 +12438,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "弟",
-        "url": "https://kanji.jitenon.jp/kanji/184",
+        char: "弟",
+        url: "https://kanji.jitenon.jp/kanji/184",
         "音読み": [
           "ダイ",
           "テイ",
@@ -12434,8 +12457,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "弦",
-        "url": "https://kanji.jitenon.jp/kanjid/1680",
+        char: "弦",
+        url: "https://kanji.jitenon.jp/kanjid/1680",
         "音読み": [
           "ゲン"
         ],
@@ -12451,8 +12474,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "弥",
-        "url": "https://kanji.jitenon.jp/kanjie/2113",
+        char: "弥",
+        url: "https://kanji.jitenon.jp/kanjie/2113",
         "音読み": [],
         "訓読み": [
           "や"
@@ -12466,8 +12489,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "弧",
-        "url": "https://kanji.jitenon.jp/kanjic/1393",
+        char: "弧",
+        url: "https://kanji.jitenon.jp/kanjic/1393",
         "音読み": [
           "コ"
         ],
@@ -12481,8 +12504,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "弱",
-        "url": "https://kanji.jitenon.jp/kanji/154",
+        char: "弱",
+        url: "https://kanji.jitenon.jp/kanji/154",
         "音読み": [
           "ジャク"
         ],
@@ -12501,8 +12524,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "強",
-        "url": "https://kanji.jitenon.jp/kanji/111",
+        char: "強",
+        url: "https://kanji.jitenon.jp/kanji/111",
         "音読み": [
           "キョウ",
           "ゴウ"
@@ -12522,8 +12545,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "張",
-        "url": "https://kanji.jitenon.jp/kanjib/773",
+        char: "張",
+        url: "https://kanji.jitenon.jp/kanjib/773",
         "音読み": [
           "チョウ"
         ],
@@ -12539,8 +12562,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "弾",
-        "url": "https://kanji.jitenon.jp/kanjic/1184",
+        char: "弾",
+        url: "https://kanji.jitenon.jp/kanjic/1184",
         "音読み": [
           "ダン"
         ],
@@ -12558,8 +12581,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "弼",
-        "url": "https://kanji.jitenon.jp/kanjif/2858",
+        char: "弼",
+        url: "https://kanji.jitenon.jp/kanjif/2858",
         "音読み": [
           "ヒツ",
           "ビチ"
@@ -12578,8 +12601,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "彊",
-        "url": "https://kanji.jitenon.jp/kanjie/2320",
+        char: "彊",
+        url: "https://kanji.jitenon.jp/kanjie/2320",
         "音読み": [
           "キョウ"
         ],
@@ -12599,13 +12622,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03015",
-    "radical": "辵 辶",
-    "reading": "しんにょう・しんにゅう",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03015",
+    radical: "辵 辶",
+    reading: "しんにょう・しんにゅう",
+    kanji: [
       {
-        "char": "辺",
-        "url": "https://kanji.jitenon.jp/kanjib/607",
+        char: "辺",
+        url: "https://kanji.jitenon.jp/kanjib/607",
         "音読み": [
           "ヘン"
         ],
@@ -12622,8 +12645,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "込",
-        "url": "https://kanji.jitenon.jp/kanjic/1103",
+        char: "込",
+        url: "https://kanji.jitenon.jp/kanjic/1103",
         "音読み": [],
         "訓読み": [
           "こ（む）",
@@ -12638,8 +12661,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "巡",
-        "url": "https://kanji.jitenon.jp/kanjic/1134",
+        char: "巡",
+        url: "https://kanji.jitenon.jp/kanjic/1134",
         "音読み": [
           "ジュン"
         ],
@@ -12655,8 +12678,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "迅",
-        "url": "https://kanji.jitenon.jp/kanjid/1767",
+        char: "迅",
+        url: "https://kanji.jitenon.jp/kanjid/1767",
         "音読み": [
           "ジン"
         ],
@@ -12670,8 +12693,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "辻",
-        "url": "https://kanji.jitenon.jp/kanjif/2750",
+        char: "辻",
+        url: "https://kanji.jitenon.jp/kanjif/2750",
         "音読み": [],
         "訓読み": [
           "つじ"
@@ -12685,8 +12708,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "近",
-        "url": "https://kanji.jitenon.jp/kanji/112",
+        char: "近",
+        url: "https://kanji.jitenon.jp/kanji/112",
         "音読み": [
           "キン"
         ],
@@ -12702,8 +12725,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "返",
-        "url": "https://kanji.jitenon.jp/kanji/411",
+        char: "返",
+        url: "https://kanji.jitenon.jp/kanji/411",
         "音読み": [
           "ヘン"
         ],
@@ -12720,8 +12743,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "迎",
-        "url": "https://kanji.jitenon.jp/kanjic/1079",
+        char: "迎",
+        url: "https://kanji.jitenon.jp/kanjic/1079",
         "音読み": [
           "ゲイ"
         ],
@@ -12737,8 +12760,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "迂",
-        "url": "https://kanji.jitenon.jp/kanjie/2169",
+        char: "迂",
+        url: "https://kanji.jitenon.jp/kanjie/2169",
         "音読み": [
           "ウ"
         ],
@@ -12755,8 +12778,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "迄",
-        "url": "https://kanji.jitenon.jp/kanjie/2295",
+        char: "迄",
+        url: "https://kanji.jitenon.jp/kanjie/2295",
         "音読み": [
           "キツ"
         ],
@@ -12774,8 +12797,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "辿",
-        "url": "https://kanji.jitenon.jp/kanjif/2772",
+        char: "辿",
+        url: "https://kanji.jitenon.jp/kanjif/2772",
         "音読み": [
           "テン"
         ],
@@ -12791,8 +12814,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "述",
-        "url": "https://kanji.jitenon.jp/kanjib/730",
+        char: "述",
+        url: "https://kanji.jitenon.jp/kanjib/730",
         "音読み": [
           "ジュツ"
         ],
@@ -12808,8 +12831,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "迫",
-        "url": "https://kanji.jitenon.jp/kanjic/1229",
+        char: "迫",
+        url: "https://kanji.jitenon.jp/kanjic/1229",
         "音読み": [
           "ハク"
         ],
@@ -12825,8 +12848,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "迭",
-        "url": "https://kanji.jitenon.jp/kanjid/1837",
+        char: "迭",
+        url: "https://kanji.jitenon.jp/kanjid/1837",
         "音読み": [
           "テツ"
         ],
@@ -12840,8 +12863,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "送",
-        "url": "https://kanji.jitenon.jp/kanji/349",
+        char: "送",
+        url: "https://kanji.jitenon.jp/kanji/349",
         "音読み": [
           "ソウ"
         ],
@@ -12857,8 +12880,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "追",
-        "url": "https://kanji.jitenon.jp/kanji/368",
+        char: "追",
+        url: "https://kanji.jitenon.jp/kanji/368",
         "音読み": [
           "ツイ"
         ],
@@ -12874,8 +12897,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "逆",
-        "url": "https://kanji.jitenon.jp/kanjib/674",
+        char: "逆",
+        url: "https://kanji.jitenon.jp/kanjib/674",
         "音読み": [
           "ギャク"
         ],
@@ -12892,8 +12915,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "退",
-        "url": "https://kanji.jitenon.jp/kanjib/768",
+        char: "退",
+        url: "https://kanji.jitenon.jp/kanjib/768",
         "音読み": [
           "タイ"
         ],
@@ -12910,8 +12933,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "迷",
-        "url": "https://kanji.jitenon.jp/kanjib/814",
+        char: "迷",
+        url: "https://kanji.jitenon.jp/kanjib/814",
         "音読み": [
           "メイ"
         ],
@@ -12927,8 +12950,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "逃",
-        "url": "https://kanji.jitenon.jp/kanjic/1213",
+        char: "逃",
+        url: "https://kanji.jitenon.jp/kanjic/1213",
         "音読み": [
           "トウ"
         ],
@@ -12947,8 +12970,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "迦",
-        "url": "https://kanji.jitenon.jp/kanjie/2214",
+        char: "迦",
+        url: "https://kanji.jitenon.jp/kanjie/2214",
         "音読み": [
           "カ"
         ],
@@ -12962,8 +12985,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "通",
-        "url": "https://kanji.jitenon.jp/kanji/194",
+        char: "通",
+        url: "https://kanji.jitenon.jp/kanji/194",
         "音読み": [
           "ツ",
           "ツウ"
@@ -12982,8 +13005,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "速",
-        "url": "https://kanji.jitenon.jp/kanji/351",
+        char: "速",
+        url: "https://kanji.jitenon.jp/kanji/351",
         "音読み": [
           "ソク"
         ],
@@ -13002,8 +13025,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "連",
-        "url": "https://kanji.jitenon.jp/kanjib/636",
+        char: "連",
+        url: "https://kanji.jitenon.jp/kanjib/636",
         "音読み": [
           "レン"
         ],
@@ -13021,8 +13044,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "造",
-        "url": "https://kanji.jitenon.jp/kanjib/762",
+        char: "造",
+        url: "https://kanji.jitenon.jp/kanjib/762",
         "音読み": [
           "ゾウ"
         ],
@@ -13038,8 +13061,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "途",
-        "url": "https://kanji.jitenon.jp/kanjic/1201",
+        char: "途",
+        url: "https://kanji.jitenon.jp/kanjic/1201",
         "音読み": [
           "ト"
         ],
@@ -13053,8 +13076,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "透",
-        "url": "https://kanji.jitenon.jp/kanjic/1206",
+        char: "透",
+        url: "https://kanji.jitenon.jp/kanjic/1206",
         "音読み": [
           "トウ"
         ],
@@ -13072,8 +13095,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "逝",
-        "url": "https://kanji.jitenon.jp/kanjid/1778",
+        char: "逝",
+        url: "https://kanji.jitenon.jp/kanjid/1778",
         "音読み": [
           "セイ"
         ],
@@ -13090,8 +13113,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "逐",
-        "url": "https://kanji.jitenon.jp/kanjid/1812",
+        char: "逐",
+        url: "https://kanji.jitenon.jp/kanjid/1812",
         "音読み": [
           "チク"
         ],
@@ -13105,8 +13128,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "逓",
-        "url": "https://kanji.jitenon.jp/kanjid/1833",
+        char: "逓",
+        url: "https://kanji.jitenon.jp/kanjid/1833",
         "音読み": [
           "テイ"
         ],
@@ -13120,8 +13143,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "迺",
-        "url": "https://kanji.jitenon.jp/kanjif/2699",
+        char: "迺",
+        url: "https://kanji.jitenon.jp/kanjif/2699",
         "音読み": [
           "ダイ",
           "ナイ"
@@ -13140,8 +13163,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "週",
-        "url": "https://kanji.jitenon.jp/kanji/156",
+        char: "週",
+        url: "https://kanji.jitenon.jp/kanji/156",
         "音読み": [
           "シュウ"
         ],
@@ -13155,8 +13178,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "進",
-        "url": "https://kanji.jitenon.jp/kanji/339",
+        char: "進",
+        url: "https://kanji.jitenon.jp/kanji/339",
         "音読み": [
           "シン"
         ],
@@ -13173,8 +13196,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "逮",
-        "url": "https://kanji.jitenon.jp/kanjic/1486",
+        char: "逮",
+        url: "https://kanji.jitenon.jp/kanjic/1486",
         "音読み": [
           "タイ"
         ],
@@ -13188,8 +13211,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "逸",
-        "url": "https://kanji.jitenon.jp/kanjid/1607",
+        char: "逸",
+        url: "https://kanji.jitenon.jp/kanjid/1607",
         "音読み": [
           "イツ"
         ],
@@ -13203,8 +13226,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "這",
-        "url": "https://kanji.jitenon.jp/kanjie/2491",
+        char: "這",
+        url: "https://kanji.jitenon.jp/kanjie/2491",
         "音読み": [
           "シャ"
         ],
@@ -13222,8 +13245,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "逗",
-        "url": "https://kanji.jitenon.jp/kanjif/2615",
+        char: "逗",
+        url: "https://kanji.jitenon.jp/kanjif/2615",
         "音読み": [
           "ズ",
           "トウ"
@@ -13240,8 +13263,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "逢",
-        "url": "https://kanji.jitenon.jp/kanjif/2914",
+        char: "逢",
+        url: "https://kanji.jitenon.jp/kanjif/2914",
         "音読み": [
           "ホウ"
         ],
@@ -13259,8 +13282,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "道",
-        "url": "https://kanji.jitenon.jp/kanji/203",
+        char: "道",
+        url: "https://kanji.jitenon.jp/kanji/203",
         "音読み": [
           "トウ",
           "ドウ"
@@ -13277,8 +13300,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "運",
-        "url": "https://kanji.jitenon.jp/kanji/250",
+        char: "運",
+        url: "https://kanji.jitenon.jp/kanji/250",
         "音読み": [
           "ウン"
         ],
@@ -13294,8 +13317,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "遊",
-        "url": "https://kanji.jitenon.jp/kanji/422",
+        char: "遊",
+        url: "https://kanji.jitenon.jp/kanji/422",
         "音読み": [
           "ユ",
           "ユウ"
@@ -13312,8 +13335,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "達",
-        "url": "https://kanji.jitenon.jp/kanjib/565",
+        char: "達",
+        url: "https://kanji.jitenon.jp/kanjib/565",
         "音読み": [
           "タツ"
         ],
@@ -13327,8 +13350,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "過",
-        "url": "https://kanji.jitenon.jp/kanjib/655",
+        char: "過",
+        url: "https://kanji.jitenon.jp/kanjib/655",
         "音読み": [
           "カ"
         ],
@@ -13347,8 +13370,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "遅",
-        "url": "https://kanji.jitenon.jp/kanjic/1186",
+        char: "遅",
+        url: "https://kanji.jitenon.jp/kanjic/1186",
         "音読み": [
           "チ"
         ],
@@ -13366,8 +13389,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "遇",
-        "url": "https://kanji.jitenon.jp/kanjic/1379",
+        char: "遇",
+        url: "https://kanji.jitenon.jp/kanjic/1379",
         "音読み": [
           "グウ"
         ],
@@ -13381,8 +13404,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "遂",
-        "url": "https://kanji.jitenon.jp/kanjic/1457",
+        char: "遂",
+        url: "https://kanji.jitenon.jp/kanjic/1457",
         "音読み": [
           "スイ"
         ],
@@ -13398,8 +13421,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "遍",
-        "url": "https://kanji.jitenon.jp/kanjid/1888",
+        char: "遍",
+        url: "https://kanji.jitenon.jp/kanjid/1888",
         "音読み": [
           "ヘン"
         ],
@@ -13413,8 +13436,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "遥",
-        "url": "https://kanji.jitenon.jp/kanjif/2960",
+        char: "遥",
+        url: "https://kanji.jitenon.jp/kanjif/2960",
         "音読み": [
           "ヨウ"
         ],
@@ -13433,8 +13456,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "遠",
-        "url": "https://kanji.jitenon.jp/kanji/084",
+        char: "遠",
+        url: "https://kanji.jitenon.jp/kanji/084",
         "音読み": [
           "エン",
           "オン"
@@ -13451,8 +13474,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "違",
-        "url": "https://kanji.jitenon.jp/kanjic/1009",
+        char: "違",
+        url: "https://kanji.jitenon.jp/kanjic/1009",
         "音読み": [
           "イ"
         ],
@@ -13469,8 +13492,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "遣",
-        "url": "https://kanji.jitenon.jp/kanjic/1083",
+        char: "遣",
+        url: "https://kanji.jitenon.jp/kanjic/1083",
         "音読み": [
           "ケン"
         ],
@@ -13487,8 +13510,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "遁",
-        "url": "https://kanji.jitenon.jp/kanjif/2531",
+        char: "遁",
+        url: "https://kanji.jitenon.jp/kanjif/2531",
         "音読み": [
           "シュン",
           "ジュン",
@@ -13507,8 +13530,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "逼",
-        "url": "https://kanji.jitenon.jp/kanjif/2860",
+        char: "逼",
+        url: "https://kanji.jitenon.jp/kanjif/2860",
         "音読み": [
           "ヒツ",
           "ヒョク"
@@ -13525,8 +13548,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "適",
-        "url": "https://kanji.jitenon.jp/kanjib/777",
+        char: "適",
+        url: "https://kanji.jitenon.jp/kanjib/777",
         "音読み": [
           "テキ"
         ],
@@ -13540,8 +13563,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "遭",
-        "url": "https://kanji.jitenon.jp/kanjic/1482",
+        char: "遭",
+        url: "https://kanji.jitenon.jp/kanjic/1482",
         "音読み": [
           "ソウ"
         ],
@@ -13557,8 +13580,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "遮",
-        "url": "https://kanji.jitenon.jp/kanjid/1714",
+        char: "遮",
+        url: "https://kanji.jitenon.jp/kanjid/1714",
         "音読み": [
           "シャ"
         ],
@@ -13574,8 +13597,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "遡",
-        "url": "https://kanji.jitenon.jp/kanjie/2044",
+        char: "遡",
+        url: "https://kanji.jitenon.jp/kanjie/2044",
         "音読み": [
           "ソ"
         ],
@@ -13591,8 +13614,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "遜",
-        "url": "https://kanji.jitenon.jp/kanjie/2050",
+        char: "遜",
+        url: "https://kanji.jitenon.jp/kanjie/2050",
         "音読み": [
           "ソン"
         ],
@@ -13606,8 +13629,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "選",
-        "url": "https://kanji.jitenon.jp/kanjib/553",
+        char: "選",
+        url: "https://kanji.jitenon.jp/kanjib/553",
         "音読み": [
           "セン"
         ],
@@ -13623,8 +13646,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "遺",
-        "url": "https://kanji.jitenon.jp/kanjib/825",
+        char: "遺",
+        url: "https://kanji.jitenon.jp/kanjib/825",
         "音読み": [
           "イ",
           "ユイ"
@@ -13639,8 +13662,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "遵",
-        "url": "https://kanji.jitenon.jp/kanjic/1436",
+        char: "遵",
+        url: "https://kanji.jitenon.jp/kanjic/1436",
         "音読み": [
           "ジュン"
         ],
@@ -13654,8 +13677,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "遷",
-        "url": "https://kanji.jitenon.jp/kanjid/1788",
+        char: "遷",
+        url: "https://kanji.jitenon.jp/kanjid/1788",
         "音読み": [
           "セン"
         ],
@@ -13669,8 +13692,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "遼",
-        "url": "https://kanji.jitenon.jp/kanjif/2989",
+        char: "遼",
+        url: "https://kanji.jitenon.jp/kanjif/2989",
         "音読み": [
           "リョウ"
         ],
@@ -13686,8 +13709,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "避",
-        "url": "https://kanji.jitenon.jp/kanjic/1244",
+        char: "避",
+        url: "https://kanji.jitenon.jp/kanjic/1244",
         "音読み": [
           "ヒ"
         ],
@@ -13703,8 +13726,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "還",
-        "url": "https://kanji.jitenon.jp/kanjid/1643",
+        char: "還",
+        url: "https://kanji.jitenon.jp/kanjid/1643",
         "音読み": [
           "カン"
         ],
@@ -13720,13 +13743,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03016",
-    "radical": "宀",
-    "reading": "うかんむり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03016",
+    radical: "宀",
+    reading: "うかんむり",
+    kanji: [
       {
-        "char": "安",
-        "url": "https://kanji.jitenon.jp/kanji/241",
+        char: "安",
+        url: "https://kanji.jitenon.jp/kanji/241",
         "音読み": [
           "アン"
         ],
@@ -13742,8 +13765,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "守",
-        "url": "https://kanji.jitenon.jp/kanji/316",
+        char: "守",
+        url: "https://kanji.jitenon.jp/kanji/316",
         "音読み": [
           "シュ",
           "ス"
@@ -13761,8 +13784,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "宇",
-        "url": "https://kanji.jitenon.jp/kanjib/827",
+        char: "宇",
+        url: "https://kanji.jitenon.jp/kanjib/827",
         "音読み": [
           "ウ"
         ],
@@ -13776,8 +13799,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "宅",
-        "url": "https://kanji.jitenon.jp/kanjib/938",
+        char: "宅",
+        url: "https://kanji.jitenon.jp/kanjib/938",
         "音読み": [
           "タク"
         ],
@@ -13791,8 +13814,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "完",
-        "url": "https://kanji.jitenon.jp/kanji/464",
+        char: "完",
+        url: "https://kanji.jitenon.jp/kanji/464",
         "音読み": [
           "カン"
         ],
@@ -13806,8 +13829,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "宏",
-        "url": "https://kanji.jitenon.jp/kanjie/2395",
+        char: "宏",
+        url: "https://kanji.jitenon.jp/kanjie/2395",
         "音読み": [
           "コウ"
         ],
@@ -13824,8 +13847,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "宍",
-        "url": "https://kanji.jitenon.jp/kanjie/2484",
+        char: "宍",
+        url: "https://kanji.jitenon.jp/kanjie/2484",
         "音読み": [
           "ジク",
           "ニク"
@@ -13842,8 +13865,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "宋",
-        "url": "https://kanji.jitenon.jp/kanjif/2655",
+        char: "宋",
+        url: "https://kanji.jitenon.jp/kanjif/2655",
         "音読み": [
           "ソウ"
         ],
@@ -13857,8 +13880,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "実",
-        "url": "https://kanji.jitenon.jp/kanji/311",
+        char: "実",
+        url: "https://kanji.jitenon.jp/kanji/311",
         "音読み": [
           "ジツ"
         ],
@@ -13875,8 +13898,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "定",
-        "url": "https://kanji.jitenon.jp/kanji/370",
+        char: "定",
+        url: "https://kanji.jitenon.jp/kanji/370",
         "音読み": [
           "ジョウ",
           "テイ"
@@ -13895,8 +13918,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "官",
-        "url": "https://kanji.jitenon.jp/kanji/466",
+        char: "官",
+        url: "https://kanji.jitenon.jp/kanji/466",
         "音読み": [
           "カン"
         ],
@@ -13910,8 +13933,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "宗",
-        "url": "https://kanji.jitenon.jp/kanjib/896",
+        char: "宗",
+        url: "https://kanji.jitenon.jp/kanjib/896",
         "音読み": [
           "シュウ",
           "ソウ"
@@ -13926,8 +13949,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "宙",
-        "url": "https://kanji.jitenon.jp/kanjib/945",
+        char: "宙",
+        url: "https://kanji.jitenon.jp/kanjib/945",
         "音読み": [
           "チュウ"
         ],
@@ -13941,8 +13964,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "宝",
-        "url": "https://kanji.jitenon.jp/kanjib/981",
+        char: "宝",
+        url: "https://kanji.jitenon.jp/kanjib/981",
         "音読み": [
           "ホウ"
         ],
@@ -13958,8 +13981,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "宜",
-        "url": "https://kanji.jitenon.jp/kanjid/1652",
+        char: "宜",
+        url: "https://kanji.jitenon.jp/kanjid/1652",
         "音読み": [
           "ギ"
         ],
@@ -13973,8 +13996,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "宛",
-        "url": "https://kanji.jitenon.jp/kanjid/1940",
+        char: "宛",
+        url: "https://kanji.jitenon.jp/kanjid/1940",
         "音読み": [],
         "訓読み": [
           "あ（てる）"
@@ -13988,8 +14011,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "宕",
-        "url": "https://kanji.jitenon.jp/kanjif/2785",
+        char: "宕",
+        url: "https://kanji.jitenon.jp/kanjif/2785",
         "音読み": [
           "トウ"
         ],
@@ -14006,8 +14029,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "室",
-        "url": "https://kanji.jitenon.jp/kanji/152",
+        char: "室",
+        url: "https://kanji.jitenon.jp/kanji/152",
         "音読み": [
           "シツ"
         ],
@@ -14023,8 +14046,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "客",
-        "url": "https://kanji.jitenon.jp/kanji/268",
+        char: "客",
+        url: "https://kanji.jitenon.jp/kanji/268",
         "音読み": [
           "カク",
           "キャク"
@@ -14039,8 +14062,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "宣",
-        "url": "https://kanji.jitenon.jp/kanjib/923",
+        char: "宣",
+        url: "https://kanji.jitenon.jp/kanjib/923",
         "音読み": [
           "セン"
         ],
@@ -14054,8 +14077,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "宥",
-        "url": "https://kanji.jitenon.jp/kanjif/2945",
+        char: "宥",
+        url: "https://kanji.jitenon.jp/kanjif/2945",
         "音読み": [
           "ユウ"
         ],
@@ -14072,8 +14095,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "家",
-        "url": "https://kanji.jitenon.jp/kanji/086",
+        char: "家",
+        url: "https://kanji.jitenon.jp/kanji/086",
         "音読み": [
           "カ",
           "ケ"
@@ -14091,8 +14114,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "宮",
-        "url": "https://kanji.jitenon.jp/kanji/282",
+        char: "宮",
+        url: "https://kanji.jitenon.jp/kanji/282",
         "音読み": [
           "キュウ",
           "ク",
@@ -14110,8 +14133,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "害",
-        "url": "https://kanji.jitenon.jp/kanji/459",
+        char: "害",
+        url: "https://kanji.jitenon.jp/kanji/459",
         "音読み": [
           "ガイ"
         ],
@@ -14125,8 +14148,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "容",
-        "url": "https://kanji.jitenon.jp/kanjib/819",
+        char: "容",
+        url: "https://kanji.jitenon.jp/kanjib/819",
         "音読み": [
           "ヨウ"
         ],
@@ -14140,8 +14163,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "宴",
-        "url": "https://kanji.jitenon.jp/kanjic/1326",
+        char: "宴",
+        url: "https://kanji.jitenon.jp/kanjic/1326",
         "音読み": [
           "エン"
         ],
@@ -14155,8 +14178,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "宰",
-        "url": "https://kanji.jitenon.jp/kanjid/1701",
+        char: "宰",
+        url: "https://kanji.jitenon.jp/kanjid/1701",
         "音読み": [
           "サイ"
         ],
@@ -14170,8 +14193,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "宵",
-        "url": "https://kanji.jitenon.jp/kanjid/1751",
+        char: "宵",
+        url: "https://kanji.jitenon.jp/kanjid/1751",
         "音読み": [
           "ショウ"
         ],
@@ -14187,8 +14210,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "宿",
-        "url": "https://kanji.jitenon.jp/kanji/327",
+        char: "宿",
+        url: "https://kanji.jitenon.jp/kanji/327",
         "音読み": [
           "シュク"
         ],
@@ -14206,8 +14229,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "寄",
-        "url": "https://kanji.jitenon.jp/kanjib/671",
+        char: "寄",
+        url: "https://kanji.jitenon.jp/kanjib/671",
         "音読み": [
           "キ"
         ],
@@ -14224,8 +14247,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "密",
-        "url": "https://kanji.jitenon.jp/kanjib/987",
+        char: "密",
+        url: "https://kanji.jitenon.jp/kanjib/987",
         "音読み": [
           "ミツ"
         ],
@@ -14239,8 +14262,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "寂",
-        "url": "https://kanji.jitenon.jp/kanjic/1123",
+        char: "寂",
+        url: "https://kanji.jitenon.jp/kanjic/1123",
         "音読み": [
           "ジャク",
           "セキ"
@@ -14259,8 +14282,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "寅",
-        "url": "https://kanji.jitenon.jp/kanjie/2162",
+        char: "寅",
+        url: "https://kanji.jitenon.jp/kanjie/2162",
         "音読み": [
           "イン"
         ],
@@ -14277,8 +14300,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "寒",
-        "url": "https://kanji.jitenon.jp/kanji/263",
+        char: "寒",
+        url: "https://kanji.jitenon.jp/kanji/263",
         "音読み": [
           "カン"
         ],
@@ -14294,8 +14317,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "富",
-        "url": "https://kanji.jitenon.jp/kanjib/797",
+        char: "富",
+        url: "https://kanji.jitenon.jp/kanjib/797",
         "音読み": [
           "フ",
           "フウ"
@@ -14313,8 +14336,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "寓",
-        "url": "https://kanji.jitenon.jp/kanjie/2343",
+        char: "寓",
+        url: "https://kanji.jitenon.jp/kanjie/2343",
         "音読み": [
           "グ",
           "グウ"
@@ -14334,8 +14357,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "寝",
-        "url": "https://kanji.jitenon.jp/kanjic/1152",
+        char: "寝",
+        url: "https://kanji.jitenon.jp/kanjic/1152",
         "音読み": [
           "シン"
         ],
@@ -14352,8 +14375,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "寛",
-        "url": "https://kanji.jitenon.jp/kanjid/1646",
+        char: "寛",
+        url: "https://kanji.jitenon.jp/kanjid/1646",
         "音読み": [
           "カン"
         ],
@@ -14367,8 +14390,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "察",
-        "url": "https://kanji.jitenon.jp/kanjib/514",
+        char: "察",
+        url: "https://kanji.jitenon.jp/kanjib/514",
         "音読み": [
           "サツ"
         ],
@@ -14382,8 +14405,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "寡",
-        "url": "https://kanji.jitenon.jp/kanjid/1617",
+        char: "寡",
+        url: "https://kanji.jitenon.jp/kanjid/1617",
         "音読み": [
           "カ"
         ],
@@ -14397,8 +14420,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "寧",
-        "url": "https://kanji.jitenon.jp/kanjid/1852",
+        char: "寧",
+        url: "https://kanji.jitenon.jp/kanjid/1852",
         "音読み": [
           "ネイ"
         ],
@@ -14412,8 +14435,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "審",
-        "url": "https://kanji.jitenon.jp/kanjic/1452",
+        char: "審",
+        url: "https://kanji.jitenon.jp/kanjic/1452",
         "音読み": [
           "シン"
         ],
@@ -14427,8 +14450,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "寮",
-        "url": "https://kanji.jitenon.jp/kanjid/1928",
+        char: "寮",
+        url: "https://kanji.jitenon.jp/kanjid/1928",
         "音読み": [
           "リョウ"
         ],
@@ -14442,8 +14465,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "寵",
-        "url": "https://kanji.jitenon.jp/kanjif/2735",
+        char: "寵",
+        url: "https://kanji.jitenon.jp/kanjif/2735",
         "音読み": [
           "チョウ"
         ],
@@ -14463,13 +14486,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03017",
-    "radical": "夂 夊",
-    "reading": "ふゆがしら・ち・すいにょう・なつあし",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03017",
+    radical: "夂 夊",
+    reading: "ふゆがしら・ち・すいにょう・なつあし",
+    kanji: [
       {
-        "char": "冬",
-        "url": "https://kanji.jitenon.jp/kanji/198",
+        char: "冬",
+        url: "https://kanji.jitenon.jp/kanji/198",
         "音読み": [
           "トウ"
         ],
@@ -14485,8 +14508,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "変",
-        "url": "https://kanji.jitenon.jp/kanjib/608",
+        char: "変",
+        url: "https://kanji.jitenon.jp/kanjib/608",
         "音読み": [
           "ヘン"
         ],
@@ -14503,8 +14526,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "夏",
-        "url": "https://kanji.jitenon.jp/kanji/088",
+        char: "夏",
+        url: "https://kanji.jitenon.jp/kanji/088",
         "音読み": [
           "カ",
           "ゲ"
@@ -14523,13 +14546,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03019",
-    "radical": "巾",
-    "reading": "はば・はばへん・きんべん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03019",
+    radical: "巾",
+    reading: "はば・はばへん・きんべん",
+    kanji: [
       {
-        "char": "巾",
-        "url": "https://kanji.jitenon.jp/kanjid/1980",
+        char: "巾",
+        url: "https://kanji.jitenon.jp/kanjid/1980",
         "音読み": [
           "キン"
         ],
@@ -14543,8 +14566,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "市",
-        "url": "https://kanji.jitenon.jp/kanji/146",
+        char: "市",
+        url: "https://kanji.jitenon.jp/kanji/146",
         "音読み": [
           "シ"
         ],
@@ -14560,8 +14583,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "布",
-        "url": "https://kanji.jitenon.jp/kanjib/798",
+        char: "布",
+        url: "https://kanji.jitenon.jp/kanjib/798",
         "音読み": [
           "フ"
         ],
@@ -14577,8 +14600,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "匝",
-        "url": "https://kanji.jitenon.jp/kanjif/2656",
+        char: "匝",
+        url: "https://kanji.jitenon.jp/kanjif/2656",
         "音読み": [
           "ソウ"
         ],
@@ -14594,8 +14617,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "帆",
-        "url": "https://kanji.jitenon.jp/kanjid/1531",
+        char: "帆",
+        url: "https://kanji.jitenon.jp/kanjid/1531",
         "音読み": [
           "ハン"
         ],
@@ -14611,8 +14634,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "希",
-        "url": "https://kanji.jitenon.jp/kanji/473",
+        char: "希",
+        url: "https://kanji.jitenon.jp/kanji/473",
         "音読み": [
           "キ"
         ],
@@ -14626,8 +14649,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "帖",
-        "url": "https://kanji.jitenon.jp/kanjif/2582",
+        char: "帖",
+        url: "https://kanji.jitenon.jp/kanjif/2582",
         "音読み": [
           "ジョウ",
           "チョウ"
@@ -14645,8 +14668,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "帝",
-        "url": "https://kanji.jitenon.jp/kanjid/1513",
+        char: "帝",
+        url: "https://kanji.jitenon.jp/kanjid/1513",
         "音読み": [
           "テイ"
         ],
@@ -14660,8 +14683,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "帥",
-        "url": "https://kanji.jitenon.jp/kanjid/1770",
+        char: "帥",
+        url: "https://kanji.jitenon.jp/kanjid/1770",
         "音読み": [
           "スイ"
         ],
@@ -14675,8 +14698,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "帰",
-        "url": "https://kanji.jitenon.jp/kanji/106",
+        char: "帰",
+        url: "https://kanji.jitenon.jp/kanji/106",
         "音読み": [
           "キ"
         ],
@@ -14693,8 +14716,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "席",
-        "url": "https://kanji.jitenon.jp/kanjib/547",
+        char: "席",
+        url: "https://kanji.jitenon.jp/kanjib/547",
         "音読み": [
           "セキ"
         ],
@@ -14708,8 +14731,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "帯",
-        "url": "https://kanji.jitenon.jp/kanjib/564",
+        char: "帯",
+        url: "https://kanji.jitenon.jp/kanjib/564",
         "音読み": [
           "タイ"
         ],
@@ -14726,8 +14749,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "師",
-        "url": "https://kanji.jitenon.jp/kanjib/718",
+        char: "師",
+        url: "https://kanji.jitenon.jp/kanjib/718",
         "音読み": [
           "シ"
         ],
@@ -14741,8 +14764,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "帳",
-        "url": "https://kanji.jitenon.jp/kanji/367",
+        char: "帳",
+        url: "https://kanji.jitenon.jp/kanji/367",
         "音読み": [
           "チョウ"
         ],
@@ -14756,8 +14779,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "常",
-        "url": "https://kanji.jitenon.jp/kanjib/737",
+        char: "常",
+        url: "https://kanji.jitenon.jp/kanjib/737",
         "音読み": [
           "ジョウ"
         ],
@@ -14774,8 +14797,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "幅",
-        "url": "https://kanji.jitenon.jp/kanjic/1259",
+        char: "幅",
+        url: "https://kanji.jitenon.jp/kanjic/1259",
         "音読み": [
           "フク"
         ],
@@ -14791,8 +14814,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "帽",
-        "url": "https://kanji.jitenon.jp/kanjic/1274",
+        char: "帽",
+        url: "https://kanji.jitenon.jp/kanjic/1274",
         "音読み": [
           "ボウ"
         ],
@@ -14806,8 +14829,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "幕",
-        "url": "https://kanji.jitenon.jp/kanjib/986",
+        char: "幕",
+        url: "https://kanji.jitenon.jp/kanjib/986",
         "音読み": [
           "バク",
           "マク"
@@ -14822,8 +14845,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "幌",
-        "url": "https://kanji.jitenon.jp/kanjie/2397",
+        char: "幌",
+        url: "https://kanji.jitenon.jp/kanjie/2397",
         "音読み": [
           "コウ"
         ],
@@ -14839,8 +14862,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "幣",
-        "url": "https://kanji.jitenon.jp/kanjid/1882",
+        char: "幣",
+        url: "https://kanji.jitenon.jp/kanjid/1882",
         "音読み": [
           "ヘイ"
         ],
@@ -14854,8 +14877,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "幡",
-        "url": "https://kanji.jitenon.jp/kanjif/2841",
+        char: "幡",
+        url: "https://kanji.jitenon.jp/kanjif/2841",
         "音読み": [
           "ハン",
           "ホン",
@@ -14877,13 +14900,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03020",
-    "radical": "彡",
-    "reading": "さんづくり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03020",
+    radical: "彡",
+    reading: "さんづくり",
+    kanji: [
       {
-        "char": "形",
-        "url": "https://kanji.jitenon.jp/kanji/115",
+        char: "形",
+        url: "https://kanji.jitenon.jp/kanji/115",
         "音読み": [
           "ギョウ",
           "ケイ"
@@ -14901,8 +14924,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "彦",
-        "url": "https://kanji.jitenon.jp/kanjie/2371",
+        char: "彦",
+        url: "https://kanji.jitenon.jp/kanjie/2371",
         "音読み": [
           "ゲン"
         ],
@@ -14918,8 +14941,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "修",
-        "url": "https://kanji.jitenon.jp/kanjib/729",
+        char: "修",
+        url: "https://kanji.jitenon.jp/kanjib/729",
         "音読み": [
           "シュ",
           "シュウ"
@@ -14937,8 +14960,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "彩",
-        "url": "https://kanji.jitenon.jp/kanjic/1107",
+        char: "彩",
+        url: "https://kanji.jitenon.jp/kanjic/1107",
         "音読み": [
           "サイ"
         ],
@@ -14954,8 +14977,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "彫",
-        "url": "https://kanji.jitenon.jp/kanjid/1506",
+        char: "彫",
+        url: "https://kanji.jitenon.jp/kanjid/1506",
         "音読み": [
           "チョウ"
         ],
@@ -14971,8 +14994,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "彪",
-        "url": "https://kanji.jitenon.jp/kanjif/2861",
+        char: "彪",
+        url: "https://kanji.jitenon.jp/kanjif/2861",
         "音読み": [
           "ヒュウ",
           "ヒョウ"
@@ -14990,8 +15013,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "彬",
-        "url": "https://kanji.jitenon.jp/kanjif/2868",
+        char: "彬",
+        url: "https://kanji.jitenon.jp/kanjif/2868",
         "音読み": [
           "ヒン"
         ],
@@ -15007,8 +15030,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "彰",
-        "url": "https://kanji.jitenon.jp/kanjid/1749",
+        char: "彰",
+        url: "https://kanji.jitenon.jp/kanjid/1749",
         "音読み": [
           "ショウ"
         ],
@@ -15022,8 +15045,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "影",
-        "url": "https://kanji.jitenon.jp/kanjic/1017",
+        char: "影",
+        url: "https://kanji.jitenon.jp/kanjic/1017",
         "音読み": [
           "エイ"
         ],
@@ -15041,13 +15064,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03021",
-    "radical": "彳",
-    "reading": "ぎょうにんべん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03021",
+    radical: "彳",
+    reading: "ぎょうにんべん",
+    kanji: [
       {
-        "char": "行",
-        "url": "https://kanji.jitenon.jp/kanji/133",
+        char: "行",
+        url: "https://kanji.jitenon.jp/kanji/133",
         "音読み": [
           "アン",
           "ギョウ",
@@ -15067,8 +15090,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "役",
-        "url": "https://kanji.jitenon.jp/kanji/419",
+        char: "役",
+        url: "https://kanji.jitenon.jp/kanji/419",
         "音読み": [
           "エキ",
           "ヤク"
@@ -15083,8 +15106,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "径",
-        "url": "https://kanji.jitenon.jp/kanji/491",
+        char: "径",
+        url: "https://kanji.jitenon.jp/kanji/491",
         "音読み": [
           "ケイ"
         ],
@@ -15098,8 +15121,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "往",
-        "url": "https://kanji.jitenon.jp/kanjib/652",
+        char: "往",
+        url: "https://kanji.jitenon.jp/kanjib/652",
         "音読み": [
           "オウ"
         ],
@@ -15113,8 +15136,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "征",
-        "url": "https://kanji.jitenon.jp/kanjic/1160",
+        char: "征",
+        url: "https://kanji.jitenon.jp/kanjic/1160",
         "音読み": [
           "セイ"
         ],
@@ -15128,8 +15151,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "彼",
-        "url": "https://kanji.jitenon.jp/kanjic/1243",
+        char: "彼",
+        url: "https://kanji.jitenon.jp/kanjic/1243",
         "音読み": [
           "ヒ"
         ],
@@ -15146,8 +15169,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "後",
-        "url": "https://kanji.jitenon.jp/kanji/125",
+        char: "後",
+        url: "https://kanji.jitenon.jp/kanji/125",
         "音読み": [
           "コウ",
           "ゴ"
@@ -15167,8 +15190,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "待",
-        "url": "https://kanji.jitenon.jp/kanji/357",
+        char: "待",
+        url: "https://kanji.jitenon.jp/kanji/357",
         "音読み": [
           "タイ"
         ],
@@ -15184,8 +15207,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "律",
-        "url": "https://kanji.jitenon.jp/kanjib/1000",
+        char: "律",
+        url: "https://kanji.jitenon.jp/kanjib/1000",
         "音読み": [
           "リチ",
           "リツ"
@@ -15200,8 +15223,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "徒",
-        "url": "https://kanji.jitenon.jp/kanjib/578",
+        char: "徒",
+        url: "https://kanji.jitenon.jp/kanjib/578",
         "音読み": [
           "ト"
         ],
@@ -15215,8 +15238,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "従",
-        "url": "https://kanji.jitenon.jp/kanjib/900",
+        char: "従",
+        url: "https://kanji.jitenon.jp/kanjib/900",
         "音読み": [
           "ショウ",
           "ジュ",
@@ -15235,8 +15258,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "徐",
-        "url": "https://kanji.jitenon.jp/kanjic/1437",
+        char: "徐",
+        url: "https://kanji.jitenon.jp/kanjic/1437",
         "音読み": [
           "ジョ"
         ],
@@ -15250,8 +15273,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "得",
-        "url": "https://kanji.jitenon.jp/kanjib/584",
+        char: "得",
+        url: "https://kanji.jitenon.jp/kanjib/584",
         "音読み": [
           "トク"
         ],
@@ -15268,8 +15291,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "復",
-        "url": "https://kanji.jitenon.jp/kanjib/801",
+        char: "復",
+        url: "https://kanji.jitenon.jp/kanjib/801",
         "音読み": [
           "フク"
         ],
@@ -15283,8 +15306,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "御",
-        "url": "https://kanji.jitenon.jp/kanjic/1063",
+        char: "御",
+        url: "https://kanji.jitenon.jp/kanjic/1063",
         "音読み": [
           "ギョ",
           "ゴ"
@@ -15301,8 +15324,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "循",
-        "url": "https://kanji.jitenon.jp/kanjid/1735",
+        char: "循",
+        url: "https://kanji.jitenon.jp/kanjid/1735",
         "音読み": [
           "ジュン"
         ],
@@ -15316,8 +15339,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "微",
-        "url": "https://kanji.jitenon.jp/kanjic/1246",
+        char: "微",
+        url: "https://kanji.jitenon.jp/kanjic/1246",
         "音読み": [
           "ビ"
         ],
@@ -15331,8 +15354,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "徳",
-        "url": "https://kanji.jitenon.jp/kanjib/781",
+        char: "徳",
+        url: "https://kanji.jitenon.jp/kanjib/781",
         "音読み": [
           "トク"
         ],
@@ -15346,8 +15369,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "徴",
-        "url": "https://kanji.jitenon.jp/kanjic/1191",
+        char: "徴",
+        url: "https://kanji.jitenon.jp/kanjic/1191",
         "音読み": [
           "チョウ"
         ],
@@ -15361,8 +15384,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "徹",
-        "url": "https://kanji.jitenon.jp/kanjid/1835",
+        char: "徹",
+        url: "https://kanji.jitenon.jp/kanjid/1835",
         "音読み": [
           "テツ"
         ],
@@ -15376,8 +15399,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "徽",
-        "url": "https://kanji.jitenon.jp/kanjie/2274",
+        char: "徽",
+        url: "https://kanji.jitenon.jp/kanjie/2274",
         "音読み": [
           "キ"
         ],
@@ -15396,13 +15419,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03022",
-    "radical": "广",
-    "reading": "まだれ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03022",
+    radical: "广",
+    reading: "まだれ",
+    kanji: [
       {
-        "char": "広",
-        "url": "https://kanji.jitenon.jp/kanji/126",
+        char: "広",
+        url: "https://kanji.jitenon.jp/kanji/126",
         "音読み": [
           "コウ"
         ],
@@ -15422,8 +15445,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "庁",
-        "url": "https://kanji.jitenon.jp/kanjib/950",
+        char: "庁",
+        url: "https://kanji.jitenon.jp/kanjib/950",
         "音読み": [
           "チョウ"
         ],
@@ -15437,8 +15460,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "庄",
-        "url": "https://kanji.jitenon.jp/kanjif/2556",
+        char: "庄",
+        url: "https://kanji.jitenon.jp/kanjif/2556",
         "音読み": [
           "ショウ",
           "ソウ"
@@ -15456,8 +15479,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "序",
-        "url": "https://kanji.jitenon.jp/kanjib/733",
+        char: "序",
+        url: "https://kanji.jitenon.jp/kanjib/733",
         "音読み": [
           "ジョ"
         ],
@@ -15471,8 +15494,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "床",
-        "url": "https://kanji.jitenon.jp/kanjic/1141",
+        char: "床",
+        url: "https://kanji.jitenon.jp/kanjic/1141",
         "音読み": [
           "ショウ"
         ],
@@ -15489,8 +15512,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "庇",
-        "url": "https://kanji.jitenon.jp/kanjif/2849",
+        char: "庇",
+        url: "https://kanji.jitenon.jp/kanjif/2849",
         "音読み": [
           "ヒ"
         ],
@@ -15507,8 +15530,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "店",
-        "url": "https://kanji.jitenon.jp/kanji/196",
+        char: "店",
+        url: "https://kanji.jitenon.jp/kanji/196",
         "音読み": [
           "テン"
         ],
@@ -15524,8 +15547,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "底",
-        "url": "https://kanji.jitenon.jp/kanjib/574",
+        char: "底",
+        url: "https://kanji.jitenon.jp/kanjib/574",
         "音読み": [
           "テイ"
         ],
@@ -15541,8 +15564,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "府",
-        "url": "https://kanji.jitenon.jp/kanjib/599",
+        char: "府",
+        url: "https://kanji.jitenon.jp/kanjib/599",
         "音読み": [
           "フ"
         ],
@@ -15556,8 +15579,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "庚",
-        "url": "https://kanji.jitenon.jp/kanjie/2398",
+        char: "庚",
+        url: "https://kanji.jitenon.jp/kanjie/2398",
         "音読み": [
           "コウ"
         ],
@@ -15574,8 +15597,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "庖",
-        "url": "https://kanji.jitenon.jp/kanjif/2907",
+        char: "庖",
+        url: "https://kanji.jitenon.jp/kanjif/2907",
         "音読み": [
           "ホウ"
         ],
@@ -15591,8 +15614,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "度",
-        "url": "https://kanji.jitenon.jp/kanji/376",
+        char: "度",
+        url: "https://kanji.jitenon.jp/kanji/376",
         "音読み": [
           "タク",
           "ト",
@@ -15610,8 +15633,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "庫",
-        "url": "https://kanji.jitenon.jp/kanji/292",
+        char: "庫",
+        url: "https://kanji.jitenon.jp/kanji/292",
         "音読み": [
           "ク",
           "コ"
@@ -15626,8 +15649,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "庭",
-        "url": "https://kanji.jitenon.jp/kanji/371",
+        char: "庭",
+        url: "https://kanji.jitenon.jp/kanji/371",
         "音読み": [
           "テイ"
         ],
@@ -15643,8 +15666,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "座",
-        "url": "https://kanji.jitenon.jp/kanjib/878",
+        char: "座",
+        url: "https://kanji.jitenon.jp/kanjib/878",
         "音読み": [
           "ザ"
         ],
@@ -15660,8 +15683,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "康",
-        "url": "https://kanji.jitenon.jp/kanjib/504",
+        char: "康",
+        url: "https://kanji.jitenon.jp/kanjib/504",
         "音読み": [
           "コウ"
         ],
@@ -15675,8 +15698,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "庶",
-        "url": "https://kanji.jitenon.jp/kanjid/1737",
+        char: "庶",
+        url: "https://kanji.jitenon.jp/kanjid/1737",
         "音読み": [
           "ショ"
         ],
@@ -15690,8 +15713,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "庸",
-        "url": "https://kanji.jitenon.jp/kanjid/1919",
+        char: "庸",
+        url: "https://kanji.jitenon.jp/kanjid/1919",
         "音読み": [
           "ヨウ"
         ],
@@ -15705,8 +15728,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "庵",
-        "url": "https://kanji.jitenon.jp/kanjie/2144",
+        char: "庵",
+        url: "https://kanji.jitenon.jp/kanjie/2144",
         "音読み": [
           "アン"
         ],
@@ -15722,8 +15745,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "廊",
-        "url": "https://kanji.jitenon.jp/kanjid/1601",
+        char: "廊",
+        url: "https://kanji.jitenon.jp/kanjid/1601",
         "音読み": [
           "ロウ"
         ],
@@ -15737,8 +15760,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "廃",
-        "url": "https://kanji.jitenon.jp/kanjid/1855",
+        char: "廃",
+        url: "https://kanji.jitenon.jp/kanjid/1855",
         "音読み": [
           "ハイ"
         ],
@@ -15755,8 +15778,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "廉",
-        "url": "https://kanji.jitenon.jp/kanjid/1598",
+        char: "廉",
+        url: "https://kanji.jitenon.jp/kanjid/1598",
         "音読み": [
           "レン"
         ],
@@ -15770,8 +15793,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "廓",
-        "url": "https://kanji.jitenon.jp/kanjie/2239",
+        char: "廓",
+        url: "https://kanji.jitenon.jp/kanjie/2239",
         "音読み": [
           "カク"
         ],
@@ -15790,8 +15813,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "廐",
-        "url": "https://kanji.jitenon.jp/kanjie/2298",
+        char: "廐",
+        url: "https://kanji.jitenon.jp/kanjie/2298",
         "音読み": [
           "キュウ"
         ],
@@ -15807,8 +15830,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "廏",
-        "url": "https://kanji.jitenon.jp/kanjie/2299",
+        char: "廏",
+        url: "https://kanji.jitenon.jp/kanjie/2299",
         "音読み": [
           "キュウ"
         ],
@@ -15824,8 +15847,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "廠",
-        "url": "https://kanji.jitenon.jp/kanjif/2557",
+        char: "廠",
+        url: "https://kanji.jitenon.jp/kanjif/2557",
         "音読み": [
           "ショウ"
         ],
@@ -15842,8 +15865,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "廚",
-        "url": "https://kanji.jitenon.jp/kanjif/2613",
+        char: "廚",
+        url: "https://kanji.jitenon.jp/kanjif/2613",
         "音読み": [
           "ズ",
           "チュウ"
@@ -15860,8 +15883,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "廟",
-        "url": "https://kanji.jitenon.jp/kanjif/2865",
+        char: "廟",
+        url: "https://kanji.jitenon.jp/kanjif/2865",
         "音読み": [
           "ビョウ"
         ],
@@ -15881,13 +15904,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03023",
-    "radical": "寸",
-    "reading": "すん・すんづくり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03023",
+    radical: "寸",
+    reading: "すん・すんづくり",
+    kanji: [
       {
-        "char": "寸",
-        "url": "https://kanji.jitenon.jp/kanjib/918",
+        char: "寸",
+        url: "https://kanji.jitenon.jp/kanjib/918",
         "音読み": [
           "スン"
         ],
@@ -15901,8 +15924,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "寺",
-        "url": "https://kanji.jitenon.jp/kanji/149",
+        char: "寺",
+        url: "https://kanji.jitenon.jp/kanji/149",
         "音読み": [
           "ジ"
         ],
@@ -15918,8 +15941,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "対",
-        "url": "https://kanji.jitenon.jp/kanji/356",
+        char: "対",
+        url: "https://kanji.jitenon.jp/kanji/356",
         "音読み": [
           "タイ",
           "ツイ"
@@ -15934,8 +15957,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "寿",
-        "url": "https://kanji.jitenon.jp/kanjic/1434",
+        char: "寿",
+        url: "https://kanji.jitenon.jp/kanjic/1434",
         "音読み": [
           "ジュ"
         ],
@@ -15951,8 +15974,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "専",
-        "url": "https://kanji.jitenon.jp/kanjib/922",
+        char: "専",
+        url: "https://kanji.jitenon.jp/kanjib/922",
         "音読み": [
           "セン"
         ],
@@ -15968,8 +15991,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "封",
-        "url": "https://kanji.jitenon.jp/kanjid/1544",
+        char: "封",
+        url: "https://kanji.jitenon.jp/kanjid/1544",
         "音読み": [
           "フウ",
           "ホウ"
@@ -15984,8 +16007,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "射",
-        "url": "https://kanji.jitenon.jp/kanjib/892",
+        char: "射",
+        url: "https://kanji.jitenon.jp/kanjib/892",
         "音読み": [
           "シャ"
         ],
@@ -16001,8 +16024,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "将",
-        "url": "https://kanji.jitenon.jp/kanjib/911",
+        char: "将",
+        url: "https://kanji.jitenon.jp/kanjib/911",
         "音読み": [
           "ショウ"
         ],
@@ -16016,8 +16039,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "尉",
-        "url": "https://kanji.jitenon.jp/kanjid/1606",
+        char: "尉",
+        url: "https://kanji.jitenon.jp/kanjid/1606",
         "音読み": [
           "イ"
         ],
@@ -16031,8 +16054,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "尊",
-        "url": "https://kanji.jitenon.jp/kanjib/936",
+        char: "尊",
+        url: "https://kanji.jitenon.jp/kanjib/936",
         "音読み": [
           "ソン"
         ],
@@ -16051,8 +16074,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "尋",
-        "url": "https://kanji.jitenon.jp/kanjic/1157",
+        char: "尋",
+        url: "https://kanji.jitenon.jp/kanjic/1157",
         "音読み": [
           "ジン"
         ],
@@ -16068,8 +16091,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "導",
-        "url": "https://kanji.jitenon.jp/kanjib/780",
+        char: "導",
+        url: "https://kanji.jitenon.jp/kanjib/780",
         "音読み": [
           "ドウ"
         ],
@@ -16087,13 +16110,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03024",
-    "radical": "阜 阝",
-    "reading": "こざと・こざとへん・おか",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03024",
+    radical: "阜 阝",
+    reading: "こざと・こざとへん・おか",
+    kanji: [
       {
-        "char": "防",
-        "url": "https://kanji.jitenon.jp/kanjib/810",
+        char: "防",
+        url: "https://kanji.jitenon.jp/kanjib/810",
         "音読み": [
           "ボウ"
         ],
@@ -16109,8 +16132,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "阪",
-        "url": "https://kanji.jitenon.jp/kanjie/2090",
+        char: "阪",
+        url: "https://kanji.jitenon.jp/kanjie/2090",
         "音読み": [
           "ハン"
         ],
@@ -16124,8 +16147,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "阻",
-        "url": "https://kanji.jitenon.jp/kanjic/1475",
+        char: "阻",
+        url: "https://kanji.jitenon.jp/kanjic/1475",
         "音読み": [
           "ソ"
         ],
@@ -16141,8 +16164,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "附",
-        "url": "https://kanji.jitenon.jp/kanjid/1877",
+        char: "附",
+        url: "https://kanji.jitenon.jp/kanjid/1877",
         "音読み": [
           "フ"
         ],
@@ -16156,8 +16179,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "阜",
-        "url": "https://kanji.jitenon.jp/kanjie/2095",
+        char: "阜",
+        url: "https://kanji.jitenon.jp/kanjie/2095",
         "音読み": [
           "フ"
         ],
@@ -16171,8 +16194,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "阿",
-        "url": "https://kanji.jitenon.jp/kanjie/2141",
+        char: "阿",
+        url: "https://kanji.jitenon.jp/kanjie/2141",
         "音読み": [
           "ア"
         ],
@@ -16192,8 +16215,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "陀",
-        "url": "https://kanji.jitenon.jp/kanjif/2683",
+        char: "陀",
+        url: "https://kanji.jitenon.jp/kanjif/2683",
         "音読み": [
           "タ",
           "ダ"
@@ -16208,8 +16231,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "限",
-        "url": "https://kanji.jitenon.jp/kanjib/691",
+        char: "限",
+        url: "https://kanji.jitenon.jp/kanjib/691",
         "音読み": [
           "ゲン"
         ],
@@ -16225,8 +16248,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "院",
-        "url": "https://kanji.jitenon.jp/kanji/247",
+        char: "院",
+        url: "https://kanji.jitenon.jp/kanji/247",
         "音読み": [
           "イン"
         ],
@@ -16240,8 +16263,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "降",
-        "url": "https://kanji.jitenon.jp/kanjib/872",
+        char: "降",
+        url: "https://kanji.jitenon.jp/kanjib/872",
         "音読み": [
           "コウ"
         ],
@@ -16259,8 +16282,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "除",
-        "url": "https://kanji.jitenon.jp/kanjib/908",
+        char: "除",
+        url: "https://kanji.jitenon.jp/kanjib/908",
         "音読み": [
           "ジ",
           "ジョ"
@@ -16277,8 +16300,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "陛",
-        "url": "https://kanji.jitenon.jp/kanjib/975",
+        char: "陛",
+        url: "https://kanji.jitenon.jp/kanjib/975",
         "音読み": [
           "ヘイ"
         ],
@@ -16292,8 +16315,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "陣",
-        "url": "https://kanji.jitenon.jp/kanjic/1155",
+        char: "陣",
+        url: "https://kanji.jitenon.jp/kanjic/1155",
         "音読み": [
           "ジン"
         ],
@@ -16307,8 +16330,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "陥",
-        "url": "https://kanji.jitenon.jp/kanjid/1640",
+        char: "陥",
+        url: "https://kanji.jitenon.jp/kanjid/1640",
         "音読み": [
           "カン"
         ],
@@ -16325,8 +16348,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "陸",
-        "url": "https://kanji.jitenon.jp/kanjib/625",
+        char: "陸",
+        url: "https://kanji.jitenon.jp/kanjib/625",
         "音読み": [
           "リク"
         ],
@@ -16340,8 +16363,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "険",
-        "url": "https://kanji.jitenon.jp/kanjib/686",
+        char: "険",
+        url: "https://kanji.jitenon.jp/kanjib/686",
         "音読み": [
           "ケン"
         ],
@@ -16357,8 +16380,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "陰",
-        "url": "https://kanji.jitenon.jp/kanjic/1015",
+        char: "陰",
+        url: "https://kanji.jitenon.jp/kanjic/1015",
         "音読み": [
           "イン"
         ],
@@ -16375,8 +16398,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "陳",
-        "url": "https://kanji.jitenon.jp/kanjid/1509",
+        char: "陳",
+        url: "https://kanji.jitenon.jp/kanjid/1509",
         "音読み": [
           "チン"
         ],
@@ -16390,8 +16413,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "陶",
-        "url": "https://kanji.jitenon.jp/kanjid/1518",
+        char: "陶",
+        url: "https://kanji.jitenon.jp/kanjid/1518",
         "音読み": [
           "トウ"
         ],
@@ -16405,8 +16428,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "陪",
-        "url": "https://kanji.jitenon.jp/kanjid/1528",
+        char: "陪",
+        url: "https://kanji.jitenon.jp/kanjid/1528",
         "音読み": [
           "バイ"
         ],
@@ -16420,8 +16443,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "隆",
-        "url": "https://kanji.jitenon.jp/kanjid/1587",
+        char: "隆",
+        url: "https://kanji.jitenon.jp/kanjid/1587",
         "音読み": [
           "リュウ"
         ],
@@ -16435,8 +16458,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "陵",
-        "url": "https://kanji.jitenon.jp/kanjid/1590",
+        char: "陵",
+        url: "https://kanji.jitenon.jp/kanjid/1590",
         "音読み": [
           "リョウ"
         ],
@@ -16452,8 +16475,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "階",
-        "url": "https://kanji.jitenon.jp/kanji/260",
+        char: "階",
+        url: "https://kanji.jitenon.jp/kanji/260",
         "音読み": [
           "カイ"
         ],
@@ -16467,8 +16490,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "陽",
-        "url": "https://kanji.jitenon.jp/kanji/426",
+        char: "陽",
+        url: "https://kanji.jitenon.jp/kanji/426",
         "音読み": [
           "ヨウ"
         ],
@@ -16482,8 +16505,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "隊",
-        "url": "https://kanji.jitenon.jp/kanjib/563",
+        char: "隊",
+        url: "https://kanji.jitenon.jp/kanjib/563",
         "音読み": [
           "タイ"
         ],
@@ -16497,8 +16520,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "随",
-        "url": "https://kanji.jitenon.jp/kanjic/1461",
+        char: "随",
+        url: "https://kanji.jitenon.jp/kanjic/1461",
         "音読み": [
           "ズイ"
         ],
@@ -16512,8 +16535,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "隅",
-        "url": "https://kanji.jitenon.jp/kanjid/1666",
+        char: "隅",
+        url: "https://kanji.jitenon.jp/kanjid/1666",
         "音読み": [
           "グウ"
         ],
@@ -16529,8 +16552,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "隔",
-        "url": "https://kanji.jitenon.jp/kanjic/1344",
+        char: "隔",
+        url: "https://kanji.jitenon.jp/kanjic/1344",
         "音読み": [
           "カク"
         ],
@@ -16547,8 +16570,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "隙",
-        "url": "https://kanji.jitenon.jp/kanjid/1990",
+        char: "隙",
+        url: "https://kanji.jitenon.jp/kanjid/1990",
         "音読み": [
           "ゲキ"
         ],
@@ -16564,8 +16587,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "際",
-        "url": "https://kanji.jitenon.jp/kanjib/708",
+        char: "際",
+        url: "https://kanji.jitenon.jp/kanjib/708",
         "音読み": [
           "サイ"
         ],
@@ -16581,8 +16604,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "障",
-        "url": "https://kanji.jitenon.jp/kanjib/910",
+        char: "障",
+        url: "https://kanji.jitenon.jp/kanjib/910",
         "音読み": [
           "ショウ"
         ],
@@ -16598,8 +16621,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "隠",
-        "url": "https://kanji.jitenon.jp/kanjic/1014",
+        char: "隠",
+        url: "https://kanji.jitenon.jp/kanjic/1014",
         "音読み": [
           "イン"
         ],
@@ -16616,8 +16639,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "隣",
-        "url": "https://kanji.jitenon.jp/kanjic/1306",
+        char: "隣",
+        url: "https://kanji.jitenon.jp/kanjic/1306",
         "音読み": [
           "リン"
         ],
@@ -16636,13 +16659,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03025",
-    "radical": "尸",
-    "reading": "しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03025",
+    radical: "尸",
+    reading: "しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ",
+    kanji: [
       {
-        "char": "尺",
-        "url": "https://kanji.jitenon.jp/kanjib/893",
+        char: "尺",
+        url: "https://kanji.jitenon.jp/kanjib/893",
         "音読み": [
           "シャク"
         ],
@@ -16656,8 +16679,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "尼",
-        "url": "https://kanji.jitenon.jp/kanjid/1849",
+        char: "尼",
+        url: "https://kanji.jitenon.jp/kanjid/1849",
         "音読み": [
           "ニ"
         ],
@@ -16673,8 +16696,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "尻",
-        "url": "https://kanji.jitenon.jp/kanjie/2028",
+        char: "尻",
+        url: "https://kanji.jitenon.jp/kanjie/2028",
         "音読み": [],
         "訓読み": [
           "しり"
@@ -16688,8 +16711,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "尽",
-        "url": "https://kanji.jitenon.jp/kanjic/1156",
+        char: "尽",
+        url: "https://kanji.jitenon.jp/kanjic/1156",
         "音読み": [
           "ジン"
         ],
@@ -16707,8 +16730,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "局",
-        "url": "https://kanji.jitenon.jp/kanji/277",
+        char: "局",
+        url: "https://kanji.jitenon.jp/kanji/277",
         "音読み": [
           "キョク"
         ],
@@ -16722,8 +16745,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "尾",
-        "url": "https://kanji.jitenon.jp/kanjic/1245",
+        char: "尾",
+        url: "https://kanji.jitenon.jp/kanjic/1245",
         "音読み": [
           "ビ"
         ],
@@ -16739,8 +16762,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "尿",
-        "url": "https://kanji.jitenon.jp/kanjid/1524",
+        char: "尿",
+        url: "https://kanji.jitenon.jp/kanjid/1524",
         "音読み": [
           "ニョウ"
         ],
@@ -16754,8 +16777,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "居",
-        "url": "https://kanji.jitenon.jp/kanjib/678",
+        char: "居",
+        url: "https://kanji.jitenon.jp/kanjib/678",
         "音読み": [
           "キョ"
         ],
@@ -16771,8 +16794,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "届",
-        "url": "https://kanji.jitenon.jp/kanjib/957",
+        char: "届",
+        url: "https://kanji.jitenon.jp/kanjib/957",
         "音読み": [],
         "訓読み": [
           "とど（く）",
@@ -16787,8 +16810,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "屈",
-        "url": "https://kanji.jitenon.jp/kanjic/1074",
+        char: "屈",
+        url: "https://kanji.jitenon.jp/kanjic/1074",
         "音読み": [
           "クツ"
         ],
@@ -16802,8 +16825,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "屋",
-        "url": "https://kanji.jitenon.jp/kanji/255",
+        char: "屋",
+        url: "https://kanji.jitenon.jp/kanji/255",
         "音読み": [
           "オク"
         ],
@@ -16819,8 +16842,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "屍",
-        "url": "https://kanji.jitenon.jp/kanjie/2465",
+        char: "屍",
+        url: "https://kanji.jitenon.jp/kanjie/2465",
         "音読み": [
           "シ"
         ],
@@ -16837,8 +16860,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "展",
-        "url": "https://kanji.jitenon.jp/kanjib/953",
+        char: "展",
+        url: "https://kanji.jitenon.jp/kanjib/953",
         "音読み": [
           "テン"
         ],
@@ -16852,8 +16875,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "屑",
-        "url": "https://kanji.jitenon.jp/kanjif/2632",
+        char: "屑",
+        url: "https://kanji.jitenon.jp/kanjif/2632",
         "音読み": [
           "セツ"
         ],
@@ -16870,8 +16893,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "属",
-        "url": "https://kanji.jitenon.jp/kanjib/765",
+        char: "属",
+        url: "https://kanji.jitenon.jp/kanjib/765",
         "音読み": [
           "ゾク"
         ],
@@ -16885,8 +16908,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "屡",
-        "url": "https://kanji.jitenon.jp/kanjif/2996",
+        char: "屡",
+        url: "https://kanji.jitenon.jp/kanjif/2996",
         "音読み": [
           "ル"
         ],
@@ -16902,8 +16925,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "層",
-        "url": "https://kanji.jitenon.jp/kanjib/928",
+        char: "層",
+        url: "https://kanji.jitenon.jp/kanjib/928",
         "音読み": [
           "ソウ"
         ],
@@ -16917,8 +16940,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "履",
-        "url": "https://kanji.jitenon.jp/kanjid/1922",
+        char: "履",
+        url: "https://kanji.jitenon.jp/kanjid/1922",
         "音読み": [
           "リ"
         ],
@@ -16936,13 +16959,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03026",
-    "radical": "弋",
-    "reading": "しきがまえ・よく",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03026",
+    radical: "弋",
+    reading: "しきがまえ・よく",
+    kanji: [
       {
-        "char": "式",
-        "url": "https://kanji.jitenon.jp/kanji/310",
+        char: "式",
+        url: "https://kanji.jitenon.jp/kanji/310",
         "音読み": [
           "シキ"
         ],
@@ -16956,8 +16979,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "弐",
-        "url": "https://kanji.jitenon.jp/kanjic/1222",
+        char: "弐",
+        url: "https://kanji.jitenon.jp/kanjic/1222",
         "音読み": [
           "ニ"
         ],
@@ -16973,13 +16996,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03027",
-    "radical": "邑 阝",
-    "reading": "おおざと・むら",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03027",
+    radical: "邑 阝",
+    reading: "おおざと・むら",
+    kanji: [
       {
-        "char": "邦",
-        "url": "https://kanji.jitenon.jp/kanjid/1558",
+        char: "邦",
+        url: "https://kanji.jitenon.jp/kanjid/1558",
         "音読み": [
           "ホウ"
         ],
@@ -16993,8 +17016,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "那",
-        "url": "https://kanji.jitenon.jp/kanjie/2077",
+        char: "那",
+        url: "https://kanji.jitenon.jp/kanjie/2077",
         "音読み": [
           "ナ"
         ],
@@ -17008,8 +17031,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "邑",
-        "url": "https://kanji.jitenon.jp/kanjie/2196",
+        char: "邑",
+        url: "https://kanji.jitenon.jp/kanjie/2196",
         "音読み": [
           "オウ",
           "ユウ"
@@ -17029,8 +17052,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "邪",
-        "url": "https://kanji.jitenon.jp/kanjic/1432",
+        char: "邪",
+        url: "https://kanji.jitenon.jp/kanjic/1432",
         "音読み": [
           "ジャ"
         ],
@@ -17044,8 +17067,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "邸",
-        "url": "https://kanji.jitenon.jp/kanjid/1826",
+        char: "邸",
+        url: "https://kanji.jitenon.jp/kanjid/1826",
         "音読み": [
           "テイ"
         ],
@@ -17059,8 +17082,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "郎",
-        "url": "https://kanji.jitenon.jp/kanjic/1316",
+        char: "郎",
+        url: "https://kanji.jitenon.jp/kanjic/1316",
         "音読み": [
           "ロウ"
         ],
@@ -17074,8 +17097,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "郊",
-        "url": "https://kanji.jitenon.jp/kanjic/1401",
+        char: "郊",
+        url: "https://kanji.jitenon.jp/kanjic/1401",
         "音読み": [
           "コウ"
         ],
@@ -17089,8 +17112,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "郁",
-        "url": "https://kanji.jitenon.jp/kanjie/2158",
+        char: "郁",
+        url: "https://kanji.jitenon.jp/kanjie/2158",
         "音読み": [
           "イク"
         ],
@@ -17108,8 +17131,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "耶",
-        "url": "https://kanji.jitenon.jp/kanjif/2941",
+        char: "耶",
+        url: "https://kanji.jitenon.jp/kanjif/2941",
         "音読み": [
           "ヤ"
         ],
@@ -17125,8 +17148,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "郡",
-        "url": "https://kanji.jitenon.jp/kanji/489",
+        char: "郡",
+        url: "https://kanji.jitenon.jp/kanji/489",
         "音読み": [
           "グン"
         ],
@@ -17140,8 +17163,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "都",
-        "url": "https://kanji.jitenon.jp/kanji/375",
+        char: "都",
+        url: "https://kanji.jitenon.jp/kanji/375",
         "音読み": [
           "ツ",
           "ト"
@@ -17158,8 +17181,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "部",
-        "url": "https://kanji.jitenon.jp/kanji/406",
+        char: "部",
+        url: "https://kanji.jitenon.jp/kanji/406",
         "音読み": [
           "ブ"
         ],
@@ -17173,8 +17196,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "郷",
-        "url": "https://kanji.jitenon.jp/kanjib/848",
+        char: "郷",
+        url: "https://kanji.jitenon.jp/kanjib/848",
         "音読み": [
           "キョウ",
           "ゴウ"
@@ -17189,8 +17212,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "郵",
-        "url": "https://kanji.jitenon.jp/kanjib/992",
+        char: "郵",
+        url: "https://kanji.jitenon.jp/kanjib/992",
         "音読み": [
           "ユウ"
         ],
@@ -17204,8 +17227,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "郭",
-        "url": "https://kanji.jitenon.jp/kanjic/1345",
+        char: "郭",
+        url: "https://kanji.jitenon.jp/kanjic/1345",
         "音読み": [
           "カク"
         ],
@@ -17219,8 +17242,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "鄭",
-        "url": "https://kanji.jitenon.jp/kanjif/2589",
+        char: "鄭",
+        url: "https://kanji.jitenon.jp/kanjif/2589",
         "音読み": [
           "ジョウ",
           "テイ"
@@ -17239,13 +17262,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03028",
-    "radical": "廴",
-    "reading": "えんにょう・いんにょう",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03028",
+    radical: "廴",
+    reading: "えんにょう・いんにょう",
+    kanji: [
       {
-        "char": "廷",
-        "url": "https://kanji.jitenon.jp/kanjid/1830",
+        char: "廷",
+        url: "https://kanji.jitenon.jp/kanjid/1830",
         "音読み": [
           "テイ"
         ],
@@ -17259,8 +17282,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "延",
-        "url": "https://kanji.jitenon.jp/kanjib/830",
+        char: "延",
+        url: "https://kanji.jitenon.jp/kanjib/830",
         "音読み": [
           "エン"
         ],
@@ -17278,8 +17301,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "建",
-        "url": "https://kanji.jitenon.jp/kanji/496",
+        char: "建",
+        url: "https://kanji.jitenon.jp/kanji/496",
         "音読み": [
           "ケン",
           "コン"
@@ -17297,8 +17320,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "廻",
-        "url": "https://kanji.jitenon.jp/kanjie/2172",
+        char: "廻",
+        url: "https://kanji.jitenon.jp/kanjie/2172",
         "音読み": [
           "エ",
           "カイ"
@@ -17318,8 +17341,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "廼",
-        "url": "https://kanji.jitenon.jp/kanjif/2700",
+        char: "廼",
+        url: "https://kanji.jitenon.jp/kanjif/2700",
         "音読み": [
           "ダイ",
           "ナイ"
@@ -17340,13 +17363,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03029",
-    "radical": "⺍",
-    "reading": "つ・つかんむり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03029",
+    radical: "⺍",
+    reading: "つ・つかんむり",
+    kanji: [
       {
-        "char": "単",
-        "url": "https://kanji.jitenon.jp/kanjib/566",
+        char: "単",
+        url: "https://kanji.jitenon.jp/kanjib/566",
         "音読み": [
           "タン"
         ],
@@ -17360,8 +17383,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "巣",
-        "url": "https://kanji.jitenon.jp/kanjib/555",
+        char: "巣",
+        url: "https://kanji.jitenon.jp/kanjib/555",
         "音読み": [
           "ソウ"
         ],
@@ -17377,8 +17400,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "営",
-        "url": "https://kanji.jitenon.jp/kanjib/645",
+        char: "営",
+        url: "https://kanji.jitenon.jp/kanjib/645",
         "音読み": [
           "エイ"
         ],
@@ -17394,8 +17417,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "厳",
-        "url": "https://kanji.jitenon.jp/kanjib/862",
+        char: "厳",
+        url: "https://kanji.jitenon.jp/kanjib/862",
         "音読み": [
           "ゲン",
           "ゴン"
@@ -17415,13 +17438,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03030",
-    "radical": "廾",
-    "reading": "にじゅうあし・こまぬき",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03030",
+    radical: "廾",
+    reading: "にじゅうあし・こまぬき",
+    kanji: [
       {
-        "char": "升",
-        "url": "https://kanji.jitenon.jp/kanjid/1742",
+        char: "升",
+        url: "https://kanji.jitenon.jp/kanjid/1742",
         "音読み": [
           "ショウ"
         ],
@@ -17437,8 +17460,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "廿",
-        "url": "https://kanji.jitenon.jp/kanjif/2524",
+        char: "廿",
+        url: "https://kanji.jitenon.jp/kanjif/2524",
         "音読み": [
           "ジュウ"
         ],
@@ -17454,8 +17477,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "弁",
-        "url": "https://kanji.jitenon.jp/kanjib/805",
+        char: "弁",
+        url: "https://kanji.jitenon.jp/kanjib/805",
         "音読み": [
           "ベン"
         ],
@@ -17469,8 +17492,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "弄",
-        "url": "https://kanji.jitenon.jp/kanjie/2130",
+        char: "弄",
+        url: "https://kanji.jitenon.jp/kanjie/2130",
         "音読み": [
           "ロウ"
         ],
@@ -17486,8 +17509,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "弊",
-        "url": "https://kanji.jitenon.jp/kanjid/1883",
+        char: "弊",
+        url: "https://kanji.jitenon.jp/kanjid/1883",
         "音読み": [
           "ヘイ"
         ],
@@ -17503,13 +17526,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03031",
-    "radical": "己 巳 已",
-    "reading": "おのれ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03031",
+    radical: "己 巳 已",
+    reading: "おのれ",
+    kanji: [
       {
-        "char": "己",
-        "url": "https://kanji.jitenon.jp/kanjib/864",
+        char: "己",
+        url: "https://kanji.jitenon.jp/kanjib/864",
         "音読み": [
           "キ",
           "コ"
@@ -17526,8 +17549,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "巳",
-        "url": "https://kanji.jitenon.jp/kanjie/2466",
+        char: "巳",
+        url: "https://kanji.jitenon.jp/kanjie/2466",
         "音読み": [
           "シ"
         ],
@@ -17543,8 +17566,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "巴",
-        "url": "https://kanji.jitenon.jp/kanjif/2811",
+        char: "巴",
+        url: "https://kanji.jitenon.jp/kanjif/2811",
         "音読み": [
           "ハ"
         ],
@@ -17561,8 +17584,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "巻",
-        "url": "https://kanji.jitenon.jp/kanjib/841",
+        char: "巻",
+        url: "https://kanji.jitenon.jp/kanjib/841",
         "音読み": [
           "カン"
         ],
@@ -17579,8 +17602,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "巷",
-        "url": "https://kanji.jitenon.jp/kanjie/2396",
+        char: "巷",
+        url: "https://kanji.jitenon.jp/kanjie/2396",
         "音読み": [
           "コウ"
         ],
@@ -17596,8 +17619,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "巽",
-        "url": "https://kanji.jitenon.jp/kanjif/2676",
+        char: "巽",
+        url: "https://kanji.jitenon.jp/kanjif/2676",
         "音読み": [
           "ソン"
         ],
@@ -17616,13 +17639,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03032",
-    "radical": "尢 尣",
-    "reading": "だいのまげあし・まげあし・おうにょう",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03032",
+    radical: "尢 尣",
+    reading: "だいのまげあし・まげあし・おうにょう",
+    kanji: [
       {
-        "char": "尤",
-        "url": "https://kanji.jitenon.jp/kanjif/2946",
+        char: "尤",
+        url: "https://kanji.jitenon.jp/kanjif/2946",
         "音読み": [
           "ユウ"
         ],
@@ -17640,8 +17663,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "就",
-        "url": "https://kanji.jitenon.jp/kanjib/899",
+        char: "就",
+        url: "https://kanji.jitenon.jp/kanjib/899",
         "音読み": [
           "シュウ",
           "ジュ"
@@ -17661,13 +17684,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03033",
-    "radical": "幺",
-    "reading": "いとがしら・よう",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03033",
+    radical: "幺",
+    reading: "いとがしら・よう",
+    kanji: [
       {
-        "char": "幻",
-        "url": "https://kanji.jitenon.jp/kanjic/1390",
+        char: "幻",
+        url: "https://kanji.jitenon.jp/kanjic/1390",
         "音読み": [
           "ゲン"
         ],
@@ -17683,8 +17706,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "幼",
-        "url": "https://kanji.jitenon.jp/kanjib/993",
+        char: "幼",
+        url: "https://kanji.jitenon.jp/kanjib/993",
         "音読み": [
           "ヨウ"
         ],
@@ -17700,8 +17723,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "幽",
-        "url": "https://kanji.jitenon.jp/kanjid/1577",
+        char: "幽",
+        url: "https://kanji.jitenon.jp/kanjid/1577",
         "音読み": [
           "ユウ"
         ],
@@ -17715,8 +17738,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "幾",
-        "url": "https://kanji.jitenon.jp/kanjic/1051",
+        char: "幾",
+        url: "https://kanji.jitenon.jp/kanjic/1051",
         "音読み": [
           "キ"
         ],
@@ -17734,13 +17757,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu03035",
-    "radical": "彑 彐",
-    "reading": "けいがしら・いのこがしら",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu03035",
+    radical: "彑 彐",
+    reading: "けいがしら・いのこがしら",
+    kanji: [
       {
-        "char": "粛",
-        "url": "https://kanji.jitenon.jp/kanjid/1729",
+        char: "粛",
+        url: "https://kanji.jitenon.jp/kanjid/1729",
         "音読み": [
           "シュク"
         ],
@@ -17754,8 +17777,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "彙",
-        "url": "https://kanji.jitenon.jp/kanjid/1945",
+        char: "彙",
+        url: "https://kanji.jitenon.jp/kanjid/1945",
         "音読み": [
           "イ"
         ],
@@ -17771,13 +17794,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04003",
-    "radical": "犬 犭",
-    "reading": "いぬ・けものへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04003",
+    radical: "犬 犭",
+    reading: "いぬ・けものへん",
+    kanji: [
       {
-        "char": "犬",
-        "url": "https://kanji.jitenon.jp/kanji/018",
+        char: "犬",
+        url: "https://kanji.jitenon.jp/kanji/018",
         "音読み": [
           "ケン"
         ],
@@ -17793,8 +17816,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "犯",
-        "url": "https://kanji.jitenon.jp/kanjib/787",
+        char: "犯",
+        url: "https://kanji.jitenon.jp/kanjib/787",
         "音読み": [
           "ハン"
         ],
@@ -17810,8 +17833,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "状",
-        "url": "https://kanji.jitenon.jp/kanjib/738",
+        char: "状",
+        url: "https://kanji.jitenon.jp/kanjib/738",
         "音読み": [
           "ジョウ"
         ],
@@ -17825,8 +17848,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "狂",
-        "url": "https://kanji.jitenon.jp/kanjic/1070",
+        char: "狂",
+        url: "https://kanji.jitenon.jp/kanjic/1070",
         "音読み": [
           "キョウ"
         ],
@@ -17843,8 +17866,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "狙",
-        "url": "https://kanji.jitenon.jp/kanjie/2043",
+        char: "狙",
+        url: "https://kanji.jitenon.jp/kanjie/2043",
         "音読み": [
           "ソ"
         ],
@@ -17860,8 +17883,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "狗",
-        "url": "https://kanji.jitenon.jp/kanjie/2337",
+        char: "狗",
+        url: "https://kanji.jitenon.jp/kanjie/2337",
         "音読み": [
           "ク",
           "コウ"
@@ -17878,8 +17901,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "狛",
-        "url": "https://kanji.jitenon.jp/kanjif/2826",
+        char: "狛",
+        url: "https://kanji.jitenon.jp/kanjif/2826",
         "音読み": [
           "ハク"
         ],
@@ -17896,8 +17919,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "独",
-        "url": "https://kanji.jitenon.jp/kanjib/782",
+        char: "独",
+        url: "https://kanji.jitenon.jp/kanjib/782",
         "音読み": [
           "ドク"
         ],
@@ -17913,8 +17936,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "狭",
-        "url": "https://kanji.jitenon.jp/kanjic/1069",
+        char: "狭",
+        url: "https://kanji.jitenon.jp/kanjic/1069",
         "音読み": [
           "キョウ"
         ],
@@ -17932,8 +17955,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "狩",
-        "url": "https://kanji.jitenon.jp/kanjic/1124",
+        char: "狩",
+        url: "https://kanji.jitenon.jp/kanjic/1124",
         "音読み": [
           "シュ"
         ],
@@ -17950,8 +17973,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "狐",
-        "url": "https://kanji.jitenon.jp/kanjie/2378",
+        char: "狐",
+        url: "https://kanji.jitenon.jp/kanjie/2378",
         "音読み": [
           "コ"
         ],
@@ -17967,8 +17990,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "狽",
-        "url": "https://kanji.jitenon.jp/kanjif/2824",
+        char: "狽",
+        url: "https://kanji.jitenon.jp/kanjif/2824",
         "音読み": [
           "バイ"
         ],
@@ -17982,8 +18005,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "狸",
-        "url": "https://kanji.jitenon.jp/kanjif/2970",
+        char: "狸",
+        url: "https://kanji.jitenon.jp/kanjif/2970",
         "音読み": [
           "リ"
         ],
@@ -17999,8 +18022,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "猛",
-        "url": "https://kanji.jitenon.jp/kanjic/1286",
+        char: "猛",
+        url: "https://kanji.jitenon.jp/kanjic/1286",
         "音読み": [
           "モウ"
         ],
@@ -18014,8 +18037,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "猟",
-        "url": "https://kanji.jitenon.jp/kanjid/1589",
+        char: "猟",
+        url: "https://kanji.jitenon.jp/kanjid/1589",
         "音読み": [
           "リョウ"
         ],
@@ -18029,8 +18052,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "猫",
-        "url": "https://kanji.jitenon.jp/kanjid/1871",
+        char: "猫",
+        url: "https://kanji.jitenon.jp/kanjid/1871",
         "音読み": [
           "ビョウ"
         ],
@@ -18046,8 +18069,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "猪",
-        "url": "https://kanji.jitenon.jp/kanjif/2730",
+        char: "猪",
+        url: "https://kanji.jitenon.jp/kanjif/2730",
         "音読み": [
           "チョ"
         ],
@@ -18064,8 +18087,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "猶",
-        "url": "https://kanji.jitenon.jp/kanjid/1917",
+        char: "猶",
+        url: "https://kanji.jitenon.jp/kanjid/1917",
         "音読み": [
           "ユウ"
         ],
@@ -18079,8 +18102,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "猿",
-        "url": "https://kanji.jitenon.jp/kanjid/1612",
+        char: "猿",
+        url: "https://kanji.jitenon.jp/kanjid/1612",
         "音読み": [
           "エン"
         ],
@@ -18096,8 +18119,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "献",
-        "url": "https://kanji.jitenon.jp/kanjid/1676",
+        char: "献",
+        url: "https://kanji.jitenon.jp/kanjid/1676",
         "音読み": [
           "ケン",
           "コン"
@@ -18112,8 +18135,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "獅",
-        "url": "https://kanji.jitenon.jp/kanjie/2472",
+        char: "獅",
+        url: "https://kanji.jitenon.jp/kanjie/2472",
         "音読み": [
           "シ"
         ],
@@ -18129,8 +18152,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "猷",
-        "url": "https://kanji.jitenon.jp/kanjif/2948",
+        char: "猷",
+        url: "https://kanji.jitenon.jp/kanjif/2948",
         "音読み": [
           "ユウ"
         ],
@@ -18148,8 +18171,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "獄",
-        "url": "https://kanji.jitenon.jp/kanjic/1410",
+        char: "獄",
+        url: "https://kanji.jitenon.jp/kanjic/1410",
         "音読み": [
           "ゴク"
         ],
@@ -18163,8 +18186,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "獲",
-        "url": "https://kanji.jitenon.jp/kanjic/1036",
+        char: "獲",
+        url: "https://kanji.jitenon.jp/kanjic/1036",
         "音読み": [
           "カク"
         ],
@@ -18180,8 +18203,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "獣",
-        "url": "https://kanji.jitenon.jp/kanjic/1132",
+        char: "獣",
+        url: "https://kanji.jitenon.jp/kanjic/1132",
         "音読み": [
           "ジュウ"
         ],
@@ -18199,13 +18222,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04005",
-    "radical": "手 扌",
-    "reading": "て・てへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04005",
+    radical: "手 扌",
+    reading: "て・てへん",
+    kanji: [
       {
-        "char": "才",
-        "url": "https://kanji.jitenon.jp/kanji/140",
+        char: "才",
+        url: "https://kanji.jitenon.jp/kanji/140",
         "音読み": [
           "サイ"
         ],
@@ -18219,8 +18242,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "手",
-        "url": "https://kanji.jitenon.jp/kanji/033",
+        char: "手",
+        url: "https://kanji.jitenon.jp/kanji/033",
         "音読み": [
           "シュ"
         ],
@@ -18237,8 +18260,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "打",
-        "url": "https://kanji.jitenon.jp/kanji/354",
+        char: "打",
+        url: "https://kanji.jitenon.jp/kanji/354",
         "音読み": [
           "ダ"
         ],
@@ -18254,8 +18277,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "払",
-        "url": "https://kanji.jitenon.jp/kanjic/1260",
+        char: "払",
+        url: "https://kanji.jitenon.jp/kanjic/1260",
         "音読み": [
           "フツ"
         ],
@@ -18271,8 +18294,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "扱",
-        "url": "https://kanji.jitenon.jp/kanjic/1004",
+        char: "扱",
+        url: "https://kanji.jitenon.jp/kanjic/1004",
         "音読み": [],
         "訓読み": [
           "あつか（う）"
@@ -18286,8 +18309,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "托",
-        "url": "https://kanji.jitenon.jp/kanjif/2703",
+        char: "托",
+        url: "https://kanji.jitenon.jp/kanjif/2703",
         "音読み": [
           "タク"
         ],
@@ -18305,8 +18328,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "投",
-        "url": "https://kanji.jitenon.jp/kanji/381",
+        char: "投",
+        url: "https://kanji.jitenon.jp/kanji/381",
         "音読み": [
           "トウ"
         ],
@@ -18322,8 +18345,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "折",
-        "url": "https://kanji.jitenon.jp/kanjib/550",
+        char: "折",
+        url: "https://kanji.jitenon.jp/kanjib/550",
         "音読み": [
           "セツ"
         ],
@@ -18341,8 +18364,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "技",
-        "url": "https://kanji.jitenon.jp/kanjib/672",
+        char: "技",
+        url: "https://kanji.jitenon.jp/kanjib/672",
         "音読み": [
           "ギ"
         ],
@@ -18358,8 +18381,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "批",
-        "url": "https://kanji.jitenon.jp/kanjib/972",
+        char: "批",
+        url: "https://kanji.jitenon.jp/kanjib/972",
         "音読み": [
           "ヒ"
         ],
@@ -18373,8 +18396,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "抗",
-        "url": "https://kanji.jitenon.jp/kanjic/1096",
+        char: "抗",
+        url: "https://kanji.jitenon.jp/kanjic/1096",
         "音読み": [
           "コウ"
         ],
@@ -18388,8 +18411,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "抜",
-        "url": "https://kanji.jitenon.jp/kanjic/1233",
+        char: "抜",
+        url: "https://kanji.jitenon.jp/kanjic/1233",
         "音読み": [
           "バツ"
         ],
@@ -18408,8 +18431,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "択",
-        "url": "https://kanji.jitenon.jp/kanjic/1494",
+        char: "択",
+        url: "https://kanji.jitenon.jp/kanjic/1494",
         "音読み": [
           "タク"
         ],
@@ -18423,8 +18446,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "抑",
-        "url": "https://kanji.jitenon.jp/kanjid/1583",
+        char: "抑",
+        url: "https://kanji.jitenon.jp/kanjid/1583",
         "音読み": [
           "ヨク"
         ],
@@ -18440,8 +18463,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "抄",
-        "url": "https://kanji.jitenon.jp/kanjid/1747",
+        char: "抄",
+        url: "https://kanji.jitenon.jp/kanjid/1747",
         "音読み": [
           "ショウ"
         ],
@@ -18455,8 +18478,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "把",
-        "url": "https://kanji.jitenon.jp/kanjid/1853",
+        char: "把",
+        url: "https://kanji.jitenon.jp/kanjid/1853",
         "音読み": [
           "ハ"
         ],
@@ -18470,8 +18493,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "扶",
-        "url": "https://kanji.jitenon.jp/kanjid/1876",
+        char: "扶",
+        url: "https://kanji.jitenon.jp/kanjid/1876",
         "音読み": [
           "フ"
         ],
@@ -18485,8 +18508,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "扮",
-        "url": "https://kanji.jitenon.jp/kanjif/2842",
+        char: "扮",
+        url: "https://kanji.jitenon.jp/kanjif/2842",
         "音読み": [
           "ハン",
           "フン"
@@ -18504,8 +18527,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "承",
-        "url": "https://kanji.jitenon.jp/kanjib/735",
+        char: "承",
+        url: "https://kanji.jitenon.jp/kanjib/735",
         "音読み": [
           "ショウ"
         ],
@@ -18521,8 +18544,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "招",
-        "url": "https://kanji.jitenon.jp/kanjib/736",
+        char: "招",
+        url: "https://kanji.jitenon.jp/kanjib/736",
         "音読み": [
           "ショウ"
         ],
@@ -18538,8 +18561,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "拡",
-        "url": "https://kanji.jitenon.jp/kanjib/835",
+        char: "拡",
+        url: "https://kanji.jitenon.jp/kanjib/835",
         "音読み": [
           "カク"
         ],
@@ -18553,8 +18576,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "担",
-        "url": "https://kanji.jitenon.jp/kanjib/940",
+        char: "担",
+        url: "https://kanji.jitenon.jp/kanjib/940",
         "音読み": [
           "タン"
         ],
@@ -18571,8 +18594,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "拝",
-        "url": "https://kanji.jitenon.jp/kanjib/967",
+        char: "拝",
+        url: "https://kanji.jitenon.jp/kanjib/967",
         "音読み": [
           "ハイ"
         ],
@@ -18588,8 +18611,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "押",
-        "url": "https://kanji.jitenon.jp/kanjic/1024",
+        char: "押",
+        url: "https://kanji.jitenon.jp/kanjic/1024",
         "音読み": [
           "オウ"
         ],
@@ -18606,8 +18629,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "拠",
-        "url": "https://kanji.jitenon.jp/kanjic/1060",
+        char: "拠",
+        url: "https://kanji.jitenon.jp/kanjic/1060",
         "音読み": [
           "キョ",
           "コ"
@@ -18622,8 +18645,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "拓",
-        "url": "https://kanji.jitenon.jp/kanjic/1176",
+        char: "拓",
+        url: "https://kanji.jitenon.jp/kanjic/1176",
         "音読み": [
           "タク"
         ],
@@ -18637,8 +18660,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "抵",
-        "url": "https://kanji.jitenon.jp/kanjic/1195",
+        char: "抵",
+        url: "https://kanji.jitenon.jp/kanjic/1195",
         "音読み": [
           "テイ"
         ],
@@ -18652,8 +18675,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "拍",
-        "url": "https://kanji.jitenon.jp/kanjic/1228",
+        char: "拍",
+        url: "https://kanji.jitenon.jp/kanjic/1228",
         "音読み": [
           "ハク",
           "ヒョウ"
@@ -18668,8 +18691,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "抱",
-        "url": "https://kanji.jitenon.jp/kanjic/1267",
+        char: "抱",
+        url: "https://kanji.jitenon.jp/kanjic/1267",
         "音読み": [
           "ホウ"
         ],
@@ -18687,8 +18710,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "拘",
-        "url": "https://kanji.jitenon.jp/kanjic/1400",
+        char: "拘",
+        url: "https://kanji.jitenon.jp/kanjic/1400",
         "音読み": [
           "コウ"
         ],
@@ -18702,8 +18725,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "抽",
-        "url": "https://kanji.jitenon.jp/kanjid/1504",
+        char: "抽",
+        url: "https://kanji.jitenon.jp/kanjid/1504",
         "音読み": [
           "チュウ"
         ],
@@ -18717,8 +18740,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "拐",
-        "url": "https://kanji.jitenon.jp/kanjid/1622",
+        char: "拐",
+        url: "https://kanji.jitenon.jp/kanjid/1622",
         "音読み": [
           "カイ"
         ],
@@ -18732,8 +18755,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "拒",
-        "url": "https://kanji.jitenon.jp/kanjid/1655",
+        char: "拒",
+        url: "https://kanji.jitenon.jp/kanjid/1655",
         "音読み": [
           "キョ"
         ],
@@ -18749,8 +18772,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "拙",
-        "url": "https://kanji.jitenon.jp/kanjid/1781",
+        char: "拙",
+        url: "https://kanji.jitenon.jp/kanjid/1781",
         "音読み": [
           "セツ"
         ],
@@ -18766,8 +18789,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "披",
-        "url": "https://kanji.jitenon.jp/kanjid/1867",
+        char: "披",
+        url: "https://kanji.jitenon.jp/kanjid/1867",
         "音読み": [
           "ヒ"
         ],
@@ -18781,8 +18804,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "抹",
-        "url": "https://kanji.jitenon.jp/kanjid/1903",
+        char: "抹",
+        url: "https://kanji.jitenon.jp/kanjid/1903",
         "音読み": [
           "マツ"
         ],
@@ -18796,8 +18819,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "拉",
-        "url": "https://kanji.jitenon.jp/kanjie/2120",
+        char: "拉",
+        url: "https://kanji.jitenon.jp/kanjie/2120",
         "音読み": [
           "ラ"
         ],
@@ -18811,8 +18834,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "指",
-        "url": "https://kanji.jitenon.jp/kanji/300",
+        char: "指",
+        url: "https://kanji.jitenon.jp/kanji/300",
         "音読み": [
           "シ"
         ],
@@ -18829,8 +18852,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "持",
-        "url": "https://kanji.jitenon.jp/kanji/308",
+        char: "持",
+        url: "https://kanji.jitenon.jp/kanji/308",
         "音読み": [
           "ジ"
         ],
@@ -18846,8 +18869,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "拾",
-        "url": "https://kanji.jitenon.jp/kanji/321",
+        char: "拾",
+        url: "https://kanji.jitenon.jp/kanji/321",
         "音読み": [
           "シュウ",
           "ジュウ"
@@ -18864,8 +18887,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "括",
-        "url": "https://kanji.jitenon.jp/kanjid/1635",
+        char: "括",
+        url: "https://kanji.jitenon.jp/kanjid/1635",
         "音読み": [
           "カツ"
         ],
@@ -18879,8 +18902,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "挟",
-        "url": "https://kanji.jitenon.jp/kanjid/1656",
+        char: "挟",
+        url: "https://kanji.jitenon.jp/kanjid/1656",
         "音読み": [
           "キョウ"
         ],
@@ -18897,8 +18920,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "拷",
-        "url": "https://kanji.jitenon.jp/kanjid/1692",
+        char: "拷",
+        url: "https://kanji.jitenon.jp/kanjid/1692",
         "音読み": [
           "ゴウ"
         ],
@@ -18912,8 +18935,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "挑",
-        "url": "https://kanji.jitenon.jp/kanjid/1816",
+        char: "挑",
+        url: "https://kanji.jitenon.jp/kanjid/1816",
         "音読み": [
           "チョウ"
         ],
@@ -18929,8 +18952,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "拶",
-        "url": "https://kanji.jitenon.jp/kanjie/2013",
+        char: "拶",
+        url: "https://kanji.jitenon.jp/kanjie/2013",
         "音読み": [
           "サツ"
         ],
@@ -18944,8 +18967,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "拭",
-        "url": "https://kanji.jitenon.jp/kanjie/2027",
+        char: "拭",
+        url: "https://kanji.jitenon.jp/kanjie/2027",
         "音読み": [
           "ショク"
         ],
@@ -18962,8 +18985,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "按",
-        "url": "https://kanji.jitenon.jp/kanjie/2145",
+        char: "按",
+        url: "https://kanji.jitenon.jp/kanjie/2145",
         "音読み": [
           "アン"
         ],
@@ -18981,8 +19004,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "挙",
-        "url": "https://kanji.jitenon.jp/kanji/481",
+        char: "挙",
+        url: "https://kanji.jitenon.jp/kanji/481",
         "音読み": [
           "キョ"
         ],
@@ -18999,8 +19022,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "振",
-        "url": "https://kanji.jitenon.jp/kanjic/1153",
+        char: "振",
+        url: "https://kanji.jitenon.jp/kanjic/1153",
         "音読み": [
           "シン"
         ],
@@ -19018,8 +19041,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "捕",
-        "url": "https://kanji.jitenon.jp/kanjic/1264",
+        char: "捕",
+        url: "https://kanji.jitenon.jp/kanjic/1264",
         "音読み": [
           "ホ"
         ],
@@ -19039,8 +19062,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "捜",
-        "url": "https://kanji.jitenon.jp/kanjid/1794",
+        char: "捜",
+        url: "https://kanji.jitenon.jp/kanjid/1794",
         "音読み": [
           "ソウ"
         ],
@@ -19056,8 +19079,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "挿",
-        "url": "https://kanji.jitenon.jp/kanjid/1800",
+        char: "挿",
+        url: "https://kanji.jitenon.jp/kanjid/1800",
         "音読み": [
           "ソウ"
         ],
@@ -19073,8 +19096,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "挨",
-        "url": "https://kanji.jitenon.jp/kanjid/1938",
+        char: "挨",
+        url: "https://kanji.jitenon.jp/kanjid/1938",
         "音読み": [
           "アイ"
         ],
@@ -19088,8 +19111,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "拳",
-        "url": "https://kanji.jitenon.jp/kanjid/1992",
+        char: "拳",
+        url: "https://kanji.jitenon.jp/kanjid/1992",
         "音読み": [
           "ケン"
         ],
@@ -19105,8 +19128,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "挫",
-        "url": "https://kanji.jitenon.jp/kanjie/2007",
+        char: "挫",
+        url: "https://kanji.jitenon.jp/kanjie/2007",
         "音読み": [
           "ザ"
         ],
@@ -19120,8 +19143,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "捉",
-        "url": "https://kanji.jitenon.jp/kanjie/2049",
+        char: "捉",
+        url: "https://kanji.jitenon.jp/kanjie/2049",
         "音読み": [
           "ソク"
         ],
@@ -19137,8 +19160,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "捗",
-        "url": "https://kanji.jitenon.jp/kanjie/2062",
+        char: "捗",
+        url: "https://kanji.jitenon.jp/kanjie/2062",
         "音読み": [
           "チョク"
         ],
@@ -19152,8 +19175,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "挺",
-        "url": "https://kanji.jitenon.jp/kanjif/2736",
+        char: "挺",
+        url: "https://kanji.jitenon.jp/kanjif/2736",
         "音読み": [
           "チョウ",
           "テイ"
@@ -19171,8 +19194,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "捌",
-        "url": "https://kanji.jitenon.jp/kanjif/2835",
+        char: "捌",
+        url: "https://kanji.jitenon.jp/kanjif/2835",
         "音読み": [
           "ハチ",
           "ハツ",
@@ -19193,8 +19216,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "挽",
-        "url": "https://kanji.jitenon.jp/kanjif/2845",
+        char: "挽",
+        url: "https://kanji.jitenon.jp/kanjif/2845",
         "音読み": [
           "バン"
         ],
@@ -19210,8 +19233,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "採",
-        "url": "https://kanji.jitenon.jp/kanjib/706",
+        char: "採",
+        url: "https://kanji.jitenon.jp/kanjib/706",
         "音読み": [
           "サイ"
         ],
@@ -19227,8 +19250,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "授",
-        "url": "https://kanji.jitenon.jp/kanjib/728",
+        char: "授",
+        url: "https://kanji.jitenon.jp/kanjib/728",
         "音読み": [
           "ジュ"
         ],
@@ -19245,8 +19268,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "接",
-        "url": "https://kanji.jitenon.jp/kanjib/753",
+        char: "接",
+        url: "https://kanji.jitenon.jp/kanjib/753",
         "音読み": [
           "セツ"
         ],
@@ -19262,8 +19285,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "捨",
-        "url": "https://kanji.jitenon.jp/kanjib/891",
+        char: "捨",
+        url: "https://kanji.jitenon.jp/kanjib/891",
         "音読み": [
           "シャ"
         ],
@@ -19279,8 +19302,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "推",
-        "url": "https://kanji.jitenon.jp/kanjib/916",
+        char: "推",
+        url: "https://kanji.jitenon.jp/kanjib/916",
         "音読み": [
           "スイ"
         ],
@@ -19296,8 +19319,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "探",
-        "url": "https://kanji.jitenon.jp/kanjib/939",
+        char: "探",
+        url: "https://kanji.jitenon.jp/kanjib/939",
         "音読み": [
           "タン"
         ],
@@ -19314,8 +19337,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "掘",
-        "url": "https://kanji.jitenon.jp/kanjic/1075",
+        char: "掘",
+        url: "https://kanji.jitenon.jp/kanjic/1075",
         "音読み": [
           "クツ"
         ],
@@ -19331,8 +19354,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "描",
-        "url": "https://kanji.jitenon.jp/kanjic/1248",
+        char: "描",
+        url: "https://kanji.jitenon.jp/kanjic/1248",
         "音読み": [
           "ビョウ"
         ],
@@ -19349,8 +19372,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "掛",
-        "url": "https://kanji.jitenon.jp/kanjic/1347",
+        char: "掛",
+        url: "https://kanji.jitenon.jp/kanjic/1347",
         "音読み": [],
         "訓読み": [
           "かかり",
@@ -19366,8 +19389,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "掲",
-        "url": "https://kanji.jitenon.jp/kanjic/1383",
+        char: "掲",
+        url: "https://kanji.jitenon.jp/kanjic/1383",
         "音読み": [
           "ケイ"
         ],
@@ -19383,8 +19406,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "控",
-        "url": "https://kanji.jitenon.jp/kanjic/1399",
+        char: "控",
+        url: "https://kanji.jitenon.jp/kanjic/1399",
         "音読み": [
           "コウ"
         ],
@@ -19400,8 +19423,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "措",
-        "url": "https://kanji.jitenon.jp/kanjic/1474",
+        char: "措",
+        url: "https://kanji.jitenon.jp/kanjic/1474",
         "音読み": [
           "ソ"
         ],
@@ -19415,8 +19438,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "掃",
-        "url": "https://kanji.jitenon.jp/kanjic/1481",
+        char: "掃",
+        url: "https://kanji.jitenon.jp/kanjic/1481",
         "音読み": [
           "ソウ"
         ],
@@ -19432,8 +19455,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "排",
-        "url": "https://kanji.jitenon.jp/kanjid/1527",
+        char: "排",
+        url: "https://kanji.jitenon.jp/kanjid/1527",
         "音読み": [
           "ハイ"
         ],
@@ -19447,8 +19470,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "据",
-        "url": "https://kanji.jitenon.jp/kanjid/1773",
+        char: "据",
+        url: "https://kanji.jitenon.jp/kanjid/1773",
         "音読み": [],
         "訓読み": [
           "す（える）",
@@ -19463,8 +19486,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "捻",
-        "url": "https://kanji.jitenon.jp/kanjie/2084",
+        char: "捻",
+        url: "https://kanji.jitenon.jp/kanjie/2084",
         "音読み": [
           "ネン"
         ],
@@ -19478,8 +19501,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "掩",
-        "url": "https://kanji.jitenon.jp/kanjie/2185",
+        char: "掩",
+        url: "https://kanji.jitenon.jp/kanjie/2185",
         "音読み": [
           "エン"
         ],
@@ -19497,8 +19520,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "掴",
-        "url": "https://kanji.jitenon.jp/kanjie/2240",
+        char: "掴",
+        url: "https://kanji.jitenon.jp/kanjie/2240",
         "音読み": [
           "カク"
         ],
@@ -19514,8 +19537,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "掬",
-        "url": "https://kanji.jitenon.jp/kanjie/2289",
+        char: "掬",
+        url: "https://kanji.jitenon.jp/kanjie/2289",
         "音読み": [
           "キク"
         ],
@@ -19532,8 +19555,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "捲",
-        "url": "https://kanji.jitenon.jp/kanjie/2365",
+        char: "捲",
+        url: "https://kanji.jitenon.jp/kanjie/2365",
         "音読み": [
           "ケン"
         ],
@@ -19551,8 +19574,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "捷",
-        "url": "https://kanji.jitenon.jp/kanjif/2559",
+        char: "捷",
+        url: "https://kanji.jitenon.jp/kanjif/2559",
         "音読み": [
           "ショウ"
         ],
@@ -19569,8 +19592,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "掻",
-        "url": "https://kanji.jitenon.jp/kanjif/2658",
+        char: "掻",
+        url: "https://kanji.jitenon.jp/kanjif/2658",
         "音読み": [
           "ソウ"
         ],
@@ -19586,8 +19609,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "捺",
-        "url": "https://kanji.jitenon.jp/kanjif/2709",
+        char: "捺",
+        url: "https://kanji.jitenon.jp/kanjif/2709",
         "音読み": [
           "ダツ",
           "ナツ"
@@ -19604,8 +19627,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "捧",
-        "url": "https://kanji.jitenon.jp/kanjif/2908",
+        char: "捧",
+        url: "https://kanji.jitenon.jp/kanjif/2908",
         "音読み": [
           "ホウ"
         ],
@@ -19622,8 +19645,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "掠",
-        "url": "https://kanji.jitenon.jp/kanjif/2974",
+        char: "掠",
+        url: "https://kanji.jitenon.jp/kanjif/2974",
         "音読み": [
           "リャク",
           "リョウ"
@@ -19644,8 +19667,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "提",
-        "url": "https://kanji.jitenon.jp/kanjib/775",
+        char: "提",
+        url: "https://kanji.jitenon.jp/kanjib/775",
         "音読み": [
           "テイ"
         ],
@@ -19661,8 +19684,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "揮",
-        "url": "https://kanji.jitenon.jp/kanjib/843",
+        char: "揮",
+        url: "https://kanji.jitenon.jp/kanjib/843",
         "音読み": [
           "キ"
         ],
@@ -19676,8 +19699,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "握",
-        "url": "https://kanji.jitenon.jp/kanjic/1003",
+        char: "握",
+        url: "https://kanji.jitenon.jp/kanjic/1003",
         "音読み": [
           "アク"
         ],
@@ -19693,8 +19716,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "援",
-        "url": "https://kanji.jitenon.jp/kanjic/1019",
+        char: "援",
+        url: "https://kanji.jitenon.jp/kanjic/1019",
         "音読み": [
           "エン"
         ],
@@ -19708,8 +19731,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "換",
-        "url": "https://kanji.jitenon.jp/kanjic/1355",
+        char: "換",
+        url: "https://kanji.jitenon.jp/kanjic/1355",
         "音読み": [
           "カン"
         ],
@@ -19726,8 +19749,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "掌",
-        "url": "https://kanji.jitenon.jp/kanjic/1440",
+        char: "掌",
+        url: "https://kanji.jitenon.jp/kanjic/1440",
         "音読み": [
           "ショウ"
         ],
@@ -19741,8 +19764,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "揚",
-        "url": "https://kanji.jitenon.jp/kanjid/1581",
+        char: "揚",
+        url: "https://kanji.jitenon.jp/kanjid/1581",
         "音読み": [
           "ヨウ"
         ],
@@ -19759,8 +19782,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "揺",
-        "url": "https://kanji.jitenon.jp/kanjid/1582",
+        char: "揺",
+        url: "https://kanji.jitenon.jp/kanjid/1582",
         "音読み": [
           "ヨウ"
         ],
@@ -19782,8 +19805,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "搭",
-        "url": "https://kanji.jitenon.jp/kanjid/1838",
+        char: "搭",
+        url: "https://kanji.jitenon.jp/kanjid/1838",
         "音読み": [
           "トウ"
         ],
@@ -19797,8 +19820,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "揖",
-        "url": "https://kanji.jitenon.jp/kanjif/2509",
+        char: "揖",
+        url: "https://kanji.jitenon.jp/kanjif/2509",
         "音読み": [
           "シュウ",
           "ユウ"
@@ -19816,8 +19839,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "揃",
-        "url": "https://kanji.jitenon.jp/kanjif/2635",
+        char: "揃",
+        url: "https://kanji.jitenon.jp/kanjif/2635",
         "音読み": [
           "セン"
         ],
@@ -19835,8 +19858,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "損",
-        "url": "https://kanji.jitenon.jp/kanjib/766",
+        char: "損",
+        url: "https://kanji.jitenon.jp/kanjib/766",
         "音読み": [
           "ソン"
         ],
@@ -19853,8 +19876,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "搬",
-        "url": "https://kanji.jitenon.jp/kanjic/1237",
+        char: "搬",
+        url: "https://kanji.jitenon.jp/kanjic/1237",
         "音読み": [
           "ハン"
         ],
@@ -19868,8 +19891,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "携",
-        "url": "https://kanji.jitenon.jp/kanjic/1382",
+        char: "携",
+        url: "https://kanji.jitenon.jp/kanjic/1382",
         "音読み": [
           "ケイ"
         ],
@@ -19886,8 +19909,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "搾",
-        "url": "https://kanji.jitenon.jp/kanjic/1419",
+        char: "搾",
+        url: "https://kanji.jitenon.jp/kanjic/1419",
         "音読み": [
           "サク"
         ],
@@ -19903,8 +19926,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "摂",
-        "url": "https://kanji.jitenon.jp/kanjic/1471",
+        char: "摂",
+        url: "https://kanji.jitenon.jp/kanjic/1471",
         "音読み": [
           "セツ"
         ],
@@ -19918,8 +19941,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "摸",
-        "url": "https://kanji.jitenon.jp/kanjif/2830",
+        char: "摸",
+        url: "https://kanji.jitenon.jp/kanjif/2830",
         "音読み": [
           "バク",
           "ボ",
@@ -19938,8 +19961,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "摘",
-        "url": "https://kanji.jitenon.jp/kanjic/1197",
+        char: "摘",
+        url: "https://kanji.jitenon.jp/kanjic/1197",
         "音読み": [
           "テキ"
         ],
@@ -19955,8 +19978,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "摺",
-        "url": "https://kanji.jitenon.jp/kanjif/2560",
+        char: "摺",
+        url: "https://kanji.jitenon.jp/kanjif/2560",
         "音読み": [
           "ショウ",
           "ロウ"
@@ -19976,8 +19999,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "撃",
-        "url": "https://kanji.jitenon.jp/kanjic/1080",
+        char: "撃",
+        url: "https://kanji.jitenon.jp/kanjic/1080",
         "音読み": [
           "ゲキ"
         ],
@@ -19993,8 +20016,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "撮",
-        "url": "https://kanji.jitenon.jp/kanjic/1420",
+        char: "撮",
+        url: "https://kanji.jitenon.jp/kanjic/1420",
         "音読み": [
           "サツ"
         ],
@@ -20010,8 +20033,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "撤",
-        "url": "https://kanji.jitenon.jp/kanjid/1836",
+        char: "撤",
+        url: "https://kanji.jitenon.jp/kanjid/1836",
         "音読み": [
           "テツ"
         ],
@@ -20025,8 +20048,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "撲",
-        "url": "https://kanji.jitenon.jp/kanjid/1896",
+        char: "撲",
+        url: "https://kanji.jitenon.jp/kanjid/1896",
         "音読み": [
           "ボク"
         ],
@@ -20040,8 +20063,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "摩",
-        "url": "https://kanji.jitenon.jp/kanjid/1900",
+        char: "摩",
+        url: "https://kanji.jitenon.jp/kanjid/1900",
         "音読み": [
           "マ"
         ],
@@ -20055,8 +20078,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "摯",
-        "url": "https://kanji.jitenon.jp/kanjie/2016",
+        char: "摯",
+        url: "https://kanji.jitenon.jp/kanjie/2016",
         "音読み": [
           "シ"
         ],
@@ -20070,8 +20093,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "撹",
-        "url": "https://kanji.jitenon.jp/kanjie/2242",
+        char: "撹",
+        url: "https://kanji.jitenon.jp/kanjie/2242",
         "音読み": [
           "カク",
           "コウ"
@@ -20089,8 +20112,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "撒",
-        "url": "https://kanji.jitenon.jp/kanjie/2450",
+        char: "撒",
+        url: "https://kanji.jitenon.jp/kanjie/2450",
         "音読み": [
           "サツ",
           "サン"
@@ -20107,8 +20130,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "撰",
-        "url": "https://kanji.jitenon.jp/kanjie/2452",
+        char: "撰",
+        url: "https://kanji.jitenon.jp/kanjie/2452",
         "音読み": [
           "サン",
           "セン"
@@ -20125,8 +20148,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "撞",
-        "url": "https://kanji.jitenon.jp/kanjie/2498",
+        char: "撞",
+        url: "https://kanji.jitenon.jp/kanjie/2498",
         "音読み": [
           "シュ",
           "トウ",
@@ -20144,8 +20167,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "撚",
-        "url": "https://kanji.jitenon.jp/kanjif/2774",
+        char: "撚",
+        url: "https://kanji.jitenon.jp/kanjif/2774",
         "音読み": [
           "デン",
           "ネン"
@@ -20164,8 +20187,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "播",
-        "url": "https://kanji.jitenon.jp/kanjif/2812",
+        char: "播",
+        url: "https://kanji.jitenon.jp/kanjif/2812",
         "音読み": [
           "ハ",
           "バン"
@@ -20183,8 +20206,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "撫",
-        "url": "https://kanji.jitenon.jp/kanjif/2873",
+        char: "撫",
+        url: "https://kanji.jitenon.jp/kanjif/2873",
         "音読み": [
           "フ",
           "ブ"
@@ -20201,8 +20224,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "操",
-        "url": "https://kanji.jitenon.jp/kanjib/931",
+        char: "操",
+        url: "https://kanji.jitenon.jp/kanjib/931",
         "音読み": [
           "ソウ"
         ],
@@ -20219,8 +20242,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "擁",
-        "url": "https://kanji.jitenon.jp/kanjid/1580",
+        char: "擁",
+        url: "https://kanji.jitenon.jp/kanjid/1580",
         "音読み": [
           "ヨウ"
         ],
@@ -20234,8 +20257,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "擦",
-        "url": "https://kanji.jitenon.jp/kanjic/1421",
+        char: "擦",
+        url: "https://kanji.jitenon.jp/kanjic/1421",
         "音読み": [
           "サツ"
         ],
@@ -20252,8 +20275,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "擬",
-        "url": "https://kanji.jitenon.jp/kanjid/1651",
+        char: "擬",
+        url: "https://kanji.jitenon.jp/kanjid/1651",
         "音読み": [
           "ギ"
         ],
@@ -20267,8 +20290,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "擢",
-        "url": "https://kanji.jitenon.jp/kanjif/2704",
+        char: "擢",
+        url: "https://kanji.jitenon.jp/kanjif/2704",
         "音読み": [
           "タク",
           "テキ"
@@ -20286,8 +20309,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "擾",
-        "url": "https://kanji.jitenon.jp/kanjif/2583",
+        char: "擾",
+        url: "https://kanji.jitenon.jp/kanjif/2583",
         "音読み": [
           "ジョウ"
         ],
@@ -20306,8 +20329,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "攪",
-        "url": "https://kanji.jitenon.jp/kanjie/2241",
+        char: "攪",
+        url: "https://kanji.jitenon.jp/kanjie/2241",
         "音読み": [
           "カク",
           "コウ"
@@ -20327,13 +20350,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04007",
-    "radical": "水 氵 氺",
-    "reading": "みず・さんずい・したみず",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04007",
+    radical: "水 氵 氺",
+    reading: "みず・さんずい・したみず",
+    kanji: [
       {
-        "char": "水",
-        "url": "https://kanji.jitenon.jp/kanji/042",
+        char: "水",
+        url: "https://kanji.jitenon.jp/kanji/042",
         "音読み": [
           "スイ"
         ],
@@ -20349,8 +20372,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "氷",
-        "url": "https://kanji.jitenon.jp/kanji/400",
+        char: "氷",
+        url: "https://kanji.jitenon.jp/kanji/400",
         "音読み": [
           "ヒョウ"
         ],
@@ -20367,8 +20390,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "永",
-        "url": "https://kanji.jitenon.jp/kanjib/643",
+        char: "永",
+        url: "https://kanji.jitenon.jp/kanjib/643",
         "音読み": [
           "エイ"
         ],
@@ -20384,8 +20407,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "汁",
-        "url": "https://kanji.jitenon.jp/kanjid/1728",
+        char: "汁",
+        url: "https://kanji.jitenon.jp/kanjid/1728",
         "音読み": [
           "ジュウ"
         ],
@@ -20401,8 +20424,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "氾",
-        "url": "https://kanji.jitenon.jp/kanjie/2088",
+        char: "氾",
+        url: "https://kanji.jitenon.jp/kanjie/2088",
         "音読み": [
           "ハン"
         ],
@@ -20416,8 +20439,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "汀",
-        "url": "https://kanji.jitenon.jp/kanjif/2752",
+        char: "汀",
+        url: "https://kanji.jitenon.jp/kanjif/2752",
         "音読み": [
           "テイ"
         ],
@@ -20434,8 +20457,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "池",
-        "url": "https://kanji.jitenon.jp/kanji/185",
+        char: "池",
+        url: "https://kanji.jitenon.jp/kanji/185",
         "音読み": [
           "チ"
         ],
@@ -20451,8 +20474,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "汚",
-        "url": "https://kanji.jitenon.jp/kanjic/1023",
+        char: "汚",
+        url: "https://kanji.jitenon.jp/kanjic/1023",
         "音読み": [
           "オ"
         ],
@@ -20473,8 +20496,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "汗",
-        "url": "https://kanji.jitenon.jp/kanjic/1040",
+        char: "汗",
+        url: "https://kanji.jitenon.jp/kanjic/1040",
         "音読み": [
           "カン"
         ],
@@ -20490,8 +20513,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "江",
-        "url": "https://kanji.jitenon.jp/kanjid/1686",
+        char: "江",
+        url: "https://kanji.jitenon.jp/kanjid/1686",
         "音読み": [
           "コウ"
         ],
@@ -20507,8 +20530,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "汎",
-        "url": "https://kanji.jitenon.jp/kanjie/2089",
+        char: "汎",
+        url: "https://kanji.jitenon.jp/kanjie/2089",
         "音読み": [
           "ハン"
         ],
@@ -20522,8 +20545,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "汝",
-        "url": "https://kanji.jitenon.jp/kanjif/2550",
+        char: "汝",
+        url: "https://kanji.jitenon.jp/kanjif/2550",
         "音読み": [
           "ジョ"
         ],
@@ -20539,8 +20562,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "汐",
-        "url": "https://kanji.jitenon.jp/kanjif/2630",
+        char: "汐",
+        url: "https://kanji.jitenon.jp/kanjif/2630",
         "音読み": [
           "セキ"
         ],
@@ -20557,8 +20580,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "汽",
-        "url": "https://kanji.jitenon.jp/kanji/105",
+        char: "汽",
+        url: "https://kanji.jitenon.jp/kanji/105",
         "音読み": [
           "キ"
         ],
@@ -20572,8 +20595,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "決",
-        "url": "https://kanji.jitenon.jp/kanji/288",
+        char: "決",
+        url: "https://kanji.jitenon.jp/kanji/288",
         "音読み": [
           "ケツ"
         ],
@@ -20590,8 +20613,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "求",
-        "url": "https://kanji.jitenon.jp/kanji/479",
+        char: "求",
+        url: "https://kanji.jitenon.jp/kanji/479",
         "音読み": [
           "キュウ"
         ],
@@ -20607,8 +20630,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "沢",
-        "url": "https://kanji.jitenon.jp/kanjic/1177",
+        char: "沢",
+        url: "https://kanji.jitenon.jp/kanjic/1177",
         "音読み": [
           "タク"
         ],
@@ -20624,8 +20647,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "沖",
-        "url": "https://kanji.jitenon.jp/kanjic/1189",
+        char: "沖",
+        url: "https://kanji.jitenon.jp/kanjic/1189",
         "音読み": [
           "チュウ"
         ],
@@ -20641,8 +20664,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "沈",
-        "url": "https://kanji.jitenon.jp/kanjic/1194",
+        char: "沈",
+        url: "https://kanji.jitenon.jp/kanjic/1194",
         "音読み": [
           "チン"
         ],
@@ -20659,8 +20682,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "没",
-        "url": "https://kanji.jitenon.jp/kanjid/1568",
+        char: "没",
+        url: "https://kanji.jitenon.jp/kanjid/1568",
         "音読み": [
           "ボツ"
         ],
@@ -20674,8 +20697,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "沙",
-        "url": "https://kanji.jitenon.jp/kanjie/2006",
+        char: "沙",
+        url: "https://kanji.jitenon.jp/kanjie/2006",
         "音読み": [
           "サ"
         ],
@@ -20689,8 +20712,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "汰",
-        "url": "https://kanji.jitenon.jp/kanjie/2051",
+        char: "汰",
+        url: "https://kanji.jitenon.jp/kanjie/2051",
         "音読み": [
           "タ"
         ],
@@ -20704,8 +20727,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "沃",
-        "url": "https://kanji.jitenon.jp/kanjie/2119",
+        char: "沃",
+        url: "https://kanji.jitenon.jp/kanjie/2119",
         "音読み": [
           "ヨク"
         ],
@@ -20719,8 +20742,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "汲",
-        "url": "https://kanji.jitenon.jp/kanjie/2300",
+        char: "汲",
+        url: "https://kanji.jitenon.jp/kanjie/2300",
         "音読み": [
           "キュウ"
         ],
@@ -20737,8 +20760,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "沌",
-        "url": "https://kanji.jitenon.jp/kanjif/2808",
+        char: "沌",
+        url: "https://kanji.jitenon.jp/kanjif/2808",
         "音読み": [
           "トン"
         ],
@@ -20754,8 +20777,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "泳",
-        "url": "https://kanji.jitenon.jp/kanji/251",
+        char: "泳",
+        url: "https://kanji.jitenon.jp/kanji/251",
         "音読み": [
           "エイ"
         ],
@@ -20771,8 +20794,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "注",
-        "url": "https://kanji.jitenon.jp/kanji/364",
+        char: "注",
+        url: "https://kanji.jitenon.jp/kanji/364",
         "音読み": [
           "チュウ"
         ],
@@ -20788,8 +20811,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "波",
-        "url": "https://kanji.jitenon.jp/kanji/386",
+        char: "波",
+        url: "https://kanji.jitenon.jp/kanji/386",
         "音読み": [
           "ハ"
         ],
@@ -20805,8 +20828,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "油",
-        "url": "https://kanji.jitenon.jp/kanji/421",
+        char: "油",
+        url: "https://kanji.jitenon.jp/kanji/421",
         "音読み": [
           "ユ"
         ],
@@ -20822,8 +20845,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "泣",
-        "url": "https://kanji.jitenon.jp/kanji/478",
+        char: "泣",
+        url: "https://kanji.jitenon.jp/kanji/478",
         "音読み": [
           "キュウ"
         ],
@@ -20839,8 +20862,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "治",
-        "url": "https://kanji.jitenon.jp/kanjib/524",
+        char: "治",
+        url: "https://kanji.jitenon.jp/kanjib/524",
         "音読み": [
           "ジ",
           "チ"
@@ -20860,8 +20883,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "法",
-        "url": "https://kanji.jitenon.jp/kanjib/610",
+        char: "法",
+        url: "https://kanji.jitenon.jp/kanjib/610",
         "音読み": [
           "ハッ",
           "ホウ",
@@ -20877,8 +20900,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "河",
-        "url": "https://kanji.jitenon.jp/kanjib/657",
+        char: "河",
+        url: "https://kanji.jitenon.jp/kanjib/657",
         "音読み": [
           "カ"
         ],
@@ -20894,8 +20917,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "沿",
-        "url": "https://kanji.jitenon.jp/kanjib/829",
+        char: "沿",
+        url: "https://kanji.jitenon.jp/kanjib/829",
         "音読み": [
           "エン"
         ],
@@ -20911,8 +20934,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "況",
-        "url": "https://kanji.jitenon.jp/kanjic/1071",
+        char: "況",
+        url: "https://kanji.jitenon.jp/kanjic/1071",
         "音読み": [
           "キョウ"
         ],
@@ -20926,8 +20949,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "沼",
-        "url": "https://kanji.jitenon.jp/kanjic/1139",
+        char: "沼",
+        url: "https://kanji.jitenon.jp/kanjic/1139",
         "音読み": [
           "ショウ"
         ],
@@ -20943,8 +20966,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "泊",
-        "url": "https://kanji.jitenon.jp/kanjic/1227",
+        char: "泊",
+        url: "https://kanji.jitenon.jp/kanjic/1227",
         "音読み": [
           "ハク"
         ],
@@ -20961,8 +20984,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "泌",
-        "url": "https://kanji.jitenon.jp/kanjid/1536",
+        char: "泌",
+        url: "https://kanji.jitenon.jp/kanjid/1536",
         "音読み": [
           "ヒ",
           "ヒツ"
@@ -20977,8 +21000,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "泥",
-        "url": "https://kanji.jitenon.jp/kanjid/1834",
+        char: "泥",
+        url: "https://kanji.jitenon.jp/kanjid/1834",
         "音読み": [
           "デイ"
         ],
@@ -20994,8 +21017,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "沸",
-        "url": "https://kanji.jitenon.jp/kanjid/1879",
+        char: "沸",
+        url: "https://kanji.jitenon.jp/kanjid/1879",
         "音読み": [
           "フツ"
         ],
@@ -21012,8 +21035,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "泡",
-        "url": "https://kanji.jitenon.jp/kanjid/1891",
+        char: "泡",
+        url: "https://kanji.jitenon.jp/kanjid/1891",
         "音読み": [
           "ホウ"
         ],
@@ -21029,8 +21052,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "沓",
-        "url": "https://kanji.jitenon.jp/kanjif/2787",
+        char: "沓",
+        url: "https://kanji.jitenon.jp/kanjif/2787",
         "音読み": [
           "トウ"
         ],
@@ -21048,8 +21071,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "沫",
-        "url": "https://kanji.jitenon.jp/kanjif/2930",
+        char: "沫",
+        url: "https://kanji.jitenon.jp/kanjif/2930",
         "音読み": [
           "マツ"
         ],
@@ -21066,8 +21089,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "海",
-        "url": "https://kanji.jitenon.jp/kanji/094",
+        char: "海",
+        url: "https://kanji.jitenon.jp/kanji/094",
         "音読み": [
           "カイ"
         ],
@@ -21083,8 +21106,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "活",
-        "url": "https://kanji.jitenon.jp/kanji/099",
+        char: "活",
+        url: "https://kanji.jitenon.jp/kanji/099",
         "音読み": [
           "カツ"
         ],
@@ -21098,8 +21121,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "洋",
-        "url": "https://kanji.jitenon.jp/kanji/428",
+        char: "洋",
+        url: "https://kanji.jitenon.jp/kanji/428",
         "音読み": [
           "ヨウ"
         ],
@@ -21113,8 +21136,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "浅",
-        "url": "https://kanji.jitenon.jp/kanjib/554",
+        char: "浅",
+        url: "https://kanji.jitenon.jp/kanjib/554",
         "音読み": [
           "セン"
         ],
@@ -21130,8 +21153,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "泉",
-        "url": "https://kanji.jitenon.jp/kanjib/925",
+        char: "泉",
+        url: "https://kanji.jitenon.jp/kanjib/925",
         "音読み": [
           "セン"
         ],
@@ -21147,8 +21170,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "洗",
-        "url": "https://kanji.jitenon.jp/kanjib/926",
+        char: "洗",
+        url: "https://kanji.jitenon.jp/kanjib/926",
         "音読み": [
           "セン"
         ],
@@ -21164,8 +21187,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "派",
-        "url": "https://kanji.jitenon.jp/kanjib/963",
+        char: "派",
+        url: "https://kanji.jitenon.jp/kanjib/963",
         "音読み": [
           "ハ"
         ],
@@ -21179,8 +21202,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "洪",
-        "url": "https://kanji.jitenon.jp/kanjid/1685",
+        char: "洪",
+        url: "https://kanji.jitenon.jp/kanjid/1685",
         "音読み": [
           "コウ"
         ],
@@ -21194,8 +21217,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "浄",
-        "url": "https://kanji.jitenon.jp/kanjid/1757",
+        char: "浄",
+        url: "https://kanji.jitenon.jp/kanjid/1757",
         "音読み": [
           "ジョウ"
         ],
@@ -21209,8 +21232,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "津",
-        "url": "https://kanji.jitenon.jp/kanjid/1762",
+        char: "津",
+        url: "https://kanji.jitenon.jp/kanjid/1762",
         "音読み": [
           "シン"
         ],
@@ -21226,8 +21249,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "洞",
-        "url": "https://kanji.jitenon.jp/kanjid/1844",
+        char: "洞",
+        url: "https://kanji.jitenon.jp/kanjid/1844",
         "音読み": [
           "ドウ"
         ],
@@ -21243,8 +21266,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "洩",
-        "url": "https://kanji.jitenon.jp/kanjie/2177",
+        char: "洩",
+        url: "https://kanji.jitenon.jp/kanjie/2177",
         "音読み": [
           "エイ",
           "セツ"
@@ -21262,8 +21285,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "洲",
-        "url": "https://kanji.jitenon.jp/kanjif/2512",
+        char: "洲",
+        url: "https://kanji.jitenon.jp/kanjif/2512",
         "音読み": [
           "シュウ"
         ],
@@ -21280,8 +21303,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "洛",
-        "url": "https://kanji.jitenon.jp/kanjif/2964",
+        char: "洛",
+        url: "https://kanji.jitenon.jp/kanjif/2964",
         "音読み": [
           "ラク"
         ],
@@ -21298,8 +21321,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "消",
-        "url": "https://kanji.jitenon.jp/kanji/331",
+        char: "消",
+        url: "https://kanji.jitenon.jp/kanji/331",
         "音読み": [
           "ショウ"
         ],
@@ -21316,8 +21339,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "流",
-        "url": "https://kanji.jitenon.jp/kanji/434",
+        char: "流",
+        url: "https://kanji.jitenon.jp/kanji/434",
         "音読み": [
           "リュウ",
           "ル"
@@ -21335,8 +21358,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "浴",
-        "url": "https://kanji.jitenon.jp/kanjib/623",
+        char: "浴",
+        url: "https://kanji.jitenon.jp/kanjib/623",
         "音読み": [
           "ヨク"
         ],
@@ -21353,8 +21376,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "浸",
-        "url": "https://kanji.jitenon.jp/kanjic/1148",
+        char: "浸",
+        url: "https://kanji.jitenon.jp/kanjic/1148",
         "音読み": [
           "シン"
         ],
@@ -21371,8 +21394,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "浜",
-        "url": "https://kanji.jitenon.jp/kanjic/1249",
+        char: "浜",
+        url: "https://kanji.jitenon.jp/kanjic/1249",
         "音読み": [
           "ヒン"
         ],
@@ -21388,8 +21411,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "浮",
-        "url": "https://kanji.jitenon.jp/kanjic/1253",
+        char: "浮",
+        url: "https://kanji.jitenon.jp/kanjic/1253",
         "音読み": [
           "フ"
         ],
@@ -21408,8 +21431,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "涙",
-        "url": "https://kanji.jitenon.jp/kanjic/1307",
+        char: "涙",
+        url: "https://kanji.jitenon.jp/kanjic/1307",
         "音読み": [
           "ルイ"
         ],
@@ -21425,8 +21448,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "浪",
-        "url": "https://kanji.jitenon.jp/kanjid/1602",
+        char: "浪",
+        url: "https://kanji.jitenon.jp/kanjid/1602",
         "音読み": [
           "ロウ"
         ],
@@ -21440,8 +21463,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "泰",
-        "url": "https://kanji.jitenon.jp/kanjid/1807",
+        char: "泰",
+        url: "https://kanji.jitenon.jp/kanjid/1807",
         "音読み": [
           "タイ"
         ],
@@ -21455,8 +21478,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "浦",
-        "url": "https://kanji.jitenon.jp/kanjid/1889",
+        char: "浦",
+        url: "https://kanji.jitenon.jp/kanjid/1889",
         "音読み": [],
         "訓読み": [
           "うら"
@@ -21470,8 +21493,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "浩",
-        "url": "https://kanji.jitenon.jp/kanjie/2402",
+        char: "浩",
+        url: "https://kanji.jitenon.jp/kanjie/2402",
         "音読み": [
           "コウ"
         ],
@@ -21490,8 +21513,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "涛",
-        "url": "https://kanji.jitenon.jp/kanjif/2795",
+        char: "涛",
+        url: "https://kanji.jitenon.jp/kanjif/2795",
         "音読み": [
           "トウ"
         ],
@@ -21507,8 +21530,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "涜",
-        "url": "https://kanji.jitenon.jp/kanjif/2803",
+        char: "涜",
+        url: "https://kanji.jitenon.jp/kanjif/2803",
         "音読み": [
           "トウ",
           "トク"
@@ -21527,8 +21550,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "涌",
-        "url": "https://kanji.jitenon.jp/kanjif/2947",
+        char: "涌",
+        url: "https://kanji.jitenon.jp/kanjif/2947",
         "音読み": [
           "ユウ",
           "ヨウ"
@@ -21545,8 +21568,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "浬",
-        "url": "https://kanji.jitenon.jp/kanjif/2969",
+        char: "浬",
+        url: "https://kanji.jitenon.jp/kanjif/2969",
         "音読み": [
           "リ"
         ],
@@ -21563,8 +21586,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "深",
-        "url": "https://kanji.jitenon.jp/kanji/341",
+        char: "深",
+        url: "https://kanji.jitenon.jp/kanji/341",
         "音読み": [
           "シン"
         ],
@@ -21582,8 +21605,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "清",
-        "url": "https://kanji.jitenon.jp/kanjib/544",
+        char: "清",
+        url: "https://kanji.jitenon.jp/kanjib/544",
         "音読み": [
           "ショウ",
           "セイ"
@@ -21602,8 +21625,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "液",
-        "url": "https://kanji.jitenon.jp/kanjib/648",
+        char: "液",
+        url: "https://kanji.jitenon.jp/kanjib/648",
         "音読み": [
           "エキ"
         ],
@@ -21617,8 +21640,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "混",
-        "url": "https://kanji.jitenon.jp/kanjib/703",
+        char: "混",
+        url: "https://kanji.jitenon.jp/kanjib/703",
         "音読み": [
           "コン"
         ],
@@ -21637,8 +21660,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "済",
-        "url": "https://kanji.jitenon.jp/kanjib/879",
+        char: "済",
+        url: "https://kanji.jitenon.jp/kanjib/879",
         "音読み": [
           "サイ"
         ],
@@ -21655,8 +21678,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "淡",
-        "url": "https://kanji.jitenon.jp/kanjic/1183",
+        char: "淡",
+        url: "https://kanji.jitenon.jp/kanjic/1183",
         "音読み": [
           "タン"
         ],
@@ -21672,8 +21695,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "添",
-        "url": "https://kanji.jitenon.jp/kanjic/1199",
+        char: "添",
+        url: "https://kanji.jitenon.jp/kanjic/1199",
         "音読み": [
           "テン"
         ],
@@ -21690,8 +21713,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "涯",
-        "url": "https://kanji.jitenon.jp/kanjid/1624",
+        char: "涯",
+        url: "https://kanji.jitenon.jp/kanjid/1624",
         "音読み": [
           "ガイ"
         ],
@@ -21705,8 +21728,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "渇",
-        "url": "https://kanji.jitenon.jp/kanjid/1632",
+        char: "渇",
+        url: "https://kanji.jitenon.jp/kanjid/1632",
         "音読み": [
           "カツ"
         ],
@@ -21722,8 +21745,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "渓",
-        "url": "https://kanji.jitenon.jp/kanjid/1671",
+        char: "渓",
+        url: "https://kanji.jitenon.jp/kanjid/1671",
         "音読み": [
           "ケイ"
         ],
@@ -21737,8 +21760,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "渋",
-        "url": "https://kanji.jitenon.jp/kanjid/1726",
+        char: "渋",
+        url: "https://kanji.jitenon.jp/kanjid/1726",
         "音読み": [
           "ジュウ"
         ],
@@ -21756,8 +21779,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "淑",
-        "url": "https://kanji.jitenon.jp/kanjid/1730",
+        char: "淑",
+        url: "https://kanji.jitenon.jp/kanjid/1730",
         "音読み": [
           "シュク"
         ],
@@ -21771,8 +21794,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "渉",
-        "url": "https://kanji.jitenon.jp/kanjid/1740",
+        char: "渉",
+        url: "https://kanji.jitenon.jp/kanjid/1740",
         "音読み": [
           "ショウ"
         ],
@@ -21786,8 +21809,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "涼",
-        "url": "https://kanji.jitenon.jp/kanjid/1930",
+        char: "涼",
+        url: "https://kanji.jitenon.jp/kanjid/1930",
         "音読み": [
           "リョウ"
         ],
@@ -21804,8 +21827,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "淫",
-        "url": "https://kanji.jitenon.jp/kanjid/1948",
+        char: "淫",
+        url: "https://kanji.jitenon.jp/kanjid/1948",
         "音読み": [
           "イン"
         ],
@@ -21821,8 +21844,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "淳",
-        "url": "https://kanji.jitenon.jp/kanjif/2537",
+        char: "淳",
+        url: "https://kanji.jitenon.jp/kanjif/2537",
         "音読み": [
           "ジュン"
         ],
@@ -21839,8 +21862,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "渚",
-        "url": "https://kanji.jitenon.jp/kanjif/2542",
+        char: "渚",
+        url: "https://kanji.jitenon.jp/kanjif/2542",
         "音読み": [
           "ショ"
         ],
@@ -21857,8 +21880,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "淀",
-        "url": "https://kanji.jitenon.jp/kanjif/2767",
+        char: "淀",
+        url: "https://kanji.jitenon.jp/kanjif/2767",
         "音読み": [
           "テン",
           "デン"
@@ -21876,8 +21899,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "淘",
-        "url": "https://kanji.jitenon.jp/kanjif/2793",
+        char: "淘",
+        url: "https://kanji.jitenon.jp/kanjif/2793",
         "音読み": [
           "トウ"
         ],
@@ -21893,8 +21916,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "淋",
-        "url": "https://kanji.jitenon.jp/kanjif/2990",
+        char: "淋",
+        url: "https://kanji.jitenon.jp/kanjif/2990",
         "音読み": [
           "リン"
         ],
@@ -21913,8 +21936,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "温",
-        "url": "https://kanji.jitenon.jp/kanji/256",
+        char: "温",
+        url: "https://kanji.jitenon.jp/kanji/256",
         "音読み": [
           "オン"
         ],
@@ -21933,8 +21956,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "湖",
-        "url": "https://kanji.jitenon.jp/kanji/291",
+        char: "湖",
+        url: "https://kanji.jitenon.jp/kanji/291",
         "音読み": [
           "コ"
         ],
@@ -21950,8 +21973,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "港",
-        "url": "https://kanji.jitenon.jp/kanji/295",
+        char: "港",
+        url: "https://kanji.jitenon.jp/kanji/295",
         "音読み": [
           "コウ"
         ],
@@ -21967,8 +21990,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "湯",
-        "url": "https://kanji.jitenon.jp/kanji/380",
+        char: "湯",
+        url: "https://kanji.jitenon.jp/kanji/380",
         "音読み": [
           "トウ"
         ],
@@ -21984,8 +22007,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "満",
-        "url": "https://kanji.jitenon.jp/kanjib/615",
+        char: "満",
+        url: "https://kanji.jitenon.jp/kanjib/615",
         "音読み": [
           "マン"
         ],
@@ -22002,8 +22025,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "減",
-        "url": "https://kanji.jitenon.jp/kanjib/692",
+        char: "減",
+        url: "https://kanji.jitenon.jp/kanjib/692",
         "音読み": [
           "ゲン"
         ],
@@ -22020,8 +22043,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "測",
-        "url": "https://kanji.jitenon.jp/kanjib/764",
+        char: "測",
+        url: "https://kanji.jitenon.jp/kanjib/764",
         "音読み": [
           "ソク"
         ],
@@ -22037,8 +22060,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "渡",
-        "url": "https://kanji.jitenon.jp/kanjic/1203",
+        char: "渡",
+        url: "https://kanji.jitenon.jp/kanjic/1203",
         "音読み": [
           "ト"
         ],
@@ -22055,8 +22078,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "湿",
-        "url": "https://kanji.jitenon.jp/kanjic/1429",
+        char: "湿",
+        url: "https://kanji.jitenon.jp/kanjic/1429",
         "音読み": [
           "シツ"
         ],
@@ -22073,8 +22096,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "湾",
-        "url": "https://kanji.jitenon.jp/kanjid/1604",
+        char: "湾",
+        url: "https://kanji.jitenon.jp/kanjid/1604",
         "音読み": [
           "ワン"
         ],
@@ -22088,8 +22111,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "渦",
-        "url": "https://kanji.jitenon.jp/kanjid/1619",
+        char: "渦",
+        url: "https://kanji.jitenon.jp/kanjid/1619",
         "音読み": [
           "カ"
         ],
@@ -22105,8 +22128,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "滋",
-        "url": "https://kanji.jitenon.jp/kanjid/1711",
+        char: "滋",
+        url: "https://kanji.jitenon.jp/kanjid/1711",
         "音読み": [
           "ジ"
         ],
@@ -22120,8 +22143,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "湧",
-        "url": "https://kanji.jitenon.jp/kanjie/2116",
+        char: "湧",
+        url: "https://kanji.jitenon.jp/kanjie/2116",
         "音読み": [
           "ユウ"
         ],
@@ -22137,8 +22160,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "渥",
-        "url": "https://kanji.jitenon.jp/kanjie/2142",
+        char: "渥",
+        url: "https://kanji.jitenon.jp/kanjie/2142",
         "音読み": [
           "アク"
         ],
@@ -22156,8 +22179,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "淵",
-        "url": "https://kanji.jitenon.jp/kanjie/2186",
+        char: "淵",
+        url: "https://kanji.jitenon.jp/kanjie/2186",
         "音読み": [
           "エン"
         ],
@@ -22175,8 +22198,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "渠",
-        "url": "https://kanji.jitenon.jp/kanjie/2308",
+        char: "渠",
+        url: "https://kanji.jitenon.jp/kanjie/2308",
         "音読み": [
           "キョ"
         ],
@@ -22196,8 +22219,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "湘",
-        "url": "https://kanji.jitenon.jp/kanjif/2566",
+        char: "湘",
+        url: "https://kanji.jitenon.jp/kanjif/2566",
         "音読み": [
           "ショウ"
         ],
@@ -22211,8 +22234,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "湊",
-        "url": "https://kanji.jitenon.jp/kanjif/2660",
+        char: "湊",
+        url: "https://kanji.jitenon.jp/kanjif/2660",
         "音読み": [
           "ソウ"
         ],
@@ -22229,8 +22252,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "湛",
-        "url": "https://kanji.jitenon.jp/kanjif/2714",
+        char: "湛",
+        url: "https://kanji.jitenon.jp/kanjif/2714",
         "音読み": [
           "タン",
           "チン"
@@ -22251,8 +22274,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "溌",
-        "url": "https://kanji.jitenon.jp/kanjif/2836",
+        char: "溌",
+        url: "https://kanji.jitenon.jp/kanjif/2836",
         "音読み": [
           "ハツ"
         ],
@@ -22269,8 +22292,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "漢",
-        "url": "https://kanji.jitenon.jp/kanji/264",
+        char: "漢",
+        url: "https://kanji.jitenon.jp/kanji/264",
         "音読み": [
           "カン"
         ],
@@ -22284,8 +22307,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "準",
-        "url": "https://kanji.jitenon.jp/kanjib/732",
+        char: "準",
+        url: "https://kanji.jitenon.jp/kanjib/732",
         "音読み": [
           "ジュン"
         ],
@@ -22299,8 +22322,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "源",
-        "url": "https://kanji.jitenon.jp/kanjib/863",
+        char: "源",
+        url: "https://kanji.jitenon.jp/kanjib/863",
         "音読み": [
           "ゲン"
         ],
@@ -22316,8 +22339,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "溶",
-        "url": "https://kanji.jitenon.jp/kanjic/1294",
+        char: "溶",
+        url: "https://kanji.jitenon.jp/kanjic/1294",
         "音読み": [
           "ヨウ"
         ],
@@ -22335,8 +22358,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "滑",
-        "url": "https://kanji.jitenon.jp/kanjic/1348",
+        char: "滑",
+        url: "https://kanji.jitenon.jp/kanjic/1348",
         "音読み": [
           "カツ",
           "コツ"
@@ -22354,8 +22377,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "滞",
-        "url": "https://kanji.jitenon.jp/kanjic/1489",
+        char: "滞",
+        url: "https://kanji.jitenon.jp/kanjic/1489",
         "音読み": [
           "タイ"
         ],
@@ -22371,8 +22394,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "滝",
-        "url": "https://kanji.jitenon.jp/kanjic/1491",
+        char: "滝",
+        url: "https://kanji.jitenon.jp/kanjic/1491",
         "音読み": [],
         "訓読み": [
           "たき"
@@ -22386,8 +22409,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "滅",
-        "url": "https://kanji.jitenon.jp/kanjid/1575",
+        char: "滅",
+        url: "https://kanji.jitenon.jp/kanjid/1575",
         "音読み": [
           "メツ"
         ],
@@ -22404,8 +22427,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "溝",
-        "url": "https://kanji.jitenon.jp/kanjid/1690",
+        char: "溝",
+        url: "https://kanji.jitenon.jp/kanjid/1690",
         "音読み": [
           "コウ"
         ],
@@ -22421,8 +22444,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "漠",
-        "url": "https://kanji.jitenon.jp/kanjid/1861",
+        char: "漠",
+        url: "https://kanji.jitenon.jp/kanjid/1861",
         "音読み": [
           "バク"
         ],
@@ -22436,8 +22459,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "溺",
-        "url": "https://kanji.jitenon.jp/kanjie/2067",
+        char: "溺",
+        url: "https://kanji.jitenon.jp/kanjie/2067",
         "音読み": [
           "デキ"
         ],
@@ -22453,8 +22476,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "溢",
-        "url": "https://kanji.jitenon.jp/kanjie/2159",
+        char: "溢",
+        url: "https://kanji.jitenon.jp/kanjie/2159",
         "音読み": [
           "イツ"
         ],
@@ -22474,8 +22497,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "溜",
-        "url": "https://kanji.jitenon.jp/kanjif/2976",
+        char: "溜",
+        url: "https://kanji.jitenon.jp/kanjif/2976",
         "音読み": [
           "リュウ"
         ],
@@ -22494,8 +22517,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "漁",
-        "url": "https://kanji.jitenon.jp/kanjib/628",
+        char: "漁",
+        url: "https://kanji.jitenon.jp/kanjib/628",
         "音読み": [
           "ギョ",
           "リョウ"
@@ -22510,8 +22533,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "演",
-        "url": "https://kanji.jitenon.jp/kanjib/649",
+        char: "演",
+        url: "https://kanji.jitenon.jp/kanjib/649",
         "音読み": [
           "エン"
         ],
@@ -22525,8 +22548,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "滴",
-        "url": "https://kanji.jitenon.jp/kanjic/1198",
+        char: "滴",
+        url: "https://kanji.jitenon.jp/kanjic/1198",
         "音読み": [
           "テキ"
         ],
@@ -22543,8 +22566,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "漫",
-        "url": "https://kanji.jitenon.jp/kanjic/1277",
+        char: "漫",
+        url: "https://kanji.jitenon.jp/kanjic/1277",
         "音読み": [
           "マン"
         ],
@@ -22558,8 +22581,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "漂",
-        "url": "https://kanji.jitenon.jp/kanjid/1540",
+        char: "漂",
+        url: "https://kanji.jitenon.jp/kanjid/1540",
         "音読み": [
           "ヒョウ"
         ],
@@ -22575,8 +22598,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "漏",
-        "url": "https://kanji.jitenon.jp/kanjid/1600",
+        char: "漏",
+        url: "https://kanji.jitenon.jp/kanjid/1600",
         "音読み": [
           "ロウ"
         ],
@@ -22594,8 +22617,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "漆",
-        "url": "https://kanji.jitenon.jp/kanjid/1713",
+        char: "漆",
+        url: "https://kanji.jitenon.jp/kanjid/1713",
         "音読み": [
           "シツ"
         ],
@@ -22611,8 +22634,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "漸",
-        "url": "https://kanji.jitenon.jp/kanjid/1790",
+        char: "漸",
+        url: "https://kanji.jitenon.jp/kanjid/1790",
         "音読み": [
           "ゼン"
         ],
@@ -22626,8 +22649,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "漬",
-        "url": "https://kanji.jitenon.jp/kanjid/1824",
+        char: "漬",
+        url: "https://kanji.jitenon.jp/kanjid/1824",
         "音読み": [],
         "訓読み": [
           "つ（かる）",
@@ -22642,8 +22665,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "潅",
-        "url": "https://kanji.jitenon.jp/kanjie/2257",
+        char: "潅",
+        url: "https://kanji.jitenon.jp/kanjie/2257",
         "音読み": [
           "カン"
         ],
@@ -22659,8 +22682,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "漕",
-        "url": "https://kanji.jitenon.jp/kanjif/2661",
+        char: "漕",
+        url: "https://kanji.jitenon.jp/kanjif/2661",
         "音読み": [
           "ソウ"
         ],
@@ -22677,8 +22700,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "潔",
-        "url": "https://kanji.jitenon.jp/kanjib/685",
+        char: "潔",
+        url: "https://kanji.jitenon.jp/kanjib/685",
         "音読み": [
           "ケツ"
         ],
@@ -22694,8 +22717,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "潮",
-        "url": "https://kanji.jitenon.jp/kanjib/948",
+        char: "潮",
+        url: "https://kanji.jitenon.jp/kanjib/948",
         "音読み": [
           "チョウ"
         ],
@@ -22711,8 +22734,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "澄",
-        "url": "https://kanji.jitenon.jp/kanjic/1192",
+        char: "澄",
+        url: "https://kanji.jitenon.jp/kanjic/1192",
         "音読み": [
           "チョウ"
         ],
@@ -22729,8 +22752,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "潤",
-        "url": "https://kanji.jitenon.jp/kanjic/1435",
+        char: "潤",
+        url: "https://kanji.jitenon.jp/kanjic/1435",
         "音読み": [
           "ジュン"
         ],
@@ -22748,8 +22771,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "潜",
-        "url": "https://kanji.jitenon.jp/kanjic/1472",
+        char: "潜",
+        url: "https://kanji.jitenon.jp/kanjic/1472",
         "音読み": [
           "セン"
         ],
@@ -22766,8 +22789,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "潟",
-        "url": "https://kanji.jitenon.jp/kanjid/1630",
+        char: "潟",
+        url: "https://kanji.jitenon.jp/kanjid/1630",
         "音読み": [],
         "訓読み": [
           "かた"
@@ -22781,8 +22804,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "潰",
-        "url": "https://kanji.jitenon.jp/kanjid/1962",
+        char: "潰",
+        url: "https://kanji.jitenon.jp/kanjid/1962",
         "音読み": [
           "カイ"
         ],
@@ -22799,8 +22822,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "漑",
-        "url": "https://kanji.jitenon.jp/kanjie/2228",
+        char: "漑",
+        url: "https://kanji.jitenon.jp/kanjie/2228",
         "音読み": [
           "カイ",
           "ガイ"
@@ -22818,8 +22841,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "澗",
-        "url": "https://kanji.jitenon.jp/kanjie/2255",
+        char: "澗",
+        url: "https://kanji.jitenon.jp/kanjie/2255",
         "音読み": [
           "カン",
           "ケン"
@@ -22837,8 +22860,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "潴",
-        "url": "https://kanji.jitenon.jp/kanjif/2729",
+        char: "潴",
+        url: "https://kanji.jitenon.jp/kanjif/2729",
         "音読み": [
           "チョ"
         ],
@@ -22855,8 +22878,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "激",
-        "url": "https://kanji.jitenon.jp/kanjib/857",
+        char: "激",
+        url: "https://kanji.jitenon.jp/kanjib/857",
         "音読み": [
           "ゲキ"
         ],
@@ -22872,8 +22895,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "濁",
-        "url": "https://kanji.jitenon.jp/kanjic/1178",
+        char: "濁",
+        url: "https://kanji.jitenon.jp/kanjic/1178",
         "音読み": [
           "ダク"
         ],
@@ -22890,8 +22913,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "濃",
-        "url": "https://kanji.jitenon.jp/kanjic/1224",
+        char: "濃",
+        url: "https://kanji.jitenon.jp/kanjic/1224",
         "音読み": [
           "ノウ"
         ],
@@ -22907,8 +22930,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "澱",
-        "url": "https://kanji.jitenon.jp/kanjif/2768",
+        char: "澱",
+        url: "https://kanji.jitenon.jp/kanjif/2768",
         "音読み": [
           "テン",
           "デン"
@@ -22927,8 +22950,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "濯",
-        "url": "https://kanji.jitenon.jp/kanjid/1808",
+        char: "濯",
+        url: "https://kanji.jitenon.jp/kanjid/1808",
         "音読み": [
           "タク"
         ],
@@ -22942,8 +22965,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "濠",
-        "url": "https://kanji.jitenon.jp/kanjie/2422",
+        char: "濠",
+        url: "https://kanji.jitenon.jp/kanjie/2422",
         "音読み": [
           "ゴウ"
         ],
@@ -22959,8 +22982,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "濡",
-        "url": "https://kanji.jitenon.jp/kanjif/2503",
+        char: "濡",
+        url: "https://kanji.jitenon.jp/kanjif/2503",
         "音読み": [
           "ジュ"
         ],
@@ -22978,8 +23001,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "濤",
-        "url": "https://kanji.jitenon.jp/kanjif/2794",
+        char: "濤",
+        url: "https://kanji.jitenon.jp/kanjif/2794",
         "音読み": [
           "トウ"
         ],
@@ -22995,8 +23018,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "濫",
-        "url": "https://kanji.jitenon.jp/kanjid/1585",
+        char: "濫",
+        url: "https://kanji.jitenon.jp/kanjid/1585",
         "音読み": [
           "ラン"
         ],
@@ -23010,8 +23033,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "瀬",
-        "url": "https://kanji.jitenon.jp/kanjic/1463",
+        char: "瀬",
+        url: "https://kanji.jitenon.jp/kanjic/1463",
         "音読み": [],
         "訓読み": [
           "せ"
@@ -23025,8 +23048,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "瀞",
-        "url": "https://kanji.jitenon.jp/kanjif/2585",
+        char: "瀞",
+        url: "https://kanji.jitenon.jp/kanjif/2585",
         "音読み": [
           "ジョウ",
           "セイ"
@@ -23043,8 +23066,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "瀦",
-        "url": "https://kanji.jitenon.jp/kanjif/2728",
+        char: "瀦",
+        url: "https://kanji.jitenon.jp/kanjif/2728",
         "音読み": [
           "チョ"
         ],
@@ -23061,8 +23084,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "瀕",
-        "url": "https://kanji.jitenon.jp/kanjif/2870",
+        char: "瀕",
+        url: "https://kanji.jitenon.jp/kanjif/2870",
         "音読み": [
           "ヒン"
         ],
@@ -23080,8 +23103,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "灌",
-        "url": "https://kanji.jitenon.jp/kanjie/2256",
+        char: "灌",
+        url: "https://kanji.jitenon.jp/kanjie/2256",
         "音読み": [
           "カン"
         ],
@@ -23097,8 +23120,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "灘",
-        "url": "https://kanji.jitenon.jp/kanjif/2715",
+        char: "灘",
+        url: "https://kanji.jitenon.jp/kanjif/2715",
         "音読み": [
           "タン",
           "ダン"
@@ -23118,13 +23141,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04016",
-    "radical": "心 忄",
-    "reading": "こころ・したごころ・りっしんべん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04016",
+    radical: "心 忄",
+    reading: "こころ・したごころ・りっしんべん",
+    kanji: [
       {
-        "char": "心",
-        "url": "https://kanji.jitenon.jp/kanji/165",
+        char: "心",
+        url: "https://kanji.jitenon.jp/kanji/165",
         "音読み": [
           "シン"
         ],
@@ -23140,8 +23163,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "必",
-        "url": "https://kanji.jitenon.jp/kanjib/595",
+        char: "必",
+        url: "https://kanji.jitenon.jp/kanjib/595",
         "音読み": [
           "ヒツ"
         ],
@@ -23157,8 +23180,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "忙",
-        "url": "https://kanji.jitenon.jp/kanjic/1271",
+        char: "忙",
+        url: "https://kanji.jitenon.jp/kanjic/1271",
         "音読み": [
           "ボウ"
         ],
@@ -23174,8 +23197,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "応",
-        "url": "https://kanji.jitenon.jp/kanjib/651",
+        char: "応",
+        url: "https://kanji.jitenon.jp/kanjib/651",
         "音読み": [
           "オウ"
         ],
@@ -23191,8 +23214,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "快",
-        "url": "https://kanji.jitenon.jp/kanjib/661",
+        char: "快",
+        url: "https://kanji.jitenon.jp/kanjib/661",
         "音読み": [
           "カイ"
         ],
@@ -23208,8 +23231,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "志",
-        "url": "https://kanji.jitenon.jp/kanjib/719",
+        char: "志",
+        url: "https://kanji.jitenon.jp/kanjib/719",
         "音読み": [
           "シ"
         ],
@@ -23226,8 +23249,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "忘",
-        "url": "https://kanji.jitenon.jp/kanjib/983",
+        char: "忘",
+        url: "https://kanji.jitenon.jp/kanjib/983",
         "音読み": [
           "ボウ"
         ],
@@ -23243,8 +23266,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "忌",
-        "url": "https://kanji.jitenon.jp/kanjic/1361",
+        char: "忌",
+        url: "https://kanji.jitenon.jp/kanjic/1361",
         "音読み": [
           "キ"
         ],
@@ -23261,8 +23284,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "忍",
-        "url": "https://kanji.jitenon.jp/kanjid/1850",
+        char: "忍",
+        url: "https://kanji.jitenon.jp/kanjid/1850",
         "音読み": [
           "ニン"
         ],
@@ -23279,8 +23302,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "念",
-        "url": "https://kanji.jitenon.jp/kanjib/588",
+        char: "念",
+        url: "https://kanji.jitenon.jp/kanjib/588",
         "音読み": [
           "ネン"
         ],
@@ -23294,8 +23317,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "性",
-        "url": "https://kanji.jitenon.jp/kanjib/745",
+        char: "性",
+        url: "https://kanji.jitenon.jp/kanjib/745",
         "音読み": [
           "ショウ",
           "セイ"
@@ -23310,8 +23333,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "忠",
-        "url": "https://kanji.jitenon.jp/kanjib/946",
+        char: "忠",
+        url: "https://kanji.jitenon.jp/kanjib/946",
         "音読み": [
           "チュウ"
         ],
@@ -23325,8 +23348,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "怖",
-        "url": "https://kanji.jitenon.jp/kanjic/1251",
+        char: "怖",
+        url: "https://kanji.jitenon.jp/kanjic/1251",
         "音読み": [
           "フ"
         ],
@@ -23342,8 +23365,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "怪",
-        "url": "https://kanji.jitenon.jp/kanjic/1337",
+        char: "怪",
+        url: "https://kanji.jitenon.jp/kanjic/1337",
         "音読み": [
           "カイ"
         ],
@@ -23360,8 +23383,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "怯",
-        "url": "https://kanji.jitenon.jp/kanjie/2321",
+        char: "怯",
+        url: "https://kanji.jitenon.jp/kanjie/2321",
         "音読み": [
           "キョウ",
           "コウ"
@@ -23380,8 +23403,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "忽",
-        "url": "https://kanji.jitenon.jp/kanjie/2424",
+        char: "忽",
+        url: "https://kanji.jitenon.jp/kanjie/2424",
         "音読み": [
           "コツ"
         ],
@@ -23398,8 +23421,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "怜",
-        "url": "https://kanji.jitenon.jp/kanjif/2998",
+        char: "怜",
+        url: "https://kanji.jitenon.jp/kanjif/2998",
         "音読み": [
           "レイ",
           "レン"
@@ -23417,8 +23440,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "急",
-        "url": "https://kanji.jitenon.jp/kanji/269",
+        char: "急",
+        url: "https://kanji.jitenon.jp/kanji/269",
         "音読み": [
           "キュウ"
         ],
@@ -23434,8 +23457,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "恒",
-        "url": "https://kanji.jitenon.jp/kanjic/1100",
+        char: "恒",
+        url: "https://kanji.jitenon.jp/kanjic/1100",
         "音読み": [
           "コウ"
         ],
@@ -23449,8 +23472,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "怒",
-        "url": "https://kanji.jitenon.jp/kanjic/1205",
+        char: "怒",
+        url: "https://kanji.jitenon.jp/kanjic/1205",
         "音読み": [
           "ド"
         ],
@@ -23467,8 +23490,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "悔",
-        "url": "https://kanji.jitenon.jp/kanjic/1338",
+        char: "悔",
+        url: "https://kanji.jitenon.jp/kanjic/1338",
         "音読み": [
           "カイ"
         ],
@@ -23486,8 +23509,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "恨",
-        "url": "https://kanji.jitenon.jp/kanjic/1413",
+        char: "恨",
+        url: "https://kanji.jitenon.jp/kanjic/1413",
         "音読み": [
           "コン"
         ],
@@ -23504,8 +23527,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "怠",
-        "url": "https://kanji.jitenon.jp/kanjic/1488",
+        char: "怠",
+        url: "https://kanji.jitenon.jp/kanjic/1488",
         "音読み": [
           "タイ"
         ],
@@ -23522,8 +23545,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "怨",
-        "url": "https://kanji.jitenon.jp/kanjid/1951",
+        char: "怨",
+        url: "https://kanji.jitenon.jp/kanjid/1951",
         "音読み": [
           "エン",
           "オン"
@@ -23538,8 +23561,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "思",
-        "url": "https://kanji.jitenon.jp/kanjie/2134",
+        char: "思",
+        url: "https://kanji.jitenon.jp/kanjie/2134",
         "音読み": [
           "シ"
         ],
@@ -23555,8 +23578,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "恢",
-        "url": "https://kanji.jitenon.jp/kanjie/2224",
+        char: "恢",
+        url: "https://kanji.jitenon.jp/kanjie/2224",
         "音読み": [
           "カイ"
         ],
@@ -23573,8 +23596,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "恰",
-        "url": "https://kanji.jitenon.jp/kanjie/2248",
+        char: "恰",
+        url: "https://kanji.jitenon.jp/kanjie/2248",
         "音読み": [
           "カッ",
           "コウ"
@@ -23591,8 +23614,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "息",
-        "url": "https://kanji.jitenon.jp/kanji/350",
+        char: "息",
+        url: "https://kanji.jitenon.jp/kanji/350",
         "音読み": [
           "ソク"
         ],
@@ -23608,8 +23631,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "恩",
-        "url": "https://kanji.jitenon.jp/kanjib/653",
+        char: "恩",
+        url: "https://kanji.jitenon.jp/kanjib/653",
         "音読み": [
           "オン"
         ],
@@ -23623,8 +23646,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "恐",
-        "url": "https://kanji.jitenon.jp/kanjic/1066",
+        char: "恐",
+        url: "https://kanji.jitenon.jp/kanjic/1066",
         "音読み": [
           "キョウ"
         ],
@@ -23641,8 +23664,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "恵",
-        "url": "https://kanji.jitenon.jp/kanjic/1078",
+        char: "恵",
+        url: "https://kanji.jitenon.jp/kanjic/1078",
         "音読み": [
           "エ",
           "ケイ"
@@ -23659,8 +23682,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "恥",
-        "url": "https://kanji.jitenon.jp/kanjic/1185",
+        char: "恥",
+        url: "https://kanji.jitenon.jp/kanjic/1185",
         "音読み": [
           "チ"
         ],
@@ -23679,8 +23702,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "悩",
-        "url": "https://kanji.jitenon.jp/kanjic/1223",
+        char: "悩",
+        url: "https://kanji.jitenon.jp/kanjic/1223",
         "音読み": [
           "ノウ"
         ],
@@ -23697,8 +23720,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "恋",
-        "url": "https://kanji.jitenon.jp/kanjic/1314",
+        char: "恋",
+        url: "https://kanji.jitenon.jp/kanjic/1314",
         "音読み": [
           "レン"
         ],
@@ -23716,8 +23739,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "悦",
-        "url": "https://kanji.jitenon.jp/kanjic/1323",
+        char: "悦",
+        url: "https://kanji.jitenon.jp/kanjic/1323",
         "音読み": [
           "エツ"
         ],
@@ -23731,8 +23754,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "悟",
-        "url": "https://kanji.jitenon.jp/kanjic/1395",
+        char: "悟",
+        url: "https://kanji.jitenon.jp/kanjic/1395",
         "音読み": [
           "ゴ"
         ],
@@ -23748,8 +23771,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "恭",
-        "url": "https://kanji.jitenon.jp/kanjid/1659",
+        char: "恭",
+        url: "https://kanji.jitenon.jp/kanjid/1659",
         "音読み": [
           "キョウ"
         ],
@@ -23765,8 +23788,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "恣",
-        "url": "https://kanji.jitenon.jp/kanjie/2015",
+        char: "恣",
+        url: "https://kanji.jitenon.jp/kanjie/2015",
         "音読み": [
           "シ"
         ],
@@ -23780,8 +23803,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "恕",
-        "url": "https://kanji.jitenon.jp/kanjif/2539",
+        char: "恕",
+        url: "https://kanji.jitenon.jp/kanjif/2539",
         "音読み": [
           "ショ",
           "ジョ"
@@ -23799,8 +23822,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "悌",
-        "url": "https://kanji.jitenon.jp/kanjif/2698",
+        char: "悌",
+        url: "https://kanji.jitenon.jp/kanjif/2698",
         "音読み": [
           "ダイ",
           "テイ"
@@ -23815,8 +23838,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "悪",
-        "url": "https://kanji.jitenon.jp/kanji/240",
+        char: "悪",
+        url: "https://kanji.jitenon.jp/kanji/240",
         "音読み": [
           "アク",
           "オ"
@@ -23833,8 +23856,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "情",
-        "url": "https://kanji.jitenon.jp/kanjib/740",
+        char: "情",
+        url: "https://kanji.jitenon.jp/kanjib/740",
         "音読み": [
           "ジョウ",
           "セイ"
@@ -23851,8 +23874,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "惨",
-        "url": "https://kanji.jitenon.jp/kanjic/1111",
+        char: "惨",
+        url: "https://kanji.jitenon.jp/kanjic/1111",
         "音読み": [
           "サン",
           "ザン"
@@ -23869,8 +23892,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "惜",
-        "url": "https://kanji.jitenon.jp/kanjic/1468",
+        char: "惜",
+        url: "https://kanji.jitenon.jp/kanjic/1468",
         "音読み": [
           "セキ"
         ],
@@ -23887,8 +23910,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "患",
-        "url": "https://kanji.jitenon.jp/kanjid/1637",
+        char: "患",
+        url: "https://kanji.jitenon.jp/kanjid/1637",
         "音読み": [
           "カン"
         ],
@@ -23904,8 +23927,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "悼",
-        "url": "https://kanji.jitenon.jp/kanjid/1840",
+        char: "悼",
+        url: "https://kanji.jitenon.jp/kanjid/1840",
         "音読み": [
           "トウ"
         ],
@@ -23921,8 +23944,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "悠",
-        "url": "https://kanji.jitenon.jp/kanjid/1914",
+        char: "悠",
+        url: "https://kanji.jitenon.jp/kanjid/1914",
         "音読み": [
           "ユウ"
         ],
@@ -23936,8 +23959,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "惧",
-        "url": "https://kanji.jitenon.jp/kanjid/1983",
+        char: "惧",
+        url: "https://kanji.jitenon.jp/kanjid/1983",
         "音読み": [
           "グ"
         ],
@@ -23951,8 +23974,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "惟",
-        "url": "https://kanji.jitenon.jp/kanjie/2151",
+        char: "惟",
+        url: "https://kanji.jitenon.jp/kanjie/2151",
         "音読み": [
           "イ",
           "ユイ"
@@ -23973,8 +23996,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "惚",
-        "url": "https://kanji.jitenon.jp/kanjie/2425",
+        char: "惚",
+        url: "https://kanji.jitenon.jp/kanjie/2425",
         "音読み": [
           "コツ"
         ],
@@ -23993,8 +24016,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "悉",
-        "url": "https://kanji.jitenon.jp/kanjie/2486",
+        char: "悉",
+        url: "https://kanji.jitenon.jp/kanjie/2486",
         "音読み": [
           "シツ"
         ],
@@ -24012,8 +24035,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "惇",
-        "url": "https://kanji.jitenon.jp/kanjif/2535",
+        char: "惇",
+        url: "https://kanji.jitenon.jp/kanjif/2535",
         "音読み": [
           "ジュン",
           "トン"
@@ -24031,8 +24054,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "悲",
-        "url": "https://kanji.jitenon.jp/kanji/395",
+        char: "悲",
+        url: "https://kanji.jitenon.jp/kanji/395",
         "音読み": [
           "ヒ"
         ],
@@ -24049,8 +24072,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "惑",
-        "url": "https://kanji.jitenon.jp/kanjic/1318",
+        char: "惑",
+        url: "https://kanji.jitenon.jp/kanjic/1318",
         "音読み": [
           "ワク"
         ],
@@ -24066,8 +24089,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "慌",
-        "url": "https://kanji.jitenon.jp/kanjic/1406",
+        char: "慌",
+        url: "https://kanji.jitenon.jp/kanjic/1406",
         "音読み": [
           "コウ"
         ],
@@ -24084,8 +24107,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "惰",
-        "url": "https://kanji.jitenon.jp/kanjid/1806",
+        char: "惰",
+        url: "https://kanji.jitenon.jp/kanjid/1806",
         "音読み": [
           "ダ"
         ],
@@ -24099,8 +24122,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "愉",
-        "url": "https://kanji.jitenon.jp/kanjid/1912",
+        char: "愉",
+        url: "https://kanji.jitenon.jp/kanjid/1912",
         "音読み": [
           "ユ"
         ],
@@ -24114,8 +24137,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "惹",
-        "url": "https://kanji.jitenon.jp/kanjie/2492",
+        char: "惹",
+        url: "https://kanji.jitenon.jp/kanjie/2492",
         "音読み": [
           "ジャ",
           "ジャク"
@@ -24133,8 +24156,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "惣",
-        "url": "https://kanji.jitenon.jp/kanjif/2657",
+        char: "惣",
+        url: "https://kanji.jitenon.jp/kanjif/2657",
         "音読み": [
           "ソウ"
         ],
@@ -24150,8 +24173,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "悶",
-        "url": "https://kanji.jitenon.jp/kanjif/2938",
+        char: "悶",
+        url: "https://kanji.jitenon.jp/kanjif/2938",
         "音読み": [
           "モン"
         ],
@@ -24167,8 +24190,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "意",
-        "url": "https://kanji.jitenon.jp/kanji/243",
+        char: "意",
+        url: "https://kanji.jitenon.jp/kanji/243",
         "音読み": [
           "イ"
         ],
@@ -24182,8 +24205,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "感",
-        "url": "https://kanji.jitenon.jp/kanji/262",
+        char: "感",
+        url: "https://kanji.jitenon.jp/kanji/262",
         "音読み": [
           "カン"
         ],
@@ -24197,8 +24220,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "想",
-        "url": "https://kanji.jitenon.jp/kanji/347",
+        char: "想",
+        url: "https://kanji.jitenon.jp/kanji/347",
         "音読み": [
           "ソ",
           "ソウ"
@@ -24213,8 +24236,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "愛",
-        "url": "https://kanji.jitenon.jp/kanji/440",
+        char: "愛",
+        url: "https://kanji.jitenon.jp/kanji/440",
         "音読み": [
           "アイ"
         ],
@@ -24228,8 +24251,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "慎",
-        "url": "https://kanji.jitenon.jp/kanjic/1150",
+        char: "慎",
+        url: "https://kanji.jitenon.jp/kanjic/1150",
         "音読み": [
           "シン"
         ],
@@ -24245,8 +24268,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "慨",
-        "url": "https://kanji.jitenon.jp/kanjic/1341",
+        char: "慨",
+        url: "https://kanji.jitenon.jp/kanjic/1341",
         "音読み": [
           "ガイ"
         ],
@@ -24260,8 +24283,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "愚",
-        "url": "https://kanji.jitenon.jp/kanjic/1377",
+        char: "愚",
+        url: "https://kanji.jitenon.jp/kanjic/1377",
         "音読み": [
           "グ"
         ],
@@ -24277,8 +24300,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "慈",
-        "url": "https://kanji.jitenon.jp/kanjic/1427",
+        char: "慈",
+        url: "https://kanji.jitenon.jp/kanjic/1427",
         "音読み": [
           "ジ"
         ],
@@ -24294,8 +24317,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "愁",
-        "url": "https://kanji.jitenon.jp/kanjid/1724",
+        char: "愁",
+        url: "https://kanji.jitenon.jp/kanjid/1724",
         "音読み": [
           "シュウ"
         ],
@@ -24312,8 +24335,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "慄",
-        "url": "https://kanji.jitenon.jp/kanjie/2124",
+        char: "慄",
+        url: "https://kanji.jitenon.jp/kanjie/2124",
         "音読み": [
           "リツ"
         ],
@@ -24327,8 +24350,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "愈",
-        "url": "https://kanji.jitenon.jp/kanjif/2943",
+        char: "愈",
+        url: "https://kanji.jitenon.jp/kanjif/2943",
         "音読み": [
           "ユ"
         ],
@@ -24347,8 +24370,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "慣",
-        "url": "https://kanji.jitenon.jp/kanjib/665",
+        char: "慣",
+        url: "https://kanji.jitenon.jp/kanjib/665",
         "音読み": [
           "カン"
         ],
@@ -24365,8 +24388,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "態",
-        "url": "https://kanji.jitenon.jp/kanjib/769",
+        char: "態",
+        url: "https://kanji.jitenon.jp/kanjib/769",
         "音読み": [
           "タイ"
         ],
@@ -24380,8 +24403,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "慢",
-        "url": "https://kanji.jitenon.jp/kanjic/1278",
+        char: "慢",
+        url: "https://kanji.jitenon.jp/kanjic/1278",
         "音読み": [
           "マン"
         ],
@@ -24395,8 +24418,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "憎",
-        "url": "https://kanji.jitenon.jp/kanjic/1483",
+        char: "憎",
+        url: "https://kanji.jitenon.jp/kanjic/1483",
         "音読み": [
           "ゾウ"
         ],
@@ -24415,8 +24438,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "慕",
-        "url": "https://kanji.jitenon.jp/kanjid/1551",
+        char: "慕",
+        url: "https://kanji.jitenon.jp/kanjid/1551",
         "音読み": [
           "ボ"
         ],
@@ -24432,8 +24455,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "慮",
-        "url": "https://kanji.jitenon.jp/kanjic/1304",
+        char: "慮",
+        url: "https://kanji.jitenon.jp/kanjic/1304",
         "音読み": [
           "リョ"
         ],
@@ -24447,8 +24470,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "慰",
-        "url": "https://kanji.jitenon.jp/kanjic/1321",
+        char: "慰",
+        url: "https://kanji.jitenon.jp/kanjic/1321",
         "音読み": [
           "イ"
         ],
@@ -24465,8 +24488,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "憂",
-        "url": "https://kanji.jitenon.jp/kanjid/1578",
+        char: "憂",
+        url: "https://kanji.jitenon.jp/kanjid/1578",
         "音読み": [
           "ユウ"
         ],
@@ -24484,8 +24507,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "慶",
-        "url": "https://kanji.jitenon.jp/kanjid/1672",
+        char: "慶",
+        url: "https://kanji.jitenon.jp/kanjid/1672",
         "音読み": [
           "ケイ"
         ],
@@ -24499,8 +24522,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "憤",
-        "url": "https://kanji.jitenon.jp/kanjid/1881",
+        char: "憤",
+        url: "https://kanji.jitenon.jp/kanjid/1881",
         "音読み": [
           "フン"
         ],
@@ -24516,8 +24539,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "憬",
-        "url": "https://kanji.jitenon.jp/kanjid/1988",
+        char: "憬",
+        url: "https://kanji.jitenon.jp/kanjid/1988",
         "音読み": [
           "ケイ"
         ],
@@ -24531,8 +24554,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "憧",
-        "url": "https://kanji.jitenon.jp/kanjie/2026",
+        char: "憧",
+        url: "https://kanji.jitenon.jp/kanjie/2026",
         "音読み": [
           "ショウ"
         ],
@@ -24548,8 +24571,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "慧",
-        "url": "https://kanji.jitenon.jp/kanjie/2173",
+        char: "慧",
+        url: "https://kanji.jitenon.jp/kanjie/2173",
         "音読み": [
           "エ",
           "ケイ"
@@ -24567,8 +24590,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "慾",
-        "url": "https://kanji.jitenon.jp/kanjif/2961",
+        char: "慾",
+        url: "https://kanji.jitenon.jp/kanjif/2961",
         "音読み": [
           "ヨク"
         ],
@@ -24584,8 +24607,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "憲",
-        "url": "https://kanji.jitenon.jp/kanjib/860",
+        char: "憲",
+        url: "https://kanji.jitenon.jp/kanjib/860",
         "音読み": [
           "ケン"
         ],
@@ -24599,8 +24622,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "憶",
-        "url": "https://kanji.jitenon.jp/kanjic/1026",
+        char: "憶",
+        url: "https://kanji.jitenon.jp/kanjic/1026",
         "音読み": [
           "オク"
         ],
@@ -24614,8 +24637,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "憩",
-        "url": "https://kanji.jitenon.jp/kanjic/1385",
+        char: "憩",
+        url: "https://kanji.jitenon.jp/kanjic/1385",
         "音読み": [
           "ケイ"
         ],
@@ -24632,8 +24655,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "懐",
-        "url": "https://kanji.jitenon.jp/kanjid/1623",
+        char: "懐",
+        url: "https://kanji.jitenon.jp/kanjid/1623",
         "音読み": [
           "カイ"
         ],
@@ -24653,8 +24676,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "憾",
-        "url": "https://kanji.jitenon.jp/kanjid/1647",
+        char: "憾",
+        url: "https://kanji.jitenon.jp/kanjid/1647",
         "音読み": [
           "カン"
         ],
@@ -24668,8 +24691,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "懇",
-        "url": "https://kanji.jitenon.jp/kanjid/1695",
+        char: "懇",
+        url: "https://kanji.jitenon.jp/kanjid/1695",
         "音読み": [
           "コン"
         ],
@@ -24685,8 +24708,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "懲",
-        "url": "https://kanji.jitenon.jp/kanjid/1819",
+        char: "懲",
+        url: "https://kanji.jitenon.jp/kanjid/1819",
         "音読み": [
           "チョウ"
         ],
@@ -24704,8 +24727,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "懸",
-        "url": "https://kanji.jitenon.jp/kanjid/1678",
+        char: "懸",
+        url: "https://kanji.jitenon.jp/kanjid/1678",
         "音読み": [
           "ケ",
           "ケン"
@@ -24725,13 +24748,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06001",
-    "radical": "艸 艹",
-    "reading": "くさ・くさかんむり・そうこう",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06001",
+    radical: "艸 艹",
+    reading: "くさ・くさかんむり・そうこう",
+    kanji: [
       {
-        "char": "芋",
-        "url": "https://kanji.jitenon.jp/kanjic/1013",
+        char: "芋",
+        url: "https://kanji.jitenon.jp/kanjic/1013",
         "音読み": [],
         "訓読み": [
           "いも"
@@ -24745,8 +24768,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "芝",
-        "url": "https://kanji.jitenon.jp/kanjic/1119",
+        char: "芝",
+        url: "https://kanji.jitenon.jp/kanjic/1119",
         "音読み": [],
         "訓読み": [
           "しば"
@@ -24760,8 +24783,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "花",
-        "url": "https://kanji.jitenon.jp/kanji/007",
+        char: "花",
+        url: "https://kanji.jitenon.jp/kanji/007",
         "音読み": [
           "カ"
         ],
@@ -24777,8 +24800,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "芸",
-        "url": "https://kanji.jitenon.jp/kanji/493",
+        char: "芸",
+        url: "https://kanji.jitenon.jp/kanji/493",
         "音読み": [
           "ゲイ"
         ],
@@ -24792,8 +24815,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "芳",
-        "url": "https://kanji.jitenon.jp/kanjid/1554",
+        char: "芳",
+        url: "https://kanji.jitenon.jp/kanjid/1554",
         "音読み": [
           "ホウ"
         ],
@@ -24809,8 +24832,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "芯",
-        "url": "https://kanji.jitenon.jp/kanjie/2029",
+        char: "芯",
+        url: "https://kanji.jitenon.jp/kanjie/2029",
         "音読み": [
           "シン"
         ],
@@ -24824,8 +24847,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "芥",
-        "url": "https://kanji.jitenon.jp/kanjie/2229",
+        char: "芥",
+        url: "https://kanji.jitenon.jp/kanjie/2229",
         "音読み": [
           "カイ",
           "ケ"
@@ -24843,8 +24866,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "苅",
-        "url": "https://kanji.jitenon.jp/kanjie/2236",
+        char: "苅",
+        url: "https://kanji.jitenon.jp/kanjie/2236",
         "音読み": [
           "カイ",
           "ガイ"
@@ -24861,8 +24884,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "芹",
-        "url": "https://kanji.jitenon.jp/kanjie/2333",
+        char: "芹",
+        url: "https://kanji.jitenon.jp/kanjie/2333",
         "音読み": [
           "キン"
         ],
@@ -24878,8 +24901,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "芭",
-        "url": "https://kanji.jitenon.jp/kanjif/2816",
+        char: "芭",
+        url: "https://kanji.jitenon.jp/kanjif/2816",
         "音読み": [
           "ハ",
           "バ"
@@ -24894,8 +24917,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "芙",
-        "url": "https://kanji.jitenon.jp/kanjif/2876",
+        char: "芙",
+        url: "https://kanji.jitenon.jp/kanjif/2876",
         "音読み": [
           "フ"
         ],
@@ -24911,8 +24934,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "苦",
-        "url": "https://kanji.jitenon.jp/kanji/279",
+        char: "苦",
+        url: "https://kanji.jitenon.jp/kanji/279",
         "音読み": [
           "ク"
         ],
@@ -24932,8 +24955,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "英",
-        "url": "https://kanji.jitenon.jp/kanji/448",
+        char: "英",
+        url: "https://kanji.jitenon.jp/kanji/448",
         "音読み": [
           "エイ"
         ],
@@ -24947,8 +24970,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "芽",
-        "url": "https://kanji.jitenon.jp/kanji/456",
+        char: "芽",
+        url: "https://kanji.jitenon.jp/kanji/456",
         "音読み": [
           "ガ"
         ],
@@ -24964,8 +24987,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "若",
-        "url": "https://kanji.jitenon.jp/kanjib/894",
+        char: "若",
+        url: "https://kanji.jitenon.jp/kanjib/894",
         "音読み": [
           "ジャク",
           "ニャク"
@@ -24983,8 +25006,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "茂",
-        "url": "https://kanji.jitenon.jp/kanjic/1284",
+        char: "茂",
+        url: "https://kanji.jitenon.jp/kanjic/1284",
         "音読み": [
           "モ"
         ],
@@ -25000,8 +25023,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "苗",
-        "url": "https://kanji.jitenon.jp/kanjid/1541",
+        char: "苗",
+        url: "https://kanji.jitenon.jp/kanjid/1541",
         "音読み": [
           "ビョウ"
         ],
@@ -25018,8 +25041,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "茎",
-        "url": "https://kanji.jitenon.jp/kanjid/1670",
+        char: "茎",
+        url: "https://kanji.jitenon.jp/kanjid/1670",
         "音読み": [
           "ケイ"
         ],
@@ -25035,8 +25058,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "苛",
-        "url": "https://kanji.jitenon.jp/kanjid/1958",
+        char: "苛",
+        url: "https://kanji.jitenon.jp/kanjid/1958",
         "音読み": [
           "カ"
         ],
@@ -25050,8 +25073,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "苑",
-        "url": "https://kanji.jitenon.jp/kanjie/2170",
+        char: "苑",
+        url: "https://kanji.jitenon.jp/kanjie/2170",
         "音読み": [
           "ウツ",
           "エン",
@@ -25070,8 +25093,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "茄",
-        "url": "https://kanji.jitenon.jp/kanjie/2212",
+        char: "茄",
+        url: "https://kanji.jitenon.jp/kanjie/2212",
         "音読み": [
           "カ"
         ],
@@ -25089,8 +25112,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "苫",
-        "url": "https://kanji.jitenon.jp/kanjif/2641",
+        char: "苫",
+        url: "https://kanji.jitenon.jp/kanjif/2641",
         "音読み": [
           "セン"
         ],
@@ -25107,8 +25130,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "苒",
-        "url": "https://kanji.jitenon.jp/kanjif/2649",
+        char: "苒",
+        url: "https://kanji.jitenon.jp/kanjif/2649",
         "音読み": [
           "ゼン"
         ],
@@ -25126,8 +25149,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "苔",
-        "url": "https://kanji.jitenon.jp/kanjif/2694",
+        char: "苔",
+        url: "https://kanji.jitenon.jp/kanjif/2694",
         "音読み": [
           "タイ"
         ],
@@ -25143,8 +25166,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "苧",
-        "url": "https://kanji.jitenon.jp/kanjif/2731",
+        char: "苧",
+        url: "https://kanji.jitenon.jp/kanjif/2731",
         "音読み": [
           "チョ"
         ],
@@ -25161,8 +25184,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "茅",
-        "url": "https://kanji.jitenon.jp/kanjif/2922",
+        char: "茅",
+        url: "https://kanji.jitenon.jp/kanjif/2922",
         "音読み": [
           "ボウ"
         ],
@@ -25180,8 +25203,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "苓",
-        "url": "https://kanji.jitenon.jp/kanjif/2986",
+        char: "苓",
+        url: "https://kanji.jitenon.jp/kanjif/2986",
         "音読み": [
           "リョウ",
           "レイ"
@@ -25198,8 +25221,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "草",
-        "url": "https://kanji.jitenon.jp/kanji/051",
+        char: "草",
+        url: "https://kanji.jitenon.jp/kanji/051",
         "音読み": [
           "ソウ"
         ],
@@ -25215,8 +25238,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "茶",
-        "url": "https://kanji.jitenon.jp/kanji/188",
+        char: "茶",
+        url: "https://kanji.jitenon.jp/kanji/188",
         "音読み": [
           "サ",
           "チャ"
@@ -25231,8 +25254,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "荒",
-        "url": "https://kanji.jitenon.jp/kanjic/1095",
+        char: "荒",
+        url: "https://kanji.jitenon.jp/kanjic/1095",
         "音読み": [
           "コウ"
         ],
@@ -25250,8 +25273,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "荘",
-        "url": "https://kanji.jitenon.jp/kanjid/1796",
+        char: "荘",
+        url: "https://kanji.jitenon.jp/kanjid/1796",
         "音読み": [
           "ソウ"
         ],
@@ -25265,8 +25288,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "茨",
-        "url": "https://kanji.jitenon.jp/kanjid/1946",
+        char: "茨",
+        url: "https://kanji.jitenon.jp/kanjid/1946",
         "音読み": [],
         "訓読み": [
           "いばら"
@@ -25280,8 +25303,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "荊",
-        "url": "https://kanji.jitenon.jp/kanjie/2356",
+        char: "荊",
+        url: "https://kanji.jitenon.jp/kanjie/2356",
         "音読み": [
           "ケイ"
         ],
@@ -25298,8 +25321,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "茸",
-        "url": "https://kanji.jitenon.jp/kanjif/2588",
+        char: "茸",
+        url: "https://kanji.jitenon.jp/kanjif/2588",
         "音読み": [
           "ジョウ"
         ],
@@ -25318,8 +25341,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "荏",
-        "url": "https://kanji.jitenon.jp/kanjif/2607",
+        char: "荏",
+        url: "https://kanji.jitenon.jp/kanjif/2607",
         "音読み": [
           "ジン",
           "ニン"
@@ -25337,8 +25360,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "茜",
-        "url": "https://kanji.jitenon.jp/kanjif/2642",
+        char: "茜",
+        url: "https://kanji.jitenon.jp/kanjif/2642",
         "音読み": [
           "セン"
         ],
@@ -25354,8 +25377,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "荷",
-        "url": "https://kanji.jitenon.jp/kanji/257",
+        char: "荷",
+        url: "https://kanji.jitenon.jp/kanji/257",
         "音読み": [
           "カ"
         ],
@@ -25371,8 +25394,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "華",
-        "url": "https://kanji.jitenon.jp/kanjic/1334",
+        char: "華",
+        url: "https://kanji.jitenon.jp/kanjic/1334",
         "音読み": [
           "カ",
           "ケ"
@@ -25389,8 +25412,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "莞",
-        "url": "https://kanji.jitenon.jp/kanjie/2261",
+        char: "莞",
+        url: "https://kanji.jitenon.jp/kanjie/2261",
         "音読み": [
           "カン"
         ],
@@ -25408,8 +25431,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "荻",
-        "url": "https://kanji.jitenon.jp/kanjif/2761",
+        char: "荻",
+        url: "https://kanji.jitenon.jp/kanjif/2761",
         "音読み": [
           "テキ"
         ],
@@ -25425,8 +25448,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "莵",
-        "url": "https://kanji.jitenon.jp/kanjif/2781",
+        char: "莵",
+        url: "https://kanji.jitenon.jp/kanjif/2781",
         "音読み": [
           "ト"
         ],
@@ -25442,8 +25465,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "莫",
-        "url": "https://kanji.jitenon.jp/kanjif/2832",
+        char: "莫",
+        url: "https://kanji.jitenon.jp/kanjif/2832",
         "音読み": [
           "バク",
           "ボ",
@@ -25465,8 +25488,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "莱",
-        "url": "https://kanji.jitenon.jp/kanjif/2963",
+        char: "莱",
+        url: "https://kanji.jitenon.jp/kanjif/2963",
         "音読み": [
           "ライ"
         ],
@@ -25483,8 +25506,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "菜",
-        "url": "https://kanji.jitenon.jp/kanjib/508",
+        char: "菜",
+        url: "https://kanji.jitenon.jp/kanjib/508",
         "音読み": [
           "サイ"
         ],
@@ -25500,8 +25523,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "著",
-        "url": "https://kanji.jitenon.jp/kanjib/947",
+        char: "著",
+        url: "https://kanji.jitenon.jp/kanjib/947",
         "音読み": [
           "チョ"
         ],
@@ -25518,8 +25541,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "菓",
-        "url": "https://kanji.jitenon.jp/kanjic/1027",
+        char: "菓",
+        url: "https://kanji.jitenon.jp/kanjic/1027",
         "音読み": [
           "カ"
         ],
@@ -25533,8 +25556,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "菊",
-        "url": "https://kanji.jitenon.jp/kanjic/1367",
+        char: "菊",
+        url: "https://kanji.jitenon.jp/kanjic/1367",
         "音読み": [
           "キク"
         ],
@@ -25548,8 +25571,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "菌",
-        "url": "https://kanji.jitenon.jp/kanjid/1661",
+        char: "菌",
+        url: "https://kanji.jitenon.jp/kanjid/1661",
         "音読み": [
           "キン"
         ],
@@ -25563,8 +25586,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "萎",
-        "url": "https://kanji.jitenon.jp/kanjid/1943",
+        char: "萎",
+        url: "https://kanji.jitenon.jp/kanjid/1943",
         "音読み": [
           "イ"
         ],
@@ -25580,8 +25603,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "菅",
-        "url": "https://kanji.jitenon.jp/kanjie/2262",
+        char: "菅",
+        url: "https://kanji.jitenon.jp/kanjie/2262",
         "音読み": [
           "カン"
         ],
@@ -25598,8 +25621,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "菖",
-        "url": "https://kanji.jitenon.jp/kanjif/2570",
+        char: "菖",
+        url: "https://kanji.jitenon.jp/kanjif/2570",
         "音読み": [
           "ショウ"
         ],
@@ -25615,8 +25638,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "萄",
-        "url": "https://kanji.jitenon.jp/kanjif/2797",
+        char: "萄",
+        url: "https://kanji.jitenon.jp/kanjif/2797",
         "音読み": [
           "トウ",
           "ドウ"
@@ -25631,8 +25654,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "菩",
-        "url": "https://kanji.jitenon.jp/kanjif/2901",
+        char: "菩",
+        url: "https://kanji.jitenon.jp/kanjif/2901",
         "音読み": [
           "ホ",
           "ボ"
@@ -25647,8 +25670,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "萌",
-        "url": "https://kanji.jitenon.jp/kanjif/2911",
+        char: "萌",
+        url: "https://kanji.jitenon.jp/kanjif/2911",
         "音読み": [
           "ホウ",
           "ボウ",
@@ -25671,8 +25694,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "萠",
-        "url": "https://kanji.jitenon.jp/kanjif/2912",
+        char: "萠",
+        url: "https://kanji.jitenon.jp/kanjif/2912",
         "音読み": [
           "ホウ",
           "ボウ",
@@ -25695,8 +25718,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "菱",
-        "url": "https://kanji.jitenon.jp/kanjif/2987",
+        char: "菱",
+        url: "https://kanji.jitenon.jp/kanjif/2987",
         "音読み": [
           "リョウ"
         ],
@@ -25712,8 +25735,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "葉",
-        "url": "https://kanji.jitenon.jp/kanji/425",
+        char: "葉",
+        url: "https://kanji.jitenon.jp/kanji/425",
         "音読み": [
           "ヨウ"
         ],
@@ -25729,8 +25752,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "落",
-        "url": "https://kanji.jitenon.jp/kanji/430",
+        char: "落",
+        url: "https://kanji.jitenon.jp/kanji/430",
         "音読み": [
           "ラク"
         ],
@@ -25747,8 +25770,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "葬",
-        "url": "https://kanji.jitenon.jp/kanjic/1480",
+        char: "葬",
+        url: "https://kanji.jitenon.jp/kanjic/1480",
         "音読み": [
           "ソウ"
         ],
@@ -25764,8 +25787,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "葛",
-        "url": "https://kanji.jitenon.jp/kanjid/1969",
+        char: "葛",
+        url: "https://kanji.jitenon.jp/kanjid/1969",
         "音読み": [
           "カツ"
         ],
@@ -25781,8 +25804,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "萱",
-        "url": "https://kanji.jitenon.jp/kanjie/2263",
+        char: "萱",
+        url: "https://kanji.jitenon.jp/kanjie/2263",
         "音読み": [
           "カン",
           "ケン"
@@ -25800,8 +25823,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "葵",
-        "url": "https://kanji.jitenon.jp/kanjie/2282",
+        char: "葵",
+        url: "https://kanji.jitenon.jp/kanjie/2282",
         "音読み": [
           "キ"
         ],
@@ -25817,8 +25840,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "韮",
-        "url": "https://kanji.jitenon.jp/kanjie/2304",
+        char: "韮",
+        url: "https://kanji.jitenon.jp/kanjie/2304",
         "音読み": [
           "キュウ"
         ],
@@ -25834,8 +25857,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "菰",
-        "url": "https://kanji.jitenon.jp/kanjie/2381",
+        char: "菰",
+        url: "https://kanji.jitenon.jp/kanjie/2381",
         "音読み": [
           "コ"
         ],
@@ -25852,8 +25875,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "萩",
-        "url": "https://kanji.jitenon.jp/kanjif/2516",
+        char: "萩",
+        url: "https://kanji.jitenon.jp/kanjif/2516",
         "音読み": [
           "シュウ"
         ],
@@ -25869,8 +25892,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "葺",
-        "url": "https://kanji.jitenon.jp/kanjif/2517",
+        char: "葺",
+        url: "https://kanji.jitenon.jp/kanjif/2517",
         "音読み": [
           "シュウ"
         ],
@@ -25887,8 +25910,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "葱",
-        "url": "https://kanji.jitenon.jp/kanjif/2668",
+        char: "葱",
+        url: "https://kanji.jitenon.jp/kanjif/2668",
         "音読み": [
           "ソウ"
         ],
@@ -25906,8 +25929,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "菟",
-        "url": "https://kanji.jitenon.jp/kanjif/2780",
+        char: "菟",
+        url: "https://kanji.jitenon.jp/kanjif/2780",
         "音読み": [
           "ト"
         ],
@@ -25923,8 +25946,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "董",
-        "url": "https://kanji.jitenon.jp/kanjif/2798",
+        char: "董",
+        url: "https://kanji.jitenon.jp/kanjif/2798",
         "音読み": [
           "トウ"
         ],
@@ -25940,8 +25963,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "葡",
-        "url": "https://kanji.jitenon.jp/kanjif/2880",
+        char: "葡",
+        url: "https://kanji.jitenon.jp/kanjif/2880",
         "音読み": [
           "ブ",
           "ホ"
@@ -25956,8 +25979,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "葎",
-        "url": "https://kanji.jitenon.jp/kanjif/2973",
+        char: "葎",
+        url: "https://kanji.jitenon.jp/kanjif/2973",
         "音読み": [
           "リツ"
         ],
@@ -25973,8 +25996,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蒸",
-        "url": "https://kanji.jitenon.jp/kanjib/913",
+        char: "蒸",
+        url: "https://kanji.jitenon.jp/kanjib/913",
         "音読み": [
           "ジョウ"
         ],
@@ -25992,8 +26015,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "蓄",
-        "url": "https://kanji.jitenon.jp/kanjic/1188",
+        char: "蓄",
+        url: "https://kanji.jitenon.jp/kanjic/1188",
         "音読み": [
           "チク"
         ],
@@ -26009,8 +26032,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "蓋",
-        "url": "https://kanji.jitenon.jp/kanjid/1965",
+        char: "蓋",
+        url: "https://kanji.jitenon.jp/kanjid/1965",
         "音読み": [
           "ガイ"
         ],
@@ -26026,8 +26049,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "葦",
-        "url": "https://kanji.jitenon.jp/kanjie/2152",
+        char: "葦",
+        url: "https://kanji.jitenon.jp/kanjie/2152",
         "音読み": [
           "イ"
         ],
@@ -26044,8 +26067,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蓑",
-        "url": "https://kanji.jitenon.jp/kanjie/2437",
+        char: "蓑",
+        url: "https://kanji.jitenon.jp/kanjie/2437",
         "音読み": [
           "サ",
           "サイ"
@@ -26062,8 +26085,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蒜",
-        "url": "https://kanji.jitenon.jp/kanjie/2456",
+        char: "蒜",
+        url: "https://kanji.jitenon.jp/kanjie/2456",
         "音読み": [
           "サン"
         ],
@@ -26080,8 +26103,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蒔",
-        "url": "https://kanji.jitenon.jp/kanjie/2475",
+        char: "蒔",
+        url: "https://kanji.jitenon.jp/kanjie/2475",
         "音読み": [
           "シ",
           "ジ"
@@ -26099,8 +26122,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蒐",
-        "url": "https://kanji.jitenon.jp/kanjif/2518",
+        char: "蒐",
+        url: "https://kanji.jitenon.jp/kanjif/2518",
         "音読み": [
           "シュウ"
         ],
@@ -26117,8 +26140,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蒋",
-        "url": "https://kanji.jitenon.jp/kanjif/2571",
+        char: "蒋",
+        url: "https://kanji.jitenon.jp/kanjif/2571",
         "音読み": [
           "ショウ"
         ],
@@ -26134,8 +26157,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蒼",
-        "url": "https://kanji.jitenon.jp/kanjif/2669",
+        char: "蒼",
+        url: "https://kanji.jitenon.jp/kanjif/2669",
         "音読み": [
           "ソウ"
         ],
@@ -26153,8 +26176,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蒲",
-        "url": "https://kanji.jitenon.jp/kanjif/2877",
+        char: "蒲",
+        url: "https://kanji.jitenon.jp/kanjif/2877",
         "音読み": [
           "フ",
           "ブ",
@@ -26174,8 +26197,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蒙",
-        "url": "https://kanji.jitenon.jp/kanjif/2923",
+        char: "蒙",
+        url: "https://kanji.jitenon.jp/kanjif/2923",
         "音読み": [
           "ボウ",
           "モウ"
@@ -26194,8 +26217,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蓉",
-        "url": "https://kanji.jitenon.jp/kanjif/2957",
+        char: "蓉",
+        url: "https://kanji.jitenon.jp/kanjif/2957",
         "音読み": [
           "ヨウ"
         ],
@@ -26209,8 +26232,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蔑",
-        "url": "https://kanji.jitenon.jp/kanjie/2100",
+        char: "蔑",
+        url: "https://kanji.jitenon.jp/kanjie/2100",
         "音読み": [
           "ベツ"
         ],
@@ -26226,8 +26249,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "蔚",
-        "url": "https://kanji.jitenon.jp/kanjie/2153",
+        char: "蔚",
+        url: "https://kanji.jitenon.jp/kanjie/2153",
         "音読み": [
           "イ",
           "ウツ"
@@ -26242,8 +26265,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蔭",
-        "url": "https://kanji.jitenon.jp/kanjie/2164",
+        char: "蔭",
+        url: "https://kanji.jitenon.jp/kanjie/2164",
         "音読み": [
           "イン",
           "オン"
@@ -26263,8 +26286,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蔦",
-        "url": "https://kanji.jitenon.jp/kanjif/2740",
+        char: "蔦",
+        url: "https://kanji.jitenon.jp/kanjif/2740",
         "音読み": [
           "チョウ"
         ],
@@ -26280,8 +26303,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蔓",
-        "url": "https://kanji.jitenon.jp/kanjif/2846",
+        char: "蔓",
+        url: "https://kanji.jitenon.jp/kanjif/2846",
         "音読み": [
           "バン",
           "マン"
@@ -26299,8 +26322,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蔀",
-        "url": "https://kanji.jitenon.jp/kanjif/2881",
+        char: "蔀",
+        url: "https://kanji.jitenon.jp/kanjif/2881",
         "音読み": [
           "ブ",
           "ホウ"
@@ -26318,8 +26341,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蓬",
-        "url": "https://kanji.jitenon.jp/kanjif/2913",
+        char: "蓬",
+        url: "https://kanji.jitenon.jp/kanjif/2913",
         "音読み": [
           "ホウ"
         ],
@@ -26335,8 +26358,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蔵",
-        "url": "https://kanji.jitenon.jp/kanjib/934",
+        char: "蔵",
+        url: "https://kanji.jitenon.jp/kanjib/934",
         "音読み": [
           "ゾウ"
         ],
@@ -26352,8 +26375,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "蔽",
-        "url": "https://kanji.jitenon.jp/kanjie/2097",
+        char: "蔽",
+        url: "https://kanji.jitenon.jp/kanjie/2097",
         "音読み": [
           "ヘイ"
         ],
@@ -26367,8 +26390,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "蕎",
-        "url": "https://kanji.jitenon.jp/kanjie/2323",
+        char: "蕎",
+        url: "https://kanji.jitenon.jp/kanjie/2323",
         "音読み": [
           "キョウ"
         ],
@@ -26382,8 +26405,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蕨",
-        "url": "https://kanji.jitenon.jp/kanjie/2360",
+        char: "蕨",
+        url: "https://kanji.jitenon.jp/kanjie/2360",
         "音読み": [
           "ケツ"
         ],
@@ -26399,8 +26422,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蕉",
-        "url": "https://kanji.jitenon.jp/kanjif/2572",
+        char: "蕉",
+        url: "https://kanji.jitenon.jp/kanjif/2572",
         "音読み": [
           "ショウ"
         ],
@@ -26414,8 +26437,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蕊",
-        "url": "https://kanji.jitenon.jp/kanjif/2621",
+        char: "蕊",
+        url: "https://kanji.jitenon.jp/kanjif/2621",
         "音読み": [
           "ズイ"
         ],
@@ -26431,8 +26454,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蕋",
-        "url": "https://kanji.jitenon.jp/kanjif/2622",
+        char: "蕋",
+        url: "https://kanji.jitenon.jp/kanjif/2622",
         "音読み": [
           "ズイ"
         ],
@@ -26448,8 +26471,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蕩",
-        "url": "https://kanji.jitenon.jp/kanjif/2799",
+        char: "蕩",
+        url: "https://kanji.jitenon.jp/kanjif/2799",
         "音読み": [
           "トウ"
         ],
@@ -26470,8 +26493,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蕃",
-        "url": "https://kanji.jitenon.jp/kanjif/2844",
+        char: "蕃",
+        url: "https://kanji.jitenon.jp/kanjif/2844",
         "音読み": [
           "ハン",
           "バン"
@@ -26491,8 +26514,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蕪",
-        "url": "https://kanji.jitenon.jp/kanjif/2882",
+        char: "蕪",
+        url: "https://kanji.jitenon.jp/kanjif/2882",
         "音読み": [
           "ブ",
           "ム"
@@ -26513,8 +26536,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "薬",
-        "url": "https://kanji.jitenon.jp/kanji/418",
+        char: "薬",
+        url: "https://kanji.jitenon.jp/kanji/418",
         "音読み": [
           "ヤク"
         ],
@@ -26530,8 +26553,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "薪",
-        "url": "https://kanji.jitenon.jp/kanjic/1154",
+        char: "薪",
+        url: "https://kanji.jitenon.jp/kanjic/1154",
         "音読み": [
           "シン"
         ],
@@ -26547,8 +26570,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "薄",
-        "url": "https://kanji.jitenon.jp/kanjic/1230",
+        char: "薄",
+        url: "https://kanji.jitenon.jp/kanjic/1230",
         "音読み": [
           "ハク"
         ],
@@ -26568,8 +26591,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "薫",
-        "url": "https://kanji.jitenon.jp/kanjid/1667",
+        char: "薫",
+        url: "https://kanji.jitenon.jp/kanjid/1667",
         "音読み": [
           "クン"
         ],
@@ -26585,8 +26608,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "薦",
-        "url": "https://kanji.jitenon.jp/kanjid/1783",
+        char: "薦",
+        url: "https://kanji.jitenon.jp/kanjid/1783",
         "音読み": [
           "セン"
         ],
@@ -26602,8 +26625,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "薗",
-        "url": "https://kanji.jitenon.jp/kanjie/2189",
+        char: "薗",
+        url: "https://kanji.jitenon.jp/kanjie/2189",
         "音読み": [
           "エン",
           "オン"
@@ -26621,8 +26644,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "薮",
-        "url": "https://kanji.jitenon.jp/kanjif/2671",
+        char: "薮",
+        url: "https://kanji.jitenon.jp/kanjif/2671",
         "音読み": [
           "ソウ"
         ],
@@ -26639,8 +26662,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "薙",
-        "url": "https://kanji.jitenon.jp/kanjif/2720",
+        char: "薙",
+        url: "https://kanji.jitenon.jp/kanjif/2720",
         "音読み": [
           "チ",
           "テイ"
@@ -26659,8 +26682,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "藁",
-        "url": "https://kanji.jitenon.jp/kanjie/2412",
+        char: "藁",
+        url: "https://kanji.jitenon.jp/kanjie/2412",
         "音読み": [
           "コウ"
         ],
@@ -26676,8 +26699,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "薩",
-        "url": "https://kanji.jitenon.jp/kanjie/2451",
+        char: "薩",
+        url: "https://kanji.jitenon.jp/kanjie/2451",
         "音読み": [
           "サツ"
         ],
@@ -26691,8 +26714,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "薯",
-        "url": "https://kanji.jitenon.jp/kanjif/2545",
+        char: "薯",
+        url: "https://kanji.jitenon.jp/kanjif/2545",
         "音読み": [
           "ショ",
           "ジョ"
@@ -26709,8 +26732,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "藩",
-        "url": "https://kanji.jitenon.jp/kanjid/1533",
+        char: "藩",
+        url: "https://kanji.jitenon.jp/kanjid/1533",
         "音読み": [
           "ハン"
         ],
@@ -26724,8 +26747,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "藤",
-        "url": "https://kanji.jitenon.jp/kanjie/2071",
+        char: "藤",
+        url: "https://kanji.jitenon.jp/kanjie/2071",
         "音読み": [
           "トウ"
         ],
@@ -26741,8 +26764,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "藍",
-        "url": "https://kanji.jitenon.jp/kanjie/2122",
+        char: "藍",
+        url: "https://kanji.jitenon.jp/kanjie/2122",
         "音読み": [
           "ラン"
         ],
@@ -26758,8 +26781,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "藪",
-        "url": "https://kanji.jitenon.jp/kanjif/2670",
+        char: "藪",
+        url: "https://kanji.jitenon.jp/kanjif/2670",
         "音読み": [
           "ソウ"
         ],
@@ -26776,8 +26799,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "藻",
-        "url": "https://kanji.jitenon.jp/kanjid/1797",
+        char: "藻",
+        url: "https://kanji.jitenon.jp/kanjid/1797",
         "音読み": [
           "ソウ"
         ],
@@ -26793,8 +26816,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "藷",
-        "url": "https://kanji.jitenon.jp/kanjif/2546",
+        char: "藷",
+        url: "https://kanji.jitenon.jp/kanjif/2546",
         "音読み": [
           "ショ"
         ],
@@ -26811,8 +26834,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蘇",
-        "url": "https://kanji.jitenon.jp/kanjif/2610",
+        char: "蘇",
+        url: "https://kanji.jitenon.jp/kanjif/2610",
         "音読み": [
           "ス",
           "ソ"
@@ -26829,8 +26852,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蘂",
-        "url": "https://kanji.jitenon.jp/kanjif/2623",
+        char: "蘂",
+        url: "https://kanji.jitenon.jp/kanjif/2623",
         "音読み": [
           "ズイ"
         ],
@@ -26846,8 +26869,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蘭",
-        "url": "https://kanji.jitenon.jp/kanjif/2965",
+        char: "蘭",
+        url: "https://kanji.jitenon.jp/kanjif/2965",
         "音読み": [
           "ラン"
         ],
@@ -26866,13 +26889,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04001",
-    "radical": "火 灬",
-    "reading": "ひ・ひへん・れっか・れんが",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04001",
+    radical: "火 灬",
+    reading: "ひ・ひへん・れっか・れんが",
+    kanji: [
       {
-        "char": "火",
-        "url": "https://kanji.jitenon.jp/kanji/006",
+        char: "火",
+        url: "https://kanji.jitenon.jp/kanji/006",
         "音読み": [
           "カ"
         ],
@@ -26889,8 +26912,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "灯",
-        "url": "https://kanji.jitenon.jp/kanjib/580",
+        char: "灯",
+        url: "https://kanji.jitenon.jp/kanjib/580",
         "音読み": [
           "トウ"
         ],
@@ -26906,8 +26929,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "灰",
-        "url": "https://kanji.jitenon.jp/kanjib/832",
+        char: "灰",
+        url: "https://kanji.jitenon.jp/kanjib/832",
         "音読み": [
           "カイ"
         ],
@@ -26923,8 +26946,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "災",
-        "url": "https://kanji.jitenon.jp/kanjib/705",
+        char: "災",
+        url: "https://kanji.jitenon.jp/kanjib/705",
         "音読み": [
           "サイ"
         ],
@@ -26940,8 +26963,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "灸",
-        "url": "https://kanji.jitenon.jp/kanjie/2301",
+        char: "灸",
+        url: "https://kanji.jitenon.jp/kanjie/2301",
         "音読み": [
           "キュウ"
         ],
@@ -26957,8 +26980,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "灼",
-        "url": "https://kanji.jitenon.jp/kanjie/2495",
+        char: "灼",
+        url: "https://kanji.jitenon.jp/kanjie/2495",
         "音読み": [
           "シャク"
         ],
@@ -26977,8 +27000,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "炎",
-        "url": "https://kanji.jitenon.jp/kanjic/1325",
+        char: "炎",
+        url: "https://kanji.jitenon.jp/kanjic/1325",
         "音読み": [
           "エン"
         ],
@@ -26994,8 +27017,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "炊",
-        "url": "https://kanji.jitenon.jp/kanjic/1456",
+        char: "炊",
+        url: "https://kanji.jitenon.jp/kanjic/1456",
         "音読み": [
           "スイ"
         ],
@@ -27011,8 +27034,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "炉",
-        "url": "https://kanji.jitenon.jp/kanjid/1599",
+        char: "炉",
+        url: "https://kanji.jitenon.jp/kanjid/1599",
         "音読み": [
           "ロ"
         ],
@@ -27026,8 +27049,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "点",
-        "url": "https://kanji.jitenon.jp/kanji/195",
+        char: "点",
+        url: "https://kanji.jitenon.jp/kanji/195",
         "音読み": [
           "テン"
         ],
@@ -27041,8 +27064,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "炭",
-        "url": "https://kanji.jitenon.jp/kanji/361",
+        char: "炭",
+        url: "https://kanji.jitenon.jp/kanji/361",
         "音読み": [
           "タン"
         ],
@@ -27058,8 +27081,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "為",
-        "url": "https://kanji.jitenon.jp/kanjic/1008",
+        char: "為",
+        url: "https://kanji.jitenon.jp/kanjic/1008",
         "音読み": [
           "イ"
         ],
@@ -27073,8 +27096,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "烈",
-        "url": "https://kanji.jitenon.jp/kanjic/1313",
+        char: "烈",
+        url: "https://kanji.jitenon.jp/kanjic/1313",
         "音読み": [
           "レツ"
         ],
@@ -27088,8 +27111,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "烏",
-        "url": "https://kanji.jitenon.jp/kanjie/2167",
+        char: "烏",
+        url: "https://kanji.jitenon.jp/kanjie/2167",
         "音読み": [
           "ウ",
           "オ"
@@ -27109,8 +27132,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "焔",
-        "url": "https://kanji.jitenon.jp/kanjie/2187",
+        char: "焔",
+        url: "https://kanji.jitenon.jp/kanjie/2187",
         "音読み": [
           "エン"
         ],
@@ -27127,8 +27150,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "烹",
-        "url": "https://kanji.jitenon.jp/kanjif/2910",
+        char: "烹",
+        url: "https://kanji.jitenon.jp/kanjif/2910",
         "音読み": [
           "ホウ"
         ],
@@ -27144,8 +27167,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "焼",
-        "url": "https://kanji.jitenon.jp/kanjib/536",
+        char: "焼",
+        url: "https://kanji.jitenon.jp/kanjib/536",
         "音読み": [
           "ショウ"
         ],
@@ -27162,8 +27185,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "然",
-        "url": "https://kanji.jitenon.jp/kanjib/587",
+        char: "然",
+        url: "https://kanji.jitenon.jp/kanjib/587",
         "音読み": [
           "ゼン",
           "ネン"
@@ -27178,8 +27201,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "無",
-        "url": "https://kanji.jitenon.jp/kanjib/602",
+        char: "無",
+        url: "https://kanji.jitenon.jp/kanjib/602",
         "音読み": [
           "ブ",
           "ム"
@@ -27196,8 +27219,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "煮",
-        "url": "https://kanji.jitenon.jp/kanjic/1120",
+        char: "煮",
+        url: "https://kanji.jitenon.jp/kanjic/1120",
         "音読み": [
           "シャ"
         ],
@@ -27215,8 +27238,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "焦",
-        "url": "https://kanji.jitenon.jp/kanjic/1442",
+        char: "焦",
+        url: "https://kanji.jitenon.jp/kanjic/1442",
         "音読み": [
           "ショウ"
         ],
@@ -27235,8 +27258,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "焚",
-        "url": "https://kanji.jitenon.jp/kanjif/2889",
+        char: "焚",
+        url: "https://kanji.jitenon.jp/kanjif/2889",
         "音読み": [
           "フン",
           "ブン"
@@ -27254,8 +27277,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "照",
-        "url": "https://kanji.jitenon.jp/kanjib/540",
+        char: "照",
+        url: "https://kanji.jitenon.jp/kanjib/540",
         "音読み": [
           "ショウ"
         ],
@@ -27273,8 +27296,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "煙",
-        "url": "https://kanji.jitenon.jp/kanjic/1021",
+        char: "煙",
+        url: "https://kanji.jitenon.jp/kanjic/1021",
         "音読み": [
           "エン"
         ],
@@ -27292,8 +27315,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "煩",
-        "url": "https://kanji.jitenon.jp/kanjid/1865",
+        char: "煩",
+        url: "https://kanji.jitenon.jp/kanjid/1865",
         "音読み": [
           "ハン",
           "ボン"
@@ -27311,8 +27334,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "煎",
-        "url": "https://kanji.jitenon.jp/kanjie/2037",
+        char: "煎",
+        url: "https://kanji.jitenon.jp/kanjie/2037",
         "音読み": [
           "セン"
         ],
@@ -27328,8 +27351,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "煤",
-        "url": "https://kanji.jitenon.jp/kanjif/2823",
+        char: "煤",
+        url: "https://kanji.jitenon.jp/kanjif/2823",
         "音読み": [
           "バイ"
         ],
@@ -27346,8 +27369,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "熊",
-        "url": "https://kanji.jitenon.jp/kanjid/1986",
+        char: "熊",
+        url: "https://kanji.jitenon.jp/kanjid/1986",
         "音読み": [],
         "訓読み": [
           "くま"
@@ -27361,8 +27384,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "煽",
-        "url": "https://kanji.jitenon.jp/kanjif/2637",
+        char: "煽",
+        url: "https://kanji.jitenon.jp/kanjif/2637",
         "音読み": [
           "セン"
         ],
@@ -27381,8 +27404,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "熔",
-        "url": "https://kanji.jitenon.jp/kanjif/2954",
+        char: "熔",
+        url: "https://kanji.jitenon.jp/kanjif/2954",
         "音読み": [
           "ヨウ"
         ],
@@ -27401,8 +27424,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "熱",
-        "url": "https://kanji.jitenon.jp/kanjib/586",
+        char: "熱",
+        url: "https://kanji.jitenon.jp/kanjib/586",
         "音読み": [
           "ネツ"
         ],
@@ -27418,8 +27441,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "熟",
-        "url": "https://kanji.jitenon.jp/kanjib/903",
+        char: "熟",
+        url: "https://kanji.jitenon.jp/kanjib/903",
         "音読み": [
           "ジュク"
         ],
@@ -27435,8 +27458,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "勲",
-        "url": "https://kanji.jitenon.jp/kanjid/1668",
+        char: "勲",
+        url: "https://kanji.jitenon.jp/kanjid/1668",
         "音読み": [
           "クン"
         ],
@@ -27450,8 +27473,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "燃",
-        "url": "https://kanji.jitenon.jp/kanjib/784",
+        char: "燃",
+        url: "https://kanji.jitenon.jp/kanjib/784",
         "音読み": [
           "ネン"
         ],
@@ -27469,8 +27492,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "燕",
-        "url": "https://kanji.jitenon.jp/kanjie/2188",
+        char: "燕",
+        url: "https://kanji.jitenon.jp/kanjie/2188",
         "音読み": [
           "エン"
         ],
@@ -27488,8 +27511,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "燥",
-        "url": "https://kanji.jitenon.jp/kanjic/1168",
+        char: "燥",
+        url: "https://kanji.jitenon.jp/kanjic/1168",
         "音読み": [
           "ソウ"
         ],
@@ -27503,8 +27526,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "燦",
-        "url": "https://kanji.jitenon.jp/kanjie/2453",
+        char: "燦",
+        url: "https://kanji.jitenon.jp/kanjie/2453",
         "音読み": [
           "サン"
         ],
@@ -27522,8 +27545,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "燭",
-        "url": "https://kanji.jitenon.jp/kanjif/2591",
+        char: "燭",
+        url: "https://kanji.jitenon.jp/kanjif/2591",
         "音読み": [
           "ショク",
           "ソク"
@@ -27540,8 +27563,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "燐",
-        "url": "https://kanji.jitenon.jp/kanjif/2991",
+        char: "燐",
+        url: "https://kanji.jitenon.jp/kanjif/2991",
         "音読み": [
           "リン"
         ],
@@ -27555,8 +27578,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "爆",
-        "url": "https://kanji.jitenon.jp/kanjic/1231",
+        char: "爆",
+        url: "https://kanji.jitenon.jp/kanjic/1231",
         "音読み": [
           "バク"
         ],
@@ -27572,13 +27595,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04004",
-    "radical": "木",
-    "reading": "き・きへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04004",
+    radical: "木",
+    reading: "き・きへん",
+    kanji: [
       {
-        "char": "木",
-        "url": "https://kanji.jitenon.jp/kanji/073",
+        char: "木",
+        url: "https://kanji.jitenon.jp/kanji/073",
         "音読み": [
           "ボク",
           "モク"
@@ -27596,8 +27619,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "本",
-        "url": "https://kanji.jitenon.jp/kanji/071",
+        char: "本",
+        url: "https://kanji.jitenon.jp/kanji/071",
         "音読み": [
           "ホン"
         ],
@@ -27613,8 +27636,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "札",
-        "url": "https://kanji.jitenon.jp/kanjib/513",
+        char: "札",
+        url: "https://kanji.jitenon.jp/kanjib/513",
         "音読み": [
           "サツ"
         ],
@@ -27630,8 +27653,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "末",
-        "url": "https://kanji.jitenon.jp/kanjib/614",
+        char: "末",
+        url: "https://kanji.jitenon.jp/kanjib/614",
         "音読み": [
           "バツ",
           "マツ"
@@ -27648,8 +27671,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "未",
-        "url": "https://kanji.jitenon.jp/kanjib/616",
+        char: "未",
+        url: "https://kanji.jitenon.jp/kanjib/616",
         "音読み": [
           "ミ"
         ],
@@ -27663,8 +27686,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "机",
-        "url": "https://kanji.jitenon.jp/kanjib/844",
+        char: "机",
+        url: "https://kanji.jitenon.jp/kanjib/844",
         "音読み": [
           "キ"
         ],
@@ -27680,8 +27703,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "朽",
-        "url": "https://kanji.jitenon.jp/kanjic/1059",
+        char: "朽",
+        url: "https://kanji.jitenon.jp/kanjic/1059",
         "音読み": [
           "キュウ"
         ],
@@ -27697,8 +27720,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "朱",
-        "url": "https://kanji.jitenon.jp/kanjic/1125",
+        char: "朱",
+        url: "https://kanji.jitenon.jp/kanjic/1125",
         "音読み": [
           "シュ"
         ],
@@ -27712,8 +27735,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "朴",
-        "url": "https://kanji.jitenon.jp/kanjid/1897",
+        char: "朴",
+        url: "https://kanji.jitenon.jp/kanjid/1897",
         "音読み": [
           "ボク"
         ],
@@ -27727,8 +27750,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "村",
-        "url": "https://kanji.jitenon.jp/kanji/054",
+        char: "村",
+        url: "https://kanji.jitenon.jp/kanji/054",
         "音読み": [
           "ソン"
         ],
@@ -27744,8 +27767,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "来",
-        "url": "https://kanji.jitenon.jp/kanji/236",
+        char: "来",
+        url: "https://kanji.jitenon.jp/kanji/236",
         "音読み": [
           "ライ"
         ],
@@ -27763,8 +27786,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "材",
-        "url": "https://kanji.jitenon.jp/kanjib/509",
+        char: "材",
+        url: "https://kanji.jitenon.jp/kanjib/509",
         "音読み": [
           "ザイ"
         ],
@@ -27778,8 +27801,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "束",
-        "url": "https://kanji.jitenon.jp/kanjib/558",
+        char: "束",
+        url: "https://kanji.jitenon.jp/kanjib/558",
         "音読み": [
           "ソク"
         ],
@@ -27795,8 +27818,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "条",
-        "url": "https://kanji.jitenon.jp/kanjib/739",
+        char: "条",
+        url: "https://kanji.jitenon.jp/kanjib/739",
         "音読み": [
           "ジョウ"
         ],
@@ -27810,8 +27833,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "杉",
-        "url": "https://kanji.jitenon.jp/kanjid/1774",
+        char: "杉",
+        url: "https://kanji.jitenon.jp/kanjid/1774",
         "音読み": [],
         "訓読み": [
           "すぎ"
@@ -27825,8 +27848,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "杏",
-        "url": "https://kanji.jitenon.jp/kanjie/2146",
+        char: "杏",
+        url: "https://kanji.jitenon.jp/kanjie/2146",
         "音読み": [
           "アン",
           "キョウ"
@@ -27843,8 +27866,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "杓",
-        "url": "https://kanji.jitenon.jp/kanjie/2494",
+        char: "杓",
+        url: "https://kanji.jitenon.jp/kanjie/2494",
         "音読み": [
           "シャク",
           "ヒョウ"
@@ -27862,8 +27885,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "杖",
-        "url": "https://kanji.jitenon.jp/kanjif/2584",
+        char: "杖",
+        url: "https://kanji.jitenon.jp/kanjif/2584",
         "音読み": [
           "ジョウ"
         ],
@@ -27879,8 +27902,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "杜",
-        "url": "https://kanji.jitenon.jp/kanjif/2614",
+        char: "杜",
+        url: "https://kanji.jitenon.jp/kanjif/2614",
         "音読み": [
           "ズ",
           "ト"
@@ -27900,8 +27923,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "杢",
-        "url": "https://kanji.jitenon.jp/kanjif/2935",
+        char: "杢",
+        url: "https://kanji.jitenon.jp/kanjif/2935",
         "音読み": [],
         "訓読み": [
           "もく"
@@ -27915,8 +27938,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "李",
-        "url": "https://kanji.jitenon.jp/kanjif/2967",
+        char: "李",
+        url: "https://kanji.jitenon.jp/kanjif/2967",
         "音読み": [
           "リ"
         ],
@@ -27932,8 +27955,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "林",
-        "url": "https://kanji.jitenon.jp/kanji/079",
+        char: "林",
+        url: "https://kanji.jitenon.jp/kanji/079",
         "音読み": [
           "リン"
         ],
@@ -27949,8 +27972,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "東",
-        "url": "https://kanji.jitenon.jp/kanji/202",
+        char: "東",
+        url: "https://kanji.jitenon.jp/kanji/202",
         "音読み": [
           "トウ"
         ],
@@ -27966,8 +27989,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "板",
-        "url": "https://kanji.jitenon.jp/kanji/393",
+        char: "板",
+        url: "https://kanji.jitenon.jp/kanji/393",
         "音読み": [
           "ハン",
           "バン"
@@ -27984,8 +28007,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "果",
-        "url": "https://kanji.jitenon.jp/kanji/455",
+        char: "果",
+        url: "https://kanji.jitenon.jp/kanji/455",
         "音読み": [
           "カ"
         ],
@@ -28003,8 +28026,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "松",
-        "url": "https://kanji.jitenon.jp/kanjib/537",
+        char: "松",
+        url: "https://kanji.jitenon.jp/kanjib/537",
         "音読み": [
           "ショウ"
         ],
@@ -28020,8 +28043,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "枝",
-        "url": "https://kanji.jitenon.jp/kanjib/721",
+        char: "枝",
+        url: "https://kanji.jitenon.jp/kanjib/721",
         "音読み": [
           "シ"
         ],
@@ -28037,8 +28060,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "枚",
-        "url": "https://kanji.jitenon.jp/kanjib/985",
+        char: "枚",
+        url: "https://kanji.jitenon.jp/kanjib/985",
         "音読み": [
           "マイ"
         ],
@@ -28052,8 +28075,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "杯",
-        "url": "https://kanji.jitenon.jp/kanjic/1226",
+        char: "杯",
+        url: "https://kanji.jitenon.jp/kanjic/1226",
         "音読み": [
           "ハイ"
         ],
@@ -28069,8 +28092,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "枢",
-        "url": "https://kanji.jitenon.jp/kanjid/1771",
+        char: "枢",
+        url: "https://kanji.jitenon.jp/kanjid/1771",
         "音読み": [
           "スウ"
         ],
@@ -28084,8 +28107,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "析",
-        "url": "https://kanji.jitenon.jp/kanjid/1779",
+        char: "析",
+        url: "https://kanji.jitenon.jp/kanjid/1779",
         "音読み": [
           "セキ"
         ],
@@ -28099,8 +28122,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "枠",
-        "url": "https://kanji.jitenon.jp/kanjid/1937",
+        char: "枠",
+        url: "https://kanji.jitenon.jp/kanjid/1937",
         "音読み": [],
         "訓読み": [
           "わく"
@@ -28114,8 +28137,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "枕",
-        "url": "https://kanji.jitenon.jp/kanjie/2108",
+        char: "枕",
+        url: "https://kanji.jitenon.jp/kanjie/2108",
         "音読み": [],
         "訓読み": [
           "まくら"
@@ -28129,8 +28152,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "杭",
-        "url": "https://kanji.jitenon.jp/kanjie/2401",
+        char: "杭",
+        url: "https://kanji.jitenon.jp/kanjie/2401",
         "音読み": [
           "コウ"
         ],
@@ -28147,8 +28170,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "杵",
-        "url": "https://kanji.jitenon.jp/kanjif/2541",
+        char: "杵",
+        url: "https://kanji.jitenon.jp/kanjif/2541",
         "音読み": [
           "ショ"
         ],
@@ -28164,8 +28187,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "杷",
-        "url": "https://kanji.jitenon.jp/kanjif/2813",
+        char: "杷",
+        url: "https://kanji.jitenon.jp/kanjif/2813",
         "音読み": [
           "ハ"
         ],
@@ -28181,8 +28204,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "枇",
-        "url": "https://kanji.jitenon.jp/kanjif/2851",
+        char: "枇",
+        url: "https://kanji.jitenon.jp/kanjif/2851",
         "音読み": [
           "ヒ",
           "ビ"
@@ -28200,8 +28223,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "柱",
-        "url": "https://kanji.jitenon.jp/kanji/365",
+        char: "柱",
+        url: "https://kanji.jitenon.jp/kanji/365",
         "音読み": [
           "チュウ"
         ],
@@ -28217,8 +28240,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "栄",
-        "url": "https://kanji.jitenon.jp/kanji/449",
+        char: "栄",
+        url: "https://kanji.jitenon.jp/kanji/449",
         "音読み": [
           "エイ"
         ],
@@ -28236,8 +28259,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "査",
-        "url": "https://kanji.jitenon.jp/kanjib/704",
+        char: "査",
+        url: "https://kanji.jitenon.jp/kanjib/704",
         "音読み": [
           "サ"
         ],
@@ -28251,8 +28274,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "染",
-        "url": "https://kanji.jitenon.jp/kanjib/924",
+        char: "染",
+        url: "https://kanji.jitenon.jp/kanjib/924",
         "音読み": [
           "セン"
         ],
@@ -28271,8 +28294,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "枯",
-        "url": "https://kanji.jitenon.jp/kanjic/1091",
+        char: "枯",
+        url: "https://kanji.jitenon.jp/kanjic/1091",
         "音読み": [
           "コ"
         ],
@@ -28289,8 +28312,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "柔",
-        "url": "https://kanji.jitenon.jp/kanjic/1131",
+        char: "柔",
+        url: "https://kanji.jitenon.jp/kanjic/1131",
         "音読み": [
           "ジュウ",
           "ニュウ"
@@ -28308,8 +28331,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "柄",
-        "url": "https://kanji.jitenon.jp/kanjic/1262",
+        char: "柄",
+        url: "https://kanji.jitenon.jp/kanjic/1262",
         "音読み": [
           "ヘイ"
         ],
@@ -28326,8 +28349,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "架",
-        "url": "https://kanji.jitenon.jp/kanjic/1332",
+        char: "架",
+        url: "https://kanji.jitenon.jp/kanjic/1332",
         "音読み": [
           "カ"
         ],
@@ -28344,8 +28367,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "某",
-        "url": "https://kanji.jitenon.jp/kanjid/1566",
+        char: "某",
+        url: "https://kanji.jitenon.jp/kanjid/1566",
         "音読み": [
           "ボウ"
         ],
@@ -28359,8 +28382,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "柳",
-        "url": "https://kanji.jitenon.jp/kanjid/1924",
+        char: "柳",
+        url: "https://kanji.jitenon.jp/kanjid/1924",
         "音読み": [
           "リュウ"
         ],
@@ -28376,8 +28399,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "柿",
-        "url": "https://kanji.jitenon.jp/kanjid/1967",
+        char: "柿",
+        url: "https://kanji.jitenon.jp/kanjid/1967",
         "音読み": [],
         "訓読み": [
           "かき"
@@ -28391,8 +28414,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "柵",
-        "url": "https://kanji.jitenon.jp/kanjie/2011",
+        char: "柵",
+        url: "https://kanji.jitenon.jp/kanjie/2011",
         "音読み": [
           "サク"
         ],
@@ -28406,8 +28429,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "栃",
-        "url": "https://kanji.jitenon.jp/kanjie/2073",
+        char: "栃",
+        url: "https://kanji.jitenon.jp/kanjie/2073",
         "音読み": [],
         "訓読み": [
           "とち"
@@ -28421,8 +28444,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "柑",
-        "url": "https://kanji.jitenon.jp/kanjie/2253",
+        char: "柑",
+        url: "https://kanji.jitenon.jp/kanjie/2253",
         "音読み": [
           "カン"
         ],
@@ -28439,8 +28462,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "柘",
-        "url": "https://kanji.jitenon.jp/kanjie/2490",
+        char: "柘",
+        url: "https://kanji.jitenon.jp/kanjie/2490",
         "音読み": [
           "シャ"
         ],
@@ -28457,8 +28480,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "柊",
-        "url": "https://kanji.jitenon.jp/kanjif/2510",
+        char: "柊",
+        url: "https://kanji.jitenon.jp/kanjif/2510",
         "音読み": [
           "シュウ"
         ],
@@ -28474,8 +28497,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "柁",
-        "url": "https://kanji.jitenon.jp/kanjif/2679",
+        char: "柁",
+        url: "https://kanji.jitenon.jp/kanjif/2679",
         "音読み": [
           "タ",
           "ダ"
@@ -28492,8 +28515,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "栂",
-        "url": "https://kanji.jitenon.jp/kanjif/2749",
+        char: "栂",
+        url: "https://kanji.jitenon.jp/kanjif/2749",
         "音読み": [
           "バイ"
         ],
@@ -28510,8 +28533,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "柏",
-        "url": "https://kanji.jitenon.jp/kanjif/2825",
+        char: "柏",
+        url: "https://kanji.jitenon.jp/kanjif/2825",
         "音読み": [
           "ハク",
           "ヒャク",
@@ -28529,8 +28552,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "柾",
-        "url": "https://kanji.jitenon.jp/kanjif/2928",
+        char: "柾",
+        url: "https://kanji.jitenon.jp/kanjif/2928",
         "音読み": [],
         "訓読み": [
           "まさ",
@@ -28545,8 +28568,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "柚",
-        "url": "https://kanji.jitenon.jp/kanjif/2944",
+        char: "柚",
+        url: "https://kanji.jitenon.jp/kanjif/2944",
         "音読み": [
           "ジク",
           "チク",
@@ -28565,8 +28588,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "校",
-        "url": "https://kanji.jitenon.jp/kanji/021",
+        char: "校",
+        url: "https://kanji.jitenon.jp/kanji/021",
         "音読み": [
           "コウ"
         ],
@@ -28580,8 +28603,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "根",
-        "url": "https://kanji.jitenon.jp/kanji/297",
+        char: "根",
+        url: "https://kanji.jitenon.jp/kanji/297",
         "音読み": [
           "コン"
         ],
@@ -28597,8 +28620,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "案",
-        "url": "https://kanji.jitenon.jp/kanji/441",
+        char: "案",
+        url: "https://kanji.jitenon.jp/kanji/441",
         "音読み": [
           "アン"
         ],
@@ -28612,8 +28635,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "梅",
-        "url": "https://kanji.jitenon.jp/kanjib/590",
+        char: "梅",
+        url: "https://kanji.jitenon.jp/kanjib/590",
         "音読み": [
           "バイ"
         ],
@@ -28629,8 +28652,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "桜",
-        "url": "https://kanji.jitenon.jp/kanjib/650",
+        char: "桜",
+        url: "https://kanji.jitenon.jp/kanjib/650",
         "音読み": [
           "オウ"
         ],
@@ -28646,8 +28669,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "格",
-        "url": "https://kanji.jitenon.jp/kanjib/663",
+        char: "格",
+        url: "https://kanji.jitenon.jp/kanjib/663",
         "音読み": [
           "カク",
           "コウ"
@@ -28662,8 +28685,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "株",
-        "url": "https://kanji.jitenon.jp/kanjib/837",
+        char: "株",
+        url: "https://kanji.jitenon.jp/kanjib/837",
         "音読み": [],
         "訓読み": [
           "かぶ"
@@ -28677,8 +28700,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "桃",
-        "url": "https://kanji.jitenon.jp/kanjic/1208",
+        char: "桃",
+        url: "https://kanji.jitenon.jp/kanjic/1208",
         "音読み": [
           "トウ"
         ],
@@ -28694,8 +28717,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "桑",
-        "url": "https://kanji.jitenon.jp/kanjic/1479",
+        char: "桑",
+        url: "https://kanji.jitenon.jp/kanjic/1479",
         "音読み": [
           "ソウ"
         ],
@@ -28711,8 +28734,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "核",
-        "url": "https://kanji.jitenon.jp/kanjid/1627",
+        char: "核",
+        url: "https://kanji.jitenon.jp/kanjid/1627",
         "音読み": [
           "カク"
         ],
@@ -28726,8 +28749,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "栽",
-        "url": "https://kanji.jitenon.jp/kanjid/1699",
+        char: "栽",
+        url: "https://kanji.jitenon.jp/kanjid/1699",
         "音読み": [
           "サイ"
         ],
@@ -28741,8 +28764,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "桟",
-        "url": "https://kanji.jitenon.jp/kanjid/1706",
+        char: "桟",
+        url: "https://kanji.jitenon.jp/kanjid/1706",
         "音読み": [
           "サン"
         ],
@@ -28756,8 +28779,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "栓",
-        "url": "https://kanji.jitenon.jp/kanjid/1782",
+        char: "栓",
+        url: "https://kanji.jitenon.jp/kanjid/1782",
         "音読み": [
           "セン"
         ],
@@ -28771,8 +28794,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "桁",
-        "url": "https://kanji.jitenon.jp/kanjid/1991",
+        char: "桁",
+        url: "https://kanji.jitenon.jp/kanjid/1991",
         "音読み": [],
         "訓読み": [
           "けた"
@@ -28786,8 +28809,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "桧",
-        "url": "https://kanji.jitenon.jp/kanjie/2227",
+        char: "桧",
+        url: "https://kanji.jitenon.jp/kanjie/2227",
         "音読み": [
           "カイ"
         ],
@@ -28804,8 +28827,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "桓",
-        "url": "https://kanji.jitenon.jp/kanjie/2254",
+        char: "桓",
+        url: "https://kanji.jitenon.jp/kanjie/2254",
         "音読み": [
           "カン"
         ],
@@ -28819,8 +28842,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "桔",
-        "url": "https://kanji.jitenon.jp/kanjie/2293",
+        char: "桔",
+        url: "https://kanji.jitenon.jp/kanjie/2293",
         "音読み": [
           "キツ",
           "ケツ"
@@ -28835,8 +28858,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "桂",
-        "url": "https://kanji.jitenon.jp/kanjie/2351",
+        char: "桂",
+        url: "https://kanji.jitenon.jp/kanjie/2351",
         "音読み": [
           "ケイ"
         ],
@@ -28852,8 +28875,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "柴",
-        "url": "https://kanji.jitenon.jp/kanjie/2442",
+        char: "柴",
+        url: "https://kanji.jitenon.jp/kanjie/2442",
         "音読み": [
           "サイ"
         ],
@@ -28870,8 +28893,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "栖",
-        "url": "https://kanji.jitenon.jp/kanjie/2443",
+        char: "栖",
+        url: "https://kanji.jitenon.jp/kanjie/2443",
         "音読み": [
           "サイ",
           "セイ"
@@ -28890,8 +28913,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "栴",
-        "url": "https://kanji.jitenon.jp/kanjif/2636",
+        char: "栴",
+        url: "https://kanji.jitenon.jp/kanjif/2636",
         "音読み": [
           "セン"
         ],
@@ -28905,8 +28928,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "桐",
-        "url": "https://kanji.jitenon.jp/kanjif/2788",
+        char: "桐",
+        url: "https://kanji.jitenon.jp/kanjif/2788",
         "音読み": [
           "トウ",
           "ドウ"
@@ -28923,8 +28946,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "栗",
-        "url": "https://kanji.jitenon.jp/kanjif/2968",
+        char: "栗",
+        url: "https://kanji.jitenon.jp/kanjif/2968",
         "音読み": [
           "リ",
           "リツ"
@@ -28943,8 +28966,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "械",
-        "url": "https://kanji.jitenon.jp/kanji/457",
+        char: "械",
+        url: "https://kanji.jitenon.jp/kanji/457",
         "音読み": [
           "カイ"
         ],
@@ -28958,8 +28981,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "巣",
-        "url": "https://kanji.jitenon.jp/kanjib/555",
+        char: "巣",
+        url: "https://kanji.jitenon.jp/kanjib/555",
         "音読み": [
           "ソウ"
         ],
@@ -28975,8 +28998,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "梗",
-        "url": "https://kanji.jitenon.jp/kanjid/1999",
+        char: "梗",
+        url: "https://kanji.jitenon.jp/kanjid/1999",
         "音読み": [
           "コウ"
         ],
@@ -28990,8 +29013,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "梨",
-        "url": "https://kanji.jitenon.jp/kanjie/2079",
+        char: "梨",
+        url: "https://kanji.jitenon.jp/kanjie/2079",
         "音読み": [],
         "訓読み": [
           "なし"
@@ -29005,8 +29028,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "梧",
-        "url": "https://kanji.jitenon.jp/kanjie/2389",
+        char: "梧",
+        url: "https://kanji.jitenon.jp/kanjie/2389",
         "音読み": [
           "ゴ"
         ],
@@ -29022,8 +29045,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "梱",
-        "url": "https://kanji.jitenon.jp/kanjie/2428",
+        char: "梱",
+        url: "https://kanji.jitenon.jp/kanjie/2428",
         "音読み": [
           "コン"
         ],
@@ -29041,8 +29064,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "梓",
-        "url": "https://kanji.jitenon.jp/kanjie/2470",
+        char: "梓",
+        url: "https://kanji.jitenon.jp/kanjie/2470",
         "音読み": [
           "シ"
         ],
@@ -29059,8 +29082,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "梢",
-        "url": "https://kanji.jitenon.jp/kanjif/2562",
+        char: "梢",
+        url: "https://kanji.jitenon.jp/kanjif/2562",
         "音読み": [
           "ショウ"
         ],
@@ -29077,8 +29100,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "梯",
-        "url": "https://kanji.jitenon.jp/kanjif/2690",
+        char: "梯",
+        url: "https://kanji.jitenon.jp/kanjif/2690",
         "音読み": [
           "タイ",
           "テイ"
@@ -29095,8 +29118,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "桶",
-        "url": "https://kanji.jitenon.jp/kanjif/2789",
+        char: "桶",
+        url: "https://kanji.jitenon.jp/kanjif/2789",
         "音読み": [
           "トウ"
         ],
@@ -29112,8 +29135,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "梼",
-        "url": "https://kanji.jitenon.jp/kanjif/2792",
+        char: "梼",
+        url: "https://kanji.jitenon.jp/kanjif/2792",
         "音読み": [
           "トウ"
         ],
@@ -29130,8 +29153,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "梶",
-        "url": "https://kanji.jitenon.jp/kanjif/2856",
+        char: "梶",
+        url: "https://kanji.jitenon.jp/kanjif/2856",
         "音読み": [
           "ビ"
         ],
@@ -29148,8 +29171,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "椛",
-        "url": "https://kanji.jitenon.jp/kanjif/2937",
+        char: "椛",
+        url: "https://kanji.jitenon.jp/kanjif/2937",
         "音読み": [],
         "訓読み": [
           "かば",
@@ -29164,8 +29187,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "梁",
-        "url": "https://kanji.jitenon.jp/kanjif/2982",
+        char: "梁",
+        url: "https://kanji.jitenon.jp/kanjif/2982",
         "音読み": [
           "リョウ"
         ],
@@ -29184,8 +29207,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "森",
-        "url": "https://kanji.jitenon.jp/kanji/040",
+        char: "森",
+        url: "https://kanji.jitenon.jp/kanji/040",
         "音読み": [
           "シン"
         ],
@@ -29201,8 +29224,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "植",
-        "url": "https://kanji.jitenon.jp/kanji/337",
+        char: "植",
+        url: "https://kanji.jitenon.jp/kanji/337",
         "音読み": [
           "ショク"
         ],
@@ -29219,8 +29242,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "極",
-        "url": "https://kanji.jitenon.jp/kanji/486",
+        char: "極",
+        url: "https://kanji.jitenon.jp/kanji/486",
         "音読み": [
           "キョク",
           "ゴク"
@@ -29239,8 +29262,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "検",
-        "url": "https://kanji.jitenon.jp/kanjib/687",
+        char: "検",
+        url: "https://kanji.jitenon.jp/kanjib/687",
         "音読み": [
           "ケン"
         ],
@@ -29254,8 +29277,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "棒",
-        "url": "https://kanji.jitenon.jp/kanjib/982",
+        char: "棒",
+        url: "https://kanji.jitenon.jp/kanjib/982",
         "音読み": [
           "ボウ"
         ],
@@ -29269,8 +29292,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "棋",
-        "url": "https://kanji.jitenon.jp/kanjic/1360",
+        char: "棋",
+        url: "https://kanji.jitenon.jp/kanjic/1360",
         "音読み": [
           "キ"
         ],
@@ -29284,8 +29307,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "棺",
-        "url": "https://kanji.jitenon.jp/kanjid/1639",
+        char: "棺",
+        url: "https://kanji.jitenon.jp/kanjid/1639",
         "音読み": [
           "カン"
         ],
@@ -29299,8 +29322,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "棚",
-        "url": "https://kanji.jitenon.jp/kanjid/1810",
+        char: "棚",
+        url: "https://kanji.jitenon.jp/kanjid/1810",
         "音読み": [],
         "訓読み": [
           "たな"
@@ -29314,8 +29337,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "棟",
-        "url": "https://kanji.jitenon.jp/kanjid/1841",
+        char: "棟",
+        url: "https://kanji.jitenon.jp/kanjid/1841",
         "音読み": [
           "トウ"
         ],
@@ -29332,8 +29355,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "椅",
-        "url": "https://kanji.jitenon.jp/kanjid/1944",
+        char: "椅",
+        url: "https://kanji.jitenon.jp/kanjid/1944",
         "音読み": [
           "イ"
         ],
@@ -29347,8 +29370,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "椎",
-        "url": "https://kanji.jitenon.jp/kanjie/2063",
+        char: "椎",
+        url: "https://kanji.jitenon.jp/kanjie/2063",
         "音読み": [
           "ツイ"
         ],
@@ -29362,8 +29385,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "椙",
-        "url": "https://kanji.jitenon.jp/kanjif/2624",
+        char: "椙",
+        url: "https://kanji.jitenon.jp/kanjif/2624",
         "音読み": [],
         "訓読み": [
           "すぎ"
@@ -29377,8 +29400,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "棲",
-        "url": "https://kanji.jitenon.jp/kanjif/2626",
+        char: "棲",
+        url: "https://kanji.jitenon.jp/kanjif/2626",
         "音読み": [
           "セイ"
         ],
@@ -29396,8 +29419,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "棉",
-        "url": "https://kanji.jitenon.jp/kanjif/2934",
+        char: "棉",
+        url: "https://kanji.jitenon.jp/kanjif/2934",
         "音読み": [
           "メン"
         ],
@@ -29413,8 +29436,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "椋",
-        "url": "https://kanji.jitenon.jp/kanjif/2983",
+        char: "椋",
+        url: "https://kanji.jitenon.jp/kanjif/2983",
         "音読み": [
           "リョウ"
         ],
@@ -29430,8 +29453,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "楽",
-        "url": "https://kanji.jitenon.jp/kanji/098",
+        char: "楽",
+        url: "https://kanji.jitenon.jp/kanji/098",
         "音読み": [
           "ガク",
           "ラク"
@@ -29449,8 +29472,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "業",
-        "url": "https://kanji.jitenon.jp/kanji/275",
+        char: "業",
+        url: "https://kanji.jitenon.jp/kanji/275",
         "音読み": [
           "ギョウ",
           "ゴウ"
@@ -29467,8 +29490,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "棄",
-        "url": "https://kanji.jitenon.jp/kanjic/1359",
+        char: "棄",
+        url: "https://kanji.jitenon.jp/kanjic/1359",
         "音読み": [
           "キ"
         ],
@@ -29482,8 +29505,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "楼",
-        "url": "https://kanji.jitenon.jp/kanjid/1603",
+        char: "楼",
+        url: "https://kanji.jitenon.jp/kanjid/1603",
         "音読み": [
           "ロウ"
         ],
@@ -29497,8 +29520,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "楷",
-        "url": "https://kanji.jitenon.jp/kanjid/1961",
+        char: "楷",
+        url: "https://kanji.jitenon.jp/kanjid/1961",
         "音読み": [
           "カイ"
         ],
@@ -29512,8 +29535,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "楢",
-        "url": "https://kanji.jitenon.jp/kanjif/2511",
+        char: "楢",
+        url: "https://kanji.jitenon.jp/kanjif/2511",
         "音読み": [
           "シュウ",
           "ユウ"
@@ -29530,8 +29553,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "楯",
-        "url": "https://kanji.jitenon.jp/kanjif/2536",
+        char: "楯",
+        url: "https://kanji.jitenon.jp/kanjif/2536",
         "音読み": [
           "ジュン"
         ],
@@ -29547,8 +29570,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "楚",
-        "url": "https://kanji.jitenon.jp/kanjif/2653",
+        char: "楚",
+        url: "https://kanji.jitenon.jp/kanjif/2653",
         "音読み": [
           "ソ"
         ],
@@ -29567,8 +29590,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "楕",
-        "url": "https://kanji.jitenon.jp/kanjif/2685",
+        char: "楕",
+        url: "https://kanji.jitenon.jp/kanjif/2685",
         "音読み": [
           "タ",
           "ダ"
@@ -29583,8 +29606,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "椴",
-        "url": "https://kanji.jitenon.jp/kanjif/2711",
+        char: "椴",
+        url: "https://kanji.jitenon.jp/kanjif/2711",
         "音読み": [
           "タン",
           "ダン"
@@ -29602,8 +29625,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "椿",
-        "url": "https://kanji.jitenon.jp/kanjif/2746",
+        char: "椿",
+        url: "https://kanji.jitenon.jp/kanjif/2746",
         "音読み": [
           "チン"
         ],
@@ -29619,8 +29642,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "楠",
-        "url": "https://kanji.jitenon.jp/kanjif/2810",
+        char: "楠",
+        url: "https://kanji.jitenon.jp/kanjif/2810",
         "音読み": [
           "ナン"
         ],
@@ -29636,8 +29659,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "楳",
-        "url": "https://kanji.jitenon.jp/kanjif/2822",
+        char: "楳",
+        url: "https://kanji.jitenon.jp/kanjif/2822",
         "音読み": [
           "バイ"
         ],
@@ -29653,8 +29676,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "楓",
-        "url": "https://kanji.jitenon.jp/kanjif/2884",
+        char: "楓",
+        url: "https://kanji.jitenon.jp/kanjif/2884",
         "音読み": [
           "フウ"
         ],
@@ -29670,8 +29693,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "楊",
-        "url": "https://kanji.jitenon.jp/kanjif/2953",
+        char: "楊",
+        url: "https://kanji.jitenon.jp/kanjif/2953",
         "音読み": [
           "ヨウ"
         ],
@@ -29687,8 +29710,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "様",
-        "url": "https://kanji.jitenon.jp/kanji/429",
+        char: "様",
+        url: "https://kanji.jitenon.jp/kanji/429",
         "音読み": [
           "ヨウ"
         ],
@@ -29704,8 +29727,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "構",
-        "url": "https://kanji.jitenon.jp/kanjib/698",
+        char: "構",
+        url: "https://kanji.jitenon.jp/kanjib/698",
         "音読み": [
           "コウ"
         ],
@@ -29722,8 +29745,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "模",
-        "url": "https://kanji.jitenon.jp/kanjib/989",
+        char: "模",
+        url: "https://kanji.jitenon.jp/kanjib/989",
         "音読み": [
           "ボ",
           "モ"
@@ -29738,8 +29761,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "概",
-        "url": "https://kanji.jitenon.jp/kanjic/1340",
+        char: "概",
+        url: "https://kanji.jitenon.jp/kanjic/1340",
         "音読み": [
           "ガイ"
         ],
@@ -29753,8 +29776,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "榎",
-        "url": "https://kanji.jitenon.jp/kanjie/2207",
+        char: "榎",
+        url: "https://kanji.jitenon.jp/kanjie/2207",
         "音読み": [
           "カ"
         ],
@@ -29770,8 +29793,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "樺",
-        "url": "https://kanji.jitenon.jp/kanjie/2208",
+        char: "樺",
+        url: "https://kanji.jitenon.jp/kanjie/2208",
         "音読み": [
           "カ"
         ],
@@ -29787,8 +29810,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "榊",
-        "url": "https://kanji.jitenon.jp/kanjie/2446",
+        char: "榊",
+        url: "https://kanji.jitenon.jp/kanjie/2446",
         "音読み": [],
         "訓読み": [
           "さかき"
@@ -29802,8 +29825,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "榛",
-        "url": "https://kanji.jitenon.jp/kanjif/2595",
+        char: "榛",
+        url: "https://kanji.jitenon.jp/kanjif/2595",
         "音読み": [
           "シン"
         ],
@@ -29820,8 +29843,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "槙",
-        "url": "https://kanji.jitenon.jp/kanjif/2596",
+        char: "槙",
+        url: "https://kanji.jitenon.jp/kanjif/2596",
         "音読み": [
           "シン",
           "テン"
@@ -29838,8 +29861,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "槍",
-        "url": "https://kanji.jitenon.jp/kanjif/2659",
+        char: "槍",
+        url: "https://kanji.jitenon.jp/kanjif/2659",
         "音読み": [
           "ソウ"
         ],
@@ -29855,8 +29878,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "槌",
-        "url": "https://kanji.jitenon.jp/kanjif/2748",
+        char: "槌",
+        url: "https://kanji.jitenon.jp/kanjif/2748",
         "音読み": [
           "ツイ"
         ],
@@ -29873,8 +29896,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "横",
-        "url": "https://kanji.jitenon.jp/kanji/253",
+        char: "横",
+        url: "https://kanji.jitenon.jp/kanji/253",
         "音読み": [
           "オウ"
         ],
@@ -29890,8 +29913,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "標",
-        "url": "https://kanji.jitenon.jp/kanjib/597",
+        char: "標",
+        url: "https://kanji.jitenon.jp/kanjib/597",
         "音読み": [
           "ヒョウ"
         ],
@@ -29905,8 +29928,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "権",
-        "url": "https://kanji.jitenon.jp/kanjib/861",
+        char: "権",
+        url: "https://kanji.jitenon.jp/kanjib/861",
         "音読み": [
           "ケン",
           "ゴン"
@@ -29921,8 +29944,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "槽",
-        "url": "https://kanji.jitenon.jp/kanjid/1801",
+        char: "槽",
+        url: "https://kanji.jitenon.jp/kanjid/1801",
         "音読み": [
           "ソウ"
         ],
@@ -29936,8 +29959,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "槻",
-        "url": "https://kanji.jitenon.jp/kanjie/2275",
+        char: "槻",
+        url: "https://kanji.jitenon.jp/kanjie/2275",
         "音読み": [
           "キ"
         ],
@@ -29953,8 +29976,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "樟",
-        "url": "https://kanji.jitenon.jp/kanjif/2563",
+        char: "樟",
+        url: "https://kanji.jitenon.jp/kanjif/2563",
         "音読み": [
           "ショウ"
         ],
@@ -29971,8 +29994,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "樗",
-        "url": "https://kanji.jitenon.jp/kanjif/2727",
+        char: "樗",
+        url: "https://kanji.jitenon.jp/kanjif/2727",
         "音読み": [
           "チョ"
         ],
@@ -29988,8 +30011,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "樋",
-        "url": "https://kanji.jitenon.jp/kanjif/2790",
+        char: "樋",
+        url: "https://kanji.jitenon.jp/kanjif/2790",
         "音読み": [
           "トウ"
         ],
@@ -30006,8 +30029,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "橋",
-        "url": "https://kanji.jitenon.jp/kanji/274",
+        char: "橋",
+        url: "https://kanji.jitenon.jp/kanji/274",
         "音読み": [
           "キョウ"
         ],
@@ -30023,8 +30046,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "機",
-        "url": "https://kanji.jitenon.jp/kanji/474",
+        char: "機",
+        url: "https://kanji.jitenon.jp/kanji/474",
         "音読み": [
           "キ"
         ],
@@ -30040,8 +30063,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "樹",
-        "url": "https://kanji.jitenon.jp/kanjib/895",
+        char: "樹",
+        url: "https://kanji.jitenon.jp/kanjib/895",
         "音読み": [
           "ジュ"
         ],
@@ -30055,8 +30078,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "樫",
-        "url": "https://kanji.jitenon.jp/kanjie/2246",
+        char: "樫",
+        url: "https://kanji.jitenon.jp/kanjie/2246",
         "音読み": [],
         "訓読み": [
           "かし"
@@ -30070,8 +30093,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "橘",
-        "url": "https://kanji.jitenon.jp/kanjie/2294",
+        char: "橘",
+        url: "https://kanji.jitenon.jp/kanjie/2294",
         "音読み": [
           "キツ"
         ],
@@ -30087,8 +30110,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "樵",
-        "url": "https://kanji.jitenon.jp/kanjif/2564",
+        char: "樵",
+        url: "https://kanji.jitenon.jp/kanjif/2564",
         "音読み": [
           "ショウ"
         ],
@@ -30106,8 +30129,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "橡",
-        "url": "https://kanji.jitenon.jp/kanjif/2565",
+        char: "橡",
+        url: "https://kanji.jitenon.jp/kanjif/2565",
         "音読み": [
           "ショウ",
           "ゾウ"
@@ -30126,8 +30149,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "樽",
-        "url": "https://kanji.jitenon.jp/kanjif/2677",
+        char: "樽",
+        url: "https://kanji.jitenon.jp/kanjif/2677",
         "音読み": [
           "ソン"
         ],
@@ -30143,8 +30166,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "橢",
-        "url": "https://kanji.jitenon.jp/kanjif/2686",
+        char: "橢",
+        url: "https://kanji.jitenon.jp/kanjif/2686",
         "音読み": [
           "タ",
           "ダ"
@@ -30159,8 +30182,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "檜",
-        "url": "https://kanji.jitenon.jp/kanjie/2226",
+        char: "檜",
+        url: "https://kanji.jitenon.jp/kanjie/2226",
         "音読み": [
           "カイ"
         ],
@@ -30177,8 +30200,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "橿",
-        "url": "https://kanji.jitenon.jp/kanjie/2322",
+        char: "橿",
+        url: "https://kanji.jitenon.jp/kanjie/2322",
         "音読み": [
           "キョウ"
         ],
@@ -30194,8 +30217,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "檎",
-        "url": "https://kanji.jitenon.jp/kanjie/2329",
+        char: "檎",
+        url: "https://kanji.jitenon.jp/kanjie/2329",
         "音読み": [
           "キン",
           "ゴ"
@@ -30210,8 +30233,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "檀",
-        "url": "https://kanji.jitenon.jp/kanjif/2712",
+        char: "檀",
+        url: "https://kanji.jitenon.jp/kanjif/2712",
         "音読み": [
           "タン",
           "ダン"
@@ -30228,8 +30251,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "檮",
-        "url": "https://kanji.jitenon.jp/kanjif/2791",
+        char: "檮",
+        url: "https://kanji.jitenon.jp/kanjif/2791",
         "音読み": [
           "トウ"
         ],
@@ -30246,8 +30269,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "麓",
-        "url": "https://kanji.jitenon.jp/kanjie/2132",
+        char: "麓",
+        url: "https://kanji.jitenon.jp/kanjie/2132",
         "音読み": [
           "ロク"
         ],
@@ -30263,8 +30286,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "櫛",
-        "url": "https://kanji.jitenon.jp/kanjie/2487",
+        char: "櫛",
+        url: "https://kanji.jitenon.jp/kanjie/2487",
         "音読み": [
           "シツ"
         ],
@@ -30281,8 +30304,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "欄",
-        "url": "https://kanji.jitenon.jp/kanjic/1301",
+        char: "欄",
+        url: "https://kanji.jitenon.jp/kanjic/1301",
         "音読み": [
           "ラン"
         ],
@@ -30298,13 +30321,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04006",
-    "radical": "止",
-    "reading": "とめる・とめへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04006",
+    radical: "止",
+    reading: "とめる・とめへん",
+    kanji: [
       {
-        "char": "止",
-        "url": "https://kanji.jitenon.jp/kanji/147",
+        char: "止",
+        url: "https://kanji.jitenon.jp/kanji/147",
         "音読み": [
           "シ"
         ],
@@ -30321,8 +30344,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "正",
-        "url": "https://kanji.jitenon.jp/kanji/038",
+        char: "正",
+        url: "https://kanji.jitenon.jp/kanji/038",
         "音読み": [
           "ショウ",
           "セイ"
@@ -30341,8 +30364,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "此",
-        "url": "https://kanji.jitenon.jp/kanjie/2471",
+        char: "此",
+        url: "https://kanji.jitenon.jp/kanjie/2471",
         "音読み": [
           "シ"
         ],
@@ -30361,8 +30384,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "歩",
-        "url": "https://kanji.jitenon.jp/kanji/216",
+        char: "歩",
+        url: "https://kanji.jitenon.jp/kanji/216",
         "音読み": [
           "フ",
           "ブ",
@@ -30381,8 +30404,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "武",
-        "url": "https://kanji.jitenon.jp/kanjib/800",
+        char: "武",
+        url: "https://kanji.jitenon.jp/kanjib/800",
         "音読み": [
           "ブ",
           "ム"
@@ -30397,8 +30420,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "歳",
-        "url": "https://kanji.jitenon.jp/kanjic/1106",
+        char: "歳",
+        url: "https://kanji.jitenon.jp/kanjic/1106",
         "音読み": [
           "サイ",
           "セイ"
@@ -30413,8 +30436,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "歴",
-        "url": "https://kanji.jitenon.jp/kanjib/635",
+        char: "歴",
+        url: "https://kanji.jitenon.jp/kanjib/635",
         "音読み": [
           "レキ"
         ],
@@ -30430,13 +30453,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04008",
-    "radical": "日",
-    "reading": "ひ・ひへん・にち・にちへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04008",
+    radical: "日",
+    reading: "ひ・ひへん・にち・にちへん",
+    kanji: [
       {
-        "char": "日",
-        "url": "https://kanji.jitenon.jp/kanji/065",
+        char: "日",
+        url: "https://kanji.jitenon.jp/kanji/065",
         "音読み": [
           "ジツ",
           "ニチ"
@@ -30454,8 +30477,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "旧",
-        "url": "https://kanji.jitenon.jp/kanjib/675",
+        char: "旧",
+        url: "https://kanji.jitenon.jp/kanjib/675",
         "音読み": [
           "キュウ"
         ],
@@ -30469,8 +30492,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "旦",
-        "url": "https://kanji.jitenon.jp/kanjie/2056",
+        char: "旦",
+        url: "https://kanji.jitenon.jp/kanjie/2056",
         "音読み": [
           "タン",
           "ダン"
@@ -30485,8 +30508,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "早",
-        "url": "https://kanji.jitenon.jp/kanji/052",
+        char: "早",
+        url: "https://kanji.jitenon.jp/kanji/052",
         "音読み": [
           "サッ",
           "ソウ"
@@ -30505,8 +30528,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "旨",
-        "url": "https://kanji.jitenon.jp/kanjic/1117",
+        char: "旨",
+        url: "https://kanji.jitenon.jp/kanjic/1117",
         "音読み": [
           "シ"
         ],
@@ -30522,8 +30545,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "旬",
-        "url": "https://kanji.jitenon.jp/kanjic/1135",
+        char: "旬",
+        url: "https://kanji.jitenon.jp/kanjic/1135",
         "音読み": [
           "シュン",
           "ジュン"
@@ -30538,8 +30561,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "旭",
-        "url": "https://kanji.jitenon.jp/kanjie/2327",
+        char: "旭",
+        url: "https://kanji.jitenon.jp/kanjie/2327",
         "音読み": [
           "キョク"
         ],
@@ -30555,8 +30578,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "明",
-        "url": "https://kanji.jitenon.jp/kanji/228",
+        char: "明",
+        url: "https://kanji.jitenon.jp/kanji/228",
         "音読み": [
           "ミョウ",
           "メイ"
@@ -30581,8 +30604,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "昔",
-        "url": "https://kanji.jitenon.jp/kanji/314",
+        char: "昔",
+        url: "https://kanji.jitenon.jp/kanji/314",
         "音読み": [
           "シャク",
           "セキ"
@@ -30599,8 +30622,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "易",
-        "url": "https://kanji.jitenon.jp/kanjib/647",
+        char: "易",
+        url: "https://kanji.jitenon.jp/kanjib/647",
         "音読み": [
           "イ",
           "エキ"
@@ -30617,8 +30640,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "昇",
-        "url": "https://kanji.jitenon.jp/kanjic/1444",
+        char: "昇",
+        url: "https://kanji.jitenon.jp/kanjic/1444",
         "音読み": [
           "ショウ"
         ],
@@ -30634,8 +30657,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "昆",
-        "url": "https://kanji.jitenon.jp/kanjid/1694",
+        char: "昆",
+        url: "https://kanji.jitenon.jp/kanjid/1694",
         "音読み": [
           "コン"
         ],
@@ -30649,8 +30672,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "旺",
-        "url": "https://kanji.jitenon.jp/kanjid/1954",
+        char: "旺",
+        url: "https://kanji.jitenon.jp/kanjid/1954",
         "音読み": [
           "オウ"
         ],
@@ -30664,8 +30687,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "昂",
-        "url": "https://kanji.jitenon.jp/kanjie/2399",
+        char: "昂",
+        url: "https://kanji.jitenon.jp/kanjie/2399",
         "音読み": [
           "コウ",
           "ゴウ"
@@ -30684,8 +30707,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "昏",
-        "url": "https://kanji.jitenon.jp/kanjie/2427",
+        char: "昏",
+        url: "https://kanji.jitenon.jp/kanjie/2427",
         "音読み": [
           "コン"
         ],
@@ -30703,8 +30726,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "昌",
-        "url": "https://kanji.jitenon.jp/kanjif/2561",
+        char: "昌",
+        url: "https://kanji.jitenon.jp/kanjif/2561",
         "音読み": [
           "ショウ"
         ],
@@ -30720,8 +30743,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "春",
-        "url": "https://kanji.jitenon.jp/kanji/158",
+        char: "春",
+        url: "https://kanji.jitenon.jp/kanji/158",
         "音読み": [
           "シュン"
         ],
@@ -30737,8 +30760,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "星",
-        "url": "https://kanji.jitenon.jp/kanji/170",
+        char: "星",
+        url: "https://kanji.jitenon.jp/kanji/170",
         "音読み": [
           "ショウ",
           "セイ"
@@ -30755,8 +30778,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "昼",
-        "url": "https://kanji.jitenon.jp/kanji/189",
+        char: "昼",
+        url: "https://kanji.jitenon.jp/kanji/189",
         "音読み": [
           "チュウ"
         ],
@@ -30772,8 +30795,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "昭",
-        "url": "https://kanji.jitenon.jp/kanji/332",
+        char: "昭",
+        url: "https://kanji.jitenon.jp/kanji/332",
         "音読み": [
           "ショウ"
         ],
@@ -30787,8 +30810,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "昨",
-        "url": "https://kanji.jitenon.jp/kanjib/510",
+        char: "昨",
+        url: "https://kanji.jitenon.jp/kanjib/510",
         "音読み": [
           "サク"
         ],
@@ -30802,8 +30825,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "映",
-        "url": "https://kanji.jitenon.jp/kanjib/828",
+        char: "映",
+        url: "https://kanji.jitenon.jp/kanjib/828",
         "音読み": [
           "エイ"
         ],
@@ -30821,8 +30844,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "是",
-        "url": "https://kanji.jitenon.jp/kanjic/1159",
+        char: "是",
+        url: "https://kanji.jitenon.jp/kanjic/1159",
         "音読み": [
           "ゼ"
         ],
@@ -30836,8 +30859,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "昧",
-        "url": "https://kanji.jitenon.jp/kanjie/2107",
+        char: "昧",
+        url: "https://kanji.jitenon.jp/kanjie/2107",
         "音読み": [
           "マイ"
         ],
@@ -30851,8 +30874,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "時",
-        "url": "https://kanji.jitenon.jp/kanji/148",
+        char: "時",
+        url: "https://kanji.jitenon.jp/kanji/148",
         "音読み": [
           "ジ"
         ],
@@ -30868,8 +30891,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "晃",
-        "url": "https://kanji.jitenon.jp/kanjie/2400",
+        char: "晃",
+        url: "https://kanji.jitenon.jp/kanjie/2400",
         "音読み": [
           "コウ"
         ],
@@ -30886,8 +30909,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "晒",
-        "url": "https://kanji.jitenon.jp/kanjie/2441",
+        char: "晒",
+        url: "https://kanji.jitenon.jp/kanjie/2441",
         "音読み": [
           "サイ"
         ],
@@ -30903,8 +30926,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "晋",
-        "url": "https://kanji.jitenon.jp/kanjif/2594",
+        char: "晋",
+        url: "https://kanji.jitenon.jp/kanjif/2594",
         "音読み": [
           "シン"
         ],
@@ -30920,8 +30943,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "晦",
-        "url": "https://kanji.jitenon.jp/kanjie/2225",
+        char: "晦",
+        url: "https://kanji.jitenon.jp/kanjie/2225",
         "音読み": [
           "カイ"
         ],
@@ -30940,8 +30963,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "晴",
-        "url": "https://kanji.jitenon.jp/kanji/172",
+        char: "晴",
+        url: "https://kanji.jitenon.jp/kanji/172",
         "音読み": [
           "セイ"
         ],
@@ -30958,8 +30981,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "暑",
-        "url": "https://kanji.jitenon.jp/kanji/328",
+        char: "暑",
+        url: "https://kanji.jitenon.jp/kanji/328",
         "音読み": [
           "ショ"
         ],
@@ -30975,8 +30998,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "景",
-        "url": "https://kanji.jitenon.jp/kanji/492",
+        char: "景",
+        url: "https://kanji.jitenon.jp/kanji/492",
         "音読み": [
           "ケイ"
         ],
@@ -30990,8 +31013,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "晩",
-        "url": "https://kanji.jitenon.jp/kanjib/969",
+        char: "晩",
+        url: "https://kanji.jitenon.jp/kanjib/969",
         "音読み": [
           "バン"
         ],
@@ -31005,8 +31028,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "普",
-        "url": "https://kanji.jitenon.jp/kanjic/1256",
+        char: "普",
+        url: "https://kanji.jitenon.jp/kanjic/1256",
         "音読み": [
           "フ"
         ],
@@ -31020,8 +31043,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "晶",
-        "url": "https://kanji.jitenon.jp/kanjic/1439",
+        char: "晶",
+        url: "https://kanji.jitenon.jp/kanjic/1439",
         "音読み": [
           "ショウ"
         ],
@@ -31035,8 +31058,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "暁",
-        "url": "https://kanji.jitenon.jp/kanjid/1660",
+        char: "暁",
+        url: "https://kanji.jitenon.jp/kanjid/1660",
         "音読み": [
           "ギョウ"
         ],
@@ -31052,8 +31075,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "智",
-        "url": "https://kanji.jitenon.jp/kanjif/2719",
+        char: "智",
+        url: "https://kanji.jitenon.jp/kanjif/2719",
         "音読み": [
           "チ"
         ],
@@ -31070,8 +31093,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "暗",
-        "url": "https://kanji.jitenon.jp/kanji/242",
+        char: "暗",
+        url: "https://kanji.jitenon.jp/kanji/242",
         "音読み": [
           "アン"
         ],
@@ -31087,8 +31110,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "暖",
-        "url": "https://kanji.jitenon.jp/kanjib/942",
+        char: "暖",
+        url: "https://kanji.jitenon.jp/kanjib/942",
         "音読み": [
           "ダン"
         ],
@@ -31107,8 +31130,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "暇",
-        "url": "https://kanji.jitenon.jp/kanjic/1029",
+        char: "暇",
+        url: "https://kanji.jitenon.jp/kanjic/1029",
         "音読み": [
           "カ"
         ],
@@ -31124,8 +31147,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "暮",
-        "url": "https://kanji.jitenon.jp/kanjib/979",
+        char: "暮",
+        url: "https://kanji.jitenon.jp/kanjib/979",
         "音読み": [
           "ボ"
         ],
@@ -31142,8 +31165,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "暦",
-        "url": "https://kanji.jitenon.jp/kanjic/1311",
+        char: "暦",
+        url: "https://kanji.jitenon.jp/kanjic/1311",
         "音読み": [
           "レキ"
         ],
@@ -31159,8 +31182,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "暢",
-        "url": "https://kanji.jitenon.jp/kanjif/2737",
+        char: "暢",
+        url: "https://kanji.jitenon.jp/kanjif/2737",
         "音読み": [
           "チョウ"
         ],
@@ -31178,8 +31201,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "暴",
-        "url": "https://kanji.jitenon.jp/kanjib/811",
+        char: "暴",
+        url: "https://kanji.jitenon.jp/kanjib/811",
         "音読み": [
           "バク",
           "ボウ"
@@ -31197,8 +31220,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "暫",
-        "url": "https://kanji.jitenon.jp/kanjic/1422",
+        char: "暫",
+        url: "https://kanji.jitenon.jp/kanjic/1422",
         "音読み": [
           "ザン"
         ],
@@ -31212,8 +31235,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "曇",
-        "url": "https://kanji.jitenon.jp/kanjic/1221",
+        char: "曇",
+        url: "https://kanji.jitenon.jp/kanjic/1221",
         "音読み": [
           "ドン"
         ],
@@ -31229,8 +31252,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "曖",
-        "url": "https://kanji.jitenon.jp/kanjid/1939",
+        char: "曖",
+        url: "https://kanji.jitenon.jp/kanjid/1939",
         "音読み": [
           "アイ"
         ],
@@ -31244,8 +31267,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "曙",
-        "url": "https://kanji.jitenon.jp/kanjif/2540",
+        char: "曙",
+        url: "https://kanji.jitenon.jp/kanjif/2540",
         "音読み": [
           "ショ"
         ],
@@ -31261,8 +31284,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "曜",
-        "url": "https://kanji.jitenon.jp/kanji/234",
+        char: "曜",
+        url: "https://kanji.jitenon.jp/kanji/234",
         "音読み": [
           "ヨウ"
         ],
@@ -31276,8 +31299,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "曝",
-        "url": "https://kanji.jitenon.jp/kanjif/2831",
+        char: "曝",
+        url: "https://kanji.jitenon.jp/kanjif/2831",
         "音読み": [
           "バク",
           "ホク"
@@ -31298,13 +31321,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04009",
-    "radical": "文",
-    "reading": "ぶん・ぶんにょう",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04009",
+    radical: "文",
+    reading: "ぶん・ぶんにょう",
+    kanji: [
       {
-        "char": "文",
-        "url": "https://kanji.jitenon.jp/kanji/075",
+        char: "文",
+        url: "https://kanji.jitenon.jp/kanji/075",
         "音読み": [
           "ブン",
           "モン"
@@ -31321,8 +31344,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "斑",
-        "url": "https://kanji.jitenon.jp/kanjie/2091",
+        char: "斑",
+        url: "https://kanji.jitenon.jp/kanjie/2091",
         "音読み": [
           "ハン"
         ],
@@ -31336,8 +31359,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "斐",
-        "url": "https://kanji.jitenon.jp/kanjif/2850",
+        char: "斐",
+        url: "https://kanji.jitenon.jp/kanjif/2850",
         "音読み": [
           "ヒ"
         ],
@@ -31353,8 +31376,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "斌",
-        "url": "https://kanji.jitenon.jp/kanjif/2869",
+        char: "斌",
+        url: "https://kanji.jitenon.jp/kanjif/2869",
         "音読み": [
           "ヒン"
         ],
@@ -31372,13 +31395,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04010",
-    "radical": "欠",
-    "reading": "あくび・かける・けんづくり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04010",
+    radical: "欠",
+    reading: "あくび・かける・けんづくり",
+    kanji: [
       {
-        "char": "欠",
-        "url": "https://kanji.jitenon.jp/kanji/495",
+        char: "欠",
+        url: "https://kanji.jitenon.jp/kanji/495",
         "音読み": [
           "ケツ"
         ],
@@ -31395,8 +31418,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "次",
-        "url": "https://kanji.jitenon.jp/kanji/307",
+        char: "次",
+        url: "https://kanji.jitenon.jp/kanji/307",
         "音読み": [
           "シ",
           "ジ"
@@ -31414,8 +31437,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "欧",
-        "url": "https://kanji.jitenon.jp/kanjic/1327",
+        char: "欧",
+        url: "https://kanji.jitenon.jp/kanjic/1327",
         "音読み": [
           "オウ"
         ],
@@ -31429,8 +31452,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "欣",
-        "url": "https://kanji.jitenon.jp/kanjie/2330",
+        char: "欣",
+        url: "https://kanji.jitenon.jp/kanjie/2330",
         "音読み": [
           "キン",
           "ゴン"
@@ -31447,8 +31470,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "欲",
-        "url": "https://kanji.jitenon.jp/kanjib/995",
+        char: "欲",
+        url: "https://kanji.jitenon.jp/kanjib/995",
         "音読み": [
           "ヨク"
         ],
@@ -31465,8 +31488,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "欺",
-        "url": "https://kanji.jitenon.jp/kanjic/1366",
+        char: "欺",
+        url: "https://kanji.jitenon.jp/kanjic/1366",
         "音読み": [
           "ギ"
         ],
@@ -31482,8 +31505,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "款",
-        "url": "https://kanji.jitenon.jp/kanjid/1642",
+        char: "款",
+        url: "https://kanji.jitenon.jp/kanjid/1642",
         "音読み": [
           "カン"
         ],
@@ -31497,8 +31520,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "欽",
-        "url": "https://kanji.jitenon.jp/kanjie/2331",
+        char: "欽",
+        url: "https://kanji.jitenon.jp/kanjie/2331",
         "音読み": [
           "キン"
         ],
@@ -31515,8 +31538,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "歌",
-        "url": "https://kanji.jitenon.jp/kanji/090",
+        char: "歌",
+        url: "https://kanji.jitenon.jp/kanji/090",
         "音読み": [
           "カ"
         ],
@@ -31533,8 +31556,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "歓",
-        "url": "https://kanji.jitenon.jp/kanjic/1041",
+        char: "歓",
+        url: "https://kanji.jitenon.jp/kanjic/1041",
         "音読み": [
           "カン"
         ],
@@ -31548,8 +31571,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "歎",
-        "url": "https://kanji.jitenon.jp/kanjif/2713",
+        char: "歎",
+        url: "https://kanji.jitenon.jp/kanjif/2713",
         "音読み": [
           "タン"
         ],
@@ -31568,13 +31591,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04011",
-    "radical": "牛 牜",
-    "reading": "うし・うしへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04011",
+    radical: "牛 牜",
+    reading: "うし・うしへん",
+    kanji: [
       {
-        "char": "牛",
-        "url": "https://kanji.jitenon.jp/kanji/108",
+        char: "牛",
+        url: "https://kanji.jitenon.jp/kanji/108",
         "音読み": [
           "ギュウ"
         ],
@@ -31590,8 +31613,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "牝",
-        "url": "https://kanji.jitenon.jp/kanjif/2871",
+        char: "牝",
+        url: "https://kanji.jitenon.jp/kanjif/2871",
         "音読み": [
           "ヒン"
         ],
@@ -31608,8 +31631,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "牟",
-        "url": "https://kanji.jitenon.jp/kanjif/2921",
+        char: "牟",
+        url: "https://kanji.jitenon.jp/kanjif/2921",
         "音読み": [
           "ボウ",
           "ム"
@@ -31627,8 +31650,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "牡",
-        "url": "https://kanji.jitenon.jp/kanjif/2905",
+        char: "牡",
+        url: "https://kanji.jitenon.jp/kanjif/2905",
         "音読み": [
           "ボ",
           "ボウ"
@@ -31646,8 +31669,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "物",
-        "url": "https://kanji.jitenon.jp/kanji/409",
+        char: "物",
+        url: "https://kanji.jitenon.jp/kanji/409",
         "音読み": [
           "ブツ",
           "モツ"
@@ -31664,8 +31687,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "牧",
-        "url": "https://kanji.jitenon.jp/kanjib/613",
+        char: "牧",
+        url: "https://kanji.jitenon.jp/kanjib/613",
         "音読み": [
           "ボク"
         ],
@@ -31681,8 +31704,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "牲",
-        "url": "https://kanji.jitenon.jp/kanjic/1464",
+        char: "牲",
+        url: "https://kanji.jitenon.jp/kanjic/1464",
         "音読み": [
           "セイ"
         ],
@@ -31696,8 +31719,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "特",
-        "url": "https://kanji.jitenon.jp/kanjib/583",
+        char: "特",
+        url: "https://kanji.jitenon.jp/kanjib/583",
         "音読み": [
           "トク"
         ],
@@ -31711,8 +31734,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "牽",
-        "url": "https://kanji.jitenon.jp/kanjie/2366",
+        char: "牽",
+        url: "https://kanji.jitenon.jp/kanjie/2366",
         "音読み": [
           "ケン"
         ],
@@ -31729,8 +31752,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "犀",
-        "url": "https://kanji.jitenon.jp/kanjie/2444",
+        char: "犀",
+        url: "https://kanji.jitenon.jp/kanjie/2444",
         "音読み": [
           "サイ",
           "セイ"
@@ -31748,8 +31771,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "犠",
-        "url": "https://kanji.jitenon.jp/kanjic/1365",
+        char: "犠",
+        url: "https://kanji.jitenon.jp/kanjic/1365",
         "音読み": [
           "ギ"
         ],
@@ -31765,13 +31788,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04012",
-    "radical": "攴 攵",
-    "reading": "ぼくにょう・ぼくづくり・とまた・のぶん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04012",
+    radical: "攴 攵",
+    reading: "ぼくにょう・ぼくづくり・とまた・のぶん",
+    kanji: [
       {
-        "char": "改",
-        "url": "https://kanji.jitenon.jp/kanji/458",
+        char: "改",
+        url: "https://kanji.jitenon.jp/kanji/458",
         "音読み": [
           "カイ"
         ],
@@ -31788,8 +31811,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "攻",
-        "url": "https://kanji.jitenon.jp/kanjic/1097",
+        char: "攻",
+        url: "https://kanji.jitenon.jp/kanjic/1097",
         "音読み": [
           "コウ"
         ],
@@ -31805,8 +31828,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "孜",
-        "url": "https://kanji.jitenon.jp/kanjie/2468",
+        char: "孜",
+        url: "https://kanji.jitenon.jp/kanjie/2468",
         "音読み": [
           "シ"
         ],
@@ -31822,8 +31845,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "放",
-        "url": "https://kanji.jitenon.jp/kanji/413",
+        char: "放",
+        url: "https://kanji.jitenon.jp/kanji/413",
         "音読み": [
           "ホウ"
         ],
@@ -31842,8 +31865,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "故",
-        "url": "https://kanji.jitenon.jp/kanjib/694",
+        char: "故",
+        url: "https://kanji.jitenon.jp/kanjib/694",
         "音読み": [
           "コ"
         ],
@@ -31859,8 +31882,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "政",
-        "url": "https://kanji.jitenon.jp/kanjib/746",
+        char: "政",
+        url: "https://kanji.jitenon.jp/kanjib/746",
         "音読み": [
           "ショウ",
           "セイ"
@@ -31877,8 +31900,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "敏",
-        "url": "https://kanji.jitenon.jp/kanjic/1250",
+        char: "敏",
+        url: "https://kanji.jitenon.jp/kanjic/1250",
         "音読み": [
           "ビン"
         ],
@@ -31892,8 +31915,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "教",
-        "url": "https://kanji.jitenon.jp/kanji/110",
+        char: "教",
+        url: "https://kanji.jitenon.jp/kanji/110",
         "音読み": [
           "キョウ"
         ],
@@ -31910,8 +31933,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "救",
-        "url": "https://kanji.jitenon.jp/kanji/477",
+        char: "救",
+        url: "https://kanji.jitenon.jp/kanji/477",
         "音読み": [
           "キュウ"
         ],
@@ -31927,8 +31950,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "敗",
-        "url": "https://kanji.jitenon.jp/kanjib/589",
+        char: "敗",
+        url: "https://kanji.jitenon.jp/kanjib/589",
         "音読み": [
           "ハイ"
         ],
@@ -31944,8 +31967,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "散",
-        "url": "https://kanji.jitenon.jp/kanjib/516",
+        char: "散",
+        url: "https://kanji.jitenon.jp/kanjib/516",
         "音読み": [
           "サン"
         ],
@@ -31964,8 +31987,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "敬",
-        "url": "https://kanji.jitenon.jp/kanjib/853",
+        char: "敬",
+        url: "https://kanji.jitenon.jp/kanjib/853",
         "音読み": [
           "ケイ"
         ],
@@ -31981,8 +32004,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "敢",
-        "url": "https://kanji.jitenon.jp/kanjic/1352",
+        char: "敢",
+        url: "https://kanji.jitenon.jp/kanjic/1352",
         "音読み": [
           "カン"
         ],
@@ -31996,8 +32019,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "敦",
-        "url": "https://kanji.jitenon.jp/kanjif/2807",
+        char: "敦",
+        url: "https://kanji.jitenon.jp/kanjif/2807",
         "音読み": [
           "トン"
         ],
@@ -32013,8 +32036,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "数",
-        "url": "https://kanji.jitenon.jp/kanji/168",
+        char: "数",
+        url: "https://kanji.jitenon.jp/kanji/168",
         "音読み": [
           "ス",
           "スウ"
@@ -32032,8 +32055,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "敵",
-        "url": "https://kanji.jitenon.jp/kanjib/776",
+        char: "敵",
+        url: "https://kanji.jitenon.jp/kanjib/776",
         "音読み": [
           "テキ"
         ],
@@ -32049,8 +32072,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "敷",
-        "url": "https://kanji.jitenon.jp/kanjic/1255",
+        char: "敷",
+        url: "https://kanji.jitenon.jp/kanjic/1255",
         "音読み": [
           "フ"
         ],
@@ -32066,8 +32089,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "整",
-        "url": "https://kanji.jitenon.jp/kanji/345",
+        char: "整",
+        url: "https://kanji.jitenon.jp/kanji/345",
         "音読み": [
           "セイ"
         ],
@@ -32084,8 +32107,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "厳",
-        "url": "https://kanji.jitenon.jp/kanjib/862",
+        char: "厳",
+        url: "https://kanji.jitenon.jp/kanjib/862",
         "音読み": [
           "ゲン",
           "ゴン"
@@ -32105,13 +32128,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04013",
-    "radical": "戶 戸",
-    "reading": "と・とだれ・とかんむり・とびらのと",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04013",
+    radical: "戶 戸",
+    reading: "と・とだれ・とかんむり・とびらのと",
+    kanji: [
       {
-        "char": "戸",
-        "url": "https://kanji.jitenon.jp/kanji/122",
+        char: "戸",
+        url: "https://kanji.jitenon.jp/kanji/122",
         "音読み": [
           "コ"
         ],
@@ -32127,8 +32150,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "戻",
-        "url": "https://kanji.jitenon.jp/kanjid/1935",
+        char: "戻",
+        url: "https://kanji.jitenon.jp/kanjid/1935",
         "音読み": [
           "レイ"
         ],
@@ -32145,8 +32168,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "所",
-        "url": "https://kanji.jitenon.jp/kanji/329",
+        char: "所",
+        url: "https://kanji.jitenon.jp/kanji/329",
         "音読み": [
           "ショ"
         ],
@@ -32162,8 +32185,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "房",
-        "url": "https://kanji.jitenon.jp/kanjid/1565",
+        char: "房",
+        url: "https://kanji.jitenon.jp/kanjid/1565",
         "音読み": [
           "ボウ"
         ],
@@ -32179,8 +32202,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "扇",
-        "url": "https://kanji.jitenon.jp/kanjic/1164",
+        char: "扇",
+        url: "https://kanji.jitenon.jp/kanjic/1164",
         "音読み": [
           "セン"
         ],
@@ -32196,8 +32219,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "扉",
-        "url": "https://kanji.jitenon.jp/kanjid/1868",
+        char: "扉",
+        url: "https://kanji.jitenon.jp/kanjid/1868",
         "音読み": [
           "ヒ"
         ],
@@ -32215,13 +32238,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04014",
-    "radical": "曰",
-    "reading": "いわく・ひらび",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04014",
+    radical: "曰",
+    reading: "いわく・ひらび",
+    kanji: [
       {
-        "char": "曲",
-        "url": "https://kanji.jitenon.jp/kanji/276",
+        char: "曲",
+        url: "https://kanji.jitenon.jp/kanji/276",
         "音読み": [
           "キョク"
         ],
@@ -32238,8 +32261,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "曳",
-        "url": "https://kanji.jitenon.jp/kanjie/2176",
+        char: "曳",
+        url: "https://kanji.jitenon.jp/kanjie/2176",
         "音読み": [
           "エイ"
         ],
@@ -32255,8 +32278,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "更",
-        "url": "https://kanji.jitenon.jp/kanjic/1094",
+        char: "更",
+        url: "https://kanji.jitenon.jp/kanjic/1094",
         "音読み": [
           "コウ"
         ],
@@ -32274,8 +32297,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "沓",
-        "url": "https://kanji.jitenon.jp/kanjif/2787",
+        char: "沓",
+        url: "https://kanji.jitenon.jp/kanjif/2787",
         "音読み": [
           "トウ"
         ],
@@ -32293,8 +32316,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "冒",
-        "url": "https://kanji.jitenon.jp/kanjic/1272",
+        char: "冒",
+        url: "https://kanji.jitenon.jp/kanjic/1272",
         "音読み": [
           "ボウ"
         ],
@@ -32310,8 +32333,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "書",
-        "url": "https://kanji.jitenon.jp/kanji/159",
+        char: "書",
+        url: "https://kanji.jitenon.jp/kanji/159",
         "音読み": [
           "ショ"
         ],
@@ -32327,8 +32350,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "曹",
-        "url": "https://kanji.jitenon.jp/kanjid/1802",
+        char: "曹",
+        url: "https://kanji.jitenon.jp/kanjid/1802",
         "音読み": [
           "ソウ"
         ],
@@ -32342,8 +32365,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "曽",
-        "url": "https://kanji.jitenon.jp/kanjie/2045",
+        char: "曽",
+        url: "https://kanji.jitenon.jp/kanjie/2045",
         "音読み": [
           "ソウ",
           "ゾ"
@@ -32358,8 +32381,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "最",
-        "url": "https://kanji.jitenon.jp/kanjib/507",
+        char: "最",
+        url: "https://kanji.jitenon.jp/kanjib/507",
         "音読み": [
           "サイ"
         ],
@@ -32375,8 +32398,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "替",
-        "url": "https://kanji.jitenon.jp/kanjic/1175",
+        char: "替",
+        url: "https://kanji.jitenon.jp/kanjic/1175",
         "音読み": [
           "タイ"
         ],
@@ -32395,13 +32418,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04015",
-    "radical": "斤",
-    "reading": "おのづくり・おの・きん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04015",
+    radical: "斤",
+    reading: "おのづくり・おの・きん",
+    kanji: [
       {
-        "char": "斤",
-        "url": "https://kanji.jitenon.jp/kanjic/1376",
+        char: "斤",
+        url: "https://kanji.jitenon.jp/kanjic/1376",
         "音読み": [
           "キン"
         ],
@@ -32415,8 +32438,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "斥",
-        "url": "https://kanji.jitenon.jp/kanjic/1469",
+        char: "斥",
+        url: "https://kanji.jitenon.jp/kanjic/1469",
         "音読み": [
           "セキ"
         ],
@@ -32430,8 +32453,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "斧",
-        "url": "https://kanji.jitenon.jp/kanjif/2874",
+        char: "斧",
+        url: "https://kanji.jitenon.jp/kanjif/2874",
         "音読み": [
           "フ"
         ],
@@ -32447,8 +32470,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "断",
-        "url": "https://kanji.jitenon.jp/kanjib/771",
+        char: "断",
+        url: "https://kanji.jitenon.jp/kanjib/771",
         "音読み": [
           "ダン"
         ],
@@ -32465,8 +32488,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "斬",
-        "url": "https://kanji.jitenon.jp/kanjie/2014",
+        char: "斬",
+        url: "https://kanji.jitenon.jp/kanjie/2014",
         "音読み": [
           "ザン"
         ],
@@ -32482,8 +32505,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "斯",
-        "url": "https://kanji.jitenon.jp/kanjie/2469",
+        char: "斯",
+        url: "https://kanji.jitenon.jp/kanjie/2469",
         "音読み": [
           "シ"
         ],
@@ -32502,8 +32525,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "新",
-        "url": "https://kanji.jitenon.jp/kanji/163",
+        char: "新",
+        url: "https://kanji.jitenon.jp/kanji/163",
         "音読み": [
           "シン"
         ],
@@ -32523,13 +32546,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04017",
-    "radical": "月",
-    "reading": "つき・つきへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04017",
+    radical: "月",
+    reading: "つき・つきへん",
+    kanji: [
       {
-        "char": "月",
-        "url": "https://kanji.jitenon.jp/kanji/016",
+        char: "月",
+        url: "https://kanji.jitenon.jp/kanji/016",
         "音読み": [
           "ガツ",
           "ゲツ"
@@ -32546,8 +32569,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "有",
-        "url": "https://kanji.jitenon.jp/kanji/423",
+        char: "有",
+        url: "https://kanji.jitenon.jp/kanji/423",
         "音読み": [
           "ウ",
           "ユウ"
@@ -32564,8 +32587,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "服",
-        "url": "https://kanji.jitenon.jp/kanji/408",
+        char: "服",
+        url: "https://kanji.jitenon.jp/kanji/408",
         "音読み": [
           "フク"
         ],
@@ -32579,8 +32602,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "朋",
-        "url": "https://kanji.jitenon.jp/kanjif/2909",
+        char: "朋",
+        url: "https://kanji.jitenon.jp/kanjif/2909",
         "音読み": [
           "ホウ"
         ],
@@ -32597,8 +32620,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "朗",
-        "url": "https://kanji.jitenon.jp/kanjic/1317",
+        char: "朗",
+        url: "https://kanji.jitenon.jp/kanjic/1317",
         "音読み": [
           "ロウ"
         ],
@@ -32614,8 +32637,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "朕",
-        "url": "https://kanji.jitenon.jp/kanjid/1822",
+        char: "朕",
+        url: "https://kanji.jitenon.jp/kanjid/1822",
         "音読み": [
           "チン"
         ],
@@ -32629,8 +32652,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "朔",
-        "url": "https://kanji.jitenon.jp/kanjie/2447",
+        char: "朔",
+        url: "https://kanji.jitenon.jp/kanjie/2447",
         "音読み": [
           "サク"
         ],
@@ -32647,8 +32670,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "望",
-        "url": "https://kanji.jitenon.jp/kanjib/612",
+        char: "望",
+        url: "https://kanji.jitenon.jp/kanjib/612",
         "音読み": [
           "ボウ",
           "モウ"
@@ -32665,8 +32688,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "朝",
-        "url": "https://kanji.jitenon.jp/kanji/191",
+        char: "朝",
+        url: "https://kanji.jitenon.jp/kanji/191",
         "音読み": [
           "チョウ"
         ],
@@ -32682,8 +32705,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "期",
-        "url": "https://kanji.jitenon.jp/kanji/267",
+        char: "期",
+        url: "https://kanji.jitenon.jp/kanji/267",
         "音読み": [
           "キ",
           "ゴ"
@@ -32700,13 +32723,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04018",
-    "radical": "父",
-    "reading": "ちち",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04018",
+    radical: "父",
+    reading: "ちち",
+    kanji: [
       {
-        "char": "父",
-        "url": "https://kanji.jitenon.jp/kanji/215",
+        char: "父",
+        url: "https://kanji.jitenon.jp/kanji/215",
         "音読み": [
           "フ"
         ],
@@ -32722,8 +32745,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "爺",
-        "url": "https://kanji.jitenon.jp/kanjif/2940",
+        char: "爺",
+        url: "https://kanji.jitenon.jp/kanjif/2940",
         "音読み": [
           "ヤ"
         ],
@@ -32742,13 +32765,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04019",
-    "radical": "毋 母",
-    "reading": "なかれ・ははのかん・はは",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04019",
+    radical: "毋 母",
+    reading: "なかれ・ははのかん・はは",
+    kanji: [
       {
-        "char": "母",
-        "url": "https://kanji.jitenon.jp/kanji/221",
+        char: "母",
+        url: "https://kanji.jitenon.jp/kanji/221",
         "音読み": [
           "ボ"
         ],
@@ -32764,8 +32787,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "毎",
-        "url": "https://kanji.jitenon.jp/kanji/224",
+        char: "毎",
+        url: "https://kanji.jitenon.jp/kanji/224",
         "音読み": [
           "マイ"
         ],
@@ -32779,8 +32802,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "毒",
-        "url": "https://kanji.jitenon.jp/kanjib/585",
+        char: "毒",
+        url: "https://kanji.jitenon.jp/kanjib/585",
         "音読み": [
           "ドク"
         ],
@@ -32796,13 +32819,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04020",
-    "radical": "方",
-    "reading": "ほう・ほうへん・かたへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04020",
+    radical: "方",
+    reading: "ほう・ほうへん・かたへん",
+    kanji: [
       {
-        "char": "方",
-        "url": "https://kanji.jitenon.jp/kanji/222",
+        char: "方",
+        url: "https://kanji.jitenon.jp/kanji/222",
         "音読み": [
           "ホウ"
         ],
@@ -32818,8 +32841,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "於",
-        "url": "https://kanji.jitenon.jp/kanjie/2192",
+        char: "於",
+        url: "https://kanji.jitenon.jp/kanjie/2192",
         "音読み": [
           "オ",
           "ヨ"
@@ -32837,8 +32860,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "施",
-        "url": "https://kanji.jitenon.jp/kanjic/1423",
+        char: "施",
+        url: "https://kanji.jitenon.jp/kanjic/1423",
         "音読み": [
           "シ",
           "セ"
@@ -32855,8 +32878,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "旅",
-        "url": "https://kanji.jitenon.jp/kanji/431",
+        char: "旅",
+        url: "https://kanji.jitenon.jp/kanji/431",
         "音読み": [
           "リョ"
         ],
@@ -32872,8 +32895,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "族",
-        "url": "https://kanji.jitenon.jp/kanji/352",
+        char: "族",
+        url: "https://kanji.jitenon.jp/kanji/352",
         "音読み": [
           "ゾク"
         ],
@@ -32887,8 +32910,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "旋",
-        "url": "https://kanji.jitenon.jp/kanjid/1787",
+        char: "旋",
+        url: "https://kanji.jitenon.jp/kanjid/1787",
         "音読み": [
           "セン"
         ],
@@ -32902,8 +32925,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "旗",
-        "url": "https://kanji.jitenon.jp/kanji/471",
+        char: "旗",
+        url: "https://kanji.jitenon.jp/kanji/471",
         "音読み": [
           "キ"
         ],
@@ -32921,13 +32944,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04022",
-    "radical": "歹 歺",
-    "reading": "がつ・がつへん・いちたへん・かばねへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04022",
+    radical: "歹 歺",
+    reading: "がつ・がつへん・いちたへん・かばねへん",
+    kanji: [
       {
-        "char": "死",
-        "url": "https://kanji.jitenon.jp/kanji/303",
+        char: "死",
+        url: "https://kanji.jitenon.jp/kanji/303",
         "音読み": [
           "シ"
         ],
@@ -32943,8 +32966,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "殆",
-        "url": "https://kanji.jitenon.jp/kanjif/2691",
+        char: "殆",
+        url: "https://kanji.jitenon.jp/kanjif/2691",
         "音読み": [
           "タイ"
         ],
@@ -32962,8 +32985,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "残",
-        "url": "https://kanji.jitenon.jp/kanjib/518",
+        char: "残",
+        url: "https://kanji.jitenon.jp/kanjib/518",
         "音読み": [
           "ザン"
         ],
@@ -32980,8 +33003,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "殊",
-        "url": "https://kanji.jitenon.jp/kanjic/1433",
+        char: "殊",
+        url: "https://kanji.jitenon.jp/kanjic/1433",
         "音読み": [
           "シュ"
         ],
@@ -32997,8 +33020,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "殉",
-        "url": "https://kanji.jitenon.jp/kanjid/1736",
+        char: "殉",
+        url: "https://kanji.jitenon.jp/kanjid/1736",
         "音読み": [
           "ジュン"
         ],
@@ -33012,8 +33035,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "殖",
-        "url": "https://kanji.jitenon.jp/kanjic/1146",
+        char: "殖",
+        url: "https://kanji.jitenon.jp/kanjic/1146",
         "音読み": [
           "ショク"
         ],
@@ -33032,13 +33055,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04023",
-    "radical": "殳",
-    "reading": "ほこづくり・るまた",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04023",
+    radical: "殳",
+    reading: "ほこづくり・るまた",
+    kanji: [
       {
-        "char": "殴",
-        "url": "https://kanji.jitenon.jp/kanjic/1328",
+        char: "殴",
+        url: "https://kanji.jitenon.jp/kanjic/1328",
         "音読み": [
           "オウ"
         ],
@@ -33054,8 +33077,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "段",
-        "url": "https://kanji.jitenon.jp/kanjib/943",
+        char: "段",
+        url: "https://kanji.jitenon.jp/kanjib/943",
         "音読み": [
           "ダン"
         ],
@@ -33069,8 +33092,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "殺",
-        "url": "https://kanji.jitenon.jp/kanjib/511",
+        char: "殺",
+        url: "https://kanji.jitenon.jp/kanjib/511",
         "音読み": [
           "サイ",
           "サツ",
@@ -33088,8 +33111,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "殻",
-        "url": "https://kanji.jitenon.jp/kanjid/1628",
+        char: "殻",
+        url: "https://kanji.jitenon.jp/kanjid/1628",
         "音読み": [
           "カク"
         ],
@@ -33105,8 +33128,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "殿",
-        "url": "https://kanji.jitenon.jp/kanjic/1200",
+        char: "殿",
+        url: "https://kanji.jitenon.jp/kanjic/1200",
         "音読み": [
           "テン",
           "デン"
@@ -33124,8 +33147,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "毀",
-        "url": "https://kanji.jitenon.jp/kanjid/1976",
+        char: "毀",
+        url: "https://kanji.jitenon.jp/kanjid/1976",
         "音読み": [
           "キ"
         ],
@@ -33139,8 +33162,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "毅",
-        "url": "https://kanji.jitenon.jp/kanjie/2276",
+        char: "毅",
+        url: "https://kanji.jitenon.jp/kanjie/2276",
         "音読み": [
           "キ"
         ],
@@ -33159,13 +33182,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04024",
-    "radical": "氏",
-    "reading": "うじ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04024",
+    radical: "氏",
+    reading: "うじ",
+    kanji: [
       {
-        "char": "氏",
-        "url": "https://kanji.jitenon.jp/kanjib/519",
+        char: "氏",
+        url: "https://kanji.jitenon.jp/kanjib/519",
         "音読み": [
           "シ"
         ],
@@ -33181,8 +33204,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "民",
-        "url": "https://kanji.jitenon.jp/kanjib/618",
+        char: "民",
+        url: "https://kanji.jitenon.jp/kanjib/618",
         "音読み": [
           "ミン"
         ],
@@ -33200,13 +33223,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04025",
-    "radical": "戈",
-    "reading": "ほこづくり・ほこがまえ・ほこ・かのほこ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04025",
+    radical: "戈",
+    reading: "ほこづくり・ほこがまえ・ほこ・かのほこ",
+    kanji: [
       {
-        "char": "戊",
-        "url": "https://kanji.jitenon.jp/kanjif/2904",
+        char: "戊",
+        url: "https://kanji.jitenon.jp/kanjif/2904",
         "音読み": [
           "ボ",
           "ボウ"
@@ -33223,8 +33246,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "成",
-        "url": "https://kanji.jitenon.jp/kanjib/546",
+        char: "成",
+        url: "https://kanji.jitenon.jp/kanjib/546",
         "音読み": [
           "ジョウ",
           "セイ"
@@ -33242,8 +33265,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "戎",
-        "url": "https://kanji.jitenon.jp/kanjif/2525",
+        char: "戎",
+        url: "https://kanji.jitenon.jp/kanjif/2525",
         "音読み": [
           "ジュウ"
         ],
@@ -33262,8 +33285,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "我",
-        "url": "https://kanji.jitenon.jp/kanjib/831",
+        char: "我",
+        url: "https://kanji.jitenon.jp/kanjib/831",
         "音読み": [
           "ガ"
         ],
@@ -33280,8 +33303,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "戒",
-        "url": "https://kanji.jitenon.jp/kanjic/1033",
+        char: "戒",
+        url: "https://kanji.jitenon.jp/kanjic/1033",
         "音読み": [
           "カイ"
         ],
@@ -33297,8 +33320,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "戚",
-        "url": "https://kanji.jitenon.jp/kanjie/2036",
+        char: "戚",
+        url: "https://kanji.jitenon.jp/kanjie/2036",
         "音読み": [
           "セキ"
         ],
@@ -33312,8 +33335,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "戟",
-        "url": "https://kanji.jitenon.jp/kanjie/2359",
+        char: "戟",
+        url: "https://kanji.jitenon.jp/kanjie/2359",
         "音読み": [
           "ケキ",
           "ゲキ"
@@ -33330,8 +33353,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "戦",
-        "url": "https://kanji.jitenon.jp/kanjib/552",
+        char: "戦",
+        url: "https://kanji.jitenon.jp/kanjib/552",
         "音読み": [
           "セン"
         ],
@@ -33348,8 +33371,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "載",
-        "url": "https://kanji.jitenon.jp/kanjic/1108",
+        char: "載",
+        url: "https://kanji.jitenon.jp/kanjic/1108",
         "音読み": [
           "サイ"
         ],
@@ -33366,8 +33389,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "戯",
-        "url": "https://kanji.jitenon.jp/kanjic/1053",
+        char: "戯",
+        url: "https://kanji.jitenon.jp/kanjic/1053",
         "音読み": [
           "ギ"
         ],
@@ -33383,8 +33406,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "戴",
-        "url": "https://kanji.jitenon.jp/kanjie/2054",
+        char: "戴",
+        url: "https://kanji.jitenon.jp/kanjie/2054",
         "音読み": [
           "タイ"
         ],
@@ -33400,13 +33423,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04026",
-    "radical": "斗",
-    "reading": "とます・と",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04026",
+    radical: "斗",
+    reading: "とます・と",
+    kanji: [
       {
-        "char": "斗",
-        "url": "https://kanji.jitenon.jp/kanjid/1516",
+        char: "斗",
+        url: "https://kanji.jitenon.jp/kanjid/1516",
         "音読み": [
           "ト"
         ],
@@ -33420,8 +33443,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "料",
-        "url": "https://kanji.jitenon.jp/kanjib/629",
+        char: "料",
+        url: "https://kanji.jitenon.jp/kanjib/629",
         "音読み": [
           "リョウ"
         ],
@@ -33435,8 +33458,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "斜",
-        "url": "https://kanji.jitenon.jp/kanjic/1121",
+        char: "斜",
+        url: "https://kanji.jitenon.jp/kanjic/1121",
         "音読み": [
           "シャ"
         ],
@@ -33452,8 +33475,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "斡",
-        "url": "https://kanji.jitenon.jp/kanjie/2143",
+        char: "斡",
+        url: "https://kanji.jitenon.jp/kanjie/2143",
         "音読み": [
           "アツ",
           "カン"
@@ -33473,13 +33496,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04028",
-    "radical": "片",
-    "reading": "かた・かたへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04028",
+    radical: "片",
+    reading: "かた・かたへん",
+    kanji: [
       {
-        "char": "片",
-        "url": "https://kanji.jitenon.jp/kanjie/2136",
+        char: "片",
+        url: "https://kanji.jitenon.jp/kanjie/2136",
         "音読み": [
           "ヘン"
         ],
@@ -33495,8 +33518,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "版",
-        "url": "https://kanji.jitenon.jp/kanjib/788",
+        char: "版",
+        url: "https://kanji.jitenon.jp/kanjib/788",
         "音読み": [
           "ハン"
         ],
@@ -33510,8 +33533,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "牌",
-        "url": "https://kanji.jitenon.jp/kanjif/2819",
+        char: "牌",
+        url: "https://kanji.jitenon.jp/kanjif/2819",
         "音読み": [
           "ハイ"
         ],
@@ -33527,8 +33550,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "牒",
-        "url": "https://kanji.jitenon.jp/kanjif/2586",
+        char: "牒",
+        url: "https://kanji.jitenon.jp/kanjif/2586",
         "音読み": [
           "ジョウ",
           "チョウ"
@@ -33547,13 +33570,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04029",
-    "radical": "比",
-    "reading": "くらべる・ならびひ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04029",
+    radical: "比",
+    reading: "くらべる・ならびひ",
+    kanji: [
       {
-        "char": "比",
-        "url": "https://kanji.jitenon.jp/kanjib/791",
+        char: "比",
+        url: "https://kanji.jitenon.jp/kanjib/791",
         "音読み": [
           "ヒ"
         ],
@@ -33569,8 +33592,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "毘",
-        "url": "https://kanji.jitenon.jp/kanjif/2852",
+        char: "毘",
+        url: "https://kanji.jitenon.jp/kanjif/2852",
         "音読み": [
           "ヒ",
           "ビ"
@@ -33589,13 +33612,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04030",
-    "radical": "爪 爫",
-    "reading": "つめ・つめかんむり・つめがしら・そうにょう・のつ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04030",
+    radical: "爪 爫",
+    reading: "つめ・つめかんむり・つめがしら・そうにょう・のつ",
+    kanji: [
       {
-        "char": "爪",
-        "url": "https://kanji.jitenon.jp/kanjie/2064",
+        char: "爪",
+        url: "https://kanji.jitenon.jp/kanjie/2064",
         "音読み": [],
         "訓読み": [
           "つま",
@@ -33610,8 +33633,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "采",
-        "url": "https://kanji.jitenon.jp/kanjie/2008",
+        char: "采",
+        url: "https://kanji.jitenon.jp/kanjie/2008",
         "音読み": [
           "サイ"
         ],
@@ -33625,8 +33648,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "爵",
-        "url": "https://kanji.jitenon.jp/kanjid/1717",
+        char: "爵",
+        url: "https://kanji.jitenon.jp/kanjid/1717",
         "音読み": [
           "シャク"
         ],
@@ -33642,13 +33665,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu04032",
-    "radical": "爻",
-    "reading": "こう・まじわる・めめ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu04032",
+    radical: "爻",
+    reading: "こう・まじわる・めめ",
+    kanji: [
       {
-        "char": "爽",
-        "url": "https://kanji.jitenon.jp/kanjie/2046",
+        char: "爽",
+        url: "https://kanji.jitenon.jp/kanjie/2046",
         "音読み": [
           "ソウ"
         ],
@@ -33664,8 +33687,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "爾",
-        "url": "https://kanji.jitenon.jp/kanjie/2479",
+        char: "爾",
+        url: "https://kanji.jitenon.jp/kanjie/2479",
         "音読み": [
           "ジ",
           "ニ"
@@ -33685,13 +33708,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05001",
-    "radical": "玉 王 ⺩",
-    "reading": "たま・たまへん・おうへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05001",
+    radical: "玉 王 ⺩",
+    reading: "たま・たまへん・おうへん",
+    kanji: [
       {
-        "char": "王",
-        "url": "https://kanji.jitenon.jp/kanji/005",
+        char: "王",
+        url: "https://kanji.jitenon.jp/kanji/005",
         "音読み": [
           "オウ"
         ],
@@ -33705,8 +33728,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "玉",
-        "url": "https://kanji.jitenon.jp/kanji/012",
+        char: "玉",
+        url: "https://kanji.jitenon.jp/kanji/012",
         "音読み": [
           "ギョク"
         ],
@@ -33722,8 +33745,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "玖",
-        "url": "https://kanji.jitenon.jp/kanjie/2302",
+        char: "玖",
+        url: "https://kanji.jitenon.jp/kanjie/2302",
         "音読み": [
           "キュウ",
           "ク"
@@ -33738,8 +33761,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "玩",
-        "url": "https://kanji.jitenon.jp/kanjid/1973",
+        char: "玩",
+        url: "https://kanji.jitenon.jp/kanjid/1973",
         "音読み": [
           "ガン"
         ],
@@ -33753,8 +33776,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "珍",
-        "url": "https://kanji.jitenon.jp/kanjic/1193",
+        char: "珍",
+        url: "https://kanji.jitenon.jp/kanjic/1193",
         "音読み": [
           "チン"
         ],
@@ -33770,8 +33793,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "珂",
-        "url": "https://kanji.jitenon.jp/kanjie/2209",
+        char: "珂",
+        url: "https://kanji.jitenon.jp/kanjie/2209",
         "音読み": [
           "カ"
         ],
@@ -33785,8 +33808,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "珊",
-        "url": "https://kanji.jitenon.jp/kanjie/2454",
+        char: "珊",
+        url: "https://kanji.jitenon.jp/kanjie/2454",
         "音読み": [
           "サン"
         ],
@@ -33800,8 +33823,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "玲",
-        "url": "https://kanji.jitenon.jp/kanjif/2999",
+        char: "玲",
+        url: "https://kanji.jitenon.jp/kanjif/2999",
         "音読み": [
           "レイ"
         ],
@@ -33815,8 +33838,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "班",
-        "url": "https://kanji.jitenon.jp/kanjib/968",
+        char: "班",
+        url: "https://kanji.jitenon.jp/kanjib/968",
         "音読み": [
           "ハン"
         ],
@@ -33830,8 +33853,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "珠",
-        "url": "https://kanji.jitenon.jp/kanjid/1718",
+        char: "珠",
+        url: "https://kanji.jitenon.jp/kanjid/1718",
         "音読み": [
           "シュ"
         ],
@@ -33845,8 +33868,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "珪",
-        "url": "https://kanji.jitenon.jp/kanjie/2352",
+        char: "珪",
+        url: "https://kanji.jitenon.jp/kanjie/2352",
         "音読み": [
           "ケイ"
         ],
@@ -33862,8 +33885,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "理",
-        "url": "https://kanji.jitenon.jp/kanji/238",
+        char: "理",
+        url: "https://kanji.jitenon.jp/kanji/238",
         "音読み": [
           "リ"
         ],
@@ -33877,8 +33900,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "球",
-        "url": "https://kanji.jitenon.jp/kanji/271",
+        char: "球",
+        url: "https://kanji.jitenon.jp/kanji/271",
         "音読み": [
           "キュウ"
         ],
@@ -33894,8 +33917,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "現",
-        "url": "https://kanji.jitenon.jp/kanjib/690",
+        char: "現",
+        url: "https://kanji.jitenon.jp/kanjib/690",
         "音読み": [
           "ゲン"
         ],
@@ -33912,8 +33935,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "琢",
-        "url": "https://kanji.jitenon.jp/kanjif/2705",
+        char: "琢",
+        url: "https://kanji.jitenon.jp/kanjif/2705",
         "音読み": [
           "タク"
         ],
@@ -33929,8 +33952,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "琉",
-        "url": "https://kanji.jitenon.jp/kanjif/2977",
+        char: "琉",
+        url: "https://kanji.jitenon.jp/kanjif/2977",
         "音読み": [
           "リュウ",
           "ル"
@@ -33945,8 +33968,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "琴",
-        "url": "https://kanji.jitenon.jp/kanjid/1663",
+        char: "琴",
+        url: "https://kanji.jitenon.jp/kanjid/1663",
         "音読み": [
           "キン"
         ],
@@ -33962,8 +33985,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "瑛",
-        "url": "https://kanji.jitenon.jp/kanjie/2178",
+        char: "瑛",
+        url: "https://kanji.jitenon.jp/kanjie/2178",
         "音読み": [
           "エイ"
         ],
@@ -33977,8 +34000,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "琶",
-        "url": "https://kanji.jitenon.jp/kanjif/2814",
+        char: "琶",
+        url: "https://kanji.jitenon.jp/kanjif/2814",
         "音読み": [
           "ハ"
         ],
@@ -33992,8 +34015,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "琵",
-        "url": "https://kanji.jitenon.jp/kanjif/2857",
+        char: "琵",
+        url: "https://kanji.jitenon.jp/kanjif/2857",
         "音読み": [
           "ビ"
         ],
@@ -34007,8 +34030,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "琳",
-        "url": "https://kanji.jitenon.jp/kanjif/2992",
+        char: "琳",
+        url: "https://kanji.jitenon.jp/kanjif/2992",
         "音読み": [
           "リン"
         ],
@@ -34022,8 +34045,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "瑚",
-        "url": "https://kanji.jitenon.jp/kanjie/2379",
+        char: "瑚",
+        url: "https://kanji.jitenon.jp/kanjie/2379",
         "音読み": [
           "コ",
           "ゴ"
@@ -34038,8 +34061,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "瑞",
-        "url": "https://kanji.jitenon.jp/kanjif/2620",
+        char: "瑞",
+        url: "https://kanji.jitenon.jp/kanjif/2620",
         "音読み": [
           "スイ",
           "ズイ"
@@ -34058,8 +34081,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "璃",
-        "url": "https://kanji.jitenon.jp/kanjie/2123",
+        char: "璃",
+        url: "https://kanji.jitenon.jp/kanjie/2123",
         "音読み": [
           "リ"
         ],
@@ -34073,8 +34096,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "瑠",
-        "url": "https://kanji.jitenon.jp/kanjie/2127",
+        char: "瑠",
+        url: "https://kanji.jitenon.jp/kanjie/2127",
         "音読み": [
           "ル"
         ],
@@ -34088,8 +34111,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "瑳",
-        "url": "https://kanji.jitenon.jp/kanjie/2435",
+        char: "瑳",
+        url: "https://kanji.jitenon.jp/kanjie/2435",
         "音読み": [
           "サ"
         ],
@@ -34105,8 +34128,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "環",
-        "url": "https://kanji.jitenon.jp/kanjic/1045",
+        char: "環",
+        url: "https://kanji.jitenon.jp/kanjic/1045",
         "音読み": [
           "カン"
         ],
@@ -34120,8 +34143,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "璧",
-        "url": "https://kanji.jitenon.jp/kanjie/2099",
+        char: "璧",
+        url: "https://kanji.jitenon.jp/kanjie/2099",
         "音読み": [
           "ヘキ"
         ],
@@ -34135,8 +34158,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "璽",
-        "url": "https://kanji.jitenon.jp/kanjid/1712",
+        char: "璽",
+        url: "https://kanji.jitenon.jp/kanjid/1712",
         "音読み": [
           "ジ"
         ],
@@ -34152,13 +34175,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05011",
-    "radical": "示 礻",
-    "reading": "しめす・しめすへん・ねへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05011",
+    radical: "示 礻",
+    reading: "しめす・しめすへん・ねへん",
+    kanji: [
       {
-        "char": "礼",
-        "url": "https://kanji.jitenon.jp/kanji/435",
+        char: "礼",
+        url: "https://kanji.jitenon.jp/kanji/435",
         "音読み": [
           "ライ",
           "レイ"
@@ -34173,8 +34196,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "示",
-        "url": "https://kanji.jitenon.jp/kanjib/722",
+        char: "示",
+        url: "https://kanji.jitenon.jp/kanjib/722",
         "音読み": [
           "シ",
           "ジ"
@@ -34191,8 +34214,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "社",
-        "url": "https://kanji.jitenon.jp/kanji/153",
+        char: "社",
+        url: "https://kanji.jitenon.jp/kanji/153",
         "音読み": [
           "シャ"
         ],
@@ -34208,8 +34231,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "祈",
-        "url": "https://kanji.jitenon.jp/kanjic/1049",
+        char: "祈",
+        url: "https://kanji.jitenon.jp/kanjic/1049",
         "音読み": [
           "キ"
         ],
@@ -34225,8 +34248,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "祉",
-        "url": "https://kanji.jitenon.jp/kanjic/1424",
+        char: "祉",
+        url: "https://kanji.jitenon.jp/kanjic/1424",
         "音読み": [
           "シ"
         ],
@@ -34240,8 +34263,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "祁",
-        "url": "https://kanji.jitenon.jp/kanjie/2278",
+        char: "祁",
+        url: "https://kanji.jitenon.jp/kanjie/2278",
         "音読み": [
           "キ"
         ],
@@ -34259,8 +34282,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "神",
-        "url": "https://kanji.jitenon.jp/kanji/343",
+        char: "神",
+        url: "https://kanji.jitenon.jp/kanji/343",
         "音読み": [
           "シン",
           "ジン"
@@ -34279,8 +34302,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "祝",
-        "url": "https://kanji.jitenon.jp/kanjib/531",
+        char: "祝",
+        url: "https://kanji.jitenon.jp/kanjib/531",
         "音読み": [
           "シュウ",
           "シュク"
@@ -34297,8 +34320,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "祖",
-        "url": "https://kanji.jitenon.jp/kanjib/757",
+        char: "祖",
+        url: "https://kanji.jitenon.jp/kanjib/757",
         "音読み": [
           "ソ"
         ],
@@ -34312,8 +34335,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "祇",
-        "url": "https://kanji.jitenon.jp/kanjie/2286",
+        char: "祇",
+        url: "https://kanji.jitenon.jp/kanjie/2286",
         "音読み": [
           "ギ",
           "シ"
@@ -34330,8 +34353,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "祢",
-        "url": "https://kanji.jitenon.jp/kanjif/2760",
+        char: "祢",
+        url: "https://kanji.jitenon.jp/kanjif/2760",
         "音読み": [
           "デイ",
           "ネ"
@@ -34349,8 +34372,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "祐",
-        "url": "https://kanji.jitenon.jp/kanjif/2949",
+        char: "祐",
+        url: "https://kanji.jitenon.jp/kanjif/2949",
         "音読み": [
           "ユウ"
         ],
@@ -34367,8 +34390,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "祥",
-        "url": "https://kanji.jitenon.jp/kanjid/1741",
+        char: "祥",
+        url: "https://kanji.jitenon.jp/kanjid/1741",
         "音読み": [
           "ショウ"
         ],
@@ -34382,8 +34405,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "祭",
-        "url": "https://kanji.jitenon.jp/kanji/298",
+        char: "祭",
+        url: "https://kanji.jitenon.jp/kanji/298",
         "音読み": [
           "サイ"
         ],
@@ -34400,8 +34423,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "票",
-        "url": "https://kanji.jitenon.jp/kanjib/596",
+        char: "票",
+        url: "https://kanji.jitenon.jp/kanjib/596",
         "音読み": [
           "ヒョウ"
         ],
@@ -34415,8 +34438,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "祷",
-        "url": "https://kanji.jitenon.jp/kanjif/2796",
+        char: "祷",
+        url: "https://kanji.jitenon.jp/kanjif/2796",
         "音読み": [
           "トウ"
         ],
@@ -34433,8 +34456,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "福",
-        "url": "https://kanji.jitenon.jp/kanji/407",
+        char: "福",
+        url: "https://kanji.jitenon.jp/kanji/407",
         "音読み": [
           "フク"
         ],
@@ -34448,8 +34471,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "禁",
-        "url": "https://kanji.jitenon.jp/kanjib/681",
+        char: "禁",
+        url: "https://kanji.jitenon.jp/kanjib/681",
         "音読み": [
           "キン"
         ],
@@ -34463,8 +34486,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "禍",
-        "url": "https://kanji.jitenon.jp/kanjid/1618",
+        char: "禍",
+        url: "https://kanji.jitenon.jp/kanjid/1618",
         "音読み": [
           "カ"
         ],
@@ -34478,8 +34501,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "禅",
-        "url": "https://kanji.jitenon.jp/kanjid/1789",
+        char: "禅",
+        url: "https://kanji.jitenon.jp/kanjid/1789",
         "音読み": [
           "ゼン"
         ],
@@ -34493,8 +34516,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "禎",
-        "url": "https://kanji.jitenon.jp/kanjif/2754",
+        char: "禎",
+        url: "https://kanji.jitenon.jp/kanjif/2754",
         "音読み": [
           "テイ"
         ],
@@ -34510,8 +34533,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "禦",
-        "url": "https://kanji.jitenon.jp/kanjie/2310",
+        char: "禦",
+        url: "https://kanji.jitenon.jp/kanjie/2310",
         "音読み": [
           "ギョ"
         ],
@@ -34528,8 +34551,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "禰",
-        "url": "https://kanji.jitenon.jp/kanjif/2759",
+        char: "禰",
+        url: "https://kanji.jitenon.jp/kanjif/2759",
         "音読み": [
           "デイ",
           "ネ"
@@ -34549,13 +34572,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06007",
-    "radical": "老 耂",
-    "reading": "おいかんむり・おいがしら・おい",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06007",
+    radical: "老 耂",
+    reading: "おいかんむり・おいがしら・おい",
+    kanji: [
       {
-        "char": "考",
-        "url": "https://kanji.jitenon.jp/kanji/131",
+        char: "考",
+        url: "https://kanji.jitenon.jp/kanji/131",
         "音読み": [
           "コウ"
         ],
@@ -34571,8 +34594,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "老",
-        "url": "https://kanji.jitenon.jp/kanjib/637",
+        char: "老",
+        url: "https://kanji.jitenon.jp/kanjib/637",
         "音読み": [
           "ロウ"
         ],
@@ -34589,8 +34612,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "孝",
-        "url": "https://kanji.jitenon.jp/kanjib/867",
+        char: "孝",
+        url: "https://kanji.jitenon.jp/kanjib/867",
         "音読み": [
           "コウ"
         ],
@@ -34604,8 +34627,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "者",
-        "url": "https://kanji.jitenon.jp/kanji/313",
+        char: "者",
+        url: "https://kanji.jitenon.jp/kanji/313",
         "音読み": [
           "シャ"
         ],
@@ -34623,13 +34646,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06013",
-    "radical": "肉 月",
-    "reading": "にく・にくづき",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06013",
+    radical: "肉 月",
+    reading: "にく・にくづき",
+    kanji: [
       {
-        "char": "肉",
-        "url": "https://kanji.jitenon.jp/kanji/208",
+        char: "肉",
+        url: "https://kanji.jitenon.jp/kanji/208",
         "音読み": [
           "ニク"
         ],
@@ -34643,8 +34666,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "肌",
-        "url": "https://kanji.jitenon.jp/kanjid/1862",
+        char: "肌",
+        url: "https://kanji.jitenon.jp/kanjid/1862",
         "音読み": [],
         "訓読み": [
           "はだ"
@@ -34658,8 +34681,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "肝",
-        "url": "https://kanji.jitenon.jp/kanjic/1350",
+        char: "肝",
+        url: "https://kanji.jitenon.jp/kanjic/1350",
         "音読み": [
           "カン"
         ],
@@ -34675,8 +34698,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "肖",
-        "url": "https://kanji.jitenon.jp/kanjid/1745",
+        char: "肖",
+        url: "https://kanji.jitenon.jp/kanjid/1745",
         "音読み": [
           "ショウ"
         ],
@@ -34690,8 +34713,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "肘",
-        "url": "https://kanji.jitenon.jp/kanjie/2094",
+        char: "肘",
+        url: "https://kanji.jitenon.jp/kanjie/2094",
         "音読み": [],
         "訓読み": [
           "ひじ"
@@ -34705,8 +34728,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "育",
-        "url": "https://kanji.jitenon.jp/kanji/246",
+        char: "育",
+        url: "https://kanji.jitenon.jp/kanji/246",
         "音読み": [
           "イク"
         ],
@@ -34724,8 +34747,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "肥",
-        "url": "https://kanji.jitenon.jp/kanjib/790",
+        char: "肥",
+        url: "https://kanji.jitenon.jp/kanjib/790",
         "音読み": [
           "ヒ"
         ],
@@ -34744,8 +34767,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "肩",
-        "url": "https://kanji.jitenon.jp/kanjic/1081",
+        char: "肩",
+        url: "https://kanji.jitenon.jp/kanjic/1081",
         "音読み": [
           "ケン"
         ],
@@ -34761,8 +34784,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "肪",
-        "url": "https://kanji.jitenon.jp/kanjic/1269",
+        char: "肪",
+        url: "https://kanji.jitenon.jp/kanjic/1269",
         "音読み": [
           "ボウ"
         ],
@@ -34776,8 +34799,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "肯",
-        "url": "https://kanji.jitenon.jp/kanjid/1684",
+        char: "肯",
+        url: "https://kanji.jitenon.jp/kanjid/1684",
         "音読み": [
           "コウ"
         ],
@@ -34791,8 +34814,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "肢",
-        "url": "https://kanji.jitenon.jp/kanjid/1710",
+        char: "肢",
+        url: "https://kanji.jitenon.jp/kanjid/1710",
         "音読み": [
           "シ"
         ],
@@ -34806,8 +34829,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "股",
-        "url": "https://kanji.jitenon.jp/kanjid/1995",
+        char: "股",
+        url: "https://kanji.jitenon.jp/kanjid/1995",
         "音読み": [
           "コ"
         ],
@@ -34823,8 +34846,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "肴",
-        "url": "https://kanji.jitenon.jp/kanjie/2409",
+        char: "肴",
+        url: "https://kanji.jitenon.jp/kanjie/2409",
         "音読み": [
           "コウ"
         ],
@@ -34840,8 +34863,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "肱",
-        "url": "https://kanji.jitenon.jp/kanjie/2410",
+        char: "肱",
+        url: "https://kanji.jitenon.jp/kanjie/2410",
         "音読み": [
           "コウ"
         ],
@@ -34857,8 +34880,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "胃",
-        "url": "https://kanji.jitenon.jp/kanji/444",
+        char: "胃",
+        url: "https://kanji.jitenon.jp/kanji/444",
         "音読み": [
           "イ"
         ],
@@ -34872,8 +34895,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "肺",
-        "url": "https://kanji.jitenon.jp/kanjib/964",
+        char: "肺",
+        url: "https://kanji.jitenon.jp/kanjib/964",
         "音読み": [
           "ハイ"
         ],
@@ -34887,8 +34910,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "背",
-        "url": "https://kanji.jitenon.jp/kanjib/965",
+        char: "背",
+        url: "https://kanji.jitenon.jp/kanjib/965",
         "音読み": [
           "ハイ"
         ],
@@ -34907,8 +34930,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "胎",
-        "url": "https://kanji.jitenon.jp/kanjic/1487",
+        char: "胎",
+        url: "https://kanji.jitenon.jp/kanjic/1487",
         "音読み": [
           "タイ"
         ],
@@ -34922,8 +34945,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "胆",
-        "url": "https://kanji.jitenon.jp/kanjic/1497",
+        char: "胆",
+        url: "https://kanji.jitenon.jp/kanjic/1497",
         "音読み": [
           "タン"
         ],
@@ -34937,8 +34960,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "胞",
-        "url": "https://kanji.jitenon.jp/kanjid/1555",
+        char: "胞",
+        url: "https://kanji.jitenon.jp/kanjid/1555",
         "音読み": [
           "ホウ"
         ],
@@ -34952,8 +34975,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "胤",
-        "url": "https://kanji.jitenon.jp/kanjie/2163",
+        char: "胤",
+        url: "https://kanji.jitenon.jp/kanjie/2163",
         "音読み": [
           "イン"
         ],
@@ -34969,8 +34992,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "胡",
-        "url": "https://kanji.jitenon.jp/kanjie/2168",
+        char: "胡",
+        url: "https://kanji.jitenon.jp/kanjie/2168",
         "音読み": [
           "ウ",
           "コ",
@@ -34993,8 +35016,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "脈",
-        "url": "https://kanji.jitenon.jp/kanjib/617",
+        char: "脈",
+        url: "https://kanji.jitenon.jp/kanjib/617",
         "音読み": [
           "ミャク"
         ],
@@ -35008,8 +35031,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "能",
-        "url": "https://kanji.jitenon.jp/kanjib/785",
+        char: "能",
+        url: "https://kanji.jitenon.jp/kanjib/785",
         "音読み": [
           "ノウ"
         ],
@@ -35023,8 +35046,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "胸",
-        "url": "https://kanji.jitenon.jp/kanjib/849",
+        char: "胸",
+        url: "https://kanji.jitenon.jp/kanjib/849",
         "音読み": [
           "キョウ"
         ],
@@ -35041,8 +35064,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "脂",
-        "url": "https://kanji.jitenon.jp/kanjic/1116",
+        char: "脂",
+        url: "https://kanji.jitenon.jp/kanjic/1116",
         "音読み": [
           "シ"
         ],
@@ -35058,8 +35081,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "胴",
-        "url": "https://kanji.jitenon.jp/kanjic/1217",
+        char: "胴",
+        url: "https://kanji.jitenon.jp/kanjic/1217",
         "音読み": [
           "ドウ"
         ],
@@ -35073,8 +35096,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "脅",
-        "url": "https://kanji.jitenon.jp/kanjic/1372",
+        char: "脅",
+        url: "https://kanji.jitenon.jp/kanjic/1372",
         "音読み": [
           "キョウ"
         ],
@@ -35092,8 +35115,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "脊",
-        "url": "https://kanji.jitenon.jp/kanjie/2035",
+        char: "脊",
+        url: "https://kanji.jitenon.jp/kanjie/2035",
         "音読み": [
           "セキ"
         ],
@@ -35107,8 +35130,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "脇",
-        "url": "https://kanji.jitenon.jp/kanjie/2133",
+        char: "脇",
+        url: "https://kanji.jitenon.jp/kanjie/2133",
         "音読み": [],
         "訓読み": [
           "わき"
@@ -35122,8 +35145,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "脆",
-        "url": "https://kanji.jitenon.jp/kanjif/2628",
+        char: "脆",
+        url: "https://kanji.jitenon.jp/kanjif/2628",
         "音読み": [
           "セイ",
           "ゼイ"
@@ -35143,8 +35166,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "脳",
-        "url": "https://kanji.jitenon.jp/kanjib/961",
+        char: "脳",
+        url: "https://kanji.jitenon.jp/kanjib/961",
         "音読み": [
           "ノウ"
         ],
@@ -35158,8 +35181,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "脚",
-        "url": "https://kanji.jitenon.jp/kanjic/1055",
+        char: "脚",
+        url: "https://kanji.jitenon.jp/kanjic/1055",
         "音読み": [
           "キャ",
           "キャク"
@@ -35176,8 +35199,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "脱",
-        "url": "https://kanji.jitenon.jp/kanjic/1179",
+        char: "脱",
+        url: "https://kanji.jitenon.jp/kanjic/1179",
         "音読み": [
           "ダツ"
         ],
@@ -35194,8 +35217,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "腕",
-        "url": "https://kanji.jitenon.jp/kanjic/1319",
+        char: "腕",
+        url: "https://kanji.jitenon.jp/kanjic/1319",
         "音読み": [
           "ワン"
         ],
@@ -35211,8 +35234,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "腔",
-        "url": "https://kanji.jitenon.jp/kanjie/2345",
+        char: "腔",
+        url: "https://kanji.jitenon.jp/kanjie/2345",
         "音読み": [
           "クウ",
           "コウ"
@@ -35230,8 +35253,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "脹",
-        "url": "https://kanji.jitenon.jp/kanjif/2739",
+        char: "脹",
+        url: "https://kanji.jitenon.jp/kanjif/2739",
         "音読み": [
           "チョウ"
         ],
@@ -35249,8 +35272,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "腸",
-        "url": "https://kanji.jitenon.jp/kanjib/571",
+        char: "腸",
+        url: "https://kanji.jitenon.jp/kanjib/571",
         "音読み": [
           "チョウ"
         ],
@@ -35264,8 +35287,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "腹",
-        "url": "https://kanji.jitenon.jp/kanjib/973",
+        char: "腹",
+        url: "https://kanji.jitenon.jp/kanjib/973",
         "音読み": [
           "フク"
         ],
@@ -35281,8 +35304,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "腰",
-        "url": "https://kanji.jitenon.jp/kanjic/1293",
+        char: "腰",
+        url: "https://kanji.jitenon.jp/kanjic/1293",
         "音読み": [
           "ヨウ"
         ],
@@ -35298,8 +35321,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "腫",
-        "url": "https://kanji.jitenon.jp/kanjie/2021",
+        char: "腫",
+        url: "https://kanji.jitenon.jp/kanjie/2021",
         "音読み": [
           "シュ"
         ],
@@ -35316,8 +35339,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "腎",
-        "url": "https://kanji.jitenon.jp/kanjie/2030",
+        char: "腎",
+        url: "https://kanji.jitenon.jp/kanjie/2030",
         "音読み": [
           "ジン"
         ],
@@ -35331,8 +35354,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "腺",
-        "url": "https://kanji.jitenon.jp/kanjie/2039",
+        char: "腺",
+        url: "https://kanji.jitenon.jp/kanjie/2039",
         "音読み": [
           "セン"
         ],
@@ -35346,8 +35369,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "腐",
-        "url": "https://kanji.jitenon.jp/kanjic/1254",
+        char: "腐",
+        url: "https://kanji.jitenon.jp/kanjic/1254",
         "音読み": [
           "フ"
         ],
@@ -35365,8 +35388,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "膜",
-        "url": "https://kanji.jitenon.jp/kanjid/1572",
+        char: "膜",
+        url: "https://kanji.jitenon.jp/kanjid/1572",
         "音読み": [
           "マク"
         ],
@@ -35380,8 +35403,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "膏",
-        "url": "https://kanji.jitenon.jp/kanjie/2411",
+        char: "膏",
+        url: "https://kanji.jitenon.jp/kanjie/2411",
         "音読み": [
           "コウ"
         ],
@@ -35399,8 +35422,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "腿",
-        "url": "https://kanji.jitenon.jp/kanjif/2693",
+        char: "腿",
+        url: "https://kanji.jitenon.jp/kanjif/2693",
         "音読み": [
           "タイ"
         ],
@@ -35416,8 +35439,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "膚",
-        "url": "https://kanji.jitenon.jp/kanjic/1252",
+        char: "膚",
+        url: "https://kanji.jitenon.jp/kanjic/1252",
         "音読み": [
           "フ"
         ],
@@ -35431,8 +35454,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "膝",
-        "url": "https://kanji.jitenon.jp/kanjie/2093",
+        char: "膝",
+        url: "https://kanji.jitenon.jp/kanjie/2093",
         "音読み": [],
         "訓読み": [
           "ひざ"
@@ -35446,8 +35469,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "膨",
-        "url": "https://kanji.jitenon.jp/kanjid/1564",
+        char: "膨",
+        url: "https://kanji.jitenon.jp/kanjid/1564",
         "音読み": [
           "ボウ"
         ],
@@ -35464,8 +35487,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "膳",
-        "url": "https://kanji.jitenon.jp/kanjie/2042",
+        char: "膳",
+        url: "https://kanji.jitenon.jp/kanjie/2042",
         "音読み": [
           "ゼン"
         ],
@@ -35479,8 +35502,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "臆",
-        "url": "https://kanji.jitenon.jp/kanjid/1956",
+        char: "臆",
+        url: "https://kanji.jitenon.jp/kanjid/1956",
         "音読み": [
           "オク"
         ],
@@ -35494,8 +35517,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "膿",
-        "url": "https://kanji.jitenon.jp/kanjif/2802",
+        char: "膿",
+        url: "https://kanji.jitenon.jp/kanjif/2802",
         "音読み": [
           "ドウ",
           "ノウ"
@@ -35513,8 +35536,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "臓",
-        "url": "https://kanji.jitenon.jp/kanjib/935",
+        char: "臓",
+        url: "https://kanji.jitenon.jp/kanjib/935",
         "音読み": [
           "ゾウ"
         ],
@@ -35530,13 +35553,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06018",
-    "radical": "网 罒 㓁",
-    "reading": "あみがしら・あみめ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06018",
+    radical: "网 罒 㓁",
+    reading: "あみがしら・あみめ",
+    kanji: [
       {
-        "char": "置",
-        "url": "https://kanji.jitenon.jp/kanjib/567",
+        char: "置",
+        url: "https://kanji.jitenon.jp/kanjib/567",
         "音読み": [
           "チ"
         ],
@@ -35552,8 +35575,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "罪",
-        "url": "https://kanji.jitenon.jp/kanjib/711",
+        char: "罪",
+        url: "https://kanji.jitenon.jp/kanjib/711",
         "音読み": [
           "ザイ"
         ],
@@ -35569,8 +35592,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "署",
-        "url": "https://kanji.jitenon.jp/kanjib/905",
+        char: "署",
+        url: "https://kanji.jitenon.jp/kanjib/905",
         "音読み": [
           "ショ"
         ],
@@ -35584,8 +35607,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "罫",
-        "url": "https://kanji.jitenon.jp/kanjie/2355",
+        char: "罫",
+        url: "https://kanji.jitenon.jp/kanjie/2355",
         "音読み": [
           "カイ",
           "ケイ"
@@ -35600,8 +35623,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "罰",
-        "url": "https://kanji.jitenon.jp/kanjic/1234",
+        char: "罰",
+        url: "https://kanji.jitenon.jp/kanjic/1234",
         "音読み": [
           "バチ",
           "バツ"
@@ -35616,8 +35639,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "罷",
-        "url": "https://kanji.jitenon.jp/kanjid/1870",
+        char: "罷",
+        url: "https://kanji.jitenon.jp/kanjid/1870",
         "音読み": [
           "ヒ"
         ],
@@ -35631,8 +35654,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "罵",
-        "url": "https://kanji.jitenon.jp/kanjie/2085",
+        char: "罵",
+        url: "https://kanji.jitenon.jp/kanjie/2085",
         "音読み": [
           "バ"
         ],
@@ -35648,8 +35671,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "羅",
-        "url": "https://kanji.jitenon.jp/kanjid/1920",
+        char: "羅",
+        url: "https://kanji.jitenon.jp/kanjid/1920",
         "音読み": [
           "ラ"
         ],
@@ -35665,13 +35688,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05002",
-    "radical": "穴",
-    "reading": "あな・あなかんむり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05002",
+    radical: "穴",
+    reading: "あな・あなかんむり",
+    kanji: [
       {
-        "char": "穴",
-        "url": "https://kanji.jitenon.jp/kanjib/858",
+        char: "穴",
+        url: "https://kanji.jitenon.jp/kanjib/858",
         "音読み": [
           "ケツ"
         ],
@@ -35687,8 +35710,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "究",
-        "url": "https://kanji.jitenon.jp/kanji/272",
+        char: "究",
+        url: "https://kanji.jitenon.jp/kanji/272",
         "音読み": [
           "キュウ"
         ],
@@ -35704,8 +35727,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "空",
-        "url": "https://kanji.jitenon.jp/kanji/013",
+        char: "空",
+        url: "https://kanji.jitenon.jp/kanji/013",
         "音読み": [
           "クウ"
         ],
@@ -35724,8 +35747,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "突",
-        "url": "https://kanji.jitenon.jp/kanjic/1219",
+        char: "突",
+        url: "https://kanji.jitenon.jp/kanjic/1219",
         "音読み": [
           "トツ"
         ],
@@ -35741,8 +35764,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "窃",
-        "url": "https://kanji.jitenon.jp/kanjid/1780",
+        char: "窃",
+        url: "https://kanji.jitenon.jp/kanjid/1780",
         "音読み": [
           "セツ"
         ],
@@ -35756,8 +35779,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "穿",
-        "url": "https://kanji.jitenon.jp/kanjif/2638",
+        char: "穿",
+        url: "https://kanji.jitenon.jp/kanjif/2638",
         "音読み": [
           "セン"
         ],
@@ -35777,8 +35800,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "窄",
-        "url": "https://kanji.jitenon.jp/kanjie/2448",
+        char: "窄",
+        url: "https://kanji.jitenon.jp/kanjie/2448",
         "音読み": [
           "サク"
         ],
@@ -35797,8 +35820,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "窓",
-        "url": "https://kanji.jitenon.jp/kanjib/933",
+        char: "窓",
+        url: "https://kanji.jitenon.jp/kanjib/933",
         "音読み": [
           "ソウ"
         ],
@@ -35814,8 +35837,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "窒",
-        "url": "https://kanji.jitenon.jp/kanjid/1502",
+        char: "窒",
+        url: "https://kanji.jitenon.jp/kanjid/1502",
         "音読み": [
           "チツ"
         ],
@@ -35829,8 +35852,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "窟",
-        "url": "https://kanji.jitenon.jp/kanjid/1985",
+        char: "窟",
+        url: "https://kanji.jitenon.jp/kanjid/1985",
         "音読み": [
           "クツ"
         ],
@@ -35844,8 +35867,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "窪",
-        "url": "https://kanji.jitenon.jp/kanjie/2139",
+        char: "窪",
+        url: "https://kanji.jitenon.jp/kanjie/2139",
         "音読み": [
           "ア",
           "ワ"
@@ -35863,8 +35886,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "窮",
-        "url": "https://kanji.jitenon.jp/kanjid/1654",
+        char: "窮",
+        url: "https://kanji.jitenon.jp/kanjid/1654",
         "音読み": [
           "キュウ"
         ],
@@ -35881,8 +35904,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "窯",
-        "url": "https://kanji.jitenon.jp/kanjid/1918",
+        char: "窯",
+        url: "https://kanji.jitenon.jp/kanjid/1918",
         "音読み": [
           "ヨウ"
         ],
@@ -35898,8 +35921,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "窺",
-        "url": "https://kanji.jitenon.jp/kanjie/2280",
+        char: "窺",
+        url: "https://kanji.jitenon.jp/kanjie/2280",
         "音読み": [
           "キ"
         ],
@@ -35916,8 +35939,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "竃",
-        "url": "https://kanji.jitenon.jp/kanjif/2664",
+        char: "竃",
+        url: "https://kanji.jitenon.jp/kanjif/2664",
         "音読み": [
           "ソウ"
         ],
@@ -35934,8 +35957,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "竈",
-        "url": "https://kanji.jitenon.jp/kanjif/2663",
+        char: "竈",
+        url: "https://kanji.jitenon.jp/kanjif/2663",
         "音読み": [
           "ソウ"
         ],
@@ -35954,13 +35977,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05003",
-    "radical": "生",
-    "reading": "いきる・うまれる",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05003",
+    radical: "生",
+    reading: "いきる・うまれる",
+    kanji: [
       {
-        "char": "生",
-        "url": "https://kanji.jitenon.jp/kanji/043",
+        char: "生",
+        url: "https://kanji.jitenon.jp/kanji/043",
         "音読み": [
           "ショウ",
           "セイ"
@@ -35986,8 +36009,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "産",
-        "url": "https://kanji.jitenon.jp/kanjib/517",
+        char: "産",
+        url: "https://kanji.jitenon.jp/kanjib/517",
         "音読み": [
           "サン"
         ],
@@ -36005,8 +36028,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "甥",
-        "url": "https://kanji.jitenon.jp/kanjif/2567",
+        char: "甥",
+        url: "https://kanji.jitenon.jp/kanjif/2567",
         "音読み": [
           "ショウ",
           "セイ"
@@ -36025,13 +36048,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05004",
-    "radical": "石",
-    "reading": "いし・いしへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05004",
+    radical: "石",
+    reading: "いし・いしへん",
+    kanji: [
       {
-        "char": "石",
-        "url": "https://kanji.jitenon.jp/kanji/046",
+        char: "石",
+        url: "https://kanji.jitenon.jp/kanji/046",
         "音読み": [
           "コク",
           "シャク",
@@ -36049,8 +36072,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "研",
-        "url": "https://kanji.jitenon.jp/kanji/290",
+        char: "研",
+        url: "https://kanji.jitenon.jp/kanji/290",
         "音読み": [
           "ケン"
         ],
@@ -36066,8 +36089,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "砂",
-        "url": "https://kanji.jitenon.jp/kanjib/877",
+        char: "砂",
+        url: "https://kanji.jitenon.jp/kanjib/877",
         "音読み": [
           "サ",
           "シャ"
@@ -36084,8 +36107,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "砕",
-        "url": "https://kanji.jitenon.jp/kanjid/1700",
+        char: "砕",
+        url: "https://kanji.jitenon.jp/kanjid/1700",
         "音読み": [
           "サイ"
         ],
@@ -36102,8 +36125,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "破",
-        "url": "https://kanji.jitenon.jp/kanjib/786",
+        char: "破",
+        url: "https://kanji.jitenon.jp/kanjib/786",
         "音読み": [
           "ハ"
         ],
@@ -36120,8 +36143,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "砲",
-        "url": "https://kanji.jitenon.jp/kanjic/1268",
+        char: "砲",
+        url: "https://kanji.jitenon.jp/kanjic/1268",
         "音読み": [
           "ホウ"
         ],
@@ -36135,8 +36158,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "砿",
-        "url": "https://kanji.jitenon.jp/kanjie/2405",
+        char: "砿",
+        url: "https://kanji.jitenon.jp/kanjie/2405",
         "音読み": [
           "コウ"
         ],
@@ -36152,8 +36175,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "砥",
-        "url": "https://kanji.jitenon.jp/kanjie/2473",
+        char: "砥",
+        url: "https://kanji.jitenon.jp/kanjie/2473",
         "音読み": [
           "シ"
         ],
@@ -36172,8 +36195,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "砧",
-        "url": "https://kanji.jitenon.jp/kanjif/2747",
+        char: "砧",
+        url: "https://kanji.jitenon.jp/kanjif/2747",
         "音読み": [
           "ガン",
           "チン"
@@ -36190,8 +36213,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "砦",
-        "url": "https://kanji.jitenon.jp/kanjie/2445",
+        char: "砦",
+        url: "https://kanji.jitenon.jp/kanjie/2445",
         "音読み": [
           "サイ"
         ],
@@ -36207,8 +36230,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "硬",
-        "url": "https://kanji.jitenon.jp/kanjic/1402",
+        char: "硬",
+        url: "https://kanji.jitenon.jp/kanjic/1402",
         "音読み": [
           "コウ"
         ],
@@ -36224,8 +36247,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "硝",
-        "url": "https://kanji.jitenon.jp/kanjid/1743",
+        char: "硝",
+        url: "https://kanji.jitenon.jp/kanjid/1743",
         "音読み": [
           "ショウ"
         ],
@@ -36239,8 +36262,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "硫",
-        "url": "https://kanji.jitenon.jp/kanjid/1926",
+        char: "硫",
+        url: "https://kanji.jitenon.jp/kanjid/1926",
         "音読み": [
           "リュウ"
         ],
@@ -36254,8 +36277,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "硯",
-        "url": "https://kanji.jitenon.jp/kanjie/2367",
+        char: "硯",
+        url: "https://kanji.jitenon.jp/kanjie/2367",
         "音読み": [
           "ケン",
           "ゲン"
@@ -36272,8 +36295,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "硲",
-        "url": "https://kanji.jitenon.jp/kanjif/2833",
+        char: "硲",
+        url: "https://kanji.jitenon.jp/kanjif/2833",
         "音読み": [],
         "訓読み": [
           "はざま"
@@ -36287,8 +36310,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "碁",
-        "url": "https://kanji.jitenon.jp/kanjid/1682",
+        char: "碁",
+        url: "https://kanji.jitenon.jp/kanjid/1682",
         "音読み": [
           "ゴ"
         ],
@@ -36302,8 +36325,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "碍",
-        "url": "https://kanji.jitenon.jp/kanjie/2235",
+        char: "碍",
+        url: "https://kanji.jitenon.jp/kanjie/2235",
         "音読み": [
           "ガイ",
           "ゲ"
@@ -36321,8 +36344,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "碓",
-        "url": "https://kanji.jitenon.jp/kanjif/2692",
+        char: "碓",
+        url: "https://kanji.jitenon.jp/kanjif/2692",
         "音読み": [
           "タイ"
         ],
@@ -36338,8 +36361,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "碇",
-        "url": "https://kanji.jitenon.jp/kanjif/2753",
+        char: "碇",
+        url: "https://kanji.jitenon.jp/kanjif/2753",
         "音読み": [
           "テイ"
         ],
@@ -36355,8 +36378,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "磁",
-        "url": "https://kanji.jitenon.jp/kanjib/890",
+        char: "磁",
+        url: "https://kanji.jitenon.jp/kanjib/890",
         "音読み": [
           "ジ"
         ],
@@ -36370,8 +36393,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "碑",
-        "url": "https://kanji.jitenon.jp/kanjid/1538",
+        char: "碑",
+        url: "https://kanji.jitenon.jp/kanjid/1538",
         "音読み": [
           "ヒ"
         ],
@@ -36385,8 +36408,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "碩",
-        "url": "https://kanji.jitenon.jp/kanjif/2631",
+        char: "碩",
+        url: "https://kanji.jitenon.jp/kanjif/2631",
         "音読み": [
           "セキ"
         ],
@@ -36402,8 +36425,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "碧",
-        "url": "https://kanji.jitenon.jp/kanjif/2894",
+        char: "碧",
+        url: "https://kanji.jitenon.jp/kanjif/2894",
         "音読み": [
           "ヘキ"
         ],
@@ -36421,8 +36444,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "確",
-        "url": "https://kanji.jitenon.jp/kanjib/662",
+        char: "確",
+        url: "https://kanji.jitenon.jp/kanjib/662",
         "音読み": [
           "カク"
         ],
@@ -36439,8 +36462,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "磐",
-        "url": "https://kanji.jitenon.jp/kanjif/2843",
+        char: "磐",
+        url: "https://kanji.jitenon.jp/kanjif/2843",
         "音読み": [
           "ハン",
           "バン"
@@ -36458,8 +36481,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "磨",
-        "url": "https://kanji.jitenon.jp/kanjid/1901",
+        char: "磨",
+        url: "https://kanji.jitenon.jp/kanjid/1901",
         "音読み": [
           "マ"
         ],
@@ -36475,8 +36498,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "礁",
-        "url": "https://kanji.jitenon.jp/kanjid/1753",
+        char: "礁",
+        url: "https://kanji.jitenon.jp/kanjid/1753",
         "音読み": [
           "ショウ"
         ],
@@ -36490,8 +36513,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "磯",
-        "url": "https://kanji.jitenon.jp/kanjie/2277",
+        char: "磯",
+        url: "https://kanji.jitenon.jp/kanjie/2277",
         "音読み": [
           "キ"
         ],
@@ -36507,8 +36530,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "礎",
-        "url": "https://kanji.jitenon.jp/kanjic/1477",
+        char: "礎",
+        url: "https://kanji.jitenon.jp/kanjic/1477",
         "音読み": [
           "ソ"
         ],
@@ -36524,8 +36547,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "礪",
-        "url": "https://kanji.jitenon.jp/kanjif/3000",
+        char: "礪",
+        url: "https://kanji.jitenon.jp/kanjif/3000",
         "音読み": [
           "レイ"
         ],
@@ -36545,13 +36568,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05005",
-    "radical": "田",
-    "reading": "た・たへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05005",
+    radical: "田",
+    reading: "た・たへん",
+    kanji: [
       {
-        "char": "田",
-        "url": "https://kanji.jitenon.jp/kanji/062",
+        char: "田",
+        url: "https://kanji.jitenon.jp/kanji/062",
         "音読み": [
           "デン"
         ],
@@ -36567,8 +36590,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "申",
-        "url": "https://kanji.jitenon.jp/kanji/340",
+        char: "申",
+        url: "https://kanji.jitenon.jp/kanji/340",
         "音読み": [
           "シン"
         ],
@@ -36584,8 +36607,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "由",
-        "url": "https://kanji.jitenon.jp/kanji/420",
+        char: "由",
+        url: "https://kanji.jitenon.jp/kanji/420",
         "音読み": [
           "ユ",
           "ユイ",
@@ -36603,8 +36626,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "甲",
-        "url": "https://kanji.jitenon.jp/kanjic/1397",
+        char: "甲",
+        url: "https://kanji.jitenon.jp/kanjic/1397",
         "音読み": [
           "カン",
           "コウ"
@@ -36619,8 +36642,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "男",
-        "url": "https://kanji.jitenon.jp/kanji/056",
+        char: "男",
+        url: "https://kanji.jitenon.jp/kanji/056",
         "音読み": [
           "ダン",
           "ナン"
@@ -36637,8 +36660,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "町",
-        "url": "https://kanji.jitenon.jp/kanji/060",
+        char: "町",
+        url: "https://kanji.jitenon.jp/kanji/060",
         "音読み": [
           "チョウ"
         ],
@@ -36654,8 +36677,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "画",
-        "url": "https://kanji.jitenon.jp/kanji/091",
+        char: "画",
+        url: "https://kanji.jitenon.jp/kanji/091",
         "音読み": [
           "カク",
           "ガ"
@@ -36670,8 +36693,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "界",
-        "url": "https://kanji.jitenon.jp/kanji/259",
+        char: "界",
+        url: "https://kanji.jitenon.jp/kanji/259",
         "音読み": [
           "カイ"
         ],
@@ -36685,8 +36708,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "畑",
-        "url": "https://kanji.jitenon.jp/kanji/390",
+        char: "畑",
+        url: "https://kanji.jitenon.jp/kanji/390",
         "音読み": [],
         "訓読み": [
           "はた",
@@ -36701,8 +36724,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "畏",
-        "url": "https://kanji.jitenon.jp/kanjid/1942",
+        char: "畏",
+        url: "https://kanji.jitenon.jp/kanjid/1942",
         "音読み": [
           "イ"
         ],
@@ -36718,8 +36741,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "毘",
-        "url": "https://kanji.jitenon.jp/kanjif/2852",
+        char: "毘",
+        url: "https://kanji.jitenon.jp/kanjif/2852",
         "音読み": [
           "ヒ",
           "ビ"
@@ -36736,8 +36759,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "留",
-        "url": "https://kanji.jitenon.jp/kanjib/822",
+        char: "留",
+        url: "https://kanji.jitenon.jp/kanjib/822",
         "音読み": [
           "リュウ",
           "ル"
@@ -36755,8 +36778,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "畜",
-        "url": "https://kanji.jitenon.jp/kanjid/1501",
+        char: "畜",
+        url: "https://kanji.jitenon.jp/kanjid/1501",
         "音読み": [
           "チク"
         ],
@@ -36770,8 +36793,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "畔",
-        "url": "https://kanji.jitenon.jp/kanjid/1534",
+        char: "畔",
+        url: "https://kanji.jitenon.jp/kanjid/1534",
         "音読み": [
           "ハン"
         ],
@@ -36785,8 +36808,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "畝",
-        "url": "https://kanji.jitenon.jp/kanjid/1775",
+        char: "畝",
+        url: "https://kanji.jitenon.jp/kanjid/1775",
         "音読み": [],
         "訓読み": [
           "うね"
@@ -36800,8 +36823,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "畠",
-        "url": "https://kanji.jitenon.jp/kanjif/2834",
+        char: "畠",
+        url: "https://kanji.jitenon.jp/kanjif/2834",
         "音読み": [],
         "訓読み": [
           "はた",
@@ -36816,8 +36839,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "略",
-        "url": "https://kanji.jitenon.jp/kanjib/821",
+        char: "略",
+        url: "https://kanji.jitenon.jp/kanjib/821",
         "音読み": [
           "リャク"
         ],
@@ -36831,8 +36854,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "異",
-        "url": "https://kanji.jitenon.jp/kanjib/824",
+        char: "異",
+        url: "https://kanji.jitenon.jp/kanjib/824",
         "音読み": [
           "イ"
         ],
@@ -36848,8 +36871,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "畦",
-        "url": "https://kanji.jitenon.jp/kanjie/2353",
+        char: "畦",
+        url: "https://kanji.jitenon.jp/kanjie/2353",
         "音読み": [
           "ケイ"
         ],
@@ -36866,8 +36889,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "畢",
-        "url": "https://kanji.jitenon.jp/kanjif/2859",
+        char: "畢",
+        url: "https://kanji.jitenon.jp/kanjif/2859",
         "音読み": [
           "ヒツ"
         ],
@@ -36884,8 +36907,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "番",
-        "url": "https://kanji.jitenon.jp/kanji/214",
+        char: "番",
+        url: "https://kanji.jitenon.jp/kanji/214",
         "音読み": [
           "バン"
         ],
@@ -36899,8 +36922,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "畳",
-        "url": "https://kanji.jitenon.jp/kanjic/1143",
+        char: "畳",
+        url: "https://kanji.jitenon.jp/kanjic/1143",
         "音読み": [
           "ジョウ"
         ],
@@ -36917,8 +36940,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "畷",
-        "url": "https://kanji.jitenon.jp/kanjif/2764",
+        char: "畷",
+        url: "https://kanji.jitenon.jp/kanjif/2764",
         "音読み": [
           "テツ"
         ],
@@ -36934,8 +36957,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "畿",
-        "url": "https://kanji.jitenon.jp/kanjid/1977",
+        char: "畿",
+        url: "https://kanji.jitenon.jp/kanjid/1977",
         "音読み": [
           "キ"
         ],
@@ -36951,13 +36974,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05006",
-    "radical": "白",
-    "reading": "しろ・しろへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05006",
+    radical: "白",
+    reading: "しろ・しろへん",
+    kanji: [
       {
-        "char": "白",
-        "url": "https://kanji.jitenon.jp/kanji/068",
+        char: "白",
+        url: "https://kanji.jitenon.jp/kanji/068",
         "音読み": [
           "ハク",
           "ビャク"
@@ -36976,8 +36999,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "百",
-        "url": "https://kanji.jitenon.jp/kanji/070",
+        char: "百",
+        url: "https://kanji.jitenon.jp/kanji/070",
         "音読み": [
           "ヒャク"
         ],
@@ -36991,8 +37014,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "的",
-        "url": "https://kanji.jitenon.jp/kanjib/575",
+        char: "的",
+        url: "https://kanji.jitenon.jp/kanjib/575",
         "音読み": [
           "テキ"
         ],
@@ -37008,8 +37031,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "皇",
-        "url": "https://kanji.jitenon.jp/kanjib/868",
+        char: "皇",
+        url: "https://kanji.jitenon.jp/kanjib/868",
         "音読み": [
           "オウ",
           "コウ"
@@ -37024,8 +37047,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "皆",
-        "url": "https://kanji.jitenon.jp/kanjic/1034",
+        char: "皆",
+        url: "https://kanji.jitenon.jp/kanjic/1034",
         "音読み": [
           "カイ"
         ],
@@ -37041,8 +37064,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "皋",
-        "url": "https://kanji.jitenon.jp/kanjie/2404",
+        char: "皋",
+        url: "https://kanji.jitenon.jp/kanjie/2404",
         "音読み": [
           "コウ"
         ],
@@ -37059,8 +37082,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "皐",
-        "url": "https://kanji.jitenon.jp/kanjie/2403",
+        char: "皐",
+        url: "https://kanji.jitenon.jp/kanjie/2403",
         "音読み": [
           "コウ"
         ],
@@ -37079,13 +37102,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05007",
-    "radical": "目 罒",
-    "reading": "め・めへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05007",
+    radical: "目 罒",
+    reading: "め・めへん",
+    kanji: [
       {
-        "char": "目",
-        "url": "https://kanji.jitenon.jp/kanji/074",
+        char: "目",
+        url: "https://kanji.jitenon.jp/kanji/074",
         "音読み": [
           "ボク",
           "モク"
@@ -37103,8 +37126,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "直",
-        "url": "https://kanji.jitenon.jp/kanji/193",
+        char: "直",
+        url: "https://kanji.jitenon.jp/kanji/193",
         "音読み": [
           "ジキ",
           "チョク"
@@ -37123,8 +37146,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "盲",
-        "url": "https://kanji.jitenon.jp/kanjid/1906",
+        char: "盲",
+        url: "https://kanji.jitenon.jp/kanjid/1906",
         "音読み": [
           "モウ"
         ],
@@ -37138,8 +37161,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "県",
-        "url": "https://kanji.jitenon.jp/kanji/289",
+        char: "県",
+        url: "https://kanji.jitenon.jp/kanji/289",
         "音読み": [
           "ケン"
         ],
@@ -37153,8 +37176,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "相",
-        "url": "https://kanji.jitenon.jp/kanji/348",
+        char: "相",
+        url: "https://kanji.jitenon.jp/kanji/348",
         "音読み": [
           "ショウ",
           "ソウ"
@@ -37171,8 +37194,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "省",
-        "url": "https://kanji.jitenon.jp/kanjib/541",
+        char: "省",
+        url: "https://kanji.jitenon.jp/kanjib/541",
         "音読み": [
           "ショウ",
           "セイ"
@@ -37190,8 +37213,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "看",
-        "url": "https://kanji.jitenon.jp/kanjib/840",
+        char: "看",
+        url: "https://kanji.jitenon.jp/kanjib/840",
         "音読み": [
           "カン"
         ],
@@ -37205,8 +37228,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "盾",
-        "url": "https://kanji.jitenon.jp/kanjic/1136",
+        char: "盾",
+        url: "https://kanji.jitenon.jp/kanjic/1136",
         "音読み": [
           "ジュン"
         ],
@@ -37222,8 +37245,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "冒",
-        "url": "https://kanji.jitenon.jp/kanjic/1272",
+        char: "冒",
+        url: "https://kanji.jitenon.jp/kanjic/1272",
         "音読み": [
           "ボウ"
         ],
@@ -37239,8 +37262,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "眉",
-        "url": "https://kanji.jitenon.jp/kanjie/2092",
+        char: "眉",
+        url: "https://kanji.jitenon.jp/kanjie/2092",
         "音読み": [
           "ビ",
           "ミ"
@@ -37257,8 +37280,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "真",
-        "url": "https://kanji.jitenon.jp/kanji/342",
+        char: "真",
+        url: "https://kanji.jitenon.jp/kanji/342",
         "音読み": [
           "シン"
         ],
@@ -37274,8 +37297,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "眠",
-        "url": "https://kanji.jitenon.jp/kanjic/1280",
+        char: "眠",
+        url: "https://kanji.jitenon.jp/kanjic/1280",
         "音読み": [
           "ミン"
         ],
@@ -37292,8 +37315,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "眼",
-        "url": "https://kanji.jitenon.jp/kanjib/668",
+        char: "眼",
+        url: "https://kanji.jitenon.jp/kanjib/668",
         "音読み": [
           "ガン",
           "ゲン"
@@ -37310,8 +37333,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "眺",
-        "url": "https://kanji.jitenon.jp/kanjid/1817",
+        char: "眺",
+        url: "https://kanji.jitenon.jp/kanjid/1817",
         "音読み": [
           "チョウ"
         ],
@@ -37327,8 +37350,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "睡",
-        "url": "https://kanji.jitenon.jp/kanjid/1769",
+        char: "睡",
+        url: "https://kanji.jitenon.jp/kanjid/1769",
         "音読み": [
           "スイ"
         ],
@@ -37342,8 +37365,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "督",
-        "url": "https://kanji.jitenon.jp/kanjid/1845",
+        char: "督",
+        url: "https://kanji.jitenon.jp/kanjid/1845",
         "音読み": [
           "トク"
         ],
@@ -37357,8 +37380,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "睦",
-        "url": "https://kanji.jitenon.jp/kanjie/2105",
+        char: "睦",
+        url: "https://kanji.jitenon.jp/kanjie/2105",
         "音読み": [
           "ボク"
         ],
@@ -37372,8 +37395,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "瞳",
-        "url": "https://kanji.jitenon.jp/kanjie/2072",
+        char: "瞳",
+        url: "https://kanji.jitenon.jp/kanjie/2072",
         "音読み": [
           "ドウ"
         ],
@@ -37389,8 +37412,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "瞭",
-        "url": "https://kanji.jitenon.jp/kanjie/2126",
+        char: "瞭",
+        url: "https://kanji.jitenon.jp/kanjie/2126",
         "音読み": [
           "リョウ"
         ],
@@ -37404,8 +37427,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "瞥",
-        "url": "https://kanji.jitenon.jp/kanjif/2895",
+        char: "瞥",
+        url: "https://kanji.jitenon.jp/kanjif/2895",
         "音読み": [
           "ベツ"
         ],
@@ -37421,8 +37444,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "瞬",
-        "url": "https://kanji.jitenon.jp/kanjic/1133",
+        char: "瞬",
+        url: "https://kanji.jitenon.jp/kanjic/1133",
         "音読み": [
           "シュン"
         ],
@@ -37440,13 +37463,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05008",
-    "radical": "立",
-    "reading": "たつ・たつへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05008",
+    radical: "立",
+    reading: "たつ・たつへん",
+    kanji: [
       {
-        "char": "立",
-        "url": "https://kanji.jitenon.jp/kanji/078",
+        char: "立",
+        url: "https://kanji.jitenon.jp/kanji/078",
         "音読み": [
           "リツ",
           "リュウ"
@@ -37464,8 +37487,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "竜",
-        "url": "https://kanji.jitenon.jp/kanjid/1925",
+        char: "竜",
+        url: "https://kanji.jitenon.jp/kanjid/1925",
         "音読み": [
           "リュウ"
         ],
@@ -37481,8 +37504,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "章",
-        "url": "https://kanji.jitenon.jp/kanji/333",
+        char: "章",
+        url: "https://kanji.jitenon.jp/kanji/333",
         "音読み": [
           "ショウ"
         ],
@@ -37496,8 +37519,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "童",
-        "url": "https://kanji.jitenon.jp/kanji/384",
+        char: "童",
+        url: "https://kanji.jitenon.jp/kanji/384",
         "音読み": [
           "ドウ"
         ],
@@ -37513,8 +37536,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "竣",
-        "url": "https://kanji.jitenon.jp/kanjif/2529",
+        char: "竣",
+        url: "https://kanji.jitenon.jp/kanjif/2529",
         "音読み": [
           "シュン"
         ],
@@ -37530,8 +37553,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "靖",
-        "url": "https://kanji.jitenon.jp/kanjif/2627",
+        char: "靖",
+        url: "https://kanji.jitenon.jp/kanjif/2627",
         "音読み": [
           "セイ"
         ],
@@ -37549,8 +37572,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "端",
-        "url": "https://kanji.jitenon.jp/kanjic/1181",
+        char: "端",
+        url: "https://kanji.jitenon.jp/kanjic/1181",
         "音読み": [
           "タン"
         ],
@@ -37568,8 +37591,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "竪",
-        "url": "https://kanji.jitenon.jp/kanjif/2504",
+        char: "竪",
+        url: "https://kanji.jitenon.jp/kanjif/2504",
         "音読み": [
           "ジュ"
         ],
@@ -37588,8 +37611,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "競",
-        "url": "https://kanji.jitenon.jp/kanji/484",
+        char: "競",
+        url: "https://kanji.jitenon.jp/kanji/484",
         "音読み": [
           "キョウ",
           "ケイ"
@@ -37609,13 +37632,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05009",
-    "radical": "禾",
-    "reading": "のぎ・のぎへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05009",
+    radical: "禾",
+    reading: "のぎ・のぎへん",
+    kanji: [
       {
-        "char": "禾",
-        "url": "https://kanji.jitenon.jp/kanjie/2211",
+        char: "禾",
+        url: "https://kanji.jitenon.jp/kanjie/2211",
         "音読み": [
           "カ"
         ],
@@ -37632,8 +37655,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "私",
-        "url": "https://kanji.jitenon.jp/kanjib/886",
+        char: "私",
+        url: "https://kanji.jitenon.jp/kanjib/886",
         "音読み": [
           "シ"
         ],
@@ -37650,8 +37673,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "秀",
-        "url": "https://kanji.jitenon.jp/kanjic/1128",
+        char: "秀",
+        url: "https://kanji.jitenon.jp/kanjic/1128",
         "音読み": [
           "シュウ"
         ],
@@ -37667,8 +37690,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "禿",
-        "url": "https://kanji.jitenon.jp/kanjif/2804",
+        char: "禿",
+        url: "https://kanji.jitenon.jp/kanjif/2804",
         "音読み": [
           "トク"
         ],
@@ -37687,8 +37710,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "科",
-        "url": "https://kanji.jitenon.jp/kanji/089",
+        char: "科",
+        url: "https://kanji.jitenon.jp/kanji/089",
         "音読み": [
           "カ"
         ],
@@ -37702,8 +37725,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "秋",
-        "url": "https://kanji.jitenon.jp/kanji/157",
+        char: "秋",
+        url: "https://kanji.jitenon.jp/kanji/157",
         "音読み": [
           "シュウ"
         ],
@@ -37719,8 +37742,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "秒",
-        "url": "https://kanji.jitenon.jp/kanji/403",
+        char: "秒",
+        url: "https://kanji.jitenon.jp/kanji/403",
         "音読み": [
           "ビョウ"
         ],
@@ -37734,8 +37757,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "秘",
-        "url": "https://kanji.jitenon.jp/kanjib/971",
+        char: "秘",
+        url: "https://kanji.jitenon.jp/kanjib/971",
         "音読み": [
           "ヒ"
         ],
@@ -37751,8 +37774,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "称",
-        "url": "https://kanji.jitenon.jp/kanjic/1142",
+        char: "称",
+        url: "https://kanji.jitenon.jp/kanjic/1142",
         "音読み": [
           "ショウ"
         ],
@@ -37766,8 +37789,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "租",
-        "url": "https://kanji.jitenon.jp/kanjid/1792",
+        char: "租",
+        url: "https://kanji.jitenon.jp/kanjid/1792",
         "音読み": [
           "ソ"
         ],
@@ -37781,8 +37804,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "秩",
-        "url": "https://kanji.jitenon.jp/kanjid/1813",
+        char: "秩",
+        url: "https://kanji.jitenon.jp/kanjid/1813",
         "音読み": [
           "チツ"
         ],
@@ -37796,8 +37819,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "秤",
-        "url": "https://kanji.jitenon.jp/kanjif/2568",
+        char: "秤",
+        url: "https://kanji.jitenon.jp/kanjif/2568",
         "音読み": [
           "ショウ",
           "ビン"
@@ -37814,8 +37837,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "秦",
-        "url": "https://kanji.jitenon.jp/kanjif/2599",
+        char: "秦",
+        url: "https://kanji.jitenon.jp/kanjif/2599",
         "音読み": [
           "シン"
         ],
@@ -37831,8 +37854,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "移",
-        "url": "https://kanji.jitenon.jp/kanjib/641",
+        char: "移",
+        url: "https://kanji.jitenon.jp/kanjib/641",
         "音読み": [
           "イ"
         ],
@@ -37849,8 +37872,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "税",
-        "url": "https://kanji.jitenon.jp/kanjib/749",
+        char: "税",
+        url: "https://kanji.jitenon.jp/kanjib/749",
         "音読み": [
           "ゼイ"
         ],
@@ -37864,8 +37887,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "程",
-        "url": "https://kanji.jitenon.jp/kanjib/774",
+        char: "程",
+        url: "https://kanji.jitenon.jp/kanjib/774",
         "音読み": [
           "テイ"
         ],
@@ -37881,8 +37904,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "稀",
-        "url": "https://kanji.jitenon.jp/kanjie/2279",
+        char: "稀",
+        url: "https://kanji.jitenon.jp/kanjie/2279",
         "音読み": [
           "キ",
           "ケ"
@@ -37901,8 +37924,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "稚",
-        "url": "https://kanji.jitenon.jp/kanjic/1500",
+        char: "稚",
+        url: "https://kanji.jitenon.jp/kanjic/1500",
         "音読み": [
           "チ"
         ],
@@ -37916,8 +37939,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "稔",
-        "url": "https://kanji.jitenon.jp/kanjif/2606",
+        char: "稔",
+        url: "https://kanji.jitenon.jp/kanjif/2606",
         "音読み": [
           "ジン",
           "ニン",
@@ -37937,8 +37960,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "稗",
-        "url": "https://kanji.jitenon.jp/kanjif/2821",
+        char: "稗",
+        url: "https://kanji.jitenon.jp/kanjif/2821",
         "音読み": [
           "ハイ"
         ],
@@ -37955,8 +37978,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "稜",
-        "url": "https://kanji.jitenon.jp/kanjif/2984",
+        char: "稜",
+        url: "https://kanji.jitenon.jp/kanjif/2984",
         "音読み": [
           "リョウ",
           "ロウ"
@@ -37973,8 +37996,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "種",
-        "url": "https://kanji.jitenon.jp/kanjib/529",
+        char: "種",
+        url: "https://kanji.jitenon.jp/kanjib/529",
         "音読み": [
           "シュ"
         ],
@@ -37990,8 +38013,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "穀",
-        "url": "https://kanji.jitenon.jp/kanjib/873",
+        char: "穀",
+        url: "https://kanji.jitenon.jp/kanjib/873",
         "音読み": [
           "コク"
         ],
@@ -38005,8 +38028,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "稲",
-        "url": "https://kanji.jitenon.jp/kanjic/1215",
+        char: "稲",
+        url: "https://kanji.jitenon.jp/kanjic/1215",
         "音読み": [
           "トウ"
         ],
@@ -38023,8 +38046,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "稿",
-        "url": "https://kanji.jitenon.jp/kanjic/1098",
+        char: "稿",
+        url: "https://kanji.jitenon.jp/kanjic/1098",
         "音読み": [
           "コウ"
         ],
@@ -38038,8 +38061,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "穂",
-        "url": "https://kanji.jitenon.jp/kanjic/1459",
+        char: "穂",
+        url: "https://kanji.jitenon.jp/kanjic/1459",
         "音読み": [
           "スイ"
         ],
@@ -38055,8 +38078,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "稼",
-        "url": "https://kanji.jitenon.jp/kanjid/1616",
+        char: "稼",
+        url: "https://kanji.jitenon.jp/kanjid/1616",
         "音読み": [
           "カ"
         ],
@@ -38072,8 +38095,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "稽",
-        "url": "https://kanji.jitenon.jp/kanjid/1989",
+        char: "稽",
+        url: "https://kanji.jitenon.jp/kanjid/1989",
         "音読み": [
           "ケイ"
         ],
@@ -38087,8 +38110,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "積",
-        "url": "https://kanji.jitenon.jp/kanjib/548",
+        char: "積",
+        url: "https://kanji.jitenon.jp/kanjib/548",
         "音読み": [
           "セキ"
         ],
@@ -38105,8 +38128,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "穏",
-        "url": "https://kanji.jitenon.jp/kanjic/1331",
+        char: "穏",
+        url: "https://kanji.jitenon.jp/kanjic/1331",
         "音読み": [
           "オン"
         ],
@@ -38122,8 +38145,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "穎",
-        "url": "https://kanji.jitenon.jp/kanjie/2180",
+        char: "穎",
+        url: "https://kanji.jitenon.jp/kanjie/2180",
         "音読み": [
           "エイ"
         ],
@@ -38140,8 +38163,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "穐",
-        "url": "https://kanji.jitenon.jp/kanjif/2513",
+        char: "穐",
+        url: "https://kanji.jitenon.jp/kanjif/2513",
         "音読み": [
           "シュウ"
         ],
@@ -38158,8 +38181,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "穆",
-        "url": "https://kanji.jitenon.jp/kanjif/2927",
+        char: "穆",
+        url: "https://kanji.jitenon.jp/kanjif/2927",
         "音読み": [
           "ボク",
           "モク"
@@ -38176,8 +38199,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "穫",
-        "url": "https://kanji.jitenon.jp/kanjic/1343",
+        char: "穫",
+        url: "https://kanji.jitenon.jp/kanjic/1343",
         "音読み": [
           "カク"
         ],
@@ -38191,8 +38214,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "穣",
-        "url": "https://kanji.jitenon.jp/kanjif/2587",
+        char: "穣",
+        url: "https://kanji.jitenon.jp/kanjif/2587",
         "音読み": [
           "ジョウ"
         ],
@@ -38209,8 +38232,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "龝",
-        "url": "https://kanji.jitenon.jp/kanjif/2514",
+        char: "龝",
+        url: "https://kanji.jitenon.jp/kanjif/2514",
         "音読み": [
           "シュウ"
         ],
@@ -38229,13 +38252,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05010",
-    "radical": "矢",
-    "reading": "や・やへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05010",
+    radical: "矢",
+    reading: "や・やへん",
+    kanji: [
       {
-        "char": "矢",
-        "url": "https://kanji.jitenon.jp/kanji/144",
+        char: "矢",
+        url: "https://kanji.jitenon.jp/kanji/144",
         "音読み": [
           "シ"
         ],
@@ -38251,8 +38274,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "知",
-        "url": "https://kanji.jitenon.jp/kanji/187",
+        char: "知",
+        url: "https://kanji.jitenon.jp/kanji/187",
         "音読み": [
           "チ"
         ],
@@ -38268,8 +38291,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "矧",
-        "url": "https://kanji.jitenon.jp/kanjif/2598",
+        char: "矧",
+        url: "https://kanji.jitenon.jp/kanjif/2598",
         "音読み": [
           "シン"
         ],
@@ -38285,8 +38308,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "矩",
-        "url": "https://kanji.jitenon.jp/kanjie/2338",
+        char: "矩",
+        url: "https://kanji.jitenon.jp/kanjie/2338",
         "音読み": [
           "ク"
         ],
@@ -38303,8 +38326,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "短",
-        "url": "https://kanji.jitenon.jp/kanji/360",
+        char: "短",
+        url: "https://kanji.jitenon.jp/kanji/360",
         "音読み": [
           "タン"
         ],
@@ -38320,8 +38343,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "矯",
-        "url": "https://kanji.jitenon.jp/kanjid/1658",
+        char: "矯",
+        url: "https://kanji.jitenon.jp/kanjid/1658",
         "音読み": [
           "キョウ"
         ],
@@ -38339,13 +38362,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05012",
-    "radical": "用",
-    "reading": "もちいる",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05012",
+    radical: "用",
+    reading: "もちいる",
+    kanji: [
       {
-        "char": "用",
-        "url": "https://kanji.jitenon.jp/kanji/235",
+        char: "用",
+        url: "https://kanji.jitenon.jp/kanji/235",
         "音読み": [
           "ヨウ"
         ],
@@ -38361,8 +38384,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "甫",
-        "url": "https://kanji.jitenon.jp/kanjif/2875",
+        char: "甫",
+        url: "https://kanji.jitenon.jp/kanjif/2875",
         "音読み": [
           "フ",
           "ホ"
@@ -38382,13 +38405,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05013",
-    "radical": "皿",
-    "reading": "さら",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05013",
+    radical: "皿",
+    reading: "さら",
+    kanji: [
       {
-        "char": "皿",
-        "url": "https://kanji.jitenon.jp/kanji/299",
+        char: "皿",
+        url: "https://kanji.jitenon.jp/kanji/299",
         "音読み": [],
         "訓読み": [
           "さら"
@@ -38402,8 +38425,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "盆",
-        "url": "https://kanji.jitenon.jp/kanjic/1276",
+        char: "盆",
+        url: "https://kanji.jitenon.jp/kanjic/1276",
         "音読み": [
           "ボン"
         ],
@@ -38417,8 +38440,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "盈",
-        "url": "https://kanji.jitenon.jp/kanjie/2179",
+        char: "盈",
+        url: "https://kanji.jitenon.jp/kanjie/2179",
         "音読み": [
           "エイ"
         ],
@@ -38434,8 +38457,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "盃",
-        "url": "https://kanji.jitenon.jp/kanjif/2820",
+        char: "盃",
+        url: "https://kanji.jitenon.jp/kanjif/2820",
         "音読み": [
           "ハイ"
         ],
@@ -38451,8 +38474,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "益",
-        "url": "https://kanji.jitenon.jp/kanjib/646",
+        char: "益",
+        url: "https://kanji.jitenon.jp/kanjib/646",
         "音読み": [
           "エキ",
           "ヤク"
@@ -38467,8 +38490,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "盛",
-        "url": "https://kanji.jitenon.jp/kanjib/921",
+        char: "盛",
+        url: "https://kanji.jitenon.jp/kanjib/921",
         "音読み": [
           "ジョウ",
           "セイ"
@@ -38487,8 +38510,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "盗",
-        "url": "https://kanji.jitenon.jp/kanjic/1209",
+        char: "盗",
+        url: "https://kanji.jitenon.jp/kanjic/1209",
         "音読み": [
           "トウ"
         ],
@@ -38504,8 +38527,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "盟",
-        "url": "https://kanji.jitenon.jp/kanjib/988",
+        char: "盟",
+        url: "https://kanji.jitenon.jp/kanjib/988",
         "音読み": [
           "メイ"
         ],
@@ -38519,8 +38542,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "監",
-        "url": "https://kanji.jitenon.jp/kanjic/1039",
+        char: "監",
+        url: "https://kanji.jitenon.jp/kanjic/1039",
         "音読み": [
           "カン"
         ],
@@ -38534,8 +38557,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "盤",
-        "url": "https://kanji.jitenon.jp/kanjic/1240",
+        char: "盤",
+        url: "https://kanji.jitenon.jp/kanjic/1240",
         "音読み": [
           "バン"
         ],
@@ -38551,13 +38574,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05014",
-    "radical": "癶",
-    "reading": "はつがしら",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05014",
+    radical: "癶",
+    reading: "はつがしら",
+    kanji: [
       {
-        "char": "発",
-        "url": "https://kanji.jitenon.jp/kanji/391",
+        char: "発",
+        url: "https://kanji.jitenon.jp/kanji/391",
         "音読み": [
           "ハツ",
           "ホツ"
@@ -38572,8 +38595,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "登",
-        "url": "https://kanji.jitenon.jp/kanji/379",
+        char: "登",
+        url: "https://kanji.jitenon.jp/kanji/379",
         "音読み": [
           "ト",
           "トウ"
@@ -38592,13 +38615,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05016",
-    "radical": "疒",
-    "reading": "やまいだれ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05016",
+    radical: "疒",
+    reading: "やまいだれ",
+    kanji: [
       {
-        "char": "疫",
-        "url": "https://kanji.jitenon.jp/kanjid/1610",
+        char: "疫",
+        url: "https://kanji.jitenon.jp/kanjid/1610",
         "音読み": [
           "エキ",
           "ヤク"
@@ -38613,8 +38636,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "病",
-        "url": "https://kanji.jitenon.jp/kanji/402",
+        char: "病",
+        url: "https://kanji.jitenon.jp/kanji/402",
         "音読み": [
           "ビョウ",
           "ヘイ"
@@ -38632,8 +38655,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "疲",
-        "url": "https://kanji.jitenon.jp/kanjic/1242",
+        char: "疲",
+        url: "https://kanji.jitenon.jp/kanjic/1242",
         "音読み": [
           "ヒ"
         ],
@@ -38649,8 +38672,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "疾",
-        "url": "https://kanji.jitenon.jp/kanjic/1430",
+        char: "疾",
+        url: "https://kanji.jitenon.jp/kanjic/1430",
         "音読み": [
           "シツ"
         ],
@@ -38664,8 +38687,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "症",
-        "url": "https://kanji.jitenon.jp/kanjid/1750",
+        char: "症",
+        url: "https://kanji.jitenon.jp/kanjid/1750",
         "音読み": [
           "ショウ"
         ],
@@ -38679,8 +38702,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "疹",
-        "url": "https://kanji.jitenon.jp/kanjif/2597",
+        char: "疹",
+        url: "https://kanji.jitenon.jp/kanjif/2597",
         "音読み": [
           "シン",
           "チン"
@@ -38697,8 +38720,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "痕",
-        "url": "https://kanji.jitenon.jp/kanjie/2005",
+        char: "痕",
+        url: "https://kanji.jitenon.jp/kanjie/2005",
         "音読み": [
           "コン"
         ],
@@ -38714,8 +38737,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "痔",
-        "url": "https://kanji.jitenon.jp/kanjie/2480",
+        char: "痔",
+        url: "https://kanji.jitenon.jp/kanjie/2480",
         "音読み": [
           "ジ"
         ],
@@ -38731,8 +38754,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "痛",
-        "url": "https://kanji.jitenon.jp/kanjib/952",
+        char: "痛",
+        url: "https://kanji.jitenon.jp/kanjib/952",
         "音読み": [
           "ツウ"
         ],
@@ -38750,8 +38773,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "痘",
-        "url": "https://kanji.jitenon.jp/kanjid/1520",
+        char: "痘",
+        url: "https://kanji.jitenon.jp/kanjid/1520",
         "音読み": [
           "トウ"
         ],
@@ -38765,8 +38788,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "痢",
-        "url": "https://kanji.jitenon.jp/kanjid/1923",
+        char: "痢",
+        url: "https://kanji.jitenon.jp/kanjid/1923",
         "音読み": [
           "リ"
         ],
@@ -38780,8 +38803,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "痩",
-        "url": "https://kanji.jitenon.jp/kanjie/2047",
+        char: "痩",
+        url: "https://kanji.jitenon.jp/kanjie/2047",
         "音読み": [
           "ソウ"
         ],
@@ -38797,8 +38820,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "痴",
-        "url": "https://kanji.jitenon.jp/kanjid/1811",
+        char: "痴",
+        url: "https://kanji.jitenon.jp/kanjid/1811",
         "音読み": [
           "チ"
         ],
@@ -38812,8 +38835,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "瘍",
-        "url": "https://kanji.jitenon.jp/kanjie/2118",
+        char: "瘍",
+        url: "https://kanji.jitenon.jp/kanjie/2118",
         "音読み": [
           "ヨウ"
         ],
@@ -38827,8 +38850,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "療",
-        "url": "https://kanji.jitenon.jp/kanjic/1305",
+        char: "療",
+        url: "https://kanji.jitenon.jp/kanjic/1305",
         "音読み": [
           "リョウ"
         ],
@@ -38842,8 +38865,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "癌",
-        "url": "https://kanji.jitenon.jp/kanjie/2267",
+        char: "癌",
+        url: "https://kanji.jitenon.jp/kanjie/2267",
         "音読み": [
           "ガン"
         ],
@@ -38857,8 +38880,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "癖",
-        "url": "https://kanji.jitenon.jp/kanjid/1549",
+        char: "癖",
+        url: "https://kanji.jitenon.jp/kanjid/1549",
         "音読み": [
           "ヘキ"
         ],
@@ -38874,8 +38897,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "癒",
-        "url": "https://kanji.jitenon.jp/kanjid/1910",
+        char: "癒",
+        url: "https://kanji.jitenon.jp/kanjid/1910",
         "音読み": [
           "ユ"
         ],
@@ -38894,13 +38917,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05017",
-    "radical": "玄",
-    "reading": "げん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05017",
+    radical: "玄",
+    reading: "げん",
+    kanji: [
       {
-        "char": "玄",
-        "url": "https://kanji.jitenon.jp/kanjic/1088",
+        char: "玄",
+        url: "https://kanji.jitenon.jp/kanjic/1088",
         "音読み": [
           "ゲン"
         ],
@@ -38914,8 +38937,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "率",
-        "url": "https://kanji.jitenon.jp/kanjib/820",
+        char: "率",
+        url: "https://kanji.jitenon.jp/kanjib/820",
         "音読み": [
           "ソツ",
           "リツ"
@@ -38934,13 +38957,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05018",
-    "radical": "疋",
-    "reading": "ひき・ひきへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05018",
+    radical: "疋",
+    reading: "ひき・ひきへん",
+    kanji: [
       {
-        "char": "疋",
-        "url": "https://kanji.jitenon.jp/kanjif/2543",
+        char: "疋",
+        url: "https://kanji.jitenon.jp/kanjif/2543",
         "音読み": [
           "ショ",
           "ソ",
@@ -38959,8 +38982,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "疎",
-        "url": "https://kanji.jitenon.jp/kanjid/1791",
+        char: "疎",
+        url: "https://kanji.jitenon.jp/kanjid/1791",
         "音読み": [
           "ソ"
         ],
@@ -38977,8 +39000,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "疏",
-        "url": "https://kanji.jitenon.jp/kanjif/2544",
+        char: "疏",
+        url: "https://kanji.jitenon.jp/kanjif/2544",
         "音読み": [
           "ショ",
           "ソ"
@@ -39001,8 +39024,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "疑",
-        "url": "https://kanji.jitenon.jp/kanjib/846",
+        char: "疑",
+        url: "https://kanji.jitenon.jp/kanjib/846",
         "音読み": [
           "ギ"
         ],
@@ -39020,13 +39043,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05019",
-    "radical": "甘",
-    "reading": "あまい・かん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05019",
+    radical: "甘",
+    reading: "あまい・かん",
+    kanji: [
       {
-        "char": "甘",
-        "url": "https://kanji.jitenon.jp/kanjic/1038",
+        char: "甘",
+        url: "https://kanji.jitenon.jp/kanjic/1038",
         "音読み": [
           "カン"
         ],
@@ -39044,8 +39067,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "甚",
-        "url": "https://kanji.jitenon.jp/kanjid/1768",
+        char: "甚",
+        url: "https://kanji.jitenon.jp/kanjid/1768",
         "音読み": [
           "ジン"
         ],
@@ -39062,8 +39085,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "甜",
-        "url": "https://kanji.jitenon.jp/kanjif/2769",
+        char: "甜",
+        url: "https://kanji.jitenon.jp/kanjif/2769",
         "音読み": [
           "テン"
         ],
@@ -39082,13 +39105,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu05022",
-    "radical": "瓦",
-    "reading": "かわら",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu05022",
+    radical: "瓦",
+    reading: "かわら",
+    kanji: [
       {
-        "char": "瓦",
-        "url": "https://kanji.jitenon.jp/kanjid/1960",
+        char: "瓦",
+        url: "https://kanji.jitenon.jp/kanjid/1960",
         "音読み": [
           "ガ"
         ],
@@ -39104,8 +39127,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "瓶",
-        "url": "https://kanji.jitenon.jp/kanjid/1874",
+        char: "瓶",
+        url: "https://kanji.jitenon.jp/kanjid/1874",
         "音読み": [
           "ビン"
         ],
@@ -39119,8 +39142,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "甑",
-        "url": "https://kanji.jitenon.jp/kanjif/2662",
+        char: "甑",
+        url: "https://kanji.jitenon.jp/kanjif/2662",
         "音読み": [
           "ソウ"
         ],
@@ -39138,13 +39161,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06017",
-    "radical": "衣 衤",
-    "reading": "ころも・ころもへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06017",
+    radical: "衣 衤",
+    reading: "ころも・ころもへん",
+    kanji: [
       {
-        "char": "衣",
-        "url": "https://kanji.jitenon.jp/kanji/446",
+        char: "衣",
+        url: "https://kanji.jitenon.jp/kanji/446",
         "音読み": [
           "イ"
         ],
@@ -39160,8 +39183,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "表",
-        "url": "https://kanji.jitenon.jp/kanji/401",
+        char: "表",
+        url: "https://kanji.jitenon.jp/kanji/401",
         "音読み": [
           "ヒョウ"
         ],
@@ -39179,8 +39202,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "衷",
-        "url": "https://kanji.jitenon.jp/kanjid/1815",
+        char: "衷",
+        url: "https://kanji.jitenon.jp/kanjid/1815",
         "音読み": [
           "チュウ"
         ],
@@ -39194,16 +39217,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "衿",
-        "url": "https://kanji.jitenon.jp/kanjie/2334"
-      },
-      {
-        "char": "被",
-        "url": "https://kanji.jitenon.jp/kanjic/1241"
-      },
-      {
-        "char": "衰",
-        "url": "https://kanji.jitenon.jp/kanjic/1458",
+        char: "衰",
+        url: "https://kanji.jitenon.jp/kanjic/1458",
         "音読み": [
           "スイ"
         ],
@@ -39219,8 +39234,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "袖",
-        "url": "https://kanji.jitenon.jp/kanjie/2023",
+        char: "袖",
+        url: "https://kanji.jitenon.jp/kanjie/2023",
         "音読み": [
           "シュウ"
         ],
@@ -39236,8 +39251,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "袋",
-        "url": "https://kanji.jitenon.jp/kanjic/1490",
+        char: "袋",
+        url: "https://kanji.jitenon.jp/kanjic/1490",
         "音読み": [
           "タイ"
         ],
@@ -39253,8 +39268,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "袈",
-        "url": "https://kanji.jitenon.jp/kanjie/2349",
+        char: "袈",
+        url: "https://kanji.jitenon.jp/kanjie/2349",
         "音読み": [
           "ケ"
         ],
@@ -39268,8 +39283,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "袴",
-        "url": "https://kanji.jitenon.jp/kanjie/2382",
+        char: "袴",
+        url: "https://kanji.jitenon.jp/kanjie/2382",
         "音読み": [
           "コ"
         ],
@@ -39286,8 +39301,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "袷",
-        "url": "https://kanji.jitenon.jp/kanjie/2414",
+        char: "袷",
+        url: "https://kanji.jitenon.jp/kanjie/2414",
         "音読み": [
           "キョウ",
           "コウ"
@@ -39304,8 +39319,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "裁",
-        "url": "https://kanji.jitenon.jp/kanjib/880",
+        char: "裁",
+        url: "https://kanji.jitenon.jp/kanjib/880",
         "音読み": [
           "サイ"
         ],
@@ -39322,8 +39337,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "装",
-        "url": "https://kanji.jitenon.jp/kanjib/929",
+        char: "装",
+        url: "https://kanji.jitenon.jp/kanjib/929",
         "音読み": [
           "ショウ",
           "ソウ"
@@ -39340,8 +39355,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "補",
-        "url": "https://kanji.jitenon.jp/kanjib/978",
+        char: "補",
+        url: "https://kanji.jitenon.jp/kanjib/978",
         "音読み": [
           "ホ"
         ],
@@ -39357,8 +39372,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "裂",
-        "url": "https://kanji.jitenon.jp/kanjid/1596",
+        char: "裂",
+        url: "https://kanji.jitenon.jp/kanjid/1596",
         "音読み": [
           "レツ"
         ],
@@ -39375,8 +39390,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "裕",
-        "url": "https://kanji.jitenon.jp/kanjid/1915",
+        char: "裕",
+        url: "https://kanji.jitenon.jp/kanjid/1915",
         "音読み": [
           "ユウ"
         ],
@@ -39390,8 +39405,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "裡",
-        "url": "https://kanji.jitenon.jp/kanjif/2971",
+        char: "裡",
+        url: "https://kanji.jitenon.jp/kanjif/2971",
         "音読み": [
           "リ"
         ],
@@ -39408,8 +39423,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "裏",
-        "url": "https://kanji.jitenon.jp/kanjib/999",
+        char: "裏",
+        url: "https://kanji.jitenon.jp/kanjib/999",
         "音読み": [
           "リ"
         ],
@@ -39425,8 +39440,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "裸",
-        "url": "https://kanji.jitenon.jp/kanjid/1584",
+        char: "裸",
+        url: "https://kanji.jitenon.jp/kanjid/1584",
         "音読み": [
           "ラ"
         ],
@@ -39442,8 +39457,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "褐",
-        "url": "https://kanji.jitenon.jp/kanjid/1633",
+        char: "褐",
+        url: "https://kanji.jitenon.jp/kanjid/1633",
         "音読み": [
           "カツ"
         ],
@@ -39457,8 +39472,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "裾",
-        "url": "https://kanji.jitenon.jp/kanjie/2032",
+        char: "裾",
+        url: "https://kanji.jitenon.jp/kanjie/2032",
         "音読み": [],
         "訓読み": [
           "すそ"
@@ -39472,8 +39487,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "裟",
-        "url": "https://kanji.jitenon.jp/kanjie/2438",
+        char: "裟",
+        url: "https://kanji.jitenon.jp/kanjie/2438",
         "音読み": [
           "サ"
         ],
@@ -39487,8 +39502,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "製",
-        "url": "https://kanji.jitenon.jp/kanjib/743",
+        char: "製",
+        url: "https://kanji.jitenon.jp/kanjib/743",
         "音読み": [
           "セイ"
         ],
@@ -39502,8 +39517,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "複",
-        "url": "https://kanji.jitenon.jp/kanjib/802",
+        char: "複",
+        url: "https://kanji.jitenon.jp/kanjib/802",
         "音読み": [
           "フク"
         ],
@@ -39517,8 +39532,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "裳",
-        "url": "https://kanji.jitenon.jp/kanjif/2574",
+        char: "裳",
+        url: "https://kanji.jitenon.jp/kanjif/2574",
         "音読み": [
           "ショウ"
         ],
@@ -39535,8 +39550,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "褒",
-        "url": "https://kanji.jitenon.jp/kanjid/1890",
+        char: "褒",
+        url: "https://kanji.jitenon.jp/kanjid/1890",
         "音読み": [
           "ホウ"
         ],
@@ -39552,8 +39567,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "襟",
-        "url": "https://kanji.jitenon.jp/kanjid/1664",
+        char: "襟",
+        url: "https://kanji.jitenon.jp/kanjid/1664",
         "音読み": [
           "キン"
         ],
@@ -39569,8 +39584,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "襖",
-        "url": "https://kanji.jitenon.jp/kanjie/2195",
+        char: "襖",
+        url: "https://kanji.jitenon.jp/kanjie/2195",
         "音読み": [
           "オウ"
         ],
@@ -39588,8 +39603,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "襲",
-        "url": "https://kanji.jitenon.jp/kanjic/1130",
+        char: "襲",
+        url: "https://kanji.jitenon.jp/kanjic/1130",
         "音読み": [
           "シュウ"
         ],
@@ -39607,13 +39622,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06028",
-    "radical": "瓜",
-    "reading": "うり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06028",
+    radical: "瓜",
+    reading: "うり",
+    kanji: [
       {
-        "char": "瓜",
-        "url": "https://kanji.jitenon.jp/kanjie/2210",
+        char: "瓜",
+        url: "https://kanji.jitenon.jp/kanjie/2210",
         "音読み": [
           "カ"
         ],
@@ -39629,8 +39644,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "瓢",
-        "url": "https://kanji.jitenon.jp/kanjif/2863",
+        char: "瓢",
+        url: "https://kanji.jitenon.jp/kanjif/2863",
         "音読み": [
           "ヒョウ"
         ],
@@ -39649,13 +39664,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06002",
-    "radical": "糸",
-    "reading": "いと・いとへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06002",
+    radical: "糸",
+    reading: "いと・いとへん",
+    kanji: [
       {
-        "char": "糸",
-        "url": "https://kanji.jitenon.jp/kanji/028",
+        char: "糸",
+        url: "https://kanji.jitenon.jp/kanji/028",
         "音読み": [
           "シ"
         ],
@@ -39671,8 +39686,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "系",
-        "url": "https://kanji.jitenon.jp/kanjib/854",
+        char: "系",
+        url: "https://kanji.jitenon.jp/kanjib/854",
         "音読み": [
           "ケイ"
         ],
@@ -39686,8 +39701,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "級",
-        "url": "https://kanji.jitenon.jp/kanji/270",
+        char: "級",
+        url: "https://kanji.jitenon.jp/kanji/270",
         "音読み": [
           "キュウ"
         ],
@@ -39701,8 +39716,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "紀",
-        "url": "https://kanji.jitenon.jp/kanji/472",
+        char: "紀",
+        url: "https://kanji.jitenon.jp/kanji/472",
         "音読み": [
           "キ"
         ],
@@ -39716,8 +39731,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "約",
-        "url": "https://kanji.jitenon.jp/kanjib/619",
+        char: "約",
+        url: "https://kanji.jitenon.jp/kanjib/619",
         "音読み": [
           "ヤク"
         ],
@@ -39731,8 +39746,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "紅",
-        "url": "https://kanji.jitenon.jp/kanjib/870",
+        char: "紅",
+        url: "https://kanji.jitenon.jp/kanjib/870",
         "音読み": [
           "ク",
           "コウ"
@@ -39750,8 +39765,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "糾",
-        "url": "https://kanji.jitenon.jp/kanjid/1653",
+        char: "糾",
+        url: "https://kanji.jitenon.jp/kanjid/1653",
         "音読み": [
           "キュウ"
         ],
@@ -39765,8 +39780,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "紙",
-        "url": "https://kanji.jitenon.jp/kanji/143",
+        char: "紙",
+        url: "https://kanji.jitenon.jp/kanji/143",
         "音読み": [
           "シ"
         ],
@@ -39782,8 +39797,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "素",
-        "url": "https://kanji.jitenon.jp/kanjib/758",
+        char: "素",
+        url: "https://kanji.jitenon.jp/kanjib/758",
         "音読み": [
           "ス",
           "ソ"
@@ -39798,8 +39813,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "純",
-        "url": "https://kanji.jitenon.jp/kanjib/904",
+        char: "純",
+        url: "https://kanji.jitenon.jp/kanjib/904",
         "音読み": [
           "ジュン"
         ],
@@ -39813,8 +39828,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "納",
-        "url": "https://kanji.jitenon.jp/kanjib/962",
+        char: "納",
+        url: "https://kanji.jitenon.jp/kanjib/962",
         "音読み": [
           "トウ",
           "ナ",
@@ -39835,8 +39850,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "紋",
-        "url": "https://kanji.jitenon.jp/kanjic/1288",
+        char: "紋",
+        url: "https://kanji.jitenon.jp/kanjic/1288",
         "音読み": [
           "モン"
         ],
@@ -39850,8 +39865,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "紛",
-        "url": "https://kanji.jitenon.jp/kanjid/1548",
+        char: "紛",
+        url: "https://kanji.jitenon.jp/kanjid/1548",
         "音読み": [
           "フン"
         ],
@@ -39870,8 +39885,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "索",
-        "url": "https://kanji.jitenon.jp/kanjid/1705",
+        char: "索",
+        url: "https://kanji.jitenon.jp/kanjid/1705",
         "音読み": [
           "サク"
         ],
@@ -39885,8 +39900,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "紡",
-        "url": "https://kanji.jitenon.jp/kanjid/1894",
+        char: "紡",
+        url: "https://kanji.jitenon.jp/kanjid/1894",
         "音読み": [
           "ボウ"
         ],
@@ -39902,8 +39917,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "紘",
-        "url": "https://kanji.jitenon.jp/kanjie/2407",
+        char: "紘",
+        url: "https://kanji.jitenon.jp/kanjie/2407",
         "音読み": [
           "コウ"
         ],
@@ -39920,8 +39935,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "紗",
-        "url": "https://kanji.jitenon.jp/kanjie/2436",
+        char: "紗",
+        url: "https://kanji.jitenon.jp/kanjie/2436",
         "音読み": [
           "サ",
           "シャ"
@@ -39938,8 +39953,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "紐",
-        "url": "https://kanji.jitenon.jp/kanjif/2526",
+        char: "紐",
+        url: "https://kanji.jitenon.jp/kanjif/2526",
         "音読み": [
           "ジュウ",
           "チュウ"
@@ -39956,8 +39971,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "細",
-        "url": "https://kanji.jitenon.jp/kanji/139",
+        char: "細",
+        url: "https://kanji.jitenon.jp/kanji/139",
         "音読み": [
           "サイ"
         ],
@@ -39976,8 +39991,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "組",
-        "url": "https://kanji.jitenon.jp/kanji/178",
+        char: "組",
+        url: "https://kanji.jitenon.jp/kanji/178",
         "音読み": [
           "ソ"
         ],
@@ -39994,8 +40009,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "終",
-        "url": "https://kanji.jitenon.jp/kanji/323",
+        char: "終",
+        url: "https://kanji.jitenon.jp/kanji/323",
         "音読み": [
           "シュウ"
         ],
@@ -40012,8 +40027,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "経",
-        "url": "https://kanji.jitenon.jp/kanjib/684",
+        char: "経",
+        url: "https://kanji.jitenon.jp/kanjib/684",
         "音読み": [
           "キョウ",
           "ケイ"
@@ -40030,8 +40045,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "紹",
-        "url": "https://kanji.jitenon.jp/kanjic/1137",
+        char: "紹",
+        url: "https://kanji.jitenon.jp/kanjic/1137",
         "音読み": [
           "ショウ"
         ],
@@ -40045,8 +40060,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "紺",
-        "url": "https://kanji.jitenon.jp/kanjic/1412",
+        char: "紺",
+        url: "https://kanji.jitenon.jp/kanjic/1412",
         "音読み": [
           "コン"
         ],
@@ -40060,8 +40075,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "紳",
-        "url": "https://kanji.jitenon.jp/kanjid/1763",
+        char: "紳",
+        url: "https://kanji.jitenon.jp/kanjid/1763",
         "音読み": [
           "シン"
         ],
@@ -40075,8 +40090,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "累",
-        "url": "https://kanji.jitenon.jp/kanjid/1932",
+        char: "累",
+        url: "https://kanji.jitenon.jp/kanjid/1932",
         "音読み": [
           "ルイ"
         ],
@@ -40090,8 +40105,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "絃",
-        "url": "https://kanji.jitenon.jp/kanjie/2372",
+        char: "絃",
+        url: "https://kanji.jitenon.jp/kanjie/2372",
         "音読み": [
           "ゲン"
         ],
@@ -40108,8 +40123,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "紬",
-        "url": "https://kanji.jitenon.jp/kanjif/2724",
+        char: "紬",
+        url: "https://kanji.jitenon.jp/kanjif/2724",
         "音読み": [
           "チュウ"
         ],
@@ -40126,8 +40141,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "絵",
-        "url": "https://kanji.jitenon.jp/kanji/095",
+        char: "絵",
+        url: "https://kanji.jitenon.jp/kanji/095",
         "音読み": [
           "エ",
           "カイ"
@@ -40142,8 +40157,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "給",
-        "url": "https://kanji.jitenon.jp/kanji/480",
+        char: "給",
+        url: "https://kanji.jitenon.jp/kanji/480",
         "音読み": [
           "キュウ"
         ],
@@ -40157,8 +40172,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "結",
-        "url": "https://kanji.jitenon.jp/kanji/494",
+        char: "結",
+        url: "https://kanji.jitenon.jp/kanji/494",
         "音読み": [
           "ケツ"
         ],
@@ -40176,8 +40191,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "絶",
-        "url": "https://kanji.jitenon.jp/kanjib/754",
+        char: "絶",
+        url: "https://kanji.jitenon.jp/kanjib/754",
         "音読み": [
           "ゼツ"
         ],
@@ -40195,8 +40210,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "統",
-        "url": "https://kanji.jitenon.jp/kanjib/778",
+        char: "統",
+        url: "https://kanji.jitenon.jp/kanjib/778",
         "音読み": [
           "トウ"
         ],
@@ -40212,8 +40227,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "紫",
-        "url": "https://kanji.jitenon.jp/kanjic/1114",
+        char: "紫",
+        url: "https://kanji.jitenon.jp/kanjic/1114",
         "音読み": [
           "シ"
         ],
@@ -40229,8 +40244,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "絡",
-        "url": "https://kanji.jitenon.jp/kanjic/1300",
+        char: "絡",
+        url: "https://kanji.jitenon.jp/kanjic/1300",
         "音読み": [
           "ラク"
         ],
@@ -40248,8 +40263,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "絞",
-        "url": "https://kanji.jitenon.jp/kanjic/1407",
+        char: "絞",
+        url: "https://kanji.jitenon.jp/kanjic/1407",
         "音読み": [
           "コウ"
         ],
@@ -40267,8 +40282,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "絢",
-        "url": "https://kanji.jitenon.jp/kanjie/2368",
+        char: "絢",
+        url: "https://kanji.jitenon.jp/kanjie/2368",
         "音読み": [
           "ケン"
         ],
@@ -40284,8 +40299,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "続",
-        "url": "https://kanji.jitenon.jp/kanjib/560",
+        char: "続",
+        url: "https://kanji.jitenon.jp/kanjib/560",
         "音読み": [
           "ゾク"
         ],
@@ -40302,8 +40317,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "絹",
-        "url": "https://kanji.jitenon.jp/kanjib/859",
+        char: "絹",
+        url: "https://kanji.jitenon.jp/kanjib/859",
         "音読み": [
           "ケン"
         ],
@@ -40319,8 +40334,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "継",
-        "url": "https://kanji.jitenon.jp/kanjic/1092",
+        char: "継",
+        url: "https://kanji.jitenon.jp/kanjic/1092",
         "音読み": [
           "ケイ"
         ],
@@ -40336,8 +40351,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "緑",
-        "url": "https://kanji.jitenon.jp/kanji/433",
+        char: "緑",
+        url: "https://kanji.jitenon.jp/kanji/433",
         "音読み": [
           "リョク",
           "ロク"
@@ -40354,8 +40369,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "練",
-        "url": "https://kanji.jitenon.jp/kanji/437",
+        char: "練",
+        url: "https://kanji.jitenon.jp/kanji/437",
         "音読み": [
           "レン"
         ],
@@ -40371,8 +40386,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "総",
-        "url": "https://kanji.jitenon.jp/kanjib/759",
+        char: "総",
+        url: "https://kanji.jitenon.jp/kanjib/759",
         "音読み": [
           "ソウ"
         ],
@@ -40386,8 +40401,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "綿",
-        "url": "https://kanji.jitenon.jp/kanjib/815",
+        char: "綿",
+        url: "https://kanji.jitenon.jp/kanjib/815",
         "音読み": [
           "メン"
         ],
@@ -40403,8 +40418,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "維",
-        "url": "https://kanji.jitenon.jp/kanjic/1011",
+        char: "維",
+        url: "https://kanji.jitenon.jp/kanjic/1011",
         "音読み": [
           "イ"
         ],
@@ -40418,8 +40433,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "網",
-        "url": "https://kanji.jitenon.jp/kanjic/1285",
+        char: "網",
+        url: "https://kanji.jitenon.jp/kanjic/1285",
         "音読み": [
           "モウ"
         ],
@@ -40435,8 +40450,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "綱",
-        "url": "https://kanji.jitenon.jp/kanjic/1403",
+        char: "綱",
+        url: "https://kanji.jitenon.jp/kanjic/1403",
         "音読み": [
           "コウ"
         ],
@@ -40452,8 +40467,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "緒",
-        "url": "https://kanji.jitenon.jp/kanjid/1738",
+        char: "緒",
+        url: "https://kanji.jitenon.jp/kanjid/1738",
         "音読み": [
           "ショ",
           "チョ"
@@ -40470,8 +40485,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "綻",
-        "url": "https://kanji.jitenon.jp/kanjie/2057",
+        char: "綻",
+        url: "https://kanji.jitenon.jp/kanjie/2057",
         "音読み": [
           "タン"
         ],
@@ -40487,8 +40502,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "綬",
-        "url": "https://kanji.jitenon.jp/kanjif/2506",
+        char: "綬",
+        url: "https://kanji.jitenon.jp/kanjif/2506",
         "音読み": [
           "ジュ"
         ],
@@ -40505,8 +40520,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "綜",
-        "url": "https://kanji.jitenon.jp/kanjif/2666",
+        char: "綜",
+        url: "https://kanji.jitenon.jp/kanjif/2666",
         "音読み": [
           "ソウ"
         ],
@@ -40524,8 +40539,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "綴",
-        "url": "https://kanji.jitenon.jp/kanjif/2755",
+        char: "綴",
+        url: "https://kanji.jitenon.jp/kanjif/2755",
         "音読み": [
           "テイ",
           "テツ"
@@ -40543,8 +40558,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "緋",
-        "url": "https://kanji.jitenon.jp/kanjif/2853",
+        char: "緋",
+        url: "https://kanji.jitenon.jp/kanjif/2853",
         "音読み": [
           "ヒ"
         ],
@@ -40561,8 +40576,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "綾",
-        "url": "https://kanji.jitenon.jp/kanjif/2985",
+        char: "綾",
+        url: "https://kanji.jitenon.jp/kanjif/2985",
         "音読み": [
           "リョウ",
           "リン"
@@ -40579,8 +40594,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "線",
-        "url": "https://kanji.jitenon.jp/kanji/176",
+        char: "線",
+        url: "https://kanji.jitenon.jp/kanji/176",
         "音読み": [
           "セン"
         ],
@@ -40594,8 +40609,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "編",
-        "url": "https://kanji.jitenon.jp/kanjib/804",
+        char: "編",
+        url: "https://kanji.jitenon.jp/kanjib/804",
         "音読み": [
           "ヘン"
         ],
@@ -40611,8 +40626,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "縁",
-        "url": "https://kanji.jitenon.jp/kanjic/1020",
+        char: "縁",
+        url: "https://kanji.jitenon.jp/kanjic/1020",
         "音読み": [
           "エン"
         ],
@@ -40628,8 +40643,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "緩",
-        "url": "https://kanji.jitenon.jp/kanjic/1353",
+        char: "緩",
+        url: "https://kanji.jitenon.jp/kanjic/1353",
         "音読み": [
           "カン"
         ],
@@ -40648,8 +40663,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "緊",
-        "url": "https://kanji.jitenon.jp/kanjic/1375",
+        char: "緊",
+        url: "https://kanji.jitenon.jp/kanjic/1375",
         "音読み": [
           "キン"
         ],
@@ -40663,8 +40678,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "締",
-        "url": "https://kanji.jitenon.jp/kanjid/1514",
+        char: "締",
+        url: "https://kanji.jitenon.jp/kanjid/1514",
         "音読み": [
           "テイ"
         ],
@@ -40681,8 +40696,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "縄",
-        "url": "https://kanji.jitenon.jp/kanjid/1760",
+        char: "縄",
+        url: "https://kanji.jitenon.jp/kanjid/1760",
         "音読み": [
           "ジョウ"
         ],
@@ -40698,8 +40713,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "緬",
-        "url": "https://kanji.jitenon.jp/kanjif/2899",
+        char: "緬",
+        url: "https://kanji.jitenon.jp/kanjif/2899",
         "音読み": [
           "ベン",
           "メン"
@@ -40717,8 +40732,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "縦",
-        "url": "https://kanji.jitenon.jp/kanjib/901",
+        char: "縦",
+        url: "https://kanji.jitenon.jp/kanjib/901",
         "音読み": [
           "ジュウ"
         ],
@@ -40734,8 +40749,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "緯",
-        "url": "https://kanji.jitenon.jp/kanjic/1010",
+        char: "緯",
+        url: "https://kanji.jitenon.jp/kanjic/1010",
         "音読み": [
           "イ"
         ],
@@ -40749,8 +40764,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "繁",
-        "url": "https://kanji.jitenon.jp/kanjic/1235",
+        char: "繁",
+        url: "https://kanji.jitenon.jp/kanjic/1235",
         "音読み": [
           "ハン"
         ],
@@ -40764,8 +40779,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "縛",
-        "url": "https://kanji.jitenon.jp/kanjid/1529",
+        char: "縛",
+        url: "https://kanji.jitenon.jp/kanjid/1529",
         "音読み": [
           "バク"
         ],
@@ -40781,8 +40796,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "縫",
-        "url": "https://kanji.jitenon.jp/kanjid/1556",
+        char: "縫",
+        url: "https://kanji.jitenon.jp/kanjid/1556",
         "音読み": [
           "ホウ"
         ],
@@ -40798,8 +40813,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "緻",
-        "url": "https://kanji.jitenon.jp/kanjie/2058",
+        char: "緻",
+        url: "https://kanji.jitenon.jp/kanjie/2058",
         "音読み": [
           "チ"
         ],
@@ -40813,8 +40828,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "縞",
-        "url": "https://kanji.jitenon.jp/kanjie/2408",
+        char: "縞",
+        url: "https://kanji.jitenon.jp/kanjie/2408",
         "音読み": [
           "コウ"
         ],
@@ -40831,8 +40846,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "績",
-        "url": "https://kanji.jitenon.jp/kanjib/751",
+        char: "績",
+        url: "https://kanji.jitenon.jp/kanjib/751",
         "音読み": [
           "セキ"
         ],
@@ -40846,8 +40861,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "縮",
-        "url": "https://kanji.jitenon.jp/kanjib/902",
+        char: "縮",
+        url: "https://kanji.jitenon.jp/kanjib/902",
         "音読み": [
           "シュク"
         ],
@@ -40867,8 +40882,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "繊",
-        "url": "https://kanji.jitenon.jp/kanjid/1785",
+        char: "繊",
+        url: "https://kanji.jitenon.jp/kanjid/1785",
         "音読み": [
           "セン"
         ],
@@ -40882,8 +40897,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "徽",
-        "url": "https://kanji.jitenon.jp/kanjie/2274",
+        char: "徽",
+        url: "https://kanji.jitenon.jp/kanjie/2274",
         "音読み": [
           "キ"
         ],
@@ -40900,8 +40915,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "繋",
-        "url": "https://kanji.jitenon.jp/kanjie/2354",
+        char: "繋",
+        url: "https://kanji.jitenon.jp/kanjie/2354",
         "音読み": [
           "ケイ"
         ],
@@ -40921,8 +40936,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "繍",
-        "url": "https://kanji.jitenon.jp/kanjif/2515",
+        char: "繍",
+        url: "https://kanji.jitenon.jp/kanjif/2515",
         "音読み": [
           "シュウ"
         ],
@@ -40940,8 +40955,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "織",
-        "url": "https://kanji.jitenon.jp/kanjib/742",
+        char: "織",
+        url: "https://kanji.jitenon.jp/kanjib/742",
         "音読み": [
           "シキ",
           "ショク"
@@ -40958,8 +40973,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "繕",
-        "url": "https://kanji.jitenon.jp/kanjic/1473",
+        char: "繕",
+        url: "https://kanji.jitenon.jp/kanjic/1473",
         "音読み": [
           "ゼン"
         ],
@@ -40975,8 +40990,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "繭",
-        "url": "https://kanji.jitenon.jp/kanjid/1679",
+        char: "繭",
+        url: "https://kanji.jitenon.jp/kanjid/1679",
         "音読み": [
           "ケン"
         ],
@@ -40992,8 +41007,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "繰",
-        "url": "https://kanji.jitenon.jp/kanjic/1076",
+        char: "繰",
+        url: "https://kanji.jitenon.jp/kanjic/1076",
         "音読み": [],
         "訓読み": [
           "く（る）"
@@ -41007,8 +41022,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "纂",
-        "url": "https://kanji.jitenon.jp/kanjie/2455",
+        char: "纂",
+        url: "https://kanji.jitenon.jp/kanjie/2455",
         "音読み": [
           "サン"
         ],
@@ -41026,8 +41041,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "纏",
-        "url": "https://kanji.jitenon.jp/kanjif/2770",
+        char: "纏",
+        url: "https://kanji.jitenon.jp/kanjif/2770",
         "音読み": [
           "テン"
         ],
@@ -41047,8 +41062,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "纒",
-        "url": "https://kanji.jitenon.jp/kanjif/2771",
+        char: "纒",
+        url: "https://kanji.jitenon.jp/kanjif/2771",
         "音読み": [
           "テン"
         ],
@@ -41070,13 +41085,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06003",
-    "radical": "耳",
-    "reading": "みみ・みみへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06003",
+    radical: "耳",
+    reading: "みみ・みみへん",
+    kanji: [
       {
-        "char": "耳",
-        "url": "https://kanji.jitenon.jp/kanji/030",
+        char: "耳",
+        url: "https://kanji.jitenon.jp/kanji/030",
         "音読み": [
           "ジ"
         ],
@@ -41092,8 +41107,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "耽",
-        "url": "https://kanji.jitenon.jp/kanjif/2717",
+        char: "耽",
+        url: "https://kanji.jitenon.jp/kanjif/2717",
         "音読み": [
           "タン"
         ],
@@ -41109,8 +41124,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "聖",
-        "url": "https://kanji.jitenon.jp/kanjib/920",
+        char: "聖",
+        url: "https://kanji.jitenon.jp/kanjib/920",
         "音読み": [
           "セイ"
         ],
@@ -41124,8 +41139,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "聞",
-        "url": "https://kanji.jitenon.jp/kanji/219",
+        char: "聞",
+        url: "https://kanji.jitenon.jp/kanji/219",
         "音読み": [
           "ブン",
           "モン"
@@ -41143,8 +41158,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "聡",
-        "url": "https://kanji.jitenon.jp/kanjif/2667",
+        char: "聡",
+        url: "https://kanji.jitenon.jp/kanjif/2667",
         "音読み": [
           "ソウ"
         ],
@@ -41160,8 +41175,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "聴",
-        "url": "https://kanji.jitenon.jp/kanjid/1508",
+        char: "聴",
+        url: "https://kanji.jitenon.jp/kanjid/1508",
         "音読み": [
           "チョウ"
         ],
@@ -41177,8 +41192,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "職",
-        "url": "https://kanji.jitenon.jp/kanjib/741",
+        char: "職",
+        url: "https://kanji.jitenon.jp/kanjib/741",
         "音読み": [
           "ショク"
         ],
@@ -41194,13 +41209,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06004",
-    "radical": "竹",
-    "reading": "たけ・たけかんむり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06004",
+    radical: "竹",
+    reading: "たけ・たけかんむり",
+    kanji: [
       {
-        "char": "竹",
-        "url": "https://kanji.jitenon.jp/kanji/057",
+        char: "竹",
+        url: "https://kanji.jitenon.jp/kanji/057",
         "音読み": [
           "チク"
         ],
@@ -41216,8 +41231,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "竺",
-        "url": "https://kanji.jitenon.jp/kanjie/2485",
+        char: "竺",
+        url: "https://kanji.jitenon.jp/kanjie/2485",
         "音読み": [
           "ジク",
           "トク"
@@ -41234,8 +41249,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "竿",
-        "url": "https://kanji.jitenon.jp/kanjie/2258",
+        char: "竿",
+        url: "https://kanji.jitenon.jp/kanjie/2258",
         "音読み": [
           "カン"
         ],
@@ -41252,8 +41267,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "笑",
-        "url": "https://kanji.jitenon.jp/kanjib/535",
+        char: "笑",
+        url: "https://kanji.jitenon.jp/kanjib/535",
         "音読み": [
           "ショウ"
         ],
@@ -41270,8 +41285,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "笈",
-        "url": "https://kanji.jitenon.jp/kanjie/2303",
+        char: "笈",
+        url: "https://kanji.jitenon.jp/kanjie/2303",
         "音読み": [
           "キュウ"
         ],
@@ -41287,8 +41302,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "第",
-        "url": "https://kanji.jitenon.jp/kanji/358",
+        char: "第",
+        url: "https://kanji.jitenon.jp/kanji/358",
         "音読み": [
           "ダイ"
         ],
@@ -41302,8 +41317,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "笛",
-        "url": "https://kanji.jitenon.jp/kanji/372",
+        char: "笛",
+        url: "https://kanji.jitenon.jp/kanji/372",
         "音読み": [
           "テキ"
         ],
@@ -41319,8 +41334,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "符",
-        "url": "https://kanji.jitenon.jp/kanjid/1543",
+        char: "符",
+        url: "https://kanji.jitenon.jp/kanjid/1543",
         "音読み": [
           "フ"
         ],
@@ -41334,8 +41349,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "笹",
-        "url": "https://kanji.jitenon.jp/kanjie/2449",
+        char: "笹",
+        url: "https://kanji.jitenon.jp/kanjie/2449",
         "音読み": [],
         "訓読み": [
           "ささ"
@@ -41349,8 +41364,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "笥",
-        "url": "https://kanji.jitenon.jp/kanjie/2474",
+        char: "笥",
+        url: "https://kanji.jitenon.jp/kanjie/2474",
         "音読み": [
           "シ",
           "ス"
@@ -41368,8 +41383,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "笠",
-        "url": "https://kanji.jitenon.jp/kanjif/2978",
+        char: "笠",
+        url: "https://kanji.jitenon.jp/kanjif/2978",
         "音読み": [
           "リュウ"
         ],
@@ -41385,8 +41400,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "答",
-        "url": "https://kanji.jitenon.jp/kanji/201",
+        char: "答",
+        url: "https://kanji.jitenon.jp/kanji/201",
         "音読み": [
           "トウ"
         ],
@@ -41403,8 +41418,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "等",
-        "url": "https://kanji.jitenon.jp/kanji/378",
+        char: "等",
+        url: "https://kanji.jitenon.jp/kanji/378",
         "音読み": [
           "トウ"
         ],
@@ -41420,8 +41435,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "筆",
-        "url": "https://kanji.jitenon.jp/kanji/399",
+        char: "筆",
+        url: "https://kanji.jitenon.jp/kanji/399",
         "音読み": [
           "ヒツ"
         ],
@@ -41437,8 +41452,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "筋",
-        "url": "https://kanji.jitenon.jp/kanjib/851",
+        char: "筋",
+        url: "https://kanji.jitenon.jp/kanjib/851",
         "音読み": [
           "キン"
         ],
@@ -41454,8 +41469,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "策",
-        "url": "https://kanji.jitenon.jp/kanjib/881",
+        char: "策",
+        url: "https://kanji.jitenon.jp/kanjib/881",
         "音読み": [
           "サク"
         ],
@@ -41469,8 +41484,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "筒",
-        "url": "https://kanji.jitenon.jp/kanjid/1839",
+        char: "筒",
+        url: "https://kanji.jitenon.jp/kanjid/1839",
         "音読み": [
           "トウ"
         ],
@@ -41486,8 +41501,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "筈",
-        "url": "https://kanji.jitenon.jp/kanjie/2247",
+        char: "筈",
+        url: "https://kanji.jitenon.jp/kanjie/2247",
         "音読み": [
           "カツ"
         ],
@@ -41504,8 +41519,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "筑",
-        "url": "https://kanji.jitenon.jp/kanjif/2722",
+        char: "筑",
+        url: "https://kanji.jitenon.jp/kanjif/2722",
         "音読み": [
           "チク",
           "ツク"
@@ -41520,8 +41535,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "筏",
-        "url": "https://kanji.jitenon.jp/kanjif/2837",
+        char: "筏",
+        url: "https://kanji.jitenon.jp/kanjif/2837",
         "音読み": [
           "ハツ",
           "バツ"
@@ -41538,8 +41553,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "節",
-        "url": "https://kanji.jitenon.jp/kanjib/549",
+        char: "節",
+        url: "https://kanji.jitenon.jp/kanjib/549",
         "音読み": [
           "セチ",
           "セツ"
@@ -41556,8 +41571,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "算",
-        "url": "https://kanji.jitenon.jp/kanji/142",
+        char: "算",
+        url: "https://kanji.jitenon.jp/kanji/142",
         "音読み": [
           "サン"
         ],
@@ -41571,8 +41586,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "管",
-        "url": "https://kanji.jitenon.jp/kanji/465",
+        char: "管",
+        url: "https://kanji.jitenon.jp/kanji/465",
         "音読み": [
           "カン"
         ],
@@ -41588,8 +41603,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "箇",
-        "url": "https://kanji.jitenon.jp/kanjic/1028",
+        char: "箇",
+        url: "https://kanji.jitenon.jp/kanjic/1028",
         "音読み": [
           "カ"
         ],
@@ -41603,8 +41618,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "箋",
-        "url": "https://kanji.jitenon.jp/kanjie/2041",
+        char: "箋",
+        url: "https://kanji.jitenon.jp/kanjie/2041",
         "音読み": [
           "セン"
         ],
@@ -41618,8 +41633,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "箕",
-        "url": "https://kanji.jitenon.jp/kanjie/2281",
+        char: "箕",
+        url: "https://kanji.jitenon.jp/kanjie/2281",
         "音読み": [
           "キ"
         ],
@@ -41636,8 +41651,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "箔",
-        "url": "https://kanji.jitenon.jp/kanjif/2827",
+        char: "箔",
+        url: "https://kanji.jitenon.jp/kanjif/2827",
         "音読み": [
           "ハク"
         ],
@@ -41654,8 +41669,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "箆",
-        "url": "https://kanji.jitenon.jp/kanjif/2893",
+        char: "箆",
+        url: "https://kanji.jitenon.jp/kanjif/2893",
         "音読み": [
           "ヘイ"
         ],
@@ -41674,8 +41689,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "箱",
-        "url": "https://kanji.jitenon.jp/kanji/389",
+        char: "箱",
+        url: "https://kanji.jitenon.jp/kanji/389",
         "音読み": [],
         "訓読み": [
           "はこ"
@@ -41689,8 +41704,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "範",
-        "url": "https://kanji.jitenon.jp/kanjic/1238",
+        char: "範",
+        url: "https://kanji.jitenon.jp/kanjic/1238",
         "音読み": [
           "ハン"
         ],
@@ -41704,8 +41719,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "箸",
-        "url": "https://kanji.jitenon.jp/kanjie/2087",
+        char: "箸",
+        url: "https://kanji.jitenon.jp/kanjie/2087",
         "音読み": [],
         "訓読み": [
           "はし"
@@ -41719,8 +41734,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "箭",
-        "url": "https://kanji.jitenon.jp/kanjif/2639",
+        char: "箭",
+        url: "https://kanji.jitenon.jp/kanjif/2639",
         "音読み": [
           "セン"
         ],
@@ -41736,8 +41751,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "箪",
-        "url": "https://kanji.jitenon.jp/kanjif/2716",
+        char: "箪",
+        url: "https://kanji.jitenon.jp/kanjif/2716",
         "音読み": [
           "タン"
         ],
@@ -41755,8 +41770,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "篇",
-        "url": "https://kanji.jitenon.jp/kanjif/2896",
+        char: "篇",
+        url: "https://kanji.jitenon.jp/kanjif/2896",
         "音読み": [
           "ヘン"
         ],
@@ -41774,8 +41789,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "築",
-        "url": "https://kanji.jitenon.jp/kanjib/772",
+        char: "築",
+        url: "https://kanji.jitenon.jp/kanjib/772",
         "音読み": [
           "チク"
         ],
@@ -41791,8 +41806,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "篤",
-        "url": "https://kanji.jitenon.jp/kanjid/1522",
+        char: "篤",
+        url: "https://kanji.jitenon.jp/kanjid/1522",
         "音読み": [
           "トク"
         ],
@@ -41806,8 +41821,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "篦",
-        "url": "https://kanji.jitenon.jp/kanjif/2892",
+        char: "篦",
+        url: "https://kanji.jitenon.jp/kanjif/2892",
         "音読み": [
           "ヘイ"
         ],
@@ -41826,8 +41841,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "篠",
-        "url": "https://kanji.jitenon.jp/kanjif/2569",
+        char: "篠",
+        url: "https://kanji.jitenon.jp/kanjif/2569",
         "音読み": [
           "ショウ"
         ],
@@ -41844,8 +41859,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "簡",
-        "url": "https://kanji.jitenon.jp/kanjib/838",
+        char: "簡",
+        url: "https://kanji.jitenon.jp/kanjib/838",
         "音読み": [
           "カン"
         ],
@@ -41859,8 +41874,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "簿",
-        "url": "https://kanji.jitenon.jp/kanjid/1552",
+        char: "簿",
+        url: "https://kanji.jitenon.jp/kanjid/1552",
         "音読み": [
           "ボ"
         ],
@@ -41874,8 +41889,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "簸",
-        "url": "https://kanji.jitenon.jp/kanjif/2815",
+        char: "簸",
+        url: "https://kanji.jitenon.jp/kanjif/2815",
         "音読み": [
           "ハ"
         ],
@@ -41892,8 +41907,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "籍",
-        "url": "https://kanji.jitenon.jp/kanjic/1470",
+        char: "籍",
+        url: "https://kanji.jitenon.jp/kanjic/1470",
         "音読み": [
           "セキ"
         ],
@@ -41907,8 +41922,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "籠",
-        "url": "https://kanji.jitenon.jp/kanjie/2131",
+        char: "籠",
+        url: "https://kanji.jitenon.jp/kanjie/2131",
         "音読み": [
           "ロウ"
         ],
@@ -41927,13 +41942,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06005",
-    "radical": "虫",
-    "reading": "むし・むしへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06005",
+    radical: "虫",
+    reading: "むし・むしへん",
+    kanji: [
       {
-        "char": "虫",
-        "url": "https://kanji.jitenon.jp/kanji/058",
+        char: "虫",
+        url: "https://kanji.jitenon.jp/kanji/058",
         "音読み": [
           "チュウ"
         ],
@@ -41949,8 +41964,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "虹",
-        "url": "https://kanji.jitenon.jp/kanjie/2083",
+        char: "虹",
+        url: "https://kanji.jitenon.jp/kanjie/2083",
         "音読み": [],
         "訓読み": [
           "にじ"
@@ -41964,8 +41979,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "虻",
-        "url": "https://kanji.jitenon.jp/kanjif/2924",
+        char: "虻",
+        url: "https://kanji.jitenon.jp/kanjif/2924",
         "音読み": [
           "ボウ",
           "モウ"
@@ -41982,8 +41997,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蚕",
-        "url": "https://kanji.jitenon.jp/kanjib/883",
+        char: "蚕",
+        url: "https://kanji.jitenon.jp/kanjib/883",
         "音読み": [
           "サン"
         ],
@@ -41999,8 +42014,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "蚊",
-        "url": "https://kanji.jitenon.jp/kanjid/1621",
+        char: "蚊",
+        url: "https://kanji.jitenon.jp/kanjid/1621",
         "音読み": [],
         "訓読み": [
           "か"
@@ -42014,8 +42029,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "蚤",
-        "url": "https://kanji.jitenon.jp/kanjif/2672",
+        char: "蚤",
+        url: "https://kanji.jitenon.jp/kanjif/2672",
         "音読み": [
           "ソウ"
         ],
@@ -42033,8 +42048,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蛍",
-        "url": "https://kanji.jitenon.jp/kanjid/1669",
+        char: "蛍",
+        url: "https://kanji.jitenon.jp/kanjid/1669",
         "音読み": [
           "ケイ"
         ],
@@ -42050,8 +42065,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "蛇",
-        "url": "https://kanji.jitenon.jp/kanjid/1715",
+        char: "蛇",
+        url: "https://kanji.jitenon.jp/kanjid/1715",
         "音読み": [
           "ジャ",
           "ダ"
@@ -42068,8 +42083,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "蛋",
-        "url": "https://kanji.jitenon.jp/kanjif/2718",
+        char: "蛋",
+        url: "https://kanji.jitenon.jp/kanjif/2718",
         "音読み": [
           "タン"
         ],
@@ -42087,8 +42102,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蛮",
-        "url": "https://kanji.jitenon.jp/kanjid/1535",
+        char: "蛮",
+        url: "https://kanji.jitenon.jp/kanjid/1535",
         "音読み": [
           "バン"
         ],
@@ -42102,8 +42117,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "蛙",
-        "url": "https://kanji.jitenon.jp/kanjie/2140",
+        char: "蛙",
+        url: "https://kanji.jitenon.jp/kanjie/2140",
         "音読み": [
           "ア",
           "ワ"
@@ -42122,8 +42137,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蛤",
-        "url": "https://kanji.jitenon.jp/kanjie/2413",
+        char: "蛤",
+        url: "https://kanji.jitenon.jp/kanjie/2413",
         "音読み": [
           "コウ"
         ],
@@ -42139,8 +42154,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蛭",
-        "url": "https://kanji.jitenon.jp/kanjie/2488",
+        char: "蛭",
+        url: "https://kanji.jitenon.jp/kanjie/2488",
         "音読み": [
           "シツ",
           "テツ"
@@ -42157,8 +42172,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蛛",
-        "url": "https://kanji.jitenon.jp/kanjie/2499",
+        char: "蛛",
+        url: "https://kanji.jitenon.jp/kanjie/2499",
         "音読み": [
           "シュ",
           "チュ",
@@ -42176,8 +42191,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蜂",
-        "url": "https://kanji.jitenon.jp/kanjie/2102",
+        char: "蜂",
+        url: "https://kanji.jitenon.jp/kanjie/2102",
         "音読み": [
           "ホウ"
         ],
@@ -42193,8 +42208,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "蛾",
-        "url": "https://kanji.jitenon.jp/kanjie/2219",
+        char: "蛾",
+        url: "https://kanji.jitenon.jp/kanjie/2219",
         "音読み": [
           "ガ",
           "ギ"
@@ -42214,8 +42229,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蛸",
-        "url": "https://kanji.jitenon.jp/kanjif/2573",
+        char: "蛸",
+        url: "https://kanji.jitenon.jp/kanjif/2573",
         "音読み": [
           "ショウ",
           "ソウ"
@@ -42232,8 +42247,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蜜",
-        "url": "https://kanji.jitenon.jp/kanjie/2109",
+        char: "蜜",
+        url: "https://kanji.jitenon.jp/kanjie/2109",
         "音読み": [
           "ミツ"
         ],
@@ -42247,8 +42262,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "蜘",
-        "url": "https://kanji.jitenon.jp/kanjif/2721",
+        char: "蜘",
+        url: "https://kanji.jitenon.jp/kanjif/2721",
         "音読み": [
           "チ"
         ],
@@ -42264,8 +42279,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蝦",
-        "url": "https://kanji.jitenon.jp/kanjie/2213",
+        char: "蝦",
+        url: "https://kanji.jitenon.jp/kanjie/2213",
         "音読み": [
           "カ",
           "ガ"
@@ -42283,8 +42298,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蝕",
-        "url": "https://kanji.jitenon.jp/kanjif/2593",
+        char: "蝕",
+        url: "https://kanji.jitenon.jp/kanjif/2593",
         "音読み": [
           "ショク"
         ],
@@ -42300,8 +42315,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蝉",
-        "url": "https://kanji.jitenon.jp/kanjif/2643",
+        char: "蝉",
+        url: "https://kanji.jitenon.jp/kanjif/2643",
         "音読み": [
           "セン",
           "ゼン"
@@ -42320,8 +42335,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蝶",
-        "url": "https://kanji.jitenon.jp/kanjif/2741",
+        char: "蝶",
+        url: "https://kanji.jitenon.jp/kanjif/2741",
         "音読み": [
           "チョウ"
         ],
@@ -42335,8 +42350,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蝿",
-        "url": "https://kanji.jitenon.jp/kanjif/2959",
+        char: "蝿",
+        url: "https://kanji.jitenon.jp/kanjif/2959",
         "音読み": [
           "ヨウ"
         ],
@@ -42352,8 +42367,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "融",
-        "url": "https://kanji.jitenon.jp/kanjid/1916",
+        char: "融",
+        url: "https://kanji.jitenon.jp/kanjid/1916",
         "音読み": [
           "ユウ"
         ],
@@ -42367,8 +42382,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "螺",
-        "url": "https://kanji.jitenon.jp/kanjif/2962",
+        char: "螺",
+        url: "https://kanji.jitenon.jp/kanjif/2962",
         "音読み": [
           "ラ"
         ],
@@ -42387,8 +42402,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蟹",
-        "url": "https://kanji.jitenon.jp/kanjie/2230",
+        char: "蟹",
+        url: "https://kanji.jitenon.jp/kanjie/2230",
         "音読み": [
           "カイ"
         ],
@@ -42404,8 +42419,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蟻",
-        "url": "https://kanji.jitenon.jp/kanjie/2287",
+        char: "蟻",
+        url: "https://kanji.jitenon.jp/kanjie/2287",
         "音読み": [
           "ギ"
         ],
@@ -42422,8 +42437,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蠅",
-        "url": "https://kanji.jitenon.jp/kanjif/2958",
+        char: "蠅",
+        url: "https://kanji.jitenon.jp/kanjif/2958",
         "音読み": [
           "ヨウ"
         ],
@@ -42441,13 +42456,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06006",
-    "radical": "羽 羽",
-    "reading": "はね",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06006",
+    radical: "羽 羽",
+    reading: "はね",
+    kanji: [
       {
-        "char": "羽",
-        "url": "https://kanji.jitenon.jp/kanji/082",
+        char: "羽",
+        url: "https://kanji.jitenon.jp/kanji/082",
         "音読み": [
           "ウ"
         ],
@@ -42464,8 +42479,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "翁",
-        "url": "https://kanji.jitenon.jp/kanjid/1614",
+        char: "翁",
+        url: "https://kanji.jitenon.jp/kanjid/1614",
         "音読み": [
           "オウ"
         ],
@@ -42479,8 +42494,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "翆",
-        "url": "https://kanji.jitenon.jp/kanjif/2617",
+        char: "翆",
+        url: "https://kanji.jitenon.jp/kanjif/2617",
         "音読み": [
           "スイ"
         ],
@@ -42497,8 +42512,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "習",
-        "url": "https://kanji.jitenon.jp/kanji/320",
+        char: "習",
+        url: "https://kanji.jitenon.jp/kanji/320",
         "音読み": [
           "シュウ"
         ],
@@ -42514,8 +42529,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "翌",
-        "url": "https://kanji.jitenon.jp/kanjib/994",
+        char: "翌",
+        url: "https://kanji.jitenon.jp/kanjib/994",
         "音読み": [
           "ヨク"
         ],
@@ -42529,8 +42544,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "翠",
-        "url": "https://kanji.jitenon.jp/kanjif/2616",
+        char: "翠",
+        url: "https://kanji.jitenon.jp/kanjif/2616",
         "音読み": [
           "スイ"
         ],
@@ -42547,8 +42562,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "翫",
-        "url": "https://kanji.jitenon.jp/kanjie/2268",
+        char: "翫",
+        url: "https://kanji.jitenon.jp/kanjie/2268",
         "音読み": [
           "ガン"
         ],
@@ -42567,8 +42582,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "翰",
-        "url": "https://kanji.jitenon.jp/kanjie/2259",
+        char: "翰",
+        url: "https://kanji.jitenon.jp/kanjie/2259",
         "音読み": [
           "カン"
         ],
@@ -42588,8 +42603,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "翼",
-        "url": "https://kanji.jitenon.jp/kanjic/1297",
+        char: "翼",
+        url: "https://kanji.jitenon.jp/kanjic/1297",
         "音読み": [
           "ヨク"
         ],
@@ -42605,8 +42620,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "翻",
-        "url": "https://kanji.jitenon.jp/kanjid/1569",
+        char: "翻",
+        url: "https://kanji.jitenon.jp/kanjid/1569",
         "音読み": [
           "ホン"
         ],
@@ -42623,8 +42638,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "耀",
-        "url": "https://kanji.jitenon.jp/kanjif/2956",
+        char: "耀",
+        url: "https://kanji.jitenon.jp/kanjif/2956",
         "音読み": [
           "ヨウ"
         ],
@@ -42642,13 +42657,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06008",
-    "radical": "行",
-    "reading": "ぎょう・ぎょうがまえ・ゆきがまえ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06008",
+    radical: "行",
+    reading: "ぎょう・ぎょうがまえ・ゆきがまえ",
+    kanji: [
       {
-        "char": "行",
-        "url": "https://kanji.jitenon.jp/kanji/133",
+        char: "行",
+        url: "https://kanji.jitenon.jp/kanji/133",
         "音読み": [
           "アン",
           "ギョウ",
@@ -42668,8 +42683,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "術",
-        "url": "https://kanji.jitenon.jp/kanjib/731",
+        char: "術",
+        url: "https://kanji.jitenon.jp/kanjib/731",
         "音読み": [
           "ジュツ"
         ],
@@ -42683,8 +42698,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "街",
-        "url": "https://kanji.jitenon.jp/kanji/460",
+        char: "街",
+        url: "https://kanji.jitenon.jp/kanji/460",
         "音読み": [
           "カイ",
           "ガイ"
@@ -42701,8 +42716,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "衝",
-        "url": "https://kanji.jitenon.jp/kanjic/1443",
+        char: "衝",
+        url: "https://kanji.jitenon.jp/kanjic/1443",
         "音読み": [
           "ショウ"
         ],
@@ -42716,8 +42731,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "衛",
-        "url": "https://kanji.jitenon.jp/kanjib/644",
+        char: "衛",
+        url: "https://kanji.jitenon.jp/kanjib/644",
         "音読み": [
           "エイ"
         ],
@@ -42731,8 +42746,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "衡",
-        "url": "https://kanji.jitenon.jp/kanjid/1688",
+        char: "衡",
+        url: "https://kanji.jitenon.jp/kanjid/1688",
         "音読み": [
           "コウ"
         ],
@@ -42748,13 +42763,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06009",
-    "radical": "自",
-    "reading": "みずから",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06009",
+    radical: "自",
+    reading: "みずから",
+    kanji: [
       {
-        "char": "自",
-        "url": "https://kanji.jitenon.jp/kanji/150",
+        char: "自",
+        url: "https://kanji.jitenon.jp/kanji/150",
         "音読み": [
           "シ",
           "ジ"
@@ -42771,8 +42786,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "臭",
-        "url": "https://kanji.jitenon.jp/kanjid/1720",
+        char: "臭",
+        url: "https://kanji.jitenon.jp/kanjid/1720",
         "音読み": [
           "シュウ"
         ],
@@ -42791,13 +42806,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06010",
-    "radical": "色",
-    "reading": "いろ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06010",
+    radical: "色",
+    reading: "いろ",
+    kanji: [
       {
-        "char": "色",
-        "url": "https://kanji.jitenon.jp/kanji/151",
+        char: "色",
+        url: "https://kanji.jitenon.jp/kanji/151",
         "音読み": [
           "シキ",
           "ショク"
@@ -42814,8 +42829,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "艶",
-        "url": "https://kanji.jitenon.jp/kanjid/1953",
+        char: "艶",
+        url: "https://kanji.jitenon.jp/kanjid/1953",
         "音読み": [
           "エン"
         ],
@@ -42833,13 +42848,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06011",
-    "radical": "襾 西 覀",
-    "reading": "おおいかんむり・にし・かなめのかしら",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06011",
+    radical: "襾 西 覀",
+    reading: "おおいかんむり・にし・かなめのかしら",
+    kanji: [
       {
-        "char": "西",
-        "url": "https://kanji.jitenon.jp/kanji/169",
+        char: "西",
+        url: "https://kanji.jitenon.jp/kanji/169",
         "音読み": [
           "サイ",
           "セイ"
@@ -42856,8 +42871,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "要",
-        "url": "https://kanji.jitenon.jp/kanjib/621",
+        char: "要",
+        url: "https://kanji.jitenon.jp/kanjib/621",
         "音読み": [
           "ヨウ"
         ],
@@ -42874,8 +42889,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "覆",
-        "url": "https://kanji.jitenon.jp/kanjid/1546",
+        char: "覆",
+        url: "https://kanji.jitenon.jp/kanjid/1546",
         "音読み": [
           "フク"
         ],
@@ -42893,8 +42908,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "覇",
-        "url": "https://kanji.jitenon.jp/kanjid/1854",
+        char: "覇",
+        url: "https://kanji.jitenon.jp/kanjid/1854",
         "音読み": [
           "ハ"
         ],
@@ -42910,13 +42925,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06012",
-    "radical": "舟",
-    "reading": "ふね・ふねへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06012",
+    radical: "舟",
+    reading: "ふね・ふねへん",
+    kanji: [
       {
-        "char": "舟",
-        "url": "https://kanji.jitenon.jp/kanjic/1129",
+        char: "舟",
+        url: "https://kanji.jitenon.jp/kanjic/1129",
         "音読み": [
           "シュウ"
         ],
@@ -42933,8 +42948,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "航",
-        "url": "https://kanji.jitenon.jp/kanjib/503",
+        char: "航",
+        url: "https://kanji.jitenon.jp/kanjib/503",
         "音読み": [
           "コウ"
         ],
@@ -42948,8 +42963,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "般",
-        "url": "https://kanji.jitenon.jp/kanjic/1239",
+        char: "般",
+        url: "https://kanji.jitenon.jp/kanjic/1239",
         "音読み": [
           "ハン"
         ],
@@ -42963,8 +42978,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "船",
-        "url": "https://kanji.jitenon.jp/kanji/175",
+        char: "船",
+        url: "https://kanji.jitenon.jp/kanji/175",
         "音読み": [
           "セン"
         ],
@@ -42981,8 +42996,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "舶",
-        "url": "https://kanji.jitenon.jp/kanjid/1860",
+        char: "舶",
+        url: "https://kanji.jitenon.jp/kanjid/1860",
         "音読み": [
           "ハク"
         ],
@@ -42996,8 +43011,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "舷",
-        "url": "https://kanji.jitenon.jp/kanjid/1994",
+        char: "舷",
+        url: "https://kanji.jitenon.jp/kanjid/1994",
         "音読み": [
           "ゲン"
         ],
@@ -43011,8 +43026,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "舵",
-        "url": "https://kanji.jitenon.jp/kanjif/2680",
+        char: "舵",
+        url: "https://kanji.jitenon.jp/kanjif/2680",
         "音読み": [
           "タ",
           "ダ"
@@ -43029,8 +43044,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "艇",
-        "url": "https://kanji.jitenon.jp/kanjid/1828",
+        char: "艇",
+        url: "https://kanji.jitenon.jp/kanjid/1828",
         "音読み": [
           "テイ"
         ],
@@ -43044,8 +43059,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "艦",
-        "url": "https://kanji.jitenon.jp/kanjid/1644",
+        char: "艦",
+        url: "https://kanji.jitenon.jp/kanjid/1644",
         "音読み": [
           "カン"
         ],
@@ -43061,13 +43076,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06014",
-    "radical": "米",
-    "reading": "こめ・こめへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06014",
+    radical: "米",
+    reading: "こめ・こめへん",
+    kanji: [
       {
-        "char": "米",
-        "url": "https://kanji.jitenon.jp/kanji/220",
+        char: "米",
+        url: "https://kanji.jitenon.jp/kanji/220",
         "音読み": [
           "ベイ",
           "マイ"
@@ -43084,8 +43099,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "粁",
-        "url": "https://kanji.jitenon.jp/kanjie/2328",
+        char: "粁",
+        url: "https://kanji.jitenon.jp/kanjie/2328",
         "音読み": [],
         "訓読み": [
           "キロメートル"
@@ -43099,8 +43114,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "粂",
-        "url": "https://kanji.jitenon.jp/kanjie/2347",
+        char: "粂",
+        url: "https://kanji.jitenon.jp/kanjie/2347",
         "音読み": [],
         "訓読み": [
           "くめ"
@@ -43114,8 +43129,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "籾",
-        "url": "https://kanji.jitenon.jp/kanjif/2936",
+        char: "籾",
+        url: "https://kanji.jitenon.jp/kanjif/2936",
         "音読み": [],
         "訓読み": [
           "もみ"
@@ -43129,8 +43144,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "粉",
-        "url": "https://kanji.jitenon.jp/kanjib/604",
+        char: "粉",
+        url: "https://kanji.jitenon.jp/kanjib/604",
         "音読み": [
           "フン"
         ],
@@ -43147,8 +43162,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "粋",
-        "url": "https://kanji.jitenon.jp/kanjic/1455",
+        char: "粋",
+        url: "https://kanji.jitenon.jp/kanjic/1455",
         "音読み": [
           "スイ"
         ],
@@ -43164,8 +43179,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "粍",
-        "url": "https://kanji.jitenon.jp/kanjif/2932",
+        char: "粍",
+        url: "https://kanji.jitenon.jp/kanjif/2932",
         "音読み": [],
         "訓読み": [
           "ミリメートル"
@@ -43179,8 +43194,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "粒",
-        "url": "https://kanji.jitenon.jp/kanjic/1303",
+        char: "粒",
+        url: "https://kanji.jitenon.jp/kanjic/1303",
         "音読み": [
           "リュウ"
         ],
@@ -43196,8 +43211,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "粗",
-        "url": "https://kanji.jitenon.jp/kanjic/1476",
+        char: "粗",
+        url: "https://kanji.jitenon.jp/kanjic/1476",
         "音読み": [
           "ソ"
         ],
@@ -43213,8 +43228,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "粘",
-        "url": "https://kanji.jitenon.jp/kanjid/1525",
+        char: "粘",
+        url: "https://kanji.jitenon.jp/kanjid/1525",
         "音読み": [
           "ネン"
         ],
@@ -43230,8 +43245,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "粕",
-        "url": "https://kanji.jitenon.jp/kanjif/2828",
+        char: "粕",
+        url: "https://kanji.jitenon.jp/kanjif/2828",
         "音読み": [
           "ハク"
         ],
@@ -43247,8 +43262,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "粧",
-        "url": "https://kanji.jitenon.jp/kanjid/1752",
+        char: "粧",
+        url: "https://kanji.jitenon.jp/kanjid/1752",
         "音読み": [
           "ショウ"
         ],
@@ -43262,8 +43277,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "粥",
-        "url": "https://kanji.jitenon.jp/kanjie/2157",
+        char: "粥",
+        url: "https://kanji.jitenon.jp/kanjie/2157",
         "音読み": [
           "イク",
           "シュク"
@@ -43281,8 +43296,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "粟",
-        "url": "https://kanji.jitenon.jp/kanjif/2592",
+        char: "粟",
+        url: "https://kanji.jitenon.jp/kanjif/2592",
         "音読み": [
           "ショク",
           "ソク",
@@ -43302,8 +43317,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "精",
-        "url": "https://kanji.jitenon.jp/kanjib/744",
+        char: "精",
+        url: "https://kanji.jitenon.jp/kanjib/744",
         "音読み": [
           "ショウ",
           "セイ"
@@ -43318,8 +43333,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "糊",
-        "url": "https://kanji.jitenon.jp/kanjie/2380",
+        char: "糊",
+        url: "https://kanji.jitenon.jp/kanjie/2380",
         "音読み": [
           "コ"
         ],
@@ -43335,8 +43350,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "糎",
-        "url": "https://kanji.jitenon.jp/kanjif/2650",
+        char: "糎",
+        url: "https://kanji.jitenon.jp/kanjif/2650",
         "音読み": [],
         "訓読み": [
           "センチメートル"
@@ -43350,8 +43365,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "糖",
-        "url": "https://kanji.jitenon.jp/kanjib/956",
+        char: "糖",
+        url: "https://kanji.jitenon.jp/kanjib/956",
         "音読み": [
           "トウ"
         ],
@@ -43365,8 +43380,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "糠",
-        "url": "https://kanji.jitenon.jp/kanjie/2406",
+        char: "糠",
+        url: "https://kanji.jitenon.jp/kanjie/2406",
         "音読み": [
           "コウ"
         ],
@@ -43382,8 +43397,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "糟",
-        "url": "https://kanji.jitenon.jp/kanjif/2665",
+        char: "糟",
+        url: "https://kanji.jitenon.jp/kanjif/2665",
         "音読み": [
           "ソウ"
         ],
@@ -43399,8 +43414,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "糞",
-        "url": "https://kanji.jitenon.jp/kanjif/2890",
+        char: "糞",
+        url: "https://kanji.jitenon.jp/kanjif/2890",
         "音読み": [
           "フン"
         ],
@@ -43419,8 +43434,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "糧",
-        "url": "https://kanji.jitenon.jp/kanjid/1591",
+        char: "糧",
+        url: "https://kanji.jitenon.jp/kanjid/1591",
         "音読み": [
           "リョウ",
           "ロウ"
@@ -43439,13 +43454,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06015",
-    "radical": "血",
-    "reading": "ち・ちへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06015",
+    radical: "血",
+    reading: "ち・ちへん",
+    kanji: [
       {
-        "char": "血",
-        "url": "https://kanji.jitenon.jp/kanji/287",
+        char: "血",
+        url: "https://kanji.jitenon.jp/kanji/287",
         "音読み": [
           "ケツ"
         ],
@@ -43461,8 +43476,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "衆",
-        "url": "https://kanji.jitenon.jp/kanjib/898",
+        char: "衆",
+        url: "https://kanji.jitenon.jp/kanjib/898",
         "音読み": [
           "シュ",
           "シュウ"
@@ -43479,13 +43494,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06016",
-    "radical": "羊 ⺷",
-    "reading": "ひつじ・ひつじへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06016",
+    radical: "羊 ⺷",
+    reading: "ひつじ・ひつじへん",
+    kanji: [
       {
-        "char": "羊",
-        "url": "https://kanji.jitenon.jp/kanji/427",
+        char: "羊",
+        url: "https://kanji.jitenon.jp/kanji/427",
         "音読み": [
           "ヨウ"
         ],
@@ -43501,8 +43516,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "美",
-        "url": "https://kanji.jitenon.jp/kanji/398",
+        char: "美",
+        url: "https://kanji.jitenon.jp/kanji/398",
         "音読み": [
           "ビ"
         ],
@@ -43518,8 +43533,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "羞",
-        "url": "https://kanji.jitenon.jp/kanjie/2024",
+        char: "羞",
+        url: "https://kanji.jitenon.jp/kanjie/2024",
         "音読み": [
           "シュウ"
         ],
@@ -43533,8 +43548,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "着",
-        "url": "https://kanji.jitenon.jp/kanji/363",
+        char: "着",
+        url: "https://kanji.jitenon.jp/kanji/363",
         "音読み": [
           "ジャク",
           "チャク"
@@ -43554,8 +43569,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "義",
-        "url": "https://kanji.jitenon.jp/kanjib/673",
+        char: "義",
+        url: "https://kanji.jitenon.jp/kanjib/673",
         "音読み": [
           "ギ"
         ],
@@ -43569,8 +43584,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "群",
-        "url": "https://kanji.jitenon.jp/kanjib/683",
+        char: "群",
+        url: "https://kanji.jitenon.jp/kanjib/683",
         "音読み": [
           "グン"
         ],
@@ -43588,8 +43603,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "羨",
-        "url": "https://kanji.jitenon.jp/kanjie/2038",
+        char: "羨",
+        url: "https://kanji.jitenon.jp/kanjie/2038",
         "音読み": [
           "セン"
         ],
@@ -43608,13 +43623,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06019",
-    "radical": "艮",
-    "reading": "うしとら・こん・こんづくり・ねづくり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06019",
+    radical: "艮",
+    reading: "うしとら・こん・こんづくり・ねづくり",
+    kanji: [
       {
-        "char": "艮",
-        "url": "https://kanji.jitenon.jp/kanjie/2429",
+        char: "艮",
+        url: "https://kanji.jitenon.jp/kanjie/2429",
         "音読み": [
           "コン",
           "ゴン"
@@ -43631,8 +43646,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "良",
-        "url": "https://kanji.jitenon.jp/kanjib/627",
+        char: "良",
+        url: "https://kanji.jitenon.jp/kanjib/627",
         "音読み": [
           "リョウ"
         ],
@@ -43650,13 +43665,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06020",
-    "radical": "耒",
-    "reading": "らいすき・すきへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06020",
+    radical: "耒",
+    reading: "らいすき・すきへん",
+    kanji: [
       {
-        "char": "耕",
-        "url": "https://kanji.jitenon.jp/kanjib/700",
+        char: "耕",
+        url: "https://kanji.jitenon.jp/kanjib/700",
         "音読み": [
           "コウ"
         ],
@@ -43672,8 +43687,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "耗",
-        "url": "https://kanji.jitenon.jp/kanjid/1907",
+        char: "耗",
+        url: "https://kanji.jitenon.jp/kanjid/1907",
         "音読み": [
           "コウ",
           "モウ"
@@ -43690,13 +43705,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06021",
-    "radical": "臼",
-    "reading": "うす",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06021",
+    radical: "臼",
+    reading: "うす",
+    kanji: [
       {
-        "char": "臼",
-        "url": "https://kanji.jitenon.jp/kanjid/1978",
+        char: "臼",
+        url: "https://kanji.jitenon.jp/kanjid/1978",
         "音読み": [
           "キュウ"
         ],
@@ -43712,8 +43727,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "興",
-        "url": "https://kanji.jitenon.jp/kanjib/702",
+        char: "興",
+        url: "https://kanji.jitenon.jp/kanjib/702",
         "音読み": [
           "キョウ",
           "コウ"
@@ -43733,13 +43748,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06022",
-    "radical": "舌",
-    "reading": "した・したへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06022",
+    radical: "舌",
+    reading: "した・したへん",
+    kanji: [
       {
-        "char": "舌",
-        "url": "https://kanji.jitenon.jp/kanjib/755",
+        char: "舌",
+        url: "https://kanji.jitenon.jp/kanjib/755",
         "音読み": [
           "ゼツ"
         ],
@@ -43755,8 +43770,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "舎",
-        "url": "https://kanji.jitenon.jp/kanjib/727",
+        char: "舎",
+        url: "https://kanji.jitenon.jp/kanjib/727",
         "音読み": [
           "シャ"
         ],
@@ -43770,8 +43785,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "舗",
-        "url": "https://kanji.jitenon.jp/kanjic/1265",
+        char: "舗",
+        url: "https://kanji.jitenon.jp/kanjic/1265",
         "音読み": [
           "ホ"
         ],
@@ -43785,8 +43800,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "舘",
-        "url": "https://kanji.jitenon.jp/kanjie/2260",
+        char: "舘",
+        url: "https://kanji.jitenon.jp/kanjie/2260",
         "音読み": [
           "カン"
         ],
@@ -43806,13 +43821,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06023",
-    "radical": "至",
-    "reading": "いたる・いたるへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06023",
+    radical: "至",
+    reading: "いたる・いたるへん",
+    kanji: [
       {
-        "char": "至",
-        "url": "https://kanji.jitenon.jp/kanjib/888",
+        char: "至",
+        url: "https://kanji.jitenon.jp/kanjib/888",
         "音読み": [
           "シ"
         ],
@@ -43828,8 +43843,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "致",
-        "url": "https://kanji.jitenon.jp/kanjic/1187",
+        char: "致",
+        url: "https://kanji.jitenon.jp/kanjic/1187",
         "音読み": [
           "チ"
         ],
@@ -43847,13 +43862,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06024",
-    "radical": "而",
-    "reading": "しこうして・しかして",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06024",
+    radical: "而",
+    reading: "しこうして・しかして",
+    kanji: [
       {
-        "char": "而",
-        "url": "https://kanji.jitenon.jp/kanjie/2481",
+        char: "而",
+        url: "https://kanji.jitenon.jp/kanjie/2481",
         "音読み": [
           "ジ"
         ],
@@ -43873,8 +43888,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "耐",
-        "url": "https://kanji.jitenon.jp/kanjic/1174",
+        char: "耐",
+        url: "https://kanji.jitenon.jp/kanjic/1174",
         "音読み": [
           "タイ"
         ],
@@ -43892,13 +43907,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06025",
-    "radical": "虍",
-    "reading": "とらかんむり・とらがしら・とら",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06025",
+    radical: "虍",
+    reading: "とらかんむり・とらがしら・とら",
+    kanji: [
       {
-        "char": "虎",
-        "url": "https://kanji.jitenon.jp/kanjid/1996",
+        char: "虎",
+        url: "https://kanji.jitenon.jp/kanjid/1996",
         "音読み": [
           "コ"
         ],
@@ -43914,8 +43929,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "虐",
-        "url": "https://kanji.jitenon.jp/kanjic/1370",
+        char: "虐",
+        url: "https://kanji.jitenon.jp/kanjic/1370",
         "音読み": [
           "ギャク"
         ],
@@ -43931,8 +43946,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "虚",
-        "url": "https://kanji.jitenon.jp/kanjic/1371",
+        char: "虚",
+        url: "https://kanji.jitenon.jp/kanjic/1371",
         "音読み": [
           "キョ",
           "コ"
@@ -43947,8 +43962,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "虞",
-        "url": "https://kanji.jitenon.jp/kanjid/1615",
+        char: "虞",
+        url: "https://kanji.jitenon.jp/kanjid/1615",
         "音読み": [],
         "訓読み": [
           "おそれ"
@@ -43962,8 +43977,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "虜",
-        "url": "https://kanji.jitenon.jp/kanjid/1927",
+        char: "虜",
+        url: "https://kanji.jitenon.jp/kanjid/1927",
         "音読み": [
           "リョ"
         ],
@@ -43979,13 +43994,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu06027",
-    "radical": "聿",
-    "reading": "ふで・ふでづくり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu06027",
+    radical: "聿",
+    reading: "ふで・ふでづくり",
+    kanji: [
       {
-        "char": "粛",
-        "url": "https://kanji.jitenon.jp/kanjid/1729",
+        char: "粛",
+        url: "https://kanji.jitenon.jp/kanjid/1729",
         "音読み": [
           "シュク"
         ],
@@ -43999,8 +44014,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "肇",
-        "url": "https://kanji.jitenon.jp/kanjif/2738",
+        char: "肇",
+        url: "https://kanji.jitenon.jp/kanjif/2738",
         "音読み": [
           "チョウ"
         ],
@@ -44019,13 +44034,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07017",
-    "radical": "臣",
-    "reading": "しん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07017",
+    radical: "臣",
+    reading: "しん",
+    kanji: [
       {
-        "char": "臣",
-        "url": "https://kanji.jitenon.jp/kanjib/543",
+        char: "臣",
+        url: "https://kanji.jitenon.jp/kanjib/543",
         "音読み": [
           "シン",
           "ジン"
@@ -44040,8 +44055,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "臥",
-        "url": "https://kanji.jitenon.jp/kanjie/2218",
+        char: "臥",
+        url: "https://kanji.jitenon.jp/kanjie/2218",
         "音読み": [
           "ガ"
         ],
@@ -44058,8 +44073,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "臨",
-        "url": "https://kanji.jitenon.jp/kanjic/1001",
+        char: "臨",
+        url: "https://kanji.jitenon.jp/kanjic/1001",
         "音読み": [
           "リン"
         ],
@@ -44077,13 +44092,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07019",
-    "radical": "舛",
-    "reading": "まいあし・ます",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07019",
+    radical: "舛",
+    reading: "まいあし・ます",
+    kanji: [
       {
-        "char": "舛",
-        "url": "https://kanji.jitenon.jp/kanjif/2640",
+        char: "舛",
+        url: "https://kanji.jitenon.jp/kanjif/2640",
         "音読み": [
           "セン"
         ],
@@ -44100,8 +44115,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "舜",
-        "url": "https://kanji.jitenon.jp/kanjif/2530",
+        char: "舜",
+        url: "https://kanji.jitenon.jp/kanjif/2530",
         "音読み": [
           "シュン"
         ],
@@ -44117,8 +44132,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "舞",
-        "url": "https://kanji.jitenon.jp/kanjic/1258",
+        char: "舞",
+        url: "https://kanji.jitenon.jp/kanjic/1258",
         "音読み": [
           "ブ"
         ],
@@ -44137,13 +44152,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu09002",
-    "radical": "頁",
-    "reading": "おおがい・いちのかい",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu09002",
+    radical: "頁",
+    reading: "おおがい・いちのかい",
+    kanji: [
       {
-        "char": "頁",
-        "url": "https://kanji.jitenon.jp/kanjie/2362",
+        char: "頁",
+        url: "https://kanji.jitenon.jp/kanjie/2362",
         "音読み": [
           "ケツ",
           "ヨウ"
@@ -44161,8 +44176,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "頂",
-        "url": "https://kanji.jitenon.jp/kanjib/949",
+        char: "頂",
+        url: "https://kanji.jitenon.jp/kanjib/949",
         "音読み": [
           "チョウ"
         ],
@@ -44179,8 +44194,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "頃",
-        "url": "https://kanji.jitenon.jp/kanjie/2004",
+        char: "頃",
+        url: "https://kanji.jitenon.jp/kanjie/2004",
         "音読み": [],
         "訓読み": [
           "ころ"
@@ -44194,8 +44209,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "順",
-        "url": "https://kanji.jitenon.jp/kanjib/532",
+        char: "順",
+        url: "https://kanji.jitenon.jp/kanjib/532",
         "音読み": [
           "ジュン"
         ],
@@ -44209,8 +44224,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "項",
-        "url": "https://kanji.jitenon.jp/kanjic/1101",
+        char: "項",
+        url: "https://kanji.jitenon.jp/kanjic/1101",
         "音読み": [
           "コウ"
         ],
@@ -44224,8 +44239,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "須",
-        "url": "https://kanji.jitenon.jp/kanjie/2031",
+        char: "須",
+        url: "https://kanji.jitenon.jp/kanjie/2031",
         "音読み": [
           "ス"
         ],
@@ -44239,8 +44254,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "預",
-        "url": "https://kanji.jitenon.jp/kanjib/818",
+        char: "預",
+        url: "https://kanji.jitenon.jp/kanjib/818",
         "音読み": [
           "ヨ"
         ],
@@ -44257,8 +44272,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "頑",
-        "url": "https://kanji.jitenon.jp/kanjid/1648",
+        char: "頑",
+        url: "https://kanji.jitenon.jp/kanjid/1648",
         "音読み": [
           "ガン"
         ],
@@ -44272,8 +44287,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "頒",
-        "url": "https://kanji.jitenon.jp/kanjid/1866",
+        char: "頒",
+        url: "https://kanji.jitenon.jp/kanjid/1866",
         "音読み": [
           "ハン"
         ],
@@ -44287,8 +44302,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "頓",
-        "url": "https://kanji.jitenon.jp/kanjie/2074",
+        char: "頓",
+        url: "https://kanji.jitenon.jp/kanjie/2074",
         "音読み": [
           "トン"
         ],
@@ -44302,8 +44317,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "領",
-        "url": "https://kanji.jitenon.jp/kanjib/823",
+        char: "領",
+        url: "https://kanji.jitenon.jp/kanjib/823",
         "音読み": [
           "リョウ"
         ],
@@ -44317,8 +44332,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "頚",
-        "url": "https://kanji.jitenon.jp/kanjie/2358",
+        char: "頚",
+        url: "https://kanji.jitenon.jp/kanjie/2358",
         "音読み": [
           "ケイ"
         ],
@@ -44334,8 +44349,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "頗",
-        "url": "https://kanji.jitenon.jp/kanjif/2817",
+        char: "頗",
+        url: "https://kanji.jitenon.jp/kanjif/2817",
         "音読み": [
           "ハ"
         ],
@@ -44352,8 +44367,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "頬",
-        "url": "https://kanji.jitenon.jp/kanjie/2104",
+        char: "頬",
+        url: "https://kanji.jitenon.jp/kanjie/2104",
         "音読み": [],
         "訓読み": [
           "ほお"
@@ -44367,8 +44382,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "頭",
-        "url": "https://kanji.jitenon.jp/kanji/167",
+        char: "頭",
+        url: "https://kanji.jitenon.jp/kanji/167",
         "音読み": [
           "ズ",
           "ト",
@@ -44387,8 +44402,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "頼",
-        "url": "https://kanji.jitenon.jp/kanjic/1299",
+        char: "頼",
+        url: "https://kanji.jitenon.jp/kanjic/1299",
         "音読み": [
           "ライ"
         ],
@@ -44406,8 +44421,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "頸",
-        "url": "https://kanji.jitenon.jp/kanjie/2357",
+        char: "頸",
+        url: "https://kanji.jitenon.jp/kanjie/2357",
         "音読み": [
           "ケイ"
         ],
@@ -44423,8 +44438,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "頻",
-        "url": "https://kanji.jitenon.jp/kanjid/1872",
+        char: "頻",
+        url: "https://kanji.jitenon.jp/kanjid/1872",
         "音読み": [
           "ヒン"
         ],
@@ -44438,8 +44453,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "顔",
-        "url": "https://kanji.jitenon.jp/kanji/101",
+        char: "顔",
+        url: "https://kanji.jitenon.jp/kanji/101",
         "音読み": [
           "ガン"
         ],
@@ -44455,8 +44470,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "題",
-        "url": "https://kanji.jitenon.jp/kanji/359",
+        char: "題",
+        url: "https://kanji.jitenon.jp/kanji/359",
         "音読み": [
           "ダイ"
         ],
@@ -44470,8 +44485,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "類",
-        "url": "https://kanji.jitenon.jp/kanjib/631",
+        char: "類",
+        url: "https://kanji.jitenon.jp/kanjib/631",
         "音読み": [
           "ルイ"
         ],
@@ -44487,8 +44502,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "額",
-        "url": "https://kanji.jitenon.jp/kanjib/664",
+        char: "額",
+        url: "https://kanji.jitenon.jp/kanjib/664",
         "音読み": [
           "ガク"
         ],
@@ -44504,8 +44519,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "顕",
-        "url": "https://kanji.jitenon.jp/kanjid/1677",
+        char: "顕",
+        url: "https://kanji.jitenon.jp/kanjid/1677",
         "音読み": [
           "ケン"
         ],
@@ -44519,8 +44534,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "顎",
-        "url": "https://kanji.jitenon.jp/kanjid/1968",
+        char: "顎",
+        url: "https://kanji.jitenon.jp/kanjid/1968",
         "音読み": [
           "ガク"
         ],
@@ -44536,8 +44551,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "願",
-        "url": "https://kanji.jitenon.jp/kanji/468",
+        char: "願",
+        url: "https://kanji.jitenon.jp/kanji/468",
         "音読み": [
           "ガン"
         ],
@@ -44553,8 +44568,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "顛",
-        "url": "https://kanji.jitenon.jp/kanjif/2773",
+        char: "顛",
+        url: "https://kanji.jitenon.jp/kanjif/2773",
         "音読み": [
           "テン"
         ],
@@ -44572,8 +44587,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "顧",
-        "url": "https://kanji.jitenon.jp/kanjic/1392",
+        char: "顧",
+        url: "https://kanji.jitenon.jp/kanjic/1392",
         "音読み": [
           "コ"
         ],
@@ -44591,13 +44606,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07001",
-    "radical": "貝",
-    "reading": "かい・かいへん・こがい",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07001",
+    radical: "貝",
+    reading: "かい・かいへん・こがい",
+    kanji: [
       {
-        "char": "貝",
-        "url": "https://kanji.jitenon.jp/kanji/008",
+        char: "貝",
+        url: "https://kanji.jitenon.jp/kanji/008",
         "音読み": [],
         "訓読み": [
           "かい"
@@ -44611,8 +44626,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "負",
-        "url": "https://kanji.jitenon.jp/kanji/405",
+        char: "負",
+        url: "https://kanji.jitenon.jp/kanji/405",
         "音読み": [
           "フ"
         ],
@@ -44630,8 +44645,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "貞",
-        "url": "https://kanji.jitenon.jp/kanjid/1832",
+        char: "貞",
+        url: "https://kanji.jitenon.jp/kanjid/1832",
         "音読み": [
           "テイ"
         ],
@@ -44645,8 +44660,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "財",
-        "url": "https://kanji.jitenon.jp/kanjib/712",
+        char: "財",
+        url: "https://kanji.jitenon.jp/kanjib/712",
         "音読み": [
           "サイ",
           "ザイ"
@@ -44661,8 +44676,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "貢",
-        "url": "https://kanji.jitenon.jp/kanjid/1687",
+        char: "貢",
+        url: "https://kanji.jitenon.jp/kanjid/1687",
         "音読み": [
           "ク",
           "コウ"
@@ -44679,8 +44694,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "貨",
-        "url": "https://kanji.jitenon.jp/kanji/452",
+        char: "貨",
+        url: "https://kanji.jitenon.jp/kanji/452",
         "音読み": [
           "カ"
         ],
@@ -44694,8 +44709,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "責",
-        "url": "https://kanji.jitenon.jp/kanjib/750",
+        char: "責",
+        url: "https://kanji.jitenon.jp/kanjib/750",
         "音読み": [
           "セキ"
         ],
@@ -44711,8 +44726,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "貧",
-        "url": "https://kanji.jitenon.jp/kanjib/796",
+        char: "貧",
+        url: "https://kanji.jitenon.jp/kanjib/796",
         "音読み": [
           "ヒン",
           "ビン"
@@ -44729,8 +44744,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "販",
-        "url": "https://kanji.jitenon.jp/kanjic/1236",
+        char: "販",
+        url: "https://kanji.jitenon.jp/kanjic/1236",
         "音読み": [
           "ハン"
         ],
@@ -44744,8 +44759,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "貫",
-        "url": "https://kanji.jitenon.jp/kanjic/1351",
+        char: "貫",
+        url: "https://kanji.jitenon.jp/kanjic/1351",
         "音読み": [
           "カン"
         ],
@@ -44761,8 +44776,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "貪",
-        "url": "https://kanji.jitenon.jp/kanjie/2075",
+        char: "貪",
+        url: "https://kanji.jitenon.jp/kanjie/2075",
         "音読み": [
           "ドン"
         ],
@@ -44778,8 +44793,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "買",
-        "url": "https://kanji.jitenon.jp/kanji/210",
+        char: "買",
+        url: "https://kanji.jitenon.jp/kanji/210",
         "音読み": [
           "バイ"
         ],
@@ -44795,8 +44810,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "貯",
-        "url": "https://kanji.jitenon.jp/kanjib/569",
+        char: "貯",
+        url: "https://kanji.jitenon.jp/kanjib/569",
         "音読み": [
           "チョ"
         ],
@@ -44810,8 +44825,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "費",
-        "url": "https://kanji.jitenon.jp/kanjib/594",
+        char: "費",
+        url: "https://kanji.jitenon.jp/kanjib/594",
         "音読み": [
           "ヒ"
         ],
@@ -44828,8 +44843,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "賀",
-        "url": "https://kanji.jitenon.jp/kanjib/659",
+        char: "賀",
+        url: "https://kanji.jitenon.jp/kanjib/659",
         "音読み": [
           "ガ"
         ],
@@ -44843,8 +44858,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "貸",
-        "url": "https://kanji.jitenon.jp/kanjib/767",
+        char: "貸",
+        url: "https://kanji.jitenon.jp/kanjib/767",
         "音読み": [
           "タイ"
         ],
@@ -44860,8 +44875,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "貴",
-        "url": "https://kanji.jitenon.jp/kanjib/845",
+        char: "貴",
+        url: "https://kanji.jitenon.jp/kanjib/845",
         "音読み": [
           "キ"
         ],
@@ -44880,8 +44895,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "貼",
-        "url": "https://kanji.jitenon.jp/kanjie/2060",
+        char: "貼",
+        url: "https://kanji.jitenon.jp/kanjie/2060",
         "音読み": [
           "チョウ"
         ],
@@ -44897,8 +44912,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "貿",
-        "url": "https://kanji.jitenon.jp/kanjie/2135",
+        char: "貿",
+        url: "https://kanji.jitenon.jp/kanjie/2135",
         "音読み": [
           "ボウ"
         ],
@@ -44912,8 +44927,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "貰",
-        "url": "https://kanji.jitenon.jp/kanjif/2629",
+        char: "貰",
+        url: "https://kanji.jitenon.jp/kanjif/2629",
         "音読み": [
           "セイ"
         ],
@@ -44931,8 +44946,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "資",
-        "url": "https://kanji.jitenon.jp/kanjib/717",
+        char: "資",
+        url: "https://kanji.jitenon.jp/kanjib/717",
         "音読み": [
           "シ"
         ],
@@ -44946,8 +44961,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "賃",
-        "url": "https://kanji.jitenon.jp/kanjib/951",
+        char: "賃",
+        url: "https://kanji.jitenon.jp/kanjib/951",
         "音読み": [
           "チン"
         ],
@@ -44961,8 +44976,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "賊",
-        "url": "https://kanji.jitenon.jp/kanjic/1485",
+        char: "賊",
+        url: "https://kanji.jitenon.jp/kanjic/1485",
         "音読み": [
           "ゾク"
         ],
@@ -44976,8 +44991,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "賄",
-        "url": "https://kanji.jitenon.jp/kanjid/1936",
+        char: "賄",
+        url: "https://kanji.jitenon.jp/kanjid/1936",
         "音読み": [
           "ワイ"
         ],
@@ -44993,8 +45008,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "賂",
-        "url": "https://kanji.jitenon.jp/kanjie/2129",
+        char: "賂",
+        url: "https://kanji.jitenon.jp/kanjie/2129",
         "音読み": [
           "ロ"
         ],
@@ -45008,8 +45023,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "賎",
-        "url": "https://kanji.jitenon.jp/kanjif/2645",
+        char: "賎",
+        url: "https://kanji.jitenon.jp/kanjif/2645",
         "音読み": [
           "セン",
           "ゼン"
@@ -45030,8 +45045,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "賑",
-        "url": "https://kanji.jitenon.jp/kanjif/2601",
+        char: "賑",
+        url: "https://kanji.jitenon.jp/kanjif/2601",
         "音読み": [
           "シン"
         ],
@@ -45048,8 +45063,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "賞",
-        "url": "https://kanji.jitenon.jp/kanjib/538",
+        char: "賞",
+        url: "https://kanji.jitenon.jp/kanjib/538",
         "音読み": [
           "ショウ"
         ],
@@ -45063,8 +45078,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "賛",
-        "url": "https://kanji.jitenon.jp/kanjib/714",
+        char: "賛",
+        url: "https://kanji.jitenon.jp/kanjib/714",
         "音読み": [
           "サン"
         ],
@@ -45078,8 +45093,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "質",
-        "url": "https://kanji.jitenon.jp/kanjib/725",
+        char: "質",
+        url: "https://kanji.jitenon.jp/kanjib/725",
         "音読み": [
           "シチ",
           "シツ",
@@ -45095,8 +45110,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "賦",
-        "url": "https://kanji.jitenon.jp/kanjic/1257",
+        char: "賦",
+        url: "https://kanji.jitenon.jp/kanjic/1257",
         "音読み": [
           "フ"
         ],
@@ -45110,8 +45125,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "賜",
-        "url": "https://kanji.jitenon.jp/kanjid/1708",
+        char: "賜",
+        url: "https://kanji.jitenon.jp/kanjid/1708",
         "音読み": [
           "シ"
         ],
@@ -45127,8 +45142,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "賠",
-        "url": "https://kanji.jitenon.jp/kanjid/1857",
+        char: "賠",
+        url: "https://kanji.jitenon.jp/kanjid/1857",
         "音読み": [
           "バイ"
         ],
@@ -45142,8 +45157,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "賓",
-        "url": "https://kanji.jitenon.jp/kanjid/1873",
+        char: "賓",
+        url: "https://kanji.jitenon.jp/kanjid/1873",
         "音読み": [
           "ヒン"
         ],
@@ -45157,8 +45172,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "賤",
-        "url": "https://kanji.jitenon.jp/kanjif/2644",
+        char: "賤",
+        url: "https://kanji.jitenon.jp/kanjif/2644",
         "音読み": [
           "セン",
           "ゼン"
@@ -45179,8 +45194,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "賢",
-        "url": "https://kanji.jitenon.jp/kanjic/1388",
+        char: "賢",
+        url: "https://kanji.jitenon.jp/kanjic/1388",
         "音読み": [
           "ケン"
         ],
@@ -45196,8 +45211,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "賭",
-        "url": "https://kanji.jitenon.jp/kanjie/2070",
+        char: "賭",
+        url: "https://kanji.jitenon.jp/kanjie/2070",
         "音読み": [
           "ト"
         ],
@@ -45213,8 +45228,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "購",
-        "url": "https://kanji.jitenon.jp/kanjid/1683",
+        char: "購",
+        url: "https://kanji.jitenon.jp/kanjid/1683",
         "音読み": [
           "コウ"
         ],
@@ -45228,8 +45243,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "贈",
-        "url": "https://kanji.jitenon.jp/kanjic/1171",
+        char: "贈",
+        url: "https://kanji.jitenon.jp/kanjic/1171",
         "音読み": [
           "ソウ",
           "ゾウ"
@@ -45246,8 +45261,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "贋",
-        "url": "https://kanji.jitenon.jp/kanjie/2269",
+        char: "贋",
+        url: "https://kanji.jitenon.jp/kanjie/2269",
         "音読み": [
           "ガン"
         ],
@@ -45265,13 +45280,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07002",
-    "radical": "見",
-    "reading": "みる",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07002",
+    radical: "見",
+    reading: "みる",
+    kanji: [
       {
-        "char": "見",
-        "url": "https://kanji.jitenon.jp/kanji/017",
+        char: "見",
+        url: "https://kanji.jitenon.jp/kanji/017",
         "音読み": [
           "ケン"
         ],
@@ -45289,8 +45304,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "規",
-        "url": "https://kanji.jitenon.jp/kanjib/669",
+        char: "規",
+        url: "https://kanji.jitenon.jp/kanjib/669",
         "音読み": [
           "キ"
         ],
@@ -45304,8 +45319,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "視",
-        "url": "https://kanji.jitenon.jp/kanjib/885",
+        char: "視",
+        url: "https://kanji.jitenon.jp/kanjib/885",
         "音読み": [
           "シ"
         ],
@@ -45319,8 +45334,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "覚",
-        "url": "https://kanji.jitenon.jp/kanji/461",
+        char: "覚",
+        url: "https://kanji.jitenon.jp/kanji/461",
         "音読み": [
           "カク"
         ],
@@ -45338,8 +45353,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "覗",
-        "url": "https://kanji.jitenon.jp/kanjie/2476",
+        char: "覗",
+        url: "https://kanji.jitenon.jp/kanjie/2476",
         "音読み": [
           "シ"
         ],
@@ -45356,8 +45371,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "親",
-        "url": "https://kanji.jitenon.jp/kanji/164",
+        char: "親",
+        url: "https://kanji.jitenon.jp/kanji/164",
         "音読み": [
           "シン"
         ],
@@ -45375,8 +45390,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "覧",
-        "url": "https://kanji.jitenon.jp/kanjib/998",
+        char: "覧",
+        url: "https://kanji.jitenon.jp/kanjib/998",
         "音読み": [
           "ラン"
         ],
@@ -45390,8 +45405,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "観",
-        "url": "https://kanji.jitenon.jp/kanji/467",
+        char: "観",
+        url: "https://kanji.jitenon.jp/kanji/467",
         "音読み": [
           "カン"
         ],
@@ -45407,13 +45422,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07003",
-    "radical": "車",
-    "reading": "くるま・くるまへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07003",
+    radical: "車",
+    reading: "くるま・くるまへん",
+    kanji: [
       {
-        "char": "車",
-        "url": "https://kanji.jitenon.jp/kanji/032",
+        char: "車",
+        url: "https://kanji.jitenon.jp/kanji/032",
         "音読み": [
           "シャ"
         ],
@@ -45429,8 +45444,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "軍",
-        "url": "https://kanji.jitenon.jp/kanji/488",
+        char: "軍",
+        url: "https://kanji.jitenon.jp/kanji/488",
         "音読み": [
           "グン"
         ],
@@ -45444,8 +45459,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "軌",
-        "url": "https://kanji.jitenon.jp/kanjic/1358",
+        char: "軌",
+        url: "https://kanji.jitenon.jp/kanjic/1358",
         "音読み": [
           "キ"
         ],
@@ -45459,8 +45474,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "軒",
-        "url": "https://kanji.jitenon.jp/kanjic/1085",
+        char: "軒",
+        url: "https://kanji.jitenon.jp/kanjic/1085",
         "音読み": [
           "ケン"
         ],
@@ -45476,8 +45491,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "転",
-        "url": "https://kanji.jitenon.jp/kanji/374",
+        char: "転",
+        url: "https://kanji.jitenon.jp/kanji/374",
         "音読み": [
           "テン"
         ],
@@ -45496,8 +45511,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "軟",
-        "url": "https://kanji.jitenon.jp/kanjid/1848",
+        char: "軟",
+        url: "https://kanji.jitenon.jp/kanjid/1848",
         "音読み": [
           "ナン"
         ],
@@ -45514,8 +45529,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "軽",
-        "url": "https://kanji.jitenon.jp/kanji/285",
+        char: "軽",
+        url: "https://kanji.jitenon.jp/kanji/285",
         "音読み": [
           "ケイ"
         ],
@@ -45532,8 +45547,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "軸",
-        "url": "https://kanji.jitenon.jp/kanjic/1428",
+        char: "軸",
+        url: "https://kanji.jitenon.jp/kanjic/1428",
         "音読み": [
           "ジク"
         ],
@@ -45547,8 +45562,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "較",
-        "url": "https://kanji.jitenon.jp/kanjic/1035",
+        char: "較",
+        url: "https://kanji.jitenon.jp/kanjic/1035",
         "音読み": [
           "カク"
         ],
@@ -45562,8 +45577,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "載",
-        "url": "https://kanji.jitenon.jp/kanjic/1108",
+        char: "載",
+        url: "https://kanji.jitenon.jp/kanjic/1108",
         "音読み": [
           "サイ"
         ],
@@ -45580,8 +45595,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "輔",
-        "url": "https://kanji.jitenon.jp/kanjif/2878",
+        char: "輔",
+        url: "https://kanji.jitenon.jp/kanjif/2878",
         "音読み": [
           "フ",
           "ホ"
@@ -45599,8 +45614,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "輪",
-        "url": "https://kanji.jitenon.jp/kanjib/630",
+        char: "輪",
+        url: "https://kanji.jitenon.jp/kanjib/630",
         "音読み": [
           "リン"
         ],
@@ -45616,8 +45631,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "輝",
-        "url": "https://kanji.jitenon.jp/kanjic/1050",
+        char: "輝",
+        url: "https://kanji.jitenon.jp/kanjic/1050",
         "音読み": [
           "キ"
         ],
@@ -45633,8 +45648,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "輩",
-        "url": "https://kanji.jitenon.jp/kanjic/1225",
+        char: "輩",
+        url: "https://kanji.jitenon.jp/kanjic/1225",
         "音読み": [
           "ハイ"
         ],
@@ -45648,8 +45663,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "輸",
-        "url": "https://kanji.jitenon.jp/kanjib/816",
+        char: "輸",
+        url: "https://kanji.jitenon.jp/kanjib/816",
         "音読み": [
           "ユ"
         ],
@@ -45663,8 +45678,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "輯",
-        "url": "https://kanji.jitenon.jp/kanjif/2519",
+        char: "輯",
+        url: "https://kanji.jitenon.jp/kanjif/2519",
         "音読み": [
           "シュウ"
         ],
@@ -45681,8 +45696,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "轄",
-        "url": "https://kanji.jitenon.jp/kanjid/1634",
+        char: "轄",
+        url: "https://kanji.jitenon.jp/kanjid/1634",
         "音読み": [
           "カツ"
         ],
@@ -45696,8 +45711,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "輿",
-        "url": "https://kanji.jitenon.jp/kanjif/2951",
+        char: "輿",
+        url: "https://kanji.jitenon.jp/kanjif/2951",
         "音読み": [
           "ヨ"
         ],
@@ -45716,8 +45731,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "轍",
-        "url": "https://kanji.jitenon.jp/kanjif/2765",
+        char: "轍",
+        url: "https://kanji.jitenon.jp/kanjif/2765",
         "音読み": [
           "テツ"
         ],
@@ -45733,8 +45748,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "轟",
-        "url": "https://kanji.jitenon.jp/kanjie/2423",
+        char: "轟",
+        url: "https://kanji.jitenon.jp/kanjie/2423",
         "音読み": [
           "ゴウ"
         ],
@@ -45750,8 +45765,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "轡",
-        "url": "https://kanji.jitenon.jp/kanjif/2855",
+        char: "轡",
+        url: "https://kanji.jitenon.jp/kanjif/2855",
         "音読み": [
           "ヒ"
         ],
@@ -45770,13 +45785,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07004",
-    "radical": "赤",
-    "reading": "あか・あかへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07004",
+    radical: "赤",
+    reading: "あか・あかへん",
+    kanji: [
       {
-        "char": "赤",
-        "url": "https://kanji.jitenon.jp/kanji/045",
+        char: "赤",
+        url: "https://kanji.jitenon.jp/kanji/045",
         "音読み": [
           "シャク",
           "セキ"
@@ -45796,8 +45811,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "赦",
-        "url": "https://kanji.jitenon.jp/kanjic/1431",
+        char: "赦",
+        url: "https://kanji.jitenon.jp/kanjic/1431",
         "音読み": [
           "シャ"
         ],
@@ -45811,8 +45826,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "赫",
-        "url": "https://kanji.jitenon.jp/kanjie/2243",
+        char: "赫",
+        url: "https://kanji.jitenon.jp/kanjie/2243",
         "音読み": [
           "カク"
         ],
@@ -45832,13 +45847,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07005",
-    "radical": "足",
-    "reading": "あし・あしへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07005",
+    radical: "足",
+    reading: "あし・あしへん",
+    kanji: [
       {
-        "char": "足",
-        "url": "https://kanji.jitenon.jp/kanji/053",
+        char: "足",
+        url: "https://kanji.jitenon.jp/kanji/053",
         "音読み": [
           "ソク"
         ],
@@ -45857,8 +45872,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "距",
-        "url": "https://kanji.jitenon.jp/kanjic/1062",
+        char: "距",
+        url: "https://kanji.jitenon.jp/kanjic/1062",
         "音読み": [
           "キョ"
         ],
@@ -45872,8 +45887,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "路",
-        "url": "https://kanji.jitenon.jp/kanji/438",
+        char: "路",
+        url: "https://kanji.jitenon.jp/kanji/438",
         "音読み": [
           "ロ"
         ],
@@ -45889,8 +45904,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "跡",
-        "url": "https://kanji.jitenon.jp/kanjic/1163",
+        char: "跡",
+        url: "https://kanji.jitenon.jp/kanjic/1163",
         "音読み": [
           "セキ"
         ],
@@ -45906,8 +45921,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "跳",
-        "url": "https://kanji.jitenon.jp/kanjic/1190",
+        char: "跳",
+        url: "https://kanji.jitenon.jp/kanjic/1190",
         "音読み": [
           "チョウ"
         ],
@@ -45924,8 +45939,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "践",
-        "url": "https://kanji.jitenon.jp/kanjid/1786",
+        char: "践",
+        url: "https://kanji.jitenon.jp/kanjid/1786",
         "音読み": [
           "セン"
         ],
@@ -45939,8 +45954,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "跨",
-        "url": "https://kanji.jitenon.jp/kanjie/2383",
+        char: "跨",
+        url: "https://kanji.jitenon.jp/kanjie/2383",
         "音読み": [
           "コ"
         ],
@@ -45958,8 +45973,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "踊",
-        "url": "https://kanji.jitenon.jp/kanjic/1295",
+        char: "踊",
+        url: "https://kanji.jitenon.jp/kanjic/1295",
         "音読み": [
           "ヨウ"
         ],
@@ -45976,8 +45991,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "踏",
-        "url": "https://kanji.jitenon.jp/kanjic/1214",
+        char: "踏",
+        url: "https://kanji.jitenon.jp/kanjic/1214",
         "音読み": [
           "トウ"
         ],
@@ -45994,8 +46009,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "踪",
-        "url": "https://kanji.jitenon.jp/kanjie/2048",
+        char: "踪",
+        url: "https://kanji.jitenon.jp/kanjie/2048",
         "音読み": [
           "ソウ"
         ],
@@ -46009,8 +46024,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "蹄",
-        "url": "https://kanji.jitenon.jp/kanjif/2756",
+        char: "蹄",
+        url: "https://kanji.jitenon.jp/kanjif/2756",
         "音読み": [
           "テイ"
         ],
@@ -46027,8 +46042,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蹟",
-        "url": "https://kanji.jitenon.jp/kanjie/2496",
+        char: "蹟",
+        url: "https://kanji.jitenon.jp/kanjie/2496",
         "音読み": [
           "シャク",
           "セキ"
@@ -46045,8 +46060,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "蹴",
-        "url": "https://kanji.jitenon.jp/kanjie/2025",
+        char: "蹴",
+        url: "https://kanji.jitenon.jp/kanjie/2025",
         "音読み": [
           "シュウ"
         ],
@@ -46062,8 +46077,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "躍",
-        "url": "https://kanji.jitenon.jp/kanjic/1289",
+        char: "躍",
+        url: "https://kanji.jitenon.jp/kanjic/1289",
         "音読み": [
           "ヤク"
         ],
@@ -46081,13 +46096,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07006",
-    "radical": "角",
-    "reading": "つの・つのへん・かく",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07006",
+    radical: "角",
+    reading: "つの・つのへん・かく",
+    kanji: [
       {
-        "char": "角",
-        "url": "https://kanji.jitenon.jp/kanji/097",
+        char: "角",
+        url: "https://kanji.jitenon.jp/kanji/097",
         "音読み": [
           "カク"
         ],
@@ -46104,8 +46119,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "解",
-        "url": "https://kanji.jitenon.jp/kanjib/660",
+        char: "解",
+        url: "https://kanji.jitenon.jp/kanjib/660",
         "音読み": [
           "カイ",
           "ゲ"
@@ -46124,8 +46139,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "触",
-        "url": "https://kanji.jitenon.jp/kanjic/1147",
+        char: "触",
+        url: "https://kanji.jitenon.jp/kanjic/1147",
         "音読み": [
           "ショク"
         ],
@@ -46144,13 +46159,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07007",
-    "radical": "言 訁",
-    "reading": "げん・ごんべん・ことば",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07007",
+    radical: "言 訁",
+    reading: "げん・ごんべん・ことば",
+    kanji: [
       {
-        "char": "言",
-        "url": "https://kanji.jitenon.jp/kanji/119",
+        char: "言",
+        url: "https://kanji.jitenon.jp/kanji/119",
         "音読み": [
           "ゲン",
           "ゴン"
@@ -46168,8 +46183,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "計",
-        "url": "https://kanji.jitenon.jp/kanji/117",
+        char: "計",
+        url: "https://kanji.jitenon.jp/kanji/117",
         "音読み": [
           "ケイ"
         ],
@@ -46186,8 +46201,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "訂",
-        "url": "https://kanji.jitenon.jp/kanjid/1512",
+        char: "訂",
+        url: "https://kanji.jitenon.jp/kanjid/1512",
         "音読み": [
           "テイ"
         ],
@@ -46201,8 +46216,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "訃",
-        "url": "https://kanji.jitenon.jp/kanjie/2096",
+        char: "訃",
+        url: "https://kanji.jitenon.jp/kanjie/2096",
         "音読み": [
           "フ"
         ],
@@ -46216,8 +46231,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "記",
-        "url": "https://kanji.jitenon.jp/kanji/104",
+        char: "記",
+        url: "https://kanji.jitenon.jp/kanji/104",
         "音読み": [
           "キ"
         ],
@@ -46233,8 +46248,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "訓",
-        "url": "https://kanji.jitenon.jp/kanji/487",
+        char: "訓",
+        url: "https://kanji.jitenon.jp/kanji/487",
         "音読み": [
           "クン"
         ],
@@ -46248,8 +46263,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "討",
-        "url": "https://kanji.jitenon.jp/kanjib/955",
+        char: "討",
+        url: "https://kanji.jitenon.jp/kanjib/955",
         "音読み": [
           "トウ"
         ],
@@ -46265,8 +46280,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "託",
-        "url": "https://kanji.jitenon.jp/kanjic/1492",
+        char: "託",
+        url: "https://kanji.jitenon.jp/kanjic/1492",
         "音読み": [
           "タク"
         ],
@@ -46280,8 +46295,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "訊",
-        "url": "https://kanji.jitenon.jp/kanjif/2600",
+        char: "訊",
+        url: "https://kanji.jitenon.jp/kanjif/2600",
         "音読み": [
           "シン",
           "ジン"
@@ -46301,8 +46316,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "許",
-        "url": "https://kanji.jitenon.jp/kanjib/677",
+        char: "許",
+        url: "https://kanji.jitenon.jp/kanjib/677",
         "音読み": [
           "キョ"
         ],
@@ -46318,8 +46333,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "設",
-        "url": "https://kanji.jitenon.jp/kanjib/752",
+        char: "設",
+        url: "https://kanji.jitenon.jp/kanjib/752",
         "音読み": [
           "セツ"
         ],
@@ -46335,8 +46350,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "訪",
-        "url": "https://kanji.jitenon.jp/kanjib/980",
+        char: "訪",
+        url: "https://kanji.jitenon.jp/kanjib/980",
         "音読み": [
           "ホウ"
         ],
@@ -46353,8 +46368,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "訳",
-        "url": "https://kanji.jitenon.jp/kanjib/990",
+        char: "訳",
+        url: "https://kanji.jitenon.jp/kanjib/990",
         "音読み": [
           "ヤク"
         ],
@@ -46370,8 +46385,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "訟",
-        "url": "https://kanji.jitenon.jp/kanjid/1754",
+        char: "訟",
+        url: "https://kanji.jitenon.jp/kanjid/1754",
         "音読み": [
           "ショウ"
         ],
@@ -46385,8 +46400,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "訣",
-        "url": "https://kanji.jitenon.jp/kanjie/2361",
+        char: "訣",
+        url: "https://kanji.jitenon.jp/kanjie/2361",
         "音読み": [
           "ケツ"
         ],
@@ -46403,8 +46418,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "証",
-        "url": "https://kanji.jitenon.jp/kanjib/734",
+        char: "証",
+        url: "https://kanji.jitenon.jp/kanjib/734",
         "音読み": [
           "ショウ"
         ],
@@ -46418,8 +46433,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "評",
-        "url": "https://kanji.jitenon.jp/kanjib/795",
+        char: "評",
+        url: "https://kanji.jitenon.jp/kanjib/795",
         "音読み": [
           "ヒョウ"
         ],
@@ -46433,8 +46448,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "詞",
-        "url": "https://kanji.jitenon.jp/kanjib/887",
+        char: "詞",
+        url: "https://kanji.jitenon.jp/kanjib/887",
         "音読み": [
           "シ"
         ],
@@ -46448,8 +46463,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "訴",
-        "url": "https://kanji.jitenon.jp/kanjic/1167",
+        char: "訴",
+        url: "https://kanji.jitenon.jp/kanjic/1167",
         "音読み": [
           "ソ"
         ],
@@ -46465,8 +46480,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "詠",
-        "url": "https://kanji.jitenon.jp/kanjic/1322",
+        char: "詠",
+        url: "https://kanji.jitenon.jp/kanjic/1322",
         "音読み": [
           "エイ"
         ],
@@ -46482,8 +46497,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "詐",
-        "url": "https://kanji.jitenon.jp/kanjid/1697",
+        char: "詐",
+        url: "https://kanji.jitenon.jp/kanjid/1697",
         "音読み": [
           "サ"
         ],
@@ -46497,8 +46512,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "詔",
-        "url": "https://kanji.jitenon.jp/kanjid/1755",
+        char: "詔",
+        url: "https://kanji.jitenon.jp/kanjid/1755",
         "音読み": [
           "ショウ"
         ],
@@ -46514,8 +46529,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "診",
-        "url": "https://kanji.jitenon.jp/kanjid/1764",
+        char: "診",
+        url: "https://kanji.jitenon.jp/kanjid/1764",
         "音読み": [
           "シン"
         ],
@@ -46531,8 +46546,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "詑",
-        "url": "https://kanji.jitenon.jp/kanjif/2681",
+        char: "詑",
+        url: "https://kanji.jitenon.jp/kanjif/2681",
         "音読み": [
           "タ"
         ],
@@ -46548,8 +46563,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "註",
-        "url": "https://kanji.jitenon.jp/kanjif/2725",
+        char: "註",
+        url: "https://kanji.jitenon.jp/kanjif/2725",
         "音読み": [
           "チュウ"
         ],
@@ -46565,8 +46580,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "話",
-        "url": "https://kanji.jitenon.jp/kanji/239",
+        char: "話",
+        url: "https://kanji.jitenon.jp/kanji/239",
         "音読み": [
           "ワ"
         ],
@@ -46583,8 +46598,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "詩",
-        "url": "https://kanji.jitenon.jp/kanji/304",
+        char: "詩",
+        url: "https://kanji.jitenon.jp/kanji/304",
         "音読み": [
           "シ"
         ],
@@ -46598,8 +46613,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "試",
-        "url": "https://kanji.jitenon.jp/kanjib/521",
+        char: "試",
+        url: "https://kanji.jitenon.jp/kanjib/521",
         "音読み": [
           "シ"
         ],
@@ -46616,8 +46631,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "誠",
-        "url": "https://kanji.jitenon.jp/kanjib/919",
+        char: "誠",
+        url: "https://kanji.jitenon.jp/kanjib/919",
         "音読み": [
           "セイ"
         ],
@@ -46633,8 +46648,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "詰",
-        "url": "https://kanji.jitenon.jp/kanjic/1054",
+        char: "詰",
+        url: "https://kanji.jitenon.jp/kanjic/1054",
         "音読み": [
           "キツ"
         ],
@@ -46652,8 +46667,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "誇",
-        "url": "https://kanji.jitenon.jp/kanjic/1089",
+        char: "誇",
+        url: "https://kanji.jitenon.jp/kanjic/1089",
         "音読み": [
           "コ"
         ],
@@ -46669,8 +46684,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "詳",
-        "url": "https://kanji.jitenon.jp/kanjic/1140",
+        char: "詳",
+        url: "https://kanji.jitenon.jp/kanjic/1140",
         "音読み": [
           "ショウ"
         ],
@@ -46686,8 +46701,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "誉",
-        "url": "https://kanji.jitenon.jp/kanjic/1292",
+        char: "誉",
+        url: "https://kanji.jitenon.jp/kanjic/1292",
         "音読み": [
           "ヨ"
         ],
@@ -46703,8 +46718,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "該",
-        "url": "https://kanji.jitenon.jp/kanjic/1342",
+        char: "該",
+        url: "https://kanji.jitenon.jp/kanjic/1342",
         "音読み": [
           "ガイ"
         ],
@@ -46718,8 +46733,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "詣",
-        "url": "https://kanji.jitenon.jp/kanjid/1987",
+        char: "詣",
+        url: "https://kanji.jitenon.jp/kanjid/1987",
         "音読み": [
           "ケイ"
         ],
@@ -46735,8 +46750,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "詮",
-        "url": "https://kanji.jitenon.jp/kanjie/2040",
+        char: "詮",
+        url: "https://kanji.jitenon.jp/kanjie/2040",
         "音読み": [
           "セン"
         ],
@@ -46750,8 +46765,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "詫",
-        "url": "https://kanji.jitenon.jp/kanjif/2682",
+        char: "詫",
+        url: "https://kanji.jitenon.jp/kanjif/2682",
         "音読み": [
           "タ"
         ],
@@ -46769,8 +46784,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "語",
-        "url": "https://kanji.jitenon.jp/kanji/123",
+        char: "語",
+        url: "https://kanji.jitenon.jp/kanji/123",
         "音読み": [
           "ゴ"
         ],
@@ -46787,8 +46802,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "読",
-        "url": "https://kanji.jitenon.jp/kanji/205",
+        char: "読",
+        url: "https://kanji.jitenon.jp/kanji/205",
         "音読み": [
           "トウ",
           "トク",
@@ -46806,8 +46821,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "説",
-        "url": "https://kanji.jitenon.jp/kanjib/551",
+        char: "説",
+        url: "https://kanji.jitenon.jp/kanjib/551",
         "音読み": [
           "セツ",
           "ゼイ"
@@ -46824,8 +46839,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "誤",
-        "url": "https://kanji.jitenon.jp/kanjib/866",
+        char: "誤",
+        url: "https://kanji.jitenon.jp/kanjib/866",
         "音読み": [
           "ゴ"
         ],
@@ -46841,8 +46856,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "誌",
-        "url": "https://kanji.jitenon.jp/kanjib/884",
+        char: "誌",
+        url: "https://kanji.jitenon.jp/kanjib/884",
         "音読み": [
           "シ"
         ],
@@ -46856,8 +46871,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "認",
-        "url": "https://kanji.jitenon.jp/kanjib/960",
+        char: "認",
+        url: "https://kanji.jitenon.jp/kanjib/960",
         "音読み": [
           "ニン"
         ],
@@ -46873,8 +46888,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "誘",
-        "url": "https://kanji.jitenon.jp/kanjid/1579",
+        char: "誘",
+        url: "https://kanji.jitenon.jp/kanjid/1579",
         "音読み": [
           "ユウ"
         ],
@@ -46890,8 +46905,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "誓",
-        "url": "https://kanji.jitenon.jp/kanjid/1777",
+        char: "誓",
+        url: "https://kanji.jitenon.jp/kanjid/1777",
         "音読み": [
           "セイ"
         ],
@@ -46907,8 +46922,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "談",
-        "url": "https://kanji.jitenon.jp/kanji/362",
+        char: "談",
+        url: "https://kanji.jitenon.jp/kanji/362",
         "音読み": [
           "ダン"
         ],
@@ -46922,8 +46937,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "調",
-        "url": "https://kanji.jitenon.jp/kanji/366",
+        char: "調",
+        url: "https://kanji.jitenon.jp/kanji/366",
         "音読み": [
           "チョウ"
         ],
@@ -46941,8 +46956,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "課",
-        "url": "https://kanji.jitenon.jp/kanji/453",
+        char: "課",
+        url: "https://kanji.jitenon.jp/kanji/453",
         "音読み": [
           "カ"
         ],
@@ -46956,8 +46971,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "諸",
-        "url": "https://kanji.jitenon.jp/kanjib/907",
+        char: "諸",
+        url: "https://kanji.jitenon.jp/kanjib/907",
         "音読み": [
           "ショ"
         ],
@@ -46971,8 +46986,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "誕",
-        "url": "https://kanji.jitenon.jp/kanjib/941",
+        char: "誕",
+        url: "https://kanji.jitenon.jp/kanjib/941",
         "音読み": [
           "タン"
         ],
@@ -46986,8 +47001,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "論",
-        "url": "https://kanji.jitenon.jp/kanjic/1002",
+        char: "論",
+        url: "https://kanji.jitenon.jp/kanjic/1002",
         "音読み": [
           "ロン"
         ],
@@ -47001,8 +47016,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "請",
-        "url": "https://kanji.jitenon.jp/kanjic/1466",
+        char: "請",
+        url: "https://kanji.jitenon.jp/kanjic/1466",
         "音読み": [
           "シン",
           "セイ"
@@ -47020,8 +47035,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "諾",
-        "url": "https://kanji.jitenon.jp/kanjic/1495",
+        char: "諾",
+        url: "https://kanji.jitenon.jp/kanjic/1495",
         "音読み": [
           "ダク"
         ],
@@ -47035,8 +47050,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "謁",
-        "url": "https://kanji.jitenon.jp/kanjid/1611",
+        char: "謁",
+        url: "https://kanji.jitenon.jp/kanjid/1611",
         "音読み": [
           "エツ"
         ],
@@ -47050,8 +47065,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "誰",
-        "url": "https://kanji.jitenon.jp/kanjie/2055",
+        char: "誰",
+        url: "https://kanji.jitenon.jp/kanjie/2055",
         "音読み": [],
         "訓読み": [
           "だれ"
@@ -47065,8 +47080,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "諌",
-        "url": "https://kanji.jitenon.jp/kanjie/2265",
+        char: "諌",
+        url: "https://kanji.jitenon.jp/kanjie/2265",
         "音読み": [
           "カン"
         ],
@@ -47082,8 +47097,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "誼",
-        "url": "https://kanji.jitenon.jp/kanjie/2288",
+        char: "誼",
+        url: "https://kanji.jitenon.jp/kanjie/2288",
         "音読み": [
           "ギ"
         ],
@@ -47100,8 +47115,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "諏",
-        "url": "https://kanji.jitenon.jp/kanjie/2500",
+        char: "諏",
+        url: "https://kanji.jitenon.jp/kanjie/2500",
         "音読み": [
           "シュ",
           "ス"
@@ -47119,8 +47134,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "誹",
-        "url": "https://kanji.jitenon.jp/kanjif/2854",
+        char: "誹",
+        url: "https://kanji.jitenon.jp/kanjif/2854",
         "音読み": [
           "ヒ"
         ],
@@ -47136,8 +47151,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "諒",
-        "url": "https://kanji.jitenon.jp/kanjif/2988",
+        char: "諒",
+        url: "https://kanji.jitenon.jp/kanjif/2988",
         "音読み": [
           "リョウ"
         ],
@@ -47154,8 +47169,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "謡",
-        "url": "https://kanji.jitenon.jp/kanjic/1296",
+        char: "謡",
+        url: "https://kanji.jitenon.jp/kanjic/1296",
         "音読み": [
           "ヨウ"
         ],
@@ -47172,8 +47187,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "諮",
-        "url": "https://kanji.jitenon.jp/kanjic/1425",
+        char: "諮",
+        url: "https://kanji.jitenon.jp/kanjic/1425",
         "音読み": [
           "シ"
         ],
@@ -47189,8 +47204,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "謀",
-        "url": "https://kanji.jitenon.jp/kanjid/1563",
+        char: "謀",
+        url: "https://kanji.jitenon.jp/kanjid/1563",
         "音読み": [
           "ボウ",
           "ム"
@@ -47207,8 +47222,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "諭",
-        "url": "https://kanji.jitenon.jp/kanjid/1911",
+        char: "諭",
+        url: "https://kanji.jitenon.jp/kanjid/1911",
         "音読み": [
           "ユ"
         ],
@@ -47224,8 +47239,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "諧",
-        "url": "https://kanji.jitenon.jp/kanjid/1963",
+        char: "諧",
+        url: "https://kanji.jitenon.jp/kanjid/1963",
         "音読み": [
           "カイ"
         ],
@@ -47239,8 +47254,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "諦",
-        "url": "https://kanji.jitenon.jp/kanjie/2066",
+        char: "諦",
+        url: "https://kanji.jitenon.jp/kanjie/2066",
         "音読み": [
           "テイ"
         ],
@@ -47256,8 +47271,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "謂",
-        "url": "https://kanji.jitenon.jp/kanjie/2154",
+        char: "謂",
+        url: "https://kanji.jitenon.jp/kanjie/2154",
         "音読み": [
           "イ"
         ],
@@ -47275,8 +47290,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "諫",
-        "url": "https://kanji.jitenon.jp/kanjie/2264",
+        char: "諫",
+        url: "https://kanji.jitenon.jp/kanjie/2264",
         "音読み": [
           "カン"
         ],
@@ -47292,8 +47307,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "諺",
-        "url": "https://kanji.jitenon.jp/kanjie/2373",
+        char: "諺",
+        url: "https://kanji.jitenon.jp/kanjie/2373",
         "音読み": [
           "ゲン"
         ],
@@ -47309,8 +47324,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "諜",
-        "url": "https://kanji.jitenon.jp/kanjif/2742",
+        char: "諜",
+        url: "https://kanji.jitenon.jp/kanjif/2742",
         "音読み": [
           "チョウ"
         ],
@@ -47329,8 +47344,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "講",
-        "url": "https://kanji.jitenon.jp/kanjib/697",
+        char: "講",
+        url: "https://kanji.jitenon.jp/kanjib/697",
         "音読み": [
           "コウ"
         ],
@@ -47344,8 +47359,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "謝",
-        "url": "https://kanji.jitenon.jp/kanjib/726",
+        char: "謝",
+        url: "https://kanji.jitenon.jp/kanjib/726",
         "音読み": [
           "シャ"
         ],
@@ -47361,8 +47376,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "謹",
-        "url": "https://kanji.jitenon.jp/kanjid/1662",
+        char: "謹",
+        url: "https://kanji.jitenon.jp/kanjid/1662",
         "音読み": [
           "キン"
         ],
@@ -47378,8 +47393,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "謙",
-        "url": "https://kanji.jitenon.jp/kanjid/1675",
+        char: "謙",
+        url: "https://kanji.jitenon.jp/kanjid/1675",
         "音読み": [
           "ケン"
         ],
@@ -47393,8 +47408,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "謄",
-        "url": "https://kanji.jitenon.jp/kanjid/1843",
+        char: "謄",
+        url: "https://kanji.jitenon.jp/kanjid/1843",
         "音読み": [
           "トウ"
         ],
@@ -47408,8 +47423,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "謎",
-        "url": "https://kanji.jitenon.jp/kanjie/2080",
+        char: "謎",
+        url: "https://kanji.jitenon.jp/kanjie/2080",
         "音読み": [],
         "訓読み": [
           "なぞ"
@@ -47423,8 +47438,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "謬",
-        "url": "https://kanji.jitenon.jp/kanjif/2862",
+        char: "謬",
+        url: "https://kanji.jitenon.jp/kanjif/2862",
         "音読み": [
           "ビュウ"
         ],
@@ -47440,8 +47455,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "識",
-        "url": "https://kanji.jitenon.jp/kanjib/724",
+        char: "識",
+        url: "https://kanji.jitenon.jp/kanjib/724",
         "音読み": [
           "シキ"
         ],
@@ -47455,8 +47470,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "警",
-        "url": "https://kanji.jitenon.jp/kanjib/855",
+        char: "警",
+        url: "https://kanji.jitenon.jp/kanjib/855",
         "音読み": [
           "ケイ"
         ],
@@ -47470,8 +47485,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "譜",
-        "url": "https://kanji.jitenon.jp/kanjid/1875",
+        char: "譜",
+        url: "https://kanji.jitenon.jp/kanjid/1875",
         "音読み": [
           "フ"
         ],
@@ -47485,8 +47500,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "議",
-        "url": "https://kanji.jitenon.jp/kanji/476",
+        char: "議",
+        url: "https://kanji.jitenon.jp/kanji/476",
         "音読み": [
           "ギ"
         ],
@@ -47500,8 +47515,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "護",
-        "url": "https://kanji.jitenon.jp/kanjib/695",
+        char: "護",
+        url: "https://kanji.jitenon.jp/kanjib/695",
         "音読み": [
           "ゴ"
         ],
@@ -47515,8 +47530,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "譲",
-        "url": "https://kanji.jitenon.jp/kanjic/1446",
+        char: "譲",
+        url: "https://kanji.jitenon.jp/kanjic/1446",
         "音読み": [
           "ジョウ"
         ],
@@ -47532,8 +47547,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "讃",
-        "url": "https://kanji.jitenon.jp/kanjie/2457",
+        char: "讃",
+        url: "https://kanji.jitenon.jp/kanjie/2457",
         "音読み": [
           "サン"
         ],
@@ -47551,8 +47566,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "讚",
-        "url": "https://kanji.jitenon.jp/kanjie/2458",
+        char: "讚",
+        url: "https://kanji.jitenon.jp/kanjie/2458",
         "音読み": [
           "サン"
         ],
@@ -47572,13 +47587,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07009",
-    "radical": "走",
-    "reading": "はしる・そうにょう",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07009",
+    radical: "走",
+    reading: "はしる・そうにょう",
+    kanji: [
       {
-        "char": "走",
-        "url": "https://kanji.jitenon.jp/kanji/179",
+        char: "走",
+        url: "https://kanji.jitenon.jp/kanji/179",
         "音読み": [
           "ソウ"
         ],
@@ -47594,8 +47609,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "赴",
-        "url": "https://kanji.jitenon.jp/kanjid/1542",
+        char: "赴",
+        url: "https://kanji.jitenon.jp/kanjid/1542",
         "音読み": [
           "フ"
         ],
@@ -47611,8 +47626,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "起",
-        "url": "https://kanji.jitenon.jp/kanji/266",
+        char: "起",
+        url: "https://kanji.jitenon.jp/kanji/266",
         "音読み": [
           "キ"
         ],
@@ -47630,8 +47645,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "越",
-        "url": "https://kanji.jitenon.jp/kanjic/1018",
+        char: "越",
+        url: "https://kanji.jitenon.jp/kanjic/1018",
         "音読み": [
           "エツ"
         ],
@@ -47648,8 +47663,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "超",
-        "url": "https://kanji.jitenon.jp/kanjid/1507",
+        char: "超",
+        url: "https://kanji.jitenon.jp/kanjid/1507",
         "音読み": [
           "チョウ"
         ],
@@ -47666,8 +47681,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "趣",
-        "url": "https://kanji.jitenon.jp/kanjic/1126",
+        char: "趣",
+        url: "https://kanji.jitenon.jp/kanjic/1126",
         "音読み": [
           "シュ"
         ],
@@ -47683,8 +47698,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "趨",
-        "url": "https://kanji.jitenon.jp/kanjif/2501",
+        char: "趨",
+        url: "https://kanji.jitenon.jp/kanjif/2501",
         "音読み": [
           "シュ",
           "スウ",
@@ -47707,13 +47722,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07010",
-    "radical": "里",
-    "reading": "さと・さとへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07010",
+    radical: "里",
+    reading: "さと・さとへん",
+    kanji: [
       {
-        "char": "里",
-        "url": "https://kanji.jitenon.jp/kanji/237",
+        char: "里",
+        url: "https://kanji.jitenon.jp/kanji/237",
         "音読み": [
           "リ"
         ],
@@ -47729,8 +47744,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "重",
-        "url": "https://kanji.jitenon.jp/kanji/325",
+        char: "重",
+        url: "https://kanji.jitenon.jp/kanji/325",
         "音読み": [
           "ジュウ",
           "チョウ"
@@ -47750,8 +47765,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "野",
-        "url": "https://kanji.jitenon.jp/kanji/231",
+        char: "野",
+        url: "https://kanji.jitenon.jp/kanji/231",
         "音読み": [
           "ヤ"
         ],
@@ -47767,8 +47782,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "量",
-        "url": "https://kanji.jitenon.jp/kanjib/626",
+        char: "量",
+        url: "https://kanji.jitenon.jp/kanjib/626",
         "音読み": [
           "リョウ"
         ],
@@ -47786,13 +47801,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07011",
-    "radical": "酉",
-    "reading": "ひよみのとり・とりへん・さけのとり・こよみのとり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07011",
+    radical: "酉",
+    reading: "ひよみのとり・とりへん・さけのとり・こよみのとり",
+    kanji: [
       {
-        "char": "酉",
-        "url": "https://kanji.jitenon.jp/kanjif/2950",
+        char: "酉",
+        url: "https://kanji.jitenon.jp/kanjif/2950",
         "音読み": [
           "ユウ"
         ],
@@ -47809,8 +47824,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "酋",
-        "url": "https://kanji.jitenon.jp/kanjif/2520",
+        char: "酋",
+        url: "https://kanji.jitenon.jp/kanjif/2520",
         "音読み": [
           "シュウ"
         ],
@@ -47827,8 +47842,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "酒",
-        "url": "https://kanji.jitenon.jp/kanji/315",
+        char: "酒",
+        url: "https://kanji.jitenon.jp/kanji/315",
         "音読み": [
           "シュ"
         ],
@@ -47845,8 +47860,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "配",
-        "url": "https://kanji.jitenon.jp/kanji/387",
+        char: "配",
+        url: "https://kanji.jitenon.jp/kanji/387",
         "音読み": [
           "ハイ"
         ],
@@ -47862,8 +47877,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "酌",
-        "url": "https://kanji.jitenon.jp/kanjid/1716",
+        char: "酌",
+        url: "https://kanji.jitenon.jp/kanjid/1716",
         "音読み": [
           "シャク"
         ],
@@ -47879,8 +47894,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "酎",
-        "url": "https://kanji.jitenon.jp/kanjie/2059",
+        char: "酎",
+        url: "https://kanji.jitenon.jp/kanjie/2059",
         "音読み": [
           "チュウ"
         ],
@@ -47894,8 +47909,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "酔",
-        "url": "https://kanji.jitenon.jp/kanjic/1460",
+        char: "酔",
+        url: "https://kanji.jitenon.jp/kanjic/1460",
         "音読み": [
           "スイ"
         ],
@@ -47911,8 +47926,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "酢",
-        "url": "https://kanji.jitenon.jp/kanjid/1704",
+        char: "酢",
+        url: "https://kanji.jitenon.jp/kanjid/1704",
         "音読み": [
           "サク"
         ],
@@ -47928,8 +47943,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "酬",
-        "url": "https://kanji.jitenon.jp/kanjid/1723",
+        char: "酬",
+        url: "https://kanji.jitenon.jp/kanjid/1723",
         "音読み": [
           "シュウ"
         ],
@@ -47943,8 +47958,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "酪",
-        "url": "https://kanji.jitenon.jp/kanjid/1921",
+        char: "酪",
+        url: "https://kanji.jitenon.jp/kanjid/1921",
         "音読み": [
           "ラク"
         ],
@@ -47958,8 +47973,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "酸",
-        "url": "https://kanji.jitenon.jp/kanjib/715",
+        char: "酸",
+        url: "https://kanji.jitenon.jp/kanjib/715",
         "音読み": [
           "サン"
         ],
@@ -47975,8 +47990,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "酵",
-        "url": "https://kanji.jitenon.jp/kanjic/1408",
+        char: "酵",
+        url: "https://kanji.jitenon.jp/kanjic/1408",
         "音読み": [
           "コウ"
         ],
@@ -47990,8 +48005,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "酷",
-        "url": "https://kanji.jitenon.jp/kanjid/1693",
+        char: "酷",
+        url: "https://kanji.jitenon.jp/kanjid/1693",
         "音読み": [
           "コク"
         ],
@@ -48005,8 +48020,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "醇",
-        "url": "https://kanji.jitenon.jp/kanjif/2532",
+        char: "醇",
+        url: "https://kanji.jitenon.jp/kanjif/2532",
         "音読み": [
           "シュン",
           "ジュン"
@@ -48024,8 +48039,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "醒",
-        "url": "https://kanji.jitenon.jp/kanjie/2034",
+        char: "醒",
+        url: "https://kanji.jitenon.jp/kanjie/2034",
         "音読み": [
           "セイ"
         ],
@@ -48039,8 +48054,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "醐",
-        "url": "https://kanji.jitenon.jp/kanjie/2384",
+        char: "醐",
+        url: "https://kanji.jitenon.jp/kanjie/2384",
         "音読み": [
           "コ",
           "ゴ"
@@ -48055,8 +48070,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "醍",
-        "url": "https://kanji.jitenon.jp/kanjif/2701",
+        char: "醍",
+        url: "https://kanji.jitenon.jp/kanjif/2701",
         "音読み": [
           "ダイ",
           "テイ"
@@ -48071,8 +48086,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "醗",
-        "url": "https://kanji.jitenon.jp/kanjif/2838",
+        char: "醗",
+        url: "https://kanji.jitenon.jp/kanjif/2838",
         "音読み": [
           "ハツ"
         ],
@@ -48088,8 +48103,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "醜",
-        "url": "https://kanji.jitenon.jp/kanjid/1722",
+        char: "醜",
+        url: "https://kanji.jitenon.jp/kanjid/1722",
         "音読み": [
           "シュウ"
         ],
@@ -48105,8 +48120,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "醤",
-        "url": "https://kanji.jitenon.jp/kanjif/2575",
+        char: "醤",
+        url: "https://kanji.jitenon.jp/kanjif/2575",
         "音読み": [
           "ショウ"
         ],
@@ -48123,8 +48138,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "醸",
-        "url": "https://kanji.jitenon.jp/kanjid/1759",
+        char: "醸",
+        url: "https://kanji.jitenon.jp/kanjid/1759",
         "音読み": [
           "ジョウ"
         ],
@@ -48142,13 +48157,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07012",
-    "radical": "身",
-    "reading": "み・みへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07012",
+    radical: "身",
+    reading: "み・みへん",
+    kanji: [
       {
-        "char": "身",
-        "url": "https://kanji.jitenon.jp/kanji/338",
+        char: "身",
+        url: "https://kanji.jitenon.jp/kanji/338",
         "音読み": [
           "シン"
         ],
@@ -48164,8 +48179,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "躯",
-        "url": "https://kanji.jitenon.jp/kanjie/2339",
+        char: "躯",
+        url: "https://kanji.jitenon.jp/kanjie/2339",
         "音読み": [
           "ク"
         ],
@@ -48184,13 +48199,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07013",
-    "radical": "豆",
-    "reading": "まめ・まめへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07013",
+    radical: "豆",
+    reading: "まめ・まめへん",
+    kanji: [
       {
-        "char": "豆",
-        "url": "https://kanji.jitenon.jp/kanji/382",
+        char: "豆",
+        url: "https://kanji.jitenon.jp/kanji/382",
         "音読み": [
           "ズ",
           "トウ"
@@ -48207,8 +48222,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "豊",
-        "url": "https://kanji.jitenon.jp/kanjib/808",
+        char: "豊",
+        url: "https://kanji.jitenon.jp/kanjib/808",
         "音読み": [
           "ホウ"
         ],
@@ -48224,8 +48239,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "豎",
-        "url": "https://kanji.jitenon.jp/kanjif/2505",
+        char: "豎",
+        url: "https://kanji.jitenon.jp/kanjif/2505",
         "音読み": [
           "ジュ"
         ],
@@ -48246,13 +48261,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07014",
-    "radical": "辰",
-    "reading": "たつ・しんのたつ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07014",
+    radical: "辰",
+    reading: "たつ・しんのたつ",
+    kanji: [
       {
-        "char": "辰",
-        "url": "https://kanji.jitenon.jp/kanjif/2602",
+        char: "辰",
+        url: "https://kanji.jitenon.jp/kanjif/2602",
         "音読み": [
           "シン"
         ],
@@ -48270,8 +48285,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "辱",
-        "url": "https://kanji.jitenon.jp/kanjic/1451",
+        char: "辱",
+        url: "https://kanji.jitenon.jp/kanjic/1451",
         "音読み": [
           "ジョク"
         ],
@@ -48287,8 +48302,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "農",
-        "url": "https://kanji.jitenon.jp/kanji/385",
+        char: "農",
+        url: "https://kanji.jitenon.jp/kanji/385",
         "音読み": [
           "ノウ"
         ],
@@ -48304,13 +48319,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07015",
-    "radical": "辛",
-    "reading": "しん・からい",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07015",
+    radical: "辛",
+    reading: "しん・からい",
+    kanji: [
       {
-        "char": "辛",
-        "url": "https://kanji.jitenon.jp/kanjic/1454",
+        char: "辛",
+        url: "https://kanji.jitenon.jp/kanjic/1454",
         "音読み": [
           "シン"
         ],
@@ -48326,8 +48341,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "辞",
-        "url": "https://kanji.jitenon.jp/kanjib/526",
+        char: "辞",
+        url: "https://kanji.jitenon.jp/kanjib/526",
         "音読み": [
           "ジ"
         ],
@@ -48343,8 +48358,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "辣",
-        "url": "https://kanji.jitenon.jp/kanjie/2121",
+        char: "辣",
+        url: "https://kanji.jitenon.jp/kanjie/2121",
         "音読み": [
           "ラツ"
         ],
@@ -48360,13 +48375,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07016",
-    "radical": "豕",
-    "reading": "いのこ・いのこへん・ぶた",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07016",
+    radical: "豕",
+    reading: "いのこ・いのこへん・ぶた",
+    kanji: [
       {
-        "char": "豚",
-        "url": "https://kanji.jitenon.jp/kanjid/1523",
+        char: "豚",
+        url: "https://kanji.jitenon.jp/kanjid/1523",
         "音読み": [
           "トン"
         ],
@@ -48382,8 +48397,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "象",
-        "url": "https://kanji.jitenon.jp/kanjib/539",
+        char: "象",
+        url: "https://kanji.jitenon.jp/kanjib/539",
         "音読み": [
           "ショウ",
           "ゾウ"
@@ -48398,8 +48413,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "豪",
-        "url": "https://kanji.jitenon.jp/kanjic/1102",
+        char: "豪",
+        url: "https://kanji.jitenon.jp/kanjic/1102",
         "音読み": [
           "ゴウ"
         ],
@@ -48415,13 +48430,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07018",
-    "radical": "釆",
-    "reading": "のごめ・のごめへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07018",
+    radical: "釆",
+    reading: "のごめ・のごめへん",
+    kanji: [
       {
-        "char": "采",
-        "url": "https://kanji.jitenon.jp/kanjie/2008",
+        char: "采",
+        url: "https://kanji.jitenon.jp/kanjie/2008",
         "音読み": [
           "サイ"
         ],
@@ -48435,8 +48450,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "釈",
-        "url": "https://kanji.jitenon.jp/kanjic/1122",
+        char: "釈",
+        url: "https://kanji.jitenon.jp/kanjic/1122",
         "音読み": [
           "シャク"
         ],
@@ -48452,13 +48467,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu07020",
-    "radical": "豸",
-    "reading": "むじな・むじなへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu07020",
+    radical: "豸",
+    reading: "むじな・むじなへん",
+    kanji: [
       {
-        "char": "豹",
-        "url": "https://kanji.jitenon.jp/kanjif/2864",
+        char: "豹",
+        url: "https://kanji.jitenon.jp/kanjif/2864",
         "音読み": [
           "ヒョウ",
           "ホウ"
@@ -48473,8 +48488,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "貌",
-        "url": "https://kanji.jitenon.jp/kanjie/2103",
+        char: "貌",
+        url: "https://kanji.jitenon.jp/kanjie/2103",
         "音読み": [
           "ボウ"
         ],
@@ -48490,13 +48505,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu11005",
-    "radical": "麥 麦",
-    "reading": "むぎ・むぎへん・ばくにょう",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu11005",
+    radical: "麥 麦",
+    reading: "むぎ・むぎへん・ばくにょう",
+    kanji: [
       {
-        "char": "麦",
-        "url": "https://kanji.jitenon.jp/kanji/212",
+        char: "麦",
+        url: "https://kanji.jitenon.jp/kanji/212",
         "音読み": [
           "バク"
         ],
@@ -48512,8 +48527,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "麹",
-        "url": "https://kanji.jitenon.jp/kanjie/2291",
+        char: "麹",
+        url: "https://kanji.jitenon.jp/kanjie/2291",
         "音読み": [
           "キク"
         ],
@@ -48530,8 +48545,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "麺",
-        "url": "https://kanji.jitenon.jp/kanjie/2111",
+        char: "麺",
+        url: "https://kanji.jitenon.jp/kanjie/2111",
         "音読み": [
           "メン"
         ],
@@ -48547,13 +48562,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu08001",
-    "radical": "雨",
-    "reading": "あめ・あめかんむり・あまかんむり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu08001",
+    radical: "雨",
+    reading: "あめ・あめかんむり・あまかんむり",
+    kanji: [
       {
-        "char": "雨",
-        "url": "https://kanji.jitenon.jp/kanji/003",
+        char: "雨",
+        url: "https://kanji.jitenon.jp/kanji/003",
         "音読み": [
           "ウ"
         ],
@@ -48570,8 +48585,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "雪",
-        "url": "https://kanji.jitenon.jp/kanji/173",
+        char: "雪",
+        url: "https://kanji.jitenon.jp/kanji/173",
         "音読み": [
           "セツ"
         ],
@@ -48587,8 +48602,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "雫",
-        "url": "https://kanji.jitenon.jp/kanjif/2687",
+        char: "雫",
+        url: "https://kanji.jitenon.jp/kanjif/2687",
         "音読み": [
           "ダ"
         ],
@@ -48604,8 +48619,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "雲",
-        "url": "https://kanji.jitenon.jp/kanji/083",
+        char: "雲",
+        url: "https://kanji.jitenon.jp/kanji/083",
         "音読み": [
           "ウン"
         ],
@@ -48621,8 +48636,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "雰",
-        "url": "https://kanji.jitenon.jp/kanjid/1880",
+        char: "雰",
+        url: "https://kanji.jitenon.jp/kanjid/1880",
         "音読み": [
           "フン"
         ],
@@ -48636,8 +48651,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "電",
-        "url": "https://kanji.jitenon.jp/kanji/197",
+        char: "電",
+        url: "https://kanji.jitenon.jp/kanji/197",
         "音読み": [
           "デン"
         ],
@@ -48651,8 +48666,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "雷",
-        "url": "https://kanji.jitenon.jp/kanjic/1298",
+        char: "雷",
+        url: "https://kanji.jitenon.jp/kanjic/1298",
         "音読み": [
           "ライ"
         ],
@@ -48668,8 +48683,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "零",
-        "url": "https://kanji.jitenon.jp/kanjid/1593",
+        char: "零",
+        url: "https://kanji.jitenon.jp/kanjid/1593",
         "音読み": [
           "レイ"
         ],
@@ -48683,8 +48698,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "需",
-        "url": "https://kanji.jitenon.jp/kanjic/1127",
+        char: "需",
+        url: "https://kanji.jitenon.jp/kanjic/1127",
         "音読み": [
           "ジュ"
         ],
@@ -48698,8 +48713,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "震",
-        "url": "https://kanji.jitenon.jp/kanjic/1149",
+        char: "震",
+        url: "https://kanji.jitenon.jp/kanjic/1149",
         "音読み": [
           "シン"
         ],
@@ -48716,8 +48731,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "霊",
-        "url": "https://kanji.jitenon.jp/kanjid/1594",
+        char: "霊",
+        url: "https://kanji.jitenon.jp/kanjid/1594",
         "音読み": [
           "リョウ",
           "レイ"
@@ -48734,8 +48749,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "霜",
-        "url": "https://kanji.jitenon.jp/kanjid/1799",
+        char: "霜",
+        url: "https://kanji.jitenon.jp/kanjid/1799",
         "音読み": [
           "ソウ"
         ],
@@ -48751,8 +48766,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "霞",
-        "url": "https://kanji.jitenon.jp/kanjie/2215",
+        char: "霞",
+        url: "https://kanji.jitenon.jp/kanjie/2215",
         "音読み": [
           "カ"
         ],
@@ -48769,8 +48784,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "霧",
-        "url": "https://kanji.jitenon.jp/kanjic/1282",
+        char: "霧",
+        url: "https://kanji.jitenon.jp/kanjic/1282",
         "音読み": [
           "ム"
         ],
@@ -48786,8 +48801,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "露",
-        "url": "https://kanji.jitenon.jp/kanjic/1315",
+        char: "露",
+        url: "https://kanji.jitenon.jp/kanjic/1315",
         "音読み": [
           "ロ",
           "ロウ"
@@ -48806,13 +48821,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu08002",
-    "radical": "金 釒",
-    "reading": "かね・かねへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu08002",
+    radical: "金 釒",
+    reading: "かね・かねへん",
+    kanji: [
       {
-        "char": "金",
-        "url": "https://kanji.jitenon.jp/kanji/022",
+        char: "金",
+        url: "https://kanji.jitenon.jp/kanji/022",
         "音読み": [
           "キン",
           "コン"
@@ -48830,8 +48845,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "針",
-        "url": "https://kanji.jitenon.jp/kanjib/914",
+        char: "針",
+        url: "https://kanji.jitenon.jp/kanjib/914",
         "音読み": [
           "シン"
         ],
@@ -48847,8 +48862,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "釜",
-        "url": "https://kanji.jitenon.jp/kanjid/1970",
+        char: "釜",
+        url: "https://kanji.jitenon.jp/kanjid/1970",
         "音読み": [],
         "訓読み": [
           "かま"
@@ -48862,8 +48877,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "釘",
-        "url": "https://kanji.jitenon.jp/kanjif/2743",
+        char: "釘",
+        url: "https://kanji.jitenon.jp/kanjif/2743",
         "音読み": [
           "チョウ",
           "テイ"
@@ -48880,8 +48895,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "釣",
-        "url": "https://kanji.jitenon.jp/kanjid/1820",
+        char: "釣",
+        url: "https://kanji.jitenon.jp/kanjid/1820",
         "音読み": [
           "チョウ"
         ],
@@ -48897,8 +48912,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "釦",
-        "url": "https://kanji.jitenon.jp/kanjie/2415",
+        char: "釦",
+        url: "https://kanji.jitenon.jp/kanjie/2415",
         "音読み": [
           "コウ"
         ],
@@ -48914,8 +48929,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "釧",
-        "url": "https://kanji.jitenon.jp/kanjif/2646",
+        char: "釧",
+        url: "https://kanji.jitenon.jp/kanjif/2646",
         "音読み": [
           "セン"
         ],
@@ -48932,8 +48947,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鈍",
-        "url": "https://kanji.jitenon.jp/kanjic/1220",
+        char: "鈍",
+        url: "https://kanji.jitenon.jp/kanjic/1220",
         "音読み": [
           "ドン"
         ],
@@ -48950,8 +48965,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "鈎",
-        "url": "https://kanji.jitenon.jp/kanjie/2341",
+        char: "鈎",
+        url: "https://kanji.jitenon.jp/kanjie/2341",
         "音読み": [
           "ク",
           "コウ"
@@ -48972,8 +48987,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鉄",
-        "url": "https://kanji.jitenon.jp/kanji/373",
+        char: "鉄",
+        url: "https://kanji.jitenon.jp/kanji/373",
         "音読み": [
           "テツ"
         ],
@@ -48987,8 +49002,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "鉱",
-        "url": "https://kanji.jitenon.jp/kanjib/699",
+        char: "鉱",
+        url: "https://kanji.jitenon.jp/kanjib/699",
         "音読み": [
           "コウ"
         ],
@@ -49002,8 +49017,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "鉛",
-        "url": "https://kanji.jitenon.jp/kanjic/1022",
+        char: "鉛",
+        url: "https://kanji.jitenon.jp/kanjic/1022",
         "音読み": [
           "エン"
         ],
@@ -49019,8 +49034,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "鉢",
-        "url": "https://kanji.jitenon.jp/kanjid/1863",
+        char: "鉢",
+        url: "https://kanji.jitenon.jp/kanjid/1863",
         "音読み": [
           "ハチ",
           "ハツ"
@@ -49035,8 +49050,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "鈴",
-        "url": "https://kanji.jitenon.jp/kanjid/1934",
+        char: "鈴",
+        url: "https://kanji.jitenon.jp/kanjid/1934",
         "音読み": [
           "リン",
           "レイ"
@@ -49053,8 +49068,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "鉤",
-        "url": "https://kanji.jitenon.jp/kanjie/2340",
+        char: "鉤",
+        url: "https://kanji.jitenon.jp/kanjie/2340",
         "音読み": [
           "ク",
           "コウ"
@@ -49075,8 +49090,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鈷",
-        "url": "https://kanji.jitenon.jp/kanjie/2385",
+        char: "鈷",
+        url: "https://kanji.jitenon.jp/kanjie/2385",
         "音読み": [
           "コ"
         ],
@@ -49090,8 +49105,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鉦",
-        "url": "https://kanji.jitenon.jp/kanjif/2576",
+        char: "鉦",
+        url: "https://kanji.jitenon.jp/kanjif/2576",
         "音読み": [
           "ショウ",
           "セイ"
@@ -49108,8 +49123,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "銀",
-        "url": "https://kanji.jitenon.jp/kanji/278",
+        char: "銀",
+        url: "https://kanji.jitenon.jp/kanji/278",
         "音読み": [
           "ギン"
         ],
@@ -49123,8 +49138,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "銭",
-        "url": "https://kanji.jitenon.jp/kanjib/756",
+        char: "銭",
+        url: "https://kanji.jitenon.jp/kanjib/756",
         "音読み": [
           "セン"
         ],
@@ -49140,8 +49155,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "銅",
-        "url": "https://kanji.jitenon.jp/kanjib/779",
+        char: "銅",
+        url: "https://kanji.jitenon.jp/kanjib/779",
         "音読み": [
           "ドウ"
         ],
@@ -49155,8 +49170,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "銃",
-        "url": "https://kanji.jitenon.jp/kanjid/1725",
+        char: "銃",
+        url: "https://kanji.jitenon.jp/kanjid/1725",
         "音読み": [
           "ジュウ"
         ],
@@ -49170,8 +49185,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "銘",
-        "url": "https://kanji.jitenon.jp/kanjid/1905",
+        char: "銘",
+        url: "https://kanji.jitenon.jp/kanjid/1905",
         "音読み": [
           "メイ"
         ],
@@ -49185,8 +49200,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "銑",
-        "url": "https://kanji.jitenon.jp/kanjif/2647",
+        char: "銑",
+        url: "https://kanji.jitenon.jp/kanjif/2647",
         "音読み": [
           "セン"
         ],
@@ -49202,8 +49217,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "銚",
-        "url": "https://kanji.jitenon.jp/kanjif/2744",
+        char: "銚",
+        url: "https://kanji.jitenon.jp/kanjif/2744",
         "音読み": [
           "チョウ",
           "ヨウ"
@@ -49221,8 +49236,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鉾",
-        "url": "https://kanji.jitenon.jp/kanjif/2925",
+        char: "鉾",
+        url: "https://kanji.jitenon.jp/kanjif/2925",
         "音読み": [
           "ボウ",
           "ム"
@@ -49240,8 +49255,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鋭",
-        "url": "https://kanji.jitenon.jp/kanjic/1016",
+        char: "鋭",
+        url: "https://kanji.jitenon.jp/kanjic/1016",
         "音読み": [
           "エイ"
         ],
@@ -49257,8 +49272,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "鋳",
-        "url": "https://kanji.jitenon.jp/kanjid/1505",
+        char: "鋳",
+        url: "https://kanji.jitenon.jp/kanjid/1505",
         "音読み": [
           "チュウ"
         ],
@@ -49274,8 +49289,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "鋤",
-        "url": "https://kanji.jitenon.jp/kanjif/2547",
+        char: "鋤",
+        url: "https://kanji.jitenon.jp/kanjif/2547",
         "音読み": [
           "ショ",
           "ジョ"
@@ -49293,8 +49308,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鋲",
-        "url": "https://kanji.jitenon.jp/kanjif/2866",
+        char: "鋲",
+        url: "https://kanji.jitenon.jp/kanjif/2866",
         "音読み": [
           "ビョウ"
         ],
@@ -49308,8 +49323,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鋪",
-        "url": "https://kanji.jitenon.jp/kanjif/2902",
+        char: "鋪",
+        url: "https://kanji.jitenon.jp/kanjif/2902",
         "音読み": [
           "フ",
           "ホ"
@@ -49327,8 +49342,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鋒",
-        "url": "https://kanji.jitenon.jp/kanjif/2915",
+        char: "鋒",
+        url: "https://kanji.jitenon.jp/kanjif/2915",
         "音読み": [
           "ホウ"
         ],
@@ -49346,8 +49361,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "録",
-        "url": "https://kanji.jitenon.jp/kanjib/639",
+        char: "録",
+        url: "https://kanji.jitenon.jp/kanjib/639",
         "音読み": [
           "ロク"
         ],
@@ -49361,8 +49376,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "鋼",
-        "url": "https://kanji.jitenon.jp/kanjib/871",
+        char: "鋼",
+        url: "https://kanji.jitenon.jp/kanjib/871",
         "音読み": [
           "コウ"
         ],
@@ -49378,8 +49393,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "錯",
-        "url": "https://kanji.jitenon.jp/kanjic/1418",
+        char: "錯",
+        url: "https://kanji.jitenon.jp/kanjic/1418",
         "音読み": [
           "サク"
         ],
@@ -49393,8 +49408,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "錠",
-        "url": "https://kanji.jitenon.jp/kanjic/1447",
+        char: "錠",
+        url: "https://kanji.jitenon.jp/kanjic/1447",
         "音読み": [
           "ジョウ"
         ],
@@ -49408,8 +49423,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "錬",
-        "url": "https://kanji.jitenon.jp/kanjid/1597",
+        char: "錬",
+        url: "https://kanji.jitenon.jp/kanjid/1597",
         "音読み": [
           "レン"
         ],
@@ -49423,8 +49438,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "錦",
-        "url": "https://kanji.jitenon.jp/kanjid/1982",
+        char: "錦",
+        url: "https://kanji.jitenon.jp/kanjid/1982",
         "音読み": [
           "キン"
         ],
@@ -49440,8 +49455,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "錮",
-        "url": "https://kanji.jitenon.jp/kanjid/1997",
+        char: "錮",
+        url: "https://kanji.jitenon.jp/kanjid/1997",
         "音読み": [
           "コ"
         ],
@@ -49455,8 +49470,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "鋸",
-        "url": "https://kanji.jitenon.jp/kanjie/2309",
+        char: "鋸",
+        url: "https://kanji.jitenon.jp/kanjie/2309",
         "音読み": [
           "キョ"
         ],
@@ -49473,8 +49488,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "錫",
-        "url": "https://kanji.jitenon.jp/kanjie/2477",
+        char: "錫",
+        url: "https://kanji.jitenon.jp/kanjie/2477",
         "音読み": [
           "シ",
           "シャク",
@@ -49494,8 +49509,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "錆",
-        "url": "https://kanji.jitenon.jp/kanjif/2577",
+        char: "錆",
+        url: "https://kanji.jitenon.jp/kanjif/2577",
         "音読み": [
           "ショウ",
           "セイ"
@@ -49513,8 +49528,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "錘",
-        "url": "https://kanji.jitenon.jp/kanjif/2618",
+        char: "錘",
+        url: "https://kanji.jitenon.jp/kanjif/2618",
         "音読み": [
           "スイ"
         ],
@@ -49531,8 +49546,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "錐",
-        "url": "https://kanji.jitenon.jp/kanjif/2619",
+        char: "錐",
+        url: "https://kanji.jitenon.jp/kanjif/2619",
         "音読み": [
           "スイ"
         ],
@@ -49548,8 +49563,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "錨",
-        "url": "https://kanji.jitenon.jp/kanjif/2867",
+        char: "錨",
+        url: "https://kanji.jitenon.jp/kanjif/2867",
         "音読み": [
           "ビョウ"
         ],
@@ -49565,8 +49580,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鍛",
-        "url": "https://kanji.jitenon.jp/kanjic/1498",
+        char: "鍛",
+        url: "https://kanji.jitenon.jp/kanjic/1498",
         "音読み": [
           "タン"
         ],
@@ -49582,8 +49597,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "鍵",
-        "url": "https://kanji.jitenon.jp/kanjid/1993",
+        char: "鍵",
+        url: "https://kanji.jitenon.jp/kanjid/1993",
         "音読み": [
           "ケン"
         ],
@@ -49599,8 +49614,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "鍋",
-        "url": "https://kanji.jitenon.jp/kanjie/2081",
+        char: "鍋",
+        url: "https://kanji.jitenon.jp/kanjie/2081",
         "音読み": [],
         "訓読み": [
           "なべ"
@@ -49614,8 +49629,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "鍔",
-        "url": "https://kanji.jitenon.jp/kanjie/2244",
+        char: "鍔",
+        url: "https://kanji.jitenon.jp/kanjie/2244",
         "音読み": [
           "ガク"
         ],
@@ -49631,8 +49646,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鍬",
-        "url": "https://kanji.jitenon.jp/kanjif/2521",
+        char: "鍬",
+        url: "https://kanji.jitenon.jp/kanjif/2521",
         "音読み": [
           "シュウ",
           "ショウ"
@@ -49650,8 +49665,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鍾",
-        "url": "https://kanji.jitenon.jp/kanjif/2578",
+        char: "鍾",
+        url: "https://kanji.jitenon.jp/kanjif/2578",
         "音読み": [
           "ショウ"
         ],
@@ -49669,8 +49684,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鍍",
-        "url": "https://kanji.jitenon.jp/kanjif/2782",
+        char: "鍍",
+        url: "https://kanji.jitenon.jp/kanjif/2782",
         "音読み": [
           "ト"
         ],
@@ -49686,8 +49701,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鎖",
-        "url": "https://kanji.jitenon.jp/kanjic/1105",
+        char: "鎖",
+        url: "https://kanji.jitenon.jp/kanjic/1105",
         "音読み": [
           "サ"
         ],
@@ -49703,8 +49718,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "鎮",
-        "url": "https://kanji.jitenon.jp/kanjid/1510",
+        char: "鎮",
+        url: "https://kanji.jitenon.jp/kanjid/1510",
         "音読み": [
           "チン"
         ],
@@ -49721,8 +49736,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "鎌",
-        "url": "https://kanji.jitenon.jp/kanjid/1971",
+        char: "鎌",
+        url: "https://kanji.jitenon.jp/kanjid/1971",
         "音読み": [],
         "訓読み": [
           "かま"
@@ -49736,8 +49751,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "鎧",
-        "url": "https://kanji.jitenon.jp/kanjie/2231",
+        char: "鎧",
+        url: "https://kanji.jitenon.jp/kanjie/2231",
         "音読み": [
           "カイ",
           "ガイ"
@@ -49755,8 +49770,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鎗",
-        "url": "https://kanji.jitenon.jp/kanjif/2579",
+        char: "鎗",
+        url: "https://kanji.jitenon.jp/kanjif/2579",
         "音読み": [
           "ショウ",
           "ソウ"
@@ -49773,8 +49788,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鎚",
-        "url": "https://kanji.jitenon.jp/kanjif/2695",
+        char: "鎚",
+        url: "https://kanji.jitenon.jp/kanjif/2695",
         "音読み": [
           "タイ",
           "ツイ"
@@ -49792,8 +49807,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鎔",
-        "url": "https://kanji.jitenon.jp/kanjif/2955",
+        char: "鎔",
+        url: "https://kanji.jitenon.jp/kanjif/2955",
         "音読み": [
           "ヨウ"
         ],
@@ -49812,8 +49827,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鏡",
-        "url": "https://kanji.jitenon.jp/kanji/483",
+        char: "鏡",
+        url: "https://kanji.jitenon.jp/kanji/483",
         "音読み": [
           "キョウ"
         ],
@@ -49829,8 +49844,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "鏑",
-        "url": "https://kanji.jitenon.jp/kanjif/2762",
+        char: "鏑",
+        url: "https://kanji.jitenon.jp/kanjif/2762",
         "音読み": [
           "テキ"
         ],
@@ -49848,8 +49863,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鐘",
-        "url": "https://kanji.jitenon.jp/kanjic/1441",
+        char: "鐘",
+        url: "https://kanji.jitenon.jp/kanjic/1441",
         "音読み": [
           "ショウ"
         ],
@@ -49865,8 +49880,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "鐙",
-        "url": "https://kanji.jitenon.jp/kanjif/2800",
+        char: "鐙",
+        url: "https://kanji.jitenon.jp/kanjif/2800",
         "音読み": [
           "トウ"
         ],
@@ -49883,8 +49898,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鐸",
-        "url": "https://kanji.jitenon.jp/kanjif/2706",
+        char: "鐸",
+        url: "https://kanji.jitenon.jp/kanjif/2706",
         "音読み": [
           "タク"
         ],
@@ -49900,8 +49915,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鑓",
-        "url": "https://kanji.jitenon.jp/kanjif/2942",
+        char: "鑓",
+        url: "https://kanji.jitenon.jp/kanjif/2942",
         "音読み": [],
         "訓読み": [
           "やり"
@@ -49915,8 +49930,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鑑",
-        "url": "https://kanji.jitenon.jp/kanjic/1044",
+        char: "鑑",
+        url: "https://kanji.jitenon.jp/kanjic/1044",
         "音読み": [
           "カン"
         ],
@@ -49934,13 +49949,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu08003",
-    "radical": "靑 青",
-    "reading": "あお・あおへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu08003",
+    radical: "靑 青",
+    reading: "あお・あおへん",
+    kanji: [
       {
-        "char": "青",
-        "url": "https://kanji.jitenon.jp/kanji/044",
+        char: "青",
+        url: "https://kanji.jitenon.jp/kanji/044",
         "音読み": [
           "ショウ",
           "セイ"
@@ -49958,8 +49973,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "靖",
-        "url": "https://kanji.jitenon.jp/kanjif/2627",
+        char: "靖",
+        url: "https://kanji.jitenon.jp/kanjif/2627",
         "音読み": [
           "セイ"
         ],
@@ -49977,8 +49992,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "静",
-        "url": "https://kanji.jitenon.jp/kanjib/545",
+        char: "静",
+        url: "https://kanji.jitenon.jp/kanjib/545",
         "音読み": [
           "ジョウ",
           "セイ"
@@ -50000,13 +50015,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu08004",
-    "radical": "門",
-    "reading": "もん・もんがまえ・かどがまえ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu08004",
+    radical: "門",
+    reading: "もん・もんがまえ・かどがまえ",
+    kanji: [
       {
-        "char": "門",
-        "url": "https://kanji.jitenon.jp/kanji/230",
+        char: "門",
+        url: "https://kanji.jitenon.jp/kanji/230",
         "音読み": [
           "モン"
         ],
@@ -50022,8 +50037,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "閃",
-        "url": "https://kanji.jitenon.jp/kanjif/2648",
+        char: "閃",
+        url: "https://kanji.jitenon.jp/kanjif/2648",
         "音読み": [
           "セン"
         ],
@@ -50039,8 +50054,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "閉",
-        "url": "https://kanji.jitenon.jp/kanjib/977",
+        char: "閉",
+        url: "https://kanji.jitenon.jp/kanjib/977",
         "音読み": [
           "ヘイ"
         ],
@@ -50059,8 +50074,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "間",
-        "url": "https://kanji.jitenon.jp/kanji/100",
+        char: "間",
+        url: "https://kanji.jitenon.jp/kanji/100",
         "音読み": [
           "カン",
           "ケン"
@@ -50078,8 +50093,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "開",
-        "url": "https://kanji.jitenon.jp/kanji/258",
+        char: "開",
+        url: "https://kanji.jitenon.jp/kanji/258",
         "音読み": [
           "カイ"
         ],
@@ -50098,8 +50113,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "閑",
-        "url": "https://kanji.jitenon.jp/kanjid/1645",
+        char: "閑",
+        url: "https://kanji.jitenon.jp/kanjid/1645",
         "音読み": [
           "カン"
         ],
@@ -50113,8 +50128,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "閏",
-        "url": "https://kanji.jitenon.jp/kanjif/2538",
+        char: "閏",
+        url: "https://kanji.jitenon.jp/kanjif/2538",
         "音読み": [
           "ジュン"
         ],
@@ -50130,8 +50145,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "関",
-        "url": "https://kanji.jitenon.jp/kanji/463",
+        char: "関",
+        url: "https://kanji.jitenon.jp/kanji/463",
         "音読み": [
           "カン"
         ],
@@ -50148,8 +50163,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "閣",
-        "url": "https://kanji.jitenon.jp/kanjib/833",
+        char: "閣",
+        url: "https://kanji.jitenon.jp/kanjib/833",
         "音読み": [
           "カク"
         ],
@@ -50163,8 +50178,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "閥",
-        "url": "https://kanji.jitenon.jp/kanjid/1864",
+        char: "閥",
+        url: "https://kanji.jitenon.jp/kanjid/1864",
         "音読み": [
           "バツ"
         ],
@@ -50178,8 +50193,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "閤",
-        "url": "https://kanji.jitenon.jp/kanjie/2416",
+        char: "閤",
+        url: "https://kanji.jitenon.jp/kanjie/2416",
         "音読み": [
           "コウ"
         ],
@@ -50196,8 +50211,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "閲",
-        "url": "https://kanji.jitenon.jp/kanjic/1324",
+        char: "閲",
+        url: "https://kanji.jitenon.jp/kanjic/1324",
         "音読み": [
           "エツ"
         ],
@@ -50211,8 +50226,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "闇",
-        "url": "https://kanji.jitenon.jp/kanjie/2114",
+        char: "闇",
+        url: "https://kanji.jitenon.jp/kanjie/2114",
         "音読み": [],
         "訓読み": [
           "やみ"
@@ -50226,8 +50241,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "闘",
-        "url": "https://kanji.jitenon.jp/kanjic/1216",
+        char: "闘",
+        url: "https://kanji.jitenon.jp/kanjic/1216",
         "音読み": [
           "トウ"
         ],
@@ -50245,13 +50260,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu08006",
-    "radical": "隹",
-    "reading": "ふるとり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu08006",
+    radical: "隹",
+    reading: "ふるとり",
+    kanji: [
       {
-        "char": "隻",
-        "url": "https://kanji.jitenon.jp/kanjic/1467",
+        char: "隻",
+        url: "https://kanji.jitenon.jp/kanjic/1467",
         "音読み": [
           "セキ"
         ],
@@ -50265,8 +50280,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "隼",
-        "url": "https://kanji.jitenon.jp/kanjif/2533",
+        char: "隼",
+        url: "https://kanji.jitenon.jp/kanjif/2533",
         "音読み": [
           "シュン",
           "ジュン"
@@ -50283,8 +50298,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "雀",
-        "url": "https://kanji.jitenon.jp/kanjie/2497",
+        char: "雀",
+        url: "https://kanji.jitenon.jp/kanjie/2497",
         "音読み": [
           "ジャク"
         ],
@@ -50300,8 +50315,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "集",
-        "url": "https://kanji.jitenon.jp/kanji/322",
+        char: "集",
+        url: "https://kanji.jitenon.jp/kanji/322",
         "音読み": [
           "シュウ"
         ],
@@ -50319,8 +50334,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "雄",
-        "url": "https://kanji.jitenon.jp/kanjic/1290",
+        char: "雄",
+        url: "https://kanji.jitenon.jp/kanjic/1290",
         "音読み": [
           "ユウ"
         ],
@@ -50337,8 +50352,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "雇",
-        "url": "https://kanji.jitenon.jp/kanjic/1391",
+        char: "雇",
+        url: "https://kanji.jitenon.jp/kanjic/1391",
         "音読み": [
           "コ"
         ],
@@ -50354,8 +50369,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "雁",
-        "url": "https://kanji.jitenon.jp/kanjie/2270",
+        char: "雁",
+        url: "https://kanji.jitenon.jp/kanjie/2270",
         "音読み": [
           "ガン"
         ],
@@ -50371,8 +50386,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "雅",
-        "url": "https://kanji.jitenon.jp/kanjic/1030",
+        char: "雅",
+        url: "https://kanji.jitenon.jp/kanjic/1030",
         "音読み": [
           "ガ"
         ],
@@ -50386,8 +50401,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "雑",
-        "url": "https://kanji.jitenon.jp/kanjib/713",
+        char: "雑",
+        url: "https://kanji.jitenon.jp/kanjib/713",
         "音読み": [
           "ザツ",
           "ゾウ"
@@ -50402,8 +50417,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "雌",
-        "url": "https://kanji.jitenon.jp/kanjic/1112",
+        char: "雌",
+        url: "https://kanji.jitenon.jp/kanjic/1112",
         "音読み": [
           "シ"
         ],
@@ -50420,8 +50435,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "難",
-        "url": "https://kanji.jitenon.jp/kanjib/958",
+        char: "難",
+        url: "https://kanji.jitenon.jp/kanjib/958",
         "音読み": [
           "ナン"
         ],
@@ -50438,8 +50453,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "離",
-        "url": "https://kanji.jitenon.jp/kanjic/1302",
+        char: "離",
+        url: "https://kanji.jitenon.jp/kanjic/1302",
         "音読み": [
           "リ"
         ],
@@ -50456,8 +50471,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "雛",
-        "url": "https://kanji.jitenon.jp/kanjif/2611",
+        char: "雛",
+        url: "https://kanji.jitenon.jp/kanjif/2611",
         "音読み": [
           "ス",
           "スウ"
@@ -50477,13 +50492,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu08009",
-    "radical": "齊 斉",
-    "reading": "せい",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu08009",
+    radical: "齊 斉",
+    reading: "せい",
+    kanji: [
       {
-        "char": "斉",
-        "url": "https://kanji.jitenon.jp/kanjid/1776",
+        char: "斉",
+        url: "https://kanji.jitenon.jp/kanjid/1776",
         "音読み": [
           "セイ"
         ],
@@ -50497,8 +50512,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "斎",
-        "url": "https://kanji.jitenon.jp/kanjid/1702",
+        char: "斎",
+        url: "https://kanji.jitenon.jp/kanjid/1702",
         "音読み": [
           "サイ"
         ],
@@ -50514,13 +50529,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu09004",
-    "radical": "食 飠",
-    "reading": "しょく・しょくへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu09004",
+    radical: "食 飠",
+    reading: "しょく・しょくへん",
+    kanji: [
       {
-        "char": "食",
-        "url": "https://kanji.jitenon.jp/kanji/162",
+        char: "食",
+        url: "https://kanji.jitenon.jp/kanji/162",
         "音読み": [
           "ショク",
           "ジキ"
@@ -50539,8 +50554,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "飢",
-        "url": "https://kanji.jitenon.jp/kanjid/1649",
+        char: "飢",
+        url: "https://kanji.jitenon.jp/kanjid/1649",
         "音読み": [
           "キ"
         ],
@@ -50556,8 +50571,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "飲",
-        "url": "https://kanji.jitenon.jp/kanji/249",
+        char: "飲",
+        url: "https://kanji.jitenon.jp/kanji/249",
         "音読み": [
           "イン"
         ],
@@ -50573,8 +50588,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "飯",
-        "url": "https://kanji.jitenon.jp/kanjib/592",
+        char: "飯",
+        url: "https://kanji.jitenon.jp/kanjib/592",
         "音読み": [
           "ハン"
         ],
@@ -50590,8 +50605,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "飼",
-        "url": "https://kanji.jitenon.jp/kanjib/720",
+        char: "飼",
+        url: "https://kanji.jitenon.jp/kanjib/720",
         "音読み": [
           "シ"
         ],
@@ -50607,8 +50622,8 @@
         "漢字検定": "６ 級"
       },
       {
-        "char": "飾",
-        "url": "https://kanji.jitenon.jp/kanjic/1145",
+        char: "飾",
+        url: "https://kanji.jitenon.jp/kanjic/1145",
         "音読み": [
           "ショク"
         ],
@@ -50624,8 +50639,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "飽",
-        "url": "https://kanji.jitenon.jp/kanjid/1559",
+        char: "飽",
+        url: "https://kanji.jitenon.jp/kanjid/1559",
         "音読み": [
           "ホウ"
         ],
@@ -50642,8 +50657,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "飴",
-        "url": "https://kanji.jitenon.jp/kanjie/2155",
+        char: "飴",
+        url: "https://kanji.jitenon.jp/kanjie/2155",
         "音読み": [
           "イ",
           "シ"
@@ -50660,8 +50675,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "養",
-        "url": "https://kanji.jitenon.jp/kanjib/622",
+        char: "養",
+        url: "https://kanji.jitenon.jp/kanjib/622",
         "音読み": [
           "ヨウ"
         ],
@@ -50677,8 +50692,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "餓",
-        "url": "https://kanji.jitenon.jp/kanjic/1336",
+        char: "餓",
+        url: "https://kanji.jitenon.jp/kanjic/1336",
         "音読み": [
           "ガ"
         ],
@@ -50692,8 +50707,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "餌",
-        "url": "https://kanji.jitenon.jp/kanjie/2017",
+        char: "餌",
+        url: "https://kanji.jitenon.jp/kanjie/2017",
         "音読み": [
           "ジ"
         ],
@@ -50710,8 +50725,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "餅",
-        "url": "https://kanji.jitenon.jp/kanjie/2098",
+        char: "餅",
+        url: "https://kanji.jitenon.jp/kanjie/2098",
         "音読み": [
           "ヘイ"
         ],
@@ -50727,8 +50742,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "館",
-        "url": "https://kanji.jitenon.jp/kanji/261",
+        char: "館",
+        url: "https://kanji.jitenon.jp/kanji/261",
         "音読み": [
           "カン"
         ],
@@ -50744,8 +50759,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "餐",
-        "url": "https://kanji.jitenon.jp/kanjie/2459",
+        char: "餐",
+        url: "https://kanji.jitenon.jp/kanjie/2459",
         "音読み": [
           "サン"
         ],
@@ -50763,8 +50778,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "饗",
-        "url": "https://kanji.jitenon.jp/kanjie/2324",
+        char: "饗",
+        url: "https://kanji.jitenon.jp/kanjie/2324",
         "音読み": [
           "キョウ"
         ],
@@ -50784,13 +50799,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu09001",
-    "radical": "音",
-    "reading": "おと・おとへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu09001",
+    radical: "音",
+    reading: "おと・おとへん",
+    kanji: [
       {
-        "char": "音",
-        "url": "https://kanji.jitenon.jp/kanji/002",
+        char: "音",
+        url: "https://kanji.jitenon.jp/kanji/002",
         "音読み": [
           "イン",
           "オン"
@@ -50808,8 +50823,8 @@
         "漢字検定": "１０ 級"
       },
       {
-        "char": "韻",
-        "url": "https://kanji.jitenon.jp/kanjid/1608",
+        char: "韻",
+        url: "https://kanji.jitenon.jp/kanjid/1608",
         "音読み": [
           "イン"
         ],
@@ -50823,8 +50838,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "響",
-        "url": "https://kanji.jitenon.jp/kanjic/1067",
+        char: "響",
+        url: "https://kanji.jitenon.jp/kanjic/1067",
         "音読み": [
           "キョウ"
         ],
@@ -50842,13 +50857,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu09008",
-    "radical": "革",
-    "reading": "かわへん・かくのかわ・つくりがわ",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu09008",
+    radical: "革",
+    reading: "かわへん・かくのかわ・つくりがわ",
+    kanji: [
       {
-        "char": "革",
-        "url": "https://kanji.jitenon.jp/kanjib/834",
+        char: "革",
+        url: "https://kanji.jitenon.jp/kanjib/834",
         "音読み": [
           "カク"
         ],
@@ -50864,8 +50879,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "靱",
-        "url": "https://kanji.jitenon.jp/kanjif/2608",
+        char: "靱",
+        url: "https://kanji.jitenon.jp/kanjif/2608",
         "音読み": [
           "ジン"
         ],
@@ -50883,8 +50898,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "靭",
-        "url": "https://kanji.jitenon.jp/kanjif/2609",
+        char: "靭",
+        url: "https://kanji.jitenon.jp/kanjif/2609",
         "音読み": [
           "ジン"
         ],
@@ -50902,8 +50917,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "靴",
-        "url": "https://kanji.jitenon.jp/kanjid/1620",
+        char: "靴",
+        url: "https://kanji.jitenon.jp/kanjid/1620",
         "音読み": [
           "カ"
         ],
@@ -50919,8 +50934,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "鞄",
-        "url": "https://kanji.jitenon.jp/kanjif/2916",
+        char: "鞄",
+        url: "https://kanji.jitenon.jp/kanjif/2916",
         "音読み": [
           "ホウ"
         ],
@@ -50937,8 +50952,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鞍",
-        "url": "https://kanji.jitenon.jp/kanjie/2147",
+        char: "鞍",
+        url: "https://kanji.jitenon.jp/kanjie/2147",
         "音読み": [
           "アン"
         ],
@@ -50954,8 +50969,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鞘",
-        "url": "https://kanji.jitenon.jp/kanjif/2580",
+        char: "鞘",
+        url: "https://kanji.jitenon.jp/kanjif/2580",
         "音読み": [
           "ショウ",
           "ソウ"
@@ -50972,8 +50987,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鞠",
-        "url": "https://kanji.jitenon.jp/kanjie/2290",
+        char: "鞠",
+        url: "https://kanji.jitenon.jp/kanjie/2290",
         "音読み": [
           "キク"
         ],
@@ -50992,8 +51007,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鞭",
-        "url": "https://kanji.jitenon.jp/kanjif/2897",
+        char: "鞭",
+        url: "https://kanji.jitenon.jp/kanjif/2897",
         "音読み": [
           "ヘン",
           "ベン"
@@ -51011,8 +51026,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "韃",
-        "url": "https://kanji.jitenon.jp/kanjif/2708",
+        char: "韃",
+        url: "https://kanji.jitenon.jp/kanjif/2708",
         "音読み": [
           "タツ",
           "ダツ"
@@ -51032,13 +51047,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu09009",
-    "radical": "香",
-    "reading": "かおり・か",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu09009",
+    radical: "香",
+    reading: "かおり・か",
+    kanji: [
       {
-        "char": "香",
-        "url": "https://kanji.jitenon.jp/kanjic/1099",
+        char: "香",
+        url: "https://kanji.jitenon.jp/kanjic/1099",
         "音読み": [
           "キョウ",
           "コウ"
@@ -51057,8 +51072,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "馨",
-        "url": "https://kanji.jitenon.jp/kanjie/2325",
+        char: "馨",
+        url: "https://kanji.jitenon.jp/kanjie/2325",
         "音読み": [
           "キョウ",
           "ケイ"
@@ -51081,13 +51096,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu09010",
-    "radical": "韭",
-    "reading": "にら",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu09010",
+    radical: "韭",
+    reading: "にら",
+    kanji: [
       {
-        "char": "韭",
-        "url": "https://kanji.jitenon.jp/kanjie/2305",
+        char: "韭",
+        url: "https://kanji.jitenon.jp/kanjie/2305",
         "音読み": [
           "キュウ"
         ],
@@ -51103,8 +51118,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "韮",
-        "url": "https://kanji.jitenon.jp/kanjie/2304",
+        char: "韮",
+        url: "https://kanji.jitenon.jp/kanjie/2304",
         "音読み": [
           "キュウ"
         ],
@@ -51122,13 +51137,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu10002",
-    "radical": "馬",
-    "reading": "うま・うまへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu10002",
+    radical: "馬",
+    reading: "うま・うまへん",
+    kanji: [
       {
-        "char": "馬",
-        "url": "https://kanji.jitenon.jp/kanji/209",
+        char: "馬",
+        url: "https://kanji.jitenon.jp/kanji/209",
         "音読み": [
           "バ"
         ],
@@ -51145,8 +51160,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "馴",
-        "url": "https://kanji.jitenon.jp/kanjie/2348",
+        char: "馴",
+        url: "https://kanji.jitenon.jp/kanjie/2348",
         "音読み": [
           "クン",
           "シュン",
@@ -51167,8 +51182,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "馳",
-        "url": "https://kanji.jitenon.jp/kanjie/2482",
+        char: "馳",
+        url: "https://kanji.jitenon.jp/kanjie/2482",
         "音読み": [
           "ジ",
           "チ"
@@ -51185,8 +51200,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "駅",
-        "url": "https://kanji.jitenon.jp/kanji/252",
+        char: "駅",
+        url: "https://kanji.jitenon.jp/kanji/252",
         "音読み": [
           "エキ"
         ],
@@ -51200,8 +51215,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "駆",
-        "url": "https://kanji.jitenon.jp/kanjic/1073",
+        char: "駆",
+        url: "https://kanji.jitenon.jp/kanjic/1073",
         "音読み": [
           "ク"
         ],
@@ -51218,8 +51233,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "駄",
-        "url": "https://kanji.jitenon.jp/kanjid/1803",
+        char: "駄",
+        url: "https://kanji.jitenon.jp/kanjid/1803",
         "音読み": [
           "ダ"
         ],
@@ -51233,8 +51248,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "駁",
-        "url": "https://kanji.jitenon.jp/kanjif/2829",
+        char: "駁",
+        url: "https://kanji.jitenon.jp/kanjif/2829",
         "音読み": [
           "ハク",
           "バク"
@@ -51254,8 +51269,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "駐",
-        "url": "https://kanji.jitenon.jp/kanjid/1503",
+        char: "駐",
+        url: "https://kanji.jitenon.jp/kanjid/1503",
         "音読み": [
           "チュウ"
         ],
@@ -51269,8 +51284,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "駒",
-        "url": "https://kanji.jitenon.jp/kanjie/2003",
+        char: "駒",
+        url: "https://kanji.jitenon.jp/kanjie/2003",
         "音読み": [],
         "訓読み": [
           "こま"
@@ -51284,8 +51299,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "駕",
-        "url": "https://kanji.jitenon.jp/kanjie/2220",
+        char: "駕",
+        url: "https://kanji.jitenon.jp/kanjie/2220",
         "音読み": [
           "ガ"
         ],
@@ -51303,8 +51318,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "駈",
-        "url": "https://kanji.jitenon.jp/kanjie/2342",
+        char: "駈",
+        url: "https://kanji.jitenon.jp/kanjie/2342",
         "音読み": [
           "ク"
         ],
@@ -51322,8 +51337,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "駿",
-        "url": "https://kanji.jitenon.jp/kanjif/2534",
+        char: "駿",
+        url: "https://kanji.jitenon.jp/kanjif/2534",
         "音読み": [
           "シュン",
           "スン"
@@ -51340,8 +51355,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "験",
-        "url": "https://kanji.jitenon.jp/kanji/498",
+        char: "験",
+        url: "https://kanji.jitenon.jp/kanji/498",
         "音読み": [
           "ケン",
           "ゲン"
@@ -51356,8 +51371,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "騒",
-        "url": "https://kanji.jitenon.jp/kanjic/1169",
+        char: "騒",
+        url: "https://kanji.jitenon.jp/kanjic/1169",
         "音読み": [
           "ソウ"
         ],
@@ -51373,8 +51388,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "騎",
-        "url": "https://kanji.jitenon.jp/kanjic/1364",
+        char: "騎",
+        url: "https://kanji.jitenon.jp/kanjic/1364",
         "音読み": [
           "キ"
         ],
@@ -51388,8 +51403,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "騨",
-        "url": "https://kanji.jitenon.jp/kanjif/2684",
+        char: "騨",
+        url: "https://kanji.jitenon.jp/kanjif/2684",
         "音読み": [
           "タ",
           "タン",
@@ -51405,8 +51420,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "騰",
-        "url": "https://kanji.jitenon.jp/kanjid/1842",
+        char: "騰",
+        url: "https://kanji.jitenon.jp/kanjid/1842",
         "音読み": [
           "トウ"
         ],
@@ -51420,8 +51435,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "驚",
-        "url": "https://kanji.jitenon.jp/kanjic/1064",
+        char: "驚",
+        url: "https://kanji.jitenon.jp/kanjic/1064",
         "音読み": [
           "キョウ"
         ],
@@ -51440,13 +51455,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu10003",
-    "radical": "骨",
-    "reading": "ほね・ほねへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu10003",
+    radical: "骨",
+    reading: "ほね・ほねへん",
+    kanji: [
       {
-        "char": "骨",
-        "url": "https://kanji.jitenon.jp/kanjib/875",
+        char: "骨",
+        url: "https://kanji.jitenon.jp/kanjib/875",
         "音読み": [
           "コツ"
         ],
@@ -51462,8 +51477,8 @@
         "漢字検定": "５ 級"
       },
       {
-        "char": "骸",
-        "url": "https://kanji.jitenon.jp/kanjid/1966",
+        char: "骸",
+        url: "https://kanji.jitenon.jp/kanjid/1966",
         "音読み": [
           "ガイ"
         ],
@@ -51477,8 +51492,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "髄",
-        "url": "https://kanji.jitenon.jp/kanjic/1462",
+        char: "髄",
+        url: "https://kanji.jitenon.jp/kanjic/1462",
         "音読み": [
           "ズイ"
         ],
@@ -51494,13 +51509,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu10004",
-    "radical": "鬼",
-    "reading": "おに・きにょう",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu10004",
+    radical: "鬼",
+    reading: "おに・きにょう",
+    kanji: [
       {
-        "char": "鬼",
-        "url": "https://kanji.jitenon.jp/kanjic/1048",
+        char: "鬼",
+        url: "https://kanji.jitenon.jp/kanjic/1048",
         "音読み": [
           "キ"
         ],
@@ -51516,8 +51531,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "魂",
-        "url": "https://kanji.jitenon.jp/kanjic/1411",
+        char: "魂",
+        url: "https://kanji.jitenon.jp/kanjic/1411",
         "音読み": [
           "コン"
         ],
@@ -51533,8 +51548,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "魁",
-        "url": "https://kanji.jitenon.jp/kanjie/2232",
+        char: "魁",
+        url: "https://kanji.jitenon.jp/kanjie/2232",
         "音読み": [
           "カイ"
         ],
@@ -51552,8 +51567,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "魅",
-        "url": "https://kanji.jitenon.jp/kanjid/1574",
+        char: "魅",
+        url: "https://kanji.jitenon.jp/kanjid/1574",
         "音読み": [
           "ミ"
         ],
@@ -51567,8 +51582,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "魔",
-        "url": "https://kanji.jitenon.jp/kanjid/1570",
+        char: "魔",
+        url: "https://kanji.jitenon.jp/kanjid/1570",
         "音読み": [
           "マ"
         ],
@@ -51584,13 +51599,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu10005",
-    "radical": "髟",
-    "reading": "かみがしら・かみかんむり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu10005",
+    radical: "髟",
+    reading: "かみがしら・かみかんむり",
+    kanji: [
       {
-        "char": "髪",
-        "url": "https://kanji.jitenon.jp/kanjic/1232",
+        char: "髪",
+        url: "https://kanji.jitenon.jp/kanjic/1232",
         "音読み": [
           "ハツ"
         ],
@@ -51606,8 +51621,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "髭",
-        "url": "https://kanji.jitenon.jp/kanjie/2478",
+        char: "髭",
+        url: "https://kanji.jitenon.jp/kanjie/2478",
         "音読み": [
           "シ"
         ],
@@ -51626,13 +51641,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu11001",
-    "radical": "魚",
-    "reading": "うお・うおへん・さかなへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu11001",
+    radical: "魚",
+    reading: "うお・うおへん・さかなへん",
+    kanji: [
       {
-        "char": "魚",
-        "url": "https://kanji.jitenon.jp/kanji/109",
+        char: "魚",
+        url: "https://kanji.jitenon.jp/kanji/109",
         "音読み": [
           "ギョ"
         ],
@@ -51649,8 +51664,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "鮎",
-        "url": "https://kanji.jitenon.jp/kanjif/2775",
+        char: "鮎",
+        url: "https://kanji.jitenon.jp/kanjif/2775",
         "音読み": [
           "デン",
           "ネン"
@@ -51668,8 +51683,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鮒",
-        "url": "https://kanji.jitenon.jp/kanjif/2879",
+        char: "鮒",
+        url: "https://kanji.jitenon.jp/kanjif/2879",
         "音読み": [
           "フ"
         ],
@@ -51685,8 +51700,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鮮",
-        "url": "https://kanji.jitenon.jp/kanjic/1166",
+        char: "鮮",
+        url: "https://kanji.jitenon.jp/kanjic/1166",
         "音読み": [
           "セン"
         ],
@@ -51702,8 +51717,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "鮪",
-        "url": "https://kanji.jitenon.jp/kanjie/2156",
+        char: "鮪",
+        url: "https://kanji.jitenon.jp/kanjie/2156",
         "音読み": [
           "イ",
           "ユウ"
@@ -51721,8 +51736,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鮭",
-        "url": "https://kanji.jitenon.jp/kanjie/2233",
+        char: "鮭",
+        url: "https://kanji.jitenon.jp/kanjie/2233",
         "音読み": [
           "カイ",
           "ケイ"
@@ -51741,8 +51756,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鮫",
-        "url": "https://kanji.jitenon.jp/kanjie/2417",
+        char: "鮫",
+        url: "https://kanji.jitenon.jp/kanjie/2417",
         "音読み": [
           "コウ"
         ],
@@ -51759,8 +51774,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鯉",
-        "url": "https://kanji.jitenon.jp/kanjif/2972",
+        char: "鯉",
+        url: "https://kanji.jitenon.jp/kanjif/2972",
         "音読み": [
           "リ"
         ],
@@ -51777,8 +51792,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鯨",
-        "url": "https://kanji.jitenon.jp/kanjic/1387",
+        char: "鯨",
+        url: "https://kanji.jitenon.jp/kanjic/1387",
         "音読み": [
           "ゲイ"
         ],
@@ -51794,8 +51809,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "鯖",
-        "url": "https://kanji.jitenon.jp/kanjif/2581",
+        char: "鯖",
+        url: "https://kanji.jitenon.jp/kanjif/2581",
         "音読み": [
           "ショウ",
           "セイ"
@@ -51813,8 +51828,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鯵",
-        "url": "https://kanji.jitenon.jp/kanjif/2674",
+        char: "鯵",
+        url: "https://kanji.jitenon.jp/kanjif/2674",
         "音読み": [
           "ソウ"
         ],
@@ -51830,8 +51845,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鯛",
-        "url": "https://kanji.jitenon.jp/kanjif/2745",
+        char: "鯛",
+        url: "https://kanji.jitenon.jp/kanjif/2745",
         "音読み": [
           "チョウ"
         ],
@@ -51847,8 +51862,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鰐",
-        "url": "https://kanji.jitenon.jp/kanjie/2245",
+        char: "鰐",
+        url: "https://kanji.jitenon.jp/kanjie/2245",
         "音読み": [
           "ガク"
         ],
@@ -51864,8 +51879,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鰍",
-        "url": "https://kanji.jitenon.jp/kanjif/2522",
+        char: "鰍",
+        url: "https://kanji.jitenon.jp/kanjif/2522",
         "音読み": [
           "シュウ"
         ],
@@ -51883,8 +51898,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鰯",
-        "url": "https://kanji.jitenon.jp/kanjie/2160",
+        char: "鰯",
+        url: "https://kanji.jitenon.jp/kanjie/2160",
         "音読み": [],
         "訓読み": [
           "いわし"
@@ -51898,8 +51913,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鰭",
-        "url": "https://kanji.jitenon.jp/kanjie/2283",
+        char: "鰭",
+        url: "https://kanji.jitenon.jp/kanjie/2283",
         "音読み": [
           "キ"
         ],
@@ -51916,8 +51931,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鱈",
-        "url": "https://kanji.jitenon.jp/kanjif/2633",
+        char: "鱈",
+        url: "https://kanji.jitenon.jp/kanjif/2633",
         "音読み": [
           "セツ"
         ],
@@ -51933,8 +51948,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鰺",
-        "url": "https://kanji.jitenon.jp/kanjif/2673",
+        char: "鰺",
+        url: "https://kanji.jitenon.jp/kanjif/2673",
         "音読み": [
           "ソウ"
         ],
@@ -51950,8 +51965,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鰻",
-        "url": "https://kanji.jitenon.jp/kanjif/2847",
+        char: "鰻",
+        url: "https://kanji.jitenon.jp/kanjif/2847",
         "音読み": [
           "バン",
           "マン"
@@ -51968,8 +51983,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鰹",
-        "url": "https://kanji.jitenon.jp/kanjie/2369",
+        char: "鰹",
+        url: "https://kanji.jitenon.jp/kanjie/2369",
         "音読み": [
           "ケン"
         ],
@@ -51985,8 +52000,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鱒",
-        "url": "https://kanji.jitenon.jp/kanjif/2678",
+        char: "鱒",
+        url: "https://kanji.jitenon.jp/kanjif/2678",
         "音読み": [
           "ソン",
           "ゾン"
@@ -52003,8 +52018,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鱗",
-        "url": "https://kanji.jitenon.jp/kanjif/2993",
+        char: "鱗",
+        url: "https://kanji.jitenon.jp/kanjif/2993",
         "音読み": [
           "リン"
         ],
@@ -52022,13 +52037,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu11003",
-    "radical": "黑 黒",
-    "reading": "くろ・くろへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu11003",
+    radical: "黑 黒",
+    reading: "くろ・くろへん",
+    kanji: [
       {
-        "char": "黒",
-        "url": "https://kanji.jitenon.jp/kanji/138",
+        char: "黒",
+        url: "https://kanji.jitenon.jp/kanji/138",
         "音読み": [
           "コク"
         ],
@@ -52045,8 +52060,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "黙",
-        "url": "https://kanji.jitenon.jp/kanjic/1287",
+        char: "黙",
+        url: "https://kanji.jitenon.jp/kanjic/1287",
         "音読み": [
           "モク"
         ],
@@ -52062,8 +52077,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "黛",
-        "url": "https://kanji.jitenon.jp/kanjif/2696",
+        char: "黛",
+        url: "https://kanji.jitenon.jp/kanjif/2696",
         "音読み": [
           "タイ"
         ],
@@ -52083,13 +52098,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu11004",
-    "radical": "鳥",
-    "reading": "とり・とりへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu11004",
+    radical: "鳥",
+    reading: "とり・とりへん",
+    kanji: [
       {
-        "char": "鳥",
-        "url": "https://kanji.jitenon.jp/kanji/192",
+        char: "鳥",
+        url: "https://kanji.jitenon.jp/kanji/192",
         "音読み": [
           "チョウ"
         ],
@@ -52105,8 +52120,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "鳩",
-        "url": "https://kanji.jitenon.jp/kanjie/2306",
+        char: "鳩",
+        url: "https://kanji.jitenon.jp/kanjie/2306",
         "音読み": [
           "キュウ",
           "ク"
@@ -52126,8 +52141,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鳴",
-        "url": "https://kanji.jitenon.jp/kanji/227",
+        char: "鳴",
+        url: "https://kanji.jitenon.jp/kanji/227",
         "音読み": [
           "メイ"
         ],
@@ -52145,8 +52160,8 @@
         "漢字検定": "９ 級"
       },
       {
-        "char": "鳶",
-        "url": "https://kanji.jitenon.jp/kanjie/2190",
+        char: "鳶",
+        url: "https://kanji.jitenon.jp/kanjie/2190",
         "音読み": [
           "エン"
         ],
@@ -52163,8 +52178,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鳳",
-        "url": "https://kanji.jitenon.jp/kanjif/2885",
+        char: "鳳",
+        url: "https://kanji.jitenon.jp/kanjif/2885",
         "音読み": [
           "ブウ",
           "ホウ"
@@ -52181,8 +52196,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鴎",
-        "url": "https://kanji.jitenon.jp/kanjie/2201",
+        char: "鴎",
+        url: "https://kanji.jitenon.jp/kanjie/2201",
         "音読み": [
           "オウ"
         ],
@@ -52198,8 +52213,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鴈",
-        "url": "https://kanji.jitenon.jp/kanjie/2271",
+        char: "鴈",
+        url: "https://kanji.jitenon.jp/kanjie/2271",
         "音読み": [
           "ガン"
         ],
@@ -52215,8 +52230,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鴇",
-        "url": "https://kanji.jitenon.jp/kanjif/2917",
+        char: "鴇",
+        url: "https://kanji.jitenon.jp/kanjif/2917",
         "音読み": [
           "ホウ"
         ],
@@ -52233,8 +52248,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鴛",
-        "url": "https://kanji.jitenon.jp/kanjie/2191",
+        char: "鴛",
+        url: "https://kanji.jitenon.jp/kanjie/2191",
         "音読み": [
           "エン",
           "オン"
@@ -52251,8 +52266,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鴨",
-        "url": "https://kanji.jitenon.jp/kanjie/2197",
+        char: "鴨",
+        url: "https://kanji.jitenon.jp/kanjie/2197",
         "音読み": [
           "オウ"
         ],
@@ -52268,8 +52283,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鴦",
-        "url": "https://kanji.jitenon.jp/kanjie/2198",
+        char: "鴦",
+        url: "https://kanji.jitenon.jp/kanjie/2198",
         "音読み": [
           "オウ"
         ],
@@ -52285,8 +52300,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鴬",
-        "url": "https://kanji.jitenon.jp/kanjie/2200",
+        char: "鴬",
+        url: "https://kanji.jitenon.jp/kanjie/2200",
         "音読み": [
           "オウ"
         ],
@@ -52302,8 +52317,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鴫",
-        "url": "https://kanji.jitenon.jp/kanjie/2483",
+        char: "鴫",
+        url: "https://kanji.jitenon.jp/kanjie/2483",
         "音読み": [],
         "訓読み": [
           "しぎ"
@@ -52317,8 +52332,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鴻",
-        "url": "https://kanji.jitenon.jp/kanjie/2418",
+        char: "鴻",
+        url: "https://kanji.jitenon.jp/kanjie/2418",
         "音読み": [
           "コウ"
         ],
@@ -52336,8 +52351,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鵠",
-        "url": "https://kanji.jitenon.jp/kanjie/2419",
+        char: "鵠",
+        url: "https://kanji.jitenon.jp/kanjie/2419",
         "音読み": [
           "コウ",
           "コク"
@@ -52356,8 +52371,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鵜",
-        "url": "https://kanji.jitenon.jp/kanjif/2757",
+        char: "鵜",
+        url: "https://kanji.jitenon.jp/kanjif/2757",
         "音読み": [
           "テイ"
         ],
@@ -52373,8 +52388,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鶏",
-        "url": "https://kanji.jitenon.jp/kanjic/1381",
+        char: "鶏",
+        url: "https://kanji.jitenon.jp/kanjic/1381",
         "音読み": [
           "ケイ"
         ],
@@ -52390,8 +52405,8 @@
         "漢字検定": "３ 級"
       },
       {
-        "char": "鵡",
-        "url": "https://kanji.jitenon.jp/kanjif/2883",
+        char: "鵡",
+        url: "https://kanji.jitenon.jp/kanjif/2883",
         "音読み": [
           "ブ",
           "ム"
@@ -52406,8 +52421,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鵬",
-        "url": "https://kanji.jitenon.jp/kanjif/2918",
+        char: "鵬",
+        url: "https://kanji.jitenon.jp/kanjif/2918",
         "音読み": [
           "ホウ"
         ],
@@ -52423,8 +52438,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鶴",
-        "url": "https://kanji.jitenon.jp/kanjie/2065",
+        char: "鶴",
+        url: "https://kanji.jitenon.jp/kanjie/2065",
         "音読み": [],
         "訓読み": [
           "つる"
@@ -52438,8 +52453,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "鶯",
-        "url": "https://kanji.jitenon.jp/kanjie/2199",
+        char: "鶯",
+        url: "https://kanji.jitenon.jp/kanjie/2199",
         "音読み": [
           "オウ"
         ],
@@ -52455,8 +52470,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鷲",
-        "url": "https://kanji.jitenon.jp/kanjif/2507",
+        char: "鷲",
+        url: "https://kanji.jitenon.jp/kanjif/2507",
         "音読み": [
           "シュウ",
           "ジュ"
@@ -52473,8 +52488,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鷹",
-        "url": "https://kanji.jitenon.jp/kanjie/2202",
+        char: "鷹",
+        url: "https://kanji.jitenon.jp/kanjie/2202",
         "音読み": [
           "オウ",
           "ヨウ"
@@ -52491,8 +52506,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "鸚",
-        "url": "https://kanji.jitenon.jp/kanjie/2165",
+        char: "鸚",
+        url: "https://kanji.jitenon.jp/kanjie/2165",
         "音読み": [
           "イン",
           "オウ",
@@ -52510,13 +52525,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu11006",
-    "radical": "鹿",
-    "reading": "しか・しかへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu11006",
+    radical: "鹿",
+    reading: "しか・しかへん",
+    kanji: [
       {
-        "char": "鹿",
-        "url": "https://kanji.jitenon.jp/kanjie/2018",
+        char: "鹿",
+        url: "https://kanji.jitenon.jp/kanjie/2018",
         "音読み": [],
         "訓読み": [
           "か",
@@ -52531,8 +52546,8 @@
         "漢字検定": "７ 級"
       },
       {
-        "char": "麗",
-        "url": "https://kanji.jitenon.jp/kanjic/1309",
+        char: "麗",
+        url: "https://kanji.jitenon.jp/kanjic/1309",
         "音読み": [
           "レイ"
         ],
@@ -52548,8 +52563,8 @@
         "漢字検定": "４ 級"
       },
       {
-        "char": "麓",
-        "url": "https://kanji.jitenon.jp/kanjie/2132",
+        char: "麓",
+        url: "https://kanji.jitenon.jp/kanjie/2132",
         "音読み": [
           "ロク"
         ],
@@ -52565,8 +52580,8 @@
         "漢字検定": "２ 級"
       },
       {
-        "char": "麒",
-        "url": "https://kanji.jitenon.jp/kanjie/2284",
+        char: "麒",
+        url: "https://kanji.jitenon.jp/kanjie/2284",
         "音読み": [
           "キ"
         ],
@@ -52582,8 +52597,8 @@
         "漢字検定": "準 １ 級"
       },
       {
-        "char": "麟",
-        "url": "https://kanji.jitenon.jp/kanjif/2994",
+        char: "麟",
+        url: "https://kanji.jitenon.jp/kanjif/2994",
         "音読み": [
           "リン"
         ],
@@ -52601,13 +52616,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu11007",
-    "radical": "麻",
-    "reading": "あさ・あさかんむり",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu11007",
+    radical: "麻",
+    reading: "あさ・あさかんむり",
+    kanji: [
       {
-        "char": "麻",
-        "url": "https://kanji.jitenon.jp/kanjid/1902",
+        char: "麻",
+        url: "https://kanji.jitenon.jp/kanjid/1902",
         "音読み": [
           "マ"
         ],
@@ -52623,8 +52638,8 @@
         "漢字検定": "準 ２ 級"
       },
       {
-        "char": "麿",
-        "url": "https://kanji.jitenon.jp/kanjif/2931",
+        char: "麿",
+        url: "https://kanji.jitenon.jp/kanjif/2931",
         "音読み": [],
         "訓読み": [
           "まろ"
@@ -52640,13 +52655,13 @@
     ]
   },
   {
-    "url": "https://kanji.jitenon.jp/cat/bushu12001",
-    "radical": "齒 歯",
-    "reading": "は・はへん",
-    "kanji": [
+    url: "https://kanji.jitenon.jp/cat/bushu12001",
+    radical: "齒 歯",
+    reading: "は・はへん",
+    kanji: [
       {
-        "char": "歯",
-        "url": "https://kanji.jitenon.jp/kanji/302",
+        char: "歯",
+        url: "https://kanji.jitenon.jp/kanji/302",
         "音読み": [
           "シ"
         ],
@@ -52662,8 +52677,8 @@
         "漢字検定": "８ 級"
       },
       {
-        "char": "齢",
-        "url": "https://kanji.jitenon.jp/kanjic/1310",
+        char: "齢",
+        url: "https://kanji.jitenon.jp/kanjic/1310",
         "音読み": [
           "レイ"
         ],

@@ -6,10 +6,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // publicRuntimeConfig のセクションは完全に削除します
-  // publicRuntimeConfig: {
-  //   basePath: '/kanji-app',
-  // },
-};
+}
 
 module.exports = nextConfig;
