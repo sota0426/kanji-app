@@ -13,10 +13,15 @@ export default function Home() {
     {
       title: "部首当てクイズ",
       description: "漢字の部首を答える４択クイズ",
-      path: "/busyuate", // 実装されたら有効に
+      path: "/busyuate", 
       disabled: false,
     },
-    // 追加クイズがあればここに追記
+    {
+      title: "四字熟語当てクイズ",
+      description: "意味から四字熟語を答える４択クイズ",
+      path: "/yojiimi", 
+      disabled: false,
+    },    // 追加クイズがあればここに追記
   ];
 
   return (

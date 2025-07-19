@@ -10,6 +10,7 @@ import GameEndScreen from "../../components/busyu/GameEndScreen";
 import { Kanji } from "../../types/kanji";
 import KanjiInputWithHint from "../../components/busyu/KanjiInput";
 import { busyuData } from "../../../public/busyuData";
+import { useRouter } from "next/navigation";
 
 /** ---------------------- 学年→得点換算 ---------------------- */
 const calcPoint = (grade: number) => {
@@ -40,6 +41,8 @@ export default function KanjiBushuGame() {
 
   const [isGameClear, setIsGameClear] = useState(false);
   const [isTimeUnlimited, setIsTimeUnlimited] = useState(false);
+
+  const router = useRouter();
 
   /** ---------------------- データ取得 ---------------------- */
   useEffect(()=>{
@@ -206,8 +209,15 @@ export default function KanjiBushuGame() {
   if (!currentRadical) {
     return (
       <div className="max-w-full sm:max-w-4xl mx-auto px-4 sm:px-6 py-6 bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen overflow-x-hidden">
+         <button
+          onClick={() => router.push("/")}
+          className="rounded-md mb-2  bg-gray-200 px-4 py-2 text-sm text-gray-700 hover:bg-gray-300"
+        >
+          ← タイトルに戻る
+        </button>
         <h1 className="text-center text-3xl sm:text-4xl font-bold mb-6">部首を選択</h1>
         {/* ラジカルセレクタは内部でグリッドレイアウトを持つため、モバイルでも崩れにくい */}
+
         <RadicalSelector radicals={allRadicalsWithCount} onSelect={startGame} />
       </div>
     );
@@ -216,7 +226,7 @@ export default function KanjiBushuGame() {
   return (
     <div className="max-w-full sm:max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-6 bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen overflow-x-hidden">
       {/* タイトル */}
-      <div className="text-center">
+        <div className="text-center">
         <p className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">
              「{currentRadical}」（{radicalReadings[currentRadical] || "?"}）の漢字
         </p>
