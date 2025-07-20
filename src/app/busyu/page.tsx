@@ -155,9 +155,9 @@ export default function KanjiBushuGame() {
       (k) => !foundKanji.some((f) => f.char === k.char) && k.char !== excludeChar
     );
     const hints = notFound
-      .sort((a, b) => a.grade - b.grade)
+      .sort((a, b) => a.kanken - b.kanken)
       .slice(0, 2)
-      .map((k) => `${k.meaning}（${k.grade === 7 ? "中学生漢字" : k.grade + "年生"}）`);
+      .map((k) => `${k.meaning}（${k.kanken ? kankenToGrade(k.kanken) : "不明"}）`);
     setHintList(hints);
   };
 
