@@ -39,7 +39,11 @@ const generateQuiz = (
   return allQuestions;
 };
 
-export default function ReadingQuiz({ filteredData, onBack }: ReadingQuizProps) {
+export default function ReadingQuiz({ 
+  filteredData, 
+  onBack 
+}: ReadingQuizProps) {
+
   const totalQuestions = 10;
   const [quizData, setQuizData] = useState<QuizQuestion[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -80,7 +84,7 @@ const handleChoice = (choice: string) => {
       setSelected(null);
       setShowAnswer(false);
     }
-  }, 3000); // ← ここが3秒
+  }, 1500); // ← ここが3秒
 };
 
   const resetQuiz = () => {

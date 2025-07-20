@@ -2,7 +2,8 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
-import { kankenToGrade, yojiData } from "../../../out/yojiData";
+import { yojiData } from "../../../public/yojiData";
+import { kankenToGrade } from "../kankenToGrade";
 
 const levels = [5, 4, 3, 2.5, 2, 1.5, 1];
 

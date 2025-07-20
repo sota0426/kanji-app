@@ -32,8 +32,10 @@ export default function QuizStarter() {
           readings,
           meaning: (k.meaning?.[0] || "").replace(/。$/, ""),
           grade: gradeNum,
+          kanken: gradeNum, 
         };
       });
+
 
       return {
         radical: entry.radical,

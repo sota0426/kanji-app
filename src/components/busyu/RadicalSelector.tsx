@@ -13,7 +13,10 @@ interface RadicalSelectorProps {
   onSelect: (radical: string) => void;
 }
 
-export default function RadicalSelector({ radicals, onSelect }: RadicalSelectorProps) {
+export default function RadicalSelector({ 
+  radicals, 
+  onSelect 
+}: RadicalSelectorProps) {
 
   useEffect(() => {
     // すべての部首データをJSON文字列化してコンソールに出力

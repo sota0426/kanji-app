@@ -11,6 +11,12 @@ export default function Home() {
       disabled: false,      
     },
     {
+      title: "漢字当てクイズ",
+      description: "漢字１文字の音読み・訓読みを答えるクイズ",
+      path: "/kanjiate", 
+      disabled: true,
+    },    // 追加クイズがあればここに追記
+    {
       title: "部首当てクイズ",
       description: "漢字の部首を答える４択クイズ",
       path: "/busyuate", 

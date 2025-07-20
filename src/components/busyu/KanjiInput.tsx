@@ -63,7 +63,8 @@ export default function KanjiInputWithHint({
           <div className="mt-4 bg-yellow-100 border border-yellow-300 p-4 rounded-lg mb-4 text-left w-full">
             <p className="font-semibold mb-2">ヒント（意味のみ）:</p>
             <ul className="list-disc list-inside text-gray-700">
-              {hints.map((hint, idx) => (
+              {hints
+              .map((hint, idx) => (
                 <li key={idx}>{hint}</li>
               ))}
             </ul>

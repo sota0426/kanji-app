@@ -1,7 +1,7 @@
 "use client";
 import { Kanji } from "@/types/kanji";
 import React from "react";
-import { kankenToGrade } from "../kanken";
+import { kankenToGrade } from "../kankenToGrade";
 
 interface AllKanjiListProps {
   allKanji: Kanji[];

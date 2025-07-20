@@ -6,16 +6,26 @@ import { useRouter } from "next/navigation";
 import RadicalSelector from "../../components/busyu/RadicalSelector";
 import GameExplanation from "../../components/busyu/GameExplanation";
 import InfoBar from "../../components/busyu/InfoBar";
-import ResultFlash from "../../components/busyu/ResultFlash";
 import FoundKanjiList from "../../components/busyu/FoundKanjiList";
 import GameEndScreen from "../../components/busyu/GameEndScreen";
 import KanjiInputWithHint from "../../components/busyu/KanjiInput";
 
 import { busyuData } from "../../../public/busyuData";
 import { Kanji } from "../../types/kanji";
+import { kankenToGakusei } from "@/components/kankenToGrade";
+import ResultFlash from "@/components/busyu/ResultFlash";
 
 /** ユーティリティ関数 */
-const calcPoint = (grade: number) => (grade <= 2 ? 1 : grade <= 4 ? 2 : 3);
+const calcPoint = (kanken: number): number => {
+  if (kanken >= 5 && kanken <= 10) return 1;      // 小学生
+  if (kanken >= 3 && kanken <= 4) return 2;       // 中学生
+  if (kanken >= 2 && kanken <= 2.5) return 3;     // 高校生
+  if (kanken === 1.5) return 5;                   // 準1級
+  if (kanken === 1) return 8;                     // 1級
+  return 1;                                       // 不明・その他は1点
+};
+
+
 const kanaToHiragana = (str: string) =>
   str.replace(/[ァ-ヶ]/g, (s) => String.fromCharCode(s.charCodeAt(0) - 0x60));
 const toHalfWidth = (str: string) =>
@@ -42,12 +52,13 @@ export default function KanjiBushuGame() {
   const [showResult, setShowResult] = useState(false);
 
   const [score, setScore] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(120);
+  const [timeLeft, setTimeLeft] = useState(60);
 
   const [hintList, setHintList] = useState<string[]>([]);
   const [isHintVisible, setIsHintVisible] = useState(false);
   const [isGameClear, setIsGameClear] = useState(false);
   const [isTimeUnlimited, setIsTimeUnlimited] = useState(false);
+  const [isAnswerCorrect, setIsAnswerCorrect] = useState<boolean>(false);
 
   /** 初期化 */
   useEffect(() => {
@@ -70,6 +81,7 @@ export default function KanjiBushuGame() {
     setRadicalReadings(readingMap);
   }, []);
 
+
   /** タイマー管理 */
   useEffect(() => {
     if (gameStarted && !gameEnded && !isTimeUnlimited && timeLeft > 0) {
@@ -89,6 +101,9 @@ export default function KanjiBushuGame() {
     }
   }, [foundKanji, currentRadical, radicalMap, gameEnded]);
 
+
+
+
   const startGame = (radical: string) => {
     setCurrentRadical(radical);
     setGameStarted(true);
@@ -98,7 +113,7 @@ export default function KanjiBushuGame() {
     setCurrentKanji(null);
     setShowResult(false);
     setScore(0);
-    setTimeLeft(120);
+    setTimeLeft(60);
     setIsHintVisible(false);
     setHintList([]);
     setIsGameClear(false);
@@ -114,7 +129,7 @@ export default function KanjiBushuGame() {
     setShowResult(false);
     setScore(0);
     setIsTimeUnlimited(false);
-    setTimeLeft(120);
+    setTimeLeft(60);
     setIsHintVisible(false);
     setHintList([]);
     setIsGameClear(false);
@@ -125,29 +140,40 @@ export default function KanjiBushuGame() {
     setGameEnded(true);
   };
 
-  const checkAnswer = () => {
-    if (!currentRadical || !input.trim()) return;
-    const ans = input.trim().toLowerCase();
-    const allKanji = radicalMap[currentRadical] || [];
 
-    const matched = allKanji.find(
-      (k) => !foundKanji.some((f) => f.char === k.char) && k.readings.includes(ans)
-    );
 
-    if (matched) {
-      const pts = calcPoint(matched.grade);
-      setScore((s) => s + pts);
-      setFoundKanji((prev) => [...prev, matched]);
-      setCurrentKanji(matched);
-      setShowResult(true);
-      if (isHintVisible) generateHints(matched.char);
-      setTimeout(() => {
-        setShowResult(false);
-        setCurrentKanji(null);
-      }, 1800);
-    }
-    setInput("");
-  };
+
+const checkAnswer = () => {
+  if (!currentRadical || !input.trim()) return;
+  const ans = input.trim().toLowerCase();
+  const allKanji = radicalMap[currentRadical] || [];
+
+  const matched = allKanji.find(
+    (k) => !foundKanji.some((f) => f.char === k.char) && k.readings.includes(ans)
+  );
+
+  if (matched) {
+    const pts = calcPoint(matched.kanken);
+    setTimeLeft((s)=>s + 15)
+    setScore((s) => s + pts);
+    setFoundKanji((prev) => [...prev, matched]);
+    setCurrentKanji(matched);
+    setIsAnswerCorrect(true);
+    setShowResult(true);
+    if (isHintVisible) generateHints(matched.char);
+    setTimeout(() => {
+      setShowResult(false);
+      setCurrentKanji(null);
+    }, 2000);
+  } else {
+    setIsAnswerCorrect(false);
+    setShowResult(true);
+    setTimeout(() => {
+      setShowResult(false);
+    }, 700);
+  }
+  setInput("");
+};
 
   const generateHints = (excludeChar: string | null = null) => {
     if (!currentRadical) return;
@@ -155,9 +181,9 @@ export default function KanjiBushuGame() {
       (k) => !foundKanji.some((f) => f.char === k.char) && k.char !== excludeChar
     );
     const hints = notFound
-      .sort((a, b) => a.kanken - b.kanken)
+      .sort((a, b) =>b.kanken -  a.kanken)
       .slice(0, 2)
-      .map((k) => `${k.meaning}（${k.kanken ? kankenToGrade(k.kanken) : "不明"}）`);
+      .map((k) => `${k.meaning}　（${k.kanken ? kankenToGakusei(k.kanken) : "不明"}）`);
     setHintList(hints);
   };
 
@@ -212,14 +238,19 @@ export default function KanjiBushuGame() {
                   score={score}
                   onReset={endGame}
                 />
+
+
                 <div className="text-center">
                   <div className="inline-block bg-blue-100 rounded-lg p-8 mb-2">
-                    <span className="text-8xl font-bold text-blue-800">{currentRadical}</span>
+                    <span className="text-4xl sm:text-6xl md:text-8xl font-bold text-blue-800">
+                      {currentRadical}
+                    </span>
                   </div>
                   <p className="text-gray-700 text-base">
                     全 {currentAllKanji.length} 個の漢字があります
                   </p>
                 </div>
+
                 <KanjiInputWithHint
                   value={input}
                   onChange={setInput}
@@ -228,8 +259,15 @@ export default function KanjiBushuGame() {
                   hints={hintList}
                   onToggleHint={toggleHint}
                 />
-                <ResultFlash visible={showResult} kanji={currentKanji} calcPoint={calcPoint} />
+
+              <ResultFlash 
+                visible={showResult} 
+                kanji={currentKanji} 
+                isCorrect={isAnswerCorrect} 
+              />
+
                 <FoundKanjiList foundKanji={foundKanji} total={currentAllKanji.length} />
+
               </div>
             </div>
           )}

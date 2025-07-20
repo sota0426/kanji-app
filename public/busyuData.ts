@@ -8,7 +8,7 @@ export interface KanjiEntry {
   meaning: string[];
   kakusuu: number;
   busyu: string;
-  grade?:string;
+  grade:string | null;
   kanken: number;
 }
 
