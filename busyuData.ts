@@ -8,8 +8,8 @@ export interface KanjiEntry {
   meaning: string[];
   kakusuu: number;
   busyu: string;
-  grade: string | null;
-  kanken: string;
+  grade:string | null;
+  kanken: number;
 }
 
 
@@ -46,7 +46,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 1,
         busyu: "一部（いち）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "七",
@@ -65,7 +65,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 2,
         busyu: "一部（いち）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "丁",
@@ -81,7 +81,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 2,
         busyu: "一部（いち）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "下",
@@ -108,7 +108,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "一部（いち）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "三",
@@ -127,7 +127,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "一部（いち）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "上",
@@ -152,7 +152,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "一部（いち）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "万",
@@ -168,7 +168,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "一部（いち）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "丈",
@@ -185,7 +185,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "一部（いち）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "与",
@@ -202,7 +202,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "一部（いち）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "不",
@@ -218,7 +218,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "一部（いち）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "丑",
@@ -235,7 +235,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "一部（いち）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "世",
@@ -253,7 +253,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "一部（いち）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "丘",
@@ -270,7 +270,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "一部（いち）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "且",
@@ -285,7 +285,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "一部（いち）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "丙",
@@ -300,7 +300,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "一部（いち）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "両",
@@ -315,7 +315,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "一部（いち）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "丞",
@@ -333,7 +333,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "一部（いち）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "並",
@@ -353,7 +353,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "一部（いち）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       }
     ]
   },
@@ -375,7 +375,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 1,
         busyu: "乙部（おつ・おつにょう・つりばり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "九",
@@ -394,7 +394,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 2,
         busyu: "乙部（おつ・おつにょう・つりばり）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "乞",
@@ -409,7 +409,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "乙部（おつ・おつにょう・つりばり）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "也",
@@ -429,7 +429,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "乙部（おつ・おつにょう・つりばり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "乱",
@@ -447,7 +447,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "乙部（おつ・おつにょう・つりばり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "乳",
@@ -465,7 +465,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "乙部（おつ・おつにょう・つりばり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "乾",
@@ -483,7 +483,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "乙部（おつ・おつにょう・つりばり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -508,7 +508,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "丨部（たてぼう・ぼう）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "串",
@@ -523,7 +523,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "丨部（たてぼう・ぼう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       }
     ]
   },
@@ -549,7 +549,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "丶部（てん・ちょぼ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "之",
@@ -569,7 +569,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "丿部（の・はらいぼう） 丶部（てん・ちょぼ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "丹",
@@ -584,7 +584,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "丶部（てん・ちょぼ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "主",
@@ -603,7 +603,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "丶部（てん・ちょぼ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "丼",
@@ -619,7 +619,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "丶部（てん・ちょぼ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       }
     ]
   },
@@ -641,7 +641,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 2,
         busyu: "亅部（はねぼう・かぎ）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "予",
@@ -656,7 +656,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "亅部（はねぼう・かぎ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "争",
@@ -673,7 +673,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "亅部（はねぼう・かぎ）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "事",
@@ -691,7 +691,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "亅部（はねぼう・かぎ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       }
     ]
   },
@@ -718,7 +718,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 2,
         busyu: "丿部（の・はらいぼう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "久",
@@ -736,7 +736,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "丿部（の・はらいぼう）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "之",
@@ -756,7 +756,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "丿部（の・はらいぼう） 丶部（てん・ちょぼ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "乏",
@@ -773,7 +773,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "丿部（の・はらいぼう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "乎",
@@ -793,7 +793,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "丿部（の・はらいぼう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "乍",
@@ -811,7 +811,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "丿部（の・はらいぼう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "乗",
@@ -829,7 +829,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "丿部（の・はらいぼう）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       }
     ]
   },
@@ -853,7 +853,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "冂部（けいがまえ・まきがまえ・えんがまえ・どうがまえ）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "内",
@@ -871,7 +871,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "入部（いる・にゅう・いりがしら・いりやね） 冂部（けいがまえ・まきがまえ・えんがまえ・どうがまえ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "冊",
@@ -887,7 +887,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "冂部（けいがまえ・まきがまえ・えんがまえ・どうがまえ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "同",
@@ -904,7 +904,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "口部（くち・くちへん） 冂部（けいがまえ・まきがまえ・えんがまえ・どうがまえ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "再",
@@ -922,7 +922,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "冂部（けいがまえ・まきがまえ・えんがまえ・どうがまえ）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       }
     ]
   },
@@ -947,7 +947,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 2,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "今",
@@ -965,7 +965,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "化",
@@ -984,7 +984,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "匕部（ひ・さじ・さじのひ） 人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "仏",
@@ -1001,7 +1001,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "仁",
@@ -1017,7 +1017,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "介",
@@ -1032,7 +1032,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "仇",
@@ -1051,7 +1051,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "什",
@@ -1069,7 +1069,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "仕",
@@ -1087,7 +1087,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "他",
@@ -1104,7 +1104,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "代",
@@ -1125,7 +1125,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "以",
@@ -1140,7 +1140,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "付",
@@ -1158,7 +1158,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "令",
@@ -1173,7 +1173,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "仙",
@@ -1188,7 +1188,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "仔",
@@ -1207,7 +1207,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "休",
@@ -1226,7 +1226,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "会",
@@ -1244,7 +1244,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "仲",
@@ -1261,7 +1261,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "伝",
@@ -1280,7 +1280,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "仮",
@@ -1298,7 +1298,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "件",
@@ -1313,7 +1313,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "任",
@@ -1331,7 +1331,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "仰",
@@ -1350,7 +1350,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "企",
@@ -1367,7 +1367,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "伐",
@@ -1382,7 +1382,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "伏",
@@ -1400,7 +1400,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "伎",
@@ -1415,7 +1415,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "伊",
@@ -1434,7 +1434,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "伍",
@@ -1452,7 +1452,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "何",
@@ -1470,7 +1470,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "作",
@@ -1488,7 +1488,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "体",
@@ -1506,7 +1506,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "住",
@@ -1524,7 +1524,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "位",
@@ -1541,7 +1541,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "低",
@@ -1560,7 +1560,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "似",
@@ -1577,7 +1577,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "余",
@@ -1595,7 +1595,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "伺",
@@ -1612,7 +1612,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "伸",
@@ -1631,7 +1631,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "伴",
@@ -1649,7 +1649,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "佐",
@@ -1664,7 +1664,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "但",
@@ -1679,7 +1679,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "伯",
@@ -1694,7 +1694,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "佑",
@@ -1713,7 +1713,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "伽",
@@ -1732,7 +1732,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "佃",
@@ -1752,7 +1752,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "伶",
@@ -1771,7 +1771,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "使",
@@ -1788,7 +1788,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "命",
@@ -1806,7 +1806,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "口部（くち・くちへん） 人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "例",
@@ -1823,7 +1823,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "価",
@@ -1840,7 +1840,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "舎",
@@ -1855,7 +1855,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "舌部（した・したへん） 人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "供",
@@ -1874,7 +1874,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "依",
@@ -1890,7 +1890,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "佳",
@@ -1905,7 +1905,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "侍",
@@ -1922,7 +1922,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "侮",
@@ -1939,7 +1939,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "併",
@@ -1956,7 +1956,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "侃",
@@ -1973,7 +1973,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "侠",
@@ -1991,7 +1991,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "佼",
@@ -2008,7 +2008,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "係",
@@ -2026,7 +2026,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "信",
@@ -2041,7 +2041,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "便",
@@ -2059,7 +2059,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "保",
@@ -2076,7 +2076,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "侵",
@@ -2093,7 +2093,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "俗",
@@ -2108,7 +2108,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "促",
@@ -2125,7 +2125,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "侯",
@@ -2140,7 +2140,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "俊",
@@ -2155,7 +2155,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "侶",
@@ -2170,7 +2170,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "俄",
@@ -2188,7 +2188,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "俣",
@@ -2203,7 +2203,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "倍",
@@ -2218,7 +2218,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "候",
@@ -2235,7 +2235,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "借",
@@ -2252,7 +2252,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "倉",
@@ -2269,7 +2269,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "個",
@@ -2284,7 +2284,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "修",
@@ -2303,7 +2303,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね） 彡部（さんづくり）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "俵",
@@ -2320,7 +2320,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "値",
@@ -2338,7 +2338,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "俳",
@@ -2353,7 +2353,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "倒",
@@ -2371,7 +2371,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "倹",
@@ -2386,7 +2386,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "倣",
@@ -2403,7 +2403,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "俸",
@@ -2418,7 +2418,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "倫",
@@ -2433,7 +2433,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "俺",
@@ -2448,7 +2448,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "倭",
@@ -2466,7 +2466,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "倶",
@@ -2484,7 +2484,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "倦",
@@ -2505,7 +2505,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "倖",
@@ -2523,7 +2523,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "健",
@@ -2540,7 +2540,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "側",
@@ -2557,7 +2557,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "停",
@@ -2572,7 +2572,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "偶",
@@ -2587,7 +2587,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "偽",
@@ -2605,7 +2605,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "偵",
@@ -2620,7 +2620,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "偏",
@@ -2637,7 +2637,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "偲",
@@ -2655,7 +2655,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "備",
@@ -2673,7 +2673,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "偉",
@@ -2690,7 +2690,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "傍",
@@ -2707,7 +2707,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "傘",
@@ -2724,7 +2724,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "働",
@@ -2741,7 +2741,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "傷",
@@ -2760,7 +2760,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "傾",
@@ -2778,7 +2778,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "僧",
@@ -2793,7 +2793,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "催",
@@ -2810,7 +2810,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "債",
@@ -2825,7 +2825,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "傑",
@@ -2840,7 +2840,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "僅",
@@ -2857,7 +2857,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "傲",
@@ -2872,7 +2872,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "傭",
@@ -2891,7 +2891,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "像",
@@ -2906,7 +2906,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "僕",
@@ -2921,7 +2921,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "僚",
@@ -2936,7 +2936,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "僑",
@@ -2954,7 +2954,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "億",
@@ -2969,7 +2969,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "儀",
@@ -2984,7 +2984,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "舗",
@@ -2999,7 +2999,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "舌部（した・したへん） 人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "僻",
@@ -3019,7 +3019,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "儒",
@@ -3034,7 +3034,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "儘",
@@ -3052,7 +3052,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "優",
@@ -3070,7 +3070,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "償",
@@ -3087,7 +3087,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "儲",
@@ -3107,7 +3107,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -3132,7 +3132,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 2,
         busyu: "二部（に）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "五",
@@ -3150,7 +3150,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "二部（に）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "互",
@@ -3167,7 +3167,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "二部（に）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "井",
@@ -3185,7 +3185,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "二部（に）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "云",
@@ -3202,7 +3202,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "二部（に）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "亙",
@@ -3219,7 +3219,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "二部（に）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "亘",
@@ -3237,7 +3237,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "二部（に）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "亜",
@@ -3252,7 +3252,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "二部（に）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "些",
@@ -3270,7 +3270,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "二部（に）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -3296,7 +3296,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 2,
         busyu: "十部（じゅう）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "千",
@@ -3313,7 +3313,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "十部（じゅう）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "午",
@@ -3328,7 +3328,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "十部（じゅう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "升",
@@ -3345,7 +3345,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "十部（じゅう） 廾部（にじゅうあし・こまぬき）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "廿",
@@ -3362,7 +3362,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "十部（じゅう） 廾部（にじゅうあし・こまぬき）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "半",
@@ -3379,7 +3379,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "十部（じゅう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "協",
@@ -3394,7 +3394,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "十部（じゅう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "卒",
@@ -3409,7 +3409,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "十部（じゅう） 亠部（なべぶた・けいさんかんむり）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "卓",
@@ -3424,7 +3424,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "十部（じゅう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "南",
@@ -3442,7 +3442,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "十部（じゅう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "単",
@@ -3457,7 +3457,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "⺍部（つ・つかんむり） 十部（じゅう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "卑",
@@ -3476,7 +3476,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "十部（じゅう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "博",
@@ -3492,7 +3492,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "十部（じゅう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       }
     ]
   },
@@ -3514,7 +3514,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "凵部（かんにょう・うけばこ・かんがまえ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "出",
@@ -3533,7 +3533,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "凵部（かんにょう・うけばこ・かんがまえ）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "凹",
@@ -3548,7 +3548,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "凵部（かんにょう・うけばこ・かんがまえ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "凸",
@@ -3563,7 +3563,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "凵部（かんにょう・うけばこ・かんがまえ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "函",
@@ -3582,7 +3582,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "凵部（かんにょう・うけばこ・かんがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "凾",
@@ -3601,7 +3601,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "凵部（かんにょう・うけばこ・かんがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -3626,7 +3626,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "儿部（にんにょう・ひとあし）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "允",
@@ -3646,7 +3646,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "儿部（にんにょう・ひとあし）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "兄",
@@ -3664,7 +3664,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "儿部（にんにょう・ひとあし）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "先",
@@ -3681,7 +3681,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "儿部（にんにょう・ひとあし）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "光",
@@ -3699,7 +3699,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "儿部（にんにょう・ひとあし）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "兆",
@@ -3717,7 +3717,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "儿部（にんにょう・ひとあし）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "充",
@@ -3734,7 +3734,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "儿部（にんにょう・ひとあし）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "兇",
@@ -3752,7 +3752,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "儿部（にんにょう・ひとあし）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "売",
@@ -3770,7 +3770,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "士部（さむらい） 儿部（にんにょう・ひとあし）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "児",
@@ -3786,7 +3786,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "儿部（にんにょう・ひとあし）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "克",
@@ -3801,7 +3801,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "儿部（にんにょう・ひとあし）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "兎",
@@ -3818,7 +3818,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "儿部（にんにょう・ひとあし）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "免",
@@ -3835,7 +3835,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "儿部（にんにょう・ひとあし）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "尭",
@@ -3852,7 +3852,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "土部（つち・つちへん・どへん） 儿部（にんにょう・ひとあし）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "兔",
@@ -3869,7 +3869,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "儿部（にんにょう・ひとあし）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "党",
@@ -3884,7 +3884,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "儿部（にんにょう・ひとあし）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "兜",
@@ -3902,7 +3902,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "儿部（にんにょう・ひとあし）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -3928,7 +3928,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 2,
         busyu: "入部（いる・にゅう・いりがしら・いりやね）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "内",
@@ -3946,7 +3946,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "入部（いる・にゅう・いりがしら・いりやね） 冂部（けいがまえ・まきがまえ・えんがまえ・どうがまえ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "全",
@@ -3964,7 +3964,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "入部（いる・にゅう・いりがしら・いりやね）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       }
     ]
   },
@@ -3991,7 +3991,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 2,
         busyu: "八部（はち・はちがしら・は）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "六",
@@ -4011,7 +4011,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "八部（はち・はちがしら・は）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "公",
@@ -4028,7 +4028,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "八部（はち・はちがしら・は）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "共",
@@ -4045,7 +4045,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "八部（はち・はちがしら・は）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "兵",
@@ -4061,7 +4061,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "八部（はち・はちがしら・は）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "具",
@@ -4076,7 +4076,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "八部（はち・はちがしら・は）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "典",
@@ -4091,7 +4091,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "八部（はち・はちがしら・は）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "其",
@@ -4109,7 +4109,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "八部（はち・はちがしら・は）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "兼",
@@ -4126,7 +4126,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "八部（はち・はちがしら・は）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -4151,7 +4151,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 2,
         busyu: "力部（ちから）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "加",
@@ -4169,7 +4169,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "力部（ちから）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "功",
@@ -4185,7 +4185,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "力部（ちから）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "幼",
@@ -4202,7 +4202,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "幺部（いとがしら・よう） 力部（ちから）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "劣",
@@ -4219,7 +4219,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "力部（ちから）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "助",
@@ -4238,7 +4238,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "力部（ちから）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "努",
@@ -4255,7 +4255,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "力部（ちから）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "労",
@@ -4270,7 +4270,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "力部（ちから）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "励",
@@ -4288,7 +4288,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "力部（ちから）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "劫",
@@ -4308,7 +4308,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "力部（ちから）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "効",
@@ -4325,7 +4325,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "力部（ちから）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "劾",
@@ -4340,7 +4340,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "力部（ちから）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "勇",
@@ -4357,7 +4357,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "力部（ちから）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "勅",
@@ -4372,7 +4372,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "力部（ちから）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "勃",
@@ -4387,7 +4387,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "力部（ちから）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "勉",
@@ -4402,7 +4402,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "力部（ちから）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "動",
@@ -4420,7 +4420,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "力部（ちから）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "務",
@@ -4438,7 +4438,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "力部（ちから）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "勘",
@@ -4453,7 +4453,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "力部（ちから）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "勝",
@@ -4471,7 +4471,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "力部（ちから）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "勤",
@@ -4490,7 +4490,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "力部（ちから）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "募",
@@ -4507,7 +4507,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "力部（ちから）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "勢",
@@ -4524,7 +4524,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "力部（ちから）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "勧",
@@ -4541,7 +4541,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "力部（ちから）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "勲",
@@ -4556,7 +4556,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "力部（ちから） 火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -4581,7 +4581,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "亠部（なべぶた・けいさんかんむり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "交",
@@ -4604,7 +4604,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "亠部（なべぶた・けいさんかんむり）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "亦",
@@ -4623,7 +4623,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "亠部（なべぶた・けいさんかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "亥",
@@ -4641,7 +4641,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "亠部（なべぶた・けいさんかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "亨",
@@ -4661,7 +4661,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "亠部（なべぶた・けいさんかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "京",
@@ -4677,7 +4677,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "亠部（なべぶた・けいさんかんむり）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "卒",
@@ -4692,7 +4692,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "十部（じゅう） 亠部（なべぶた・けいさんかんむり）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "享",
@@ -4707,7 +4707,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "亠部（なべぶた・けいさんかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "亭",
@@ -4722,7 +4722,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "亠部（なべぶた・けいさんかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "亮",
@@ -4740,7 +4740,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "亠部（なべぶた・けいさんかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "商",
@@ -4757,7 +4757,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "口部（くち・くちへん） 亠部（なべぶた・けいさんかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       }
     ]
   },
@@ -4779,7 +4779,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "厂部（がんだれ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "厚",
@@ -4796,7 +4796,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "厂部（がんだれ）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "厘",
@@ -4811,7 +4811,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "厂部（がんだれ）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "原",
@@ -4828,7 +4828,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "厂部（がんだれ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "厨",
@@ -4846,7 +4846,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "厂部（がんだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "厭",
@@ -4870,7 +4870,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "厂部（がんだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "厩",
@@ -4887,7 +4887,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "厂部（がんだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "厰",
@@ -4905,7 +4905,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "厂部（がんだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -4929,7 +4929,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 2,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "刃",
@@ -4946,7 +4946,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "切",
@@ -4965,7 +4965,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "分",
@@ -4987,7 +4987,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "刈",
@@ -5002,7 +5002,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "刊",
@@ -5017,7 +5017,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "列",
@@ -5032,7 +5032,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "刑",
@@ -5047,7 +5047,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "初",
@@ -5068,7 +5068,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "別",
@@ -5085,7 +5085,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "利",
@@ -5102,7 +5102,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "判",
@@ -5118,7 +5118,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "刷",
@@ -5135,7 +5135,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "券",
@@ -5150,7 +5150,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "制",
@@ -5165,7 +5165,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "刻",
@@ -5182,7 +5182,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "刺",
@@ -5200,7 +5200,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "到",
@@ -5215,7 +5215,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "刹",
@@ -5231,7 +5231,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "前",
@@ -5248,7 +5248,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "則",
@@ -5263,7 +5263,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "削",
@@ -5280,7 +5280,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "剃",
@@ -5297,7 +5297,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "帰",
@@ -5315,7 +5315,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "巾部（はば・はばへん・きんべん） 刀部（かたな・りっとう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "剣",
@@ -5332,7 +5332,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "剤",
@@ -5347,7 +5347,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "剛",
@@ -5362,7 +5362,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "剖",
@@ -5377,7 +5377,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "剥",
@@ -5397,7 +5397,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "副",
@@ -5412,7 +5412,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "剰",
@@ -5427,7 +5427,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "割",
@@ -5447,7 +5447,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "創",
@@ -5464,7 +5464,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "劃",
@@ -5482,7 +5482,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "劇",
@@ -5497,7 +5497,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "刀部（かたな・りっとう）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "劉",
@@ -5515,7 +5515,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "刀部（かたな・りっとう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -5539,7 +5539,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "冫部（にすい） 夂・夊部（ふゆがしら・ち・すいにょう・なつあし）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "冷",
@@ -5562,7 +5562,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "冫部（にすい）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "冶",
@@ -5577,7 +5577,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "冫部（にすい）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "冴",
@@ -5595,7 +5595,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "冫部（にすい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "凍",
@@ -5613,7 +5613,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "冫部（にすい）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "准",
@@ -5628,7 +5628,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "冫部（にすい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "凄",
@@ -5643,7 +5643,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "冫部（にすい）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "凋",
@@ -5660,7 +5660,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "冫部（にすい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "凌",
@@ -5677,7 +5677,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "冫部（にすい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "凝",
@@ -5695,7 +5695,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "冫部（にすい）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       }
     ]
   },
@@ -5721,7 +5721,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "匕部（ひ・さじ・さじのひ） 人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "北",
@@ -5738,7 +5738,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "匕部（ひ・さじ・さじのひ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "匙",
@@ -5755,7 +5755,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "匕部（ひ・さじ・さじのひ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -5777,7 +5777,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 2,
         busyu: "又部（また）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "及",
@@ -5796,7 +5796,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "又部（また）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "叉",
@@ -5817,7 +5817,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "又部（また）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "友",
@@ -5834,7 +5834,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "又部（また）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "反",
@@ -5854,7 +5854,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "又部（また）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "収",
@@ -5872,7 +5872,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "又部（また）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "双",
@@ -5889,7 +5889,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "又部（また）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "取",
@@ -5906,7 +5906,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "又部（また）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "受",
@@ -5924,7 +5924,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "又部（また）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "叔",
@@ -5939,7 +5939,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "又部（また）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "叙",
@@ -5954,7 +5954,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "又部（また）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "叛",
@@ -5973,7 +5973,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "又部（また）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "叡",
@@ -5992,7 +5992,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "又部（また）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "叢",
@@ -6010,7 +6010,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "又部（また）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -6032,7 +6032,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "匸部（かくしがまえ） 匚部（はこがまえ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "匹",
@@ -6049,7 +6049,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "匸部（かくしがまえ） 匚部（はこがまえ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "医",
@@ -6064,7 +6064,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "匸部（かくしがまえ） 匚部（はこがまえ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "匿",
@@ -6079,7 +6079,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "匸部（かくしがまえ） 匚部（はこがまえ）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       }
     ]
   },
@@ -6104,7 +6104,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "厶部（む）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "参",
@@ -6121,7 +6121,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "厶部（む）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       }
     ]
   },
@@ -6143,7 +6143,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "冖部（わかんむり・ひらかんむり・べきかんむり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "写",
@@ -6161,7 +6161,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "冖部（わかんむり・ひらかんむり・べきかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "冠",
@@ -6178,7 +6178,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "冖部（わかんむり・ひらかんむり・べきかんむり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "冥",
@@ -6194,7 +6194,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "冖部（わかんむり・ひらかんむり・べきかんむり）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       }
     ]
   },
@@ -6220,7 +6220,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "卩部（ふしづくり・わりふ） 口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "卯",
@@ -6237,7 +6237,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "卩部（ふしづくり・わりふ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "印",
@@ -6254,7 +6254,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "卩部（ふしづくり・わりふ）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "危",
@@ -6273,7 +6273,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "卩部（ふしづくり・わりふ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "卵",
@@ -6290,7 +6290,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "卩部（ふしづくり・わりふ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "却",
@@ -6305,7 +6305,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "卩部（ふしづくり・わりふ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "即",
@@ -6320,7 +6320,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "卩部（ふしづくり・わりふ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "卸",
@@ -6336,7 +6336,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "卩部（ふしづくり・わりふ）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "卿",
@@ -6355,7 +6355,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "卩部（ふしづくり・わりふ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -6377,7 +6377,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "勹部（つつみがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "勾",
@@ -6392,7 +6392,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "勹部（つつみがまえ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "匂",
@@ -6407,7 +6407,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "勹部（つつみがまえ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "勿",
@@ -6427,7 +6427,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "勹部（つつみがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "匁",
@@ -6443,7 +6443,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "勹部（つつみがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "包",
@@ -6460,7 +6460,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "勹部（つつみがまえ）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       }
     ]
   },
@@ -6483,7 +6483,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "几部（つくえ・きにょう・かぜかんむり・かぜがまえ・かざがまえ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "処",
@@ -6498,7 +6498,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "几部（つくえ・きにょう・かぜかんむり・かぜがまえ・かざがまえ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "凧",
@@ -6514,7 +6514,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "几部（つくえ・きにょう・かぜかんむり・かぜがまえ・かざがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "夙",
@@ -6533,7 +6533,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "夕部（ゆうべ・ゆう・た） 几部（つくえ・きにょう・かぜかんむり・かぜがまえ・かざがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "凪",
@@ -6549,7 +6549,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "几部（つくえ・きにょう・かぜかんむり・かぜがまえ・かざがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "凰",
@@ -6567,7 +6567,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "几部（つくえ・きにょう・かぜかんむり・かぜがまえ・かざがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "凱",
@@ -6586,7 +6586,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "几部（つくえ・きにょう・かぜかんむり・かぜがまえ・かざがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -6612,7 +6612,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 2,
         busyu: "卜部（ぼく・ぼくのと・と・うらない）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "占",
@@ -6630,7 +6630,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "卜部（ぼく・ぼくのと・と・うらない）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "卦",
@@ -6649,7 +6649,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "卜部（ぼく・ぼくのと・と・うらない）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -6671,7 +6671,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "匸部（かくしがまえ） 匚部（はこがまえ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "匹",
@@ -6688,7 +6688,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "匸部（かくしがまえ） 匚部（はこがまえ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "匠",
@@ -6703,7 +6703,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "匚部（はこがまえ）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "匡",
@@ -6721,7 +6721,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "匚部（はこがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "医",
@@ -6736,7 +6736,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "匸部（かくしがまえ） 匚部（はこがまえ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "匿",
@@ -6751,7 +6751,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "匸部（かくしがまえ） 匚部（はこがまえ）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "匪",
@@ -6769,7 +6769,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "匚部（はこがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -6794,7 +6794,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "子部（こ・こへん・こども・こどもへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "孔",
@@ -6809,7 +6809,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "子部（こ・こへん・こども・こどもへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "字",
@@ -6826,7 +6826,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "子部（こ・こへん・こども・こどもへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "存",
@@ -6842,7 +6842,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "子部（こ・こへん・こども・こどもへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "孝",
@@ -6857,7 +6857,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "子部（こ・こへん・こども・こどもへん） 老部（おいかんむり・おいがしら・おい）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "孜",
@@ -6874,7 +6874,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん） 子部（こ・こへん・こども・こどもへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "学",
@@ -6891,7 +6891,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "子部（こ・こへん・こども・こどもへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "季",
@@ -6906,7 +6906,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "子部（こ・こへん・こども・こどもへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "孟",
@@ -6925,7 +6925,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "子部（こ・こへん・こども・こどもへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "孤",
@@ -6940,7 +6940,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "子部（こ・こへん・こども・こどもへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "孫",
@@ -6957,7 +6957,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "子部（こ・こへん・こども・こどもへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       }
     ]
   },
@@ -6979,7 +6979,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "士部（さむらい）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "壬",
@@ -6997,7 +6997,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "士部（さむらい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "壮",
@@ -7012,7 +7012,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "士部（さむらい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "声",
@@ -7031,7 +7031,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "士部（さむらい）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "売",
@@ -7049,7 +7049,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "士部（さむらい） 儿部（にんにょう・ひとあし）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "壱",
@@ -7064,7 +7064,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "士部（さむらい）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "壷",
@@ -7081,7 +7081,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "士部（さむらい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "壺",
@@ -7098,7 +7098,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "士部（さむらい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -7123,7 +7123,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "右",
@@ -7141,7 +7141,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "古",
@@ -7159,7 +7159,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "台",
@@ -7175,7 +7175,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "号",
@@ -7190,7 +7190,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "史",
@@ -7205,7 +7205,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "司",
@@ -7220,7 +7220,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "可",
@@ -7235,7 +7235,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "句",
@@ -7250,7 +7250,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "召",
@@ -7267,7 +7267,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "叱",
@@ -7284,7 +7284,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "叶",
@@ -7301,7 +7301,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "叩",
@@ -7320,7 +7320,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "卩部（ふしづくり・わりふ） 口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "只",
@@ -7337,7 +7337,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "名",
@@ -7355,7 +7355,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "合",
@@ -7376,7 +7376,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "同",
@@ -7393,7 +7393,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "口部（くち・くちへん） 冂部（けいがまえ・まきがまえ・えんがまえ・どうがまえ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "向",
@@ -7413,7 +7413,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "各",
@@ -7430,7 +7430,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "吸",
@@ -7447,7 +7447,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "后",
@@ -7462,7 +7462,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "叫",
@@ -7479,7 +7479,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "吐",
@@ -7496,7 +7496,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "吉",
@@ -7512,7 +7512,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "吏",
@@ -7527,7 +7527,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "吃",
@@ -7546,7 +7546,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "吋",
@@ -7564,7 +7564,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "吊",
@@ -7582,7 +7582,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "君",
@@ -7599,7 +7599,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "告",
@@ -7616,7 +7616,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "否",
@@ -7633,7 +7633,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "含",
@@ -7651,7 +7651,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "吹",
@@ -7668,7 +7668,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "吟",
@@ -7683,7 +7683,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "呉",
@@ -7698,7 +7698,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "呈",
@@ -7713,7 +7713,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "呂",
@@ -7728,7 +7728,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "吾",
@@ -7746,7 +7746,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "呆",
@@ -7766,7 +7766,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "呑",
@@ -7784,7 +7784,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "吠",
@@ -7802,7 +7802,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "吻",
@@ -7820,7 +7820,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "味",
@@ -7838,7 +7838,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "命",
@@ -7856,7 +7856,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "口部（くち・くちへん） 人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "和",
@@ -7877,7 +7877,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "周",
@@ -7894,7 +7894,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "呼",
@@ -7911,7 +7911,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "呪",
@@ -7928,7 +7928,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "品",
@@ -7945,7 +7945,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "咲",
@@ -7960,7 +7960,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "哀",
@@ -7978,7 +7978,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "咽",
@@ -7993,7 +7993,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "咳",
@@ -8014,7 +8014,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "哉",
@@ -8033,7 +8033,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "員",
@@ -8048,7 +8048,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "唐",
@@ -8065,7 +8065,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "哲",
@@ -8080,7 +8080,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "唆",
@@ -8097,7 +8097,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "唇",
@@ -8114,7 +8114,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "唄",
@@ -8129,7 +8129,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "哺",
@@ -8144,7 +8144,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "唖",
@@ -8165,7 +8165,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "哨",
@@ -8182,7 +8182,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "啄",
@@ -8200,7 +8200,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "哩",
@@ -8217,7 +8217,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "商",
@@ -8234,7 +8234,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "口部（くち・くちへん） 亠部（なべぶた・けいさんかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "問",
@@ -8253,7 +8253,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "唱",
@@ -8270,7 +8270,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "啓",
@@ -8285,7 +8285,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "喝",
@@ -8300,7 +8300,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "唯",
@@ -8316,7 +8316,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "唾",
@@ -8333,7 +8333,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "喜",
@@ -8350,7 +8350,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "営",
@@ -8367,7 +8367,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "⺍部（つ・つかんむり） 口部（くち・くちへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "善",
@@ -8384,7 +8384,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "喚",
@@ -8399,7 +8399,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "喫",
@@ -8414,7 +8414,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "喪",
@@ -8431,7 +8431,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "喉",
@@ -8448,7 +8448,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "喩",
@@ -8463,7 +8463,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "喬",
@@ -8481,7 +8481,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "喰",
@@ -8497,7 +8497,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "喧",
@@ -8515,7 +8515,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "喋",
@@ -8534,7 +8534,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "嘆",
@@ -8552,7 +8552,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "嗣",
@@ -8567,7 +8567,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "嗅",
@@ -8584,7 +8584,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "嘩",
@@ -8601,7 +8601,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "嘉",
@@ -8619,7 +8619,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "嘘",
@@ -8638,7 +8638,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "嘗",
@@ -8658,7 +8658,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "口部（くち・くちへん） 小部（しょう・しょうがしら・なおがしら）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "器",
@@ -8675,7 +8675,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "口部（くち・くちへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "噴",
@@ -8692,7 +8692,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "嘱",
@@ -8707,7 +8707,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "嘲",
@@ -8724,7 +8724,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "噛",
@@ -8743,7 +8743,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "噌",
@@ -8761,7 +8761,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "噂",
@@ -8778,7 +8778,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "噸",
@@ -8793,7 +8793,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "噺",
@@ -8808,7 +8808,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "嚇",
@@ -8823,7 +8823,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "嚢",
@@ -8841,7 +8841,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "口部（くち・くちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -8864,7 +8864,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "工部（え・たくみ・たくみへん・こう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "左",
@@ -8881,7 +8881,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "工部（え・たくみ・たくみへん・こう）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "巨",
@@ -8896,7 +8896,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "工部（え・たくみ・たくみへん・こう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "巧",
@@ -8913,7 +8913,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "工部（え・たくみ・たくみへん・こう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "差",
@@ -8930,7 +8930,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "工部（え・たくみ・たくみへん・こう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       }
     ]
   },
@@ -8954,7 +8954,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "岐",
@@ -8969,7 +8969,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "岩",
@@ -8986,7 +8986,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "岸",
@@ -9003,7 +9003,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "岳",
@@ -9020,7 +9020,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "岬",
@@ -9035,7 +9035,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "岡",
@@ -9050,7 +9050,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "岨",
@@ -9069,7 +9069,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "岱",
@@ -9084,7 +9084,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "峠",
@@ -9099,7 +9099,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "峡",
@@ -9114,7 +9114,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "島",
@@ -9131,7 +9131,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "峰",
@@ -9148,7 +9148,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "峨",
@@ -9165,7 +9165,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "峻",
@@ -9185,7 +9185,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "峯",
@@ -9203,7 +9203,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "崩",
@@ -9221,7 +9221,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "崎",
@@ -9236,7 +9236,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "崇",
@@ -9251,7 +9251,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "崖",
@@ -9268,7 +9268,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "嵐",
@@ -9283,7 +9283,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "嵯",
@@ -9300,7 +9300,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "嵳",
@@ -9317,7 +9317,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "嵩",
@@ -9337,7 +9337,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "嶋",
@@ -9354,7 +9354,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "嶺",
@@ -9372,7 +9372,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "巌",
@@ -9393,7 +9393,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "山部（やま・やまへん・やまかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -9420,7 +9420,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "囗部（くにがまえ）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "囚",
@@ -9435,7 +9435,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "囗部（くにがまえ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "回",
@@ -9454,7 +9454,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "囗部（くにがまえ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "因",
@@ -9471,7 +9471,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "囗部（くにがまえ）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "団",
@@ -9487,7 +9487,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "囗部（くにがまえ）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "図",
@@ -9505,7 +9505,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "囗部（くにがまえ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "囲",
@@ -9523,7 +9523,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "囗部（くにがまえ）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "困",
@@ -9540,7 +9540,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "囗部（くにがまえ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "国",
@@ -9557,7 +9557,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "囗部（くにがまえ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "固",
@@ -9576,7 +9576,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "囗部（くにがまえ）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "圃",
@@ -9593,7 +9593,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "囗部（くにがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "圏",
@@ -9608,7 +9608,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "囗部（くにがまえ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "園",
@@ -9625,7 +9625,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "囗部（くにがまえ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       }
     ]
   },
@@ -9652,7 +9652,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "女部（おんな・おんなへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "奴",
@@ -9667,7 +9667,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "好",
@@ -9685,7 +9685,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "女部（おんな・おんなへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "如",
@@ -9701,7 +9701,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "妃",
@@ -9716,7 +9716,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "妄",
@@ -9732,7 +9732,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "妙",
@@ -9747,7 +9747,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "妨",
@@ -9764,7 +9764,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "妥",
@@ -9779,7 +9779,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "妊",
@@ -9794,7 +9794,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "妖",
@@ -9811,7 +9811,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "妓",
@@ -9830,7 +9830,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "姉",
@@ -9847,7 +9847,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "女部（おんな・おんなへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "妹",
@@ -9864,7 +9864,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "女部（おんな・おんなへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "委",
@@ -9881,7 +9881,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "女部（おんな・おんなへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "始",
@@ -9899,7 +9899,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "女部（おんな・おんなへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "妻",
@@ -9916,7 +9916,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "女部（おんな・おんなへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "姓",
@@ -9932,7 +9932,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "妬",
@@ -9949,7 +9949,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "姑",
@@ -9968,7 +9968,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "姐",
@@ -9988,7 +9988,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "妾",
@@ -10006,7 +10006,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "姿",
@@ -10023,7 +10023,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "女部（おんな・おんなへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "威",
@@ -10038,7 +10038,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "姻",
@@ -10053,7 +10053,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "娃",
@@ -10071,7 +10071,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "姶",
@@ -10088,7 +10088,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "姦",
@@ -10107,7 +10107,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "姪",
@@ -10124,7 +10124,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "姥",
@@ -10143,7 +10143,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "娘",
@@ -10158,7 +10158,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "娯",
@@ -10173,7 +10173,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "姫",
@@ -10188,7 +10188,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "娠",
@@ -10203,7 +10203,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "娩",
@@ -10221,7 +10221,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "婦",
@@ -10236,7 +10236,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "女部（おんな・おんなへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "婚",
@@ -10251,7 +10251,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "婆",
@@ -10266,7 +10266,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "娼",
@@ -10283,7 +10283,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "婁",
@@ -10302,7 +10302,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "婿",
@@ -10319,7 +10319,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "媒",
@@ -10334,7 +10334,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "媛",
@@ -10349,7 +10349,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "女部（おんな・おんなへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "嫁",
@@ -10367,7 +10367,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "嫌",
@@ -10386,7 +10386,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "嫉",
@@ -10401,7 +10401,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "嫡",
@@ -10416,7 +10416,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "嬉",
@@ -10435,7 +10435,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "嬢",
@@ -10450,7 +10450,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "嬰",
@@ -10470,7 +10470,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "嬬",
@@ -10488,7 +10488,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "女部（おんな・おんなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -10514,7 +10514,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "小部（しょう・しょうがしら・なおがしら）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "少",
@@ -10532,7 +10532,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "小部（しょう・しょうがしら・なおがしら）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "当",
@@ -10550,7 +10550,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "小部（しょう・しょうがしら・なおがしら）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "尖",
@@ -10569,7 +10569,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "小部（しょう・しょうがしら・なおがしら）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "尚",
@@ -10584,7 +10584,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "小部（しょう・しょうがしら・なおがしら）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "嘗",
@@ -10604,7 +10604,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "口部（くち・くちへん） 小部（しょう・しょうがしら・なおがしら）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -10628,7 +10628,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "夕部（ゆうべ・ゆう・た）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "外",
@@ -10649,7 +10649,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "夕部（ゆうべ・ゆう・た）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "多",
@@ -10666,7 +10666,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "夕部（ゆうべ・ゆう・た）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "夙",
@@ -10685,7 +10685,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "夕部（ゆうべ・ゆう・た） 几部（つくえ・きにょう・かぜかんむり・かぜがまえ・かざがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "夜",
@@ -10703,7 +10703,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "夕部（ゆうべ・ゆう・た）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "夢",
@@ -10720,7 +10720,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "夕部（ゆうべ・ゆう・た）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       }
     ]
   },
@@ -10744,7 +10744,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "巛・川部（かわ・まげかわ・まがりがわ）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "州",
@@ -10761,7 +10761,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "巛・川部（かわ・まげかわ・まがりがわ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "巡",
@@ -10778,7 +10778,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "巛・川部（かわ・まげかわ・まがりがわ） 辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -10805,7 +10805,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "大部（だい）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "天",
@@ -10823,7 +10823,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "大部（だい）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "太",
@@ -10842,7 +10842,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "大部（だい）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "夫",
@@ -10860,7 +10860,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "大部（だい）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "央",
@@ -10875,7 +10875,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "大部（だい）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "失",
@@ -10892,7 +10892,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "大部（だい）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "夷",
@@ -10913,7 +10913,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "大部（だい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "奇",
@@ -10928,7 +10928,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "大部（だい）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "奉",
@@ -10946,7 +10946,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "大部（だい）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "奔",
@@ -10961,7 +10961,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "大部（だい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "奈",
@@ -10976,7 +10976,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "大部（だい）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "奄",
@@ -10995,7 +10995,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "大部（だい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "奏",
@@ -11012,7 +11012,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "大部（だい）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "契",
@@ -11029,7 +11029,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "大部（だい）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "套",
@@ -11047,7 +11047,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "大部（だい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "爽",
@@ -11064,7 +11064,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "大部（だい） 爻部（こう・まじわる・めめ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "奥",
@@ -11081,7 +11081,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "大部（だい）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "奨",
@@ -11096,7 +11096,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "大部（だい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "奪",
@@ -11113,7 +11113,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "大部（だい）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "奮",
@@ -11130,7 +11130,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "大部（だい）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       }
     ]
   },
@@ -11155,7 +11155,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "圧",
@@ -11170,7 +11170,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "地",
@@ -11186,7 +11186,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "在",
@@ -11203,7 +11203,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "圭",
@@ -11220,7 +11220,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "坂",
@@ -11237,7 +11237,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "均",
@@ -11252,7 +11252,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "坊",
@@ -11268,7 +11268,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "坑",
@@ -11283,7 +11283,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "坐",
@@ -11305,7 +11305,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "垂",
@@ -11323,7 +11323,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "坪",
@@ -11338,7 +11338,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "尭",
@@ -11355,7 +11355,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "土部（つち・つちへん・どへん） 儿部（にんにょう・ひとあし）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "坤",
@@ -11373,7 +11373,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "坦",
@@ -11390,7 +11390,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "型",
@@ -11407,7 +11407,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "城",
@@ -11424,7 +11424,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "垣",
@@ -11439,7 +11439,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "垢",
@@ -11460,7 +11460,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "埋",
@@ -11479,7 +11479,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "堂",
@@ -11494,7 +11494,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "基",
@@ -11512,7 +11512,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "域",
@@ -11527,7 +11527,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "執",
@@ -11545,7 +11545,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "培",
@@ -11562,7 +11562,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "堀",
@@ -11577,7 +11577,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "埼",
@@ -11592,7 +11592,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "堆",
@@ -11607,7 +11607,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "埴",
@@ -11624,7 +11624,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "埠",
@@ -11642,7 +11642,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "場",
@@ -11659,7 +11659,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "報",
@@ -11676,7 +11676,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "堅",
@@ -11693,7 +11693,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "堤",
@@ -11710,7 +11710,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "塔",
@@ -11725,7 +11725,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "堪",
@@ -11742,7 +11742,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "堕",
@@ -11757,7 +11757,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "塚",
@@ -11772,7 +11772,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "塀",
@@ -11787,7 +11787,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "塁",
@@ -11802,7 +11802,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "堰",
@@ -11821,7 +11821,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "堺",
@@ -11838,7 +11838,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "堵",
@@ -11855,7 +11855,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "塩",
@@ -11872,7 +11872,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "墓",
@@ -11889,7 +11889,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "塊",
@@ -11906,7 +11906,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "塗",
@@ -11923,7 +11923,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "塑",
@@ -11938,7 +11938,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "塞",
@@ -11957,7 +11957,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "填",
@@ -11972,7 +11972,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "塙",
@@ -11991,7 +11991,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "塘",
@@ -12008,7 +12008,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "境",
@@ -12026,7 +12026,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "増",
@@ -12045,7 +12045,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "土部（つち・つちへん・どへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "墨",
@@ -12062,7 +12062,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "塾",
@@ -12077,7 +12077,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "塵",
@@ -12094,7 +12094,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "墜",
@@ -12109,7 +12109,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "墳",
@@ -12124,7 +12124,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "壊",
@@ -12142,7 +12142,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "壁",
@@ -12159,7 +12159,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "墾",
@@ -12174,7 +12174,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "壇",
@@ -12190,7 +12190,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "壌",
@@ -12205,7 +12205,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "壕",
@@ -12223,7 +12223,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "土部（つち・つちへん・どへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -12248,7 +12248,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "干部（かん・いちじゅう・ほす）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "平",
@@ -12267,7 +12267,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "干部（かん・いちじゅう・ほす）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "年",
@@ -12284,7 +12284,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "干部（かん・いちじゅう・ほす）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "幸",
@@ -12303,7 +12303,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "干部（かん・いちじゅう・ほす）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "幹",
@@ -12320,7 +12320,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "干部（かん・いちじゅう・ほす）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       }
     ]
   },
@@ -12344,7 +12344,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "引",
@@ -12362,7 +12362,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "弔",
@@ -12379,7 +12379,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "弘",
@@ -12398,7 +12398,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "弗",
@@ -12417,7 +12417,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "弛",
@@ -12437,7 +12437,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "弟",
@@ -12456,7 +12456,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "弦",
@@ -12473,7 +12473,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "弥",
@@ -12488,7 +12488,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "弧",
@@ -12503,7 +12503,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "弱",
@@ -12523,7 +12523,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "強",
@@ -12544,7 +12544,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "張",
@@ -12561,7 +12561,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "弾",
@@ -12580,7 +12580,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "弼",
@@ -12600,7 +12600,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "彊",
@@ -12619,7 +12619,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "弓部（ゆみ・ゆみへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -12644,7 +12644,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "込",
@@ -12660,7 +12660,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "巡",
@@ -12677,7 +12677,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "巛・川部（かわ・まげかわ・まがりがわ） 辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "迅",
@@ -12692,7 +12692,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "辻",
@@ -12707,7 +12707,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "近",
@@ -12724,7 +12724,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "返",
@@ -12742,7 +12742,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "迎",
@@ -12759,7 +12759,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "迂",
@@ -12777,7 +12777,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "迄",
@@ -12796,7 +12796,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "辿",
@@ -12813,7 +12813,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "述",
@@ -12830,7 +12830,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "迫",
@@ -12847,7 +12847,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "迭",
@@ -12862,7 +12862,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "送",
@@ -12879,7 +12879,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "追",
@@ -12896,7 +12896,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "逆",
@@ -12914,7 +12914,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "退",
@@ -12932,7 +12932,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "迷",
@@ -12949,7 +12949,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "逃",
@@ -12969,7 +12969,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "迦",
@@ -12984,7 +12984,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "通",
@@ -13004,7 +13004,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "速",
@@ -13024,7 +13024,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "連",
@@ -13043,7 +13043,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "造",
@@ -13060,7 +13060,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "途",
@@ -13075,7 +13075,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "透",
@@ -13094,7 +13094,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "逝",
@@ -13112,7 +13112,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "逐",
@@ -13127,7 +13127,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "逓",
@@ -13142,7 +13142,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "迺",
@@ -13162,7 +13162,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "週",
@@ -13177,7 +13177,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "進",
@@ -13195,7 +13195,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "逮",
@@ -13210,7 +13210,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "逸",
@@ -13225,7 +13225,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "這",
@@ -13244,7 +13244,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "逗",
@@ -13262,7 +13262,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "逢",
@@ -13281,7 +13281,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "道",
@@ -13299,7 +13299,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "運",
@@ -13316,7 +13316,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "遊",
@@ -13334,7 +13334,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "達",
@@ -13349,7 +13349,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "過",
@@ -13369,7 +13369,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "遅",
@@ -13388,7 +13388,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "遇",
@@ -13403,7 +13403,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "遂",
@@ -13420,7 +13420,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "遍",
@@ -13435,7 +13435,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "遥",
@@ -13455,7 +13455,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "遠",
@@ -13473,7 +13473,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "違",
@@ -13491,7 +13491,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "遣",
@@ -13509,7 +13509,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "遁",
@@ -13529,7 +13529,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "逼",
@@ -13547,7 +13547,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "適",
@@ -13562,7 +13562,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "遭",
@@ -13579,7 +13579,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "遮",
@@ -13596,7 +13596,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "遡",
@@ -13613,7 +13613,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "遜",
@@ -13628,7 +13628,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "選",
@@ -13645,7 +13645,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "遺",
@@ -13661,7 +13661,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "遵",
@@ -13676,7 +13676,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "遷",
@@ -13691,7 +13691,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "遼",
@@ -13708,7 +13708,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "避",
@@ -13725,7 +13725,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "還",
@@ -13740,7 +13740,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "辵部（しんにょう・しんにゅう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -13764,7 +13764,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "守",
@@ -13783,7 +13783,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "宇",
@@ -13798,7 +13798,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "宅",
@@ -13813,7 +13813,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "完",
@@ -13828,7 +13828,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "宏",
@@ -13846,7 +13846,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "宍",
@@ -13864,7 +13864,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "宋",
@@ -13879,7 +13879,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "実",
@@ -13897,7 +13897,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "定",
@@ -13917,7 +13917,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "官",
@@ -13932,7 +13932,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "宗",
@@ -13948,7 +13948,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "宙",
@@ -13963,7 +13963,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "宝",
@@ -13980,7 +13980,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "宜",
@@ -13995,7 +13995,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "宛",
@@ -14010,7 +14010,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "宕",
@@ -14028,7 +14028,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "室",
@@ -14045,7 +14045,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "客",
@@ -14061,7 +14061,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "宣",
@@ -14076,7 +14076,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "宥",
@@ -14094,7 +14094,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "家",
@@ -14113,7 +14113,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "宮",
@@ -14132,7 +14132,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "害",
@@ -14147,7 +14147,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "容",
@@ -14162,7 +14162,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "宴",
@@ -14177,7 +14177,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "宰",
@@ -14192,7 +14192,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "宵",
@@ -14209,7 +14209,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "宿",
@@ -14228,7 +14228,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "寄",
@@ -14246,7 +14246,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "密",
@@ -14261,7 +14261,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "寂",
@@ -14281,7 +14281,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "寅",
@@ -14299,7 +14299,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "寒",
@@ -14316,7 +14316,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "富",
@@ -14335,7 +14335,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "寓",
@@ -14356,7 +14356,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "寝",
@@ -14374,7 +14374,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "寛",
@@ -14389,7 +14389,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "察",
@@ -14404,7 +14404,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "宀部（うかんむり）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "寡",
@@ -14419,7 +14419,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "寧",
@@ -14434,7 +14434,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "審",
@@ -14449,7 +14449,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "寮",
@@ -14464,7 +14464,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "寵",
@@ -14483,7 +14483,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "宀部（うかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -14507,7 +14507,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "冫部（にすい） 夂・夊部（ふゆがしら・ち・すいにょう・なつあし）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "変",
@@ -14525,7 +14525,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "夂・夊部（ふゆがしら・ち・すいにょう・なつあし）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "夏",
@@ -14543,7 +14543,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "夂・夊部（ふゆがしら・ち・すいにょう・なつあし）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       }
     ]
   },
@@ -14565,7 +14565,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "市",
@@ -14582,7 +14582,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "布",
@@ -14599,7 +14599,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "匝",
@@ -14616,7 +14616,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "帆",
@@ -14633,7 +14633,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "希",
@@ -14648,7 +14648,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "帖",
@@ -14667,7 +14667,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "帝",
@@ -14682,7 +14682,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "帥",
@@ -14697,7 +14697,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "帰",
@@ -14715,7 +14715,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "巾部（はば・はばへん・きんべん） 刀部（かたな・りっとう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "席",
@@ -14730,7 +14730,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "帯",
@@ -14748,7 +14748,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "師",
@@ -14763,7 +14763,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "帳",
@@ -14778,7 +14778,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "常",
@@ -14796,7 +14796,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "幅",
@@ -14813,7 +14813,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "帽",
@@ -14828,7 +14828,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "幕",
@@ -14844,7 +14844,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "幌",
@@ -14861,7 +14861,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "幣",
@@ -14876,7 +14876,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "幡",
@@ -14897,7 +14897,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "巾部（はば・はばへん・きんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -14923,7 +14923,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "彡部（さんづくり）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "彦",
@@ -14940,7 +14940,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "彡部（さんづくり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "修",
@@ -14959,7 +14959,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "人部（ひと・にんべん・ひとがしら・ひとやね） 彡部（さんづくり）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "彩",
@@ -14976,7 +14976,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "彡部（さんづくり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "彫",
@@ -14993,7 +14993,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "彡部（さんづくり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "彪",
@@ -15012,7 +15012,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "彡部（さんづくり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "彬",
@@ -15029,7 +15029,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "彡部（さんづくり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "彰",
@@ -15044,7 +15044,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "彡部（さんづくり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "影",
@@ -15061,7 +15061,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "彡部（さんづくり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -15089,7 +15089,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "行部（ぎょう・ぎょうがまえ・ゆきがまえ） 彳部（ぎょうにんべん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "役",
@@ -15105,7 +15105,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "彳部（ぎょうにんべん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "径",
@@ -15120,7 +15120,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "彳部（ぎょうにんべん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "往",
@@ -15135,7 +15135,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "彳部（ぎょうにんべん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "征",
@@ -15150,7 +15150,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "彳部（ぎょうにんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "彼",
@@ -15168,7 +15168,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "彳部（ぎょうにんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "後",
@@ -15189,7 +15189,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "彳部（ぎょうにんべん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "待",
@@ -15206,7 +15206,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "彳部（ぎょうにんべん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "律",
@@ -15222,7 +15222,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "彳部（ぎょうにんべん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "徒",
@@ -15237,7 +15237,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "彳部（ぎょうにんべん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "従",
@@ -15257,7 +15257,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "彳部（ぎょうにんべん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "徐",
@@ -15272,7 +15272,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "彳部（ぎょうにんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "得",
@@ -15290,7 +15290,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "彳部（ぎょうにんべん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "復",
@@ -15305,7 +15305,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "彳部（ぎょうにんべん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "御",
@@ -15323,7 +15323,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "彳部（ぎょうにんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "循",
@@ -15338,7 +15338,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "彳部（ぎょうにんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "微",
@@ -15353,7 +15353,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "彳部（ぎょうにんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "徳",
@@ -15368,7 +15368,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "彳部（ぎょうにんべん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "徴",
@@ -15383,7 +15383,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "彳部（ぎょうにんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "徹",
@@ -15398,7 +15398,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "彳部（ぎょうにんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "徽",
@@ -15416,7 +15416,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "彳部（ぎょうにんべん） 糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -15444,7 +15444,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "广部（まだれ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "庁",
@@ -15459,7 +15459,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "广部（まだれ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "庄",
@@ -15478,7 +15478,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "序",
@@ -15493,7 +15493,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "广部（まだれ）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "床",
@@ -15511,7 +15511,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "庇",
@@ -15529,7 +15529,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "店",
@@ -15546,7 +15546,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "广部（まだれ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "底",
@@ -15563,7 +15563,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "广部（まだれ）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "府",
@@ -15578,7 +15578,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "广部（まだれ）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "庚",
@@ -15596,7 +15596,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "庖",
@@ -15613,7 +15613,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "度",
@@ -15632,7 +15632,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "广部（まだれ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "庫",
@@ -15648,7 +15648,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "广部（まだれ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "庭",
@@ -15665,7 +15665,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "广部（まだれ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "座",
@@ -15682,7 +15682,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "广部（まだれ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "康",
@@ -15697,7 +15697,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "广部（まだれ）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "庶",
@@ -15712,7 +15712,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "庸",
@@ -15727,7 +15727,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "庵",
@@ -15744,7 +15744,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "廊",
@@ -15759,7 +15759,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "廃",
@@ -15777,7 +15777,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "廉",
@@ -15792,7 +15792,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "廓",
@@ -15812,7 +15812,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "廐",
@@ -15829,7 +15829,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "廏",
@@ -15846,7 +15846,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "廠",
@@ -15864,7 +15864,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "廚",
@@ -15882,7 +15882,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "廟",
@@ -15901,7 +15901,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "广部（まだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -15923,7 +15923,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "寸部（すん・すんづくり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "寺",
@@ -15940,7 +15940,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "寸部（すん・すんづくり）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "対",
@@ -15956,7 +15956,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "寸部（すん・すんづくり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "寿",
@@ -15973,7 +15973,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "寸部（すん・すんづくり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "専",
@@ -15990,7 +15990,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "寸部（すん・すんづくり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "封",
@@ -16006,7 +16006,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "寸部（すん・すんづくり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "射",
@@ -16023,7 +16023,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "寸部（すん・すんづくり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "将",
@@ -16038,7 +16038,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "寸部（すん・すんづくり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "尉",
@@ -16053,7 +16053,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "寸部（すん・すんづくり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "尊",
@@ -16073,7 +16073,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "寸部（すん・すんづくり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "尋",
@@ -16090,7 +16090,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "寸部（すん・すんづくり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "導",
@@ -16107,7 +16107,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "寸部（すん・すんづくり）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       }
     ]
   },
@@ -16131,7 +16131,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "阪",
@@ -16146,7 +16146,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "阻",
@@ -16163,7 +16163,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "附",
@@ -16178,7 +16178,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "阜",
@@ -16193,7 +16193,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "阿",
@@ -16214,7 +16214,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "陀",
@@ -16230,7 +16230,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "限",
@@ -16247,7 +16247,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "院",
@@ -16262,7 +16262,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "降",
@@ -16281,7 +16281,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "除",
@@ -16299,7 +16299,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "陛",
@@ -16314,7 +16314,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "陣",
@@ -16329,7 +16329,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "陥",
@@ -16347,7 +16347,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "陸",
@@ -16362,7 +16362,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "険",
@@ -16379,7 +16379,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "陰",
@@ -16397,7 +16397,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "陳",
@@ -16412,7 +16412,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "陶",
@@ -16427,7 +16427,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "陪",
@@ -16442,7 +16442,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "隆",
@@ -16457,7 +16457,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "陵",
@@ -16474,7 +16474,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "階",
@@ -16489,7 +16489,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "陽",
@@ -16504,7 +16504,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "隊",
@@ -16519,7 +16519,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "随",
@@ -16534,7 +16534,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "隅",
@@ -16551,7 +16551,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "隔",
@@ -16569,7 +16569,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "隙",
@@ -16586,7 +16586,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "際",
@@ -16603,7 +16603,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "障",
@@ -16620,7 +16620,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "隠",
@@ -16638,7 +16638,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "隣",
@@ -16656,7 +16656,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "阜部（こざと・こざとへん・おか）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -16678,7 +16678,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "尼",
@@ -16695,7 +16695,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "尻",
@@ -16710,7 +16710,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "尽",
@@ -16729,7 +16729,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "局",
@@ -16744,7 +16744,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "尾",
@@ -16761,7 +16761,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "尿",
@@ -16776,7 +16776,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "居",
@@ -16793,7 +16793,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "届",
@@ -16809,7 +16809,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "屈",
@@ -16824,7 +16824,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "屋",
@@ -16841,7 +16841,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "屍",
@@ -16859,7 +16859,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "展",
@@ -16874,7 +16874,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "屑",
@@ -16892,7 +16892,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "属",
@@ -16907,7 +16907,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "屡",
@@ -16924,7 +16924,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "層",
@@ -16939,7 +16939,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "履",
@@ -16956,7 +16956,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "尸部（しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -16978,7 +16978,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "弋部（しきがまえ・よく）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "弐",
@@ -16993,7 +16993,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "弋部（しきがまえ・よく）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -17015,7 +17015,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "邑部（おおざと・むら）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "那",
@@ -17030,7 +17030,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "邑部（おおざと・むら）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "邑",
@@ -17051,7 +17051,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "邑部（おおざと・むら）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "邪",
@@ -17066,7 +17066,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "邑部（おおざと・むら）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "邸",
@@ -17081,7 +17081,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "邑部（おおざと・むら）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "郎",
@@ -17096,7 +17096,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "邑部（おおざと・むら）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "郊",
@@ -17111,7 +17111,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "邑部（おおざと・むら）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "郁",
@@ -17130,7 +17130,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "邑部（おおざと・むら）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "耶",
@@ -17147,7 +17147,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "邑部（おおざと・むら）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "郡",
@@ -17162,7 +17162,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "邑部（おおざと・むら）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "都",
@@ -17180,7 +17180,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "邑部（おおざと・むら）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "部",
@@ -17195,7 +17195,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "邑部（おおざと・むら）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "郷",
@@ -17211,7 +17211,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "邑部（おおざと・むら）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "郵",
@@ -17226,7 +17226,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "邑部（おおざと・むら）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "郭",
@@ -17241,7 +17241,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "邑部（おおざと・むら）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "鄭",
@@ -17259,7 +17259,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "邑部（おおざと・むら）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -17281,7 +17281,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "廴部（えんにょう・いんにょう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "延",
@@ -17300,7 +17300,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "廴部（えんにょう・いんにょう）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "建",
@@ -17319,7 +17319,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "廴部（えんにょう・いんにょう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "廻",
@@ -17340,7 +17340,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "廴部（えんにょう・いんにょう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "廼",
@@ -17360,7 +17360,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "廴部（えんにょう・いんにょう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -17382,7 +17382,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "⺍部（つ・つかんむり） 十部（じゅう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "巣",
@@ -17399,7 +17399,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "⺍部（つ・つかんむり） 木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "営",
@@ -17416,7 +17416,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "⺍部（つ・つかんむり） 口部（くち・くちへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "厳",
@@ -17435,7 +17435,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "⺍部（つ・つかんむり） 攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       }
     ]
   },
@@ -17459,7 +17459,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "十部（じゅう） 廾部（にじゅうあし・こまぬき）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "廿",
@@ -17476,7 +17476,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "十部（じゅう） 廾部（にじゅうあし・こまぬき）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "弁",
@@ -17491,7 +17491,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "廾部（にじゅうあし・こまぬき）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "弄",
@@ -17508,7 +17508,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "廾部（にじゅうあし・こまぬき）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "弊",
@@ -17523,7 +17523,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "廾部（にじゅうあし・こまぬき）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -17548,7 +17548,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "己部（おのれ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "巳",
@@ -17565,7 +17565,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "己部（おのれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "巴",
@@ -17583,7 +17583,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "己部（おのれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "巻",
@@ -17601,7 +17601,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "己部（おのれ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "巷",
@@ -17618,7 +17618,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "己部（おのれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "巽",
@@ -17636,7 +17636,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "己部（おのれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -17662,7 +17662,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "尢部（だいのまげあし・まげあし・おうにょう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "就",
@@ -17681,7 +17681,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "尢部（だいのまげあし・まげあし・おうにょう）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       }
     ]
   },
@@ -17705,7 +17705,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "幺部（いとがしら・よう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "幼",
@@ -17722,7 +17722,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "幺部（いとがしら・よう） 力部（ちから）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "幽",
@@ -17737,7 +17737,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "幺部（いとがしら・よう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "幾",
@@ -17754,7 +17754,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "幺部（いとがしら・よう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -17776,7 +17776,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "聿部（ふで・ふでづくり） 彑・彐部（けいがしら・いのこがしら）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "彙",
@@ -17791,7 +17791,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "彑・彐部（けいがしら・いのこがしら）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       }
     ]
   },
@@ -17815,7 +17815,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "犬部（いぬ・けものへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "犯",
@@ -17832,7 +17832,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "犬部（いぬ・けものへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "状",
@@ -17847,7 +17847,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "犬部（いぬ・けものへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "狂",
@@ -17865,7 +17865,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "狙",
@@ -17882,7 +17882,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "狗",
@@ -17900,7 +17900,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "狛",
@@ -17918,7 +17918,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "独",
@@ -17935,7 +17935,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "犬部（いぬ・けものへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "狭",
@@ -17954,7 +17954,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "狩",
@@ -17972,7 +17972,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "狐",
@@ -17989,7 +17989,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "狽",
@@ -18004,7 +18004,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "狸",
@@ -18021,7 +18021,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "猛",
@@ -18036,7 +18036,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "猟",
@@ -18051,7 +18051,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "猫",
@@ -18068,7 +18068,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "猪",
@@ -18086,7 +18086,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "猶",
@@ -18101,7 +18101,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "猿",
@@ -18118,7 +18118,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "献",
@@ -18134,7 +18134,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "獅",
@@ -18151,7 +18151,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "猷",
@@ -18170,7 +18170,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "獄",
@@ -18185,7 +18185,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "獲",
@@ -18202,7 +18202,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "獣",
@@ -18219,7 +18219,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "犬部（いぬ・けものへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -18241,7 +18241,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 3,
         busyu: "手部（て・てへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "手",
@@ -18259,7 +18259,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "手部（て・てへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "打",
@@ -18276,7 +18276,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "手部（て・てへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "払",
@@ -18293,7 +18293,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "扱",
@@ -18308,7 +18308,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "托",
@@ -18327,7 +18327,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "投",
@@ -18344,7 +18344,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "手部（て・てへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "折",
@@ -18363,7 +18363,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "手部（て・てへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "技",
@@ -18380,7 +18380,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "手部（て・てへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "批",
@@ -18395,7 +18395,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "手部（て・てへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "抗",
@@ -18410,7 +18410,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "抜",
@@ -18430,7 +18430,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "択",
@@ -18445,7 +18445,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "抑",
@@ -18462,7 +18462,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "抄",
@@ -18477,7 +18477,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "把",
@@ -18492,7 +18492,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "扶",
@@ -18507,7 +18507,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "扮",
@@ -18526,7 +18526,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "承",
@@ -18543,7 +18543,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "招",
@@ -18560,7 +18560,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "拡",
@@ -18575,7 +18575,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "担",
@@ -18593,7 +18593,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "拝",
@@ -18610,7 +18610,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "押",
@@ -18628,7 +18628,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "拠",
@@ -18644,7 +18644,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "拓",
@@ -18659,7 +18659,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "抵",
@@ -18674,7 +18674,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "拍",
@@ -18690,7 +18690,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "抱",
@@ -18709,7 +18709,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "拘",
@@ -18724,7 +18724,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "抽",
@@ -18739,7 +18739,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "拐",
@@ -18754,7 +18754,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "拒",
@@ -18771,7 +18771,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "拙",
@@ -18788,7 +18788,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "披",
@@ -18803,7 +18803,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "抹",
@@ -18818,7 +18818,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "拉",
@@ -18833,7 +18833,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "指",
@@ -18851,7 +18851,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "手部（て・てへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "持",
@@ -18868,7 +18868,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "手部（て・てへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "拾",
@@ -18886,7 +18886,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "手部（て・てへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "括",
@@ -18901,7 +18901,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "挟",
@@ -18919,7 +18919,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "拷",
@@ -18934,7 +18934,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "挑",
@@ -18951,7 +18951,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "拶",
@@ -18966,7 +18966,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "拭",
@@ -18984,7 +18984,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "按",
@@ -19003,7 +19003,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "挙",
@@ -19021,7 +19021,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "手部（て・てへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "振",
@@ -19040,7 +19040,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "捕",
@@ -19061,7 +19061,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "捜",
@@ -19078,7 +19078,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "挿",
@@ -19095,7 +19095,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "挨",
@@ -19110,7 +19110,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "拳",
@@ -19127,7 +19127,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "挫",
@@ -19142,7 +19142,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "捉",
@@ -19159,7 +19159,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "捗",
@@ -19174,7 +19174,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "挺",
@@ -19193,7 +19193,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "捌",
@@ -19215,7 +19215,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "挽",
@@ -19232,7 +19232,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "採",
@@ -19249,7 +19249,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "授",
@@ -19267,7 +19267,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "接",
@@ -19284,7 +19284,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "捨",
@@ -19301,7 +19301,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "推",
@@ -19318,7 +19318,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "探",
@@ -19336,7 +19336,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "掘",
@@ -19353,7 +19353,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "描",
@@ -19371,7 +19371,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "掛",
@@ -19388,7 +19388,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "掲",
@@ -19405,7 +19405,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "控",
@@ -19422,7 +19422,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "措",
@@ -19437,7 +19437,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "掃",
@@ -19454,7 +19454,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "排",
@@ -19469,7 +19469,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "据",
@@ -19485,7 +19485,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "捻",
@@ -19500,7 +19500,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "掩",
@@ -19519,7 +19519,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "掴",
@@ -19536,7 +19536,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "掬",
@@ -19554,7 +19554,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "捲",
@@ -19573,7 +19573,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "捷",
@@ -19591,7 +19591,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "掻",
@@ -19608,7 +19608,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "捺",
@@ -19626,7 +19626,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "捧",
@@ -19644,7 +19644,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "掠",
@@ -19666,7 +19666,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "提",
@@ -19683,7 +19683,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "手部（て・てへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "揮",
@@ -19698,7 +19698,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "手部（て・てへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "握",
@@ -19715,7 +19715,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "援",
@@ -19730,7 +19730,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "換",
@@ -19748,7 +19748,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "掌",
@@ -19763,7 +19763,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "揚",
@@ -19781,7 +19781,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "揺",
@@ -19804,7 +19804,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "搭",
@@ -19819,7 +19819,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "揖",
@@ -19838,7 +19838,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "揃",
@@ -19857,7 +19857,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "損",
@@ -19875,7 +19875,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "手部（て・てへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "搬",
@@ -19890,7 +19890,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "携",
@@ -19908,7 +19908,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "搾",
@@ -19925,7 +19925,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "摂",
@@ -19940,7 +19940,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "摸",
@@ -19960,7 +19960,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "摘",
@@ -19977,7 +19977,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "摺",
@@ -19998,7 +19998,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "撃",
@@ -20015,7 +20015,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "撮",
@@ -20032,7 +20032,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "撤",
@@ -20047,7 +20047,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "撲",
@@ -20062,7 +20062,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "摩",
@@ -20077,7 +20077,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "摯",
@@ -20092,7 +20092,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "撹",
@@ -20111,7 +20111,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "撒",
@@ -20129,7 +20129,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "撰",
@@ -20147,7 +20147,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "撞",
@@ -20166,7 +20166,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "撚",
@@ -20186,7 +20186,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "播",
@@ -20205,7 +20205,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "撫",
@@ -20223,7 +20223,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "操",
@@ -20241,7 +20241,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "手部（て・てへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "擁",
@@ -20256,7 +20256,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "擦",
@@ -20274,7 +20274,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "擬",
@@ -20289,7 +20289,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "擢",
@@ -20308,7 +20308,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "擾",
@@ -20328,7 +20328,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "攪",
@@ -20347,7 +20347,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 23,
         busyu: "手部（て・てへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -20371,7 +20371,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "氷",
@@ -20389,7 +20389,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "永",
@@ -20406,7 +20406,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "汁",
@@ -20423,7 +20423,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "氾",
@@ -20438,7 +20438,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "汀",
@@ -20456,7 +20456,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "池",
@@ -20473,7 +20473,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "汚",
@@ -20495,7 +20495,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "汗",
@@ -20512,7 +20512,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "江",
@@ -20529,7 +20529,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "汎",
@@ -20544,7 +20544,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "汝",
@@ -20561,7 +20561,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "汐",
@@ -20579,7 +20579,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "汽",
@@ -20594,7 +20594,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "決",
@@ -20612,7 +20612,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "求",
@@ -20629,7 +20629,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "沢",
@@ -20646,7 +20646,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "沖",
@@ -20663,7 +20663,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "沈",
@@ -20681,7 +20681,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "没",
@@ -20696,7 +20696,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "沙",
@@ -20711,7 +20711,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "汰",
@@ -20726,7 +20726,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "沃",
@@ -20741,7 +20741,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "汲",
@@ -20759,7 +20759,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "沌",
@@ -20776,7 +20776,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "泳",
@@ -20793,7 +20793,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "注",
@@ -20810,7 +20810,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "波",
@@ -20827,7 +20827,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "油",
@@ -20844,7 +20844,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "泣",
@@ -20861,7 +20861,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "治",
@@ -20882,7 +20882,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "法",
@@ -20899,7 +20899,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "河",
@@ -20916,7 +20916,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "沿",
@@ -20933,7 +20933,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "況",
@@ -20948,7 +20948,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "沼",
@@ -20965,7 +20965,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "泊",
@@ -20983,7 +20983,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "泌",
@@ -20999,7 +20999,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "泥",
@@ -21016,7 +21016,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "沸",
@@ -21034,7 +21034,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "泡",
@@ -21051,7 +21051,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "沓",
@@ -21070,7 +21070,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "曰部（いわく・ひらび） 水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "沫",
@@ -21088,7 +21088,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "海",
@@ -21105,7 +21105,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "活",
@@ -21120,7 +21120,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "洋",
@@ -21135,7 +21135,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "浅",
@@ -21152,7 +21152,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "泉",
@@ -21169,7 +21169,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "洗",
@@ -21186,7 +21186,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "派",
@@ -21201,7 +21201,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "洪",
@@ -21216,7 +21216,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "浄",
@@ -21231,7 +21231,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "津",
@@ -21248,7 +21248,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "洞",
@@ -21265,7 +21265,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "洩",
@@ -21284,7 +21284,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "洲",
@@ -21302,7 +21302,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "洛",
@@ -21320,7 +21320,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "消",
@@ -21338,7 +21338,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "流",
@@ -21357,7 +21357,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "浴",
@@ -21375,7 +21375,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "浸",
@@ -21393,7 +21393,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "浜",
@@ -21410,7 +21410,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "浮",
@@ -21430,7 +21430,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "涙",
@@ -21447,7 +21447,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "浪",
@@ -21462,7 +21462,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "泰",
@@ -21477,7 +21477,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "浦",
@@ -21492,7 +21492,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "浩",
@@ -21512,7 +21512,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "涛",
@@ -21529,7 +21529,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "涜",
@@ -21549,7 +21549,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "涌",
@@ -21567,7 +21567,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "浬",
@@ -21585,7 +21585,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "深",
@@ -21604,7 +21604,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "清",
@@ -21624,7 +21624,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "液",
@@ -21639,7 +21639,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "混",
@@ -21659,7 +21659,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "済",
@@ -21677,7 +21677,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "淡",
@@ -21694,7 +21694,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "添",
@@ -21712,7 +21712,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "涯",
@@ -21727,7 +21727,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "渇",
@@ -21744,7 +21744,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "渓",
@@ -21759,7 +21759,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "渋",
@@ -21778,7 +21778,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "淑",
@@ -21793,7 +21793,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "渉",
@@ -21808,7 +21808,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "涼",
@@ -21826,7 +21826,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "淫",
@@ -21843,7 +21843,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "淳",
@@ -21861,7 +21861,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "渚",
@@ -21879,7 +21879,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "淀",
@@ -21898,7 +21898,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "淘",
@@ -21915,7 +21915,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "淋",
@@ -21935,7 +21935,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "温",
@@ -21955,7 +21955,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "湖",
@@ -21972,7 +21972,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "港",
@@ -21989,7 +21989,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "湯",
@@ -22006,7 +22006,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "満",
@@ -22024,7 +22024,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "減",
@@ -22042,7 +22042,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "測",
@@ -22059,7 +22059,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "渡",
@@ -22077,7 +22077,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "湿",
@@ -22095,7 +22095,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "湾",
@@ -22110,7 +22110,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "渦",
@@ -22127,7 +22127,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "滋",
@@ -22142,7 +22142,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "湧",
@@ -22159,7 +22159,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "渥",
@@ -22178,7 +22178,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "淵",
@@ -22197,7 +22197,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "渠",
@@ -22218,7 +22218,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "湘",
@@ -22233,7 +22233,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "湊",
@@ -22251,7 +22251,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "湛",
@@ -22273,7 +22273,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "溌",
@@ -22291,7 +22291,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "漢",
@@ -22306,7 +22306,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "準",
@@ -22321,7 +22321,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "源",
@@ -22338,7 +22338,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "溶",
@@ -22357,7 +22357,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "滑",
@@ -22376,7 +22376,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "滞",
@@ -22393,7 +22393,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "滝",
@@ -22408,7 +22408,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "滅",
@@ -22426,7 +22426,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "溝",
@@ -22443,7 +22443,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "漠",
@@ -22458,7 +22458,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "溺",
@@ -22475,7 +22475,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "溢",
@@ -22496,7 +22496,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "溜",
@@ -22516,7 +22516,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "漁",
@@ -22532,7 +22532,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "演",
@@ -22547,7 +22547,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "滴",
@@ -22565,7 +22565,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "漫",
@@ -22580,7 +22580,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "漂",
@@ -22597,7 +22597,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "漏",
@@ -22616,7 +22616,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "漆",
@@ -22633,7 +22633,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "漸",
@@ -22648,7 +22648,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "漬",
@@ -22664,7 +22664,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "潅",
@@ -22681,7 +22681,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "漕",
@@ -22699,7 +22699,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "潔",
@@ -22716,7 +22716,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "潮",
@@ -22733,7 +22733,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "澄",
@@ -22751,7 +22751,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "潤",
@@ -22770,7 +22770,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "潜",
@@ -22788,7 +22788,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "潟",
@@ -22803,7 +22803,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "潰",
@@ -22821,7 +22821,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "漑",
@@ -22840,7 +22840,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "澗",
@@ -22859,7 +22859,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "潴",
@@ -22877,7 +22877,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "激",
@@ -22894,7 +22894,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "水部（みず・さんずい・したみず）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "濁",
@@ -22912,7 +22912,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "濃",
@@ -22929,7 +22929,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "澱",
@@ -22949,7 +22949,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "濯",
@@ -22964,7 +22964,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "濠",
@@ -22981,7 +22981,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "濡",
@@ -23000,7 +23000,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "濤",
@@ -23017,7 +23017,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "濫",
@@ -23032,7 +23032,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "瀬",
@@ -23047,7 +23047,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "瀞",
@@ -23065,7 +23065,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "瀦",
@@ -23083,7 +23083,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "瀕",
@@ -23102,7 +23102,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "灌",
@@ -23119,7 +23119,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "灘",
@@ -23138,7 +23138,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 22,
         busyu: "水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -23162,7 +23162,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "必",
@@ -23179,7 +23179,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "忙",
@@ -23196,7 +23196,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "応",
@@ -23213,7 +23213,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "快",
@@ -23230,7 +23230,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "志",
@@ -23248,7 +23248,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "忘",
@@ -23265,7 +23265,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "忌",
@@ -23283,7 +23283,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "忍",
@@ -23301,7 +23301,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "念",
@@ -23316,7 +23316,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "性",
@@ -23332,7 +23332,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "忠",
@@ -23347,7 +23347,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "怖",
@@ -23364,7 +23364,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "怪",
@@ -23382,7 +23382,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "怯",
@@ -23402,7 +23402,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "忽",
@@ -23420,7 +23420,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "怜",
@@ -23439,7 +23439,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "急",
@@ -23456,7 +23456,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "恒",
@@ -23471,7 +23471,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "怒",
@@ -23489,7 +23489,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "悔",
@@ -23508,7 +23508,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "恨",
@@ -23526,7 +23526,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "怠",
@@ -23544,7 +23544,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "怨",
@@ -23560,7 +23560,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "思",
@@ -23577,7 +23577,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "恢",
@@ -23595,7 +23595,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "恰",
@@ -23613,7 +23613,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "息",
@@ -23630,7 +23630,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "恩",
@@ -23645,7 +23645,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "恐",
@@ -23663,7 +23663,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "恵",
@@ -23681,7 +23681,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "恥",
@@ -23701,7 +23701,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "悩",
@@ -23719,7 +23719,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "恋",
@@ -23738,7 +23738,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "悦",
@@ -23753,7 +23753,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "悟",
@@ -23770,7 +23770,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "恭",
@@ -23787,7 +23787,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "恣",
@@ -23802,7 +23802,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "恕",
@@ -23821,7 +23821,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "悌",
@@ -23837,7 +23837,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "悪",
@@ -23855,7 +23855,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "情",
@@ -23873,7 +23873,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "惨",
@@ -23891,7 +23891,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "惜",
@@ -23909,7 +23909,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "患",
@@ -23926,7 +23926,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "悼",
@@ -23943,7 +23943,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "悠",
@@ -23958,7 +23958,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "惧",
@@ -23973,7 +23973,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "惟",
@@ -23995,7 +23995,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "惚",
@@ -24015,7 +24015,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "悉",
@@ -24034,7 +24034,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "惇",
@@ -24053,7 +24053,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "悲",
@@ -24071,7 +24071,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "惑",
@@ -24088,7 +24088,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "慌",
@@ -24106,7 +24106,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "惰",
@@ -24121,7 +24121,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "愉",
@@ -24136,7 +24136,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "惹",
@@ -24155,7 +24155,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "惣",
@@ -24172,7 +24172,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "悶",
@@ -24189,7 +24189,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "意",
@@ -24204,7 +24204,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "感",
@@ -24219,7 +24219,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "想",
@@ -24235,7 +24235,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "愛",
@@ -24250,7 +24250,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "慎",
@@ -24267,7 +24267,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "慨",
@@ -24282,7 +24282,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "愚",
@@ -24299,7 +24299,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "慈",
@@ -24316,7 +24316,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "愁",
@@ -24334,7 +24334,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "慄",
@@ -24349,7 +24349,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "愈",
@@ -24369,7 +24369,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "慣",
@@ -24387,7 +24387,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "態",
@@ -24402,7 +24402,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "慢",
@@ -24417,7 +24417,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "憎",
@@ -24437,7 +24437,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "慕",
@@ -24454,7 +24454,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "慮",
@@ -24469,7 +24469,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "慰",
@@ -24487,7 +24487,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "憂",
@@ -24506,7 +24506,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "慶",
@@ -24521,7 +24521,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "憤",
@@ -24538,7 +24538,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "憬",
@@ -24553,7 +24553,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "憧",
@@ -24570,7 +24570,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "慧",
@@ -24589,7 +24589,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "慾",
@@ -24606,7 +24606,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "憲",
@@ -24621,7 +24621,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "憶",
@@ -24636,7 +24636,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "憩",
@@ -24654,7 +24654,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "懐",
@@ -24675,7 +24675,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "憾",
@@ -24690,7 +24690,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "懇",
@@ -24707,7 +24707,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "懲",
@@ -24726,7 +24726,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "懸",
@@ -24745,7 +24745,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "心部（こころ・したごころ・りっしんべん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -24767,7 +24767,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "芝",
@@ -24782,7 +24782,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "花",
@@ -24799,7 +24799,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "芸",
@@ -24814,7 +24814,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "芳",
@@ -24831,7 +24831,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "芯",
@@ -24846,7 +24846,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "芥",
@@ -24865,7 +24865,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "苅",
@@ -24883,7 +24883,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "芹",
@@ -24900,7 +24900,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "芭",
@@ -24916,7 +24916,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "芙",
@@ -24933,7 +24933,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "苦",
@@ -24954,7 +24954,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "英",
@@ -24969,7 +24969,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "芽",
@@ -24986,7 +24986,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "若",
@@ -25005,7 +25005,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "茂",
@@ -25022,7 +25022,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "苗",
@@ -25040,7 +25040,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "茎",
@@ -25057,7 +25057,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "苛",
@@ -25072,7 +25072,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "苑",
@@ -25092,7 +25092,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "茄",
@@ -25111,7 +25111,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "苫",
@@ -25129,7 +25129,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "苒",
@@ -25148,7 +25148,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "苔",
@@ -25165,7 +25165,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "苧",
@@ -25183,7 +25183,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "茅",
@@ -25202,7 +25202,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "苓",
@@ -25220,7 +25220,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "草",
@@ -25237,7 +25237,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "茶",
@@ -25253,7 +25253,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "荒",
@@ -25272,7 +25272,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "荘",
@@ -25287,7 +25287,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "茨",
@@ -25302,7 +25302,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "荊",
@@ -25320,7 +25320,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "茸",
@@ -25340,7 +25340,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "荏",
@@ -25359,7 +25359,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "茜",
@@ -25376,7 +25376,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "荷",
@@ -25393,7 +25393,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "華",
@@ -25411,7 +25411,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "莞",
@@ -25430,7 +25430,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "荻",
@@ -25447,7 +25447,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "莵",
@@ -25464,7 +25464,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "莫",
@@ -25487,7 +25487,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "莱",
@@ -25505,7 +25505,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "菜",
@@ -25522,7 +25522,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "著",
@@ -25540,7 +25540,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "菓",
@@ -25555,7 +25555,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "菊",
@@ -25570,7 +25570,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "菌",
@@ -25585,7 +25585,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "萎",
@@ -25602,7 +25602,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "菅",
@@ -25620,7 +25620,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "菖",
@@ -25637,7 +25637,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "萄",
@@ -25653,7 +25653,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "菩",
@@ -25669,7 +25669,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "萌",
@@ -25693,7 +25693,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "萠",
@@ -25717,7 +25717,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "菱",
@@ -25734,7 +25734,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "葉",
@@ -25751,7 +25751,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "落",
@@ -25769,7 +25769,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "葬",
@@ -25786,7 +25786,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "葛",
@@ -25803,7 +25803,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "萱",
@@ -25822,7 +25822,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "葵",
@@ -25839,7 +25839,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "韮",
@@ -25856,7 +25856,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう） 韭部（にら）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "菰",
@@ -25874,7 +25874,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "萩",
@@ -25891,7 +25891,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "葺",
@@ -25909,7 +25909,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "葱",
@@ -25928,7 +25928,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "菟",
@@ -25945,7 +25945,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "董",
@@ -25962,7 +25962,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "葡",
@@ -25978,7 +25978,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "葎",
@@ -25995,7 +25995,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蒸",
@@ -26014,7 +26014,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "蓄",
@@ -26031,7 +26031,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "蓋",
@@ -26048,7 +26048,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "葦",
@@ -26066,7 +26066,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蓑",
@@ -26084,7 +26084,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蒜",
@@ -26102,7 +26102,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蒔",
@@ -26121,7 +26121,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蒐",
@@ -26139,7 +26139,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蒋",
@@ -26156,7 +26156,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蒼",
@@ -26175,7 +26175,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蒲",
@@ -26196,7 +26196,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蒙",
@@ -26216,7 +26216,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蓉",
@@ -26231,7 +26231,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蔑",
@@ -26248,7 +26248,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "蔚",
@@ -26264,7 +26264,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蔭",
@@ -26285,7 +26285,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蔦",
@@ -26302,7 +26302,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蔓",
@@ -26321,7 +26321,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蔀",
@@ -26340,7 +26340,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蓬",
@@ -26357,7 +26357,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蔵",
@@ -26374,7 +26374,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "蔽",
@@ -26389,7 +26389,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "蕎",
@@ -26404,7 +26404,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蕨",
@@ -26421,7 +26421,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蕉",
@@ -26436,7 +26436,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蕊",
@@ -26453,7 +26453,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蕋",
@@ -26470,7 +26470,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蕩",
@@ -26492,7 +26492,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蕃",
@@ -26513,7 +26513,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蕪",
@@ -26535,7 +26535,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "薬",
@@ -26552,7 +26552,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "薪",
@@ -26569,7 +26569,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "薄",
@@ -26590,7 +26590,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "薫",
@@ -26607,7 +26607,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "薦",
@@ -26624,7 +26624,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "薗",
@@ -26643,7 +26643,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "薮",
@@ -26661,7 +26661,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "薙",
@@ -26681,7 +26681,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "藁",
@@ -26698,7 +26698,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "薩",
@@ -26713,7 +26713,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "薯",
@@ -26731,7 +26731,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "藩",
@@ -26746,7 +26746,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "藤",
@@ -26763,7 +26763,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "藍",
@@ -26780,7 +26780,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "藪",
@@ -26798,7 +26798,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "藻",
@@ -26815,7 +26815,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "藷",
@@ -26833,7 +26833,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蘇",
@@ -26851,7 +26851,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蘂",
@@ -26868,7 +26868,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蘭",
@@ -26886,7 +26886,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "艸部（くさ・くさかんむり・そうこう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -26911,7 +26911,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "灯",
@@ -26928,7 +26928,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "灰",
@@ -26945,7 +26945,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "災",
@@ -26962,7 +26962,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "灸",
@@ -26979,7 +26979,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "灼",
@@ -26999,7 +26999,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "炎",
@@ -27016,7 +27016,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "炊",
@@ -27033,7 +27033,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "炉",
@@ -27048,7 +27048,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "点",
@@ -27063,7 +27063,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "炭",
@@ -27080,7 +27080,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "為",
@@ -27095,7 +27095,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "烈",
@@ -27110,7 +27110,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "烏",
@@ -27131,7 +27131,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "焔",
@@ -27149,7 +27149,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "烹",
@@ -27166,7 +27166,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "焼",
@@ -27184,7 +27184,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "然",
@@ -27200,7 +27200,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "無",
@@ -27218,7 +27218,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "煮",
@@ -27237,7 +27237,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "焦",
@@ -27257,7 +27257,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "焚",
@@ -27276,7 +27276,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "照",
@@ -27295,7 +27295,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "煙",
@@ -27314,7 +27314,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "煩",
@@ -27333,7 +27333,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "煎",
@@ -27350,7 +27350,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "煤",
@@ -27368,7 +27368,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "熊",
@@ -27383,7 +27383,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "煽",
@@ -27403,7 +27403,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "熔",
@@ -27423,7 +27423,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "熱",
@@ -27440,7 +27440,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "熟",
@@ -27457,7 +27457,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "勲",
@@ -27472,7 +27472,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "力部（ちから） 火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "燃",
@@ -27491,7 +27491,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "燕",
@@ -27510,7 +27510,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "燥",
@@ -27525,7 +27525,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "燦",
@@ -27544,7 +27544,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "燭",
@@ -27562,7 +27562,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "燐",
@@ -27577,7 +27577,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "爆",
@@ -27592,7 +27592,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "火部（ひ・ひへん・れっか・れんが）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -27618,7 +27618,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "木部（き・きへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "本",
@@ -27635,7 +27635,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "木部（き・きへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "札",
@@ -27652,7 +27652,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "末",
@@ -27670,7 +27670,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "未",
@@ -27685,7 +27685,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "机",
@@ -27702,7 +27702,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "木部（き・きへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "朽",
@@ -27719,7 +27719,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "朱",
@@ -27734,7 +27734,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "朴",
@@ -27749,7 +27749,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "村",
@@ -27766,7 +27766,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "木部（き・きへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "来",
@@ -27785,7 +27785,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "木部（き・きへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "材",
@@ -27800,7 +27800,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "束",
@@ -27817,7 +27817,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "条",
@@ -27832,7 +27832,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "木部（き・きへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "杉",
@@ -27847,7 +27847,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "杏",
@@ -27865,7 +27865,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "杓",
@@ -27884,7 +27884,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "杖",
@@ -27901,7 +27901,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "杜",
@@ -27922,7 +27922,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "杢",
@@ -27937,7 +27937,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "李",
@@ -27954,7 +27954,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "林",
@@ -27971,7 +27971,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "東",
@@ -27988,7 +27988,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "板",
@@ -28006,7 +28006,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "果",
@@ -28025,7 +28025,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "松",
@@ -28042,7 +28042,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "枝",
@@ -28059,7 +28059,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "枚",
@@ -28074,7 +28074,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "杯",
@@ -28091,7 +28091,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "枢",
@@ -28106,7 +28106,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "析",
@@ -28121,7 +28121,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "枠",
@@ -28136,7 +28136,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "枕",
@@ -28151,7 +28151,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "杭",
@@ -28169,7 +28169,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "杵",
@@ -28186,7 +28186,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "杷",
@@ -28203,7 +28203,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "枇",
@@ -28222,7 +28222,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "柱",
@@ -28239,7 +28239,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "栄",
@@ -28258,7 +28258,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "査",
@@ -28273,7 +28273,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "染",
@@ -28293,7 +28293,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "枯",
@@ -28311,7 +28311,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "柔",
@@ -28330,7 +28330,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "柄",
@@ -28348,7 +28348,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "架",
@@ -28366,7 +28366,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "某",
@@ -28381,7 +28381,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "柳",
@@ -28398,7 +28398,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "柿",
@@ -28413,7 +28413,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "柵",
@@ -28428,7 +28428,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "栃",
@@ -28443,7 +28443,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "柑",
@@ -28461,7 +28461,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "柘",
@@ -28479,7 +28479,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "柊",
@@ -28496,7 +28496,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "柁",
@@ -28514,7 +28514,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "栂",
@@ -28532,7 +28532,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "柏",
@@ -28551,7 +28551,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "柾",
@@ -28567,7 +28567,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "柚",
@@ -28587,7 +28587,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "校",
@@ -28602,7 +28602,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "根",
@@ -28619,7 +28619,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "案",
@@ -28634,7 +28634,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "梅",
@@ -28651,7 +28651,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "桜",
@@ -28668,7 +28668,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "格",
@@ -28684,7 +28684,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "株",
@@ -28699,7 +28699,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "桃",
@@ -28716,7 +28716,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "桑",
@@ -28733,7 +28733,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "核",
@@ -28748,7 +28748,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "栽",
@@ -28763,7 +28763,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "桟",
@@ -28778,7 +28778,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "栓",
@@ -28793,7 +28793,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "桁",
@@ -28808,7 +28808,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "桧",
@@ -28826,7 +28826,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "桓",
@@ -28841,7 +28841,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "桔",
@@ -28857,7 +28857,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "桂",
@@ -28874,7 +28874,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "柴",
@@ -28892,7 +28892,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "栖",
@@ -28912,7 +28912,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "栴",
@@ -28927,7 +28927,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "桐",
@@ -28945,7 +28945,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "栗",
@@ -28965,7 +28965,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "械",
@@ -28980,7 +28980,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "巣",
@@ -28997,7 +28997,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "⺍部（つ・つかんむり） 木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "梗",
@@ -29012,7 +29012,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "梨",
@@ -29027,7 +29027,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "梧",
@@ -29044,7 +29044,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "梱",
@@ -29063,7 +29063,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "梓",
@@ -29081,7 +29081,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "梢",
@@ -29099,7 +29099,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "梯",
@@ -29117,7 +29117,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "桶",
@@ -29134,7 +29134,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "梼",
@@ -29152,7 +29152,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "梶",
@@ -29170,7 +29170,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "椛",
@@ -29186,7 +29186,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "梁",
@@ -29206,7 +29206,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "森",
@@ -29223,7 +29223,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "木部（き・きへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "植",
@@ -29241,7 +29241,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "木部（き・きへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "極",
@@ -29261,7 +29261,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "検",
@@ -29276,7 +29276,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "木部（き・きへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "棒",
@@ -29291,7 +29291,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "木部（き・きへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "棋",
@@ -29306,7 +29306,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "棺",
@@ -29321,7 +29321,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "棚",
@@ -29336,7 +29336,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "棟",
@@ -29354,7 +29354,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "椅",
@@ -29369,7 +29369,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "椎",
@@ -29384,7 +29384,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "椙",
@@ -29399,7 +29399,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "棲",
@@ -29418,7 +29418,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "棉",
@@ -29435,7 +29435,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "椋",
@@ -29452,7 +29452,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "楽",
@@ -29471,7 +29471,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "木部（き・きへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "業",
@@ -29489,7 +29489,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "木部（き・きへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "棄",
@@ -29504,7 +29504,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "楼",
@@ -29519,7 +29519,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "楷",
@@ -29534,7 +29534,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "楢",
@@ -29552,7 +29552,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "楯",
@@ -29569,7 +29569,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "楚",
@@ -29589,7 +29589,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "楕",
@@ -29605,7 +29605,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "椴",
@@ -29624,7 +29624,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "椿",
@@ -29641,7 +29641,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "楠",
@@ -29658,7 +29658,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "楳",
@@ -29675,7 +29675,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "楓",
@@ -29692,7 +29692,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "楊",
@@ -29709,7 +29709,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "様",
@@ -29726,7 +29726,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "木部（き・きへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "構",
@@ -29744,7 +29744,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "木部（き・きへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "模",
@@ -29760,7 +29760,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "木部（き・きへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "概",
@@ -29775,7 +29775,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "榎",
@@ -29792,7 +29792,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "樺",
@@ -29809,7 +29809,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "榊",
@@ -29824,7 +29824,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "榛",
@@ -29842,7 +29842,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "槙",
@@ -29860,7 +29860,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "槍",
@@ -29877,7 +29877,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "槌",
@@ -29895,7 +29895,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "横",
@@ -29912,7 +29912,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "木部（き・きへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "標",
@@ -29927,7 +29927,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "権",
@@ -29943,7 +29943,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "木部（き・きへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "槽",
@@ -29958,7 +29958,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "槻",
@@ -29975,7 +29975,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "樟",
@@ -29993,7 +29993,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "樗",
@@ -30010,7 +30010,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "樋",
@@ -30028,7 +30028,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "橋",
@@ -30045,7 +30045,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "木部（き・きへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "機",
@@ -30062,7 +30062,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "木部（き・きへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "樹",
@@ -30077,7 +30077,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "木部（き・きへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "樫",
@@ -30092,7 +30092,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "橘",
@@ -30109,7 +30109,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "樵",
@@ -30128,7 +30128,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "橡",
@@ -30148,7 +30148,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "樽",
@@ -30165,7 +30165,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "橢",
@@ -30181,7 +30181,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "檜",
@@ -30199,7 +30199,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "橿",
@@ -30216,7 +30216,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "檎",
@@ -30232,7 +30232,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "檀",
@@ -30250,7 +30250,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "檮",
@@ -30268,7 +30268,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "麓",
@@ -30285,7 +30285,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "鹿部（しか・しかへん） 木部（き・きへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "櫛",
@@ -30303,7 +30303,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "欄",
@@ -30318,7 +30318,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "木部（き・きへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -30343,7 +30343,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "止部（とめる・とめへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "正",
@@ -30363,7 +30363,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "止部（とめる・とめへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "此",
@@ -30383,7 +30383,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "止部（とめる・とめへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "歩",
@@ -30403,7 +30403,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "止部（とめる・とめへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "武",
@@ -30419,7 +30419,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "止部（とめる・とめへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "歳",
@@ -30435,7 +30435,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "止部（とめる・とめへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "歴",
@@ -30450,7 +30450,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "止部（とめる・とめへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       }
     ]
   },
@@ -30476,7 +30476,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "旧",
@@ -30491,7 +30491,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "旦",
@@ -30507,7 +30507,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "早",
@@ -30527,7 +30527,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "旨",
@@ -30544,7 +30544,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "旬",
@@ -30560,7 +30560,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "旭",
@@ -30577,7 +30577,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "明",
@@ -30603,7 +30603,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "昔",
@@ -30621,7 +30621,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "易",
@@ -30639,7 +30639,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "昇",
@@ -30656,7 +30656,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "昆",
@@ -30671,7 +30671,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "旺",
@@ -30686,7 +30686,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "昂",
@@ -30706,7 +30706,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "昏",
@@ -30725,7 +30725,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "昌",
@@ -30742,7 +30742,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "春",
@@ -30759,7 +30759,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "星",
@@ -30777,7 +30777,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "昼",
@@ -30794,7 +30794,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "昭",
@@ -30809,7 +30809,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "昨",
@@ -30824,7 +30824,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "映",
@@ -30843,7 +30843,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "是",
@@ -30858,7 +30858,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "昧",
@@ -30873,7 +30873,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "時",
@@ -30890,7 +30890,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "晃",
@@ -30908,7 +30908,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "晒",
@@ -30925,7 +30925,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "晋",
@@ -30942,7 +30942,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "晦",
@@ -30962,7 +30962,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "晴",
@@ -30980,7 +30980,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "暑",
@@ -30997,7 +30997,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "景",
@@ -31012,7 +31012,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "晩",
@@ -31027,7 +31027,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "普",
@@ -31042,7 +31042,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "晶",
@@ -31057,7 +31057,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "暁",
@@ -31074,7 +31074,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "智",
@@ -31092,7 +31092,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "暗",
@@ -31109,7 +31109,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "暖",
@@ -31129,7 +31129,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "暇",
@@ -31146,7 +31146,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "暮",
@@ -31164,7 +31164,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "暦",
@@ -31181,7 +31181,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "暢",
@@ -31200,7 +31200,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "暴",
@@ -31219,7 +31219,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "暫",
@@ -31234,7 +31234,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "曇",
@@ -31251,7 +31251,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "曖",
@@ -31266,7 +31266,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "曙",
@@ -31283,7 +31283,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "曜",
@@ -31298,7 +31298,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "曝",
@@ -31318,7 +31318,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "日部（ひ・ひへん・にち・にちへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -31343,7 +31343,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "文部（ぶん・ぶんにょう）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "斑",
@@ -31358,7 +31358,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "文部（ぶん・ぶんにょう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "斐",
@@ -31375,7 +31375,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "文部（ぶん・ぶんにょう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "斌",
@@ -31392,7 +31392,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "文部（ぶん・ぶんにょう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -31417,7 +31417,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "欠部（あくび・かける・けんづくり）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "次",
@@ -31436,7 +31436,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "欠部（あくび・かける・けんづくり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "欧",
@@ -31451,7 +31451,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "欠部（あくび・かける・けんづくり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "欣",
@@ -31469,7 +31469,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "欠部（あくび・かける・けんづくり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "欲",
@@ -31487,7 +31487,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "欠部（あくび・かける・けんづくり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "欺",
@@ -31504,7 +31504,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "欠部（あくび・かける・けんづくり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "款",
@@ -31519,7 +31519,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "欠部（あくび・かける・けんづくり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "欽",
@@ -31537,7 +31537,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "欠部（あくび・かける・けんづくり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "歌",
@@ -31555,7 +31555,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "欠部（あくび・かける・けんづくり）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "歓",
@@ -31570,7 +31570,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "欠部（あくび・かける・けんづくり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "歎",
@@ -31588,7 +31588,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "欠部（あくび・かける・けんづくり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -31612,7 +31612,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "牛部（うし・うしへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "牝",
@@ -31630,7 +31630,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "牛部（うし・うしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "牟",
@@ -31649,7 +31649,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "牛部（うし・うしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "牡",
@@ -31668,7 +31668,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "牛部（うし・うしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "物",
@@ -31686,7 +31686,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "牛部（うし・うしへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "牧",
@@ -31703,7 +31703,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "牛部（うし・うしへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "牲",
@@ -31718,7 +31718,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "牛部（うし・うしへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "特",
@@ -31733,7 +31733,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "牛部（うし・うしへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "牽",
@@ -31751,7 +31751,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "牛部（うし・うしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "犀",
@@ -31770,7 +31770,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "牛部（うし・うしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "犠",
@@ -31785,7 +31785,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "牛部（うし・うしへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       }
     ]
   },
@@ -31810,7 +31810,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "攻",
@@ -31827,7 +31827,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "孜",
@@ -31844,7 +31844,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん） 子部（こ・こへん・こども・こどもへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "放",
@@ -31864,7 +31864,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "故",
@@ -31881,7 +31881,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "政",
@@ -31899,7 +31899,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "敏",
@@ -31914,7 +31914,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "教",
@@ -31932,7 +31932,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "救",
@@ -31949,7 +31949,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "敗",
@@ -31966,7 +31966,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "散",
@@ -31986,7 +31986,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "敬",
@@ -32003,7 +32003,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "敢",
@@ -32018,7 +32018,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "敦",
@@ -32035,7 +32035,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "数",
@@ -32054,7 +32054,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "敵",
@@ -32071,7 +32071,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "敷",
@@ -32088,7 +32088,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "整",
@@ -32106,7 +32106,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "厳",
@@ -32125,7 +32125,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "⺍部（つ・つかんむり） 攴部（ぼくにょう・ぼくづくり・とまた・のぶん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       }
     ]
   },
@@ -32149,7 +32149,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "戶部（と・とだれ・とかんむり・とびらのと）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "戻",
@@ -32167,7 +32167,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "戶部（と・とだれ・とかんむり・とびらのと）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "所",
@@ -32184,7 +32184,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "戶部（と・とだれ・とかんむり・とびらのと）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "房",
@@ -32201,7 +32201,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "戶部（と・とだれ・とかんむり・とびらのと）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "扇",
@@ -32218,7 +32218,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "戶部（と・とだれ・とかんむり・とびらのと）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "扉",
@@ -32235,7 +32235,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "戶部（と・とだれ・とかんむり・とびらのと）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -32260,7 +32260,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "曰部（いわく・ひらび）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "曳",
@@ -32277,7 +32277,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "曰部（いわく・ひらび）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "更",
@@ -32296,7 +32296,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "曰部（いわく・ひらび）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "沓",
@@ -32315,7 +32315,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "曰部（いわく・ひらび） 水部（みず・さんずい・したみず）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "冒",
@@ -32332,7 +32332,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "曰部（いわく・ひらび） 目部（め・めへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "書",
@@ -32349,7 +32349,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "曰部（いわく・ひらび）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "曹",
@@ -32364,7 +32364,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "曰部（いわく・ひらび）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "曽",
@@ -32380,7 +32380,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "曰部（いわく・ひらび）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "最",
@@ -32397,7 +32397,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "曰部（いわく・ひらび）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "替",
@@ -32415,7 +32415,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "曰部（いわく・ひらび）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -32437,7 +32437,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "斤部（おのづくり・おの・きん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "斥",
@@ -32452,7 +32452,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "斤部（おのづくり・おの・きん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "斧",
@@ -32469,7 +32469,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "斤部（おのづくり・おの・きん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "断",
@@ -32487,7 +32487,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "斤部（おのづくり・おの・きん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "斬",
@@ -32504,7 +32504,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "斤部（おのづくり・おの・きん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "斯",
@@ -32524,7 +32524,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "斤部（おのづくり・おの・きん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "新",
@@ -32543,7 +32543,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "斤部（おのづくり・おの・きん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       }
     ]
   },
@@ -32568,7 +32568,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "月部（つき・つきへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "有",
@@ -32586,7 +32586,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "月部（つき・つきへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "服",
@@ -32601,7 +32601,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "月部（つき・つきへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "朋",
@@ -32619,7 +32619,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "月部（つき・つきへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "朗",
@@ -32636,7 +32636,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "月部（つき・つきへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "朕",
@@ -32651,7 +32651,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "月部（つき・つきへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "朔",
@@ -32669,7 +32669,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "月部（つき・つきへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "望",
@@ -32687,7 +32687,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "月部（つき・つきへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "朝",
@@ -32704,7 +32704,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "月部（つき・つきへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "期",
@@ -32720,7 +32720,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "月部（つき・つきへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       }
     ]
   },
@@ -32744,7 +32744,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "父部（ちち）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "爺",
@@ -32762,7 +32762,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "父部（ちち）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -32786,7 +32786,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "毋部（なかれ・ははのかん・はは）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "毎",
@@ -32801,7 +32801,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "毋部（なかれ・ははのかん・はは）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "毒",
@@ -32816,7 +32816,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "毋部（なかれ・ははのかん・はは）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       }
     ]
   },
@@ -32840,7 +32840,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "方部（ほう・ほうへん・かたへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "於",
@@ -32859,7 +32859,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "方部（ほう・ほうへん・かたへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "施",
@@ -32877,7 +32877,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "方部（ほう・ほうへん・かたへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "旅",
@@ -32894,7 +32894,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "方部（ほう・ほうへん・かたへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "族",
@@ -32909,7 +32909,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "方部（ほう・ほうへん・かたへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "旋",
@@ -32924,7 +32924,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "方部（ほう・ほうへん・かたへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "旗",
@@ -32941,7 +32941,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "方部（ほう・ほうへん・かたへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       }
     ]
   },
@@ -32965,7 +32965,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "歹部（がつ・がつへん・いちたへん・かばねへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "殆",
@@ -32984,7 +32984,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "歹部（がつ・がつへん・いちたへん・かばねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "残",
@@ -33002,7 +33002,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "歹部（がつ・がつへん・いちたへん・かばねへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "殊",
@@ -33019,7 +33019,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "歹部（がつ・がつへん・いちたへん・かばねへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "殉",
@@ -33034,7 +33034,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "歹部（がつ・がつへん・いちたへん・かばねへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "殖",
@@ -33052,7 +33052,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "歹部（がつ・がつへん・いちたへん・かばねへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -33076,7 +33076,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "殳部（ほこづくり・るまた）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "段",
@@ -33091,7 +33091,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "殳部（ほこづくり・るまた）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "殺",
@@ -33110,7 +33110,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "殳部（ほこづくり・るまた）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "殻",
@@ -33127,7 +33127,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "殳部（ほこづくり・るまた）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "殿",
@@ -33146,7 +33146,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "殳部（ほこづくり・るまた）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "毀",
@@ -33161,7 +33161,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "殳部（ほこづくり・るまた）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "毅",
@@ -33179,7 +33179,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "殳部（ほこづくり・るまた）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -33203,7 +33203,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "氏部（うじ）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "民",
@@ -33220,7 +33220,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "氏部（うじ）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       }
     ]
   },
@@ -33245,7 +33245,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "戈部（ほこづくり・ほこがまえ・ほこ・かのほこ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "成",
@@ -33264,7 +33264,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "戈部（ほこづくり・ほこがまえ・ほこ・かのほこ）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "戎",
@@ -33284,7 +33284,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "戈部（ほこづくり・ほこがまえ・ほこ・かのほこ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "我",
@@ -33302,7 +33302,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "戈部（ほこづくり・ほこがまえ・ほこ・かのほこ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "戒",
@@ -33319,7 +33319,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "戈部（ほこづくり・ほこがまえ・ほこ・かのほこ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "戚",
@@ -33334,7 +33334,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "戈部（ほこづくり・ほこがまえ・ほこ・かのほこ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "戟",
@@ -33352,7 +33352,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "戈部（ほこづくり・ほこがまえ・ほこ・かのほこ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "戦",
@@ -33370,7 +33370,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "戈部（ほこづくり・ほこがまえ・ほこ・かのほこ）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "載",
@@ -33388,7 +33388,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "車部（くるま・くるまへん） 戈部（ほこづくり・ほこがまえ・ほこ・かのほこ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "戯",
@@ -33405,7 +33405,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "戈部（ほこづくり・ほこがまえ・ほこ・かのほこ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "戴",
@@ -33420,7 +33420,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "戈部（ほこづくり・ほこがまえ・ほこ・かのほこ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       }
     ]
   },
@@ -33442,7 +33442,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "斗部（とます・と）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "料",
@@ -33457,7 +33457,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "斗部（とます・と）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "斜",
@@ -33474,7 +33474,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "斗部（とます・と）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "斡",
@@ -33493,7 +33493,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "斗部（とます・と）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -33517,7 +33517,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "片部（かた・かたへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "版",
@@ -33532,7 +33532,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "片部（かた・かたへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "牌",
@@ -33549,7 +33549,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "片部（かた・かたへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "牒",
@@ -33567,7 +33567,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "片部（かた・かたへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -33591,7 +33591,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "比部（くらべる・ならびひ）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "毘",
@@ -33609,7 +33609,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "比部（くらべる・ならびひ） 田部（た・たへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -33632,7 +33632,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "爪部（つめ・つめかんむり・つめがしら・そうにょう・のつ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "采",
@@ -33647,7 +33647,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "釆部（のごめ・のごめへん） 爪部（つめ・つめかんむり・つめがしら・そうにょう・のつ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "爵",
@@ -33662,7 +33662,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "爪部（つめ・つめかんむり・つめがしら・そうにょう・のつ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -33686,7 +33686,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "大部（だい） 爻部（こう・まじわる・めめ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "爾",
@@ -33705,7 +33705,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "爻部（こう・まじわる・めめ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -33727,7 +33727,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 4,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "玉",
@@ -33744,7 +33744,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "玖",
@@ -33760,7 +33760,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "玩",
@@ -33775,7 +33775,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "珍",
@@ -33792,7 +33792,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "珂",
@@ -33807,7 +33807,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "珊",
@@ -33822,7 +33822,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "玲",
@@ -33837,7 +33837,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "班",
@@ -33852,7 +33852,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "珠",
@@ -33867,7 +33867,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "珪",
@@ -33884,7 +33884,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "理",
@@ -33899,7 +33899,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "球",
@@ -33916,7 +33916,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "現",
@@ -33934,7 +33934,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "琢",
@@ -33951,7 +33951,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "琉",
@@ -33967,7 +33967,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "琴",
@@ -33984,7 +33984,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "瑛",
@@ -33999,7 +33999,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "琶",
@@ -34014,7 +34014,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "琵",
@@ -34029,7 +34029,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "琳",
@@ -34044,7 +34044,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "瑚",
@@ -34060,7 +34060,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "瑞",
@@ -34080,7 +34080,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "璃",
@@ -34095,7 +34095,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "瑠",
@@ -34110,7 +34110,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "瑳",
@@ -34127,7 +34127,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "環",
@@ -34142,7 +34142,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "璧",
@@ -34157,7 +34157,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "璽",
@@ -34172,7 +34172,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "玉部（たま・たまへん・おうへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -34195,7 +34195,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "示",
@@ -34213,7 +34213,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "社",
@@ -34230,7 +34230,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "祈",
@@ -34247,7 +34247,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "祉",
@@ -34262,7 +34262,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "祁",
@@ -34281,7 +34281,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "神",
@@ -34301,7 +34301,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "祝",
@@ -34319,7 +34319,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "祖",
@@ -34334,7 +34334,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "祇",
@@ -34352,7 +34352,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "祢",
@@ -34371,7 +34371,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "祐",
@@ -34389,7 +34389,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "祥",
@@ -34404,7 +34404,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "祭",
@@ -34422,7 +34422,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "票",
@@ -34437,7 +34437,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "祷",
@@ -34455,7 +34455,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "福",
@@ -34470,7 +34470,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "禁",
@@ -34485,7 +34485,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "禍",
@@ -34500,7 +34500,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "禅",
@@ -34515,7 +34515,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "禎",
@@ -34532,7 +34532,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "禦",
@@ -34550,7 +34550,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "禰",
@@ -34569,7 +34569,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "示部（しめす・しめすへん・ねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -34593,7 +34593,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "老部（おいかんむり・おいがしら・おい）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "老",
@@ -34611,7 +34611,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "老部（おいかんむり・おいがしら・おい）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "孝",
@@ -34626,7 +34626,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "子部（こ・こへん・こども・こどもへん） 老部（おいかんむり・おいがしら・おい）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "者",
@@ -34643,7 +34643,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "老部（おいかんむり・おいがしら・おい）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       }
     ]
   },
@@ -34665,7 +34665,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "肉部（にく・にくづき）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "肌",
@@ -34680,7 +34680,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "肝",
@@ -34697,7 +34697,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "肖",
@@ -34712,7 +34712,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "肘",
@@ -34727,7 +34727,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "育",
@@ -34746,7 +34746,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "肉部（にく・にくづき）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "肥",
@@ -34766,7 +34766,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "肉部（にく・にくづき）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "肩",
@@ -34783,7 +34783,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "肪",
@@ -34798,7 +34798,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "肯",
@@ -34813,7 +34813,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "肢",
@@ -34828,7 +34828,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "股",
@@ -34845,7 +34845,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "肴",
@@ -34862,7 +34862,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "肱",
@@ -34879,7 +34879,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "胃",
@@ -34894,7 +34894,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "肉部（にく・にくづき）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "肺",
@@ -34909,7 +34909,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "肉部（にく・にくづき）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "背",
@@ -34929,7 +34929,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "肉部（にく・にくづき）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "胎",
@@ -34944,7 +34944,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "胆",
@@ -34959,7 +34959,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "胞",
@@ -34974,7 +34974,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "胤",
@@ -34991,7 +34991,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "胡",
@@ -35015,7 +35015,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "脈",
@@ -35030,7 +35030,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "肉部（にく・にくづき）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "能",
@@ -35045,7 +35045,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "肉部（にく・にくづき）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "胸",
@@ -35063,7 +35063,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "肉部（にく・にくづき）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "脂",
@@ -35080,7 +35080,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "胴",
@@ -35095,7 +35095,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "脅",
@@ -35114,7 +35114,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "脊",
@@ -35129,7 +35129,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "脇",
@@ -35144,7 +35144,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "脆",
@@ -35165,7 +35165,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "脳",
@@ -35180,7 +35180,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "肉部（にく・にくづき）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "脚",
@@ -35198,7 +35198,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "脱",
@@ -35216,7 +35216,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "腕",
@@ -35233,7 +35233,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "腔",
@@ -35252,7 +35252,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "脹",
@@ -35271,7 +35271,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "腸",
@@ -35286,7 +35286,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "肉部（にく・にくづき）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "腹",
@@ -35303,7 +35303,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "肉部（にく・にくづき）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "腰",
@@ -35320,7 +35320,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "腫",
@@ -35338,7 +35338,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "腎",
@@ -35353,7 +35353,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "腺",
@@ -35368,7 +35368,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "腐",
@@ -35387,7 +35387,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "膜",
@@ -35402,7 +35402,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "膏",
@@ -35421,7 +35421,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "腿",
@@ -35438,7 +35438,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "膚",
@@ -35453,7 +35453,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "膝",
@@ -35468,7 +35468,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "膨",
@@ -35486,7 +35486,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "膳",
@@ -35501,7 +35501,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "臆",
@@ -35516,7 +35516,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "膿",
@@ -35535,7 +35535,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "肉部（にく・にくづき）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "臓",
@@ -35550,7 +35550,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "肉部（にく・にくづき）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       }
     ]
   },
@@ -35574,7 +35574,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "网部（あみがしら・あみめ）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "罪",
@@ -35591,7 +35591,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "网部（あみがしら・あみめ）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "署",
@@ -35606,7 +35606,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "网部（あみがしら・あみめ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "罫",
@@ -35622,7 +35622,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "网部（あみがしら・あみめ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "罰",
@@ -35638,7 +35638,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "网部（あみがしら・あみめ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "罷",
@@ -35653,7 +35653,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "网部（あみがしら・あみめ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "罵",
@@ -35670,7 +35670,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "网部（あみがしら・あみめ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "羅",
@@ -35685,7 +35685,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "网部（あみがしら・あみめ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -35709,7 +35709,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "穴部（あな・あなかんむり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "究",
@@ -35726,7 +35726,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "穴部（あな・あなかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "空",
@@ -35746,7 +35746,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "穴部（あな・あなかんむり）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "突",
@@ -35763,7 +35763,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "穴部（あな・あなかんむり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "窃",
@@ -35778,7 +35778,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "穴部（あな・あなかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "穿",
@@ -35799,7 +35799,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "穴部（あな・あなかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "窄",
@@ -35819,7 +35819,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "穴部（あな・あなかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "窓",
@@ -35836,7 +35836,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "穴部（あな・あなかんむり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "窒",
@@ -35851,7 +35851,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "穴部（あな・あなかんむり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "窟",
@@ -35866,7 +35866,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "穴部（あな・あなかんむり）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "窪",
@@ -35885,7 +35885,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "穴部（あな・あなかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "窮",
@@ -35903,7 +35903,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "穴部（あな・あなかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "窯",
@@ -35920,7 +35920,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "穴部（あな・あなかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "窺",
@@ -35938,7 +35938,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "穴部（あな・あなかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "竃",
@@ -35956,7 +35956,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "穴部（あな・あなかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "竈",
@@ -35974,7 +35974,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 21,
         busyu: "穴部（あな・あなかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -36008,7 +36008,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "生部（いきる・うまれる）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "産",
@@ -36027,7 +36027,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "生部（いきる・うまれる）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "甥",
@@ -36045,7 +36045,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "生部（いきる・うまれる）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -36071,7 +36071,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "石部（いし・いしへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "研",
@@ -36088,7 +36088,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "石部（いし・いしへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "砂",
@@ -36106,7 +36106,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "石部（いし・いしへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "砕",
@@ -36124,7 +36124,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "破",
@@ -36142,7 +36142,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "石部（いし・いしへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "砲",
@@ -36157,7 +36157,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "砿",
@@ -36174,7 +36174,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "砥",
@@ -36194,7 +36194,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "砧",
@@ -36212,7 +36212,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "砦",
@@ -36229,7 +36229,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "硬",
@@ -36246,7 +36246,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "硝",
@@ -36261,7 +36261,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "硫",
@@ -36276,7 +36276,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "硯",
@@ -36294,7 +36294,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "硲",
@@ -36309,7 +36309,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "碁",
@@ -36324,7 +36324,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "碍",
@@ -36343,7 +36343,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "碓",
@@ -36360,7 +36360,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "碇",
@@ -36377,7 +36377,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "磁",
@@ -36392,7 +36392,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "石部（いし・いしへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "碑",
@@ -36407,7 +36407,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "碩",
@@ -36424,7 +36424,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "碧",
@@ -36443,7 +36443,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "確",
@@ -36461,7 +36461,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "石部（いし・いしへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "磐",
@@ -36480,7 +36480,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "磨",
@@ -36497,7 +36497,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "礁",
@@ -36512,7 +36512,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "磯",
@@ -36529,7 +36529,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "礎",
@@ -36546,7 +36546,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "礪",
@@ -36565,7 +36565,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "石部（いし・いしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -36589,7 +36589,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "田部（た・たへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "申",
@@ -36606,7 +36606,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "田部（た・たへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "由",
@@ -36625,7 +36625,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "田部（た・たへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "甲",
@@ -36641,7 +36641,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "田部（た・たへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "男",
@@ -36659,7 +36659,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "田部（た・たへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "町",
@@ -36676,7 +36676,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "田部（た・たへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "画",
@@ -36692,7 +36692,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "田部（た・たへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "界",
@@ -36707,7 +36707,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "田部（た・たへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "畑",
@@ -36723,7 +36723,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "田部（た・たへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "畏",
@@ -36740,7 +36740,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "田部（た・たへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "毘",
@@ -36758,7 +36758,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "比部（くらべる・ならびひ） 田部（た・たへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "留",
@@ -36777,7 +36777,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "田部（た・たへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "畜",
@@ -36792,7 +36792,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "田部（た・たへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "畔",
@@ -36807,7 +36807,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "田部（た・たへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "畝",
@@ -36822,7 +36822,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "田部（た・たへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "畠",
@@ -36838,7 +36838,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "田部（た・たへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "略",
@@ -36853,7 +36853,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "田部（た・たへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "異",
@@ -36870,7 +36870,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "田部（た・たへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "畦",
@@ -36888,7 +36888,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "田部（た・たへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "畢",
@@ -36906,7 +36906,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "田部（た・たへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "番",
@@ -36921,7 +36921,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "田部（た・たへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "畳",
@@ -36939,7 +36939,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "田部（た・たへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "畷",
@@ -36956,7 +36956,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "田部（た・たへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "畿",
@@ -36971,7 +36971,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "田部（た・たへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       }
     ]
   },
@@ -36998,7 +36998,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "白部（しろ・しろへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "百",
@@ -37013,7 +37013,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "白部（しろ・しろへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "的",
@@ -37030,7 +37030,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "白部（しろ・しろへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "皇",
@@ -37046,7 +37046,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "白部（しろ・しろへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "皆",
@@ -37063,7 +37063,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "白部（しろ・しろへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "皋",
@@ -37081,7 +37081,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "白部（しろ・しろへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "皐",
@@ -37099,7 +37099,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "白部（しろ・しろへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -37125,7 +37125,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "目部（め・めへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "直",
@@ -37145,7 +37145,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "目部（め・めへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "盲",
@@ -37160,7 +37160,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "目部（め・めへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "県",
@@ -37175,7 +37175,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "目部（め・めへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "相",
@@ -37193,7 +37193,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "目部（め・めへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "省",
@@ -37212,7 +37212,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "目部（め・めへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "看",
@@ -37227,7 +37227,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "目部（め・めへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "盾",
@@ -37244,7 +37244,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "目部（め・めへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "冒",
@@ -37261,7 +37261,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "曰部（いわく・ひらび） 目部（め・めへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "眉",
@@ -37279,7 +37279,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "目部（め・めへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "真",
@@ -37296,7 +37296,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "目部（め・めへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "眠",
@@ -37314,7 +37314,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "目部（め・めへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "眼",
@@ -37332,7 +37332,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "目部（め・めへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "眺",
@@ -37349,7 +37349,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "目部（め・めへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "睡",
@@ -37364,7 +37364,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "目部（め・めへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "督",
@@ -37379,7 +37379,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "目部（め・めへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "睦",
@@ -37394,7 +37394,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "目部（め・めへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "瞳",
@@ -37411,7 +37411,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "目部（め・めへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "瞭",
@@ -37426,7 +37426,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "目部（め・めへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "瞥",
@@ -37443,7 +37443,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "目部（め・めへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "瞬",
@@ -37460,7 +37460,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "目部（め・めへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -37486,7 +37486,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "立部（たつ・たつへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "竜",
@@ -37503,7 +37503,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "龍・竜部（りゅう・たつ） 立部（たつ・たつへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "章",
@@ -37518,7 +37518,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "立部（たつ・たつへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "童",
@@ -37535,7 +37535,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "立部（たつ・たつへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "竣",
@@ -37552,7 +37552,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "立部（たつ・たつへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "靖",
@@ -37571,7 +37571,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "立部（たつ・たつへん） 靑部（あお・あおへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "端",
@@ -37590,7 +37590,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "立部（たつ・たつへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "竪",
@@ -37610,7 +37610,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "立部（たつ・たつへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "競",
@@ -37629,7 +37629,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "立部（たつ・たつへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       }
     ]
   },
@@ -37654,7 +37654,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "私",
@@ -37672,7 +37672,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "禾部（のぎ・のぎへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "秀",
@@ -37689,7 +37689,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "禿",
@@ -37709,7 +37709,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "科",
@@ -37724,7 +37724,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "禾部（のぎ・のぎへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "秋",
@@ -37741,7 +37741,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "禾部（のぎ・のぎへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "秒",
@@ -37756,7 +37756,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "禾部（のぎ・のぎへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "秘",
@@ -37773,7 +37773,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "禾部（のぎ・のぎへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "称",
@@ -37788,7 +37788,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "租",
@@ -37803,7 +37803,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "秩",
@@ -37818,7 +37818,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "秤",
@@ -37836,7 +37836,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "秦",
@@ -37853,7 +37853,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "移",
@@ -37871,7 +37871,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "禾部（のぎ・のぎへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "税",
@@ -37886,7 +37886,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "禾部（のぎ・のぎへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "程",
@@ -37903,7 +37903,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "禾部（のぎ・のぎへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "稀",
@@ -37923,7 +37923,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "稚",
@@ -37938,7 +37938,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "稔",
@@ -37959,7 +37959,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "稗",
@@ -37977,7 +37977,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "稜",
@@ -37995,7 +37995,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "種",
@@ -38012,7 +38012,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "禾部（のぎ・のぎへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "穀",
@@ -38027,7 +38027,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "禾部（のぎ・のぎへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "稲",
@@ -38045,7 +38045,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "稿",
@@ -38060,7 +38060,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "穂",
@@ -38077,7 +38077,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "稼",
@@ -38094,7 +38094,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "稽",
@@ -38109,7 +38109,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "積",
@@ -38127,7 +38127,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "禾部（のぎ・のぎへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "穏",
@@ -38144,7 +38144,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "穎",
@@ -38162,7 +38162,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "穐",
@@ -38180,7 +38180,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "穆",
@@ -38198,7 +38198,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "穫",
@@ -38213,7 +38213,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "穣",
@@ -38231,7 +38231,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "龝",
@@ -38249,7 +38249,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 21,
         busyu: "禾部（のぎ・のぎへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -38273,7 +38273,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "矢部（や・やへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "知",
@@ -38290,7 +38290,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "矢部（や・やへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "矧",
@@ -38307,7 +38307,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "矢部（や・やへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "矩",
@@ -38325,7 +38325,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "矢部（や・やへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "短",
@@ -38342,7 +38342,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "矢部（や・やへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "矯",
@@ -38359,7 +38359,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "矢部（や・やへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -38383,7 +38383,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "用部（もちいる）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "甫",
@@ -38402,7 +38402,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "用部（もちいる）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -38424,7 +38424,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "皿部（さら）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "盆",
@@ -38439,7 +38439,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "皿部（さら）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "盈",
@@ -38456,7 +38456,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "皿部（さら）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "盃",
@@ -38473,7 +38473,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "皿部（さら）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "益",
@@ -38489,7 +38489,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "皿部（さら）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "盛",
@@ -38509,7 +38509,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "皿部（さら）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "盗",
@@ -38526,7 +38526,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "皿部（さら）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "盟",
@@ -38541,7 +38541,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "皿部（さら）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "監",
@@ -38556,7 +38556,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "皿部（さら）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "盤",
@@ -38571,7 +38571,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "皿部（さら）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -38594,7 +38594,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "癶部（はつがしら）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "登",
@@ -38612,7 +38612,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "癶部（はつがしら）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       }
     ]
   },
@@ -38635,7 +38635,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "病",
@@ -38654,7 +38654,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "疒部（やまいだれ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "疲",
@@ -38671,7 +38671,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "疾",
@@ -38686,7 +38686,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "症",
@@ -38701,7 +38701,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "疹",
@@ -38719,7 +38719,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "痕",
@@ -38736,7 +38736,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "痔",
@@ -38753,7 +38753,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "痛",
@@ -38772,7 +38772,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "疒部（やまいだれ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "痘",
@@ -38787,7 +38787,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "痢",
@@ -38802,7 +38802,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "痩",
@@ -38819,7 +38819,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "痴",
@@ -38834,7 +38834,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "瘍",
@@ -38849,7 +38849,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "療",
@@ -38864,7 +38864,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "癌",
@@ -38879,7 +38879,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "癖",
@@ -38896,7 +38896,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "癒",
@@ -38914,7 +38914,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "疒部（やまいだれ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -38936,7 +38936,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "玄部（げん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "率",
@@ -38954,7 +38954,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "玄部（げん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       }
     ]
   },
@@ -38981,7 +38981,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "疋部（ひき・ひきへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "疎",
@@ -38999,7 +38999,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "疋部（ひき・ひきへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "疏",
@@ -39023,7 +39023,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "疋部（ひき・ひきへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "疑",
@@ -39040,7 +39040,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "疋部（ひき・ひきへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       }
     ]
   },
@@ -39066,7 +39066,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "甘部（あまい・かん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "甚",
@@ -39084,7 +39084,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "甘部（あまい・かん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "甜",
@@ -39102,7 +39102,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "甘部（あまい・かん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -39126,7 +39126,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 5,
         busyu: "瓦部（かわら）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "瓶",
@@ -39141,7 +39141,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "瓦部（かわら）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "甑",
@@ -39158,7 +39158,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "瓦部（かわら）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -39182,7 +39182,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "衣部（ころも・ころもへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "表",
@@ -39201,7 +39201,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "衣部（ころも・ころもへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "衷",
@@ -39216,7 +39216,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "衰",
@@ -39233,7 +39233,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "袖",
@@ -39250,7 +39250,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "袋",
@@ -39267,7 +39267,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "袈",
@@ -39282,7 +39282,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "袴",
@@ -39300,7 +39300,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "袷",
@@ -39318,7 +39318,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "裁",
@@ -39336,7 +39336,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "衣部（ころも・ころもへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "装",
@@ -39354,7 +39354,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "衣部（ころも・ころもへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "補",
@@ -39371,7 +39371,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "衣部（ころも・ころもへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "裂",
@@ -39389,7 +39389,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "裕",
@@ -39404,7 +39404,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "裡",
@@ -39422,7 +39422,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "裏",
@@ -39439,7 +39439,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "衣部（ころも・ころもへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "裸",
@@ -39456,7 +39456,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "褐",
@@ -39471,7 +39471,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "裾",
@@ -39486,7 +39486,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "裟",
@@ -39501,7 +39501,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "製",
@@ -39516,7 +39516,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "衣部（ころも・ころもへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "複",
@@ -39531,7 +39531,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "衣部（ころも・ころもへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "裳",
@@ -39549,7 +39549,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "褒",
@@ -39566,7 +39566,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "襟",
@@ -39583,7 +39583,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "襖",
@@ -39602,7 +39602,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "襲",
@@ -39619,7 +39619,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 22,
         busyu: "衣部（ころも・ころもへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -39643,7 +39643,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "瓜部（うり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "瓢",
@@ -39661,7 +39661,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "瓜部（うり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -39685,7 +39685,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "系",
@@ -39700,7 +39700,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "級",
@@ -39715,7 +39715,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "紀",
@@ -39730,7 +39730,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "約",
@@ -39745,7 +39745,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "紅",
@@ -39764,7 +39764,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "糾",
@@ -39779,7 +39779,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "紙",
@@ -39796,7 +39796,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "素",
@@ -39812,7 +39812,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "純",
@@ -39827,7 +39827,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "納",
@@ -39849,7 +39849,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "紋",
@@ -39864,7 +39864,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "紛",
@@ -39884,7 +39884,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "索",
@@ -39899,7 +39899,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "紡",
@@ -39916,7 +39916,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "紘",
@@ -39934,7 +39934,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "紗",
@@ -39952,7 +39952,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "紐",
@@ -39970,7 +39970,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "細",
@@ -39990,7 +39990,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "組",
@@ -40008,7 +40008,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "終",
@@ -40026,7 +40026,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "経",
@@ -40044,7 +40044,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "紹",
@@ -40059,7 +40059,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "紺",
@@ -40074,7 +40074,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "紳",
@@ -40089,7 +40089,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "累",
@@ -40104,7 +40104,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "絃",
@@ -40122,7 +40122,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "紬",
@@ -40140,7 +40140,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "絵",
@@ -40156,7 +40156,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "給",
@@ -40171,7 +40171,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "結",
@@ -40190,7 +40190,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "絶",
@@ -40209,7 +40209,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "統",
@@ -40226,7 +40226,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "紫",
@@ -40243,7 +40243,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "絡",
@@ -40262,7 +40262,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "絞",
@@ -40281,7 +40281,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "絢",
@@ -40298,7 +40298,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "続",
@@ -40316,7 +40316,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "絹",
@@ -40333,7 +40333,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "継",
@@ -40350,7 +40350,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "緑",
@@ -40368,7 +40368,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "練",
@@ -40385,7 +40385,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "総",
@@ -40400,7 +40400,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "綿",
@@ -40417,7 +40417,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "維",
@@ -40432,7 +40432,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "網",
@@ -40449,7 +40449,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "綱",
@@ -40466,7 +40466,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "緒",
@@ -40484,7 +40484,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "綻",
@@ -40501,7 +40501,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "綬",
@@ -40519,7 +40519,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "綜",
@@ -40538,7 +40538,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "綴",
@@ -40557,7 +40557,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "緋",
@@ -40575,7 +40575,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "綾",
@@ -40593,7 +40593,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "線",
@@ -40608,7 +40608,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "編",
@@ -40625,7 +40625,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "縁",
@@ -40642,7 +40642,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "緩",
@@ -40662,7 +40662,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "緊",
@@ -40677,7 +40677,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "締",
@@ -40695,7 +40695,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "縄",
@@ -40712,7 +40712,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "緬",
@@ -40731,7 +40731,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "縦",
@@ -40748,7 +40748,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "緯",
@@ -40763,7 +40763,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "繁",
@@ -40778,7 +40778,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "縛",
@@ -40795,7 +40795,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "縫",
@@ -40812,7 +40812,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "緻",
@@ -40827,7 +40827,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "縞",
@@ -40845,7 +40845,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "績",
@@ -40860,7 +40860,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "縮",
@@ -40881,7 +40881,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "繊",
@@ -40896,7 +40896,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "徽",
@@ -40914,7 +40914,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "彳部（ぎょうにんべん） 糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "繋",
@@ -40935,7 +40935,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "繍",
@@ -40954,7 +40954,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "織",
@@ -40972,7 +40972,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "糸部（いと・いとへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "繕",
@@ -40989,7 +40989,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "繭",
@@ -41006,7 +41006,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "繰",
@@ -41021,7 +41021,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "纂",
@@ -41040,7 +41040,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "纏",
@@ -41061,7 +41061,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 21,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "纒",
@@ -41082,7 +41082,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 22,
         busyu: "糸部（いと・いとへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -41106,7 +41106,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "耳部（みみ・みみへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "耽",
@@ -41123,7 +41123,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "耳部（みみ・みみへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "聖",
@@ -41138,7 +41138,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "耳部（みみ・みみへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "聞",
@@ -41157,7 +41157,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "耳部（みみ・みみへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "聡",
@@ -41174,7 +41174,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "耳部（みみ・みみへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "聴",
@@ -41191,7 +41191,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "耳部（みみ・みみへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "職",
@@ -41206,7 +41206,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "耳部（みみ・みみへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       }
     ]
   },
@@ -41230,7 +41230,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "竹部（たけ・たけかんむり）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "竺",
@@ -41248,7 +41248,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "竿",
@@ -41266,7 +41266,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "笑",
@@ -41284,7 +41284,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "竹部（たけ・たけかんむり）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "笈",
@@ -41301,7 +41301,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "第",
@@ -41316,7 +41316,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "竹部（たけ・たけかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "笛",
@@ -41333,7 +41333,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "竹部（たけ・たけかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "符",
@@ -41348,7 +41348,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "笹",
@@ -41363,7 +41363,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "笥",
@@ -41382,7 +41382,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "笠",
@@ -41399,7 +41399,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "答",
@@ -41417,7 +41417,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "竹部（たけ・たけかんむり）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "等",
@@ -41434,7 +41434,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "竹部（たけ・たけかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "筆",
@@ -41451,7 +41451,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "竹部（たけ・たけかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "筋",
@@ -41468,7 +41468,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "竹部（たけ・たけかんむり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "策",
@@ -41483,7 +41483,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "竹部（たけ・たけかんむり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "筒",
@@ -41500,7 +41500,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "筈",
@@ -41518,7 +41518,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "筑",
@@ -41534,7 +41534,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "筏",
@@ -41552,7 +41552,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "節",
@@ -41570,7 +41570,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "竹部（たけ・たけかんむり）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "算",
@@ -41585,7 +41585,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "竹部（たけ・たけかんむり）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "管",
@@ -41602,7 +41602,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "竹部（たけ・たけかんむり）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "箇",
@@ -41617,7 +41617,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "箋",
@@ -41632,7 +41632,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "箕",
@@ -41650,7 +41650,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "箔",
@@ -41668,7 +41668,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "箆",
@@ -41688,7 +41688,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "箱",
@@ -41703,7 +41703,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "竹部（たけ・たけかんむり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "範",
@@ -41718,7 +41718,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "箸",
@@ -41733,7 +41733,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "箭",
@@ -41750,7 +41750,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "箪",
@@ -41769,7 +41769,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "篇",
@@ -41788,7 +41788,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "築",
@@ -41805,7 +41805,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "竹部（たけ・たけかんむり）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "篤",
@@ -41820,7 +41820,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "篦",
@@ -41840,7 +41840,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "篠",
@@ -41858,7 +41858,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "簡",
@@ -41873,7 +41873,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "竹部（たけ・たけかんむり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "簿",
@@ -41888,7 +41888,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "簸",
@@ -41906,7 +41906,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "籍",
@@ -41921,7 +41921,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "籠",
@@ -41939,7 +41939,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 22,
         busyu: "竹部（たけ・たけかんむり）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       }
     ]
   },
@@ -41963,7 +41963,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "虫部（むし・むしへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "虹",
@@ -41978,7 +41978,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "虻",
@@ -41996,7 +41996,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蚕",
@@ -42013,7 +42013,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "虫部（むし・むしへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "蚊",
@@ -42028,7 +42028,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "蚤",
@@ -42047,7 +42047,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蛍",
@@ -42064,7 +42064,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "蛇",
@@ -42082,7 +42082,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "蛋",
@@ -42101,7 +42101,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蛮",
@@ -42116,7 +42116,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "蛙",
@@ -42136,7 +42136,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蛤",
@@ -42153,7 +42153,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蛭",
@@ -42171,7 +42171,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蛛",
@@ -42190,7 +42190,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蜂",
@@ -42207,7 +42207,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "蛾",
@@ -42228,7 +42228,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蛸",
@@ -42246,7 +42246,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蜜",
@@ -42261,7 +42261,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "蜘",
@@ -42278,7 +42278,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蝦",
@@ -42297,7 +42297,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蝕",
@@ -42314,7 +42314,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蝉",
@@ -42334,7 +42334,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蝶",
@@ -42349,7 +42349,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蝿",
@@ -42366,7 +42366,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "融",
@@ -42381,7 +42381,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "螺",
@@ -42401,7 +42401,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蟹",
@@ -42418,7 +42418,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蟻",
@@ -42436,7 +42436,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蠅",
@@ -42453,7 +42453,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "虫部（むし・むしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -42478,7 +42478,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "羽・羽部（はね）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "翁",
@@ -42493,7 +42493,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "羽・羽部（はね）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "翆",
@@ -42511,7 +42511,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "羽・羽部（はね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "習",
@@ -42528,7 +42528,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "羽・羽部（はね）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "翌",
@@ -42543,7 +42543,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "羽・羽部（はね）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "翠",
@@ -42561,7 +42561,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "羽・羽部（はね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "翫",
@@ -42581,7 +42581,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "羽・羽部（はね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "翰",
@@ -42602,7 +42602,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "羽・羽部（はね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "翼",
@@ -42619,7 +42619,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "羽・羽部（はね）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "翻",
@@ -42637,7 +42637,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "羽・羽部（はね）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "耀",
@@ -42654,7 +42654,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "羽・羽部（はね）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -42682,7 +42682,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "行部（ぎょう・ぎょうがまえ・ゆきがまえ） 彳部（ぎょうにんべん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "術",
@@ -42697,7 +42697,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "行部（ぎょう・ぎょうがまえ・ゆきがまえ）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "街",
@@ -42715,7 +42715,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "行部（ぎょう・ぎょうがまえ・ゆきがまえ）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "衝",
@@ -42730,7 +42730,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "行部（ぎょう・ぎょうがまえ・ゆきがまえ）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "衛",
@@ -42745,7 +42745,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "行部（ぎょう・ぎょうがまえ・ゆきがまえ）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "衡",
@@ -42760,7 +42760,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "行部（ぎょう・ぎょうがまえ・ゆきがまえ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -42785,7 +42785,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "自部（みずから）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "臭",
@@ -42803,7 +42803,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "自部（みずから）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -42828,7 +42828,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "色部（いろ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "艶",
@@ -42845,7 +42845,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "色部（いろ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       }
     ]
   },
@@ -42870,7 +42870,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "襾部（おおいかんむり・にし・かなめのかしら）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "要",
@@ -42888,7 +42888,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "襾部（おおいかんむり・にし・かなめのかしら）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "覆",
@@ -42907,7 +42907,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "襾部（おおいかんむり・にし・かなめのかしら）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "覇",
@@ -42922,7 +42922,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "襾部（おおいかんむり・にし・かなめのかしら）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -42947,7 +42947,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "舟部（ふね・ふねへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "航",
@@ -42962,7 +42962,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "舟部（ふね・ふねへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "般",
@@ -42977,7 +42977,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "舟部（ふね・ふねへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "船",
@@ -42995,7 +42995,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "舟部（ふね・ふねへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "舶",
@@ -43010,7 +43010,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "舟部（ふね・ふねへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "舷",
@@ -43025,7 +43025,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "舟部（ふね・ふねへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "舵",
@@ -43043,7 +43043,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "舟部（ふね・ふねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "艇",
@@ -43058,7 +43058,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "舟部（ふね・ふねへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "艦",
@@ -43073,7 +43073,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 21,
         busyu: "舟部（ふね・ふねへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -43098,7 +43098,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "米部（こめ・こめへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "粁",
@@ -43113,7 +43113,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "粂",
@@ -43128,7 +43128,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "籾",
@@ -43143,7 +43143,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "粉",
@@ -43161,7 +43161,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "米部（こめ・こめへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "粋",
@@ -43178,7 +43178,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "粍",
@@ -43193,7 +43193,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "粒",
@@ -43210,7 +43210,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "粗",
@@ -43227,7 +43227,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "粘",
@@ -43244,7 +43244,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "粕",
@@ -43261,7 +43261,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "粧",
@@ -43276,7 +43276,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "粥",
@@ -43295,7 +43295,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "粟",
@@ -43316,7 +43316,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "精",
@@ -43332,7 +43332,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "米部（こめ・こめへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "糊",
@@ -43349,7 +43349,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "糎",
@@ -43364,7 +43364,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "糖",
@@ -43379,7 +43379,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "米部（こめ・こめへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "糠",
@@ -43396,7 +43396,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "糟",
@@ -43413,7 +43413,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "糞",
@@ -43433,7 +43433,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "糧",
@@ -43451,7 +43451,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "米部（こめ・こめへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       }
     ]
   },
@@ -43475,7 +43475,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "血部（ち・ちへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "衆",
@@ -43491,7 +43491,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "血部（ち・ちへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       }
     ]
   },
@@ -43515,7 +43515,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "羊部（ひつじ・ひつじへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "美",
@@ -43532,7 +43532,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "羊部（ひつじ・ひつじへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "羞",
@@ -43547,7 +43547,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "羊部（ひつじ・ひつじへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "着",
@@ -43568,7 +43568,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "羊部（ひつじ・ひつじへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "義",
@@ -43583,7 +43583,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "羊部（ひつじ・ひつじへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "群",
@@ -43602,7 +43602,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "羊部（ひつじ・ひつじへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "羨",
@@ -43620,7 +43620,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "羊部（ひつじ・ひつじへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       }
     ]
   },
@@ -43645,7 +43645,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "艮部（うしとら・こん・こんづくり・ねづくり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "良",
@@ -43662,7 +43662,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "艮部（うしとら・こん・こんづくり・ねづくり）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       }
     ]
   },
@@ -43686,7 +43686,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "耒部（らいすき・すきへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "耗",
@@ -43702,7 +43702,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "耒部（らいすき・すきへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -43726,7 +43726,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "臼部（うす）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "興",
@@ -43745,7 +43745,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "臼部（うす）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       }
     ]
   },
@@ -43769,7 +43769,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "舌部（した・したへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "舎",
@@ -43784,7 +43784,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "舌部（した・したへん） 人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "舗",
@@ -43799,7 +43799,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "舌部（した・したへん） 人部（ひと・にんべん・ひとがしら・ひとやね）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "舘",
@@ -43818,7 +43818,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "舌部（した・したへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -43842,7 +43842,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "至部（いたる・いたるへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "致",
@@ -43859,7 +43859,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "至部（いたる・いたるへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -43887,7 +43887,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "而部（しこうして・しかして）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "耐",
@@ -43904,7 +43904,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "而部（しこうして・しかして）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -43928,7 +43928,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "虍部（とらかんむり・とらがしら・とら）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "虐",
@@ -43945,7 +43945,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "虍部（とらかんむり・とらがしら・とら）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "虚",
@@ -43961,7 +43961,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "虍部（とらかんむり・とらがしら・とら）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "虞",
@@ -43976,7 +43976,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "虍部（とらかんむり・とらがしら・とら）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "虜",
@@ -43991,7 +43991,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "虍部（とらかんむり・とらがしら・とら）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -44013,7 +44013,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "聿部（ふで・ふでづくり） 彑・彐部（けいがしら・いのこがしら）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "肇",
@@ -44031,7 +44031,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "聿部（ふで・ふでづくり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -44054,7 +44054,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "臣部（しん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "臥",
@@ -44072,7 +44072,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "臣部（しん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "臨",
@@ -44089,7 +44089,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "臣部（しん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       }
     ]
   },
@@ -44114,7 +44114,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 6,
         busyu: "舛部（まいあし・ます）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "舜",
@@ -44131,7 +44131,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "舛部（まいあし・ます）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "舞",
@@ -44149,7 +44149,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "舛部（まいあし・ます）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -44175,7 +44175,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "頂",
@@ -44193,7 +44193,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "頁部（おおがい・いちのかい）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "頃",
@@ -44208,7 +44208,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "順",
@@ -44223,7 +44223,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "頁部（おおがい・いちのかい）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "項",
@@ -44238,7 +44238,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "須",
@@ -44253,7 +44253,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "預",
@@ -44271,7 +44271,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "頁部（おおがい・いちのかい）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "頑",
@@ -44286,7 +44286,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "頒",
@@ -44301,7 +44301,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "頓",
@@ -44316,7 +44316,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "領",
@@ -44331,7 +44331,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "頁部（おおがい・いちのかい）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "頚",
@@ -44348,7 +44348,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "頗",
@@ -44366,7 +44366,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "頬",
@@ -44381,7 +44381,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "頭",
@@ -44401,7 +44401,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "頁部（おおがい・いちのかい）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "頼",
@@ -44420,7 +44420,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "頸",
@@ -44437,7 +44437,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "頻",
@@ -44452,7 +44452,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "顔",
@@ -44469,7 +44469,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "頁部（おおがい・いちのかい）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "題",
@@ -44484,7 +44484,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "頁部（おおがい・いちのかい）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "類",
@@ -44501,7 +44501,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "頁部（おおがい・いちのかい）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "額",
@@ -44518,7 +44518,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "頁部（おおがい・いちのかい）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "顕",
@@ -44533,7 +44533,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "顎",
@@ -44550,7 +44550,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "願",
@@ -44567,7 +44567,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "頁部（おおがい・いちのかい）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "顛",
@@ -44586,7 +44586,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "顧",
@@ -44603,7 +44603,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 21,
         busyu: "頁部（おおがい・いちのかい）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       }
     ]
   },
@@ -44625,7 +44625,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "負",
@@ -44644,7 +44644,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "貞",
@@ -44659,7 +44659,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "財",
@@ -44675,7 +44675,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "貢",
@@ -44693,7 +44693,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "貨",
@@ -44708,7 +44708,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "責",
@@ -44725,7 +44725,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "貧",
@@ -44743,7 +44743,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "販",
@@ -44758,7 +44758,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "貫",
@@ -44775,7 +44775,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "貪",
@@ -44792,7 +44792,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "買",
@@ -44809,7 +44809,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "貯",
@@ -44824,7 +44824,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "費",
@@ -44842,7 +44842,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "賀",
@@ -44857,7 +44857,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "貸",
@@ -44874,7 +44874,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "貴",
@@ -44894,7 +44894,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "貼",
@@ -44911,7 +44911,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "貿",
@@ -44926,7 +44926,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "貰",
@@ -44945,7 +44945,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "資",
@@ -44960,7 +44960,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "賃",
@@ -44975,7 +44975,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "賊",
@@ -44990,7 +44990,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "賄",
@@ -45007,7 +45007,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "賂",
@@ -45022,7 +45022,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "賎",
@@ -45044,7 +45044,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "賑",
@@ -45062,7 +45062,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "賞",
@@ -45077,7 +45077,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "賛",
@@ -45092,7 +45092,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "質",
@@ -45109,7 +45109,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "賦",
@@ -45124,7 +45124,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "賜",
@@ -45141,7 +45141,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "賠",
@@ -45156,7 +45156,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "賓",
@@ -45171,7 +45171,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "賤",
@@ -45193,7 +45193,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "賢",
@@ -45210,7 +45210,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "賭",
@@ -45227,7 +45227,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "購",
@@ -45242,7 +45242,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "贈",
@@ -45260,7 +45260,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "贋",
@@ -45277,7 +45277,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "貝部（かい・かいへん・こがい）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -45303,7 +45303,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "見部（みる）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "規",
@@ -45318,7 +45318,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "見部（みる）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "視",
@@ -45333,7 +45333,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "見部（みる）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "覚",
@@ -45352,7 +45352,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "見部（みる）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "覗",
@@ -45370,7 +45370,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "見部（みる）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "親",
@@ -45389,7 +45389,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "見部（みる）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "覧",
@@ -45404,7 +45404,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "見部（みる）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "観",
@@ -45419,7 +45419,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "見部（みる）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       }
     ]
   },
@@ -45443,7 +45443,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "車部（くるま・くるまへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "軍",
@@ -45458,7 +45458,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "車部（くるま・くるまへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "軌",
@@ -45473,7 +45473,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "車部（くるま・くるまへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "軒",
@@ -45490,7 +45490,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "車部（くるま・くるまへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "転",
@@ -45510,7 +45510,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "車部（くるま・くるまへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "軟",
@@ -45528,7 +45528,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "車部（くるま・くるまへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "軽",
@@ -45546,7 +45546,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "車部（くるま・くるまへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "軸",
@@ -45561,7 +45561,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "車部（くるま・くるまへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "較",
@@ -45576,7 +45576,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "車部（くるま・くるまへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "載",
@@ -45594,7 +45594,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "車部（くるま・くるまへん） 戈部（ほこづくり・ほこがまえ・ほこ・かのほこ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "輔",
@@ -45613,7 +45613,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "車部（くるま・くるまへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "輪",
@@ -45630,7 +45630,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "車部（くるま・くるまへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "輝",
@@ -45647,7 +45647,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "車部（くるま・くるまへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "輩",
@@ -45662,7 +45662,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "車部（くるま・くるまへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "輸",
@@ -45677,7 +45677,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "車部（くるま・くるまへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "輯",
@@ -45695,7 +45695,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "車部（くるま・くるまへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "轄",
@@ -45710,7 +45710,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "車部（くるま・くるまへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "輿",
@@ -45730,7 +45730,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "車部（くるま・くるまへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "轍",
@@ -45747,7 +45747,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "車部（くるま・くるまへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "轟",
@@ -45764,7 +45764,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 21,
         busyu: "車部（くるま・くるまへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "轡",
@@ -45782,7 +45782,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 22,
         busyu: "車部（くるま・くるまへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -45810,7 +45810,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "赤部（あか・あかへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "赦",
@@ -45825,7 +45825,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "赤部（あか・あかへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "赫",
@@ -45844,7 +45844,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "赤部（あか・あかへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -45871,7 +45871,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "足部（あし・あしへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "距",
@@ -45886,7 +45886,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "足部（あし・あしへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "路",
@@ -45903,7 +45903,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "足部（あし・あしへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "跡",
@@ -45920,7 +45920,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "足部（あし・あしへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "跳",
@@ -45938,7 +45938,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "足部（あし・あしへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "践",
@@ -45953,7 +45953,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "足部（あし・あしへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "跨",
@@ -45972,7 +45972,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "足部（あし・あしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "踊",
@@ -45990,7 +45990,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "足部（あし・あしへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "踏",
@@ -46008,7 +46008,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "足部（あし・あしへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "踪",
@@ -46023,7 +46023,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "足部（あし・あしへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "蹄",
@@ -46041,7 +46041,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "足部（あし・あしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蹟",
@@ -46059,7 +46059,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "足部（あし・あしへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "蹴",
@@ -46076,7 +46076,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "足部（あし・あしへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "躍",
@@ -46093,7 +46093,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 21,
         busyu: "足部（あし・あしへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -46118,7 +46118,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "角部（つの・つのへん・かく）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "解",
@@ -46138,7 +46138,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "角部（つの・つのへん・かく）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "触",
@@ -46156,7 +46156,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "角部（つの・つのへん・かく）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -46182,7 +46182,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "計",
@@ -46200,7 +46200,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "訂",
@@ -46215,7 +46215,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "訃",
@@ -46230,7 +46230,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "記",
@@ -46247,7 +46247,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "訓",
@@ -46262,7 +46262,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "討",
@@ -46279,7 +46279,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "託",
@@ -46294,7 +46294,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "訊",
@@ -46315,7 +46315,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "許",
@@ -46332,7 +46332,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "設",
@@ -46349,7 +46349,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "訪",
@@ -46367,7 +46367,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "訳",
@@ -46384,7 +46384,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "訟",
@@ -46399,7 +46399,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "訣",
@@ -46417,7 +46417,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "証",
@@ -46432,7 +46432,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "評",
@@ -46447,7 +46447,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "詞",
@@ -46462,7 +46462,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "訴",
@@ -46479,7 +46479,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "詠",
@@ -46496,7 +46496,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "詐",
@@ -46511,7 +46511,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "詔",
@@ -46528,7 +46528,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "診",
@@ -46545,7 +46545,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "詑",
@@ -46562,7 +46562,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "註",
@@ -46579,7 +46579,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "話",
@@ -46597,7 +46597,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "詩",
@@ -46612,7 +46612,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "試",
@@ -46630,7 +46630,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "誠",
@@ -46647,7 +46647,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "詰",
@@ -46666,7 +46666,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "誇",
@@ -46683,7 +46683,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "詳",
@@ -46700,7 +46700,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "誉",
@@ -46717,7 +46717,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "該",
@@ -46732,7 +46732,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "詣",
@@ -46749,7 +46749,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "詮",
@@ -46764,7 +46764,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "詫",
@@ -46783,7 +46783,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "語",
@@ -46801,7 +46801,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "読",
@@ -46820,7 +46820,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "説",
@@ -46838,7 +46838,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "誤",
@@ -46855,7 +46855,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "誌",
@@ -46870,7 +46870,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "認",
@@ -46887,7 +46887,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "誘",
@@ -46904,7 +46904,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "誓",
@@ -46921,7 +46921,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "談",
@@ -46936,7 +46936,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "調",
@@ -46955,7 +46955,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "課",
@@ -46970,7 +46970,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "諸",
@@ -46985,7 +46985,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "誕",
@@ -47000,7 +47000,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "論",
@@ -47015,7 +47015,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "請",
@@ -47034,7 +47034,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "諾",
@@ -47049,7 +47049,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "謁",
@@ -47064,7 +47064,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "誰",
@@ -47079,7 +47079,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "諌",
@@ -47096,7 +47096,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "誼",
@@ -47114,7 +47114,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "諏",
@@ -47133,7 +47133,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "誹",
@@ -47150,7 +47150,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "諒",
@@ -47168,7 +47168,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "謡",
@@ -47186,7 +47186,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "諮",
@@ -47203,7 +47203,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "謀",
@@ -47221,7 +47221,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "諭",
@@ -47238,7 +47238,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "諧",
@@ -47253,7 +47253,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "諦",
@@ -47270,7 +47270,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "謂",
@@ -47289,7 +47289,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "諫",
@@ -47306,7 +47306,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "諺",
@@ -47323,7 +47323,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "諜",
@@ -47343,7 +47343,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "講",
@@ -47358,7 +47358,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "謝",
@@ -47375,7 +47375,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "謹",
@@ -47392,7 +47392,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "謙",
@@ -47407,7 +47407,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "謄",
@@ -47422,7 +47422,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "謎",
@@ -47437,7 +47437,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "謬",
@@ -47454,7 +47454,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "識",
@@ -47469,7 +47469,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "警",
@@ -47484,7 +47484,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "譜",
@@ -47499,7 +47499,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "議",
@@ -47514,7 +47514,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "護",
@@ -47529,7 +47529,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "譲",
@@ -47546,7 +47546,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "讃",
@@ -47565,7 +47565,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 22,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "讚",
@@ -47584,7 +47584,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 26,
         busyu: "言部（げん・ごんべん・ことば）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -47608,7 +47608,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "走部（はしる・そうにょう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "赴",
@@ -47625,7 +47625,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "走部（はしる・そうにょう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "起",
@@ -47644,7 +47644,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "走部（はしる・そうにょう）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "越",
@@ -47662,7 +47662,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "走部（はしる・そうにょう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "超",
@@ -47680,7 +47680,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "走部（はしる・そうにょう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "趣",
@@ -47697,7 +47697,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "走部（はしる・そうにょう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "趨",
@@ -47719,7 +47719,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "走部（はしる・そうにょう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -47743,7 +47743,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "里部（さと・さとへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "重",
@@ -47764,7 +47764,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "里部（さと・さとへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "野",
@@ -47781,7 +47781,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "里部（さと・さとへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "量",
@@ -47798,7 +47798,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "里部（さと・さとへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       }
     ]
   },
@@ -47823,7 +47823,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "酋",
@@ -47841,7 +47841,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "酒",
@@ -47859,7 +47859,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "配",
@@ -47876,7 +47876,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "酌",
@@ -47893,7 +47893,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "酎",
@@ -47908,7 +47908,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "酔",
@@ -47925,7 +47925,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "酢",
@@ -47942,7 +47942,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "酬",
@@ -47957,7 +47957,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "酪",
@@ -47972,7 +47972,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "酸",
@@ -47989,7 +47989,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "酵",
@@ -48004,7 +48004,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "酷",
@@ -48019,7 +48019,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "醇",
@@ -48038,7 +48038,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "醒",
@@ -48053,7 +48053,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "醐",
@@ -48069,7 +48069,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "醍",
@@ -48085,7 +48085,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "醗",
@@ -48102,7 +48102,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "醜",
@@ -48119,7 +48119,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "醤",
@@ -48137,7 +48137,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "醸",
@@ -48154,7 +48154,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "酉部（ひよみのとり・とりへん・さけのとり・こよみのとり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -48178,7 +48178,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "身部（み・みへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "躯",
@@ -48196,7 +48196,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "身部（み・みへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -48221,7 +48221,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "豆部（まめ・まめへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "豊",
@@ -48238,7 +48238,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "豆部（まめ・まめへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "豎",
@@ -48258,7 +48258,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "豆部（まめ・まめへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -48284,7 +48284,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "辰部（たつ・しんのたつ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "辱",
@@ -48301,7 +48301,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "辰部（たつ・しんのたつ）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "農",
@@ -48316,7 +48316,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "辰部（たつ・しんのたつ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       }
     ]
   },
@@ -48340,7 +48340,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "辛部（しん・からい）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "辞",
@@ -48357,7 +48357,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "辛部（しん・からい）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "辣",
@@ -48372,7 +48372,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "辛部（しん・からい）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       }
     ]
   },
@@ -48396,7 +48396,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "豕部（いのこ・いのこへん・ぶた）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "象",
@@ -48412,7 +48412,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "豕部（いのこ・いのこへん・ぶた）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "豪",
@@ -48427,7 +48427,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "豕部（いのこ・いのこへん・ぶた）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -48449,7 +48449,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "釆部（のごめ・のごめへん） 爪部（つめ・つめかんむり・つめがしら・そうにょう・のつ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "釈",
@@ -48464,7 +48464,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "釆部（のごめ・のごめへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -48487,7 +48487,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "豸部（むじな・むじなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "貌",
@@ -48502,7 +48502,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "豸部（むじな・むじなへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       }
     ]
   },
@@ -48526,7 +48526,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 7,
         busyu: "麥・麦部（むぎ・むぎへん・ばくにょう）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "麹",
@@ -48544,7 +48544,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "麥・麦部（むぎ・むぎへん・ばくにょう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "麺",
@@ -48559,7 +48559,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "麥・麦部（むぎ・むぎへん・ばくにょう）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       }
     ]
   },
@@ -48584,7 +48584,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "雨部（あめ・あめかんむり・あまかんむり）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "雪",
@@ -48601,7 +48601,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "雨部（あめ・あめかんむり・あまかんむり）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "雫",
@@ -48618,7 +48618,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "雨部（あめ・あめかんむり・あまかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "雲",
@@ -48635,7 +48635,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "雨部（あめ・あめかんむり・あまかんむり）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "雰",
@@ -48650,7 +48650,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "雨部（あめ・あめかんむり・あまかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "電",
@@ -48665,7 +48665,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "雨部（あめ・あめかんむり・あまかんむり）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "雷",
@@ -48682,7 +48682,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "雨部（あめ・あめかんむり・あまかんむり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "零",
@@ -48697,7 +48697,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "雨部（あめ・あめかんむり・あまかんむり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "需",
@@ -48712,7 +48712,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "雨部（あめ・あめかんむり・あまかんむり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "震",
@@ -48730,7 +48730,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "雨部（あめ・あめかんむり・あまかんむり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "霊",
@@ -48748,7 +48748,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "雨部（あめ・あめかんむり・あまかんむり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "霜",
@@ -48765,7 +48765,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "雨部（あめ・あめかんむり・あまかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "霞",
@@ -48783,7 +48783,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "雨部（あめ・あめかんむり・あまかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "霧",
@@ -48800,7 +48800,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "雨部（あめ・あめかんむり・あまかんむり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "露",
@@ -48818,7 +48818,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 21,
         busyu: "雨部（あめ・あめかんむり・あまかんむり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -48844,7 +48844,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "金部（かね・かねへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "針",
@@ -48861,7 +48861,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "金部（かね・かねへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "釜",
@@ -48876,7 +48876,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "釘",
@@ -48894,7 +48894,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "釣",
@@ -48911,7 +48911,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "釦",
@@ -48928,7 +48928,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "釧",
@@ -48946,7 +48946,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鈍",
@@ -48964,7 +48964,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "鈎",
@@ -48986,7 +48986,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鉄",
@@ -49001,7 +49001,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "金部（かね・かねへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "鉱",
@@ -49016,7 +49016,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "金部（かね・かねへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "鉛",
@@ -49033,7 +49033,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "鉢",
@@ -49049,7 +49049,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "鈴",
@@ -49067,7 +49067,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "鉤",
@@ -49089,7 +49089,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鈷",
@@ -49104,7 +49104,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鉦",
@@ -49122,7 +49122,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "銀",
@@ -49137,7 +49137,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "金部（かね・かねへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "銭",
@@ -49154,7 +49154,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "金部（かね・かねへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "銅",
@@ -49169,7 +49169,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "金部（かね・かねへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "銃",
@@ -49184,7 +49184,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "銘",
@@ -49199,7 +49199,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "銑",
@@ -49216,7 +49216,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "銚",
@@ -49235,7 +49235,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鉾",
@@ -49254,7 +49254,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鋭",
@@ -49271,7 +49271,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "鋳",
@@ -49288,7 +49288,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "鋤",
@@ -49307,7 +49307,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鋲",
@@ -49322,7 +49322,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鋪",
@@ -49341,7 +49341,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鋒",
@@ -49360,7 +49360,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "録",
@@ -49375,7 +49375,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "金部（かね・かねへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "鋼",
@@ -49392,7 +49392,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "金部（かね・かねへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "錯",
@@ -49407,7 +49407,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "錠",
@@ -49422,7 +49422,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "錬",
@@ -49437,7 +49437,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "錦",
@@ -49454,7 +49454,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "錮",
@@ -49469,7 +49469,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "鋸",
@@ -49487,7 +49487,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "錫",
@@ -49508,7 +49508,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "錆",
@@ -49527,7 +49527,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "錘",
@@ -49545,7 +49545,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "錐",
@@ -49562,7 +49562,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "錨",
@@ -49579,7 +49579,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鍛",
@@ -49596,7 +49596,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "鍵",
@@ -49613,7 +49613,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "鍋",
@@ -49628,7 +49628,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "鍔",
@@ -49645,7 +49645,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鍬",
@@ -49664,7 +49664,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鍾",
@@ -49683,7 +49683,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鍍",
@@ -49700,7 +49700,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鎖",
@@ -49717,7 +49717,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "鎮",
@@ -49735,7 +49735,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "鎌",
@@ -49750,7 +49750,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "鎧",
@@ -49769,7 +49769,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鎗",
@@ -49787,7 +49787,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鎚",
@@ -49806,7 +49806,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鎔",
@@ -49826,7 +49826,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鏡",
@@ -49843,7 +49843,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "金部（かね・かねへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "鏑",
@@ -49862,7 +49862,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鐘",
@@ -49879,7 +49879,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "鐙",
@@ -49897,7 +49897,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鐸",
@@ -49914,7 +49914,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 21,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鑓",
@@ -49929,7 +49929,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 22,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鑑",
@@ -49946,7 +49946,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 23,
         busyu: "金部（かね・かねへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -49972,7 +49972,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "靑部（あお・あおへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "靖",
@@ -49991,7 +49991,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "立部（たつ・たつへん） 靑部（あお・あおへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "静",
@@ -50012,7 +50012,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "靑部（あお・あおへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       }
     ]
   },
@@ -50036,7 +50036,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "門部（もん・もんがまえ・かどがまえ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "閃",
@@ -50053,7 +50053,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "門部（もん・もんがまえ・かどがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "閉",
@@ -50073,7 +50073,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "門部（もん・もんがまえ・かどがまえ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "間",
@@ -50092,7 +50092,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "門部（もん・もんがまえ・かどがまえ）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "開",
@@ -50112,7 +50112,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "門部（もん・もんがまえ・かどがまえ）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "閑",
@@ -50127,7 +50127,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "門部（もん・もんがまえ・かどがまえ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "閏",
@@ -50144,7 +50144,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "門部（もん・もんがまえ・かどがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "関",
@@ -50162,7 +50162,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "門部（もん・もんがまえ・かどがまえ）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "閣",
@@ -50177,7 +50177,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "門部（もん・もんがまえ・かどがまえ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "閥",
@@ -50192,7 +50192,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "門部（もん・もんがまえ・かどがまえ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "閤",
@@ -50210,7 +50210,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "門部（もん・もんがまえ・かどがまえ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "閲",
@@ -50225,7 +50225,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "門部（もん・もんがまえ・かどがまえ）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "闇",
@@ -50240,7 +50240,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "門部（もん・もんがまえ・かどがまえ）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "闘",
@@ -50257,7 +50257,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "門部（もん・もんがまえ・かどがまえ）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -50279,7 +50279,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "隹部（ふるとり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "隼",
@@ -50297,7 +50297,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "隹部（ふるとり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "雀",
@@ -50314,7 +50314,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "隹部（ふるとり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "集",
@@ -50333,7 +50333,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "隹部（ふるとり）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "雄",
@@ -50351,7 +50351,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "隹部（ふるとり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "雇",
@@ -50368,7 +50368,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "隹部（ふるとり）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "雁",
@@ -50385,7 +50385,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "隹部（ふるとり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "雅",
@@ -50400,7 +50400,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "隹部（ふるとり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "雑",
@@ -50416,7 +50416,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "隹部（ふるとり）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "雌",
@@ -50434,7 +50434,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "隹部（ふるとり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "難",
@@ -50452,7 +50452,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "隹部（ふるとり）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "離",
@@ -50470,7 +50470,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "隹部（ふるとり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "雛",
@@ -50489,7 +50489,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "隹部（ふるとり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -50511,7 +50511,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 8,
         busyu: "齊・斉部（せい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "斎",
@@ -50526,7 +50526,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "齊・斉部（せい）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       }
     ]
   },
@@ -50553,7 +50553,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "食部（しょく・しょくへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "飢",
@@ -50570,7 +50570,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "食部（しょく・しょくへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "飲",
@@ -50587,7 +50587,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "食部（しょく・しょくへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "飯",
@@ -50604,7 +50604,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "食部（しょく・しょくへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "飼",
@@ -50621,7 +50621,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "食部（しょく・しょくへん）",
         grade: "小学校 ５ 年生",
-        kanken: "６ 級"
+        kanken: 6
       },
       {
         char: "飾",
@@ -50638,7 +50638,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "食部（しょく・しょくへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "飽",
@@ -50656,7 +50656,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "食部（しょく・しょくへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "飴",
@@ -50674,7 +50674,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "食部（しょく・しょくへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "養",
@@ -50691,7 +50691,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "食部（しょく・しょくへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "餓",
@@ -50706,7 +50706,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "食部（しょく・しょくへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "餌",
@@ -50724,7 +50724,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "食部（しょく・しょくへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "餅",
@@ -50741,7 +50741,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "食部（しょく・しょくへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "館",
@@ -50758,7 +50758,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "食部（しょく・しょくへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "餐",
@@ -50777,7 +50777,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "食部（しょく・しょくへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "饗",
@@ -50796,7 +50796,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 22,
         busyu: "食部（しょく・しょくへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -50822,7 +50822,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "音部（おと・おとへん）",
         grade: "小学校 １ 年生",
-        kanken: "１０ 級"
+        kanken: 10
       },
       {
         char: "韻",
@@ -50837,7 +50837,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "音部（おと・おとへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "響",
@@ -50854,7 +50854,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "音部（おと・おとへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -50878,7 +50878,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "革部（かわへん・かくのかわ・つくりがわ）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "靱",
@@ -50897,7 +50897,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "革部（かわへん・かくのかわ・つくりがわ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "靭",
@@ -50916,7 +50916,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "革部（かわへん・かくのかわ・つくりがわ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "靴",
@@ -50933,7 +50933,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "革部（かわへん・かくのかわ・つくりがわ）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "鞄",
@@ -50951,7 +50951,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "革部（かわへん・かくのかわ・つくりがわ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鞍",
@@ -50968,7 +50968,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "革部（かわへん・かくのかわ・つくりがわ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鞘",
@@ -50986,7 +50986,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "革部（かわへん・かくのかわ・つくりがわ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鞠",
@@ -51006,7 +51006,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "革部（かわへん・かくのかわ・つくりがわ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鞭",
@@ -51025,7 +51025,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "革部（かわへん・かくのかわ・つくりがわ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "韃",
@@ -51044,7 +51044,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 22,
         busyu: "革部（かわへん・かくのかわ・つくりがわ）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -51071,7 +51071,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "香部（かおり・か）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "馨",
@@ -51093,7 +51093,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "香部（かおり・か）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -51117,7 +51117,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 9,
         busyu: "韭部（にら）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "韮",
@@ -51134,7 +51134,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "艸部（くさ・くさかんむり・そうこう） 韭部（にら）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -51159,7 +51159,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "馬部（うま・うまへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "馴",
@@ -51181,7 +51181,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "馬部（うま・うまへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "馳",
@@ -51199,7 +51199,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "馬部（うま・うまへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "駅",
@@ -51214,7 +51214,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "馬部（うま・うまへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "駆",
@@ -51232,7 +51232,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "馬部（うま・うまへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "駄",
@@ -51247,7 +51247,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "馬部（うま・うまへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "駁",
@@ -51268,7 +51268,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "馬部（うま・うまへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "駐",
@@ -51283,7 +51283,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "馬部（うま・うまへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "駒",
@@ -51298,7 +51298,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "馬部（うま・うまへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "駕",
@@ -51317,7 +51317,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "馬部（うま・うまへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "駈",
@@ -51336,7 +51336,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "馬部（うま・うまへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "駿",
@@ -51354,7 +51354,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "馬部（うま・うまへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "験",
@@ -51370,7 +51370,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "馬部（うま・うまへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "騒",
@@ -51387,7 +51387,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "馬部（うま・うまへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "騎",
@@ -51402,7 +51402,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "馬部（うま・うまへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "騨",
@@ -51419,7 +51419,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "馬部（うま・うまへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "騰",
@@ -51434,7 +51434,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "馬部（うま・うまへん）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "驚",
@@ -51452,7 +51452,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 22,
         busyu: "馬部（うま・うまへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   },
@@ -51476,7 +51476,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "骨部（ほね・ほねへん）",
         grade: "小学校 ６ 年生",
-        kanken: "５ 級"
+        kanken: 5
       },
       {
         char: "骸",
@@ -51491,7 +51491,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "骨部（ほね・ほねへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "髄",
@@ -51506,7 +51506,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "骨部（ほね・ほねへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       }
     ]
   },
@@ -51530,7 +51530,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 10,
         busyu: "鬼部（おに・きにょう）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "魂",
@@ -51547,7 +51547,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "鬼部（おに・きにょう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "魁",
@@ -51566,7 +51566,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "鬼部（おに・きにょう）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "魅",
@@ -51581,7 +51581,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "鬼部（おに・きにょう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "魔",
@@ -51596,7 +51596,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 21,
         busyu: "鬼部（おに・きにょう）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       }
     ]
   },
@@ -51620,7 +51620,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "髟部（かみがしら・かみかんむり）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "髭",
@@ -51638,7 +51638,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "髟部（かみがしら・かみかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -51663,7 +51663,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "鮎",
@@ -51682,7 +51682,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鮒",
@@ -51699,7 +51699,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鮮",
@@ -51716,7 +51716,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "鮪",
@@ -51735,7 +51735,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鮭",
@@ -51755,7 +51755,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鮫",
@@ -51773,7 +51773,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鯉",
@@ -51791,7 +51791,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鯨",
@@ -51808,7 +51808,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "鯖",
@@ -51827,7 +51827,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鯵",
@@ -51844,7 +51844,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鯛",
@@ -51861,7 +51861,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鰐",
@@ -51878,7 +51878,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鰍",
@@ -51897,7 +51897,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 20,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鰯",
@@ -51912,7 +51912,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 21,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鰭",
@@ -51930,7 +51930,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 21,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鱈",
@@ -51947,7 +51947,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 22,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鰺",
@@ -51964,7 +51964,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 22,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鰻",
@@ -51982,7 +51982,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 22,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鰹",
@@ -51999,7 +51999,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 23,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鱒",
@@ -52017,7 +52017,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 23,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鱗",
@@ -52034,7 +52034,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 24,
         busyu: "魚部（うお・うおへん・さかなへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -52059,7 +52059,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "黑・黒部（くろ・くろへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "黙",
@@ -52076,7 +52076,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "黑・黒部（くろ・くろへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "黛",
@@ -52095,7 +52095,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "黑・黒部（くろ・くろへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -52119,7 +52119,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "鳥部（とり・とりへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "鳩",
@@ -52140,7 +52140,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 13,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鳴",
@@ -52159,7 +52159,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "鳥部（とり・とりへん）",
         grade: "小学校 ２ 年生",
-        kanken: "９ 級"
+        kanken: 9
       },
       {
         char: "鳶",
@@ -52177,7 +52177,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鳳",
@@ -52195,7 +52195,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 14,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鴎",
@@ -52212,7 +52212,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鴈",
@@ -52229,7 +52229,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鴇",
@@ -52247,7 +52247,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 15,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鴛",
@@ -52265,7 +52265,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鴨",
@@ -52282,7 +52282,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鴦",
@@ -52299,7 +52299,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鴬",
@@ -52316,7 +52316,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鴫",
@@ -52331,7 +52331,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 16,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鴻",
@@ -52350,7 +52350,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鵠",
@@ -52370,7 +52370,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鵜",
@@ -52387,7 +52387,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鶏",
@@ -52404,7 +52404,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "３ 級"
+        kanken: 3
       },
       {
         char: "鵡",
@@ -52420,7 +52420,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鵬",
@@ -52437,7 +52437,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鶴",
@@ -52452,7 +52452,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 21,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "鶯",
@@ -52469,7 +52469,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 21,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鷲",
@@ -52487,7 +52487,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 23,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鷹",
@@ -52505,7 +52505,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 24,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "鸚",
@@ -52522,7 +52522,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 28,
         busyu: "鳥部（とり・とりへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -52545,7 +52545,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "鹿部（しか・しかへん）",
         grade: "小学校 ４ 年生",
-        kanken: "７ 級"
+        kanken: 7
       },
       {
         char: "麗",
@@ -52562,7 +52562,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "鹿部（しか・しかへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       },
       {
         char: "麓",
@@ -52579,7 +52579,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "鹿部（しか・しかへん） 木部（き・きへん）",
         grade: null,
-        kanken: "２ 級"
+        kanken: 2
       },
       {
         char: "麒",
@@ -52596,7 +52596,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 19,
         busyu: "鹿部（しか・しかへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       },
       {
         char: "麟",
@@ -52613,7 +52613,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 24,
         busyu: "鹿部（しか・しかへん）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -52637,7 +52637,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 11,
         busyu: "麻部（あさ・あさかんむり）",
         grade: null,
-        kanken: "準 ２ 級"
+        kanken: 2.5
       },
       {
         char: "麿",
@@ -52652,7 +52652,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 18,
         busyu: "麻部（あさ・あさかんむり）",
         grade: null,
-        kanken: "準 １ 級"
+        kanken: 1.5
       }
     ]
   },
@@ -52676,7 +52676,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 12,
         busyu: "齒・歯部（は・はへん）",
         grade: "小学校 ３ 年生",
-        kanken: "８ 級"
+        kanken: 8
       },
       {
         char: "齢",
@@ -52691,7 +52691,7 @@ export const busyuData: RadicalEntry[] = [
         kakusuu: 17,
         busyu: "齒・歯部（は・はへん）",
         grade: null,
-        kanken: "４ 級"
+        kanken: 4
       }
     ]
   }
