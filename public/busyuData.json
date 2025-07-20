@@ -1,0 +1,892 @@
+[
+  {
+    "radical": "水 氵 氺",
+    "count": 161,
+    "reading": "みず・さんずい・したみず"
+  },
+  {
+    "radical": "木",
+    "count": 161,
+    "reading": "き・きへん"
+  },
+  {
+    "radical": "人 亻",
+    "count": 128,
+    "reading": "ひと・にんべん・ひとがしら・ひとやね"
+  },
+  {
+    "radical": "手 扌",
+    "count": 124,
+    "reading": "て・てへん"
+  },
+  {
+    "radical": "艸 艹",
+    "count": 121,
+    "reading": "くさ・くさかんむり・そうこう"
+  },
+  {
+    "radical": "口",
+    "count": 102,
+    "reading": "くち・くちへん"
+  },
+  {
+    "radical": "心 忄",
+    "count": 93,
+    "reading": "こころ・したごころ・りっしんべん"
+  },
+  {
+    "radical": "言 訁",
+    "count": 85,
+    "reading": "げん・ごんべん・ことば"
+  },
+  {
+    "radical": "糸",
+    "count": 82,
+    "reading": "いと・いとへん"
+  },
+  {
+    "radical": "土",
+    "count": 65,
+    "reading": "つち・つちへん・どへん"
+  },
+  {
+    "radical": "辵 辶",
+    "count": 65,
+    "reading": "しんにょう・しんにゅう"
+  },
+  {
+    "radical": "金 釒",
+    "count": 65,
+    "reading": "かね・かねへん"
+  },
+  {
+    "radical": "肉 月",
+    "count": 54,
+    "reading": "にく・にくづき"
+  },
+  {
+    "radical": "女",
+    "count": 51,
+    "reading": "おんな・おんなへん"
+  },
+  {
+    "radical": "日",
+    "count": 50,
+    "reading": "ひ・ひへん・にち・にちへん"
+  },
+  {
+    "radical": "宀",
+    "count": 44,
+    "reading": "うかんむり"
+  },
+  {
+    "radical": "竹",
+    "count": 43,
+    "reading": "たけ・たけかんむり"
+  },
+  {
+    "radical": "火 灬",
+    "count": 40,
+    "reading": "ひ・ひへん・れっか・れんが"
+  },
+  {
+    "radical": "貝",
+    "count": 40,
+    "reading": "かい・かいへん・こがい"
+  },
+  {
+    "radical": "刀 刂",
+    "count": 36,
+    "reading": "かたな・りっとう"
+  },
+  {
+    "radical": "禾",
+    "count": 36,
+    "reading": "のぎ・のぎへん"
+  },
+  {
+    "radical": "阜 阝",
+    "count": 33,
+    "reading": "こざと・こざとへん・おか"
+  },
+  {
+    "radical": "石",
+    "count": 30,
+    "reading": "いし・いしへん"
+  },
+  {
+    "radical": "玉 王 ⺩",
+    "count": 29,
+    "reading": "たま・たまへん・おうへん"
+  },
+  {
+    "radical": "虫",
+    "count": 29,
+    "reading": "むし・むしへん"
+  },
+  {
+    "radical": "广",
+    "count": 28,
+    "reading": "まだれ"
+  },
+  {
+    "radical": "山",
+    "count": 27,
+    "reading": "やま・やまへん・やまかんむり"
+  },
+  {
+    "radical": "衣 衤",
+    "count": 27,
+    "reading": "ころも・ころもへん"
+  },
+  {
+    "radical": "頁",
+    "count": 27,
+    "reading": "おおがい・いちのかい"
+  },
+  {
+    "radical": "力",
+    "count": 25,
+    "reading": "ちから"
+  },
+  {
+    "radical": "犬 犭",
+    "count": 25,
+    "reading": "いぬ・けものへん"
+  },
+  {
+    "radical": "田",
+    "count": 24,
+    "reading": "た・たへん"
+  },
+  {
+    "radical": "鳥",
+    "count": 24,
+    "reading": "とり・とりへん"
+  },
+  {
+    "radical": "示 礻",
+    "count": 23,
+    "reading": "しめす・しめすへん・ねへん"
+  },
+  {
+    "radical": "米",
+    "count": 22,
+    "reading": "こめ・こめへん"
+  },
+  {
+    "radical": "魚",
+    "count": 22,
+    "reading": "うお・うおへん・さかなへん"
+  },
+  {
+    "radical": "巾",
+    "count": 21,
+    "reading": "はば・はばへん・きんべん"
+  },
+  {
+    "radical": "彳",
+    "count": 21,
+    "reading": "ぎょうにんべん"
+  },
+  {
+    "radical": "目 罒",
+    "count": 21,
+    "reading": "め・めへん"
+  },
+  {
+    "radical": "車",
+    "count": 21,
+    "reading": "くるま・くるまへん"
+  },
+  {
+    "radical": "酉",
+    "count": 21,
+    "reading": "ひよみのとり・とりへん・さけのとり・こよみのとり"
+  },
+  {
+    "radical": "大",
+    "count": 20,
+    "reading": "だい"
+  },
+  {
+    "radical": "攴 攵",
+    "count": 19,
+    "reading": "ぼくにょう・ぼくづくり・とまた・のぶん"
+  },
+  {
+    "radical": "一",
+    "count": 18,
+    "reading": "いち"
+  },
+  {
+    "radical": "尸",
+    "count": 18,
+    "reading": "しかばね・かばね・しかばねだれ・しかばねかんむり・かばねだれ"
+  },
+  {
+    "radical": "疒",
+    "count": 18,
+    "reading": "やまいだれ"
+  },
+  {
+    "radical": "馬",
+    "count": 18,
+    "reading": "うま・うまへん"
+  },
+  {
+    "radical": "儿",
+    "count": 17,
+    "reading": "にんにょう・ひとあし"
+  },
+  {
+    "radical": "弓",
+    "count": 16,
+    "reading": "ゆみ・ゆみへん"
+  },
+  {
+    "radical": "邑 阝",
+    "count": 16,
+    "reading": "おおざと・むら"
+  },
+  {
+    "radical": "穴",
+    "count": 16,
+    "reading": "あな・あなかんむり"
+  },
+  {
+    "radical": "雨",
+    "count": 15,
+    "reading": "あめ・あめかんむり・あまかんむり"
+  },
+  {
+    "radical": "食 飠",
+    "count": 15,
+    "reading": "しょく・しょくへん"
+  },
+  {
+    "radical": "又",
+    "count": 14,
+    "reading": "また"
+  },
+  {
+    "radical": "足",
+    "count": 14,
+    "reading": "あし・あしへん"
+  },
+  {
+    "radical": "門",
+    "count": 14,
+    "reading": "もん・もんがまえ・かどがまえ"
+  },
+  {
+    "radical": "十",
+    "count": 13,
+    "reading": "じゅう"
+  },
+  {
+    "radical": "囗",
+    "count": 13,
+    "reading": "くにがまえ"
+  },
+  {
+    "radical": "隹",
+    "count": 13,
+    "reading": "ふるとり"
+  },
+  {
+    "radical": "寸",
+    "count": 12,
+    "reading": "すん・すんづくり"
+  },
+  {
+    "radical": "亠",
+    "count": 11,
+    "reading": "なべぶた・けいさんかんむり"
+  },
+  {
+    "radical": "子",
+    "count": 11,
+    "reading": "こ・こへん・こども・こどもへん"
+  },
+  {
+    "radical": "欠",
+    "count": 11,
+    "reading": "あくび・かける・けんづくり"
+  },
+  {
+    "radical": "牛 牜",
+    "count": 11,
+    "reading": "うし・うしへん"
+  },
+  {
+    "radical": "戈",
+    "count": 11,
+    "reading": "ほこづくり・ほこがまえ・ほこ・かのほこ"
+  },
+  {
+    "radical": "羽 羽",
+    "count": 11,
+    "reading": "はね"
+  },
+  {
+    "radical": "冫",
+    "count": 10,
+    "reading": "にすい"
+  },
+  {
+    "radical": "曰",
+    "count": 10,
+    "reading": "いわく・ひらび"
+  },
+  {
+    "radical": "月",
+    "count": 10,
+    "reading": "つき・つきへん"
+  },
+  {
+    "radical": "皿",
+    "count": 10,
+    "reading": "さら"
+  },
+  {
+    "radical": "革",
+    "count": 10,
+    "reading": "かわへん・かくのかわ・つくりがわ"
+  },
+  {
+    "radical": "二",
+    "count": 9,
+    "reading": "に"
+  },
+  {
+    "radical": "八",
+    "count": 9,
+    "reading": "はち・はちがしら・は"
+  },
+  {
+    "radical": "卩 㔾",
+    "count": 9,
+    "reading": "ふしづくり・わりふ"
+  },
+  {
+    "radical": "彡",
+    "count": 9,
+    "reading": "さんづくり"
+  },
+  {
+    "radical": "立",
+    "count": 9,
+    "reading": "たつ・たつへん"
+  },
+  {
+    "radical": "舟",
+    "count": 9,
+    "reading": "ふね・ふねへん"
+  },
+  {
+    "radical": "厂",
+    "count": 8,
+    "reading": "がんだれ"
+  },
+  {
+    "radical": "士",
+    "count": 8,
+    "reading": "さむらい"
+  },
+  {
+    "radical": "网 罒 㓁",
+    "count": 8,
+    "reading": "あみがしら・あみめ"
+  },
+  {
+    "radical": "見",
+    "count": 8,
+    "reading": "みる"
+  },
+  {
+    "radical": "乙 乚",
+    "count": 7,
+    "reading": "おつ・おつにょう・つりばり"
+  },
+  {
+    "radical": "丿",
+    "count": 7,
+    "reading": "の・はらいぼう"
+  },
+  {
+    "radical": "几",
+    "count": 7,
+    "reading": "つくえ・きにょう・かぜかんむり・かぜがまえ・かざがまえ"
+  },
+  {
+    "radical": "匚",
+    "count": 7,
+    "reading": "はこがまえ"
+  },
+  {
+    "radical": "止",
+    "count": 7,
+    "reading": "とめる・とめへん"
+  },
+  {
+    "radical": "斤",
+    "count": 7,
+    "reading": "おのづくり・おの・きん"
+  },
+  {
+    "radical": "方",
+    "count": 7,
+    "reading": "ほう・ほうへん・かたへん"
+  },
+  {
+    "radical": "殳",
+    "count": 7,
+    "reading": "ほこづくり・るまた"
+  },
+  {
+    "radical": "白",
+    "count": 7,
+    "reading": "しろ・しろへん"
+  },
+  {
+    "radical": "耳",
+    "count": 7,
+    "reading": "みみ・みみへん"
+  },
+  {
+    "radical": "羊 ⺷",
+    "count": 7,
+    "reading": "ひつじ・ひつじへん"
+  },
+  {
+    "radical": "走",
+    "count": 7,
+    "reading": "はしる・そうにょう"
+  },
+  {
+    "radical": "凵",
+    "count": 6,
+    "reading": "かんにょう・うけばこ・かんがまえ"
+  },
+  {
+    "radical": "勹",
+    "count": 6,
+    "reading": "つつみがまえ"
+  },
+  {
+    "radical": "小",
+    "count": 6,
+    "reading": "しょう・しょうがしら・なおがしら"
+  },
+  {
+    "radical": "夕",
+    "count": 6,
+    "reading": "ゆうべ・ゆう・た"
+  },
+  {
+    "radical": "己 巳 已",
+    "count": 6,
+    "reading": "おのれ"
+  },
+  {
+    "radical": "戶 戸",
+    "count": 6,
+    "reading": "と・とだれ・とかんむり・とびらのと"
+  },
+  {
+    "radical": "歹 歺",
+    "count": 6,
+    "reading": "がつ・がつへん・いちたへん・かばねへん"
+  },
+  {
+    "radical": "矢",
+    "count": 6,
+    "reading": "や・やへん"
+  },
+  {
+    "radical": "行",
+    "count": 6,
+    "reading": "ぎょう・ぎょうがまえ・ゆきがまえ"
+  },
+  {
+    "radical": "丶",
+    "count": 5,
+    "reading": "てん・ちょぼ"
+  },
+  {
+    "radical": "冂",
+    "count": 5,
+    "reading": "けいがまえ・まきがまえ・えんがまえ・どうがまえ"
+  },
+  {
+    "radical": "工",
+    "count": 5,
+    "reading": "え・たくみ・たくみへん・こう"
+  },
+  {
+    "radical": "干",
+    "count": 5,
+    "reading": "かん・いちじゅう・ほす"
+  },
+  {
+    "radical": "廴",
+    "count": 5,
+    "reading": "えんにょう・いんにょう"
+  },
+  {
+    "radical": "廾",
+    "count": 5,
+    "reading": "にじゅうあし・こまぬき"
+  },
+  {
+    "radical": "虍",
+    "count": 5,
+    "reading": "とらかんむり・とらがしら・とら"
+  },
+  {
+    "radical": "鬼",
+    "count": 5,
+    "reading": "おに・きにょう"
+  },
+  {
+    "radical": "鹿",
+    "count": 5,
+    "reading": "しか・しかへん"
+  },
+  {
+    "radical": "亅",
+    "count": 4,
+    "reading": "はねぼう・かぎ"
+  },
+  {
+    "radical": "匸",
+    "count": 4,
+    "reading": "かくしがまえ"
+  },
+  {
+    "radical": "冖",
+    "count": 4,
+    "reading": "わかんむり・ひらかんむり・べきかんむり"
+  },
+  {
+    "radical": "⺍",
+    "count": 4,
+    "reading": "つ・つかんむり"
+  },
+  {
+    "radical": "幺",
+    "count": 4,
+    "reading": "いとがしら・よう"
+  },
+  {
+    "radical": "文",
+    "count": 4,
+    "reading": "ぶん・ぶんにょう"
+  },
+  {
+    "radical": "斗",
+    "count": 4,
+    "reading": "とます・と"
+  },
+  {
+    "radical": "片",
+    "count": 4,
+    "reading": "かた・かたへん"
+  },
+  {
+    "radical": "老 耂",
+    "count": 4,
+    "reading": "おいかんむり・おいがしら・おい"
+  },
+  {
+    "radical": "疋",
+    "count": 4,
+    "reading": "ひき・ひきへん"
+  },
+  {
+    "radical": "襾 西 覀",
+    "count": 4,
+    "reading": "おおいかんむり・にし・かなめのかしら"
+  },
+  {
+    "radical": "舌",
+    "count": 4,
+    "reading": "した・したへん"
+  },
+  {
+    "radical": "里",
+    "count": 4,
+    "reading": "さと・さとへん"
+  },
+  {
+    "radical": "入",
+    "count": 3,
+    "reading": "いる・にゅう・いりがしら・いりやね"
+  },
+  {
+    "radical": "匕",
+    "count": 3,
+    "reading": "ひ・さじ・さじのひ"
+  },
+  {
+    "radical": "卜",
+    "count": 3,
+    "reading": "ぼく・ぼくのと・と・うらない"
+  },
+  {
+    "radical": "巛 川",
+    "count": 3,
+    "reading": "かわ・まげかわ・まがりがわ"
+  },
+  {
+    "radical": "夂 夊",
+    "count": 3,
+    "reading": "ふゆがしら・ち・すいにょう・なつあし"
+  },
+  {
+    "radical": "毋 母",
+    "count": 3,
+    "reading": "なかれ・ははのかん・はは"
+  },
+  {
+    "radical": "爪 爫",
+    "count": 3,
+    "reading": "つめ・つめかんむり・つめがしら・そうにょう・のつ"
+  },
+  {
+    "radical": "生",
+    "count": 3,
+    "reading": "いきる・うまれる"
+  },
+  {
+    "radical": "甘",
+    "count": 3,
+    "reading": "あまい・かん"
+  },
+  {
+    "radical": "瓦",
+    "count": 3,
+    "reading": "かわら"
+  },
+  {
+    "radical": "臣",
+    "count": 3,
+    "reading": "しん"
+  },
+  {
+    "radical": "舛",
+    "count": 3,
+    "reading": "まいあし・ます"
+  },
+  {
+    "radical": "赤",
+    "count": 3,
+    "reading": "あか・あかへん"
+  },
+  {
+    "radical": "角",
+    "count": 3,
+    "reading": "つの・つのへん・かく"
+  },
+  {
+    "radical": "豆",
+    "count": 3,
+    "reading": "まめ・まめへん"
+  },
+  {
+    "radical": "辰",
+    "count": 3,
+    "reading": "たつ・しんのたつ"
+  },
+  {
+    "radical": "辛",
+    "count": 3,
+    "reading": "しん・からい"
+  },
+  {
+    "radical": "豕",
+    "count": 3,
+    "reading": "いのこ・いのこへん・ぶた"
+  },
+  {
+    "radical": "麥 麦",
+    "count": 3,
+    "reading": "むぎ・むぎへん・ばくにょう"
+  },
+  {
+    "radical": "靑 青",
+    "count": 3,
+    "reading": "あお・あおへん"
+  },
+  {
+    "radical": "音",
+    "count": 3,
+    "reading": "おと・おとへん"
+  },
+  {
+    "radical": "骨",
+    "count": 3,
+    "reading": "ほね・ほねへん"
+  },
+  {
+    "radical": "黑 黒",
+    "count": 3,
+    "reading": "くろ・くろへん"
+  },
+  {
+    "radical": "丨",
+    "count": 2,
+    "reading": "たてぼう・ぼう"
+  },
+  {
+    "radical": "厶",
+    "count": 2,
+    "reading": "む"
+  },
+  {
+    "radical": "弋",
+    "count": 2,
+    "reading": "しきがまえ・よく"
+  },
+  {
+    "radical": "尢 尣",
+    "count": 2,
+    "reading": "だいのまげあし・まげあし・おうにょう"
+  },
+  {
+    "radical": "彑 彐",
+    "count": 2,
+    "reading": "けいがしら・いのこがしら"
+  },
+  {
+    "radical": "父",
+    "count": 2,
+    "reading": "ちち"
+  },
+  {
+    "radical": "氏",
+    "count": 2,
+    "reading": "うじ"
+  },
+  {
+    "radical": "比",
+    "count": 2,
+    "reading": "くらべる・ならびひ"
+  },
+  {
+    "radical": "爻",
+    "count": 2,
+    "reading": "こう・まじわる・めめ"
+  },
+  {
+    "radical": "用",
+    "count": 2,
+    "reading": "もちいる"
+  },
+  {
+    "radical": "癶",
+    "count": 2,
+    "reading": "はつがしら"
+  },
+  {
+    "radical": "玄",
+    "count": 2,
+    "reading": "げん"
+  },
+  {
+    "radical": "瓜",
+    "count": 2,
+    "reading": "うり"
+  },
+  {
+    "radical": "自",
+    "count": 2,
+    "reading": "みずから"
+  },
+  {
+    "radical": "色",
+    "count": 2,
+    "reading": "いろ"
+  },
+  {
+    "radical": "血",
+    "count": 2,
+    "reading": "ち・ちへん"
+  },
+  {
+    "radical": "艮",
+    "count": 2,
+    "reading": "うしとら・こん・こんづくり・ねづくり"
+  },
+  {
+    "radical": "耒",
+    "count": 2,
+    "reading": "らいすき・すきへん"
+  },
+  {
+    "radical": "臼",
+    "count": 2,
+    "reading": "うす"
+  },
+  {
+    "radical": "至",
+    "count": 2,
+    "reading": "いたる・いたるへん"
+  },
+  {
+    "radical": "而",
+    "count": 2,
+    "reading": "しこうして・しかして"
+  },
+  {
+    "radical": "聿",
+    "count": 2,
+    "reading": "ふで・ふでづくり"
+  },
+  {
+    "radical": "身",
+    "count": 2,
+    "reading": "み・みへん"
+  },
+  {
+    "radical": "釆",
+    "count": 2,
+    "reading": "のごめ・のごめへん"
+  },
+  {
+    "radical": "豸",
+    "count": 2,
+    "reading": "むじな・むじなへん"
+  },
+  {
+    "radical": "齊 斉",
+    "count": 2,
+    "reading": "せい"
+  },
+  {
+    "radical": "香",
+    "count": 2,
+    "reading": "かおり・か"
+  },
+  {
+    "radical": "韭",
+    "count": 2,
+    "reading": "にら"
+  },
+  {
+    "radical": "髟",
+    "count": 2,
+    "reading": "かみがしら・かみかんむり"
+  },
+  {
+    "radical": "麻",
+    "count": 2,
+    "reading": "あさ・あさかんむり"
+  },
+  {
+    "radical": "齒 歯",
+    "count": 2,
+    "reading": "は・はへん"
+  }
+]

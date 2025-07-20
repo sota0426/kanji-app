@@ -29,7 +29,6 @@ export default function GameEndScreen({
   onReturn,
 }: GameEndScreenProps) {
   const [width , height] = useWindowSize();
-
   
   /** ---------------------- メッセージ ---------------------- */
   const message = (score:number) => {

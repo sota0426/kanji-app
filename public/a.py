@@ -1,42 +1,42 @@
+import json
 import re
+import csv
 
-# TypeScript ファイル名
-input_file = "public\yojiData.ts"
-output_file = "public\yojiData_out.ts"
+# TypeScript構文の配列だけを貼り付けたファイル（例: ts_data.txt）
+with open(r'public\busyuData copy.txt', 'r', encoding='utf-8') as f:
+    ts_data = f.read()
 
-# ファイル読み込み
-with open(input_file, "r", encoding="utf-8") as f:
-    content = f.read()
+# ステップ1: コメントを削除（// や /* */ を削除）
+ts_data = re.sub(r'//.*', '', ts_data)
+ts_data = re.sub(r'/\*.*?\*/', '', ts_data, flags=re.DOTALL)
 
-# 全ての meaning エントリを探して処理
-def clean_meaning(match):
-    full_match = match.group(0)
-    radical = match.group(1)
-    meaning = match.group(2)
+# ステップ2: キーにダブルクォートをつける（例: char: → "char":）
+ts_data = re.sub(r'(\s*)([a-zA-Z_][a-zA-Z0-9_]*)\s*:', r'\1"\2":', ts_data)
 
-    # 意味が「radicalとは、」で始まっていたら削除
-    pattern = f"^{re.escape(radical)}とは、"
-    cleaned_meaning = re.sub(pattern, '', meaning)
+# ステップ3: シングルクォートをダブルクォートに変換
+ts_data = ts_data.replace("'", '"')
 
-    # 再構築して返す
-    return f'meaning: "{cleaned_meaning}"'
+# ステップ4: 末尾のカンマを削除（オブジェクトや配列の中で）
+ts_data = re.sub(r',(\s*[}\]])', r'\1', ts_data)
 
-# meaning: "◯◯とは、..." の形式にマッチ（radical も参照）
-pattern = r'radical:\s*"(.*?)".*?meaning:\s*"(.*?)"', re.DOTALL
+# ステップ5: JSONとして読み込み
+try:
+    busyu_data = json.loads(ts_data)
 
-# 全ての meaning に対して一括処理
-content_cleaned = re.sub(
-    r'radical:\s*"([^"]+?)"(.*?)meaning:\s*"([^"]+?)"',
-    lambda m: m.group(0).replace(
-        f'meaning: "{m.group(3)}"',
-        f'meaning: "{re.sub(f"^{re.escape(m.group(1))}とは、", "", m.group(3))}"'
-    ),
-    content,
-    flags=re.DOTALL
-)
+    # 集計処理
+    results = []
+    for entry in busyu_data:
+        radical = entry['radical']
+        kanji_count = len(entry['kanji'])
+        results.append({'部首': radical, '漢字数': kanji_count})
 
-# 結果を保存
-with open(output_file, "w", encoding="utf-8") as f:
-    f.write(content_cleaned)
+    # CSV出力
+    with open('busyu_kanji_counts.csv', 'w', newline='', encoding='utf-8-sig') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=['部首', '漢字数'])
+        writer.writeheader()
+        writer.writerows(results)
 
-print(f"処理完了: {output_file} に保存されました。")
+    print("✅ CSVファイル 'busyu_kanji_counts.csv' を出力しました。")
+
+except json.JSONDecodeError as e:
+    print("❌ JSONとして読み込めませんでした:", e)

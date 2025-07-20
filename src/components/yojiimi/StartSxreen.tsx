@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { kankenToGrade, yojiData } from "../../../public/yojiData";
 import { useRouter } from "next/navigation";
+import { kankenToGrade, yojiData } from "../../../out/yojiData";
 
 const levels = [5, 4, 3, 2.5, 2, 1.5, 1];
 

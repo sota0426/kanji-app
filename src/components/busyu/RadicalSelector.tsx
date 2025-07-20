@@ -2,7 +2,7 @@
 // src/components/RadicalSelector.tsx
 // -----------------------
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 
 interface RadicalSelectorProps {
   radicals: {
@@ -14,6 +14,13 @@ interface RadicalSelectorProps {
 }
 
 export default function RadicalSelector({ radicals, onSelect }: RadicalSelectorProps) {
+
+  useEffect(() => {
+    // すべての部首データをJSON文字列化してコンソールに出力
+    console.log(JSON.stringify(radicals, null, 2));
+  }, [radicals]);
+
+
   return (
     <div className="grid gird-cols-1 md:grid-cols-2  gap-4">
       {radicals
