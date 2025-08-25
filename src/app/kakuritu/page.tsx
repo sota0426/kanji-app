@@ -547,6 +547,8 @@ export default function CombinatoricsQuizApp() {
             placeholder={isFraction ? "分数で入力（例 3/8）" : "数字で答えてね"}
             className="w-56 rounded-xl border px-3 py-2 text-base"
           />
+          </div>
+          <div className="flex items-center gap-2">
           <button
             onClick={check}
             className="rounded-xl border bg-emerald-600 px-4 py-2 font-semibold text-white shadow hover:bg-emerald-700"
