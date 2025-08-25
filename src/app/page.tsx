@@ -64,17 +64,18 @@ export default function Home() {
   }, {});
 
   // 難易度の色分け
-  const getDifficultyColor = (difficulty) => {
-    switch (difficulty) {
-      case "初級": return "bg-green-100 text-green-800";
-      case "中級": return "bg-yellow-100 text-yellow-800";
-      case "上級": return "bg-red-100 text-red-800";
-      default: return "bg-gray-100 text-gray-800";
-    }
-  };
+// 難易度の色分け
+const getDifficultyColor = (difficulty: string): string => {
+  switch (difficulty) {
+    case "初級": return "bg-green-100 text-green-800";
+    case "中級": return "bg-yellow-100 text-yellow-800";
+    case "上級": return "bg-red-100 text-red-800";
+    default: return "bg-gray-100 text-gray-800";
+  }
+};
 
   // ジャンルの色分け
-  const getGenreColor = (genre) => {
+  const getGenreColor = (genre:string): string  => {
     switch (genre) {
       case "漢字": return "from-purple-400 to-pink-400";
       case "算数": return "from-blue-400 to-cyan-400";

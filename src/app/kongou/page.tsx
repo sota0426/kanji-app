@@ -186,12 +186,6 @@ export default function RadicalTrainer() {
   /* ====== ユーティリティ ====== */
   const ri = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-  // 符号付き係数の文字化（表示用）。負は括弧で包む
-  function showCoeffTerm(coeff: number, rad: number) {
-    const { A, R } = normalize(coeff, rad);
-    return formatTermInSum(A, R);
-  }
-
   /* ====== 出題生成 ====== */
 
   // 演算クイズ：足し/引き（同種のみ、負の結果を避ける）、掛け算（正の結果）
@@ -245,7 +239,6 @@ export default function RadicalTrainer() {
   // 簡単化クイズ：√n を最簡へ（2桁/3桁）
   function makeSimpQuestion(level: "easy2" | "easy3") {
     const n = level === "easy2" ? ri(10, 99) : ri(100, 999);
-    const { c, r } = simplifyRadicand(n);
     const text = `√${n} を簡単に：`;
     const expect = normalize(1, n); // = c√r と同じ
     return { text, expect: { type: "simp", A: expect.A, R: expect.R } };

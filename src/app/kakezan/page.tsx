@@ -175,11 +175,6 @@ export default function MultiplicationQuiz() {
     setResult(`答えは ${correctValue} だよ。`);
   };
 
-  // 画面内キーパッド
-  const appendDigit = (d: number) => setAnswer((prev) => (prev === "0" ? String(d) : prev + String(d)));
-  const backspace = () => setAnswer((prev) => prev.slice(0, -1));
-  const clearAll = () => setAnswer("");
-
   const KukuTable = () => (
     <Card className="w-full max-w-3xl mb-6">
       <CardContent className="p-4">
