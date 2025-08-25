@@ -49,6 +49,15 @@ export default function Home() {
       difficulty: "",
       icon: "√"
     },  
+    {
+      title: "組み合わせ・確率の計算クイズ",
+      description: "カードやサイコロで組み合わせや確率を学ぶ！",
+      path: "/kakuritu", 
+      disabled: false,
+      genre: "算数",
+      difficulty: "",
+      icon: "🎲"
+    },  
   ];
 
   // ジャンル別にクイズをグループ化

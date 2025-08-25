@@ -63,12 +63,6 @@ function formatRadical(A: number, R: number): string {
   return `${A}√${R}`;
 }
 
-// 式中に置くとき、負の項は括弧で（"+ -" の連続回避）
-function formatTermInSum(A: number, R: number): string {
-  const t = formatRadical(A, R);
-  return A < 0 ? `(${t})` : t;
-}
-
 // 同種（同じ R）を結合
 function addLikeRadicals(terms: Array<{ A: number; R: number }>) {
   const map = new Map<number, number>();
@@ -189,7 +183,7 @@ export default function RadicalTrainer() {
   /* ====== 出題生成 ====== */
 
   // 演算クイズ：足し/引き（同種のみ、負の結果を避ける）、掛け算（正の結果）
-  function makeOpsQuestion(): { text: string; expect: { type: "sum" | "mul"; sum?: any; A?: number; R?: number } } {
+  function makeOpsQuestion(): { text: string; expect: { type: "sum"; sum?: Array<{ A: number; R: number }>; A?: never; R?: never } | { type: "mul"; A: number; R: number; sum?: never } } {
     // 50% 加減算 / 50% 掛け算
     if (Math.random() < 0.5) {
       // 同種化：ベース r（平方因子無し）に s^2 を掛けた r1, r2 を作る
@@ -255,11 +249,11 @@ export default function RadicalTrainer() {
     if (type === "ops") {
       const q = makeOpsQuestion();
       setQuestion(q.text);
-      setExpected(q.expect as any);
+      setExpected(q.expect as typeof expected);
     } else {
       const q = makeSimpQuestion(type);
       setQuestion(q.text);
-      setExpected(q.expect as any);
+      setExpected(q.expect as typeof expected);
     }
   }
 
@@ -269,11 +263,11 @@ export default function RadicalTrainer() {
     if (mode === "ops") {
       const q = makeOpsQuestion();
       setQuestion(q.text);
-      setExpected(q.expect as any);
+      setExpected(q.expect as typeof expected);
     } else {
       const q = makeSimpQuestion(mode);
       setQuestion(q.text);
-      setExpected(q.expect as any);
+      setExpected(q.expect as typeof expected);
     }
   }
 
