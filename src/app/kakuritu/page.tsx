@@ -204,6 +204,8 @@ export default function CombinatoricsQuizApp() {
   const [revealed, setRevealed] = useState(false);
   const [score, setScore] = useState(0);
   const [qIndex, setQIndex] = useState(0);
+  const [wrong , setWrong] = useState<boolean | null>(null);
+
   const TOTAL_QUESTIONS = 5;
 
   function startGame(selected: Mode) {
@@ -218,6 +220,7 @@ export default function CombinatoricsQuizApp() {
     }
   }
   function nextQuestion() {
+    setWrong(false);
     if (mode === "cards" || (mode === "mixed" && qIndex % 2 === 0)) {
       setHand(dealHand(difficulty));
     }
@@ -311,7 +314,6 @@ export default function CombinatoricsQuizApp() {
   
   // ====== 判定 ======
   function check() {
-    setRevealed(true);
     let ok = false;
     if (isFraction) {
       const user = parseFraction(userAnswer);
@@ -320,18 +322,26 @@ export default function CombinatoricsQuizApp() {
     } else {
       ok = userAnswer.trim() === String(answer);
     }
+
     if (ok) {
+    setRevealed(true);
+
       setPopup(true);
+      setWrong(false);
       setTimeout(() => setPopup(false), 800);
       setScore((s) => s + 1);
+      const isLast = qIndex === TOTAL_QUESTIONS - 1;
+      if (isLast) {
+        const finalScore = ok ? score + 1 : score;
+        if (finalScore === TOTAL_QUESTIONS) {
+          setShowConfetti(true); // ✅ここで表示
+        }
+    }else{
+      setTimeout(()=>nextQuestion(),2000)
     }
-    const isLast = qIndex === TOTAL_QUESTIONS - 1;
-    if (isLast) {
-      const finalScore = ok ? score + 1 : score;
-      if (finalScore === TOTAL_QUESTIONS) {
-        setShowConfetti(true); // ✅ここで表示
-      }
-    }
+   }else{
+    setWrong(true);
+   }
   }
 
   // ====== メニュー画面 ======
@@ -340,8 +350,6 @@ export default function CombinatoricsQuizApp() {
       <div className="min-h-screen bg-gray-50 text-gray-900">
         <div className="mx-auto max-w-3xl p-6">
           <h1 className="text-3xl font-bold mb-4">場合の数クイズ（メニュー）</h1>
-
-
           <section className="mb-6 rounded-2xl border bg-white p-4 shadow grid gap-3">
             <h2 className="text-lg font-semibold">カード設定</h2>
             <div className="flex flex-wrap gap-2 items-center">
@@ -505,6 +513,10 @@ export default function CombinatoricsQuizApp() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <div className="mx-auto max-w-3xl p-6">
+
+        {/* 🎉 全問正解クラッカー */}
+        {showConfetti && <Confetti />}
+
         <header className="mb-4 flex items-center justify-between">
           <h1 className="text-xl font-bold">問題 {qIndex + 1}/{TOTAL_QUESTIONS}（得点 {score}）</h1>
           <button className="text-sm underline" onClick={()=>setMode("menu")}>メニューへ戻る</button>
@@ -525,48 +537,76 @@ export default function CombinatoricsQuizApp() {
           )}
         </section>
 
-        <section className="mb-6 rounded-2xl border bg-white p-4 shadow grid gap-3">
-          <div className="flex items-center gap-2">
-            <input
-              type={isFraction ? "text" : "number"}
-              inputMode={isFraction ? "text" : "numeric"}
-              value={userAnswer}
-              onChange={(e) => setUserAnswer(e.target.value)}
-              placeholder={isFraction ? "分数で入力（例 3/8）" : "数字で答えてね"}
-              className="w-56 rounded-xl border px-3 py-2 text-base"
-            />
-            <button onClick={check} className="rounded-xl border bg-emerald-600 px-4 py-2 font-semibold text-white shadow hover:bg-emerald-700">こたえ合わせ</button>
-            <button onClick={()=>{setRevealed(true); setUserAnswer(String(answer));}} className="rounded-xl border px-3 py-2 text-sm hover:bg-gray-50">こたえを見る</button>
-            {qIndex < TOTAL_QUESTIONS - 1 && (
-              <button onClick={nextQuestion} className="ml-auto rounded-xl border px-3 py-2 text-sm hover:bg-gray-50">次の問題 ▶</button>
+      <section className="mb-6 rounded-2xl border bg-white p-4 shadow grid gap-3">
+        <div className="flex items-center gap-2">
+          <input
+            type={isFraction ? "text" : "number"}
+            inputMode={isFraction ? "text" : "numeric"}
+            value={userAnswer}
+            onChange={(e) => setUserAnswer(e.target.value)}
+            placeholder={isFraction ? "分数で入力（例 3/8）" : "数字で答えてね"}
+            className="w-56 rounded-xl border px-3 py-2 text-base"
+          />
+          <button
+            onClick={check}
+            className="rounded-xl border bg-emerald-600 px-4 py-2 font-semibold text-white shadow hover:bg-emerald-700"
+          >
+            こたえ合わせ
+          </button>
+          <button
+            onClick={() => { setRevealed(true); setUserAnswer(String(answer)); }}
+            className="rounded-xl border px-3 py-2 text-sm hover:bg-gray-50"
+          >
+            こたえを見る
+          </button>
+          {qIndex < TOTAL_QUESTIONS - 1 && (
+            <button
+              onClick={nextQuestion}
+              className="ml-auto rounded-xl border px-3 py-2 text-sm hover:bg-gray-50"
+            >
+              次の問題 ▶
+            </button>
+          )}
+        </div>
+
+        {revealed && (
+          <div className="mt-3 rounded-xl bg-gray-50 p-3">
+            <div className="text-base">
+              正解：<span className="font-bold">{answer}</span>
+            </div>
+            <div className="text-sm opacity-80">{explanation}</div>
+            {userAnswer !== "" && (
+              <div className="mt-2 text-sm">
+                あなたの答え：<b>{userAnswer}</b>
+              </div>
             )}
           </div>
-
-          {revealed && (
-            <div className="mt-3 rounded-xl bg-gray-50 p-3">
-              <div className="text-base">正解：<span className="font-bold">{answer}</span></div>
-              <div className="text-sm opacity-80">{explanation}</div>
-              {userAnswer !== "" && (
-                <div className="mt-2 text-sm">あなたの答え：<b>{userAnswer}</b></div>
-              )}
-            </div>
-          )}
-        </section>
-
-        {qIndex === TOTAL_QUESTIONS - 1 && (
-          <section className="rounded-2xl border bg-white p-4 shadow text-center">
-            <div className="text-lg font-semibold">ゲーム終了！ 得点 {score}/{TOTAL_QUESTIONS}</div>
-            <div className="mt-2 text-sm text-gray-600">全問正解でクラッカーが鳴るよ！</div>
-            <div className="mt-4">
-              <button className="rounded-xl border bg-blue-600 text-white px-4 py-2" onClick={()=>setMode("menu")}>もう一度メニューへ</button>
-            </div>
-          </section>
         )}
 
-        <footer className="mt-6 grid gap-1 text-center text-xs text-gray-500">
-          <div>© 2025 場合の数トランプ&コインクイズ</div>
-        </footer>
-      </div>
+        {/* ❌間違い時のメッセージ */}
+        {wrong && (
+          <div className="mt-3 text-red-600 font-bold">
+            ❌ 間違いです。もう一度チャレンジしてね！
+          </div>
+        )}
+      </section>
+
+      {qIndex === TOTAL_QUESTIONS - 1 && (
+        <section className="rounded-2xl border bg-white p-4 shadow text-center">
+          <div className="text-lg font-semibold">ゲーム終了！ 得点 {score}/{TOTAL_QUESTIONS}</div>
+          <div className="mt-2 text-sm text-gray-600">全問正解でクラッカーが鳴るよ！</div>
+          <div className="mt-4">
+            <button className="rounded-xl border bg-blue-600 text-white px-4 py-2" onClick={()=>setMode("menu")}>もう一度メニューへ</button>
+          </div>
+        </section>
+      )}
+
+      <footer className="mt-6 grid gap-1 text-center text-xs text-gray-500">
+        <div>© 2025 場合の数トランプ&コインクイズ</div>
+      </footer>
     </div>
-  );
-}
+
+    {/* ✅ 正解ポップアップ */}
+    <Popup message="正解！" show={popup} />
+  </div>
+)};
